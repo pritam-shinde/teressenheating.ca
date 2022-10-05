@@ -1,0 +1,8 @@
+.footer{
+    background-color: var(--navy) !important;
+}
+
+.quickLink{
+    font-size: var(--para-desktop-size) !important;
+    margin-bottom: 1rem !important;
+}
