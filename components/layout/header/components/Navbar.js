@@ -13,13 +13,12 @@ const Navbar = () => {
 
   return (
     <>
-      {
-        width > 600 ? <>
+      
           <nav className='navbar navbar-expand-md m-0 p-0'>
             <Container maxWidth="xxl" id="navbar">
               <Grid container>
                 <Grid item xs={12} md={10} className="mx-auto">
-                  <Box className='d-flex justify-content-between'>
+                  <Box className='d-md-flex justify-content-between d-block'>
                     <Link href="/">
                       <a className='navbar-brand'>
                         <img src={blueLogo.src} alt="logo" className='img-fluid' />
@@ -35,18 +34,18 @@ const Navbar = () => {
                             <a className='nav-link'>HOME</a>
                           </Link>
                         </li>
-                        <li className="nav-item dropdown dropdown1">
-                          <Link href="#">
+                        <li className='nav-item dropdown dropdown1'>
+                          <Link href="/services/">
                             <a className="nav-link dropdown-toggle" id="navbardropdown1" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">SERVICES</a>
                           </Link>
                           <ul className="dropdown-menu dropdown-menu-1 p-2 border-0" aria-labelledby="navbarDropdown">
                             <li className="nav-item">
-                              <Link href="/heating/">
+                              <Link href="/heating-services/">
                                 <a className="nav-link dropdown-item">HEATING</a>
                               </Link>
                             </li>
                             <li className="nav-item">
-                              <Link href="/cooling/">
+                              <Link href="/air-conditioning-service/">
                                 <a className="nav-link dropdown-item">COOLING</a>
                               </Link>
                             </li>
@@ -56,35 +55,35 @@ const Navbar = () => {
                               </Link>
                             </li>
                             <li className="nav-item dropdown dropdown2">
-                              <Link href="/boiler/">
-                                <a className="nav-link dropdown-item dropdown-toggle" id="navbardropdown2" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">BOILER</a>
+                              <Link href="/boilers/">
+                                <a className="nav-link dropdown-toggle text-dark" id="navbardropdown2" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{color:"#000 !important"}}>BOILER</a>
                               </Link>
                               <ul className="dropdown-menu dropdown-menu-2 p-2 border-0" aria-labelledby="navbarDropdown">
                                 <li className="nav-item">
-                                  <Link href="/boiler-maintenance/">
-                                    <a className="nav-link dropdown-item">BOILER-MAINTENANCE</a>
+                                  <Link href="/boilers-maintenance/">
+                                    <a className="nav-link dropdown-item">BOILER MAINTAINANCE</a>
                                   </Link>
                                 </li>
                                 <li className="nav-item">
-                                  <Link href="/boiler-installation/">
-                                    <a className="nav-link dropdown-item">BOILER-INSTALLATION</a>
+                                  <Link href="/boilers-installation/">
+                                    <a className="nav-link dropdown-item">BOILER INSTALLATION</a>
                                   </Link>
                                 </li>
                                 <li className="nav-item">
-                                  <Link href="/boiler-repair/">
-                                    <a className="nav-link dropdown-item">BOILER-REPAIR</a>
+                                  <Link href="/boilers-repair/">
+                                    <a className="nav-link dropdown-item">BOILER REPAIR</a>
                                   </Link>
                                 </li>
                                 <li className="nav-item">
-                                  <Link href="/boiler-service/">
-                                    <a className="nav-link dropdown-item">BOILER-SERVICE</a>
+                                  <Link href="/boilers-service/">
+                                    <a className="nav-link dropdown-item">BOILER SERVICES</a>
                                   </Link>
                                 </li>
                               </ul>
                             </li>
                             <li className="nav-item">
-                              <Link href="/tankless-water-heaters/">
-                                <a className="nav-link dropdown-item">TANKLESS WATER HEATERS</a>
+                              <Link href="/tankles-water-heaters/">
+                                <a className="nav-link dropdown-item">TANKLES WATER HEATERS</a>
                               </Link>
                             </li>
                             <li className="nav-item">
@@ -103,6 +102,11 @@ const Navbar = () => {
                               </Link>
                             </li>
                             <li className="nav-item">
+                              <Link href="/financing-option/">
+                                <a className="nav-link dropdown-item">FINANCING OPTION</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
                               <Link href="/furnace-inspection/">
                                 <a className="nav-link dropdown-item">FURNACE INSPECTION</a>
                               </Link>
@@ -110,7 +114,7 @@ const Navbar = () => {
                           </ul>
                         </li>
                         <li className='nav-item dropdown dropdown3'>
-                          <Link href="#">
+                          <Link href="/service-areas/">
                             <a className='nav-link dropdown-toggle' id="navbardropdown3" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">AREAS</a>
                           </Link>
                           <ul className="dropdown-menu dropdown-menu-3 p-2 border-0" aria-labelledby="navbarDropdown">
@@ -177,7 +181,7 @@ const Navbar = () => {
                           </ul>
                         </li>
                         <li className='nav-item dropdown dropdown4'>
-                          <Link href="#">
+                          <Link href="/about-us/">
                             <a className='nav-link dropdown-toggle' id="navbardropdown4" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">ABOUT US</a>
                           </Link>
                           <ul className="dropdown-menu dropdown-menu-4 p-2 border-0" aria-labelledby="navbarDropdown">
@@ -201,16 +205,11 @@ const Navbar = () => {
                                 <a className="nav-link dropdown-item">COVID-19</a>
                               </Link>
                             </li>
-                            <li className="nav-item">
-                              <Link href="/your-local-lennox-dealer/">
-                                <a className="nav-link dropdown-item">YOUR LOCAL LENNOX DEALER</a>
-                              </Link>
-                            </li>
                           </ul>
                         </li>
                         <li className='nav-item dropdown dropdown5'>
-                          <Link href="#">
-                            <a className='nav-link dropdown-toggle' id="navbardropdown5" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">BRANDS</a>
+                          <Link href="/brand/">
+                            <a className='nav-link dropdown-toggle' id="navbardropdown5" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">BRAND</a>
                           </Link>
                           <ul className="dropdown-menu dropdown-menu-5 p-2 border-0" aria-labelledby="navbarDropdown">
                             <li className="nav-item">
@@ -241,6 +240,11 @@ const Navbar = () => {
                             <li className="nav-item">
                               <Link href="/goodman/">
                                 <a className="nav-link dropdown-item">GOODMAN</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/american-standard/">
+                                <a className="nav-link dropdown-item">AMERICAN STANDARD</a>
                               </Link>
                             </li>
                             <li className="nav-item">
@@ -298,7 +302,67 @@ const Navbar = () => {
                                 <a className="nav-link dropdown-item">MAYTAG HVAC</a>
                               </Link>
                             </li>
+                            <li className="nav-item">
+                              <Link href="/luxaire/">
+                                <a className="nav-link dropdown-item">LUXAIRE</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/comfortmaker/">
+                                <a className="nav-link dropdown-item">COMFORTMAKER</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/arcoaire/">
+                                <a className="nav-link dropdown-item">ARCOAIRE</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/tempstar/">
+                                <a className="nav-link dropdown-item">TEMPSTAR</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/heil-hvac/">
+                                <a className="nav-link dropdown-item">HEIL HVAC</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/day-and-night-hvac/">
+                                <a className="nav-link dropdown-item">DAY AND NIGHT HVAC</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/armstrong/">
+                                <a className="nav-link dropdown-item">ARMSTRONG</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/concord-air/">
+                                <a className="nav-link dropdown-item">CONCORD AIR</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/frigidaire/">
+                                <a className="nav-link dropdown-item">FRIGIDAIRE</a>
+                              </Link>
+                            </li>
+                            <li className="nav-item">
+                              <Link href="/kenmore/">
+                                <a className="nav-link dropdown-item">KENMORE</a>
+                              </Link>
+                            </li>
                           </ul>
+                        </li>
+                        <li className='nav-item'>
+                          <Link href="/blog/">
+                            <a className='nav-link'>BLOG</a>
+                          </Link>
+                        </li>
+                        <li className='nav-item'>
+                          <Link href="/contact-us/">
+                            <a className='nav-link'>CONTACT US</a>
+                          </Link>
                         </li>
                       </ul>
                     </Box>
@@ -307,8 +371,7 @@ const Navbar = () => {
               </Grid>
             </Container>
           </nav>
-        </> : <nav></nav>
-      }
+       
     </>
   )
 }

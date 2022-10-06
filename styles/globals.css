@@ -33,7 +33,7 @@
   --h6-desktop-size: 0.83rem;
   --h6-mob-size: 0.67rem;
   --heading-font-weight: 600;
-  --para-desktop-size: 1.125rem;
+  --para-desktop-size: 1rem;
   --para-mob-size: 1rem;
 }
 
@@ -204,12 +204,25 @@ ul {
 
 /* navbar */
 
-nav.navbar{
+nav.navbar {
   background-color: var(--red) !important;
 }
 
 nav.navbar .navbar-brand {
   display: none;
+}
+
+nav.navbar .navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+
+nav.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--white) !important;
+}
+
+.dropdown .dropdown-menu .nav-item .dropdown-item.nav-link,
+.dropdown .dropdown-menu .nav-item .dropdown-toggle.nav-link {
+  color: var(--black) !important;
 }
 
 header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
@@ -218,15 +231,26 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 
 .dropdown2:hover .dropdown-menu-2 {
   display: block;
-  left: 14.7rem;
+  left: 14.5rem;
   top: 0rem !important;
 }
 
-.dropdown3:hover .dropdown-menu-3, .dropdown4:hover .dropdown-menu-4, .dropdown5:hover .dropdown-menu-5{
+.dropdown3:hover .dropdown-menu-3,
+.dropdown4:hover .dropdown-menu-4 {
   display: block;
 }
 
-.navbar-expand-md .navbar-nav .dropdown-menu{
+.dropdown5:hover .dropdown-menu-5 {
+  width: 26rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dropdown5:hover .dropdown-menu-5 .nav-item {
+  width: 46%;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
   border-radius: 0 !important;
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
@@ -234,8 +258,8 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
   -o-border-radius: 0 !important;
 }
 
-@media only screen and (max-width:600px){
-  nav.navbar{
+@media only screen and (max-width:600px) {
+  nav.navbar {
     background-color: var(--white) !important;
   }
 
@@ -244,4 +268,14 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     width: 50%;
   }
 
+  nav.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--black) !important;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {
+  .dropdown5:hover .dropdown-menu-5 {
+    left: -6rem !important;
+  }
 }
