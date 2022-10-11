@@ -74,6 +74,7 @@ p,
 p.para {
   font-size: var(--para-desktop-size) !important;
   color: var(--grey) !important;
+  margin-bottom: 1rem !important;
 }
 
 a {
@@ -97,6 +98,10 @@ ul {
   color: var(--grey) !important;
 }
 
+.text--black {
+  color: var(--black) !important;
+}
+
 .bg--blue {
   background-color: var(--blue) !important;
 }
@@ -109,6 +114,10 @@ ul {
   background-color: var(--grey) !important;
 }
 
+.bg--white {
+  background-color: var(--white) !important;
+}
+
 .MuiListItemText-primary p {
   margin-bottom: 0 !important;
 }
@@ -117,17 +126,49 @@ ul {
 
 .greyFilledBtn {
   background-color: var(--grey) !important;
-  padding: 0.6rem 1.2rem;
-  border-radius: 50rem;
-  -webkit-border-radius: 50rem;
-  -moz-border-radius: 50rem;
-  -ms-border-radius: 50rem;
-  -o-border-radius: 50rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 50rem !important;
+  -webkit-border-radius: 50rem !important;
+  -moz-border-radius: 50rem !important;
+  -ms-border-radius: 50rem !important;
+  -o-border-radius: 50rem !important;
+  border: 2px solid var(--grey) !important;
 }
 
 .greyFilledBtn a {
   color: var(--white) !important;
   font-size: 0.9rem;
+}
+
+.greyFilledBtn:hover {
+  background-color: #fff !important;
+}
+
+.greyFilledBtn:hover a {
+  color: var(--grey) !important;
+}
+
+.blueFilledBtn {
+  background-color: var(--blue) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 50rem !important;
+  -webkit-border-radius: 50rem !important;
+  -moz-border-radius: 50rem !important;
+  -ms-border-radius: 50rem !important;
+  -o-border-radius: 50rem !important;
+  border: 2px solid var(--blue) !important;
+}
+
+.blueFilledBtn a {
+  color: #fff !important;
+}
+
+.blueFilledBtn:hover {
+  background-color: #fff !important;
+}
+
+.blueFilledBtn:hover a {
+  color: var(--blue) !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -170,7 +211,7 @@ ul {
   height: auto;
 }
 
-#topbar .css-2s90m6-MuiAvatar-root {
+#topbar .MuiAvatar-root {
   background-color: var(--grey) !important;
 }
 
@@ -354,4 +395,43 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
   header nav.navbar {
     justify-content: flex-start;
   }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: var(--grey) !important;
+}
+
+.accordion-item{
+  border: none !important;
+  margin-bottom: 1rem !important;
+}
+
+.accordion-button {
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  flex-direction: row-reverse;
+  padding: 0 !important;
+}
+
+.accordion-button::after {
+  border: 2px solid rgb(173, 173, 173) !important;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: auto !important;
+  background-position: center !important;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: #fff !important;
+}
+
+.accordion-button:focus{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.form-group{
+  margin-bottom: 1rem !important;
 }
