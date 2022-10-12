@@ -11,9 +11,6 @@ const AboutUs = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/about-us/" />
       </Head>
-      <main>
-        <CommonBanner />
-      </main>
     </>
   )
 }
