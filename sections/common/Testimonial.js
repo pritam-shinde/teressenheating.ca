@@ -18,7 +18,7 @@ const Testimonial = () => {
                         <Grid item xs={12} md={10} className="mx-auto">
                             <Box py={10}>
                                 <Grid container>
-                                    <Grid item xs={12} md={4} className="ms-md-auto">
+                                    <Grid item xs={12} lg={4} className="ms-md-auto">
                                         <Box>
                                             <SectionalHeading blacktext="Customer" blueText="Testimonial" variant="h2" />
                                             <Box mt={3}>

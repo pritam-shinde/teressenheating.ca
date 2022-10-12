@@ -387,7 +387,7 @@ const Navbar = () => {
               </Grid>
             </Grid>
           </Container>
-        </nav> : <nav className='navbar navbar-expand-xl bg-transparent py-1'>
+        </nav> : <nav className='navbar navbar-expand-xl bg-transparent py-1 shadow'>
           <Button className="menu-icon" onClick={() => setClicked(!clicked)}>
             {clicked ? <Close className='text-white' /> : <Menu />}
           </Button>

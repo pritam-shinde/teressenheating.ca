@@ -439,3 +439,16 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 #whyChoose p{
   font-size: 1.1rem !important;
 }
+
+.MuiListItem-root{
+  align-items: flex-start !important;
+}
+
+.MuiListItemIcon-root{
+  min-width: 2rem !important;
+}
+
+.MuiListItemText-root{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}

@@ -42,16 +42,19 @@ const Footer = () => {
                                                     <li><Link href="/">
                                                         <a className={`${Styles.quickLink} text-white`}>Home</a>
                                                     </Link></li>
-                                                    <li><Link href="/">
+                                                    <li><Link href="/about-us/">
                                                         <a className={`${Styles.quickLink} text-white`}>About Us</a>
                                                     </Link></li>
-                                                    <li><Link href="/">
+                                                    <li><Link href="/brand/">
                                                         <a className={`${Styles.quickLink} text-white`}>Brands</a>
                                                     </Link></li>
-                                                    <li><Link href="/">
+                                                    <li><Link href="/blog/">
                                                         <a className={`${Styles.quickLink} text-white`}>Blog</a>
                                                     </Link></li>
-                                                    <li><Link href="/">
+                                                    <li><Link href="/faq/">
+                                                        <a className={`${Styles.quickLink} text-white`}>FAQ</a>
+                                                    </Link></li>
+                                                    <li><Link href="/contact-us/">
                                                         <a className={`${Styles.quickLink} text-white`}>Contact</a>
                                                     </Link></li>
                                                 </ul>
