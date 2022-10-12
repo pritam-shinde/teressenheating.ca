@@ -7,3 +7,4 @@ export {default as GreyFilledBtn} from './buttons/GreyFilledBtn'
 export {default as BlueFilledBtn} from './buttons/BlueFilledBtn'
 
 //heading
+export {default as SectionalHeading} from './SectionalHeading/SectionalHeading'

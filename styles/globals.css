@@ -435,3 +435,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 .form-group{
   margin-bottom: 1rem !important;
 }
+
+#whyChoose p{
+  font-size: 1.1rem !important;
+}

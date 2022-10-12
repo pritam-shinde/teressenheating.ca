@@ -84,7 +84,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                             </div>
                                                             <div className='col-12'>
                                                                 <div className='form-group'>
-                                                                    <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="Your message" name="message" required="" spellcheck="false" data-ms-editor="true"></textarea>
+                                                                    <textarea className="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="Your message" name="message" required="" spellCheck="false" data-ms-editor="true"></textarea>
                                                                 </div>
                                                             </div>
                                                             <div className='col-12'>

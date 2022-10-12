@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { About, Facilities, FaqAndForm, Hero, Service } from '../sections/sections'
+import { About, Appointment, BrandSlider, Facilities, FaqAndForm, Hero, Service, Testimonial, WhyChoose } from '../sections/sections'
 
 const index = () => {
 
@@ -28,6 +28,10 @@ const index = () => {
         <About />
         <Service />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quot" formVariant="h2" formtitleAlign="center" />
+        <WhyChoose />
+        <BrandSlider />
+        <Appointment />
+        <Testimonial />
       </main>
     </>
   )
