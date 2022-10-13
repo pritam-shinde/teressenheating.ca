@@ -107,7 +107,7 @@
 
 .overview,
 .overviewRed {
-    background-color: #000e41b9;
+    background-color: #000c38ef;
     border-radius: 1rem !important;
     -webkit-border-radius: 1rem !important;
     -moz-border-radius: 1rem !important;
@@ -155,7 +155,7 @@
     bottom: 10%;
     left: 0%;
     right: 0%;
-    background-color: #000e41b9;
+    background-color: #000d3df6;
     transition: transform 1s ease-in-out;
 }
 
@@ -169,7 +169,7 @@
 }
 
 .overviewRed {
-    background-color: #e21e25da !important;
+    background-color: #6e0004f1 !important;
 }
 
 .whyChoose {

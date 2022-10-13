@@ -9,7 +9,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
 
     return (
         <>
-            <section>
+            <section className='my-3'>
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
@@ -69,7 +69,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                                             <strong className='ms-3 mb-0'>{item.que}</strong>
                                                                         </button>
                                                                     </h3>
-                                                                    <div id={`collapse${index}`} className={`accordion-collapse collapse ${active.split('faq-')[1] == index ? 'show' : null} ps-5`} aria-labelledby={`heading${index}`} data-bs-parent="#accordionExample">
+                                                                    <div id={`collapse${index}`} className={`accordion-collapse collapse ${active.split('faq-')[1] == index ? 'show' : null} ps-4`} aria-labelledby={`heading${index}`} data-bs-parent="#accordionExample">
                                                                         <div className="accordion-body">
                                                                             <Typography className="para">{item.ans}</Typography>
                                                                         </div>

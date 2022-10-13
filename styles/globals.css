@@ -404,7 +404,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 
 .accordion-item{
   border: none !important;
-  margin-bottom: 1rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .accordion-button {
@@ -432,6 +432,14 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
   box-shadow: none !important;
 }
 
+.accordion-collapse.collapse.show{
+  transition: all 2s ease !important;
+  -webkit-transition: all 2s ease !important;
+  -moz-transition: all 2s ease !important;
+  -ms-transition: all 2s ease !important;
+  -o-transition: all 2s ease !important;
+}
+
 .form-group{
   margin-bottom: 1rem !important;
 }
@@ -451,4 +459,20 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 .MuiListItemText-root{
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+
+.form-control{
+  padding: 1rem 2rem !important;
+}
+
+.uploadFile{
+  width: 100%;
+  border: 1px solid #ced4da;
+  padding: 1rem 2rem !important;
+  border-radius: 50rem !important;
+  -webkit-border-radius: 50rem !important;
+  -moz-border-radius: 50rem !important;
+  -ms-border-radius: 50rem !important;
+  -o-border-radius: 50rem !important;
+  background-color: #ced4da;
 }

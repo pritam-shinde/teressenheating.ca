@@ -5,10 +5,7 @@ const SectionalHeading = ({variant, align, blacktext, blueText, simpletext}) => 
   return (
     <>
     {
-        blacktext && blueText ? <Typography variant={variant} align={align} gutterBottom><span className='text--black'>{blacktext}</span> <span className='text--blue'>{blueText}</span></Typography> : null
-    }
-    {
-        simpletext ? <Typography variant={variant} align={align} gutterBottom></Typography> : null
+        blacktext && blueText ? <Typography variant={variant} align={align} gutterBottom><span className='text--black'>{blacktext}</span> <span className='text--blue'>{blueText}</span></Typography> : simpletext ? <Typography variant={variant} align={align} gutterBottom>{simpletext}</Typography> : null
     }
     </>
   )
