@@ -5,7 +5,6 @@ import { ArrowForward } from '@mui/icons-material'
 import Styles from '../../styles/Blog.module.css'
 
 const BlogCommonSidebar = ({ data, category }) => {
-  console.log(category)
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
   return (
     <>
@@ -31,9 +30,9 @@ const BlogCommonSidebar = ({ data, category }) => {
           </Box>
           <Box>
             {
-              category.length > 0 ? <List>
+              category.length > 0 ? <List className='p-0 m-0'>
                 {
-                  category.map(item => <ListItem className='mb-2' key={`sidebar-recent-category-id-${item.id}`}>
+                  category.map(item => <ListItem className='mb-2 ps-0' key={`sidebar-recent-category-id-${item.id}`}>
                     <ListItemIcon>
                       <ArrowForward className='text--blue' />
                     </ListItemIcon>

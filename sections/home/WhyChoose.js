@@ -10,9 +10,9 @@ const WhyChoose = () => {
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
-                            <Box py={10}>
+                            <Box py={5}>
                                 <Grid container>
-                                    <Grid item xs={12} lg={6} className="ms-md-auto">
+                                    <Grid item xs={12} lg={4} className="ms-md-auto">
                                         <Box>
                                             <SectionalHeading blacktext="Why" blueText="Choose Us" variant="h2" align="left" />
                                             <Typography className='para'>Our company has always earned a reputation as one of the leading and fastest-growing HVAC services in Canada. With our offices and service technicians in the major part of the world, we bring you a family-driven service to your doorstep.</Typography>

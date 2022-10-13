@@ -2,9 +2,10 @@ import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from '
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
 import Banner from '../../public/blog/blog.jpg'
-import { CommonBanner, GreyFilledBtn, BlogCommonSidebar } from '../../components/components'
+import { CommonBanner, GreyFilledBtn, BlogCommonSidebar, BlueFilledBtn } from '../../components/components'
 import Link from 'next/link';
 import Styles from '../../styles/Blog.module.css'
+import WPAPI from 'wpapi';
 
 export const getServerSideProps = async () => {
   const res = await fetch('https://pritams5.sg-host.com/wp-json/wp/v2/posts?_embed=true&page=1');
@@ -21,7 +22,21 @@ export const getServerSideProps = async () => {
 
 const Blog = ({ data, category }) => {
   const [hydration, setHydration] = useState(false)
-  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  const [blogs, setBlogs] = useState([])
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  const wp = new WPAPI({
+    endpoint: "https://pritams5.sg-host.com/wp-json"
+  })
+
+  const fetchBlog = async () => {
+    const posts = await wp.posts().page(1).get();
+    setBlogs(posts)
+  }
+
+  useEffect(() => {
+    fetchBlog()
+  })
 
   useEffect(() => {
     if (typeof window !== undefined) {
@@ -30,6 +45,7 @@ const Blog = ({ data, category }) => {
       setHydration(false)
     }
   }, [])
+
   return (
     <>
       <Head>
@@ -81,6 +97,14 @@ const Blog = ({ data, category }) => {
                             </CardContent>
                           </Card>) : null
                         }
+                        <Box mt={5} className="d-flex justify-content-center">
+                          {
+                            blogs ? blogs._paging ? blogs._paging.links ? blogs._paging.links.next ? <>
+                              <BlueFilledBtn navlink={true} btnlink={`/blog/page/2/`} btnTitle="NEXT" />
+                            </> : null : null : null : null
+                          }
+
+                        </Box>
                       </Grid>
                       <Grid item xs={12} md={4}>
                         <BlogCommonSidebar data={data} category={category} />
