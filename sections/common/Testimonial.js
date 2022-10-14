@@ -43,8 +43,8 @@ const Testimonial = () => {
                                                                 <FormatQuote className='text--blue' style={{fontSize:"5rem", color:"var(--blue) !important"}} />
                                                             </Box>
                                                             <Box className="flex-grow-1 ms-3">
-                                                                <Typography className='para'><stong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.</stong></Typography>
-                                                                <Typography className='para'><stong>- Wilson Trayer</stong>, Customer</Typography>
+                                                                <Typography style={{fontSize:"1.8rem !important"}}><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.</strong></Typography>
+                                                                <Typography className='para'><strong>- Wilson Trayer</strong>, Customer</Typography>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
@@ -54,8 +54,8 @@ const Testimonial = () => {
                                                                 <FormatQuote className='text--blue' style={{fontSize:"5rem", color:"var(--blue) !important"}} />
                                                             </Box>
                                                             <Box className="flex-grow-1 ms-3">
-                                                                <Typography className='para'><stong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.</stong></Typography>
-                                                                <Typography className='para'><stong>- Wilson Trayer</stong>, Customer</Typography>
+                                                                <Typography  style={{fontSize:"1.8rem !important"}}><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.</strong></Typography>
+                                                                <Typography className='para'><strong>- Wilson Trayer</strong>, Customer</Typography>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
@@ -65,8 +65,8 @@ const Testimonial = () => {
                                                                 <FormatQuote className='text--blue' style={{fontSize:"5rem", color:"var(--blue) !important"}} />
                                                             </Box>
                                                             <Box className="flex-grow-1 ms-3">
-                                                                <Typography className='para'><stong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.</stong></Typography>
-                                                                <Typography className='para'><stong>- Wilson Trayer</stong>, Customer</Typography>
+                                                                <Typography style={{fontSize:"1.8rem !important"}}><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.</strong></Typography>
+                                                                <Typography className='para'><strong>- Wilson Trayer</strong>, Customer</Typography>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>

@@ -33,7 +33,7 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
     const { pageNo } = router.query
 
     const wp = new WPAPI({
-        endpoint: "https://pritams5.sg-host.com/wp-json"
+        endpoint: "https://pritams5.sg-host.com/wp-json" 
     })
 
     const fetchBlogs = async () => {

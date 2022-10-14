@@ -37,7 +37,7 @@ const Service = () => {
                                     <Box className={Styles.tab}>
                                         <Grid container>
                                             <Grid item xs={6}>
-                                                <Button onClick={() => setActive('box1')} p={1} className={`d-flex justify-content-between align-items-center text-white ${Styles.box1}  ${active === 'box1' ? 'bg--blue' : Styles.inactive} m-0`}>
+                                                <Button onClick={() => setActive('box1')} className={`d-flex justify-content-between align-items-center text-white ${Styles.box1}  ${active === 'box1' ? 'bg--blue' : Styles.inactive} m-0`}>
                                                     <Box p={1.5} mr={1} style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} className="bg--white d-flex justify-content-center align-items-center">
                                                         <img src={Snow.src} />
                                                     </Box>
@@ -45,7 +45,7 @@ const Service = () => {
                                                 </Button>
                                             </Grid>
                                             <Grid item xs={6}>
-                                                <Button onClick={() => setActive('box2')} p={1} className={`d-flex justify-content-between align-items-center text-white ${Styles.box2} ${active === 'box2' ? 'bg--red' : Styles.inactive} m-0`}>
+                                                <Button onClick={() => setActive('box2')} className={`d-flex justify-content-between align-items-center text-white ${Styles.box2} ${active === 'box2' ? 'bg--red' : Styles.inactive} m-0`}>
                                                     <strong style={{ fontSize: "1.2rem" }}>Heating Services</strong>
                                                     <Box p={1.5} ml={1} style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} className="bg--white d-flex justify-content-center align-items-center">
                                                         <img src={Fire.src} />
