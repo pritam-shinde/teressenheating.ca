@@ -9,12 +9,12 @@ const Careers = () => {
   const [active, setActive] = useState('faq-0')
 
   const faqArr = [
-    { id: "position-1", que: "HVAC Service Technician", ans: "" },
-    { id: "position-2", que: "HVAC install Helpers", ans: "" },
-    { id: "position-3", que: "Duct Cleaning Specialists", ans: "" },
-    { id: "position-4", que: "Air Conditioner Technician", ans: "" },
-    { id: "position-5", que: "Heating Technician", ans: "" },
-    { id: "position-6", que: "HVAC install Helpers", ans: "" },
+    { id: "position-1", que: "HVAC Service Technician", ans: "", list: null },
+    { id: "position-2", que: "HVAC install Helpers", ans: "", list: null },
+    { id: "position-3", que: "Duct Cleaning Specialists", ans: "", list: null },
+    { id: "position-4", que: "Air Conditioner Technician", ans: "", list: null },
+    { id: "position-5", que: "Heating Technician", ans: "", list: null },
+    { id: "position-6", que: "HVAC install Helpers", ans: "", list: null },
   ]
 
   return (
