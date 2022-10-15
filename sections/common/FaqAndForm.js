@@ -1,7 +1,8 @@
 import { Box, Container, Grid, Paper, Typography, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import React, { useState } from 'react'
 import SectionalHeading from '../../components/SectionalHeading/SectionalHeading'
-import { LocationOnOutlined, LocalPhoneOutlined, MailOutline } from '@mui/icons-material'
+import { LocationOnOutlined, LocalPhoneOutlined, MailOutline, CheckCircle } from '@mui/icons-material'
+import { AppointmentForm } from '../../components/components'
 
 const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faqVariant, faqArr, faqSimpleTitle, formBlackTitle, formBlueTitle, formVariant, formtitleAlign, formSimpleTitle, address, addressBlackTitle, addressBlueTitle, addressVariant, addresstitleAlign, addressSimpleTitle }) => {
 
@@ -71,7 +72,19 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                                     </h3>
                                                                     <div id={`collapse${index}`} className={`accordion-collapse collapse ${active.split('faq-')[1] == index ? 'show' : null} ps-4`} aria-labelledby={`heading${index}`} data-bs-parent="#accordionExample">
                                                                         <div className="accordion-body">
-                                                                            <Typography className="para">{item.ans}</Typography>
+                                                                            {item.ans !== null ? <Typography className="para">{item.ans}</Typography> : null}
+                                                                            {
+                                                                                item.list !== null ? <List className='p-0 m-0'>
+                                                                                    {
+                                                                                        item.list.map((listItem,num)=><ListItem className='ps-0' key={`faq-${index}-list-${num}`}>
+                                                                                            <ListItemIcon>
+                                                                                                <CheckCircle />
+                                                                                            </ListItemIcon>
+                                                                                            <ListItemText primary={listItem} />
+                                                                                        </ListItem>)
+                                                                                    }
+                                                                                </List> : null
+                                                                            }
                                                                         </div>
                                                                     </div>
                                                                 </div>)
@@ -95,37 +108,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                     formSimpleTitle ? <SectionalHeading variant={formVariant} align={formtitleAlign} simpletext={formSimpleTitle} /> : null
                                                 }
                                                 <Box p={5} component={Paper} className="shadow">
-                                                    <form method='post' action='https://formsubmit.co/adityaj.nonstop@gmail.com' encType="multipart/form-data">
-                                                        <div className='row'>
-                                                            <div className='col-md-6 col-12'>
-                                                                <div className='form-group'>
-                                                                    <input type="text" name="Visitor Name" className='form-control rounded-pill' placeholder='Name' required />
-                                                                </div>
-                                                            </div>
-                                                            <div className='col-md-6 col-12'>
-                                                                <div className='form-group'>
-                                                                    <input type="email" name="Visitor Email" className='form-control rounded-pill' placeholder='Email' required />
-                                                                </div>
-                                                            </div>
-                                                            <div className='col-12'>
-                                                                <div className='form-group'>
-                                                                    <select name="Selected Service" className='form-control rounded-pill'>
-                                                                        <option value="">Choose Service</option>
-                                                                        <option value="Cooling Service">Cooling Service</option>
-                                                                        <option value="Heating Service">Heating Service</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div className='col-12'>
-                                                                <div className='form-group'>
-                                                                    <textarea className="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="Your message" name="message" required="" spellCheck="false" data-ms-editor="true"></textarea>
-                                                                </div>
-                                                            </div>
-                                                            <div className='col-12'>
-                                                                <Button type="submit" className='blueFilledBtn text-white'>Submit</Button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                    <AppointmentForm />
                                                 </Box>
                                             </Box>
                                         </Grid> : null

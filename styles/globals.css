@@ -111,7 +111,7 @@ ul {
 }
 
 .bg--grey {
-  background-color: var(--grey) !important;
+  background-color: rgb(223, 223, 223) !important;
 }
 
 .bg--white {
@@ -475,4 +475,9 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
   -ms-border-radius: 50rem !important;
   -o-border-radius: 50rem !important;
   background-color: #ced4da;
+}
+
+
+.trusted{
+  font-size: 1.5rem !important;
 }

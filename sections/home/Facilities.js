@@ -20,7 +20,7 @@ const Facilities = () => {
                                                 <img src={Certificate.src} alt="certificate" />
                                             </Box>
                                             <Typography variant='h4' className='text--grey' gutterBottom>Certified Dealer</Typography>
-                                            <Typography className='para' align='center'>Pellentesque non quam porttitor condimentum condimentum ut sed</Typography>
+                                            <Typography className='para' align='center'>Trust, affordability, and quality are the pillars on which we work. Our certified dealers work 24*7 especially to serve you better.</Typography>
                                         </Box>
                                     </Grid>
                                     <Grid item xs={12} sm={6} lg={4}>
@@ -29,7 +29,7 @@ const Facilities = () => {
                                                 <img src={Clock.src} alt="clock" />
                                             </Box>
                                             <Typography variant='h4' className='text--grey' gutterBottom>Request A Service Call</Typography>
-                                            <Typography className='para' align='center'>Pellentesque non quam porttitor condimentum condimentum ut sed</Typography>
+                                            <Typography className='para' align='center'>If you are facing any heating-related issues, then request a service call. We are here for your assistance and will give you the best of everything.</Typography>
                                         </Box>
                                     </Grid>
                                     <Grid item xs={12} sm={6} lg={4}>
@@ -38,7 +38,7 @@ const Facilities = () => {
                                                 <img src={Hand.src} alt="hand" />
                                             </Box>
                                             <Typography variant='h4' className='text--grey' gutterBottom>Need Financing?</Typography>
-                                            <Typography className='para' align='center'>Pellentesque non quam porttitor condimentum condimentum ut sed</Typography>
+                                            <Typography className='para' align='center'>If you need financing aid, we are there for your service. So, don&apos;t worry and leave all your worries to us. We will make your day better!</Typography>
                                         </Box>
                                     </Grid>
                                 </Grid>

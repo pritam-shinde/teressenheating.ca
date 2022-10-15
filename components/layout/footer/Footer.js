@@ -28,7 +28,7 @@ const Footer = () => {
                                                 <img src={GreyLogo.src} alt="logo" className='img-fluid' />
                                             </Box>
                                             <Box>
-                                                <Typography className='text-white' align='justify'>Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability. These elements have always been our brand identity and have made has to stand different from the crowd. They have shaped us, monitored us, and made us the top-notched heating experts in Canada.</Typography>
+                                                <Typography className='text-white' align='justify'>Three elements that make Teressen heating ltd different from the crowd are Quality, trust, and affordability. These elements have always been our brand identity and have made has to stand different from the crowd. They have shaped us, monitored us, and made us the top-notched heating experts in Canada.</Typography>
                                             </Box>
                                         </Box>
                                     </Grid>

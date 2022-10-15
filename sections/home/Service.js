@@ -13,6 +13,10 @@ import "swiper/css/pagination";
 import s1 from '../../public/home/s1.jpg'
 import s2 from '../../public/home/s2.jpg'
 import s3 from '../../public/home/s3.jpg'
+import Boiler from '../../public/home/boiler.jpg'
+import Fireplace from '../../public/home/fireplace.jpg'
+import Heatpump from '../../public/home/heatpump.jpg'
+import Furnace from '../../public/home/furnace.jpg'
 import Link from 'next/link'
 import {ArrowForward} from '@mui/icons-material'
 
@@ -77,7 +81,7 @@ const Service = () => {
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography variant='h3' gutterBottom className="text-white">AC Installation & Replacement</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
+                                                                <Typography className='text-white'>One of the most crucial Investment you can make in your house is installing an air conditioning system. We provide a wide range of services, including installation, yearly maintenance, and more, to ensure that everything is completed correctly...</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--blue'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -92,7 +96,7 @@ const Service = () => {
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography variant='h3' gutterBottom className="text-white">AC Repairing</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
+                                                                <Typography className='text-white'>Residential air conditioning repair is offered by the family-run business Teressen Heating and Air Conditioning. Regardless of the time of day, we have the knowledge to quickly fix your heating system...</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--blue'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -107,22 +111,7 @@ const Service = () => {
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography variant='h3' gutterBottom className="text-white">AC Maintaince</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
-                                                                <Box mt={1}>
-                                                                    <IconButton className='bg--blue'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
-                                                                </Box>
-                                                            </Box>
-                                                        </Box>
-                                                    </SwiperSlide>
-                                                    <SwiperSlide>
-                                                    <Box className={Styles.sliderContainer}>
-                                                            <img src={s3.src} alt="slide1" className='img-fluid' />
-                                                            <Box p={2} className={Styles.titleContainer}>
-                                                            <Typography variant='h3' className="text-white">AC Maintaince</Typography>
-                                                            </Box>
-                                                            <Box p={4} className={Styles.overview}>
-                                                                <Typography variant='h3' gutterBottom className="text-white">AC Maintaince</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
+                                                                <Typography className='text-white'>Local residents own and run the business Terresen Heating. To keep your family comfortable all year round, we know the proper home AC maintenance and tune-ups...</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--blue'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -147,13 +136,13 @@ const Service = () => {
                                                 >
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <img src={s1.src} alt="slide1" className='img-fluid' />
+                                                            <img src={Furnace.src} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                            <Typography variant='h3' className="text-white">AC Installation & Replacement</Typography>
+                                                            <Typography variant='h3' className="text-white">Furnaces</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
-                                                                <Typography variant='h3' gutterBottom className="text-white">AC Installation & Replacement</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
+                                                                <Typography variant='h3' gutterBottom className="text-white">Furnaces</Typography>
+                                                                <Typography className='text-white'>a building that uses combustion or another method to generate useful heat. Because coal was so readily available for heating, the furnace evolved historically from the fireplace and stove...</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -162,13 +151,13 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={s2.src} alt="slide1" className='img-fluid' />
+                                                            <img src={Boiler.src} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                            <Typography variant='h3' className="text-white">AC Repairing</Typography>
+                                                            <Typography variant='h3' className="text-white">Boiler</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
-                                                                <Typography variant='h3' gutterBottom className="text-white">AC Repairing</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
+                                                                <Typography variant='h3' gutterBottom className="text-white">Boiler</Typography>
+                                                                <Typography className='text-white'>Teressen has been offering professional boiler setup, maintenance, and repair services. Teressen, a seasoned pioneer in the home heating sector, takes care of all your heating requirements with first-rate service at competitive prices.</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -177,13 +166,13 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={s3.src} alt="slide1" className='img-fluid' />
+                                                            <img src={Heatpump.src} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                            <Typography variant='h3' className="text-white">AC Maintaince</Typography>
+                                                            <Typography variant='h3' className="text-white">Heat Pump</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
-                                                                <Typography variant='h3' gutterBottom className="text-white">AC Maintaince</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
+                                                                <Typography variant='h3' gutterBottom className="text-white">Heat Pump</Typography>
+                                                                <Typography className='text-white'>Along with the manufacturer&apos;s warranty, we also provide full installation of your heat pump system with a 1-year labour warranty!</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -192,13 +181,13 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={s3.src} alt="slide1" className='img-fluid' />
+                                                            <img src={Fireplace.src} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                            <Typography variant='h3' className="text-white">AC Maintaince</Typography>
+                                                            <Typography variant='h3' className="text-white">Fireplace</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
-                                                                <Typography variant='h3' gutterBottom className="text-white">AC Maintaince</Typography>
-                                                                <Typography className='text-white'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you...</Typography>
+                                                                <Typography variant='h3' gutterBottom className="text-white">Fireplace</Typography>
+                                                                <Typography className='text-white'>Installation & Replacement of Professional Gas Fireplaces for Central Home Heating Systems</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>

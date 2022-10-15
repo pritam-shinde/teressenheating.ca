@@ -174,7 +174,7 @@
 }
 
 .titleContainerRed {
-    background-color: #e21e25d8 !important;
+    background-color: rgba(187, 0, 0, 0.938) !important;
 }
 
 .sliderContainer:hover .titleContainer,
@@ -183,7 +183,7 @@
 }
 
 .overviewRed {
-    background-color: #6e0004f1 !important;
+    background-color: rgba(187, 0, 0, 0.938) !important;
 }
 
 .whyChoose {
