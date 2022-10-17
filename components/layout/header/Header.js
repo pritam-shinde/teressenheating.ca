@@ -6,7 +6,7 @@ import Topbar from './components/Topbar'
 const Header = () => {
   return (
     <>
-    <header>
+    <header className='fixed-top bg-white shadow' id="header">
       <Topbar />
       <Navbar />
     </header>

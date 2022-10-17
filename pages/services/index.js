@@ -9,6 +9,7 @@ import { Appointment } from '../../sections/sections'
 import AcRepair from '../../public/home/s3.jpg'
 import Banner from '../../public/service/service-compressed.jpg'
 import Brands from '../../public/brands/brands-logo.jpg'
+import Family from '../../public/home/testimonial.jpg'
 
 const Service = () => {
   return (
@@ -27,8 +28,8 @@ const Service = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box py={5}>
                   <Box mb={3}>
-                    <Typography variant='h1' gutterBottom>Teressen Heating Ltd.</Typography>
-                    <Typography variant="h2" className='trusted' gutterBottom>Your trusted expert for all your <span className='text--red'>heating</span> and <span className='text--blue'>cooling</span> services</Typography>
+                    <Typography variant='h2' gutterBottom>Teressen Heating Ltd.</Typography>
+                    <Typography variant="h3" gutterBottom>Your trusted expert for all your <span className='text--red'>heating</span> and <span className='text--blue'>cooling</span> services</Typography>
                     <Typography className='para'>Serving Canada, we repair and maintain nearly all makes, brands of furnaces, and models. If your model is kicking on and off frequently, or there is water coming from the model, then you need assistance. So, we are at your assistance. We have our maintenance plans that will help you with the best possible solutions.</Typography>
                   </Box>
                   <Box>
@@ -219,6 +220,7 @@ const Service = () => {
                   <Grid container spacing={5}>
                     <Grid item xs={12} md={6}>
                       <Box>
+                        <Image src={Family} alt="family" />
                         <Image src={Brands} alt="brands" />
                       </Box>
                     </Grid>

@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    margin-top: 8.34rem !important;
 }
 
 .bannerText {
@@ -39,6 +40,7 @@
     .hero {
         height: 95vh;
         background-image: url(../public/home/slider_mobile2.jpg);
+        margin-top: 4.1rem !important;
     }
 }
 

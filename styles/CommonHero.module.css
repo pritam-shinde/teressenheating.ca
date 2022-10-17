@@ -4,4 +4,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin-top: 8.34rem !important;
+}
+
+@media only screen and (max-width: 600px){
+    .hero{
+        margin-top: 4.1rem !important;
+    }
 }
