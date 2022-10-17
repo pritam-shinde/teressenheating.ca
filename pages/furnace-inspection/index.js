@@ -1,8 +1,13 @@
 import React from 'react'
+import {FeaturedHeatingServices, HighlySkilled, PopularService} from '../../sections/sections'
 
 const FurnaceInspection = () => {
   return (
-    <>FurnaceInspection</>
+    <>
+    <FeaturedHeatingServices />
+    <PopularService />
+    <HighlySkilled />
+    </>
   )
 }
 
