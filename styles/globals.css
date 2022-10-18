@@ -481,3 +481,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 .trusted{
   font-size: 1.5rem !important;
 }
+
+.sidebar-sticky{
+  top: 20%;
+}

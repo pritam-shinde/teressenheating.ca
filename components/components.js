@@ -14,6 +14,7 @@ export {default as CommonBanner} from './banner/CommonBanner';
 
 // sidebar
 export {default as BlogCommonSidebar} from './Sidebar/BlogCommonSidebar'
+export {default as ServiceCommonSidebar} from './Sidebar/ServiceCommonSidebar'
 
 //form
 export {default as AppointmentForm} from './form/AppointmentForm'
