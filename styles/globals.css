@@ -483,5 +483,5 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 }
 
 .sidebar-sticky{
-  top: 20%;
+  top: 20% !important;
 }
