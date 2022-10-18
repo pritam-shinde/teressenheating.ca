@@ -17,7 +17,7 @@ const FurnaceInspection = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:." ,list:["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.","Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.","Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."]},
+    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
     { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
     { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them.", list: null },
     { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems.", list: null },
@@ -25,7 +25,7 @@ const FurnaceInspection = () => {
     { id: "faq-6", que: "How does ductless heating and cooling work?", ans: "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home.", list: null },
     { id: "faq-7", que: "How Much Does HVAC Installation Cost?", ans: "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500.", list: null },
     { id: "faq-8", que: "How Long Does HVAC Installation take?", ans: "Usually, it takes three to five days for installation.", list: null },
-    { id: "faq-9", que: "	What Kinds of Warranties Come with My New HVAC Installation?", ans: "It has the following warranties:", list: ["HVAC Manufacturer Warranty.","HVAC Extended Warranty.","Homeowners Insurance.","Home Warranty"] },
+    { id: "faq-9", que: "	What Kinds of Warranties Come with My New HVAC Installation?", ans: "It has the following warranties:", list: ["HVAC Manufacturer Warranty.", "HVAC Extended Warranty.", "Homeowners Insurance.", "Home Warranty"] },
   ]
 
   const testimonial = [
@@ -42,7 +42,7 @@ const FurnaceInspection = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/furnace-inspection/" />
       </Head>
-      <CommonBanner bg={Banner} title="Furnace Inspection" color="#fff" variant="h2" />
+      <CommonBanner bg={Banner} title="The best furnace repair and installation services in Canada" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
@@ -52,27 +52,24 @@ const FurnaceInspection = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography variant='h1' align="center">Teressen: The best furnace repair and installation services in Canada</Typography>
-                        <Box mt={3}>
-                          <Grid container spacing={3}>
-                            <Grid item xs={12} md={6}>
-                              <Box>
-                                <Image src={Furnace} alt="furnace" title='furnace' />
-                              </Box>
-                            </Grid>
-                            <Grid item xs={12} md={6}>
-                              <Box>
-                                <SectionalHeading blacktext="Furnace" blueText="service and repair" variant="h2" />
-                                <Typography className='para'>Teressen heating ltd provides one of the best furnace installation and repair services in Canada. We have been working continuously in HVAC services and have played a crucial role in the Canadian fire safety association. We take care of installation, repair, and furnace maintenance work for years with love,</Typography>
-                              </Box>
-                            </Grid>
-                            <Grid item xs={12} className="m-0 pt-0">
-                              <Box>
-                                <Typography className='para'> dedication, and concern. So, if your furnace system gets a breakdown, do not panic. Just give us a call and we will serve you with the best of everything. Our organization provides 24*7 furnace repair services in Canada and also takes care of your safety.</Typography>
-                              </Box>
-                            </Grid>
+                        <Grid container spacing={3}>
+                          <Grid item xs={12} md={6}>
+                            <Box>
+                              <Image src={Furnace} alt="furnace" title='furnace' />
+                            </Box>
                           </Grid>
-                        </Box>
+                          <Grid item xs={12} md={6}>
+                            <Box>
+                              <SectionalHeading blacktext="Furnace" blueText="service and repair" variant="h2" />
+                              <Typography className='para'>Teressen heating ltd provides one of the best furnace installation and repair services in Canada. We have been working continuously in HVAC services and have played a crucial role in the Canadian fire safety association. We take care of installation, repair, and furnace maintenance work for years with love,</Typography>
+                            </Box>
+                          </Grid>
+                          <Grid item xs={12} className="m-0 pt-0">
+                            <Box>
+                              <Typography className='para'> dedication, and concern. So, if your furnace system gets a breakdown, do not panic. Just give us a call and we will serve you with the best of everything. Our organization provides 24*7 furnace repair services in Canada and also takes care of your safety.</Typography>
+                            </Box>
+                          </Grid>
+                        </Grid>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>

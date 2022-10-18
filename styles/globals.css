@@ -485,3 +485,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 .sidebar-sticky{
   top: 20% !important;
 }
+
+#FeaturedHeatingServices h2, #FeaturedHeatingServices h3{
+  color: var(--white) !important;
+}
