@@ -6,7 +6,7 @@ import Styles from '../../styles/PopularService.module.css'
 const PopularService = () => {
     return (
         <>
-            <section className={Styles.PopularService}>
+            <section className={`${Styles.PopularService} mt-3`}>
                 <Container maxWidth="xxl" style={{ height: "inherit" }}>
                     <Grid container style={{ height: "inherit" }}>
                         <Grid item xs={12} md={10} className="mx-auto" style={{ height: "inherit" }}>

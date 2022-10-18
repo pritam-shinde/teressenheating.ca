@@ -7,7 +7,7 @@ import Styles from '../../styles/HighlySkilled.module.css'
 const HighlySkilled = () => {
     return (
         <>
-            <section className={Styles.HighlySkilled}>
+            <section className={`${Styles.HighlySkilled} mt-3`}>
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} sm={10} md={8} lg={6} className="mx-auto">

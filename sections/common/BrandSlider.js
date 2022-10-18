@@ -21,7 +21,7 @@ const BrandSlider = () => {
 
     return (
         <>
-            <section>
+            <section className='mt-3'>
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">

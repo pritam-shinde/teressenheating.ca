@@ -12,7 +12,7 @@ import Image from 'next/image'
 const FeaturedHeatingServices = () => {
     return (
         <>
-            <section className={Styles.FeaturedHeatingServices} id="FeaturedHeatingServices">
+            <section className={`${Styles.FeaturedHeatingServices} mt-3`} id="FeaturedHeatingServices">
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">

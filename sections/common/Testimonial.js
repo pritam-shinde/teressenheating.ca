@@ -12,7 +12,7 @@ import { FormatQuote } from '@mui/icons-material'
 const Testimonial = ({ testimonialArr }) => {
     return (
         <>
-            <section className={Styles.testimonial}>
+            <section className={`${Styles.testimonial} mt-3`}>
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
