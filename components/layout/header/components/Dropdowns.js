@@ -24,7 +24,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                                 { id: "services-menu-4.4", link: "/boilers-service/", text: "BOILERS SERVICE" }
                             ]
                         },
-                        { id: "services-menu-5", link: "/tankles-water-heaters/", text: "TANKLES WATER HEATERS", submenu: null },
+                        { id: "services-menu-5", link: "/tankless-water-heaters/", text: "TANKLESS WATER HEATERS", submenu: null },
                         { id: "services-menu-6", link: "/rebates-and-promotions/", text: "REBATES AND PROMOTIONS", submenu: null },
                         { id: "services-menu-7", link: "/emergency/", text: "EMERGENCY", submenu: null },
                         { id: "services-menu-8", link: "/lennox-hvac/", text: "LENNOX HVAC", submenu: null },

@@ -99,8 +99,8 @@ const Navbar = () => {
                             </ul>
                           </li>
                           <li className="nav-item">
-                            <Link href="/tankles-water-heaters/">
-                              <a className="nav-link dropdown-item">TANKLES WATER HEATERS</a>
+                            <Link href="/tankless-water-heaters/">
+                              <a className="nav-link dropdown-item">TANKLESS WATER HEATERS</a>
                             </Link>
                           </li>
                           <li className="nav-item">

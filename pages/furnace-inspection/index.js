@@ -42,8 +42,8 @@ const FurnaceInspection = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/furnace-inspection/" />
       </Head>
-      <CommonBanner bg={Banner} title="The best furnace repair and installation services in Canada" color="#fff" variant="h1" />
       <main>
+      <CommonBanner bg={Banner} title="The best furnace repair and installation services in Canada" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
