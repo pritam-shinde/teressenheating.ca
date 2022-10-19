@@ -19,7 +19,7 @@ const Different = ({ title, titleVariant, titleAlign, list }) => {
                                     list ?
                                         <Grid container>
                                             {
-                                                list.map(item => <Grid key={item} item xs={12} sm={6} md={4} lg={3}>
+                                                list.map(item => <Grid key={item} item xs={12} sm={6} md={4}>
                                                     <ListItem>
                                                         <ListItemIcon>
                                                             <FiCheckSquare className='text--blue' style={{fontSize:"1.5rem"}} />
