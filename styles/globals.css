@@ -48,6 +48,7 @@ h6 {
 
 h1 {
   font-size: var(--h1-desktop-size) !important;
+  text-transform: capitalize !important;
 }
 
 h2 {
@@ -402,7 +403,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
   color: var(--grey) !important;
 }
 
-.accordion-item{
+.accordion-item {
   border: none !important;
   margin-bottom: 1.5rem !important;
 }
@@ -423,16 +424,16 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
   background-position: center !important;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   background-color: #fff !important;
 }
 
-.accordion-button:focus{
+.accordion-button:focus {
   border: none !important;
   box-shadow: none !important;
 }
 
-.accordion-collapse.collapse.show{
+.accordion-collapse.collapse.show {
   transition: all 2s ease !important;
   -webkit-transition: all 2s ease !important;
   -moz-transition: all 2s ease !important;
@@ -440,32 +441,32 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
   -o-transition: all 2s ease !important;
 }
 
-.form-group{
+.form-group {
   margin-bottom: 1rem !important;
 }
 
-#whyChoose p{
+#whyChoose p {
   font-size: 1.1rem !important;
 }
 
-.MuiListItem-root{
+.MuiListItem-root {
   align-items: flex-start !important;
 }
 
-.MuiListItemIcon-root{
+.MuiListItemIcon-root {
   min-width: 2rem !important;
 }
 
-.MuiListItemText-root{
+.MuiListItemText-root {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
-.form-control{
+.form-control {
   padding: 1rem 2rem !important;
 }
 
-.uploadFile{
+.uploadFile {
   width: 100%;
   border: 1px solid #ced4da;
   padding: 1rem 2rem !important;
@@ -478,14 +479,73 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 }
 
 
-.trusted{
+.trusted {
   font-size: 1.5rem !important;
 }
 
-.sidebar-sticky{
+.sidebar-sticky {
   top: 20% !important;
 }
 
-#FeaturedHeatingServices h2, #FeaturedHeatingServices h3{
+#FeaturedHeatingServices h2,
+#FeaturedHeatingServices h3 {
   color: var(--white) !important;
+}
+
+#locationSec{
+  width: 100%;
+  height: auto;
+  background-image: url(../public/areas/ariabg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.locationBox {
+  --initialBgColor: #fff;
+  --slideBgColor: #0a2948;
+  background-image: linear-gradient(90deg, var(--initialBgColor) 0%, var(--initialBgColor) 50%, var(--slideBgColor) 50%, var(--slideBgColor) 100%);
+  background-size: 200%;
+  transition: background-position 1.5s cubic-bezier(.47, .1, 1, .63), color .2s linear !important;
+  transition-delay: 0.0s, 0.30s;
+  -webkit-transition: background-position 1.5s cubic-bezier(.47, .1, 1, .63), color .2s linear !important;
+  -moz-transition: background-position 1.5s cubic-bezier(.47, .1, 1, .63), color .2s linear !important;
+  -ms-transition: background-position 1.5s cubic-bezier(.47, .1, 1, .63), color .2s linear !important;
+  -o-transition: background-position 1.5s cubic-bezier(.47, .1, 1, .63), color .2s linear !important;
+  border: 1px solid #d6d6d6;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.locationBox:hover {
+  color: #fff;
+  cursor: pointer;
+  background-position: -100% 100%;
+  border: 1px solid #0a2948 !important;
+}
+
+
+.locationBox .title {
+  color: var(--blue) !important;
+  font-weight: 600 !important;
+}
+
+.locationBox:hover .title {
+  color: #fff !important;
+}
+
+.active {
+  background-image: linear-gradient(#0a2948, #0a2948);
+  transition: background-position 1s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+  border: 1px solid #0a2948 !important;
+  -webkit-transition: background-position 1s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+  -moz-transition: background-position 1s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+  -ms-transition: background-position 1s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+  -o-transition: background-position 1s cubic-bezier(.47, .1, 1, .63), color .2s linear;
+}
+
+.active .title {
+  color: #fff !important;
 }
