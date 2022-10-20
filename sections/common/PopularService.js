@@ -3,7 +3,7 @@ import React from 'react'
 import { BlueFilledBtn, SectionalHeading } from '../../components/components'
 import Styles from '../../styles/PopularService.module.css'
 
-const PopularService = () => {
+const PopularService = ({color}) => {
     return (
         <>
             <section className={`${Styles.PopularService} mt-3`}>
@@ -14,7 +14,7 @@ const PopularService = () => {
                                 <Grid container style={{ height: "inherit" }}>
                                     <Grid item xs={12} sm={10} md={8} className="me-start d-flex align-items-center" style={{ height: "inherit" }}>
                                         <Box>
-                                            <Typography className={Styles.head}>WE PROVIDE <span className='text--red'>MOST POPULAR REPAIR SERVICES</span></Typography>
+                                            <Typography className={Styles.head}>WE PROVIDE <span className={color == "red" ? 'text--red' : color == 'blue' ? 'text--blue' : null}>MOST POPULAR REPAIR SERVICES</span></Typography>
                                             <Box mt={3}>
                                                 <BlueFilledBtn navlink={true} btnlink="/contact/" btnTitle="Book An Appointment" />
                                             </Box>

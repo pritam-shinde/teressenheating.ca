@@ -213,7 +213,7 @@ const Navbar = () => {
                             </Link>
                           </li>
                           <li className="nav-item">
-                            <Link href="/brands-we-carry/">
+                            <Link href="/brand/">
                               <a className="nav-link dropdown-item">BRANDS WE CARRY</a>
                             </Link>
                           </li>

@@ -1,0 +1,9 @@
+.FeaturedCoolingService{
+    width: 100%;
+    height: auto;
+    background-image: url(../public/featuareCoolingService/cooling-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+

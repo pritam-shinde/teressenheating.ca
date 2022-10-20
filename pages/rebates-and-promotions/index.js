@@ -108,7 +108,7 @@ const RebatesAndPromotion = () => {
           </Grid>
         </Container>
         <FeaturedHeatingServices />
-        <PopularService />
+        <PopularService color="red" />
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quot" formVariant="h2" formtitleAlign="center" />

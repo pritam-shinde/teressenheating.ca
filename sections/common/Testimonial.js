@@ -38,7 +38,7 @@ const Testimonial = ({ testimonialArr }) => {
                                                     className="py-5"
                                                 >
                                                     {
-                                                        testimonialArr.map(item => <SwiperSlide key={item.id}>
+                                                        testimonialArr.map(item => <SwiperSlide key={item.customerName}>
                                                             <Box className='"d-flex"'>
                                                                 <Box className="flex-shrink-0">
                                                                     <FormatQuote className='text--blue' style={{ fontSize: "5rem", color: "var(--blue) !important" }} />

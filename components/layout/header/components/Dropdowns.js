@@ -70,7 +70,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                     menu === "about" ? [
                         { id: "about-menu-1", link: "/write-a-review/", text: "WRITE A REVIEW" },
                         { id: "about-menu-2", link: "/careers/", text: "CAREERS" },
-                        { id: "about-menu-3", link: "/brands-we-carry/", text: "BRANDS WE CARRY" },
+                        { id: "about-menu-3", link: "/brand/", text: "BRANDS WE CARRY" },
                         { id: "about-menu-4", link: "/covid-19/", text: "COVID-19" },
                     ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
                         <Link href={item.link}>
