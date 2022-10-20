@@ -60,8 +60,8 @@ const Boiler = () => {
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Typography className='para'>Teressen Boiler repairing services in Canada can help with any problems that arise with your boiler; whether you need boiler replacement or some guidance for boiler installation. We offer the best boiler repairing services that can give you a variety of solutions for your home's comfort needs.</Typography>
-                                <Typography className='para'>We have quality solutions for all your problems and help you solve any issues that come up with your home's heating system. </Typography>
+                                <Typography className='para'>Teressen Boiler repairing services in Canada can help with any problems that arise with your boiler; whether you need boiler replacement or some guidance for boiler installation. We offer the best boiler repairing services that can give you a variety of solutions for your home&apos;s comfort needs.</Typography>
+                                <Typography className='para'>We have quality solutions for all your problems and help you solve any issues that come up with your home&apos;s heating system. </Typography>
                               </Box>
                             </Grid>
                             <Grid item xs={12} className="m-0 pt-0">
@@ -141,7 +141,7 @@ const Boiler = () => {
                             <Grid item xs={12}>
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Why choose Teressen boiler maintenance and repair services?' />
-                                <Typography className='para'>Teressen delivers top-level products and is a reliable boiler partner to support your home's safer operation. Just install, a top-of-the-line boiler system in your home to provide you with energy-saving options.</Typography>
+                                <Typography className='para'>Teressen delivers top-level products and is a reliable boiler partner to support your home&apos;s safer operation. Just install, a top-of-the-line boiler system in your home to provide you with energy-saving options.</Typography>
 
                               </Box>
                             </Grid>
