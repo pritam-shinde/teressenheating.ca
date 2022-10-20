@@ -136,7 +136,7 @@ const HeatingService = () => {
                                 <Typography className='para'>If you already have a boiler installed at your home, then you need to check that it is performing effectively by scheduling yearly maintenance. Boilers begin to lose their efficiency as they get old. Also, when you call us, we can identify the potential issues you have in the boilers and fix them before winter.</Typography>
                                 <SectionalHeading variant='h4' simpletext='Call Teressen heating ltd to discuss your boiler heating problems:'/> 
                                 
-                                <Typography className='para'>From furnaces to boilers to heat pumps, you have so many options to choose from when it comes to keeping your space comfortable. You need to select a heating system that works according to your city's climate, living space, and budget. So, when you call our heating experts we will review your requirements and help you get the perfect boiler for your home. Our experts can also perform reliable boiler repair and maintenance when needed.</Typography>
+                                <Typography className='para'>From furnaces to boilers to heat pumps, you have so many options to choose from when it comes to keeping your space comfortable. You need to select a heating system that works according to your city&apos;s climate, living space, and budget. So, when you call our heating experts we will review your requirements and help you get the perfect boiler for your home. Our experts can also perform reliable boiler repair and maintenance when needed.</Typography>
                               </Box>
                             </Container>
                           </section>

@@ -65,7 +65,7 @@ const BoilerMaintainance = () => {
                           </Grid>
                           <Grid item xs={12} className="m-0 pt-0">
                             <Box>
-                              <Typography className='para'>We understand how crucial is your boiler in maintaining your home's cooling and heating system. People living in Canada know this all too well, hence they rely on us for the best services around. Our team of experts comes right away and fixes everything for you. So, just call them today and tell them about your boiler maintenance issues.</Typography>
+                              <Typography className='para'>We understand how crucial is your boiler in maintaining your home&apos;s cooling and heating system. People living in Canada know this all too well, hence they rely on us for the best services around. Our team of experts comes right away and fixes everything for you. So, just call them today and tell them about your boiler maintenance issues.</Typography>
                               <Typography className='para'>Our clients who have experienced boiler maintenance issues know how inconvenient it gets to deal with all the problems alone. Hence, we are your savior and we make sure that everything goes well. Our team of experts takes the plunge and makes sure that you are back up in no time. Our technicians are trained for any problem which you face with your boiler. So, never hesitate to call us if anything comes up with your repair or maintenance issues at home.
                               </Typography>
                             </Box>
