@@ -9,7 +9,7 @@ import Image from 'next/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 
 
-const index = () => {
+const Boiler = () => {
   const [width, setWidth] = useState()
 
   useEffect(() => {
@@ -190,4 +190,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Boiler
