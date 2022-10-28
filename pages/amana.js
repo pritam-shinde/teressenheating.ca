@@ -6,7 +6,7 @@ import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, Faq
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
 import { CommonBanner} from '../components/components'
 import Image from 'next/image'
-import Carrier1 from '../public/brands/b3.png'
+import BrandLogo from '../public/brand-page/Layer-120.jpg'
 import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/brands/bbb.png'
 import Technical from '../public/brands/technical.jpg'
@@ -68,9 +68,9 @@ const Amana = () => {
                           <Image src={BlueLogo} alt="teressen heating" />
                         </Box>
                       </Grid>
-                      <Grid item xs={6}>
+                      <Grid item xs={6} className="d-flex align-items-center">
                         <Box p={3}>
-                          <Image src={Carrier1} alt="carrier" />
+                          <Image src={BrandLogo} alt="carrier" />
                         </Box>
                       </Grid>
                     </Grid>

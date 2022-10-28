@@ -6,7 +6,7 @@ import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, Faq
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import Carrier from '../public/brands/b3.png'
+import BrandLogo from '../public/brand-page/Layer-108.jpg'
 import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/brands/bbb.png'
 import Technical from '../public/brands/technical.jpg'
@@ -67,9 +67,9 @@ const Lennox = () => {
                               <Image src={BlueLogo} alt="teressen heating" />
                             </Box>
                           </Grid>
-                          <Grid item xs={6}>
+                          <Grid item xs={6} className="d-flex align-items-center">
                             <Box p={3}>
-                              <Image src={Carrier} alt="carrier" />
+                              <Image src={BrandLogo} alt="carrier" />
                             </Box>
                           </Grid>
                         </Grid>
@@ -85,7 +85,6 @@ const Lennox = () => {
                                   </ListItemIcon>
                                   <ListItemText primary={<strong>SERVICE</strong>} />
                                 </ListItem>
-
                                 <ListItem>
                                   <ListItemIcon>
                                     <CheckCircleOutline className='text--blue' />

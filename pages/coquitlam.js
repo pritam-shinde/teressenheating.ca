@@ -36,7 +36,7 @@ const Coquitlam = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's AC installation services in Coquitlam will give you the best of everything" color="#fff" />
+        <CommonBanner bg={Banner} title="Coquitlam" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const Coquitlam = () => {
                       <Image src={CoquitlamLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen&apos;s AC installation services in Coquitlam will give you the best of everything</Typography>
                       <Typography className='para'>When it comes to furnace installation, heating and maintenance, we have always been one of the leading brands to help you with quality AC installation services in Coquitlam. We make sure that everything is done at a relative pace with affordable pricing. We also make sure that you don&apos; have to worry about anything. We take the charge of making sure that your tune-ups are done regularly in Coquitlam and nearby areas. You can easily book us online or can call us for quick assistance. Our executives will make sure to solve all your queries and provide reliable and trustworthy services.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />

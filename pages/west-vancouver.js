@@ -36,7 +36,7 @@ const WestVancouver = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's heating and air conditioning services in West Vancouver" color="#fff" />
+        <CommonBanner bg={Banner} title="West Vancouver" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const WestVancouver = () => {
                       <Image src={WestVancouverLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen&apos;s heating and air conditioning services in West Vancouver</Typography>
                       <Typography className='para'>Now get the best installation, tune-ups, repair, and replacement services for your Central home heating systems in West Vancouver and its nearby areas. </Typography>
                       <Typography className='para'>We provide professional furnace installation services from the certified HVAC technicians available near you. Teressen&apos;s technicians and installers are licensed professionals who take care of everything. We have experts who assure comfort and happy living for you and your loved ones.</Typography>
                       <Typography className='para'>We are one of the best heating and cooling service experts in West Vancouver. So, if you are facing any issues with heating and cooling problems, you already know whom to call, right?</Typography>

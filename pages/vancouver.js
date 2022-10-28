@@ -38,7 +38,7 @@ const Vancouver = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's furnace installer services in Burnaby are altogether a different experience" color="#fff" />
+        <CommonBanner bg={Banner} title="Vancouver" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -49,6 +49,7 @@ const Vancouver = () => {
                       <Image src={VancouverLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
                       <Typography className='para'>Teressen&apos;s heating and air conditioning services in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
                       <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only HVAC suppliers in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>

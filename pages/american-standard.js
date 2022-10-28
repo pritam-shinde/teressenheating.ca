@@ -6,7 +6,7 @@ import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, Faq
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import Carrier1 from '../public/brands/b3.png'
+import BrandLogo from '../public/brand-page/Layer-121.jpg'
 import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/brands/bbb.png'
 import Technical from '../public/brands/technical.jpg'
@@ -47,7 +47,7 @@ const AmericanStandard = () => {
         <link rel="canonical" href="/about-us/" />
       </Head>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Carrier" color="#fff" variant="h2" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="American Standard" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>
@@ -62,9 +62,9 @@ const AmericanStandard = () => {
                               <Image src={BlueLogo} alt="teressen heating" />
                             </Box>
                           </Grid>
-                          <Grid item xs={6}>
+                          <Grid item xs={6} className="d-flex align-items-center">
                             <Box p={3}>
-                              <Image src={Carrier1} alt="carrier" />
+                              <Image src={BrandLogo} alt="carrier" />
                             </Box>
                           </Grid>
                         </Grid>

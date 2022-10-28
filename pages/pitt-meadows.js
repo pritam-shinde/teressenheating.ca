@@ -36,7 +36,7 @@ const PittMeadows = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen is one of the best heating services in Pitt Meadows that takes care of everything" color="#fff" />
+        <CommonBanner bg={Banner} title="Pitt Meadows" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const PittMeadows = () => {
                       <Image src={PittMeadowsLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen Is One Of The Best Heating Services In Pitt Meadows That Takes Care Of Everything</Typography>
                       <Typography className='para'>These days, many people are facing issues with furnace installation, maintenance, and repair services. And we understand your worries and concerns. So, whenever you have any issues related to furnace installation, maintenance, and repair, we are a name. We make sure that everything is done on time so that you live a stress-free life. Our certified technicians are always there for you to look after everything. Our clients have always relied on us because they know that we will serve them with the best. You can also read our client reviews to know more about our services. At Pitt Meadows, we are one of the most renowned heating service providers who will never leave you disappointed.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />

@@ -36,7 +36,7 @@ const WhiteRock = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's furnace installation, and tune-up services in White-rock rocks" color="#fff" />
+        <CommonBanner bg={Banner} title="White Rock" color="#fff" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const WhiteRock = () => {
                       <Image src={WhiteRockLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen&apos;s Furnace Installation, And Tune-Up Services In White-Rock Rocks</Typography>
                       <Typography className='para'>We get appreciated for our heating installation services in White-rock for the amount of work we do for all clients. No matter what, we always consider our clients as our kings. Hence, we provide quality heating services in White rock that makes you worry less and smile more. Also, we make sure that our installation, repair, and maintenance services should suit your budget too. So, once you give us a call, we make sure that your work is done very easily. We would also like you to rate our services so that there is always a scope for improvement for us.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />

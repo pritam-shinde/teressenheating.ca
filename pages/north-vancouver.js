@@ -36,7 +36,7 @@ const NorthVancouver = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's heating and air conditioning services are now in North Vancouver" color="#fff" />
+        <CommonBanner bg={Banner} title="North Vancouver" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const NorthVancouver = () => {
                       <Image src={NorthVancouverLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen&apos;s heating and air conditioning services are now in North Vancouver</Typography>
                       <Typography className='para'>To find the best installation and replacement services in North Vancouver, you need expert guidance. Teressen&apos;s best heating and air conditioning services, repairs, and tune-ups in North Vancouver are indeed one of the best services. We have certified experts who look after everything. They also make sure that you live a stress-free life. So, when you have installation, repair, and maintenance-related issues, we are just a call away. We will serve you with the best installation, maintenance, and repairing services. Our clients have also reviewed us as one of the best air conditioning services in North Vancouver.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />

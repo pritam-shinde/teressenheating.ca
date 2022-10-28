@@ -36,7 +36,7 @@ const Richmond = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's quality, affordability, and trust-worthy air conditioning installation services in Richmond" color="#fff" />
+        <CommonBanner bg={Banner} title="Richmond" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const Richmond = () => {
                       <Image src={RichmondLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen&apos;s Quality, Affordability, And Trust-Worthy Air Conditioning Installation Services In Richmond</Typography>
                       <Typography className='para'>A brand&apos;s unique identity is its people. We have a troop of certified and experienced technicians who make sure that everything goes well. We also make sure that our heating and air conditioning services in Richmond are one of the best services our people can get. Right from tune-ups to furnace installation, everything is done to guarantee an easy-breeze life for all our clients. We understand your concerns and also look into the fact that you are assured of our quality services. We believe in resolving issues and coming up with expert solutions. Hence, people believe in us and help us with their reviews. </Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />

@@ -36,7 +36,7 @@ const Tsawwasses = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's water heater repair services in Tsawaassen will never leave you disappointed" color="#fff" />
+        <CommonBanner bg={Banner} title="Tsawaassen" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const Tsawwasses = () => {
                       <Image src={TsawwassenLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen&apos;s water heater repair services in Tsawaassen will never leave you disappointed</Typography>
                       <Typography className='para'>We are a name for reliability, affordability, and quality. We have been considered one of the best air conditioning installation, maintenance, and repair service providers in Tsawwassen. We have a team of certified experts who look into the tune-up matters and also make sure that you are served with the best. We understand all your concerns and give you expert advice. We start addressing your concerns right from your first call till things are resolved in later stages. You simply have to leave all your worries on us and we will get it done as soon as possible.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />

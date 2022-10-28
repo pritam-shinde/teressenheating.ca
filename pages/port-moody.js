@@ -36,7 +36,7 @@ const PortMoody = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Teressen’s air conditioning services at Port Moody will make your mood" color="#fff" />
+        <CommonBanner bg={Banner} title="Port Moody" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +47,7 @@ const PortMoody = () => {
                       <Image src={PortMoodyLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
+                      <Typography variant='h1'>Teressen’s Air Conditioning Services At Port Moody Will Make Your Mood</Typography>
                       <Typography className='para'>We understand that air conditioning and heating issues are big problems. And calling an expert who understands your problem solves half your matter. Hence, we are available 24*7*365 days to personally understand your problems and provide expert help. We are spontaneous with solutions and make sure that things are done as the top priority. So, call us whenever you need expert guidance and we promise to be there for you through all thick and thins.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />

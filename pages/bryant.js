@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
 import Image from 'next/image'
-import Carrier1 from '../public/brands/b3.png'
+import BrandLogo from '../public/brand-page/Layer-103.jpg'
 import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/brands/bbb.png'
 import Technical from '../public/brands/technical.jpg'
@@ -67,9 +67,9 @@ const Brynt = () => {
                               <Image src={BlueLogo} alt="teressen heating" />
                             </Box>
                           </Grid>
-                          <Grid item xs={6}>
+                          <Grid item xs={6} className="d-flex align-items-center">
                             <Box p={3}>
-                              <Image src={Carrier1} alt="carrier" />
+                              <Image src={BrandLogo} alt="carrier" />
                             </Box>
                           </Grid>
                         </Grid>
