@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { SectionalHeading } from '../../components/components';
 import B1 from '../../public/brands/b1.jpg'
 import B2 from '../../public/brands/b2.jpg'
-import B3 from '../../public/brands/b3.jpg'
+import B3 from '../../public/brands/b3.png'
 import B4 from '../../public/brands/b4.jpg'
 
 const BrandSlider = () => {
