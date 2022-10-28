@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListIte
 import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled } from '../sections/sections'
+import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
@@ -126,7 +126,7 @@ const Lennox = () => {
                   </Grid>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={6} style={{ backgroundColor: "var(--blue) !important" }}>
+              <Grid item xs={12} md={6} id="brandDetails">
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
@@ -200,7 +200,8 @@ const Lennox = () => {
         </section>
 
         <FeaturedCoolingServices />
-        <PopularService color='blue' />
+        <PopularService color='red' />
+        <FeaturedHeatingServices />
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quot" formVariant="h2" formtitleAlign="center" />

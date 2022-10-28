@@ -6,7 +6,7 @@ import { FiCheckSquare } from 'react-icons/fi'
 const Different = ({ title, titleVariant, titleAlign, list }) => {
     return (
         <>
-            <section id="different">
+            <section className='my-3' id="different">
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">

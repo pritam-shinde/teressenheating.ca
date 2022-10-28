@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from '@mui/material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { AppointmentForm, CommonBanner, SectionalHeading } from '../components/components'
@@ -33,6 +33,7 @@ import Brand25 from '../public/brand-page/Layer-127.jpg'
 import Brand26 from '../public/brand-page/Layer-128.jpg'
 import Brand27 from '../public/brand-page/Layer-129.jpg'
 import Brand28 from '../public/brand-page/Layer-130.jpg'
+import { CheckCircle, CheckCircleOutline } from '@mui/icons-material'
 
 const Brand = () => {
   const [hydration, setHydration] = useState(false)
@@ -225,9 +226,27 @@ const Brand = () => {
                       <Grid container spacing={5}>
                         <Grid item xs={12} md={6}>
                           <Box>
-                            <SectionalHeading simpletext="Top-rated local expert to help with all of your home’s HVAC needs." variant="h2" />
-                            <Typography className='para'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Typography>
-                            <Typography className='para'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</Typography>
+                            <SectionalHeading simpletext="At Teressen, we service all your brands." variant="h2" />
+                            <List>
+                              <ListItem>
+                                <ListItemIcon>
+                                  <CheckCircleOutline className='text--blue' />
+                                </ListItemIcon>
+                                <ListItemText primary={<strong>HVAC services</strong>} secondary="We help you with same-day service, on-time and reliable technicians, and free estimates for installation." />
+                              </ListItem>
+                              <ListItem>
+                                <ListItemIcon>
+                                  <CheckCircleOutline className='text--blue' />
+                                </ListItemIcon>
+                                <ListItemText primary={<strong>24*7 emergency services</strong>} secondary="We help you with a wide range of services in different regions. You can get in touch with us for all kinds of HVAC work. So, call us at any point in time 24*7 without any stress or worry." />
+                              </ListItem>
+                              <ListItem>
+                                <ListItemIcon>
+                                  <CheckCircleOutline className='text--blue' />
+                                </ListItemIcon>
+                                <ListItemText primary={<strong>We service all your brands</strong>} secondary="We do all your HVAC servicing work for all brands like Lennox, Rheem, Carrier, Godman, and American standards." />
+                              </ListItem>
+                            </List>
                           </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>

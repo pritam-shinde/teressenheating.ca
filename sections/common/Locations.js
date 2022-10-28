@@ -8,7 +8,7 @@ const Locations = () => {
     const router = useRouter();
     return (
         <>
-            <section id="locationSec">
+            <section className='my-3' id="locationSec">
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">

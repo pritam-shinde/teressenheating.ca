@@ -27,7 +27,7 @@ const Careers = () => {
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Career" color="#fff" />
-        <section>
+        <section id="brandDetails">
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">

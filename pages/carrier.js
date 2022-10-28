@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListIte
 import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled } from '../sections/sections'
+import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
@@ -39,10 +39,10 @@ const Carrier = () => {
   ]
 
   const brandDetailparagraph = [
-    
-      {id:'branddetail-1',text:'You would like to know what kind of repairing services you can get from Teressens HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes.'},
-      {id:'branddetail-2',text:'We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Teressens multiple business licenses can fix any brand and provide you with the best possible assistance.'}
-    
+
+    { id: 'branddetail-1', text: 'You would like to know what kind of repairing services you can get from Teressens HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes.' },
+    { id: 'branddetail-2', text: 'We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Teressens multiple business licenses can fix any brand and provide you with the best possible assistance.' }
+
   ]
   return (
     <>
@@ -52,8 +52,8 @@ const Carrier = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/carrier/" />
       </Head>
-      <CommonBanner bg={BoilerMaintainanceBanner} title="Carrier" color="#fff" variant="h2" />
       <main>
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Carrier" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>
@@ -127,11 +127,11 @@ const Carrier = () => {
                   </Grid>
                 </Box>
               </Grid>
-              <Grid item xs={12} md={6} style={{ backgroundColor: "var(--blue) !important" }}>
+              <Grid item xs={12} md={6} id="brandDetails">
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Get certified carrier HVAC repairing services at your doorstep' brandDetaillArr={brandDetailparagraph}/>
+                      <BrandDetails title='Get certified carrier HVAC repairing services at your doorstep' brandDetaillArr={brandDetailparagraph} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -176,17 +176,16 @@ const Carrier = () => {
                   <Typography className='para'>Installing a Carrier furnace as soon as possible is essential throughout the winter. And if your furnace suffers a breakdown, then you need a repair.</Typography>
                   <Typography className='para'>Also, ignoring routine furnace maintenance can increase energy costs, and make parts of the furnace work harder, causing the furnace system to malfunction completely. So, give us a call and we will be there as your Carrier furnace technician.</Typography>
                 </Box>
-
               </Grid>
             </Grid>
           </Container>
-        </section> 
+        </section>
         <FeaturedCoolingServices />
-        <PopularService color='blue' />
+        <PopularService color='red' />
+        <FeaturedHeatingServices />
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quot" formVariant="h2" formtitleAlign="center" />
-
       </main>
     </>
   )

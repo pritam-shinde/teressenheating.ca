@@ -20,7 +20,7 @@ const CertificationSlider = () => {
     }, [width])
     return (
         <>
-            <section>
+            <section className='my-3'>
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
