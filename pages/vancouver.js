@@ -1,4 +1,4 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Grid, Container, Box, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import Head from 'next/head'
 import React from 'react'
 import Banner from '../public/areas/area2.jpg'
@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import VancouverLoc from '../public/vancouver/vancouver.jpg'
 import Image from 'next/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import { CheckCircleOutline } from '@mui/icons-material'
 
 const Vancouver = () => {
 
@@ -49,9 +50,9 @@ const Vancouver = () => {
                       <Image src={VancouverLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h1'>Teressen&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
-                      <Typography className='para'>Teressen&apos;s heating and air conditioning services in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
-                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only HVAC suppliers in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
+                      <Typography variant='h1'>Teressen&apos;s 24*7 heating services in Vancouver offer you a stress-free living</Typography>
+                      <Typography className='para'>Teressen&apos;s heating and air conditioning services in Vancouver are probably one of the best services you will get in the Vancouver area. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
+                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only HVAC suppliers in Vancouver you can easily count on. Our heating services in Vancouver are undoubtedly the best. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>
