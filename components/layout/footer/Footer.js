@@ -57,6 +57,12 @@ const Footer = () => {
                                                     <li><Link href="/contact-us/">
                                                         <a className={`${Styles.quickLink} text-white`}>Contact</a>
                                                     </Link></li>
+                                                    <li><Link href="/privacy-policy/">
+                                                        <a className={`${Styles.quickLink} text-white`}>Privacy Policy</a>
+                                                    </Link></li>
+                                                    <li><Link href="/terms-of-service/">
+                                                        <a className={`${Styles.quickLink} text-white`}>Term Of Service</a>
+                                                    </Link></li>
                                                 </ul>
                                             </Box>
                                         </Box>
