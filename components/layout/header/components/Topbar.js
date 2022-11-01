@@ -25,12 +25,10 @@ const Topbar = () => {
                                     <Box>
                                         <Grid container spacing={5}>
                                             <Grid item xs={12} sm={8} className="d-flex justify-content-end align-items-center">
-                                                <Box>
                                                     <strong className='callText'><small className='text--grey'>24/7 Emergency Service</small></strong>
-                                                    <Box mt={1}>
+                                                    <Box ml={2} mt={1}>
                                                         <GreyFilledBtn anchor={true} btnlink="tel:604-363-6622" btnTitle="604-363-6622" />
                                                     </Box>
-                                                </Box>
                                             </Grid>
                                             <Grid item xs={12} sm={4} className="d-flex justify-content-end align-items-center">
                                                 <Box>
