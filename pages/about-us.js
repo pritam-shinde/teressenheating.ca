@@ -44,14 +44,33 @@ const AboutUs = () => {
                       <Box>
                         <SectionalHeading simpletext="Lorem ipsum dolor sit amet" variant="h2" align="left" />
                         <Box>
-                          <Typography className='para'>Teressen Heating and Air Conditioning is a HVAC repair and installation company servicing Metro Vancouver since 2010. We service furnaces, boilers, fireplaces, air conditioners, heat pumps, hot water tanks, air duct cleaning, and more.</Typography>
-                          <Typography className='para'>Everyday more and more people are choosing us for our fast, friendly and quality service. We are a locally operated company in Vancouver BC and fully licensed and insured for your complete protection and peace of mind. Whether you need a minor or a major service, you can expect us to provide the highest quality and professional service. We are bonded, Insured, licensed and professionally trained in the industry and in the individual services we provide to make sure you are fully satisfied. Your satisfaction is our policy.</Typography>
-                          <Typography className='para'>You can rest assured that we are an experienced company with expert knowledge in heating & cooling systems. Our HVAC industry standard service is ideal for your residential and business environments. We strictly adhere to the manufacturer’s recommendations and guidelines.</Typography>
-                          <Typography className='para'>You can depend on us to respond quickly to your needs and provide you with complete information before proceeding with any work.</Typography>
+                          <Typography className='para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id sem eget purus viverra blandit eget gravida dolor. Sed tristique faucibus neque at mollis. Fusce convallis lacus nisl, ac cursus sapien placerat eget.</Typography>
+                          <Typography className='para'>Varius sed id ligula. suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullanm tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum vitae, fringilla arcu. In aliquam purus sit amet libero pharetra consequat.</Typography>
+                          <Typography className='para'>varius sed id ligula. Suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullanm tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum viverra nulla. Nullam tellus dolor, aliquam id turpis vitae, finibus ullamcorper</Typography>
                         </Box>
                       </Box>
                     </Grid>
                   </Grid>
+                </Box>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
+        <section>
+          <Container maxWidth="xxl">
+            <Grid container>
+              <Grid item xs={12} md={10} className="mx-auto">
+                <Box mb={3}>
+                  <SectionalHeading simpletext="Lorem ipsum dolor sit amet, consectetur adipiscing elit" variant="h2" />
+                  <Typography className='para'>Lorem ipSum dolor sit amet, consectetur adipisCing elit. Nunc id sem eget purus viverra Lorem ipSum dolor sit amet, consectetur adipisCing elit. Nunc id sem eget purus viverra blandit eget gravida dolor. sed tristique faucibus neque at mollis. Fusce convallis lacus nisl, ac cursus sapien placerat eget. varius sed id ligula. Suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullam tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum vitae, fringilla arcu. In aliquam purus sit amet libero pharetra consequat.blandit eget gravida dolor. sed tristique faucibus neque at mollis. Fusce convallis lacus nisl, ac cursus sapien placerat eget. varius sed id ligula. Suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullam tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum vitae, fringilla arcu. In aliquam purus sit amet libero pharetra consequat.</Typography>
+                </Box>
+                <Box mb={3}>
+                  <SectionalHeading simpletext="Lorem ipsum dolor sit amet, consectetur adipiscing elit" variant="h2" />
+                  <Typography className='para'>Lorem ipSum dolor sit amet, consectetur adipisCing elit. Nunc id sem eget purus viverra Lorem ipSum dolor sit amet, consectetur adipisCing elit. Nunc id sem eget purus viverra blandit eget gravida dolor. sed tristique faucibus neque at mollis. Fusce convallis lacus nisl, ac cursus sapien placerat eget. varius sed id ligula. Suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullam tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum vitae, fringilla arcu. In aliquam purus sit amet libero pharetra consequat.blandit eget gravida dolor. sed tristique faucibus neque at mollis. Fusce convallis lacus nisl, ac cursus sapien placerat eget. varius sed id ligula. Suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullam tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum vitae, fringilla arcu. In aliquam purus sit amet libero pharetra consequat.</Typography>
+                </Box>
+                <Box mb={3}>
+                  <SectionalHeading simpletext="Lorem ipsum dolor sit amet, consectetur adipiscing elit" variant="h2" />
+                  <Typography className='para'>Lorem ipSum dolor sit amet, consectetur adipisCing elit. Nunc id sem eget purus viverra Lorem ipSum dolor sit amet, consectetur adipisCing elit. Nunc id sem eget purus viverra blandit eget gravida dolor. sed tristique faucibus neque at mollis. Fusce convallis lacus nisl, ac cursus sapien placerat eget. varius sed id ligula. Suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullam tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum vitae, fringilla arcu. In aliquam purus sit amet libero pharetra consequat.blandit eget gravida dolor. sed tristique faucibus neque at mollis. Fusce convallis lacus nisl, ac cursus sapien placerat eget. varius sed id ligula. Suspendisse volutpat fringilla mi et dapibus. Duis tellus sem, vestibulum dignissim congue congue, viverra vel nulla. Nullam tellus dolor, aliquam id turpis vitae, finibus ullamcorper orci. Vestibulum non fringilla dolor. Integer vitae turpis pellentesque, porttitor ipsum vitae, fringilla arcu. In aliquam purus sit amet libero pharetra consequat.</Typography>
                 </Box>
               </Grid>
             </Grid>
