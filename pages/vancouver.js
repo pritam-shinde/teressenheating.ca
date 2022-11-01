@@ -39,7 +39,7 @@ const Vancouver = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Vancouver" color="#fff" variant="h2" />
+        <CommonBanner bg={Banner} title="24*7 Heating Services Vancouver" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

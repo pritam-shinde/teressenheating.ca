@@ -37,7 +37,7 @@ const Burnaby = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Burnaby" color="#fff" variant="h2" />
+        <CommonBanner bg={Banner} title="HAVC Burnaby - Furnace Installer Services" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
