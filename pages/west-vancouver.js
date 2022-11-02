@@ -30,10 +30,10 @@ const WestVancouver = () => {
   return (
     <>
       <Head>
-        <title>West Vancouver - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Heating and Air Conditioning Services in West Vancouver | Teressen</title>
+        <meta name="description" content="We provide heating and air conditioning services to homes and businesses in West Vancouver. We offer repairs, installation, consultation, and emergency service." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/west-vancouver/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="West Vancouver Heating and Cooling Services" color="#fff" variant="h2" />

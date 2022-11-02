@@ -35,8 +35,8 @@ const BoilerMaintainance = () => {
   return (
     <>
     <Head>
-      <title>Boiler Maintenance  - teressenheating.ca</title>
-      <meta name="description" content="" />
+      <title>Boiler Maintenance Services in Canada | Teressenheating</title>
+      <meta name="description" content="We offer boiler maintenance service in Canada, including cleaning, inspecting, repairing and replacing oil and gas fired boilers. For more visit our website." />
       <meta name="robots" content="index" />
       <link rel="canonical" href="/boilers-maintenance/" />
     </Head>

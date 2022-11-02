@@ -30,11 +30,11 @@ const Burnaby = () => {
   ]
   return (
     <>
-    <Head>
-        <title>Burnaby - teressenheating.ca</title>
-        <meta name="description" content="" />
+      <Head>
+        <title>Furnace Installer Services in Burnaby | Teressenheating</title>
+        <meta name="description" content="At Teressen Heating and Air Conditioning Ltd, we're committed to supplying the best furnace installation service in Burnaby. We offer free quotes and consultations." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/burnaby/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="HAVC Burnaby - Furnace Installer Services" color="#fff" variant="h2" />

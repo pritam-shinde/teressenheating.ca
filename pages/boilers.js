@@ -36,8 +36,8 @@ const Boiler = () => {
   return (
     <>
       <Head>
-        <title>Boiler - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Teressen Boiler Repair & Maintenance Services in Canada</title>
+        <meta name="description" content="Teressen provides full boiler servicing, maintenance, and repair services in Canada. We service all types of heating systems including natural gas, oil, electric." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers/" />
       </Head>

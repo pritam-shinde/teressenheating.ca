@@ -30,10 +30,10 @@ const NewWestminar = () => {
   return (
     <>
         <Head>
-        <title>New Westminster - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Furnace Repair & Air Conditioning Service in New Westminster</title>
+        <meta name="description" content="Complete furnace installation, air conditioning installation, furnace repair and maintenance, duct cleaning, and more. Serving New Westminster and many other areas." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/new-westminster/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="New Westminster" color="#fff" />

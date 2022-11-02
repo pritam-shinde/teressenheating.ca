@@ -30,10 +30,10 @@ const PortMoody = () => {
   return (
     <>
     <Head>
-        <title>Port Moody - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Air Conditioning Services and Heating in Port Moody | Teressenheating</title>
+        <meta name="description" content="If you need air conditioning or heating services contact the team at Teressen in Port Moody, BC. We are your local experts for all heating and air conditioning services." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/port-moody/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Port Moody" color="#fff" variant="h2" />

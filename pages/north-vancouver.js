@@ -30,10 +30,10 @@ const NorthVancouver = () => {
   return (
     <>
       <Head>
-        <title>North Vancouver - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Air Conditioning Services in North Vancouver | Teressenheating</title>
+        <meta name="description" content="Teressen Heating Canada offers comprehensive heating, ventilation and air conditioning services to commercial and residential clients in North Vancouver." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/north-vancouver/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Heating and air conditioning North Vancouver" color="#fff" variant="h2" />

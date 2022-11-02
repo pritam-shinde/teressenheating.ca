@@ -8,6 +8,10 @@ import { Footer, Header } from '../components/components';
 import { Box } from '@mui/material';
 import { ArrowCircleUp } from "@mui/icons-material"
 
+export function reportWebVitals(metric) {
+  console.log(metric)
+}
+
 function MyApp({ Component, pageProps }) {
   const [scrollHeight, setScrollHeight] = useState()
   useEffect(() => {

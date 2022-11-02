@@ -37,10 +37,10 @@ const FinancingOption = () => {
   return (
     <>
       <Head>
-        <title>Furnace Inspections - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Easy Financing Option for Heating & Cooling Services | Teressenheating</title>
+        <meta name="description" content="When you need a new HVAC system or other HVAC services, we offer many different financing options to make it easier for you. Our experts will help you make the choice." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/furnace-inspection/" />
+        <link rel="canonical" href="/financing-option/" />
       </Head>
       <CommonBanner bg={Banner} title="Teressen's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />
       <main>

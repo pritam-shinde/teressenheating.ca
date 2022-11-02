@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import { AppointmentForm, BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
 import AirConditioner from '../public/service/air-conditioner.jpg'
-import { CheckCircle } from '@mui/icons-material'
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Appointment } from '../sections/sections'
 import AcRepair from '../public/home/s3.jpg'
 import Banner from '../public/service/service-compressed.jpg'
@@ -15,8 +15,8 @@ const Service = () => {
   return (
     <>
       <Head>
-        <title>Service - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>HVAC Services - Heating & Cooling Services in Canada | Teressen</title>
+        <meta name="description" content="Teressen Heating and Air Conditioning offer home comfort services in Canada. Our goal is to make sure you have a comfortable home no matter what the weather is outside. " />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/services/" />
       </Head>
@@ -56,19 +56,19 @@ const Service = () => {
                           <List>
                             <ListItem>
                               <ListItemIcon>
-                                <CheckCircle />
+                                <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
                               <ListItemText primary="Air conditioning services and repair." />
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>
-                                <CheckCircle />
+                                <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
                               <ListItemText primary="Air conditioning maintenance services" />
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>
-                                <CheckCircle />
+                                <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
                               <ListItemText primary="Air conditioning installation services" />
                             </ListItem>
@@ -105,25 +105,25 @@ const Service = () => {
                       <List>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Presence of ice on the outdoor and indoor AC unit." />
                         </ListItem>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Burning smell from the unit." />
                         </ListItem>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Excess condensation happens at your indoor AC unit." />
                         </ListItem>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Unusual sounds coming from your HVAC system." />
                         </ListItem>
@@ -167,19 +167,19 @@ const Service = () => {
                       <List className='p-0 m-0'>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Heating repairing services" />
                         </ListItem>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Furnace services are done" />
                         </ListItem>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Heating installation services" />
                         </ListItem>
@@ -187,19 +187,19 @@ const Service = () => {
                       <List className='p-0 m-0'>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Heating repairs are done right" />
                         </ListItem>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Boiler Repair & Installation Services" />
                         </ListItem>
                         <ListItem>
                           <ListItemIcon>
-                            <CheckCircle />
+                            <CheckCircleOutline className='text--blue' />
                           </ListItemIcon>
                           <ListItemText primary="Boiler services are made" />
                         </ListItem>

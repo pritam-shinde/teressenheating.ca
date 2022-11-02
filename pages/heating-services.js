@@ -22,7 +22,7 @@ const HeatingService = () => {
     } else {
       setHydration(false)
     }
-  })
+  },[])
 
   const [width, setWidth] = useState()
 
@@ -53,8 +53,8 @@ const HeatingService = () => {
       {
         hydration ? <>
           <Head>
-            <title>Heating service - teressenheating.ca</title>
-            <meta name="description" content="" />
+            <title>Heating Services - Installation And Maintenance Services | Teressenheating</title>
+            <meta name="description" content="Teressen Heating & Air Conditioning offers heating installation, maintenance, and repair services to residential and commercial customers in Canada. Contact us." />
             <meta name="robots" content="index" />
             <link real="canonical" href="/heating-services/" />
           </Head>

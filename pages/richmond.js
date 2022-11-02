@@ -30,10 +30,10 @@ const Richmond = () => {
   return (
     <>
     <Head>
-        <title>Richmond - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Air Conditioning Installation Services in Richmond | Teressenheating</title>
+        <meta name="description" content="For all of your air conditioning installation services needs in Richmond, VA, choose Teressen Heating. We offer a wide range of high-quality HVAC services. " />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/richmond/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Richmond" color="#fff" variant="h2" />

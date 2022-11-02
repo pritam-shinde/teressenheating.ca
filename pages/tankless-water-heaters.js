@@ -36,10 +36,10 @@ const TanklesWaterHeater = () => {
   return (
     <>
       <Head>
-        <title>Tankless Water Heater - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Tankless Water Heater Maintenance Service in Canada | Teressenheating</title>
+        <meta name="description" content="Teressenheating is the best company to provide you with a tankless water heater maintenance service in Canada because of our expertise and experience." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/tanless-water-heater/" />
+        <link rel="canonical" href="/tankless-water-heaters/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Teressen tankless water heater maintenance service" color="#fff" variant="h1" />

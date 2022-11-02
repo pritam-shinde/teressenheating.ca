@@ -37,8 +37,8 @@ const AirConditioningService = () => {
   return (
     <>
     <Head>
-        <title>Air conditioning - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Air Conditioning Maintenance Services in Canada | Teressenheating</title>
+        <meta name="description" content="Teressen Heating is a home comfort company that provides AC Maintenance and repairs in Canada. We are committed to provide you with quality service and expert advice." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/air-conditioning-service/" />
       </Head>

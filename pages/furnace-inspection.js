@@ -37,8 +37,8 @@ const FurnaceInspection = () => {
   return (
     <>
       <Head>
-        <title>Furnace Inspections - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Furnace Installation and Repair Services in Canada | Teressenheating</title>
+        <meta name="description" content="Teressenheating is a furnace installation and repair service company with professional experience. We offer different types of furnance to meet your needs and budget." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/furnace-inspection/" />
       </Head>

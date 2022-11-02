@@ -7,3 +7,6 @@
     background-position: center;
 }
 
+.FeaturedCoolingService h2, .FeaturedCoolingService h3{
+    color: var(--white);
+}

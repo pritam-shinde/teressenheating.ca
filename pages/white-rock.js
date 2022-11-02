@@ -30,10 +30,10 @@ const WhiteRock = () => {
   return (
     <>
         <Head>
-        <title>White Rock - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Heating Installation Services in White-rock | Teressenheating</title>
+        <meta name="description" content="We offer a wide range of Heating Installation Services, from maintenance to repairs and replacement. Get a quote on a Heating Installation Service in White Rock." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/white-rock/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="White Rock" color="#fff" />

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/furnace-inspection/furnace-inspection.jpg'
+import Banner from '../public/emergency/emergency.jpg'
 import Furnace from '../public/furnace-inspection/furnace.jpg'
 import Image from 'next/image'
 import { CheckCircleOutline } from '@mui/icons-material'
@@ -36,8 +36,8 @@ const Emergency = () => {
   return (
     <>
       <Head>
-        <title>Emergency - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Affordable Heating and Cooling Emergency Services in Canada | Teressen</title>
+        <meta name="description" content="Teressen's heating services offer the best 24*7 emergency heating and cooling services in Canada. We serve the best affordable , trusted and quality service." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/emergency/" />
       </Head>

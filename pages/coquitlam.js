@@ -30,10 +30,10 @@ const Coquitlam = () => {
   return (
     <>
       <Head>
-        <title>Coquitlam- teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Quality AC Installation Services in Coquitlam | Teressenheating</title>
+        <meta name="description" content="If you need quality AC installation services in Coquitlam, contact Teressen Heating. We offer emergency service and financing options to make your home more comfortable." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/vancouver/" />
+        <link rel="canonical" href="/coquitlam/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Coquitlam" color="#fff" variant="h2" />
