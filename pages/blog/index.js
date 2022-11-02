@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, CardMedia, Container, Grid, Typography } from '@mui/material';
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
-import Banner from '../../public/blog/blog.jpg'
+import Banner from '../../public/blog/blog.webp'
 import { CommonBanner, GreyFilledBtn, BlogCommonSidebar, BlueFilledBtn } from '../../components/components'
 import Link from 'next/link';
 import Styles from '../../styles/Blog.module.css'

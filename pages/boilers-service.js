@@ -7,7 +7,7 @@ import Banner from '../public/lennox-hvac/lennox.jpg'
 import Furnace from '../public/furnace-inspection/furnace.jpg'
 import Image from 'next/image'
 import { CheckCircleOutline } from '@mui/icons-material'
-import boiler from '../public/boiler/boiler-service.jpg'
+import boiler from '../public/boiler/boiler-service.webp'
 
 const BoilerService = () => {
   const [width, setWidth] = useState()

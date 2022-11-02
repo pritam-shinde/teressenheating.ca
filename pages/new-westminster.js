@@ -1,7 +1,7 @@
 import { Grid, Container, Box, Typography } from '@mui/material'
 import Head from 'next/head'
 import React from 'react'
-import Banner from '../public/areas/area2.jpg'
+import Banner from '../public/areas/area2.webp'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
 import NewWestminsterLoc from '../public/new-westminster/new-westminster.jpg'
 import Image from 'next/image'

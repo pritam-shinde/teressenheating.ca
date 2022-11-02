@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography, Button } from '@mui/material'
 import Head from 'next/head'
 import React, {useState} from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
-import Banner from '../public/career/career-bg.jpg'
+import Banner from '../public/career/career-bg.webp'
 import { FaqAndForm } from '../sections/sections'
 
 const Careers = () => {
@@ -27,7 +27,7 @@ const Careers = () => {
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Career" color="#fff" />
-        <section id="brandDetails">
+        <section>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">

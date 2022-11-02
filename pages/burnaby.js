@@ -1,9 +1,9 @@
 import { Grid, Container, Box, Typography } from '@mui/material'
 import Head from 'next/head'
 import React from 'react'
-import Banner from '../public/areas/area2.jpg'
+import Banner from '../public/areas/area2.webp'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
-import BurnabyLoc from '../public/burnaby/burnaby.jpg'
+import BurnabyLoc from '../public/burnaby/burnaby.webp'
 import Image from 'next/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head';
-import Banner from '../../public/blog/blog.jpg'
+import Banner from '../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner } from '../../components/components'
 import { Box, Container, Grid } from '@mui/material';
 

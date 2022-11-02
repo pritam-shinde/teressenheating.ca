@@ -5,8 +5,8 @@ import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, Fa
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Image from 'next/image'
 import { CheckCircleOutline } from '@mui/icons-material'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
-import Repair from '../public/boilerMaintanance/image.png'
+import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import Repair from '../public/boilerMaintanance/image.webp'
 
 const BoilerMaintainance = () => {
   const [width, setWidth] = useState()

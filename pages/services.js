@@ -8,7 +8,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Appointment } from '../sections/sections'
 import AcRepair from '../public/home/s3.jpg'
 import Banner from '../public/service/service-compressed.jpg'
-import Brands from '../public/brands/brands-logo.jpg'
+import Brands from '../public/brands/brands.webp'
 import Family from '../public/home/testimonial.jpg'
 
 const Service = () => {

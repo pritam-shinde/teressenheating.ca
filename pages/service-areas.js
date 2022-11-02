@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
 import React from 'react'
 import { CommonBanner } from '../components/components'
-import Banner from '../public/areas/area2.jpg'
+import Banner from '../public/areas/area2.webp'
 import { CertificationSlider, Different,Locations, FaqAndForm } from '../sections/sections'
 
 const ServiceArea = () => {
