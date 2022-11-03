@@ -4,9 +4,9 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/commercialHVAC/commercial_02.jpg';
+import Banner from '../public/commercialHVAC/commercial-2.webp';
 import { CheckCircleOutline } from '@mui/icons-material';
-import HVAC from '../public/commercialHVAC/hvac.jpg'
+import HVAC from '../public/commercialHVAC/hvac.webp'
 
 
 const CommercialHVAC = () => {

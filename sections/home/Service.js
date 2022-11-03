@@ -10,13 +10,13 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import s1 from '../../public/home/s1.jpg'
-import s2 from '../../public/home/s2.jpg'
-import s3 from '../../public/home/s3.jpg'
-import Boiler from '../../public/home/boiler.jpg'
-import Fireplace from '../../public/home/fireplace.jpg'
-import Heatpump from '../../public/home/heatpump.jpg'
-import Furnace from '../../public/home/furnace.jpg'
+import s1 from '../../public/home/s1.webp'
+import s2 from '../../public/home/s2.webp'
+import s3 from '../../public/home/s3.webp'
+import Boiler from '../../public/home/boiler.webp'
+import Fireplace from '../../public/home/fireplace.webp'
+import Heatpump from '../../public/home/heatpump.webp'
+import Furnace from '../../public/home/furnace.webp'
 import Link from 'next/link'
 import {ArrowForward} from '@mui/icons-material'
 

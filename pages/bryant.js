@@ -2,22 +2,31 @@ import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListIte
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.jpg'
+import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-103.jpg'
+import BrandLogo from '../public/brand-page/Layer-103.webp'
 import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/brands/bbb.png'
-import Technical from '../public/brands/technical.jpg'
-import WorkSafe from '../public/brands/workSafe.png'
+import BBB from '../public/certification/cer1.webp'
+import Technical from '../public/certification/cer3.webp'
+import WorkSafe from '../public/certification/cer2.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
 
 const Brynt = () => {
+  const [hydration,setHydration] = useState(false)
   const [width, setWidth] = useState()
 
   useEffect(() => {
     setWidth(window.innerWidth)
   }, [width])
+
+  useEffect(()=>{
+    if(typeof window !== undefined){
+      setHydration(true)
+    }else{
+      setHydration(false)
+    }
+  },[])
 
   const arrayFaq = [
     { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
@@ -45,7 +54,8 @@ const Brynt = () => {
   ]
   return (
     <>
-      <Head>
+      {
+        hydration ? <><Head>
         <title>Bryant - teressenheating.ca</title>
         <meta name="description" content="" />
         <meta name="robots" content="index" />
@@ -180,7 +190,8 @@ const Brynt = () => {
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quot" formVariant="h2" formtitleAlign="center" />
-      </main>
+      </main></> : "Loading"
+      }
     </>
   )
 }

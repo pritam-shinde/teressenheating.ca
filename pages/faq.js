@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
 import React from 'react'
 import { CommonBanner } from '../components/components'
-import Banner from '../public/faq/faq.jpg'
+import Banner from '../public/faq/faq.webp'
 import { FaqAndForm } from '../sections/sections'
 
 const FAQ = () => {

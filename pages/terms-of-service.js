@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import Head from 'next/head'
 import React from 'react';
 import { CommonBanner } from '../components/components';
-import Banner from '../public/tc/tc.jpg'
+import Banner from '../public/tc/tc.webp'
 
 const TNC = () => {
     return (

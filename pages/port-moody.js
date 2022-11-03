@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import Banner from '../public/areas/area2.webp'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
-import PortMoodyLoc from '../public/port-moody/port-moody.jpg'
+import PortMoodyLoc from '../public/port-moody/port-moody.webp'
 import Image from 'next/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 

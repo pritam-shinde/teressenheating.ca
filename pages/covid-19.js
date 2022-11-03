@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
-import Banner from '../public/covid/covivd-compressed.jpg'
-import BannerMob from '../public/covid/mob-compressed.jpg'
-import BannerTab from '../public/covid/tab-compressed.jpg'
+import Banner from '../public/covid/covivd-compressed.webp'
+import BannerMob from '../public/covid/mob-compressed.webp'
+import BannerTab from '../public/covid/tab-compressed.webp'
 import { AppointmentForm, CommonBanner } from '../components/components'
 import { Box, Container, Grid, Typography } from '@mui/material'
 

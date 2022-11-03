@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { CommonBanner, ServiceCommonSidebar, SectionalHeading } from '../components/components';
-import Heating from '../public/heating-service/heating-bg.jpg';
-import HeaterMachine from '../public/heating-service/heating.jpg'
+import Heating from '../public/heating-service/heating-bg.webp';
+import HeaterMachine from '../public/heating-service/heating.webp'
 import { Container, Box, Grid, Typography } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
 import {FeaturedHeatingServices ,HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider} from '../sections/sections'

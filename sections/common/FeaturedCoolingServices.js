@@ -25,7 +25,7 @@ const FeaturedCoolingServices = () => {
                                             <Box className="d-flex flex-column align-items-center">
                                                 <Box className='d-flex justify-content-center' style={{ height: "12rem" }}>
                                                     <Link href="/">
-                                                        <a style={{ width: "70% !important" }}>
+                                                        <a className="coolingIcon">
                                                             <img src={Service1.src} alt="Intallation" className='img-fluid' />
                                                         </a>
                                                     </Link>
@@ -39,7 +39,7 @@ const FeaturedCoolingServices = () => {
                                             <Box className="d-flex flex-column align-items-center">
                                                 <Box className='d-flex justify-content-center' style={{ height: "12rem" }}>
                                                     <Link href="/">
-                                                        <a style={{ width: "70% !important" }}>
+                                                        <a className="coolingIcon">
                                                             <img src={Service2.src} alt="Repair" className='img-fluid' />
                                                         </a>
                                                     </Link>
@@ -53,7 +53,7 @@ const FeaturedCoolingServices = () => {
                                             <Box className="d-flex flex-column align-items-center">
                                                 <Box className='d-flex justify-content-center' style={{ height: "12rem" }}>
                                                     <Link href="/">
-                                                        <a style={{ width: "70% !important" }}>
+                                                        <a className="coolingIcon">
                                                             <img src={Service3.src} alt="maintenance" className='img-fluid' />
                                                         </a>
                                                     </Link>

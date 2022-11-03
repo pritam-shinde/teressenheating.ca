@@ -3,11 +3,11 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/furnace-inspection/furnace-inspection.jpg'
-import Furnace from '../public/furnace-inspection/furnace.jpg'
+import Banner from '../public/furnace-inspection/banner.webp'
+import Furnace from '../public/furnace-inspection/furnace.webp'
 import Image from 'next/image'
 import { CheckCircleOutline } from '@mui/icons-material'
-import HomeFurnace from '../public/furnace-inspection/Ductwork-and-Ventilation.jpg'
+import HomeFurnace from '../public/furnace-inspection/Ductwork-and-Ventilation.webp'
 
 const FurnaceInspection = () => {
   const [width, setWidth] = useState()

@@ -3,13 +3,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import { AppointmentForm, BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
-import AirConditioner from '../public/service/air-conditioner.jpg'
+import AirConditioner from '../public/service/air-conditioner.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Appointment } from '../sections/sections'
-import AcRepair from '../public/home/s3.jpg'
-import Banner from '../public/service/service-compressed.jpg'
-import Brands from '../public/brands/brands.webp'
-import Family from '../public/home/testimonial.jpg'
+import AcRepair from '../public/home/s3.webp'
+import Banner from '../public/service/service-compressed.webp'
+import Family from '../public/home/testimonial.webp'
 
 const Service = () => {
   return (
@@ -221,7 +220,6 @@ const Service = () => {
                     <Grid item xs={12} md={6}>
                       <Box>
                         <Image src={Family} alt="family" />
-                        <Image src={Brands} alt="brands" />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>

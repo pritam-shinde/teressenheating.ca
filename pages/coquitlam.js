@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import Banner from '../public/areas/area2.webp'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
-import CoquitlamLoc from '../public/coquitlam/Coquitlam.jpg'
+import CoquitlamLoc from '../public/coquitlam/Coquitlam.webp'
 import Image from 'next/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 

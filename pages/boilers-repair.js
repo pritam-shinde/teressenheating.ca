@@ -3,11 +3,10 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/lennox-hvac/lennox.jpg'
-import Furnace from '../public/furnace-inspection/furnace.jpg'
+import Banner from '../public/lennox-hvac/lennox.webp'
 import Image from 'next/image'
 import { CheckCircleOutline } from '@mui/icons-material'
-import boiler from '../public/boiler/worker-repairing-water-heater.jpg'
+import boiler from '../public/boiler/worker-repairing-water-heater.webp'
 
 const BoilerRepair = () => {
   const [width, setWidth] = useState()

@@ -3,11 +3,8 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/lennox-hvac/lennox.jpg'
-import Furnace from '../public/furnace-inspection/furnace.jpg'
-import Image from 'next/image'
+import Banner from '../public/lennox-hvac/lennox.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
-import hvacLennox from '../public/lennox-hvac/dlsc-family_new.png.jpg'
 
 const RebatesAndPromotion = () => {
   const [width, setWidth] = useState()

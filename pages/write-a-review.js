@@ -1,10 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import { Box, Container, Grid, Typography } from '@mui/material'
-import Banner from '../public/write-review/review.jpg'
+import Banner from '../public/write-review/review.webp'
 import { CommonBanner, AppointmentForm } from '../components/components'
-import Family from '../public/home/testimonial.jpg'
-import AllBrands from '../public/brands/brands-logo.jpg'
+import Family from '../public/home/testimonial.webp'
 
 const WriteAReview = () => {
   return (
@@ -27,7 +26,6 @@ const WriteAReview = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={12} md={6}>
                         <img src={Family.src} alt="family" className="img-fluid" />
-                        <img src={AllBrands.src} alt="brands we service" className='img-fluid mt-3' />
                       </Grid>
                       <Grid item xs={12} md={6}>
                         <AppointmentForm />

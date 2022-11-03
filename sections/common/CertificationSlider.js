@@ -6,10 +6,10 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import certificate1 from '../../public/certification/cer1.png'
-import certificate2 from '../../public/certification/cer2.png'
-import certificate3 from '../../public/certification/cer3.png'
-import certificate4 from '../../public/certification/cer4.png'
+import certificate1 from '../../public/certification/cer1.webp'
+import certificate2 from '../../public/certification/cer2.webp'
+import certificate3 from '../../public/certification/cer3.webp'
+import certificate4 from '../../public/certification/cer4.webp'
 import { SectionalHeading } from '../../components/components';
 
 const CertificationSlider = () => {

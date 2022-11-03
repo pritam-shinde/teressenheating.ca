@@ -3,9 +3,7 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/financing-opt/financing-bg.jpg'
-import Furnace from '../public/furnace-inspection/furnace.jpg'
-import Image from 'next/image'
+import Banner from '../public/financing-opt/financing-bg.webp'
 import { CheckCircleOutline, Circle } from '@mui/icons-material'
 
 

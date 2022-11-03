@@ -2,7 +2,6 @@ import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typog
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { AppointmentForm, CommonBanner, SectionalHeading } from '../components/components'
-import Family from '../public/home/testimonial.jpg'
 import Image from 'next/image'
 import Banner from '../public/brand-page/brand.webp'
 import Brand1 from '../public/brand-page/Layer-103.webp'

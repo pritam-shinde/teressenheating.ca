@@ -3,7 +3,6 @@ import Head from 'next/head'
 import React, {useState} from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/career/career-bg.webp'
-import { FaqAndForm } from '../sections/sections'
 
 const Careers = () => {
   const [active, setActive] = useState('faq-0')

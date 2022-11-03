@@ -5,9 +5,9 @@ import { FeaturedCoolingServices, HighlySkilled, PopularService, Testimonial, Fa
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Image from 'next/image'
 import { CheckCircleOutline } from '@mui/icons-material'
-import airConditioner from '../public/cooling/cooling_service_02.jpg';
-import Cooling from '../public/cooling/cooling.jpg';
-import Air from '../public/cooling/ac.jpg'
+import airConditioner from '../public/cooling/cooling-service.webp';
+import Cooling from '../public/cooling/cooling.webp';
+import Air from '../public/cooling/ac.webp'
 
 const AirConditioningService = () => {
 

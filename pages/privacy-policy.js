@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
-import Banner from '../public/privacy-policy/pp.jpg'
+import Banner from '../public/privacy-policy/pp.webp'
 
 const PrivacyPolicy = () => {
     return (

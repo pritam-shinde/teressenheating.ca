@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import Banner from '../public/areas/area2.webp'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
-import PittMeadowsLoc from '../public/pitt-meadows/pitt-meadows.jpg'
+import PittMeadowsLoc from '../public/pitt-meadows/pitt-meadows.webp'
 import Image from 'next/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 
