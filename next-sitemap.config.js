@@ -3,5 +3,6 @@
 module.exports = {
     siteUrl: 'http://teressenheating.ca/',
     generateRobotsTxt: true,
-    exclude: ['/server.xml'], // <= exclude her
+    generateIndexSitemap: false,
+    sitemapSize: 9999,
   }
