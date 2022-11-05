@@ -16,8 +16,8 @@ const Topbar = () => {
                             <Grid container>
                                 <Grid item xs={12} sm={4} lg={6}>
                                     <Box>
-                                        <Link href="/" passHref>
-                                            <a className='navbar-brand'><img src={blueLogo.src} alt="'logo" /></a>
+                                        <Link legacyBehavior={true} href="/" passHref>
+                                            <a className='navbar-brand'><img src={blueLogo.src} alt="'logo" className='img-fluid' /></a>
                                         </Link>
                                     </Box>
                                 </Grid>

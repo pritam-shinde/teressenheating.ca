@@ -11,6 +11,7 @@ import certificate2 from '../../public/certification/cer2.webp'
 import certificate3 from '../../public/certification/cer3.webp'
 import certificate4 from '../../public/certification/cer4.webp'
 import { SectionalHeading } from '../../components/components';
+import Image from 'next/legacy/image';
 
 const CertificationSlider = () => {
     const [width, setWidth] = useState();
@@ -40,16 +41,16 @@ const CertificationSlider = () => {
                                         loop={true}
                                     >
                                         <SwiperSlide>
-                                            <img src={certificate1.src} alt="brand 1" className='img-fluid' />
+                                            <Image layout='responsive' src={certificate1} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={certificate2.src} alt="brand 1" className='img-fluid' />
+                                            <Image layout='responsive' src={certificate2} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={certificate3.src} alt="brand 1" className='img-fluid' />
+                                            <Image layout='responsive' src={certificate3} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={certificate4.src} alt="brand 1" className='img-fluid' />
+                                            <Image layout='responsive' src={certificate4} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                     </Swiper>
                                 </Box>

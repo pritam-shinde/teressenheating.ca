@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedCoolingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import airConditioner from '../public/cooling/cooling-service.webp';
 import Cooling from '../public/cooling/cooling.webp';
@@ -56,7 +56,7 @@ const AirConditioningService = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image src={Cooling} alt="Cooling" title='Cooling' />
+                                <Image src={Cooling} alt="Cooling" title='Cooling' layout='responsive' />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>
@@ -96,7 +96,7 @@ const AirConditioningService = () => {
                                <Typography className='para'>We have been providing air conditioning services for years to our clients. We are always available 24*7 for your quick assistance service. We meet your needs for routine air conditioning maintenance, air conditioning system replacement, and emergency air conditioning repairs. We also sell and install a wide range of high-efficiency air conditioning system that saves you money.</Typography>
                               </Grid>
                             <Grid item xs={12} md={6}>
-                              <Image src={Air} alt="Air Conditioner" />
+                              <Image src={Air} alt="Air Conditioner" layout='responsive' />
                             </Grid>
                           </Grid>
                         </Box>

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import BrandLogo from '../public/brand-page/Layer-128.webp'
 import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
@@ -60,12 +60,12 @@ const Ameristar = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image src={BlueLogo} alt="teressen heating" />
+                              <Image layout='responsive' src={BlueLogo} alt="teressen heating" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
                             <Box p={3}>
-                              <Image src={BrandLogo} alt="carrier" />
+                              <Image layout='responsive' src={BrandLogo} alt="carrier" />
                             </Box>
                           </Grid>
                         </Grid>
@@ -103,17 +103,17 @@ const Ameristar = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={BBB} alt="teressen heating" />
+                              <Image layout='responsive' src={BBB} alt="teressen heating" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={WorkSafe} alt="Work safe" />
+                              <Image layout='responsive' src={WorkSafe} alt="Work safe" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={Technical} alt="Technical" />
+                              <Image layout='responsive' src={Technical} alt="Technical" />
                             </Box>
                           </Grid>
                         </Grid>

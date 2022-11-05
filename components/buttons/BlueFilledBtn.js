@@ -6,7 +6,7 @@ const BlueFilledBtn = ({ navlink, anchor, btnlink, btnTitle }) => {
   return (
     <>
       {
-        navlink ? <Button className='blueFilledBtn'><Link href={btnlink}>{btnTitle}</Link></Button> : null
+        navlink ? <Button className='blueFilledBtn'><Link passHref prefetch={false} legacyBehavior href={btnlink}>{btnTitle}</Link></Button> : null
       }
       {
         anchor ? <Button className='blueFilledBtn'><a href={btnlink}>{btnTitle}</a></Button> : null

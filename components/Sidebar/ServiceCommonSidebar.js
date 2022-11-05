@@ -16,61 +16,61 @@ const ServiceCommonSidebar = () => {
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/heating-services/"><a className='text--black'>Heating</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/heating-services/"><a className='text--black'>Heating</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/air-conditioning-service/"><a className='text--black'>Cooling</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/air-conditioning-service/"><a className='text--black'>Cooling</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/commercial-hvac/"><a className='text--black'>Commercial HVAC</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/commercial-hvac/"><a className='text--black'>Commercial HVAC</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/boilers/"><a className='text--black'>Boiler</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/boilers/"><a className='text--black'>Boiler</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/tankles-water-heaters/"><a className='text--black'>Tankles Water Heaters</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/tankles-water-heaters/"><a className='text--black'>Tankles Water Heaters</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/rebates-and-promotions/"><a className='text--black'>Rebates And Promotions</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/rebates-and-promotions/"><a className='text--black'>Rebates And Promotions</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/emergency/"><a className='text--black'>Emergency</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/emergency/"><a className='text--black'>Emergency</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/lennox-hvac/"><a className='text--black'>Lennox HVAC</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/lennox-hvac/"><a className='text--black'>Lennox HVAC</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/financing-option/"><a className='text--black'>Financing Option</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/financing-option/"><a className='text--black'>Financing Option</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link href="/furnace-inspection/"><a className='text--black'>Furnace Inspection</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/furnace-inspection/"><a className='text--black'>Furnace Inspection</a></Link></strong>} />
                                 </ListItem>
                             </List>
                         </Box>

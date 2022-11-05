@@ -7,6 +7,7 @@ import { Container, Box, Grid, Typography } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
 import {FeaturedHeatingServices ,HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider} from '../sections/sections'
 import { List, ListItemIcon, ListItemText, ListItem } from '@mui/material';
+import Image from 'next/legacy/image'
 
 
 
@@ -74,7 +75,7 @@ const HeatingService = () => {
                                 <Grid container spacing={5}>
                                   <Grid item xs={12} md={6}>
                                     <Box style={{ textAlign: 'center' }}>
-                                      <img src={HeaterMachine.src} alt="heater machine" style={{ maxWidth: '70%' }} />
+                                      <Image src={HeaterMachine} alt="heater machine" style={{ maxWidth: '70%' }} layout="responsive" />
                                     </Box>
                                   </Grid>
                                   <Grid item xs={12} md={6}>

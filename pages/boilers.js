@@ -5,7 +5,7 @@ import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, Fa
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/boiler/boiler-2.webp'
 import ReapearWaterHeater from '../public/boiler/worker-repairing-water-heater.webp'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 
 
@@ -55,7 +55,7 @@ const Boiler = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image src={ReapearWaterHeater} alt="Reapear Water Heater" title='Worker Reapear Water Heater' />
+                                <Image layout='responsive' src={ReapearWaterHeater} alt="Reapear Water Heater" title='Worker Reapear Water Heater' />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>

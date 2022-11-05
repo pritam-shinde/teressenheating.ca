@@ -5,7 +5,7 @@ import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, Fa
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import BoilerInstallationBanner from '../public/boilerInstallation/boilerInstallation.webp'
 import Installation from '../public/boilerInstallation/image.webp'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 
 
@@ -56,7 +56,7 @@ const BoilerInstallation = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image src={Installation} alt="Boiler Installation" title='Boiler Installation' />
+                                <Image layout='responsive' src={Installation} alt="Boiler Installation" title='Boiler Installation' />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>

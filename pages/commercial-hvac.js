@@ -1,6 +1,6 @@
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from 'next/legacy/image'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -56,7 +56,7 @@ const CommercialHVAC = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image src={HVAC} alt="commercial HVAC" title='HVAC' />
+                                <Image layout='responsive' src={HVAC} alt="commercial HVAC" title='HVAC' />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>

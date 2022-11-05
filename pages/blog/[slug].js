@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Banner from '../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner } from '../../components/components'
 import { Box, Container, Grid } from '@mui/material';
+import Image from 'next/image'
 
 
 export const getServerSideProps = async (context) => {
@@ -36,7 +37,7 @@ const SingleBlog = ({ data, sidebarBlogs, category }) => {
 
     return (
         <>
-             {
+            {
                 hydration ? <>
                     {
                         blog ? <>
@@ -57,21 +58,23 @@ const SingleBlog = ({ data, sidebarBlogs, category }) => {
                                                         <Box py={5}>
                                                             <Grid container spacing={5}>
                                                                 <Grid item xs={12} md={8}>
-                                                                    <Box>
-                                                                        {
-                                                                            blog._embedded ? blog._embedded['wp:featuredmedia'] ? blog._embedded['wp:featuredmedia'][0] ? blog._embedded['wp:featuredmedia'][0].source_url ? <>
-                                                                                <Box mb={3}>
-                                                                                    <img src={blog._embedded['wp:featuredmedia'][0].source_url} alt={blog._embedded['wp:featuredmedia'][0].alt_text} className="img-fluid" />
-                                                                                </Box>
-                                                                            </> : null : null : null : null
+                                                                        <Box >
+                                                                            {
+                                                                                blog._embedded ? blog._embedded['wp:featuredmedia'] ? blog._embedded['wp:featuredmedia'][0] ? blog._embedded['wp:featuredmedia'][0].source_url ? <>
+                                                                                    <Box mb={3} id="blogContent">
+                                                                                        <img src={blog._embedded['wp:featuredmedia'][0].source_url} alt={blog._embedded['wp:featuredmedia'][0].alt_text} className="img-fluid" />
+                                                                                    </Box>
+                                                                                </> : null : null : null : null
 
-                                                                        }
-                                                                        {
-                                                                            blog.content ? blog.content.rendered ? <>
-                                                                                <Box dangerouslySetInnerHTML={{ __html: blog.content.rendered }} />
-                                                                            </> : null : null
-                                                                        }
-                                                                    </Box>
+                                                                            }
+                                                                        </Box>
+                                                                        <Box>
+                                                                            {
+                                                                                blog.content ? blog.content.rendered ? <>
+                                                                                    <Box dangerouslySetInnerHTML={{ __html: blog.content.rendered }} />
+                                                                                </> : null : null
+                                                                            }
+                                                                        </Box>
                                                                 </Grid>
                                                                 <Grid item xs={12} md={4}>
                                                                     <BlogCommonSidebar data={sidebarBlogs} category={category} />
@@ -88,7 +91,7 @@ const SingleBlog = ({ data, sidebarBlogs, category }) => {
                         </> : null
                     }
                 </> : "Loading..."
-            } 
+            }
         </>
     )
 }

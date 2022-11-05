@@ -84,7 +84,7 @@ const Blog = ({ data, category }) => {
                                 </Box>
                                 <Box className='flex-grow-1 ms-3'>
                                   {
-                                    item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h3'><Link href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
+                                    item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h3'><Link legacyBehavior={true} href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
                                   }
                                   {
                                     item ? item.excerpt ? item.excerpt.rendered ? <Typography dangerouslySetInnerHTML={{ __html: `${item.excerpt.rendered.split(" ").slice(0, 30).join(" ")} [...]` }} /> : null : null : null

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/lennox-hvac/lennox.webp'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import hvacLennox from '../public/lennox-hvac/dlsc-family-new.webp'
 
@@ -54,7 +54,7 @@ const LennoxHVAC = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
                             <Box>
-                              <Image src={hvacLennox} alt="lennox hvac" title='lennox hvac' />
+                              <Image layout='responsive' src={hvacLennox} alt="lennox hvac" title='lennox hvac' />
                             </Box>
                           </Grid>
                           <Grid item xs={12} md={6}>

@@ -24,56 +24,56 @@ const FeaturedHeatingServices = () => {
                                         <Grid item xs={6} md={3}>
                                             <Box>
                                                 <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
-                                                    <Link href="/furnace/">
+                                                    <Link legacyBehavior={true} href="/furnace/">
                                                         <a>
-                                                            <Image src={Furnace} alt="Furnace" />
+                                                            <Image  src={Furnace} alt="Furnace" />
                                                         </a>
                                                     </Link>
                                                 </Box>
                                                 <Box>
-                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link href="/furnace/"><a className='text-white'>Furnace</a></Link></strong></Typography>
+                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/furnace/"><a className='text-white'>Furnace</a></Link></strong></Typography>
                                                 </Box>
                                             </Box>
                                         </Grid>
                                         <Grid item xs={6} md={3}>
                                             <Box>
                                                 <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
-                                                    <Link href="/boilers/">
+                                                    <Link legacyBehavior={true} href="/boilers/">
                                                         <a>
-                                                            <Image src={Boiler} alt="Boiler" />
+                                                            <Image  src={Boiler} alt="Boiler" />
                                                         </a>
                                                     </Link>
                                                 </Box>
                                                 <Box>
-                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link href="/boilers/"><a className='text-white'>Boiler</a></Link></strong></Typography>
+                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/boilers/"><a className='text-white'>Boiler</a></Link></strong></Typography>
                                                 </Box>
                                             </Box>
                                         </Grid>
                                         <Grid item xs={6} md={3}>
                                             <Box>
                                                 <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
-                                                    <Link href="/heat-pump/">
+                                                    <Link legacyBehavior={true} href="/heat-pump/">
                                                         <a>
-                                                            <Image src={HeatPump} alt="Heat-pump" />
+                                                            <Image  src={HeatPump} alt="Heat-pump" />
                                                         </a>
                                                     </Link>
                                                 </Box>
                                                 <Box>
-                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link href="/heat-pump/"><a className='text-white'>Heat Pump</a></Link></strong></Typography>
+                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/heat-pump/"><a className='text-white'>Heat Pump</a></Link></strong></Typography>
                                                 </Box>
                                             </Box>
                                         </Grid>
                                         <Grid item xs={6} md={3}>
                                             <Box>
                                                 <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
-                                                    <Link href="/fireplace/">
+                                                    <Link legacyBehavior={true} href="/fireplace/">
                                                         <a>
-                                                            <Image src={Fireplace} alt="fireplace" />
+                                                            <Image  src={Fireplace} alt="fireplace" />
                                                         </a>
                                                     </Link>
                                                 </Box>
                                                 <Box>
-                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link href="/fireplace/"><a className='text-white'>Fireplace</a></Link></strong></Typography>
+                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/fireplace/"><a className='text-white'>Fireplace</a></Link></strong></Typography>
                                                 </Box>
                                             </Box>
                                         </Grid>

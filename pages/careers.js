@@ -114,7 +114,7 @@ const Careers = () => {
                               </div>
                               <div className='col-12'>
                                 <div className='form-group'>
-                                  <label class="uploadFile">Upload Resume
+                                  <label className="uploadFile">Upload Resume
                                     <input type="file" name="Resume" className='form-control rounded-pill d-none' placeholder='Upload Resume' required />
                                   </label>
                                 </div>

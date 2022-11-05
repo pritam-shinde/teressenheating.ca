@@ -2,7 +2,7 @@ import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typog
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { AppointmentForm, CommonBanner, SectionalHeading } from '../components/components'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Banner from '../public/brand-page/brand.webp'
 import Brand1 from '../public/brand-page/Layer-103.webp'
 import Brand2 from '../public/brand-page/Layer-104.webp'
@@ -67,142 +67,142 @@ const Brand = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand1} alt="bryant" />
+                              <Image  src={Brand1} alt="bryant" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand2} alt="tempstar" />
+                              <Image  src={Brand2} alt="tempstar" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand3} alt="heil" />
+                              <Image  src={Brand3} alt="heil" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand4} alt="keeprite" />
+                              <Image  src={Brand4} alt="keeprite" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand5} alt="Kenmore" />
+                              <Image  src={Brand5} alt="Kenmore" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand6} alt="lennox" />
+                              <Image  src={Brand6} alt="lennox" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand7} alt="Concord" />
+                              <Image  src={Brand7} alt="Concord" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand8} alt="luxaire" />
+                              <Image  src={Brand8} alt="luxaire" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand9} alt="maytag" />
+                              <Image  src={Brand9} alt="maytag" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand10} alt="navien" />
+                              <Image  src={Brand10} alt="navien" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand11} alt="payne" />
+                              <Image  src={Brand11} alt="payne" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand12} alt="rinnai" />
+                              <Image  src={Brand12} alt="rinnai" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand13} alt="Trane" />
+                              <Image  src={Brand13} alt="Trane" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand14} alt="vissmann" />
+                              <Image  src={Brand14} alt="vissmann" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand15} alt="York" />
+                              <Image  src={Brand15} alt="York" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand16} alt="Coleman" />
+                              <Image  src={Brand16} alt="Coleman" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand17} alt="aire-flo" />
+                              <Image  src={Brand17} alt="aire-flo" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand18} alt="amana" />
+                              <Image  src={Brand18} alt="amana" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand19} alt="american-standard" />
+                              <Image  src={Brand19} alt="american-standard" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand20} alt="arcoaire" />
+                              <Image  src={Brand20} alt="arcoaire" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand21} alt="armstrong" />
+                              <Image  src={Brand21} alt="armstrong" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand22} alt="carrier" />
+                              <Image  src={Brand22} alt="carrier" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand23} alt="comfortmaker" />
+                              <Image  src={Brand23} alt="comfortmaker" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand24} alt="daikin" />
+                              <Image  src={Brand24} alt="daikin" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand25} alt="day & night" />
+                              <Image  src={Brand25} alt="day & night" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand26} alt="ameristar" />
+                              <Image  src={Brand26} alt="ameristar" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand27} alt="frigidaire" />
+                              <Image  src={Brand27} alt="frigidaire" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} sm={4} md={3} lg={2}>
                             <Box>
-                              <Image src={Brand28} alt="Goodman" />
+                              <Image  src={Brand28} alt="Goodman" />
                             </Box>
                           </Grid>
                         </Grid>

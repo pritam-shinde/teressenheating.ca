@@ -7,6 +7,7 @@ import Work from '../public/about/work.webp'
 import Styles from '../styles/About.module.css';
 import { CheckCircle } from '@mui/icons-material'
 import { FaqAndForm, BrandSlider } from '../sections/sections'
+import Image from 'next/legacy/image'
 
 const AboutUs = () => {
   const arrayFaq = [
@@ -37,7 +38,7 @@ const AboutUs = () => {
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <img src={Work.src} alt="work" className='img-fluid' />
+                        <Image src={Work} alt="work" layout='responsive' />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>

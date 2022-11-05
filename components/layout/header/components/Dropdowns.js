@@ -31,14 +31,14 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         { id: "services-menu-9", link: "/financing-option/", text: "FINANCING OPTION", submenu: null },
                         { id: "services-menu-10", link: "/furnace-inspection/", text: "FURNACE INSPECTION", submenu: null }
                     ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
-                        <Link href={item.link}>
+                        <Link legacyBehavior={true} href={item.link}>
                             <a className='nav-link text-dark'>{item.text}</a>
                         </Link>
                         {
                             item.submenu !== null ? <ul className='ps-3 ms-3' style={{ borderLeft: "1px solid #555" }}>
                                 {
                                     item.submenu.map(menu => <li className="nav-item mb-2" key={menu.id} onClick={() => { setClick(false); closeMobileMenu() }}>
-                                        <Link href={menu.link}>
+                                        <Link legacyBehavior={true} href={menu.link}>
                                             <a className='nav-link text-dark'>{menu.text}</a>
                                         </Link>
                                     </li>)
@@ -62,7 +62,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         { id: "areas-menu-11", link: "/new-westminster/", text: "NEW WESTMINSTER" },
                         { id: "areas-menu-12", link: "/maple-ridge/", text: "MAPLE RIDGE" },
                     ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
-                        <Link href={item.link}>
+                        <Link legacyBehavior={true} href={item.link}>
                             <a className='nav-link text-dark'>{item.text}</a>
                         </Link> </li>) : null
                 }
@@ -73,7 +73,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         { id: "about-menu-3", link: "/brand/", text: "BRANDS WE CARRY" },
                         { id: "about-menu-4", link: "/covid-19/", text: "COVID-19" },
                     ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
-                        <Link href={item.link}>
+                        <Link legacyBehavior={true} href={item.link}>
                             <a className='nav-link text-dark'>{item.text}</a>
                         </Link> </li>) : null
                 }
@@ -108,7 +108,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         { id: "brand-menu-27", link: "/frigidaire/", text: "FRIGIDAIRE" },
                         { id: "brand-menu-28", link: "/kenmore/", text: "KENMORE" }
                         ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
-                        <Link href={item.link}>
+                        <Link legacyBehavior={true} href={item.link}>
                             <a className='nav-link text-dark'>{item.text}</a>
                         </Link> </li>) : null
                 }

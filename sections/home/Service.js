@@ -19,6 +19,7 @@ import Heatpump from '../../public/home/heatpump.webp'
 import Furnace from '../../public/home/furnace.webp'
 import Link from 'next/link'
 import {ArrowForward} from '@mui/icons-material'
+import Image from 'next/image'
 
 const Service = () => {
     const [width, setWidth] = useState()
@@ -43,7 +44,7 @@ const Service = () => {
                                             <Grid item xs={6}>
                                                 <Button onClick={() => setActive('box1')} className={`d-flex justify-content-between align-items-center text-white ${Styles.box1}  ${active === 'box1' ? 'bg--blue' : Styles.inactive} m-0`}>
                                                     <Box p={1.5} mr={1} style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} className="bg--white d-flex justify-content-center align-items-center">
-                                                        <img src={Snow.src} />
+                                                        <Image layout='responsive' src={Snow} alt="snow" />
                                                     </Box>
                                                     <strong style={{ fontSize: "1.2rem" }}>Cooling Services</strong>
                                                 </Button>
@@ -52,7 +53,7 @@ const Service = () => {
                                                 <Button onClick={() => setActive('box2')} className={`d-flex justify-content-between align-items-center text-white ${Styles.box2} ${active === 'box2' ? 'bg--red' : Styles.inactive} m-0`}>
                                                     <strong style={{ fontSize: "1.2rem" }}>Heating Services</strong>
                                                     <Box p={1.5} ml={1} style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} className="bg--white d-flex justify-content-center align-items-center">
-                                                        <img src={Fire.src} />
+                                                        <Image layout='responsive' src={Fire} alt="fire" />
                                                     </Box>
                                                 </Button>
                                             </Grid>
@@ -75,7 +76,7 @@ const Service = () => {
                                                 >
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <img src={s1.src} alt="slide1" className='img-fluid' />
+                                                            <Image layout='responsive' src={s1} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainer}>
                                                             <Typography variant='h3' className="text-white">AC Installation & Replacement</Typography>
                                                             </Box>
@@ -83,14 +84,14 @@ const Service = () => {
                                                                 <Typography variant='h3' gutterBottom className="text-white">AC Installation & Replacement</Typography>
                                                                 <Typography className='text-white'>One of the most crucial Investment you can make in your house is installing an air conditioning system. We provide a wide range of services, including installation, yearly maintenance, and more, to ensure that everything is completed correctly...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--blue'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={s2.src} alt="slide1" className='img-fluid' />
+                                                            <Image layout='responsive' src={s2} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainer}>
                                                             <Typography variant='h3' className="text-white">AC Repairing</Typography>
                                                             </Box>
@@ -98,14 +99,14 @@ const Service = () => {
                                                                 <Typography variant='h3' gutterBottom className="text-white">AC Repairing</Typography>
                                                                 <Typography className='text-white'>Residential air conditioning repair is offered by the family-run business Teressen Heating and Air Conditioning. Regardless of the time of day, we have the knowledge to quickly fix your heating system...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--blue'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={s3.src} alt="slide1" className='img-fluid' />
+                                                            <Image layout='responsive' src={s3} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainer}>
                                                             <Typography variant='h3' className="text-white">AC Maintaince</Typography>
                                                             </Box>
@@ -113,7 +114,7 @@ const Service = () => {
                                                                 <Typography variant='h3' gutterBottom className="text-white">AC Maintaince</Typography>
                                                                 <Typography className='text-white'>Local residents own and run the business Terresen Heating. To keep your family comfortable all year round, we know the proper home AC maintenance and tune-ups...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--blue'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -136,7 +137,7 @@ const Service = () => {
                                                 >
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <img src={Furnace.src} alt="slide1" className='img-fluid' />
+                                                            <Image layout='responsive' src={Furnace} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                             <Typography variant='h3' className="text-white">Furnaces</Typography>
                                                             </Box>
@@ -144,14 +145,14 @@ const Service = () => {
                                                                 <Typography variant='h3' gutterBottom className="text-white">Furnaces</Typography>
                                                                 <Typography className='text-white'>a building that uses combustion or another method to generate useful heat. Because coal was so readily available for heating, the furnace evolved historically from the fireplace and stove...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={Boiler.src} alt="slide1" className='img-fluid' />
+                                                            <Image layout='responsive' src={Boiler} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                             <Typography variant='h3' className="text-white">Boiler</Typography>
                                                             </Box>
@@ -159,14 +160,14 @@ const Service = () => {
                                                                 <Typography variant='h3' gutterBottom className="text-white">Boiler</Typography>
                                                                 <Typography className='text-white'>Teressen has been offering professional boiler setup, maintenance, and repair services. Teressen, a seasoned pioneer in the home heating sector, takes care of all your heating requirements with first-rate service at competitive prices.</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={Heatpump.src} alt="slide1" className='img-fluid' />
+                                                            <Image layout='responsive' src={Heatpump} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                             <Typography variant='h3' className="text-white">Heat Pump</Typography>
                                                             </Box>
@@ -174,14 +175,14 @@ const Service = () => {
                                                                 <Typography variant='h3' gutterBottom className="text-white">Heat Pump</Typography>
                                                                 <Typography className='text-white'>Along with the manufacturer&apos;s warranty, we also provide full installation of your heat pump system with a 1-year labour warranty!</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <img src={Fireplace.src} alt="slide1" className='img-fluid' />
+                                                            <Image layout='responsive' src={Fireplace} alt="slide1" className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                             <Typography variant='h3' className="text-white">Fireplace</Typography>
                                                             </Box>
@@ -189,7 +190,7 @@ const Service = () => {
                                                                 <Typography variant='h3' gutterBottom className="text-white">Fireplace</Typography>
                                                                 <Typography className='text-white'>Installation & Replacement of Professional Gas Fireplaces for Central Home Heating Systems</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>

@@ -35,6 +35,7 @@ import Brand25 from '../../public/brand-page/Layer-127.webp'
 import Brand26 from '../../public/brand-page/Layer-128.webp'
 import Brand27 from '../../public/brand-page/Layer-129.webp'
 import Brand28 from '../../public/brand-page/Layer-130.webp'
+import Image from 'next/legacy/image';
 
 const BrandSlider = () => {
     const [width, setWidth] = useState();
@@ -65,88 +66,88 @@ const BrandSlider = () => {
                                         loop={true}
                                     >
                                         <SwiperSlide>
-                                            <img src={Brand1.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand1} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand2.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand2} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand3.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand3} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand4.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand4} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand5.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand5} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand6.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand6} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand7.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand7} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand8.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand8} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand9.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand9} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand10.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand10} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand11.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand11} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand12.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand12} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand13.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand13} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand14.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand14} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand15.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand15} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand16.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand16} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand17.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand17} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand18.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand18} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand19.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand19} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand20.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand20} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand21.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand21} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand22.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand22} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand23.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand23} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand24.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand24} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand25.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand25} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand26.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand26} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand27.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand27} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <img src={Brand28.src} alt="brand 1" className='img-fluid' />
+                                            <Image  src={Brand28} alt="brand 1" className='img-fluid' />
                                         </SwiperSlide>
                                     </Swiper>
                                 </Box>

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/lennox-hvac/lennox.webp'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import boiler from '../public/boiler/worker-repairing-water-heater.webp'
 
@@ -52,7 +52,7 @@ const BoilerRepair = () => {
                       <Container maxWidth="xxl">
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
-                            <Image src={boiler} alt="boiler service" />
+                            <Image layout='responsive' src={boiler} alt="boiler service" />
                           </Grid>
                           <Grid item xs={12} md={6}>
                             <Typography className='para'>Teressen has been providing expert boiler installation, boiler repair, and boiler installation services in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of boiler maintenance and boiler repair services at affordable prices.</Typography>

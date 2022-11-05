@@ -4,6 +4,7 @@ import Clock from '../../public/icons/24-hours.svg'
 import Hand from '../../public/icons/hand.svg'
 import Certificate from '../../public/icons/certificate-new.svg'
 import Styles from '../../styles/Home.module.css'
+import Image from 'next/legacy/image'
 
 const Facilities = () => {
     return (
@@ -17,7 +18,7 @@ const Facilities = () => {
                                     <Grid item xs={12} sm={6} lg={4}>
                                     <Box p={3} className='d-flex flex-column align-items-center'>
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
-                                                <img src={Certificate.src} alt="certificate" />
+                                                <Image layout='responsive' src={Certificate} alt="certificate" />
                                             </Box>
                                             <Typography variant='h4' className='text--grey' gutterBottom>Certified Dealer</Typography>
                                             <Typography className='para' align='center'>Trust, affordability, and quality are the pillars on which we work. Our certified dealers work 24*7 especially to serve you better.</Typography>
@@ -26,7 +27,7 @@ const Facilities = () => {
                                     <Grid item xs={12} sm={6} lg={4}>
                                         <Box p={3} className='d-flex flex-column align-items-center'>
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
-                                                <img src={Clock.src} alt="clock" />
+                                                <Image layout='responsive' src={Clock} alt="clock" />
                                             </Box>
                                             <Typography variant='h4' className='text--grey' gutterBottom>Request A Service Call</Typography>
                                             <Typography className='para' align='center'>If you are facing any heating-related issues, then request a service call. We are here for your assistance and will give you the best of everything.</Typography>
@@ -35,7 +36,7 @@ const Facilities = () => {
                                     <Grid item xs={12} sm={6} lg={4}>
                                         <Box p={3} className='d-flex flex-column align-items-center'>
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
-                                                <img src={Hand.src} alt="hand" />
+                                                <Image layout='responsive' src={Hand} alt="hand" />
                                             </Box>
                                             <Typography variant='h4' className='text--grey' gutterBottom>Need Financing?</Typography>
                                             <Typography className='para' align='center'>If you need financing aid, we are there for your service. So, don&apos;t worry and leave all your worries to us. We will make your day better!</Typography>

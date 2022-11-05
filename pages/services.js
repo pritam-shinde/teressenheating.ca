@@ -1,6 +1,6 @@
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import React from 'react'
 import { AppointmentForm, BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
 import AirConditioner from '../public/service/air-conditioner.webp'
@@ -77,7 +77,7 @@ const Service = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image src={AirConditioner} alt="air condtioner" />
+                        <Image layout='responsive' src={AirConditioner} alt="air condtioner" />
                       </Box>
                     </Grid>
                   </Grid>
@@ -95,7 +95,7 @@ const Service = () => {
                   <Grid container spacing={5}>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image src={AcRepair} alt="AC Repair" />
+                        <Image layout='responsive' src={AcRepair} alt="AC Repair" />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -219,7 +219,7 @@ const Service = () => {
                   <Grid container spacing={5}>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image src={Family} alt="family" />
+                        <Image layout='responsive' src={Family} alt="family" />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>

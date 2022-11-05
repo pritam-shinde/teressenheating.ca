@@ -18,7 +18,7 @@ const BlogCommonSidebar = ({ data, category }) => {
               data.length > 0 ? data.slice(0, 5).map(item => <Box mb={3} key={`sidebar-recent-post-id-${item.id}`}>
                 <Typography className='m-0'>{months[Number(item.date.split("T")[0].split("-")[1]) - 1]} {item.date.split("T")[0].split("-")[2]}</Typography>
                 {
-                  item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h4'><Link href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
+                  item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h4'><Link passHref prefetch={false} legacyBehavior={true} href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
                 }
               </Box>) : null
             }
@@ -36,7 +36,7 @@ const BlogCommonSidebar = ({ data, category }) => {
                     <ListItemIcon>
                       <ArrowForward className='text--blue' />
                     </ListItemIcon>
-                    <ListItemText primary={<strong><Link href={`/blog/category/${item.slug}`}><a className='text--black'>{item.name}</a></Link></strong>} />
+                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href={`/blog/category/${item.slug}`}><a className='text--black'>{item.name}</a></Link></strong>} />
                   </ListItem>)
                 }
               </List> : null

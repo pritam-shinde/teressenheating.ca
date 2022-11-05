@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
 import Repair from '../public/boilerMaintanance/image.webp'
@@ -54,7 +54,7 @@ const BoilerMaintainance = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
                             <Box>
-                              <Image src={Repair} alt="Repair" title='Repair' />
+                              <Image layout='responsive' src={Repair} alt="Repair" title='Repair' />
                             </Box>
                           </Grid>
                           <Grid item xs={12} md={6}>

@@ -4,7 +4,7 @@ import React from 'react'
 import Banner from '../public/areas/area2.webp'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
 import WestVancouverLoc from '../public/west-vancouver/west-vancouver.webp'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 
 const WestVancouver = () => {
@@ -44,7 +44,7 @@ const WestVancouver = () => {
                 <Box py={3}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
-                      <Image src={WestVancouverLoc} alt="vancouver" />
+                      <Image layout='responsive' src={WestVancouverLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h1'>Teressen&apos;s heating and air conditioning services in West Vancouver</Typography>

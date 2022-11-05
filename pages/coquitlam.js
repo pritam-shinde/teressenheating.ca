@@ -4,7 +4,7 @@ import React from 'react'
 import Banner from '../public/areas/area2.webp'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
 import CoquitlamLoc from '../public/coquitlam/Coquitlam.webp'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 
 const Coquitlam = () => {
@@ -44,7 +44,7 @@ const Coquitlam = () => {
                 <Box py={3}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
-                      <Image src={CoquitlamLoc} alt="vancouver" />
+                      <Image layout='responsive' src={CoquitlamLoc} alt="vancouver" />
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h1'>Teressen&apos;s AC installation services in Coquitlam will give you the best of everything</Typography>

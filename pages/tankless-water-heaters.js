@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/lennox-hvac/lennox.webp'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import waterheater from '../public/tankless-water-heater/water-heater.webp'
 
 const TanklesWaterHeater = () => {
@@ -52,7 +52,7 @@ const TanklesWaterHeater = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
                             <Box>
-                              <Image src={waterheater} alt="tankless water heater" title='tankless water heater' />
+                              <Image layout='responsive' src={waterheater} alt="tankless water heater" title='tankless water heater' />
                             </Box>
                           </Grid>
                           <Grid item xs={12} md={6}>

@@ -4,6 +4,7 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import Banner from '../public/write-review/review.webp'
 import { CommonBanner, AppointmentForm } from '../components/components'
 import Family from '../public/home/testimonial.webp'
+import Image from 'next/legacy/image'
 
 const WriteAReview = () => {
   return (
@@ -25,7 +26,7 @@ const WriteAReview = () => {
                   <Box mt={3}>
                     <Grid container spacing={3}>
                       <Grid item xs={12} md={6}>
-                        <img src={Family.src} alt="family" className="img-fluid" />
+                        <Image layout='responsive' src={Family} alt="family" className="img-fluid" />
                       </Grid>
                       <Grid item xs={12} md={6}>
                         <AppointmentForm />

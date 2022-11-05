@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import React from 'react'
 import { BlueFilledBtn } from '../../components/components'
 import AboutImage from '../../public/home/about.webp'
@@ -16,7 +16,7 @@ const About = () => {
                                 <Grid container spacing={3}>
                                     <Grid item xs={12} md={6}>
                                         <Box>
-                                            <Image src={AboutImage} alt="about" />
+                                            <Image layout='responsive' src={AboutImage} alt="about"  />
                                         </Box>
                                     </Grid>
                                     <Grid item xs={12} md={6}>

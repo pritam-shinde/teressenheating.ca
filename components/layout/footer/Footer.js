@@ -1,5 +1,5 @@
 import { Box, Container, Grid, List, ListItem, ListItemText, Typography } from '@mui/material'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import React, { useEffect, useState } from 'react'
 import Styles from '../../../styles/Footer.module.css'
 import GreyLogo from '../../../public/logo/grey-logo.svg'
@@ -25,7 +25,7 @@ const Footer = () => {
                                     <Grid item xs={12} md={4} lg={6}>
                                         <Box>
                                             <Box mb={3} style={{ width: "40%" }} >
-                                                <img src={GreyLogo.src} alt="logo" className='img-fluid' />
+                                                <Image layout='responsive' src={GreyLogo} alt="logo" className='img-fluid' />
                                             </Box>
                                             <Box>
                                                 <Typography className='text-white' align='justify'>Three elements that make Teressen heating ltd different from the crowd are Quality, trust, and affordability. These elements have always been our brand identity and have made has to stand different from the crowd. They have shaped us, monitored us, and made us the top-notched heating experts in Canada.</Typography>
@@ -39,28 +39,28 @@ const Footer = () => {
                                             </Box>
                                             <Box>
                                                 <ul>
-                                                    <li><Link href="/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/">
                                                         <a className={`${Styles.quickLink} text-white`}>Home</a>
                                                     </Link></li>
-                                                    <li><Link href="/about-us/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/about-us/">
                                                         <a className={`${Styles.quickLink} text-white`}>About Us</a>
                                                     </Link></li>
-                                                    <li><Link href="/brand/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/brand/">
                                                         <a className={`${Styles.quickLink} text-white`}>Brands</a>
                                                     </Link></li>
-                                                    <li><Link href="/blog/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/blog/">
                                                         <a className={`${Styles.quickLink} text-white`}>Blog</a>
                                                     </Link></li>
-                                                    <li><Link href="/faq/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/faq/">
                                                         <a className={`${Styles.quickLink} text-white`}>FAQ</a>
                                                     </Link></li>
-                                                    <li><Link href="/contact-us/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/contact-us/">
                                                         <a className={`${Styles.quickLink} text-white`}>Contact</a>
                                                     </Link></li>
-                                                    <li><Link href="/privacy-policy/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/privacy-policy/">
                                                         <a className={`${Styles.quickLink} text-white`}>Privacy Policy</a>
                                                     </Link></li>
-                                                    <li><Link href="/terms-of-service/">
+                                                    <li><Link passHref prefetch={false} legacyBehavior href="/terms-of-service/">
                                                         <a className={`${Styles.quickLink} text-white`}>Term Of Service</a>
                                                     </Link></li>
                                                 </ul>

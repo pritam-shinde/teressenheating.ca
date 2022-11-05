@@ -32,7 +32,7 @@ const Locations = () => {
                                             { id: "loc-12", link: "/maple-ridge", title: "Maple Ridge" },
                                         ].map(item => <Grid key={item.id} item xs={12} sm={6} md={4} lg={3}>
                                             <Box p={2} className={`locationBox ${router.pathname == item.link ? 'active' : null}`}>
-                                                <Typography variant='h4'><Link href={`${item.link}/`}><a className="title">{item.title}</a></Link></Typography>
+                                                <Typography variant='h4'><Link legacyBehavior={true} href={`${item.link}/`}><a className="title">{item.title}</a></Link></Typography>
                                             </Box>
                                         </Grid>)
                                     }
