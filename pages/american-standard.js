@@ -125,7 +125,7 @@ const AmericanStandard = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Get certified carrier HVAC repairing services at your doorstep' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Teressen&apos;s American standard products and services' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>

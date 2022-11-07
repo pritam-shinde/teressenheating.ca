@@ -2,6 +2,8 @@ import { Box, Container, Grid } from '@mui/material'
 import Head from 'next/head'
 import React from 'react'
 import { Facilities, FaqAndForm } from '../sections/sections'
+import Banner from '../public/contact/contact.webp'
+import { CommonBanner } from '../components/components'
 
 const ContactUs = () => {
   return (
@@ -13,6 +15,7 @@ const ContactUs = () => {
         <link rel="canonical" href="/contact-us/" />
     </Head>
       <main>
+      <CommonBanner bg={Banner} title="Contact" color="#fff" variant="h1" />
         <Facilities />
         <section>
           <Container maxWidth="xxl">

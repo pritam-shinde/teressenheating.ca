@@ -3,7 +3,7 @@ import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/lennox-hvac/lennox.webp'
+import Banner from '../public/promomotion/promotion.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
 
 const RebatesAndPromotion = () => {

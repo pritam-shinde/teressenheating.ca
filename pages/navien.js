@@ -47,7 +47,7 @@ const Navien = () => {
         <link rel="canonical" href="/about-us/" />
       </Head>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Rinnai" color="#fff" variant="h2" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Navien" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>
