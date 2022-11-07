@@ -190,7 +190,7 @@
 
 .whyChoose {
     width: 100%;
-    background-image: url(../public/home/whychoose.webp);
+    background-image:linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.4)), url(../public/home/whychoose.webp);
     background-repeat: no-repeat;
 }
 
@@ -205,7 +205,7 @@
 
 .testimonial {
     width: 100%;
-    background-image: url(../public/home/testimonial.webp);
+    background-image: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.4)),url(../public/home/testimonial.webp);
     background-repeat: no-repeat;
 }
 
