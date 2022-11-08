@@ -1,0 +1,8 @@
+.HighlySkilled {
+    width: 100%;
+    height: auto;
+    background-image:linear-gradient(rgba(255,255,255, 0.5), rgba(255,255,255, 0.5)), url(../public/highly-skilled/gear.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

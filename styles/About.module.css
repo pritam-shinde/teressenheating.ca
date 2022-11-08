@@ -1,0 +1,20 @@
+.WhyChoose {
+    width: 100%;
+    height: auto;
+    background-image: url(../public/about/family.webp);
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .WhyChoose {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../public/about/family.webp);
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .WhyChoose {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../public/about/family.webp);
+        background-size: cover;
+    }
+}
