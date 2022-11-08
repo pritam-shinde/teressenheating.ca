@@ -77,7 +77,7 @@ const Service = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image layout='responsive' src={AirConditioner} alt="air condtioner" />
+                        <Image layout='responsive' src={AirConditioner} alt="air condtioner service" />
                       </Box>
                     </Grid>
                   </Grid>
