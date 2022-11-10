@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-117.webp'
@@ -41,8 +41,8 @@ const YorkBrand = () => {
   return (
     <>
     <Head>
-    <title>York Brand - teressenheating.ca</title>
-    <meta name="description" content="" />
+    <title>York Heating and Air Conditioning Service Expert | Teressenheating</title>
+    <meta name="description" content="Teressen Heating and Air Conditioning Service provide experts for York heating & air conditioning installation, repair and maintenance services. Contact us today!" />
     <meta name="robots" content="index" />
     <link rel="canonical" href="/york-brand/" />
   </Head>

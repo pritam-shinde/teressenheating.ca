@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-127.webp'
@@ -42,10 +42,10 @@ const DayNightHVAC = () => {
   return (
     <>
       <Head>
-        <title>Day and night HVAC - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Day and Night HVAC Service Expert Technicians | Teressenheating</title>
+        <meta name="description" content="Tereseenheating is the most trusted company for your Day and Night HVAC service needs. Our professionals are licensed, trained, and experienced." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/tempstar/" />
+        <link rel="canonical" href="/day-and-night-hvac/" />
       </Head>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Day And Night HVAC" color="#fff" variant="h2" />

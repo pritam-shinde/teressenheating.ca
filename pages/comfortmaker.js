@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-125.webp'
@@ -40,8 +40,8 @@ const Comfortmaker = () => {
   return (
     <>
     <Head>
-    <title>Comfortmaker - teressenheating.ca</title>
-    <meta name="description" content=""/>
+    <title>Comfortmaker Heating Pump Installation Service Provider  | Teressen</title>
+    <meta name="description" content="The Teressen Heating Company installs Comfortmaker heating pumps and provides their customers with the most up-to-date installation in the industry."/>
     <meta name="robots" content="index"/>
     <link rel="canonical" href="/comfortmaker/"/>
   </Head>

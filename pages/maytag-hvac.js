@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-111.webp'
@@ -41,8 +41,8 @@ const MaytagHVAC = () => {
   return (
     <>
       <Head>
-        <title>Maytag Hvac - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Trained Maytag HVAC Experienced Professionals  | Teressenheating</title>
+        <meta name="description" content="If your Maytag HVAC is not working properly, you need a qualified and experienced professional to diagnose the problem, Call Teressen heating for the correct solution. " />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/maytag-hvac/" />
       </Head>

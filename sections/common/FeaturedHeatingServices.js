@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Styles from "../../styles/FeaturedHeatingServices.module.css"
 import { SectionalHeading } from '../../components/components'
 import Link from 'next/link'
@@ -10,6 +10,12 @@ import HeatPump from '../../public/featuredheatingservice/heat-pump.png'
 import Image from 'next/image'
 
 const FeaturedHeatingServices = () => {
+    const [width, setWidth] = useState();
+
+    useEffect(()=>{
+        setWidth(window.innerWidth)
+    },[])
+
     return (
         <>
             <section className={`${Styles.FeaturedHeatingServices} mt-3`} id="FeaturedHeatingServices">
@@ -23,10 +29,10 @@ const FeaturedHeatingServices = () => {
                                     <Grid container spacing={3}>
                                         <Grid item xs={6} md={3}>
                                             <Box>
-                                                <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
+                                                <Box className='d-flex justify-content-center' style={{height:width < 720 ? "auto" :"14rem"}}>
                                                     <Link legacyBehavior={true} href="/furnace/">
-                                                        <a>
-                                                            <Image  src={Furnace} alt="Furnace Logo" title='Furnace Logo' />
+                                                        <a className='heatingLogo'>
+                                                            <Image layout='responsive'  src={Furnace} alt="Furnace Logo" title='Furnace Logo' />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -37,10 +43,10 @@ const FeaturedHeatingServices = () => {
                                         </Grid>
                                         <Grid item xs={6} md={3}>
                                             <Box>
-                                                <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
+                                                <Box className='d-flex justify-content-center' style={{height:width < 720 ? "auto" :"14rem"}}>
                                                     <Link legacyBehavior={true} href="/boilers/">
-                                                        <a>
-                                                            <Image  src={Boiler} alt="Boiler Logo" title='Boiler Logo' />
+                                                        <a className='heatingLogo'>
+                                                            <Image layout='responsive'  src={Boiler} alt="Boiler Logo" title='Boiler Logo' />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -51,10 +57,10 @@ const FeaturedHeatingServices = () => {
                                         </Grid>
                                         <Grid item xs={6} md={3}>
                                             <Box>
-                                                <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
+                                                <Box className='d-flex justify-content-center' style={{height:width < 720 ? "auto" :"14rem"}}>
                                                     <Link legacyBehavior={true} href="/heat-pump/">
-                                                        <a>
-                                                            <Image  src={HeatPump} alt="Heat Pump Logo" title='Heat Pump Logo' />
+                                                        <a className='heatingLogo'>
+                                                            <Image layout='responsive'  src={HeatPump} alt="Heat Pump Logo" title='Heat Pump Logo' />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -65,10 +71,10 @@ const FeaturedHeatingServices = () => {
                                         </Grid>
                                         <Grid item xs={6} md={3}>
                                             <Box>
-                                                <Box className='d-flex justify-content-center' style={{height:"16rem"}}>
+                                                <Box className='d-flex justify-content-center' style={{height:width < 720 ? "auto" :"14rem"}}>
                                                     <Link legacyBehavior={true} href="/fireplace/">
-                                                        <a>
-                                                            <Image  src={Fireplace} alt="Fireplace Logo" title='Fireplace Logo' />
+                                                        <a className='heatingLogo'>
+                                                            <Image layout='responsive'  src={Fireplace} alt="Fireplace Logo" title='Fireplace Logo' />
                                                         </a>
                                                     </Link>
                                                 </Box>

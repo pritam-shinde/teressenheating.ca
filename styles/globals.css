@@ -54,23 +54,24 @@ h1 {
 }
 
 h2 {
-    font-size: var(--h2-desktop-size) !important
+    font-size: var(--h2-desktop-size) !important;
+    text-transform: capitalize !important;
 }
 
 h3 {
-    font-size: var(--h3-desktop-size) !important
+    font-size: var(--h3-desktop-size) !important;
 }
 
 h4 {
-    font-size: var(--h4-desktop-size) !important
+    font-size: var(--h4-desktop-size) !important;
 }
 
 h5 {
-    font-size: var(--h5-desktop-size) !important
+    font-size: var(--h5-desktop-size) !important;
 }
 
 h6 {
-    font-size: var(--h6-desktop-size) !important
+    font-size: var(--h6-desktop-size) !important;
 }
 
 p,
@@ -246,73 +247,74 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     -webkit-border-radius: 0 !important;
     -moz-border-radius: 0 !important;
     -ms-border-radius: 0 !important;
-    -o-border-radius: 0 !important
+    -o-border-radius: 0 !important;
 }
 
 @media only screen and (min-width:601px) and (max-width:1199px) {
     .dropdown5:hover .dropdown-menu-5 {
-        left: -6rem !important
+        left: -6rem !important;
     }
 }
 
 @media only screen and (max-width:600px) {
     h1 {
-        font-size: var(--h1-mob-size) !important
+        font-size: var(--h1-mob-size) !important;
     }
 
     h2 {
-        font-size: var(--h2-mob-size) !important
+        font-size: var(--h2-mob-size) !important;
+        text-transform: capitalize !important;
     }
 
     h3 {
-        font-size: var(--h3-mob-size) !important
+        font-size: var(--h3-mob-size) !important;
     }
 
     h4 {
-        font-size: var(--h4-mob-size) !important
+        font-size: var(--h4-mob-size) !important;
     }
 
     h5 {
-        font-size: var(--h5-mob-size) !important
+        font-size: var(--h5-mob-size) !important;
     }
 
     h6 {
-        font-size: var(--h6-mob-size) !important
+        font-size: var(--h6-mob-size) !important;
     }
 
     p,
     p.para {
         font-size: var(--para-mob-size) !important;
-        color: var(--grey) !important
+        color: var(--grey) !important;
     }
 
     #topbar {
-        display: none
+        display: none;
     }
 
     nav.navbar {
-        background-color: var(--white) !important
+        background-color: var(--white) !important;
     }
 
     nav.navbar .navbar-brand {
         display: block;
-        width: 43%
+        width: 43%;
     }
 
     nav.navbar .navbar-nav .nav-item .nav-link {
-        color: var(--black) !important
+        color: var(--black) !important;
     }
 
     .navbar .blueBtn {
-        padding: .3rem .6rem !important
+        padding: .3rem .6rem !important;
     }
 
     .navbar .blueBtn a {
-        font-size: .8rem
+        font-size: .8rem;
     }
 
     header {
-        background-color: #fff
+        background-color: #fff;
     }
 
     .nav-menu {
@@ -324,7 +326,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
         left: -100%;
         opacity: 1;
         transition: .5s;
-        overflow-y: scroll
+        overflow-y: scroll;
     }
 
     .nav-menu.active {
@@ -495,4 +497,8 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 
 .coolingIcon {
     width: 70% !important;
+}
+
+.heatingLogo {
+    width: 50%;
 }

@@ -3,9 +3,9 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
-import Image from 'next/legacy/image'
+import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-112.webp'
 import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
@@ -41,10 +41,10 @@ const Navien = () => {
   return (
     <>
       <Head>
-        <title>Rinnai - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Quality and Affordable Services of Navien Furnace  | Teressenheating</title>
+        <meta name="description" content="Teressen heating offers a complete range of high-efficiency Navien furnace and hot water heater products for residential, commercial, and industrial applications." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/about-us/" />
+        <link rel="canonical" href="/navien/" />
       </Head>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Navien" color="#fff" variant="h2" />

@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-113.webp'
@@ -37,7 +37,7 @@ const Payne = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["Aire-Flo heating/ AC experienced technicians make sure that you are served well.", "We have professional services at affordable pricing.", "All our experts are licensed experts.", "We provide the best heating, and air quality services for you."]
+  const ListArray = ["We are the pioneers in Payne products servicing.", "We provide professional Payne installation, repair, and maintenance services.", "Teressen Heating and air conditioning services are providing timely heating and cooling services for you.", "We have the best cooling and heating technicians for your assistance."]
   return (
     <>
       <Head>
@@ -125,7 +125,7 @@ const Payne = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Get the best Payne products servicing at relative ease' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Teressen’s heating and cooling services only to serve you the best' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -138,70 +138,36 @@ const Payne = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
-                  <SectionalHeading simpletext="Our certified Payne HVAC repair service is the best" variant="h2" />
-                  <Typography className='para'>If you need Payne furnace repair for your commercial building or resident, Teressen&apos;s HVAC is your go-to person. The installation of a furnace increases the comfort level of your home and makes your family happy. At times, when your Payne furnace gets malfunctions, we are at your assistance.</Typography>
-                  <Typography className='para'>Like many homeowners, you might face some issues in fixing an AC or furnace. So, if you do, then we might solve your problem. A competent HVAC contractor like us will get your issue resolved.</Typography>
-                </Box>
-              </Grid>
-            </Grid>
-          </Container>
-        </section>
-        <section className='mt-md-4 mt-3 bg--grey'>
-          <Container maxWidth="xxl">
-            <Grid container>
-              <Grid item xs={12} md={10} className="mx-auto">
-                <Box p={3}>
-                  <SectionalHeading simpletext="Near Me Payne Furnace repairing services" variant="h2" />
-                  <Typography className='para'>When your heating system breaks down, you need a Payne furnace repair near me. You can get your heating system up and running again by finding the best repair services.</Typography>
-                  <Typography className='para'>In the market, Teressen HVAC has a steadfast reputation for offering top-notched furnace repair services. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
-                </Box>
-              </Grid>
-            </Grid>
-          </Container>
-        </section>
-        <section className='bg--grey'>
-          <Container maxWidth="xxl">
-            <Grid container>
-              <Grid item xs={12} md={10} className="mx-auto">
-                <Box p={3}>
-                  <SectionalHeading simpletext="Putting up a Payne furnace is the mandatory thing" variant="h2" />
-                  <Typography className='para'>If you do not want to cope with an outdated and broken heating system, then Payne furnace installation is mandatory. Fortunately, Teressen&apos;s HVAC services have been in business for a long and can ensure you that the professional installation of Payne furnaces will happen correctly at your place.</Typography>
-                </Box>
-              </Grid>
-            </Grid>
-          </Container>
-        </section>
-        <section className='mt-md-4 mt-3'>
-          <Container maxWidth="xxl">
-            <Grid container>
-              <Grid item xs={12} md={10} className="mx-auto">
-                <Box>
-                  <SectionalHeading simpletext="Payne Furnace issues" variant="h2" />
-                  <Typography className='para'>Leaks in your condensation drain might cause your Payne furnace to leak. In this case, you should first inspect your furnace&apos;s condensation drain or tube. You might also need an HVAC expert who will help you with the issue if it gets clogged.</Typography>
-                </Box>
-              </Grid>
-            </Grid>
-          </Container>
-        </section>
-        <section className='mt-md-4 mt-3'>
-          <Container maxWidth="xxl">
-            <Grid container>
-              <Grid item xs={12} md={10} className="mx-auto">
-                <Box>
-                  <SectionalHeading simpletext="The furnace at Payne is not heating up" variant="h2" />
-                  <Typography className='para'> This is another problem. If your Payne Furnace is not heating properly then verify your thermostat. Check if it is on and set it to the heating setting. Also, try resetting your circuit breaker. If you do not, then give us a call immediately.</Typography>
-                </Box>
-              </Grid>
-            </Grid>
-          </Container>
-        </section>
-        <section className='mt-md-4 mt-3'>
-          <Container maxWidth="xxl">
-            <Grid container>
-              <Grid item xs={12} md={10} className="mx-auto">
-                <Box>
-                  <SectionalHeading simpletext="Payne Furnace turns off" variant="h2" />
-                  <Typography className='para'>Another problem which you might face is the Payne furnace constantly turning off. This can be due to insufficient furnace airflow. If the air filter is damaged, then you can check it and replace it.</Typography>
+                  <SectionalHeading simpletext="Get the best Payne products servicing at relative ease" variant="h2" />
+                  <Box mt={1}>
+                    <SectionalHeading simpletext="Our Payne" variant="h3" />
+                    <Box mt={2}>
+                      <SectionalHeading simpletext="Our certified Payne HVAC repair service is the best" variant="h4" />
+                      <Typography className='para'>If you need Payne furnace repair for your commercial building or resident, Teressen's HVAC is your go-to person. The installation of a furnace increases the comfort level of your home and makes your family happy. At times, when your Payne furnace gets malfunctions, we are at your assistance.</Typography>
+                      <Typography className='para'>Like many homeowners, you might face some issues in fixing an AC or furnace. So, if you do, then we might solve your problem. A competent HVAC contractor like us will get your issue resolved.</Typography>
+                    </Box>
+                    <Box mt={2}>
+                      <SectionalHeading simpletext="Near Me Payne Furnace repairing services" variant="h4" />
+                      <Typography className='para'>When your heating system breaks down, you need a Payne furnace repair near me. You can get your heating system up and running again by finding the best repair services.</Typography>
+                      <Typography className='para'>In the market, Teressen HVAC has a steadfast reputation for offering top-notched furnace repair services. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
+                    </Box>
+                    <Box mt={2}>
+                      <SectionalHeading simpletext="Putting up a Payne furnace is the mandatory thing" variant="h4" />
+                      <Typography className='para'>If you do not want to cope with an outdated and broken heating system, then Payne furnace installation is mandatory. Fortunately, Teressen's HVAC services have been in business for a long and can ensure you that the professional installation of Payne furnaces will happen correctly at your place.</Typography>
+                    </Box>
+                    <Box mt={2}>
+                      <SectionalHeading simpletext="Payne Furnace issues" variant="h4" />
+                      <Typography className='para'>Leaks in your condensation drain might cause your Payne furnace to leak. In this case, you should first inspect your furnace's condensation drain or tube. You might also need an HVAC expert who will help you with the issue if it gets clogged.</Typography>
+                    </Box>
+                    <Box mt={2}>
+                      <SectionalHeading simpletext="The furnace at Payne is not heating up" variant="h4" />
+                      <Typography className='para'>This is another problem. If your Payne Furnace is not heating properly then verify your thermostat. Check if it is on and set it to the heating setting. Also, try resetting your circuit breaker. If you do not, then give us a call immediately.</Typography>
+                    </Box>
+                    <Box mt={2}>
+                      <SectionalHeading simpletext="Payne Furnace turns off" variant="h4" />
+                      <Typography className='para'>Another problem which you might face is the Payne furnace constantly turning off. This can be due to insufficient furnace airflow. If the air filter is damaged, then you can check it and replace it.</Typography>
+                    </Box>
+                  </Box>
                 </Box>
               </Grid>
             </Grid>

@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/legacy/image'
 import Carrier1 from '../public/brand-page/Layer-124.webp'
@@ -40,8 +40,8 @@ const Carrier = () => {
 
   const brandDetailparagraph = [
 
-    { id: 'branddetail-1', text: 'You would like to know what kind of repairing services you can get from Teressens HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes.' },
-    { id: 'branddetail-2', text: 'We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Teressens multiple business licenses can fix any brand and provide you with the best possible assistance.' }
+    { id: 'branddetail-1', text: "You would like to know what kind of repairing services you can get from Teressen's HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes." },
+    { id: 'branddetail-2', text: "We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Teressen's multiple business licenses can fix any brand and provide you with the best possible assistance." }
 
   ]
   return (
@@ -143,9 +143,9 @@ const Carrier = () => {
           <Container maxWidth="xxl" className="px-md-0">
             <Grid container>
               <Grid item xs={12} md={10} className='mx-auto'>
-
                 <Box>
-
+                  <SectionalHeading simpletext="Common issues faced with Carrier furnaces" variant="h2" />
+                  <Typography className='para'>Whether you have an electric or gas furnace, it is important to comprehend how they operate. So, here are the most common issues your Carrier furnaces might face:</Typography>
                   <List>
                     <ListItem>
                       <ListItemIcon>

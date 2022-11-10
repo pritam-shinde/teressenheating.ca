@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListIte
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-103.webp'
 import BlueLogo from '../public/logo/blue-logo.svg'

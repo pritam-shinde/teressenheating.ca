@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-108.webp'
@@ -128,7 +128,7 @@ const Lennox = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressens Lennox AC repair services' brandDetaillArr={brandDetailparagraph} />
+                      <BrandDetails title='Teressen&apos;s Lennox AC repair services' brandDetaillArr={brandDetailparagraph} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -168,7 +168,7 @@ const Lennox = () => {
               <Grid item xs={12} md={10} className='mx-auto'>
                 <Box p={3}>
                   <Box>
-                    <SectionalHeading simpletext="Reasons to call us:" variant="h2" align={width > 600 ? 'left' : 'center'} />
+                    <SectionalHeading simpletext="Reasons to call us" variant="h2" align={width > 600 ? 'left' : 'center'} />
                     <List>
                       {
                         ["We have Lennox furnace-trained professionals.", "We provide professional services in your budget.", " We are licensed and insured."].map(item => <ListItem key={item}>

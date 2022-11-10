@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner} from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-115.webp'
@@ -41,7 +41,7 @@ const Trane = () => {
     'We have Trane furnace experienced technicians.',
     'We give professional services at affordable rates.',
     'We do all types of Trane heating, installation, maintenance, and repair work.',
-    'Teressen&apose;s heating and air conditioning services are proudly meant to serve you the best.'
+    "Teressen's heating and air conditioning services are proudly meant to serve you the best."
   ]
   return (
     <>
@@ -130,7 +130,7 @@ const Trane = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Trane products and services:' list={true} ListArray={brandDetailparagraph} />
+                      <BrandDetails title='Trane products and services' list={true} ListArray={brandDetailparagraph} />
                     </Grid>
                   </Grid>
                 </Box>

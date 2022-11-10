@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-122.webp'
@@ -41,8 +41,8 @@ const Arcoaire = () => {
   return (
     <>
     <Head>
-    <title>Arcoaire - teressenheating.ca</title>
-    <meta name="description" content=""/>
+    <title>HVAC Installation and Service for Arcoaire Heating Systems | Teressen</title>
+    <meta name="description" content="AC and heating installation, service, repair, and tune-ups for Arcoaire furnaces. Let us help you get the most from your investment. Book an Appointment Now!"/>
     <meta name="robots" content="index"/>
     <link rel="canonical" href="/arcoaire/"/>
   </Head>

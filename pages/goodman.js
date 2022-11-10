@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-130.webp'
@@ -159,7 +159,7 @@ const Goodman = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
                   <SectionalHeading simpletext="Most common Goodman furnace issues" variant="h2" />
-                  <Typography className='para'>The issues for Goodman furnaces are as follows</Typography>
+                  <Typography className='para'>The issues for Goodman furnaces are as follows:</Typography>
                   <List>
                     <ListItem>
                       <ListItemIcon>

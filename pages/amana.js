@@ -3,7 +3,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import { CommonBanner} from '../components/components'
 import Image from 'next/image'
 import BrandLogo from '../public/brand-page/Layer-120.webp'
@@ -131,7 +131,7 @@ const Amana = () => {
             <Box p={3}>
               <Grid container>
                 <Grid item xs={12} md={11}>
-                  <BrandDetails title='Teressen&apos;s Amana products and services:' list={true} ListArray={brandDetailparagraph} />
+                  <BrandDetails title='Teressen&apos;s Amana products and services' list={true} ListArray={brandDetailparagraph} />
                 </Grid>
               </Grid>
             </Box>
