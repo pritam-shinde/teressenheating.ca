@@ -37,7 +37,7 @@ const HeatingService = () => {
   return (
     <>
       <Head>
-        <title>Heating Services - Installation And Maintenance Services | Teressen</title>
+        <title>Heating Services - Installation And Maintenance Services | Teressenheating</title>
         <meta name="description" content="Teressen Heating & Air Conditioning offers heating installation, maintenance, and repair services to residential and commercial customers in Canada. Contact us." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/heating-services/" />
