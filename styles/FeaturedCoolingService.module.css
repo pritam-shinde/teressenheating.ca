@@ -1,0 +1,12 @@
+.FeaturedCoolingService{
+    width: 100%;
+    height: auto;
+    background-image: url(../public/featuareCoolingService/cooling-bg.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.FeaturedCoolingService h2, .FeaturedCoolingService h3{
+    color: var(--white);
+}

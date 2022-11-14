@@ -1,0 +1,8 @@
+.FeaturedHeatingServices{
+    width: 100%;
+    height: auto;
+    background-image: url(../public/featuredheatingservice/featured-bg.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

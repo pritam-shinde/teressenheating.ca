@@ -1,0 +1,17 @@
+.date{
+    font-size: 1.8rem !important;
+    font-weight: 600;
+    color: var(--white) !important;
+    margin: 0 !important;
+}
+
+.month{
+    font-weight: 600 !important;
+    color: var(--white) !important;
+    margin: 0 !important;
+}
+
+.stickyCategory{
+    position: sticky;
+    top: 5%;
+}
