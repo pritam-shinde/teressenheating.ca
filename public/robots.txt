@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: http://teressenheating.ca/
+
+# Sitemaps
+Sitemap: http://teressenheating.ca/sitemap.xml
