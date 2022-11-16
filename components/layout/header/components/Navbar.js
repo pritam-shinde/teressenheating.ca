@@ -16,10 +16,13 @@ const Navbar = () => {
   const [aboutDropdown, setAboutDropdown] = useState(false);
   const [brandDropdown, setBrandDropdown] = useState(false);
 
-  useEffect(() => {
-    setWidth(window.innerWidth)
-  }, [width])
-
+    useEffect(() => {
+        setWidth(window.innerWidth)
+        window.addEventListener('resize', () => {
+            setWidth(window.innerWidth)
+        })
+    });
+  
   const closeMobileMenu = () => {
     setClicked(false)
     setServiceDropdown(false)
