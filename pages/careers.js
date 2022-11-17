@@ -69,7 +69,7 @@ const Careers = () => {
                       <Box>
                         <SectionalHeading blacktext="Apply" blueText="Now" variant="h2" />
                         <Box mt={3}>
-                          <form method='post' action='https://formsubmit.co/adityaj.nonstop@gmail.com' encType="multipart/form-data">
+                          <form method='post' action='https://formsubmit.co/0bd1f7a3902b639d8def60c343479ba9' encType="multipart/form-data">
                             <div className='row'>
                               <div className='col-md-6 col-12'>
                                 <div className='form-group'>

@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import SectionalHeading from '../../components/SectionalHeading/SectionalHeading'
 import { LocationOnOutlined, LocalPhoneOutlined, MailOutline, CheckCircle } from '@mui/icons-material'
 import { AppointmentForm } from '../../components/components'
+import Image from 'next/legacy/image'
+import Brands from '../../public/brand-page/brands-logo.jpg'
 
 const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faqVariant, faqArr, faqSimpleTitle, formBlackTitle, formBlueTitle, formVariant, formtitleAlign, formSimpleTitle, address, addressBlackTitle, addressBlueTitle, addressVariant, addresstitleAlign, addressSimpleTitle }) => {
 
@@ -31,8 +33,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                         <List>
                                                             {
                                                                 [
-                                                                    { id: "contact-1", icon: <LocationOnOutlined className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "Vestibulum volutpat augue quis nibh 1531 Moonlight Drive, Maple Shade, NJ" },
-                                                                    { id: "contact-2", icon: <LocalPhoneOutlined className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "123-345-7890" },
+                                                                    { id: "contact-2", icon: <LocalPhoneOutlined className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "604-363-6622" },
                                                                     { id: "contact-3", icon: <MailOutline className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "info@teressen heating.ca" },
                                                                 ].map(item => <ListItem key={item.id} className="m-0 p-0 mb-3">
                                                                     <ListItemIcon>
@@ -45,6 +46,10 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                     </Box>
                                                 </Box>
                                             </Box>
+                                            <Box>
+                                            <Image src={Brands} alt="Brands logo" layout='responsive' />
+                                            </Box>
+
                                         </Grid> : null
                                     }
                                     {

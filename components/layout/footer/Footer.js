@@ -74,9 +74,7 @@ const Footer = () => {
                                             </Box>
                                             <Box>
                                                 <List className='p-0'>
-                                                    <ListItem className='p-0'>
-                                                        <ListItemText primary={<p><strong className='text--blue'>Head Office :</strong> <span className='text-white'>is simply dummy text of the printing and typesetting industry.</span></p>} />
-                                                    </ListItem>
+                                                 
                                                     <ListItem className='p-0'>
                                                         <ListItemText primary={<p><strong className='text--blue'>Call :</strong> <a href="tel:604-363-6622" className='text-white'>604-363-6622</a></p>} />
                                                     </ListItem>

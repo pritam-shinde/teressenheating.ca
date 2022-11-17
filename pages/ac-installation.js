@@ -4,11 +4,11 @@ import Head from 'next/head'
 import Image from 'next/legacy/image'
 import React from 'react'
 import { SectionalHeading, CommonBanner } from '../components/components'
-import Banner from '../public/fireplace/fireplace-heat.webp'
-import Fireplace from '../public/fireplace/fireplace.webp'
-import { FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
+import Banner from '../public/acInstallation/ac-installation-banner.webp'
+import ACInstallation from '../public/acInstallation/ac-installation.webp'
+import { FaqAndForm, FeaturedCoolingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
 
-const index = () => {
+const AcInstallation = () => {
   const arrayFaq = [
     { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
     { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
@@ -29,20 +29,21 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Gas Fireplace Installation, Repair, Services | Teressenheating </title>
-        <meta name="description" content="Gas Fireplace Installation, Repair, & Services. We offer the best installation for all types of gas fireplaces and inserts, as well as fireplace repair services." />
+        <title>Air Conditioning installation services | Teressenheating </title>
+        <meta name="description" content="The best air conditioning installation services for residential and commercial ac systems are here. We have the best prices and come with a 100% satisfaction guarantee." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/fireplace/" />
+        <link rel="canonical" href="/ac-installation/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Fireplace" color="#fff" variant="h2" />
+        <CommonBanner bg={Banner} title="Air Conditioning Installation" color="#fff" variant="h2" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen Gas Fire Plan Installation And Repair Services Are Number One Always" variant="h2" />
-                  <Typography className='para'>We are the father of quality repairing services. Hence, we provide professional furnace installation services. We have certified HVAC technicians near you that solve all your problems. Also, all our technicians and installers are licensed experts who have passed background checks.</Typography>
+                  <SectionalHeading simpletext="Teressen AC installation services are always on-point" variant="h2" />
+                  <Typography className='para'>With over decades of work experience, we have been providing quality services across the world. We are a locally-owned and operated organization that provides on-point air conditioning services.
+                  </Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -57,7 +58,7 @@ const index = () => {
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image src={Fireplace} alt="fireplace" layout='responsive' />
+                        <Image src={ACInstallation} alt="Ac installation" layout='responsive' />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -115,64 +116,28 @@ const index = () => {
             </Grid>
           </Container>
         </section>
-        <Locations />
-        <section className='mt-md-4 mt-3'>
+        <section>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
-                <Box>
-                  <SectionalHeading simpletext="More reasons to hire us?" variant="h2" />
-                  <List>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline className='text--blue' />
-                      </ListItemIcon>
-                      <ListItemText primary="We have got exceptional reviews." />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline className='text--blue' />
-                      </ListItemIcon>
-                      <ListItemText primary="There are no hidden charges" />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline className='text--blue' />
-                      </ListItemIcon>
-                      <ListItemText primary="We have trained experts." />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline className='text--blue' />
-                      </ListItemIcon>
-                      <ListItemText primary="We give free estimates" />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline className='text--blue' />
-                      </ListItemIcon>
-                      <ListItemText primary="We assure reliable services" />
-                    </ListItem>
-                    <ListItem>
-                      <ListItemIcon>
-                        <CheckCircleOutline className='text--blue' />
-                      </ListItemIcon>
-                      <ListItemText primary="We guarantee comfort." />
-                    </ListItem>
-                  </List>
+                <Box mt={5}>
+                  <SectionalHeading simpletext="We are just around the corner for you and your demands" variant="h2" />
+                  <Typography className='para'>Reaching us is very easy. You simply have to enter your postcode and we will show you our local technicians near you. We also offer a wide range of experts, who take care of your AC installation, maintenance, repairs, and conditioning.</Typography>
+                  <Typography className='para'>We partner exclusively with skilled technicians who are trained to install your air conditioning system in the most efficient ways.</Typography>
                 </Box>
               </Grid>
             </Grid>
           </Container>
         </section>
-        <FeaturedHeatingServices />
-        <PopularService color="red" />
+        <Locations />
+        <FeaturedCoolingServices />
+        <PopularService color="blue" />
         <HighlySkilled />
-        <Testimonial />
+        <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
     </>
   )
 }
 
-export default index
+export default AcInstallation
