@@ -23,8 +23,8 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>About - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>About us - Heating & Air Conditioning Services | Teressenheating </title>
+        <meta name="description" content="We provide heating & air conditioning solutions for residential & commercial customers in Canada. Request a heating & air conditioning service quote." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/about-us/" />
       </Head>

@@ -111,7 +111,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                 {
                                                     formSimpleTitle ? <SectionalHeading variant={formVariant} align={formtitleAlign} simpletext={formSimpleTitle} /> : null
                                                 }
-                                                <Box p={5} >
+                                                <Box p={2} >
                                                     <AppointmentForm />
                                                 </Box>
                                             </Box>
