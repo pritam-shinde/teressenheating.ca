@@ -9,8 +9,8 @@ const Careers = () => {
   return (
     <>
       <Head>
-        <title>Career - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Careers - Heating & Air Conditioning Jobs | Teressenheating </title>
+        <meta name="description" content="Teressen is one of the top employers of HVAC professionals across Canada. Visit our career page to explore the current opportunities in the heating & cooling industry." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/career/" />
       </Head>

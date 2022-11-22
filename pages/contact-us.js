@@ -9,8 +9,8 @@ const ContactUs = () => {
   return (
     <>
     <Head>
-    <title>Contact - teressenheating.ca</title>
-        <meta name="description" content="" />
+    <title>Contact Us for Heating and Cooling Services | Teressenheating </title>
+        <meta name="description" content="Get in touch with us for your heating or cooling-related quote. Call or email us at 604-363-6622 or info@teressenheating.ca to get the best heating or cooling quote." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/contact-us/" />
     </Head>
