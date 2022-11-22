@@ -50,8 +50,8 @@ const BrandSlider = () => {
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
-                            <Box py={5}>
-                                <SectionalHeading blacktext="Brands" blueText="We Service" variant="h2" align="center" />
+                            <Box py={5} className="BrandTitle">
+                                <SectionalHeading blacktext="Brands" blueText="We Service" variant="h2" align="center"/>
                                 <Box mt={3}>
                                     <Swiper
                                         slidesPerView={width > 992 ? 4 : width > 0 && width < 600 ? 1 : 3}
