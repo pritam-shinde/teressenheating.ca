@@ -20,8 +20,8 @@ const FAQ = () => {
   return (
     <>
       <Head>
-        <title>FAQ - teressenheating.ca</title>
-        <meta name="description" content="" />
+        <title>Common Questions About Heating & Cooling | Teressenheating</title>
+        <meta name="description" content="We offer a variety of services to fit your needs. Get the answers to your questions about our heating & cooling services and what sets us apart from the competition." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/faq/" />
       </Head>
