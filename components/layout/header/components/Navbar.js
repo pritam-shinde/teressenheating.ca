@@ -21,7 +21,7 @@ const Navbar = () => {
         window.addEventListener('resize', () => {
             setWidth(window.innerWidth)
         })
-    });
+    },[width]);
   
   const closeMobileMenu = () => {
     setClicked(false)
