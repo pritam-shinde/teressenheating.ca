@@ -9,7 +9,7 @@ import { Dropdowns } from './components'
 import Image from 'next/legacy/image'
 
 const Navbar = () => {
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(601);
   const [clicked, setClicked] = useState(false);
   const [servicesDropdown, setServiceDropdown] = useState(false);
   const [areasDropdown, setAreasDropdown] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
         window.addEventListener('resize', () => {
             setWidth(window.innerWidth)
         })
-    });
+    },[width]);
   
   const closeMobileMenu = () => {
     setClicked(false)
