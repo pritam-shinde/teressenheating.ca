@@ -36,6 +36,37 @@ const CommercialHVAC = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/commercial-hvac/" />
       </Head>
+      <script type="application/ld+json">
+      {
+        `{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "How do commercial hvac system work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure."
+            }
+          },{
+            "@type": "Question",
+            "name": "How often should commercial hvac filters be changed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It should be changed every quarter, or within three months."
+            }
+          },{
+            "@type": "Question",
+            "name": "How long do commercia hvac systems last?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The average life expectancy of commercial HVAC systems is 15 to 20 years."
+            }
+          }]
+        }`
+      }
+
+      </script>
       <CommonBanner bg={Banner} title="Commercial HVAC Services" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>

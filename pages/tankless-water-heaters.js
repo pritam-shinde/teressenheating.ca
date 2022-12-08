@@ -35,6 +35,60 @@ const TanklesWaterHeater = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/tankless-water-heaters/" />
       </Head>
+      <script type="application/ld+json">
+      {
+        `{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "how to install service valves for tankless water heater?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": ".."
+            }
+          },{
+            "@type": "Question",
+            "name": "how often service tankless water heater?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tankless water heaters need to be flushed once per year."
+            }
+          },{
+            "@type": "Question",
+            "name": "What kind of maintenance needs to be done on a tankless water heater?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Clean or replace the water line filter. Many tankless water heater models have a water line filter that protects against hard water, scale, and sediment.
+        Clean the air filter.
+        Descaling and flushing the system."
+            }
+          },{
+            "@type": "Question",
+            "name": "What is the most common problems with tankless water heaters?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Here are six of the most common problems and maintenance concerns for tankless water heaters:
+        
+        Mineral Buildup.
+        System Overload.
+        Cold Water Sandwich.
+        Air Supply or Exhaust Blockage.
+        Ignition Failure.
+        Flame Failure."
+            }
+          },{
+            "@type": "Question",
+            "name": "Can you run out of hot water with a tankless water heater?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Although a tankless system can't run out of hot water, it can still be overwhelmed by demand."
+            }
+          }]
+        }`
+      }
+
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Teressen tankless water heater maintenance service" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>

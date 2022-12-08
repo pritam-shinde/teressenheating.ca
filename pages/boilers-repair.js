@@ -43,6 +43,105 @@ const BoilerRepair = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-repair/" />
       </Head>
+      <script type="application/ld+json">
+      {
+        `{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "How often should you service your boiler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your first boiler service must be conducted 12 months after installation to meet the terms of your warranty."
+            }
+          },{
+            "@type": "Question",
+            "name": "what does a boiler service include?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A boiler service includes the following services:
+        
+        A visual check of the boiler and flame
+        Internal and external checks of the flue
+        The operating pressure
+        The heat input
+        All safety devices
+        The water content
+        The electrical wiring
+        Casing seals"
+            }
+          },{
+            "@type": "Question",
+            "name": "what is a standard boiler service?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A boiler service is a set of checks and tests which is performed on the boiler. This ensures your boiler is working efficiently and effectively. A good boiler service means that a Gas Safe engineer checks the correct gas flow and pressure."
+            }
+          },{
+            "@type": "Question",
+            "name": "How long should a boiler service take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It takes around an hour to complete"
+            }
+          },{
+            "@type": "Question",
+            "name": "What maintenance is required for a boiler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rigorously inspect the heating system and rectify any problems.
+        Clean and inspect the heat exchanger of the boiler.
+        Ensure all boiler connections and wiring is intact.
+        Make sure water pH levels are within the proper range."
+            }
+          },{
+            "@type": "Question",
+            "name": "Do I need to maintain my boiler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Routine maintenance is critical to ensure a boiler system remains safe, reliable, and efficient."
+            }
+          },{
+            "@type": "Question",
+            "name": "How do you know when to replace your boiler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cost to install a boiler in the Vancouver area runs around $13,999, but you could pay anywhere from $9,499 to over $19,999."
+            }
+          },{
+            "@type": "Question",
+            "name": "How much does it cost to replace a boiler in Canada?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Removal of the old boiler. The removal of the current boiler is a typical place installers will start. Flush/Clean."
+            }
+          },{
+            "@type": "Question",
+            "name": "What do I need to know when installing a new boiler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The engineers do a simple chemical flush over several hours for more intensive cleaning. Then, they will adjust the pipework which helps in reconfiguring it to minimize the heat loss. Then the engineer keeps on installing the boiler at the location you want."
+            }
+          },{
+            "@type": "Question",
+            "name": "What happens when you get a new boiler installed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The engineers do a simple chemical flush over several hours for more intensive cleaning. Then, they will adjust the pipework which helps in reconfiguring it to minimize the heat loss. Then the engineer keeps on installing the boiler at the location you want."
+            }
+          },{
+            "@type": "Question",
+            "name": "What does boiler installation include?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Boiler installation means the installation of a boiler. It includes connecting pipes, appurtenances, valves, fittings, firing equipment, flanges, controls, and auxiliaries. The term includes the field assembly of boilers."
+            }
+          }]
+        }`
+      }
+
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Teressen boiler repair service is one of the best boiler repairing services in Canada" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>

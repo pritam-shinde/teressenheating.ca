@@ -38,6 +38,49 @@ const AirConditioningService = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/air-conditioning-service/" />
       </Head>
+      <script type="application/ld+json">
+      {
+        `{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "How often does air conditioning need to be serviced?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year."
+            }
+          },{
+            "@type": "Question",
+            "name": "How much does air conditioning service cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system."
+            }
+          },{
+            "@type": "Question",
+            "name": "what does air conditioning service include ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Air filter and fin cleaning.
+        AC condenser and evaporator coil cleaning.
+        AC condenser and evaporator fan cleaning.
+        Drain cleaning and leakage check.
+        Coolant level check in air conditioner.
+        Overall inspection of the AC unit"
+            }
+          },{
+            "@type": "Question",
+            "name": "What are the benefits of servicing air conditioning system?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold."
+            }
+          }]
+        }`
+      }
+
+      </script>
       <CommonBanner bg={airConditioner} title="Air Conditioning Service" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
