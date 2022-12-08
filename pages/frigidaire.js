@@ -46,6 +46,85 @@ const Frigidaire = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/frigidaire/" />
       </Head>
+      <script type="application/ld+json">
+      {
+        `{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [{
+            "@type": "Question",
+            "name": "How do you maintain a heating and cooling system?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
+        Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
+        Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
+            }
+          },{
+            "@type": "Question",
+            "name": "can you combine heating and cooling system?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
+            }
+          },{
+            "@type": "Question",
+            "name": "Should I leave my heat pump on all the time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
+            }
+          },{
+            "@type": "Question",
+            "name": "can you use the same ducts for heating and cooling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
+            }
+          },{
+            "@type": "Question",
+            "name": "How does geothermal heating and cooling works",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
+            }
+          },{
+            "@type": "Question",
+            "name": "How does ductless heating and cooling works?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
+            }
+          },{
+            "@type": "Question",
+            "name": "How much Does HVAC installation Cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
+            }
+          },{
+            "@type": "Question",
+            "name": "How long Does HVAC Installation take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually, it takes three to five days for installation."
+            }
+          },{
+            "@type": "Question",
+            "name": "What kind of warranties come with my New HVAC installation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It has the following warranties:
+        
+        HVAC Manufacturer Warranty.
+        HVAC Extended Warranty.
+        Homeowners Insurance.
+        Home Warranty"
+            }
+          }]
+        }`
+      }
+    </script>
       <main>
         <section>
           <CommonBanner bg={BoilerMaintainanceBanner} title="Frigidaire" color="#fff" variant="h2" />
