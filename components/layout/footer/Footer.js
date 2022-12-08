@@ -21,8 +21,8 @@ const Footer = () => {
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
                             <Box py={5}>
-                                <Grid container spacing={width < 992 ? 3 : 6}>
-                                    <Grid item xs={12} md={4} lg={6}>
+                                <Grid container spacing={width < 992 ? 2 : 4}>
+                                    <Grid item xs={12} md={4} lg={5}>
                                         <Box>
                                             <Box mb={3} style={{ width: "40%" }} >
                                                 <Image layout='responsive' src={GreyLogo} alt="Teressenheating Logo" className='img-fluid' title='Teressenheating Logo' />
@@ -32,53 +32,66 @@ const Footer = () => {
                                             </Box>
                                         </Box>
                                     </Grid>
-                                    <Grid item xs={12} md={4} lg={2}>
-                                        <Box>
-                                            <Box mb={width < 992 ? 2 : width < 1300 ? 3 : 4.2} pt={width < 992 ? 1 : (width < 1403) ? 1 : 4}>
-                                                <Typography variant='h3' className='text-white'>QUICK LINKS</Typography>
-                                            </Box>
-                                            <Box>
-                                                <ul>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Home</a>
-                                                    </Link></li>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/about-us/">
-                                                        <a className={`${Styles.quickLink} text-white`}>About Us</a>
-                                                    </Link></li>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/brand/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Brands</a>
-                                                    </Link></li>
-
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/heating-services/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Heating</a>
-                                                    </Link></li>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/air-conditioning-service/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Cooling</a>
-                                                    </Link></li>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/commercial-hvac/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Commercial HVAC</a>
-                                                    </Link></li>
-
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/boilers/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Boiler</a>
-                                                    </Link></li>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/tankless-water-heaters/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Tankless Water Heater </a>
-                                                    </Link></li>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/faq/">
-                                                        <a className={`${Styles.quickLink} text-white`}>FAQ</a>
-                                                    </Link></li>
-                                                    <li><Link passHref prefetch={false} legacyBehavior href="/contact-us/">
-                                                        <a className={`${Styles.quickLink} text-white`}>Contact</a>
-                                                    </Link></li>
-
-                                                </ul>
-                                            </Box>
-                                        </Box>
-                                    </Grid>
                                     <Grid item xs={12} md={4} lg={4}>
                                         <Box>
-                                            <Box mb={width < 992 ? 2 : width < 1300 ? 3 : 4.2} pt={width < 992 ? 1 : width < 1403 ? 1 : 4}>
+                                            <Box mb={width < 992 ? 2 : width < 1300 ? 3 : 3.2} pt={width < 992 ? 1 : (width < 1403) ? 1 : 4}>
+                                                <Typography variant='h3' className='text-white'>QUICK LINKS</Typography>
+                                            </Box>
+
+                                            <Grid container>
+                                                <Grid item xs={6} md={6} lg={6}>
+                                                    <ul>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Home</a>
+                                                        </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/about-us/">
+                                                            <a className={`${Styles.quickLink} text-white`}>About Us</a>
+                                                        </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/brand/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Brands</a>
+                                                        </Link></li>
+
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/heating-services/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Heating</a>
+                                                        </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/air-conditioning-service/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Cooling</a>
+                                                        </Link></li>
+
+
+
+
+                                                    </ul>
+                                                </Grid>
+                                                <Grid item xs={6} md={6} lg={6}>
+                                                    <ul>
+
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/commercial-hvac/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Commercial HVAC</a>
+                                                        </Link></li>
+
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/boilers/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Boiler</a>
+                                                        </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/tankless-water-heaters/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Tankless Water Heater </a>
+                                                        </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/faq/">
+                                                            <a className={`${Styles.quickLink} text-white`}>FAQ</a>
+                                                        </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/contact-us/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Contact</a>
+                                                        </Link></li>
+
+                                                    </ul>
+                                                </Grid>
+                                            </Grid>
+                                        </Box>
+
+                                    </Grid>
+                                    <Grid item xs={12} md={4} lg={3}>
+                                        <Box>
+                                            <Box mb={width < 992 ? 2 : width < 1300 ? 3 : 3.2} pt={width < 992 ? 1 : width < 1403 ? 1 : 4}>
                                                 <Typography variant='h3' className='text-white'>Contacts</Typography>
                                             </Box>
                                             <Box>
@@ -97,10 +110,10 @@ const Footer = () => {
                                     <Grid item xs={12} sm={4} lg={3} className="mx-auto">
                                         <box>
                                             <ul className='text-center'>
-                                                 <li style={{float:'left',verticalAlign: 'middle'}}><Link passHref prefetch={false} legacyBehavior href="/privacy-policy/">
-                                                 <a className='text-white'>Privacy Policy</a>
+                                                <li style={{ float: 'left', verticalAlign: 'middle' }}><Link passHref prefetch={false} legacyBehavior href="/privacy-policy/">
+                                                    <a className='text-white'>Privacy Policy</a>
                                                 </Link></li>
-                                                <li style={{float:'right',verticalAlign: 'middle'}}><Link passHref prefetch={false} legacyBehavior href="/terms-of-service/">
+                                                <li style={{ float: 'right', verticalAlign: 'middle' }}><Link passHref prefetch={false} legacyBehavior href="/terms-of-service/">
                                                     <a className={`${Styles.quickLink} text-white`}>Term Of Service</a>
                                                 </Link></li>
                                             </ul>
