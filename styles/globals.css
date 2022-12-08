@@ -561,9 +561,3 @@ a.nav-link.dropdown-item {
 }
 
 
-@media only screen and (min-width:992px) {
-    li.listFlex {
-        margin-left: 2rem;
-    }
-    
-}

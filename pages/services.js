@@ -53,19 +53,19 @@ const Service = () => {
                         <Box>
                           <Typography className='para'>We understand how humid and hot your city can get. That is why a high-performing, dependable AC unit is non-negotiable at your place or office. We have a team of expert technicians who are here 24*7 for your assistance with all your HVAC needs. Our services include:</Typography>
                           <List>
-                            <ListItem>
+                            <ListItem component="a" href="/ac-repair/">
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
                               <ListItemText primary="Air conditioning services and repair." />
                             </ListItem>
-                            <ListItem>
+                            <ListItem component="a" href="/ac-maintainance/">
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
                               <ListItemText primary="Air conditioning maintenance services" />
                             </ListItem>
-                            <ListItem>
+                            <ListItem component="a" href="/ac-installation/">
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
