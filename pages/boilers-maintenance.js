@@ -7,6 +7,7 @@ import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import BoilerMaintainanceBanner from '../public/boilerMaintanance/maintainencebg.webp'
 import Repair from '../public/boilerMaintanance/image.webp'
+import Link from 'next/link'
 
 const BoilerMaintainance = () => {
   const [width, setWidth] = useState()
@@ -195,7 +196,7 @@ const BoilerMaintainance = () => {
                     <Container maxWidth="xxl">
                       <Box p={3}>
                         <SectionalHeading simpletext="Why choose our boiler maintenance services?" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                        <Typography className='para'>As a leading HVAC services expert, we offer one complete and cost-effective solution for boiler maintenance and repair. The reasons, why you must choose us are as follows:
+                        <Typography className='para'>As a leading <Link href="/commercial-hvac/">HVAC services expert</Link>, we offer one complete and cost-effective solution for boiler maintenance and repair. The reasons, why you must choose us are as follows:
                         </Typography>
                         <List>
                           {

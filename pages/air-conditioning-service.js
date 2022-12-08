@@ -8,6 +8,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import airConditioner from '../public/cooling/cooling-service.webp';
 import Cooling from '../public/cooling/cooling.webp';
 import Air from '../public/cooling/ac.webp'
+import Link from 'next/link'
 
 const AirConditioningService = () => {
 
@@ -105,11 +106,16 @@ const AirConditioningService = () => {
                                 <Typography className='para'>Our Air conditioning services include:</Typography>
                                 <List>
                             {
-                              ["AC installation and replacement services.", " AC maintenance services", "AC repairing services", "Thermostat units."].map(item => <ListItem key={item}>
+                              [
+                                { id:"service_1", text:"AC installation and replacement services.", link:"/ac-installation/"},
+                                { id:"service_2", text:"AC maintenance services", link:"/ac-maintainance/"},
+                                { id:"service_3", text:"AC repairing services", link:"/ac-repair/"},
+                                { id:"service_4", text:"Thermostat units."}
+                              ].map(item => <ListItem key={item}>
                                 <ListItemIcon>
                                   <CheckCircleOutline className='text--blue' />
                                 </ListItemIcon>
-                                <ListItemText primary={item} />
+                                <ListItemText primary={item.link ? <Link href={item.link}>{item.text}</Link> : item.text} />
                               </ListItem>)
                             }
                           </List>
@@ -153,7 +159,7 @@ const AirConditioningService = () => {
                     <Container maxWidth="xxl">
                       <Box>
                         <SectionalHeading simpletext=" Our air conditioning maintenance service is for everyone:" variant="h2" />                   
-                        <Typography className='para'>Our air conditioning maintenance service has been proven to reduce equipment failure and ensures safe operation. We also have different types of machinery that provide a quick fix for all your heating problems.
+                        <Typography className='para'>Our air conditioning maintenance service has been proven to reduce equipment failure and ensures safe operation. We also have different types of machinery that provide a quick fix for all your <Link href="/heating-services/">heating problems</Link>.
                         </Typography>
                       </Box>
                     </Container>

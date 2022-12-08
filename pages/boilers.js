@@ -7,6 +7,7 @@ import Banner from '../public/boiler/boiler-2.webp'
 import ReapearWaterHeater from '../public/boiler/worker-repairing-water-heater.webp'
 import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
+import Link from 'next/link'
 
 
 const Boiler = () => {
@@ -213,7 +214,7 @@ const Boiler = () => {
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Experts in the heating industry:' />
                                 <Typography className='para'>So, if you have any questions related to your boiler repair and installation, then, give us a call instantly. Our experts are ready to assist you in everything.</Typography>
-                                <Typography className='para'>Teressen heating ltd specializes in all types of boiler repair and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
+                                <Typography className='para'><Link href="/">Teressen heating ltd</Link> specializes in all types of boiler repair and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
                               </Box>
                             </Grid>
                           </Grid>
@@ -255,7 +256,7 @@ const Boiler = () => {
                       <Container maxWidth="xxl">
                         <Box p={3}>
                           <SectionalHeading simpletext="Our boiler repair and installation services:" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                          <Typography className='para'> Canada can get cold in the winter. So, necessitating a reliable method for home heating is a must. Boilers help in heating your home and heating the water. Hence, Teressen offers the best boiler services in Canada because:
+                          <Typography className='para'> Canada can get cold in the winter. So, necessitating a reliable method for home heating is a must. Boilers help in heating your home and <Link href="/heat-pump/">heating the water</Link>. Hence, Teressen offers the best boiler services in Canada because:
                           </Typography>
                           <List>
                             {

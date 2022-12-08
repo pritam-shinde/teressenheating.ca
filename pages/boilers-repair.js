@@ -7,6 +7,7 @@ import Banner from '../public/lennox-hvac/lennox.webp'
 import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import boiler from '../public/boiler/worker-repairing-water-heater.webp'
+import Link from 'next/link'
 
 const BoilerRepair = () => {
   const [width, setWidth] = useState()
@@ -157,7 +158,7 @@ const BoilerRepair = () => {
                             <Image layout='responsive' src={boiler} alt="boiler service" />
                           </Grid>
                           <Grid item xs={12} md={6}>
-                            <Typography className='para'>Teressen has been providing expert boiler installation, boiler repair, and boiler installation services in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of boiler maintenance and boiler repair services at affordable prices.</Typography>
+                            <Typography className='para'>Teressen has been providing expert boiler installation, boiler repair, and boiler installation services in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
                           </Grid>
                         </Grid>
                       </Container>
@@ -180,7 +181,7 @@ const BoilerRepair = () => {
                     <section className='mt-md-5 mt-3 bg-grey'>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="We keep your boilers running for long" variant="h2" align="left" />
-                        <Typography className='para'>Repairing is one of the primary specialties of Teressen heating ltd. Our field staff is available 24*7 and has a combined history of literally hundreds of years of service and experience. We can meet the needs of the most complex boiler systems. We also repair or rebuild boilers that exceed OEM standards in less time. Easy access to critical parts allows our boiler repairs to swiftly remedy issues from minor refractory repairs to emergency generator tube bank replacements. And this makes us one of the best boiler repairing industries in the world.</Typography>
+                        <Typography className='para'>Repairing is one of the primary specialties of <Link href="/">Teressen heating ltd</Link>. Our field staff is available 24*7 and has a combined history of literally hundreds of years of service and experience. We can meet the needs of the most complex boiler systems. We also repair or rebuild boilers that exceed OEM standards in less time. Easy access to critical parts allows our boiler repairs to swiftly remedy issues from minor refractory repairs to emergency generator tube bank replacements. And this makes us one of the best boiler repairing industries in the world.</Typography>
                         <Typography className='para'>We have a true understanding of, downtime loss of production and approach repair projects with a sense of urgency. Our on-call boiler repair groups are available 24*7 and can be on-site within hours of your initial call. Our trucks act as rolling boiler parts departments and include the best operational services immediately.</Typography>
                         <Typography className='para'>If your boiler is forced to be down for an extended period, then we also arrange for rental boilers. This helps you to relax and count on us.</Typography>
                       </Container>
@@ -232,7 +233,7 @@ const BoilerRepair = () => {
                             <ListItemText primary="24*7 services." />
                           </ListItem>
                         </List>
-                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing the best boiler repair services. So, when you are looking for a home boiler company in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
+                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing the <Link href="/boilers-repair/">best boiler repair services</Link>. So, when you are looking for a home boiler company in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
                       </Container>
                     </section>
                   </Grid>

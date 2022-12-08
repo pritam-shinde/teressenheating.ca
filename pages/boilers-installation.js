@@ -7,6 +7,7 @@ import BoilerInstallationBanner from '../public/boilerInstallation/boilerInstall
 import Installation from '../public/boilerInstallation/image.webp'
 import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
+import Link from 'next/link'
 
 
 const BoilerInstallation = () => {
@@ -169,10 +170,10 @@ const BoilerInstallation = () => {
                             </Grid>
                             <Grid item xs={12} className="m-0 pt-0">
                               <Box>
-                                <Typography className='para'> So, if you are looking for a hassle-free solution to all your heating problems, contact Teressen today! We take care of all the boiler heating systems and make sure that we provide a reliable service to all our patrons.</Typography>
+                                <Typography className='para'> So, if you are looking for a hassle-free solution to all your <Link href="/heating-services/">heating problems</Link>, contact Teressen today! We take care of all the boiler heating systems and make sure that we provide a reliable service to all our patrons.</Typography>
                                 <Typography className='para'>Teressen boiler installation is perfect for those who are looking for an energy-efficient and reliable boiler. Our experts will help you choose the perfect boiler for your home and as per your requirements. With Teressen boiler, you will enjoy years of reliable services at the best prices. </Typography>
                                 <Typography className='para'>We know that as a homemaker, it is vital for you to find a skilled and experienced boiler installation expert who takes care of everything. To ensure that your new boiler setup provides you with the best heating system, we are always there for your quick assistance.</Typography>
-                                <Typography className='para'>Also, in Canada, there are many boiler installation companies. But, we are the best! We make sure that we not only provide you with the best boiler installation services but also help you by giving you the best boiler tips so that your work becomes easy. </Typography>
+                                <Typography className='para'>Also, in Canada, there are many boiler installation companies. But, we are the best! We make sure that we not only provide you with the best boiler installation services but also help you by giving you the <Link href="/boilers/">best boiler tips</Link> so that your work becomes easy. </Typography>
                               </Box>
                             </Grid>
                           </Grid>

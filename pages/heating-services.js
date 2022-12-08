@@ -8,6 +8,7 @@ import { CheckCircleOutline } from '@mui/icons-material';
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
 import { List, ListItemIcon, ListItemText, ListItem } from '@mui/material';
 import Image from 'next/legacy/image'
+import Link from 'next/link'
 
 const HeatingService = () => {
   const [width, setWidth] = useState()
@@ -110,7 +111,7 @@ const HeatingService = () => {
                         <Container maxWidth="xxl">
                           <Box>
                             <SectionalHeading variant='h3' simpletext='Licensed and insured HVAC services:' />
-                            <Typography className='para'>Before the chill of fall sets in it is time to think about servicing your furnace. When winter arrives, it is mandatory to look after your furnace maintenance so that it will keep you warm. At Teressen heating ltd, we have designed our furnace maintenance services and total comfort tune-up with people like you in mind. Hence, for furnace maintenance services, you simply, call us and we will be right there for your quick assistance.</Typography>
+                            <Typography className='para'>Before the chill of fall sets in it is time to think about servicing your furnace. When winter arrives, it is mandatory to look after your furnace maintenance so that it will keep you warm. At <Link href="/">Teressen heating ltd</Link>, we have designed our furnace maintenance services and total comfort tune-up with people like you in mind. Hence, for furnace maintenance services, you simply, call us and we will be right there for your quick assistance.</Typography>
                             <Typography className='para'>During this call, we will audit your furnace for repair frequency, age, overall comfort, and energy efficiency. Our quality maintenance services include:</Typography>
 
                             <List className='ps-m-5 ps-4'>
@@ -179,7 +180,7 @@ const HeatingService = () => {
                             </List>
 
                             <SectionalHeading variant="h4" simpletext={' Heat pumping installation, and replacement services:'} />
-                            <Typography className='para'>Depending on whether you are installing an air-source heat pump or a geothermal heat pump, the installation process may take a single afternoon or several weeks. This is because installing an air-source heat pump is simple just like installing an air conditioner. But a geothermal heat pump has a technical approach. It requires installation below the ground. So, the first thing that we do is check for your installation requirement first and then start our installation process.
+                            <Typography className='para'>Depending on whether you are installing an air-source heat pump or a geothermal heat pump, the installation process may take a single afternoon or several weeks. This is because installing an air-source <Link href="/heat-pump/">heat pump</Link> is simple just like installing an air conditioner. But a geothermal heat pump has a technical approach. It requires installation below the ground. So, the first thing that we do is check for your installation requirement first and then start our installation process.
                             </Typography>
                             <Typography className='para'>Also, if you are looking for a heat-pumping replacement, our technicians will be there to guarantee you how your new installation works. Our team is continuously trained on modern systems so that they can effectively replace filters, valves, and refrigerants.</Typography>
                           </Box>

@@ -7,6 +7,7 @@ import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../compone
 import Banner from '../public/commercialHVAC/commercial-2.webp';
 import { CheckCircleOutline } from '@mui/icons-material';
 import HVAC from '../public/commercialHVAC/hvac.webp'
+import Link from 'next/link'
 
 
 const CommercialHVAC = () => {
@@ -94,7 +95,7 @@ const CommercialHVAC = () => {
                             </Grid>
                             <Grid item xs={12}>
                               <Box>
-                                <Typography className='para'>Also, when it comes to commercial air conditioners, commercial boilers, and commercial furnace repair, our technicians are highly skilled. They will provide you with the best services and quality repairs. </Typography>
+                                <Typography className='para'>Also, when it comes to commercial <Link href="/air-conditioning-service/">air conditioners</Link>, commercial boilers, and commercial furnace repair, our technicians are highly skilled. They will provide you with the best services and quality repairs. </Typography>
                               </Box>
                             </Grid>
                           </Grid>
@@ -154,7 +155,7 @@ const CommercialHVAC = () => {
                             </ListItem>
                           </List>
                           <SectionalHeading simpletext="Reliable and responsive HVAC services when you need them the most:" variant='h2' />
-                          <Typography className='para'>Teressen commercial heating services in Canada is one of the fastest HVAC services experts with a positive approach. We provide our clients with one-stop quality services so they can count on us for everything. We aim to provide security and reliability through the best HVAC services. There are no hidden fees associated with our quality services. So, do not waste a second and just call us, we are here for you.
+                          <Typography className='para'>Teressen <Link href="/heating-services/">commercial heating services</Link> in Canada is one of the fastest HVAC services experts with a positive approach. We provide our clients with one-stop quality services so they can count on us for everything. We aim to provide security and reliability through the best HVAC services. There are no hidden fees associated with our quality services. So, do not waste a second and just call us, we are here for you.
                           </Typography>
                         </Box>
                       </Container>
