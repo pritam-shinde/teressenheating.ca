@@ -6,6 +6,7 @@ import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../compone
 import Banner from '../public/lennox-hvac/lennox.webp'
 import Image from 'next/legacy/image'
 import waterheater from '../public/tankless-water-heater/water-heater.webp'
+import Link from 'next/link'
 
 const TanklesWaterHeater = () => {
   const [width, setWidth] = useState()
@@ -108,7 +109,7 @@ const TanklesWaterHeater = () => {
                           <Grid item xs={12} md={6}>
                             <Box>
                               <Typography className='para'>Tankless water heaters are epic for people who want energy efficiency and hot water. These are small in size and are one of the best possible choices for water heaters in residential and businesses. But it is also necessary to check that your tankless water heaters should be operational.</Typography>
-                              <Typography className='para'>Hence, you need an expert service who would serve you with the best/ Also, if you are living in an area where you have hard water, then, tankless water heater maintenance should be done twice a year. This helps you ensure that all your components are working properly and efficiently.</Typography>
+                              <Typography className='para'>Hence, you need an expert service who would serve you with the best/ Also, if you are living in an area where you have hard water, then, tankless <Link href="/boilers-maintenance/">water heater maintenance</Link> should be done twice a year. This helps you ensure that all your components are working properly and efficiently.</Typography>
                             </Box>
                           </Grid>
                         </Grid>
@@ -126,7 +127,7 @@ const TanklesWaterHeater = () => {
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Teressen tankless water heaters: Quality, trust, and affordability at their best!" variant="h2" align="left" />
-                        <Typography className='para'>Tankless water heaters are the best possible options, to provide hot water service to your home. It saves your money and space by producing hot water on demand. The lack of a tank saves your energy and makes your work easy.</Typography>
+                        <Typography className='para'>Tankless water heaters are the best possible options, to provide <Link href="/tankless-water-heaters/">hot water service</Link> to your home. It saves your money and space by producing hot water on demand. The lack of a tank saves your energy and makes your work easy.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>

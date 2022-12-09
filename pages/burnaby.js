@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import BurnabyLoc from '../public/burnaby/burnaby.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const Burnaby = () => {
 
@@ -128,8 +129,8 @@ const Burnaby = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
-                      <Typography className='para'>Teressen&apos;s heating and air conditioning services in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
-                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only HVAC suppliers in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
+                      <Typography className='para'>Teressen&apos;s heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
+                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only <Link href="/commercial-hvac/">HVAC suppliers</Link> in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

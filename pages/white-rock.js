@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import WhiteRockLoc from '../public/white-rock/white-rock.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const WhiteRock = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,7 +128,7 @@ const WhiteRock = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen&apos;s Furnace Installation, And Tune-Up Services In White-Rock Rocks</Typography>
-                      <Typography className='para'>We get appreciated for our heating installation services in White-rock for the amount of work we do for all clients. No matter what, we always consider our clients as our kings. Hence, we provide quality heating services in White rock that makes you worry less and smile more. Also, we make sure that our installation, repair, and maintenance services should suit your budget too. So, once you give us a call, we make sure that your work is done very easily. We would also like you to rate our services so that there is always a scope for improvement for us.</Typography>
+                      <Typography className='para'>We get appreciated for our <Link href="/boilers-installation/">heating installation services</Link> in White-rock for the amount of work we do for all clients. No matter what, we always consider our clients as our kings. Hence, we provide quality <Link href="/heating-services/">heating services</Link> in White rock that makes you worry less and smile more. Also, we make sure that our <Link href="/boilers/">installation, repair, and maintenance services</Link> should suit your budget too. So, once you give us a call, we make sure that your work is done very easily. We would also like you to rate our services so that there is always a scope for improvement for us.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

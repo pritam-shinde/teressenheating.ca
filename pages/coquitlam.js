@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import CoquitlamLoc from '../public/coquitlam/Coquitlam.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const Coquitlam = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,7 +128,7 @@ const Coquitlam = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen&apos;s AC installation services in Coquitlam will give you the best of everything</Typography>
-                      <Typography className='para'>When it comes to furnace installation, heating and maintenance, we have always been one of the leading brands to help you with quality AC installation services in Coquitlam. We make sure that everything is done at a relative pace with affordable pricing. We also make sure that you don&apos; have to worry about anything. We take the charge of making sure that your tune-ups are done regularly in Coquitlam and nearby areas. You can easily book us online or can call us for quick assistance. Our executives will make sure to solve all your queries and provide reliable and trustworthy services.</Typography>
+                      <Typography className='para'>When it comes to <Link href="/furnace-inspection/">furnace installation</Link>, heating and maintenance, we have always been one of the leading brands to help you with quality <Link href="/ac-installation/">AC installation services</Link> in Coquitlam. We make sure that everything is done at a relative pace with affordable pricing. We also make sure that you don&apos; have to worry about anything. We take the charge of making sure that your tune-ups are done regularly in Coquitlam and nearby areas. You can easily book us online or can call us for quick assistance. Our executives will make sure to solve all your queries and provide reliable and trustworthy services.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

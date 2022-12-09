@@ -5,6 +5,7 @@ import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, Fa
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/promomotion/promotion.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
+import Link from 'next/link'
 
 const RebatesAndPromotion = () => {
   const [width, setWidth] = useState()
@@ -49,7 +50,7 @@ const RebatesAndPromotion = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>To encourage the most comfortable means of heating and cooling your space, Teressen services offer heating and cooling rebates. So, when you choose to install a furnace system with our team, you get an experienced dealer, products, and expert heating and cooling services. Our HVAC rebate services are ideal for you and your family. </Typography>
+                        <Typography className='para'>To encourage the most comfortable means of heating and cooling your space, Teressen services offer heating and cooling rebates. So, when you choose to install a furnace system with our team, you get an experienced dealer, products, and expert heating and cooling services. Our <Link href="/commercial-hvac/">HVAC rebate services</Link> are ideal for you and your family. </Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -63,7 +64,7 @@ const RebatesAndPromotion = () => {
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Save now for all your heating and cooling services" variant="h2" align="left" />
-                        <Typography className='para'>We are committed to providing you with quality heating and cooling services at the best possible prices. Our team is always inclined to help you with the best possible solutions for everything. We provide excellent services to keep you comfortable all year round. We will also do everything to give you the best and save money, time, and energy too.</Typography>
+                        <Typography className='para'>We are committed to providing you with quality heating and <Link href="/air-conditioning-service/">cooling services</Link> at the best possible prices. Our team is always inclined to help you with the best possible solutions for everything. We provide excellent services to keep you comfortable all year round. We will also do everything to give you the best and save money, time, and energy too.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2'>

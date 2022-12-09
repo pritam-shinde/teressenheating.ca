@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import WestVancouverLoc from '../public/west-vancouver/west-vancouver.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const WestVancouver = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,9 +128,9 @@ const WestVancouver = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen&apos;s heating and air conditioning services in West Vancouver</Typography>
-                      <Typography className='para'>Now get the best installation, tune-ups, repair, and replacement services for your Central home heating systems in West Vancouver and its nearby areas. </Typography>
+                      <Typography className='para'>Now get the best installation, tune-ups, repair, and replacement services for your Central <Link href="/heating-services/">home heating systems</Link> in West Vancouver and its nearby areas. </Typography>
                       <Typography className='para'>We provide professional furnace installation services from the certified HVAC technicians available near you. Teressen&apos;s technicians and installers are licensed professionals who take care of everything. We have experts who assure comfort and happy living for you and your loved ones.</Typography>
-                      <Typography className='para'>We are one of the best heating and cooling service experts in West Vancouver. So, if you are facing any issues with heating and cooling problems, you already know whom to call, right?</Typography>
+                      <Typography className='para'>We are one of the <Link href="/">best heating and cooling service experts</Link> in West Vancouver. So, if you are facing any issues with heating and cooling problems, you already know whom to call, right?</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

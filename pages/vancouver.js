@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import VancouverLoc from '../public/vancouver/vancouver.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const Vancouver = () => {
 
@@ -129,8 +130,8 @@ const Vancouver = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen&apos;s 24*7 heating services in Vancouver offer you a stress-free living</Typography>
-                      <Typography className='para'>Teressen&apos;s heating and air conditioning services in Vancouver are probably one of the best services you will get in the Vancouver area. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
-                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only HVAC suppliers in Vancouver you can easily count on. Our heating services in Vancouver are undoubtedly the best. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
+                      <Typography className='para'>Teressen&apos;s heating and air conditioning services in Vancouver are probably one of the best services you will get in the Vancouver area. Installation and replacement for central <Link href="/heating-services/">home heating systems</Link>, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
+                      <Typography className='para'>We provide <Link href="/furnace-inspection/">professional furnace installation</Link> from certified HVAC technicians near you, 24*7. We are the only HVAC suppliers in Vancouver you can easily count on. Our heating services in Vancouver are undoubtedly the best. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

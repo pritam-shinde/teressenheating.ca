@@ -5,6 +5,7 @@ import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, Fa
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/emergency/emergency.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
+import Link from 'next/link'
 
 const Emergency = () => {
   const [width, setWidth] = useState()
@@ -48,7 +49,7 @@ const Emergency = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>In the winter season, we need our furnace to keep our home cozy. But what if your furnace breaks down? In that case, you need an instant solution that is fast and reliable too. That is why the experts at Teressen offer superior HVAC emergency water heater repair services to meet your everyday needs. No matter the time, we are always there for your assistance.</Typography>
+                        <Typography className='para'>In the winter season, we need our furnace to keep our home cozy. But what if your furnace breaks down? In that case, you need an instant solution that is fast and reliable too. That is why the experts at Teressen offer superior HVAC emergency <Link href="/tankless-water-heaters/">water heater repair services</Link> to meet your everyday needs. No matter the time, we are always there for your assistance.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -94,7 +95,7 @@ const Emergency = () => {
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Peace of mind is guaranteed" variant="h2" />
-                        <Typography className='para'>Teressen&apos;s heating ltd services offer the best 24-hour emergency heating services for you. So, best assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
+                        <Typography className='para'><Link href="/">Teressen&apos;s heating ltd services</Link> offer the best 24-hour emergency heating services for you. So, best assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2'>

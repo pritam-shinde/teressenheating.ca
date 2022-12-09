@@ -5,6 +5,7 @@ import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, Fa
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/financing-opt/financing-bg.webp'
 import { CheckCircleOutline, Circle } from '@mui/icons-material'
+import Link from 'next/link'
 
 
 const FinancingOption = () => {
@@ -50,7 +51,7 @@ const FinancingOption = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>We understand how important it is when comfort comes at a cost. It makes us easier to cover the costs which are associated with installing, servicing, and replacing your HVAC systems. Our relationship with Teressen makes it possible for our clients to finance these expenses so that they do not have to deal with any delays</Typography>
+                        <Typography className='para'>We understand how important it is when comfort comes at a cost. It makes us easier to cover the costs which are associated with installing, servicing, and replacing your HVAC systems. Our relationship with <Link href="/">Teressen</Link> makes it possible for our clients to finance these expenses so that they do not have to deal with any delays</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -153,7 +154,7 @@ const FinancingOption = () => {
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Investing in your comfort is easy and quick" variant="h2" />
-                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our installation, repair, and replacement services. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that HVAC repairs and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
+                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our <Link href="/boilers/">installation, repair, and replacement services</Link>. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that HVAC repairs and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
                         <Typography className='para'>When unexpected expenses arise that negatively impact your safety and comfort, we would recommend you look for solutions that will restore your comfort easily and conveniently.</Typography>
                       </Container>
                     </section>

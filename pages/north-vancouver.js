@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import NorthVancouverLoc from '../public/north-vancouver/North-Vancouver.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const NorthVancouver = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,7 +128,7 @@ const NorthVancouver = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen&apos;s heating and air conditioning services are now in North Vancouver</Typography>
-                      <Typography className='para'>To find the best installation and replacement services in North Vancouver, you need expert guidance. Teressen&apos;s best heating and air conditioning services, repairs, and tune-ups in North Vancouver are indeed one of the best services. We have certified experts who look after everything. They also make sure that you live a stress-free life. So, when you have installation, repair, and maintenance-related issues, we are just a call away. We will serve you with the best installation, maintenance, and repairing services. Our clients have also reviewed us as one of the best air conditioning services in North Vancouver.</Typography>
+                      <Typography className='para'>To find the best installation and replacement services in North Vancouver, you need expert guidance. Teressen&apos;s best heating and air conditioning services, repairs, and tune-ups in North Vancouver are indeed one of the best services. We have certified experts who look after everything. They also make sure that you live a stress-free life. So, when you have <Link href="/boilers/">installation, repair, and maintenance</Link> related issues, we are just a call away. We will serve you with the best installation, maintenance, and repairing services. Our clients have also reviewed us as one of the <Link href="/air-conditioning-service/">best air conditioning services</Link> in North Vancouver.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

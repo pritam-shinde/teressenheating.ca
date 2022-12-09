@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import NewWestminsterLoc from '../public/new-westminster/new-westminster.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const NewWestminar = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,8 +128,8 @@ const NewWestminar = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen’s Furnace Repair Services At New Westminster</Typography>
-                      <Typography className='para'>A good thing about being the best service provider is that we get to connect with people. We solve your problems and make sure that everything works the best. Our air conditioning services at New Westminster will solve all your concerns and make you live a stress-free life. We also make sure to serve you to the fullest. Call us when you face any issue, and our certified technicians will reach you as soon as possible.</Typography>
-                      <Typography className='para'> With a group of trained and certified professionals, we are always available 24*7*365 days and personally look after everything. We understand your problems and make sure that we lead you throughout the process of installation, repair, and maintenance.</Typography>
+                      <Typography className='para'>A good thing about being the best service provider is that we get to connect with people. We solve your problems and make sure that everything works the best. Our <Link href="/air-conditioning-service/">air conditioning services</Link> at New Westminster will solve all your concerns and make you live a stress-free life. We also make sure to serve you to the fullest. Call us when you face any issue, and our certified technicians will reach you as soon as possible.</Typography>
+                      <Typography className='para'> With a group of trained and certified professionals, we are always <Link href="/emergency/">available 24*7*365 days</Link> and personally look after everything. We understand your problems and make sure that we lead you throughout the process of <Link href="/boilers/">installation, repair, and maintenance</Link>.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

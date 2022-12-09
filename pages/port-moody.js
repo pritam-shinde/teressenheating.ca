@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import PortMoodyLoc from '../public/port-moody/port-moody.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const PortMoody = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,7 +128,7 @@ const PortMoody = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen’s Air Conditioning Services At Port Moody Will Make Your Mood</Typography>
-                      <Typography className='para'>We understand that air conditioning and heating issues are big problems. And calling an expert who understands your problem solves half your matter. Hence, we are available 24*7*365 days to personally understand your problems and provide expert help. We are spontaneous with solutions and make sure that things are done as the top priority. So, call us whenever you need expert guidance and we promise to be there for you through all thick and thins.</Typography>
+                      <Typography className='para'>We understand that air conditioning and <Link href="/heating-services/">heating issues</Link> are big problems. And calling an expert who understands your problem solves half your matter. Hence, we are available <Link href="/emergency/">24*7*365 days</Link> to personally understand your problems and provide expert help. We are spontaneous with solutions and make sure that things are done as the top priority. So, call us whenever you need expert guidance and we promise to be there for you through all thick and thins.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

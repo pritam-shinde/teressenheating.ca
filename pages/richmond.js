@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import RichmondLoc from '../public/richmond/richmond.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const Richmond = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,7 +128,7 @@ const Richmond = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen&apos;s Quality, Affordability, And Trust-Worthy Air Conditioning Installation Services In Richmond</Typography>
-                      <Typography className='para'>A brand&apos;s unique identity is its people. We have a troop of certified and experienced technicians who make sure that everything goes well. We also make sure that our heating and air conditioning services in Richmond are one of the best services our people can get. Right from tune-ups to furnace installation, everything is done to guarantee an easy-breeze life for all our clients. We understand your concerns and also look into the fact that you are assured of our quality services. We believe in resolving issues and coming up with expert solutions. Hence, people believe in us and help us with their reviews. </Typography>
+                      <Typography className='para'>A brand&apos;s unique identity is its people. We have a troop of certified and experienced technicians who make sure that everything goes well. We also make sure that our heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Richmond are one of the best services our people can get. Right from tune-ups to <Link href="/furnace-inspection/">furnace installation</Link>, everything is done to guarantee an easy-breeze life for all our clients. We understand your concerns and also look into the fact that you are assured of our quality services. We believe in resolving issues and coming up with expert solutions. Hence, people believe in us and help us with their reviews. </Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

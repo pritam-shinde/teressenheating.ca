@@ -6,6 +6,7 @@ import { BlueFilledBtn, CommonBanner } from '../components/components'
 import PittMeadowsLoc from '../public/pitt-meadows/pitt-meadows.webp'
 import Image from 'next/legacy/image'
 import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import Link from 'next/link'
 
 const PittMeadows = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -127,7 +128,7 @@ const PittMeadows = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Teressen Is One Of The Best Heating Services In Pitt Meadows That Takes Care Of Everything</Typography>
-                      <Typography className='para'>These days, many people are facing issues with furnace installation, maintenance, and repair services. And we understand your worries and concerns. So, whenever you have any issues related to furnace installation, maintenance, and repair, we are a name. We make sure that everything is done on time so that you live a stress-free life. Our certified technicians are always there for you to look after everything. Our clients have always relied on us because they know that we will serve them with the best. You can also read our client reviews to know more about our services. At Pitt Meadows, we are one of the most renowned heating service providers who will never leave you disappointed.</Typography>
+                      <Typography className='para'>These days, many people are facing issues with furnace installation, maintenance, and repair services. And we understand your worries and concerns. So, whenever you have any issues related to <Link href="/furnace-inspection/">furnace installation, maintenance, and repair</Link>, we are a name. We make sure that everything is done on time so that you live a stress-free life. Our certified technicians are always there for you to look after everything. Our clients have always relied on us because they know that we will serve them with the best. You can also read our client reviews to know more about our services. At Pitt Meadows, we are one of the most renowned <Link href="/heating-services/">heating service providers</Link> who will never leave you disappointed.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

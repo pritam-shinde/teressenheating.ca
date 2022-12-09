@@ -7,6 +7,7 @@ import Banner from '../public/lennox-hvac/lennox.webp'
 import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import hvacLennox from '../public/lennox-hvac/dlsc-family-new.webp'
+import Link from 'next/link'
 
 const LennoxHVAC = () => {
   const [width, setWidth] = useState()
@@ -70,8 +71,8 @@ const LennoxHVAC = () => {
                       <Container maxWidth="xxl">
                         <Box p={3}>
                           <SectionalHeading simpletext="Teressen is one of the top-rated companies that specialize in Lennox products installation and services" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                          <Typography className='para'>So, when you are looking for someone who has HVAC experience, it is crucial to find the one who will work hard until your satisfaction is assured. With the right experts available, we make sure that there are no delays in your work. We are here to assist you 24*7 to ensure you with optimal indoor air quality by helping you with equipment that is maintained regularly as per the manufacturer&apos;s recommendations. Also, these systems help you ensure protection from potential malfunctions resulting due to dirt buildup. This leads to not only increasing energy bills but also safety hazards such as carbon monoxide poisoning if left just like that.</Typography>
-                          <Typography className='para'>Now, installing a new heating and cooling system is one of the biggest decisions you will make. Our certified experts understand that each home is different and they need different solutions. We work closely with homeowners like you to assure stress-free free living. So, whatever installation problems you are facing, just make sure that you give us a call today.</Typography>
+                          <Typography className='para'>So, when you are looking for someone who has <Link href="/commercial-hvac/">HVAC experience</Link>, it is crucial to find the one who will work hard until your satisfaction is assured. With the right experts available, we make sure that there are no delays in your work. We are here to assist you 24*7 to ensure you with optimal indoor air quality by helping you with equipment that is maintained regularly as per the manufacturer&apos;s recommendations. Also, these systems help you ensure protection from potential malfunctions resulting due to dirt buildup. This leads to not only increasing energy bills but also safety hazards such as carbon monoxide poisoning if left just like that.</Typography>
+                          <Typography className='para'>Now, installing a new heating and <Link href="/air-conditioning-service/">cooling system</Link> is one of the biggest decisions you will make. Our certified experts understand that each home is different and they need different solutions. We work closely with homeowners like you to assure stress-free free living. So, whatever installation problems you are facing, just make sure that you give us a call today.</Typography>
                         </Box>
                       </Container>
                     </section>

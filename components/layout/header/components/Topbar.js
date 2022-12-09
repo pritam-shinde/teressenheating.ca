@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import blueLogo from '../../../../public/logo/blue-logo.svg'
 import { GreyFilledBtn } from '../../../components'
-import { FaInstagram, FaTwitter, FaFacebookF } from 'react-icons/fa'
+import { FaPinterestP, FaTwitter, FaFacebookF } from 'react-icons/fa'
 
 const Topbar = () => {
     return (
@@ -33,7 +33,7 @@ const Topbar = () => {
                                                 <Box>
                                                     <List className=' d-flex p-0 m-0'>
                                                         <ListItem className='p-0 me-2'>
-                                                            <a href="#">
+                                                            <a href="https://www.facebook.com/profile.php?id=100088431184715">
                                                                 <ListItemAvatar>
                                                                     <Avatar>
                                                                         <FaFacebookF />
@@ -42,7 +42,7 @@ const Topbar = () => {
                                                             </a>
                                                         </ListItem>
                                                         <ListItem className='p-0 me-2'>
-                                                            <a href="#">
+                                                            <a href="https://twitter.com/BaymanShawqi">
                                                                 <ListItemAvatar>
                                                                     <Avatar>
                                                                         <FaTwitter />
@@ -51,10 +51,10 @@ const Topbar = () => {
                                                             </a>
                                                         </ListItem>
                                                         <ListItem className='p-0 me-2'>
-                                                            <a href="#">
+                                                            <a href="https://www.pinterest.com.au/teressenheating/">
                                                                 <ListItemAvatar>
                                                                     <Avatar>
-                                                                        <FaInstagram />
+                                                                        <FaPinterestP />
                                                                     </Avatar>
                                                                 </ListItemAvatar>
                                                             </a>

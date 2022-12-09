@@ -8,6 +8,7 @@ import Furnace from '../public/furnace-inspection/furnace.webp'
 import Image from 'next/legacy/image'
 import { CheckCircleOutline } from '@mui/icons-material'
 import HomeFurnace from '../public/furnace-inspection/Ductwork-and-Ventilation.webp'
+import Link from 'next/link'
 
 const FurnaceInspection = () => {
   const [width, setWidth] = useState()
@@ -61,7 +62,7 @@ const FurnaceInspection = () => {
                           <Grid item xs={12} md={6}>
                             <Box>
                               <SectionalHeading blacktext="Furnace" blueText="service and repair" variant="h2" />
-                              <Typography className='para'>Teressen heating ltd provides one of the best furnace installation and repair services in Canada. We have been working continuously in HVAC services and have played a crucial role in the Canadian fire safety association. We take care of installation, repair, and furnace maintenance work for years with love,</Typography>
+                              <Typography className='para'>Teressen heating ltd provides one of the best furnace installation and repair services in Canada. We have been working continuously in <Link href="/commercial-hvac/">HVAC services</Link> and have played a crucial role in the Canadian fire safety association. We take care of installation, repair, and furnace maintenance work for years with love,</Typography>
                             </Box>
                           </Grid>
                           <Grid item xs={12} className="m-0 pt-0">
@@ -96,13 +97,13 @@ const FurnaceInspection = () => {
                         <Box mt={3}>
                           <Grid container>
                             <Grid item xs={12} md={6}>
-                              <Typography className='para'>Teressen heating ltd understands the importance of emergency HVAC services which are needed for residential heating. It is difficult to live without cooling and heating systems these days. So, we make sure that we help you with the best residential heating and home HVAC services which includes system repairing, furnace installation and repair, rooftop unit repair, and central heating system maintenance services.</Typography>
+                              <Typography className='para'><Link href="/">Teressen heating ltd</Link> understands the importance of emergency HVAC services which are needed for residential heating. It is difficult to live without cooling and heating systems these days. So, we make sure that we help you with the best residential heating and home HVAC services which includes system repairing, furnace installation and repair, rooftop unit repair, and central heating system maintenance services.</Typography>
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Image layout='responsive' src={HomeFurnace} alt="Residential Furnace" />
                             </Grid>
                             <Grid item xs={12} className="m-0 py-0">
-                              <Typography className='para'>So, if your heating system is not being tuned up once a year, if it has some mechanical issues and if it has a faulty error sign, then simply give us a call. Our annual fire safety inspection services will leave you stress-free and happy. Also, people who have been working with us, have been trained and certified with the best. So, we will always help you to deal with problems like unexpected breakdowns, higher-than-usual heating bills, and carbon monoxide poisoning.</Typography>
+                              <Typography className='para'>So, if your <Link href="/heating-services/">heating system</Link> is not being tuned up once a year, if it has some mechanical issues and if it has a faulty error sign, then simply give us a call. Our annual fire safety inspection services will leave you stress-free and happy. Also, people who have been working with us, have been trained and certified with the best. So, we will always help you to deal with problems like unexpected breakdowns, higher-than-usual heating bills, and carbon monoxide poisoning.</Typography>
                             </Grid>
                           </Grid>
                         </Box>
