@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 
 const DayNightHVAC = () => {
@@ -219,7 +220,7 @@ const DayNightHVAC = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="Why choose Day and night HVAC Products?" variant="h2" />
-                  <Typography className='para'>So, when you choose Day and night HVAC heating and cooling equipment, you are selecting sophisticated, quality-driven, and comfort over everything. We are proud to help you with the best and latest technology with smart and efficient products with smooth operations.</Typography>
+                  <Typography className='para'>So, when you choose Day and night <Link href="/commercial-hvac/">HVAC</Link> heating and cooling equipment, you are selecting sophisticated, quality-driven, and comfort over everything. We are proud to help you with the best and latest technology with smart and efficient products with smooth operations.</Typography>
                 </Box>
               </Grid>
             </Grid>

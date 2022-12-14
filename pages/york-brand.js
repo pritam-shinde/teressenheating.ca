@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 const YorkBrand = () => {
   const [width, setWidth] = useState()
@@ -219,12 +220,12 @@ const YorkBrand = () => {
             <Box>
               <Box>
                 <SectionalHeading simpletext="Looking for repairing of York furnaces and air conditioners?" variant="h2" />
-                <Typography className='para'>For Trane furnaces and air conditioners, Teressen&apos;s HVAC services work the best. We help you with the best installation, repair, and maintenance services. Also, our specialists have a lot of expertise working with various brands. So, you get the best of everything with us.</Typography>
+                <Typography className='para'>For Trane furnaces and air conditioners, Teressen&apos;s HVAC services work the best. We help you with the best installation, repair, and <Link href="/boilers-maintenance/">maintenance services</Link>. Also, our specialists have a lot of expertise working with various brands. So, you get the best of everything with us.</Typography>
               </Box>
               <Box>
               <SectionalHeading simpletext="Need a York Furnace and AC repair company with certification?" variant="h2" />
               <Typography className='para'> If you are looking for a professional to repair your York furnace, then give us a call. We will give you the best services at affordable pricing. We know, when your furnace breaks out, especially in winter, you need someone with expert knowledge. So, it would help if you got in touch with our HVAC experts now.</Typography>
-              <Typography className='para'>We have a solid track record of offering you professional HVAC services. We will also offer you individualized attention and help you in fixing your heating system the first time.</Typography>
+              <Typography className='para'>We have a solid track record of offering you <Link href="/commercial-hvac/">professional HVAC services</Link>. We will also offer you individualized attention and help you in fixing your heating system the first time.</Typography>
               </Box>
             <Box>
            
@@ -241,7 +242,7 @@ const YorkBrand = () => {
             <Box p={3}>
             <SectionalHeading simpletext="Repairing of York furnace needs a licensed expert" variant="h2" />
             <Typography className='para'> Are you looking for York furnace repair in my area? Then you can rely on our HVAC services to fix your heating system.</Typography>
-            <Typography className='para'>If the outside temperature is low, then there might be a chance that your furnace will stop working. Like other household appliances, furnaces need repair. So, find a qualified repair agency that will inspect the appliance and recommend the best line of action for you.</Typography>
+            <Typography className='para'>If the outside temperature is low, then there might be a chance that your furnace will stop working. Like other household appliances, furnaces need repair. So, find a qualified <Link href="/boilers-repair/">repair</Link> agency that will inspect the appliance and recommend the best line of action for you.</Typography>
             </Box>
           </Grid>
         </Grid>

@@ -11,7 +11,7 @@ import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-
+import Link from 'next/link'
 const Brynt = () => {
   const [hydration,setHydration] = useState(false)
   const [width, setWidth] = useState()
@@ -233,7 +233,7 @@ const Brynt = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <SectionalHeading simpletext="Are you looking for your 'near me' Bryant furnace repair" variant="h2" />
                 <Typography className='para'>Times when your Bryant furnace is not working properly, you need an expert who will help you to the fullest. And yes, we would not deny the fact that the market is flooded with companies who do the repairing work. But finding an ideal one, who will help you get through all your problems can be challenging and daunting.</Typography>
-                <Typography className='para'>Some homeowners choose inexpensive services to save money. But they do not deliver the desired results. Also, some furnace repair services can be costly and can be out of your budget.</Typography>
+                <Typography className='para'>Some homeowners choose <Link href="/financing-option/">inexpensive services</Link> to save money. But they do not deliver the desired results. Also, some furnace repair services can be costly and can be out of your budget.</Typography>
                 <Typography className='para'>So, it is advisable to conduct research and look for an expert who will provide quality services at reasonable prices when you look for the top Bryant furnace repair services in your location.</Typography>
               </Grid>
             </Grid>
@@ -244,7 +244,7 @@ const Brynt = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <SectionalHeading simpletext="The process of installation of a Bryant Furnace" variant="h2" />
-                <Typography className='para'>Bryant furnace installation affects longevity, effectiveness, and even comfort in addition to quality. Hence, you need to pick the best firm for your furnace installation due to this reason.</Typography>
+                <Typography className='para'>Bryant furnace installation affects longevity, effectiveness, and even comfort in addition to quality. Hence, you need to pick the best firm for your <Link href="/furnace-inspection/">furnace installation</Link> due to this reason.</Typography>
                 <List>
                   <ListItem>
                     <ListItemIcon>

@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 
 const Lennox = () => {
@@ -234,8 +235,8 @@ const Lennox = () => {
               <Grid item xs={12} md={10} className='mx-auto'>
                 <Box>
                   <SectionalHeading variant="h2" simpletext='Searching your nearby Lennox furnace expert' />
-                  <Typography className='para'>{`Your search for "Lennox furnace repair near me" stops on us. We are the right choice for all your reapiring and maintenance issues.`}</Typography>
-                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. Teressen&apos;s HVAC services will help you with the best furnace repairs and upkeep.</Typography>
+                  <Typography className='para'>Your search for <Link href="/lennox-hvac/">"Lennox furnace repair near me"</Link> stops on us. We are the right choice for all your reapiring and maintenance issues.</Typography>
+                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. Teressen&apos;s HVAC services will help you with the <Link href="/furnace-inspection/">best furnace repairs</Link> and upkeep.</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -266,7 +267,7 @@ const Lennox = () => {
                     <Typography className='para'>Lennox air conditioning repairs are necessary if your room has poor air ventilation. Also, your air conditioner is prone to breakdowns at times. So, it needs regular maintenance. Insufficient ventilation, unfavorable temperatures, warm air, and strange noises are all signs of an inoperable air conditioner.</Typography>
                     <Typography className='para'>Also, poor installation causes your air conditioner to malfunction. Hence, it is necessary to obtain installation guidance and repairs from an expert air conditioning repair firm.
                     </Typography>
-                    <Typography className='para'>Hiring Teressen&apos;s HVAC services for high-quality installation and maintenance for Lennox air conditioners is the best thing you can do. For a long time, we have been providing installations that would satisfy our customers. We have imparted modern technological development systems that would enhance effectiveness.
+                    <Typography className='para'>Hiring Teressen&apos;s <Link href="/commercial-hvac/">HVAC services</Link> for high-quality installation and maintenance for Lennox air conditioners is the best thing you can do. For a long time, we have been providing installations that would satisfy our customers. We have imparted modern technological development systems that would enhance effectiveness.
                     </Typography>
                   </Box>
 

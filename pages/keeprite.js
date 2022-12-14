@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 const Keeprite = () => {
   const [width, setWidth] = useState()
@@ -221,7 +222,7 @@ const Keeprite = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="Repairing and installing air conditioners" variant="h2" />
-                  <Typography className='para'>Why wait for tomorrow to get your Keeprite air conditioner repaired? Get in touch with a reliable brand of furnace and get your furnace repaired instantly. Our professionals ate prompt, and provide high-quality installation services. We also excel at home than just installing air conditioners with Keeprite furnaces. We know how important it is to help you with quick assistance with everything. So, just call us, and within minutes, our experts will arrive at your door to evaluate the problem with your appliance. Initially, we will provide you with an explanation of the problem and then help you with the solution. Our speedy and hassle-free repair service is all you need.</Typography>
+                  <Typography className='para'>Why wait for tomorrow to get your Keeprite air conditioner repaired? Get in touch with a reliable brand of furnace and get your furnace repaired instantly. Our professionals ate prompt, and provide high-quality installation services. We also excel at home than just installing <Link href="/air-conditioning-service/">air conditioners</Link> with Keeprite furnaces. We know how important it is to help you with quick assistance with everything. So, just call us, and within minutes, our experts will arrive at your door to evaluate the problem with your appliance. Initially, we will provide you with an explanation of the problem and then help you with the solution. Our speedy and hassle-free repair service is all you need.</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -264,7 +265,7 @@ const Keeprite = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="Finding your 'Nearby' keeprite furnace repair expert" variant="h2" />
-                  <Typography className='para'>If you are searching for a Keeprite furnace nearby, you can get several possibilities. However, you should be cautious about selecting a provider and making sure that you get top-notched repair services.</Typography>
+                  <Typography className='para'>If you are searching for a Keeprite <Link href="/air-conditioning-service/">furnace</Link> nearby, you can get several possibilities. However, you should be cautious about selecting a provider and making sure that you get top-notched repair services.</Typography>
                   <Typography className='para'>It is not difficult to determine whether a firm is the best for your problem. So, just trust us and our experts, because they are knowledgeable and they are skilled in the right way. We value transparency and provide you with all the information required by you in the right way. So, count on us and we will help you with the right solution always.</Typography>
                 </Box>
               </Grid>

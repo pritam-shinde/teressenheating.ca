@@ -16,9 +16,9 @@ const BrandDetails = ({ title, brandDetaillArr, list, ListArray }) => {
             {
               ListArray.map(item => <ListItem key={item}>
                 <ListItemIcon>
-                  <CheckCircle className='text-white' />
+                  <CheckCircle className='text-white'/>
                 </ListItemIcon>
-                <ListItemText primary={<span className='text-white'>{item}</span>} />
+                <ListItemText primary={<span className='text-white'>{item}</span>}/>
               </ListItem>)
             }
           </List> : null

@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 const tempstar = () => {
   const [width, setWidth] = useState()
@@ -218,7 +219,7 @@ const tempstar = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="Why choose Tempstar Products?" variant="h2" />
-                  <Typography className='para'>So, when you choose Tempstar heating and cooling equipment, you are selecting sophisticated, quality-driven and comfort over everything. We are proud to help you with the best and latest technology with smart and efficient products with smooth operations.</Typography>
+                  <Typography className='para'>So, when you choose Tempstar <Link href="/heating-services/">heating</Link> and cooling equipment, you are selecting sophisticated, quality-driven and comfort over everything. We are proud to help you with the best and latest technology with smart and efficient products with smooth operations.</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -287,7 +288,7 @@ const tempstar = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                  <Typography className='para'>We have <Link href="/emergency/">24*7 servicing and repairs</Link>. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
                 </Box>
               </Grid>
             </Grid>

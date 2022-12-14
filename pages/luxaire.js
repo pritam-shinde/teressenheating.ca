@@ -11,7 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
-
+import Link from 'next/link'
 const Luxair = () => {
   const [width, setWidth] = useState()
 
@@ -217,7 +217,7 @@ const Luxair = () => {
               <Grid item xs={12} md={10} className='mx-auto'>
                 <Box>
                   <SectionalHeading variant="h2" simpletext='Luxaire Heating and air conditioning services work the best' />
-                  <Typography className='para'>Luxaire is a premium line of high-performance heating and air conditioning equipments. Since, 1954 it has stood for uncompromising quality. We have advanced technology, energy efficiency equipment which makes Luxaire an intelligent choice. We provide our customers with the best Luxaire air conditioning services, and Indoor air quality products.
+                  <Typography className='para'>Luxaire is a premium line of high-performance heating and air conditioning equipments. Since, 1954 it has stood for uncompromising quality. We have advanced technology, energy efficiency equipment which makes Luxaire an intelligent choice. We provide our customers with the <Link href="/air-conditioning-service/">best Luxaire air conditioning services</Link>, and Indoor air quality products.
                   </Typography>
                 </Box>
               </Grid>

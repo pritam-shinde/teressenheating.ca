@@ -229,7 +229,7 @@ const Coleman = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary="Heat pump maintenance, installation, and repair." />
+                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump maintenance</Link>, installation, and repair.</span>}/>
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>

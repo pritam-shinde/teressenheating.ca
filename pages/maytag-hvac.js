@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 const MaytagHVAC = () => {
   const [width, setWidth] = useState()
@@ -236,19 +237,19 @@ const MaytagHVAC = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary='Furnaces repair, maintenance, and installation.' />
+                        <ListItemText primary={<span><Link href="/furnace/">Furnaces</Link> repair, maintenance, and installation.</span>}/>
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary='Heat pump maintenance, installation, and repair.' />
+                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump</Link>maintenance, installation, and repair.</span>}/>
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary='Boiler maintenance, installation, and repair.' />
+                        <ListItemText primary={<span><Link href="/boilers/">Boiler maintenance</Link>, installation, and repair.</span>}/>
                       </ListItem>
                     </List>
                   </Box>

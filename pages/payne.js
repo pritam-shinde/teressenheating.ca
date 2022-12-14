@@ -12,6 +12,8 @@ import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
 
+import Link from 'next/link'
+
 const Payne = () => {
   const [width, setWidth] = useState()
 
@@ -222,13 +224,13 @@ const Payne = () => {
                     <SectionalHeading simpletext="Our Payne" variant="h3" />
                     <Box mt={2}>
                       <SectionalHeading simpletext="Our certified Payne HVAC repair service is the best" variant="h4" />
-                      <Typography className='para'>If you need Payne furnace repair for your commercial building or resident, Teressen's HVAC is your go-to person. The installation of a furnace increases the comfort level of your home and makes your family happy. At times, when your Payne furnace gets malfunctions, we are at your assistance.</Typography>
+                      <Typography className='para'>If you need Payne furnace repair for your commercial building or resident, Teressen's <Link href="/commercial-hvac/">HVAC</Link> is your go-to person. The installation of a furnace increases the comfort level of your home and makes your family happy. At times, when your Payne furnace gets malfunctions, we are at your assistance.</Typography>
                       <Typography className='para'>Like many homeowners, you might face some issues in fixing an AC or furnace. So, if you do, then we might solve your problem. A competent HVAC contractor like us will get your issue resolved.</Typography>
                     </Box>
                     <Box mt={2}>
                       <SectionalHeading simpletext="Near Me Payne Furnace repairing services" variant="h4" />
                       <Typography className='para'>When your heating system breaks down, you need a Payne furnace repair near me. You can get your heating system up and running again by finding the best repair services.</Typography>
-                      <Typography className='para'>In the market, Teressen HVAC has a steadfast reputation for offering top-notched furnace repair services. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
+                      <Typography className='para'>In the market, Teressen HVAC has a steadfast reputation for offering <Link href="/furnace-inspection/">top-notched furnace repair services</Link>. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
                     </Box>
                     <Box mt={2}>
                       <SectionalHeading simpletext="Putting up a Payne furnace is the mandatory thing" variant="h4" />

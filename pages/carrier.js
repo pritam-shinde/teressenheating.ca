@@ -12,6 +12,7 @@ import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
 
+import Link from 'next/link'
 
 const Carrier = () => {
   const [width, setWidth] = useState()
@@ -242,7 +243,7 @@ const Carrier = () => {
                       <ListItemIcon>
                         <CheckCircleOutline className='text--blue' />
                       </ListItemIcon>
-                      <ListItemText primary={<strong>Furnace from Carrier spreading chilly air:</strong>} secondary="If your Carrier is blowing out cold air rather than warm air, then there is a problem. This can be the result of the fan limit switch malfunctioning. In this case, you should look for an LED light on the furnace control board on your thermostat." />
+                      <ListItemText primary={<strong>Furnace from Carrier spreading chilly air:</strong>} secondary={<span>If your Carrier is blowing out cold air rather than warm air, then there is a problem. This can be the result of the fan limit switch malfunctioning. In this case, you should look for an LED light on the <Link href="/furnace-inspection/">furnace</Link> control board on your thermostat.</span>} />
                     </ListItem>
                     <ListItem>
                       <ListItemIcon>

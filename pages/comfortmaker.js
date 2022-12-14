@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 const Comfortmaker = () => {
   const [width, setWidth] = useState()
@@ -248,7 +249,7 @@ const Comfortmaker = () => {
                   <ListItemIcon>
                     <CheckCircleOutline className='text--blue' />
                   </ListItemIcon>
-                  <ListItemText primary='Boiler installation, installation, and repair.'/>
+                  <ListItemText primary= {<span>Boiler installation, installation, and <Link href="/boilers-repair/">repair</Link>.</span>}/>
                 </ListItem>
               </List>
             </Box>

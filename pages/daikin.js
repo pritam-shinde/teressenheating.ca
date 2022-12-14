@@ -252,7 +252,7 @@ const Daikin = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
                   <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                  <Typography className='para'>We have <Link href="/emergency/">24*7 servicing and repairs</Link>. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
                 </Box>
               </Grid>
             </Grid>
