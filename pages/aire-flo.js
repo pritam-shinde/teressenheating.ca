@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 const AireFlo = () => {
   const [width, setWidth] = useState()
@@ -237,7 +238,7 @@ const AireFlo = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary="Boiler installation, installation, and repair." />
+                        <ListItemText primary={<span><Link href="/boilers-installation/">Boiler installation</Link>, installation, and repair.</span>}/>
                       </ListItem>
                     </List>
                   </Box>

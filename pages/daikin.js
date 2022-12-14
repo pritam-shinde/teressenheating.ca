@@ -11,6 +11,7 @@ import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
 import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Link from 'next/link'
 
 const Daikin = () => {
   const [width, setWidth] = useState()

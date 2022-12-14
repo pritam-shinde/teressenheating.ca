@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
       <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
     </Head>
     <Header />
-    <Script id="google-tag-manager" strategy="afterInteractive">
+    <script id="google-tag-manager" strategy="afterInteractive">
       {
         `(function (w, d, s, l, i) {
         w[l] = w[l] || []; w[l].push({
@@ -44,11 +44,7 @@ function MyApp({ Component, pageProps }) {
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-TFB5PTT');`
       }
-    </Script>
-
-    <noscript dangerouslySetInnerHTML={{
-      __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFB5PTT"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`}} />
+    </script>
     <Component {...pageProps} />
     {
       scrollHeight > 100 ? <Box className='d-flex justify-content-center align-items-center rounded-circle' style={{ height: "3rem", width: "3rem", backgroundColor: "var(--red)", position: "fixed", right: "1%", bottom: "2%" }}>
