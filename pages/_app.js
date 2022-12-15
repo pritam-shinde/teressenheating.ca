@@ -6,6 +6,7 @@ import { Footer, Header } from '../components/components';
 import { Box } from '@mui/material';
 import { ArrowCircleUp } from "@mui/icons-material"
 import '../styles/globals.css'
+import Script from 'next/script'
 
 export function reportWebVitals(metric) {
   console.log(metric)
@@ -33,18 +34,18 @@ function MyApp({ Component, pageProps }) {
       <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
     </Head>
     <Header />
-    <script id="google-tag-manager" strategy="afterInteractive">
-      {
-        `(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-TFB5PTT');`
-      }
-    </script>
+  
+    <Script>
+    {
+      `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TFB5PTT');`
+    }
+    </Script>
+
+  
     <Component {...pageProps} />
     {
       scrollHeight > 100 ? <Box className='d-flex justify-content-center align-items-center rounded-circle' style={{ height: "3rem", width: "3rem", backgroundColor: "var(--red)", position: "fixed", right: "1%", bottom: "2%" }}>
