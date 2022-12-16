@@ -410,6 +410,7 @@ const Navbar = () => {
               </Link>
             </Box>
             <Box p={3}>
+            <ul className="navbar-nav">
               <li onClick={closeMobileMenu}>
                 <Link className='nav-link' legacyBehavior={true} href="/">
                   <a className="text-white nav-link">HOME</a>
@@ -469,6 +470,7 @@ const Navbar = () => {
                   <a className="text-white nav-link">CONTACT US</a>
                 </Link>
               </li>
+              </ul>
             </Box>
           </Box>
         </nav>
