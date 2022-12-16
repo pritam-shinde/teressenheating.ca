@@ -419,7 +419,7 @@ const Navbar = () => {
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/services/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>SERVICES</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>SERVICES</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(!servicesDropdown) }}>
                     <ArrowDropDown className="text-white" />
@@ -430,7 +430,7 @@ const Navbar = () => {
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/service-areas/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>AREAS</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>AREAS</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(!areasDropdown) }}>
                     <ArrowDropDown className="text-white" />
@@ -441,7 +441,7 @@ const Navbar = () => {
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/about-us/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>ABOUT US</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>ABOUT US</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(!aboutDropdown) }}>
                     <ArrowDropDown className="text-white" />
@@ -452,7 +452,7 @@ const Navbar = () => {
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/brand/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>BRAND</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>BRAND</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(false); setBrandDropdown(!brandDropdown) }}>
                     <ArrowDropDown className="text-white" />
