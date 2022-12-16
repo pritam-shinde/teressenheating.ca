@@ -303,7 +303,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     }
 
     nav.navbar .navbar-nav .nav-item .nav-link {
-        color: var(--black) !important;
+        color: var(--white) !important;
     }
 
     .navbar .blueBtn {
