@@ -8,7 +8,7 @@ const Hero = () => {
             <section>
                 <Container maxWidth="xxl" className={`${Styles.hero} d-flex justify-content-center align-items-center`}>
                     <Box>
-                        <Typography className={Styles.bannerText} align="center">Quality, Trust, and Affordability!</Typography>
+                        <Typography className={Styles.bannerText} align="center">Quality, Trust, Affordability!</Typography>
                     </Box>
                 </Container>
             </section>
