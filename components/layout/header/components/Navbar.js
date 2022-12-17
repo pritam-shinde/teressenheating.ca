@@ -60,17 +60,17 @@ const Navbar = () => {
                         <ul className="dropdown-menu dropdown-menu-1 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/heating-services/">
-                              <a className="nav-link dropdown-item">Heating</a>
+                              <a className="nav-link dropdown-item">HEATING</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/air-conditioning-service/">
-                              <a className="nav-link dropdown-item">Cooling</a>
+                              <a className="nav-link dropdown-item">COOLING</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/commercial-hvac/">
-                              <a className="nav-link dropdown-item">Commercial hvac</a>
+                              <a className="nav-link dropdown-item">COMMERCIAL HVAC</a>
                             </Link>
                           </li>
                           <li className="nav-item dropdown dropdown2">
@@ -80,54 +80,54 @@ const Navbar = () => {
                             <ul className="dropdown-menu dropdown-menu-2 p-2 border-0" aria-labelledby="navbarDropdown">
                               <li className="nav-item">
                                 <Link className='nav-link' legacyBehavior={true} href="/boilers-maintenance/">
-                                  <a className="nav-link dropdown-item">Boiler Maintainance</a>
+                                  <a className="nav-link dropdown-item">BOILER MAINTAINANCE</a>
                                 </Link>
                               </li>
                               <li className="nav-item">
                                 <Link className='nav-link' legacyBehavior={true} href="/boilers-installation/">
-                                  <a className="nav-link dropdown-item">Boiler Installation</a>
+                                  <a className="nav-link dropdown-item">BOILER INSTALLATION</a>
                                 </Link>
                               </li>
                               <li className="nav-item">
                                 <Link className='nav-link' legacyBehavior={true} href="/boilers-repair/">
-                                  <a className="nav-link dropdown-item">Boiler Repair</a>
+                                  <a className="nav-link dropdown-item">BOILER REPAIR</a>
                                 </Link>
                               </li>
                               <li className="nav-item">
                                 <Link className='nav-link' legacyBehavior={true} href="/boilers-service/">
-                                  <a className="nav-link dropdown-item">Boiler Services</a>
+                                  <a className="nav-link dropdown-item">BOILER SERVICES</a>
                                 </Link>
                               </li>
                             </ul>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/tankless-water-heaters/">
-                              <a className="nav-link dropdown-item">Tankless Water Heaters</a>
+                              <a className="nav-link dropdown-item">TANKLESS WATER HEATERS</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/rebates-and-promotions/">
-                              <a className="nav-link dropdown-item">Rebates And Promotions</a>
+                              <a className="nav-link dropdown-item">REBATES AND PROMOTIONS</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/emergency/">
-                              <a className="nav-link dropdown-item">Emergency</a>
+                              <a className="nav-link dropdown-item">EMERGENCY</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/lennox-hvac/">
-                              <a className="nav-link dropdown-item">Lenonox hvac</a>
+                              <a className="nav-link dropdown-item">LENNOX HVAC</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/financing-option/">
-                              <a className="nav-link dropdown-item">Financing Option</a>
+                              <a className="nav-link dropdown-item">FINANCING OPTION</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/furnace-inspection/">
-                              <a className="nav-link dropdown-item">Furnance Inspection</a>
+                              <a className="nav-link dropdown-item">FURNACE INSPECTION</a>
                             </Link>
                           </li>
                         </ul>
@@ -139,62 +139,62 @@ const Navbar = () => {
                         <ul className="dropdown-menu dropdown-menu-3 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/vancouver/">
-                              <a className="nav-link dropdown-item">Vancouver</a>
+                              <a className="nav-link dropdown-item">VANCOUVER</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/burnaby/">
-                              <a className="nav-link dropdown-item">Burnaby</a>
+                              <a className="nav-link dropdown-item">BURNABY</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/west-vancouver/">
-                              <a className="nav-link dropdown-item">West Vancouver</a>
+                              <a className="nav-link dropdown-item">WEST VANCOUVER</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/north-vancouver/">
-                              <a className="nav-link dropdown-item">North Vancouver</a>
+                              <a className="nav-link dropdown-item">NORTH VANCOUVER</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/coquitlam/">
-                              <a className="nav-link dropdown-item">Coquitlam</a>
+                              <a className="nav-link dropdown-item">COQUITLAM</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/richmond/">
-                              <a className="nav-link dropdown-item">Richmond</a>
+                              <a className="nav-link dropdown-item">RICHMOND</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/white-rock/">
-                              <a className="nav-link dropdown-item">White-Rock</a>
+                              <a className="nav-link dropdown-item">WHITE-ROCK</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/tsawwassen/">
-                              <a className="nav-link dropdown-item">Tsawwassen</a>
+                              <a className="nav-link dropdown-item">TSAWWASSEN</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/port-moody/">
-                              <a className="nav-link dropdown-item">Port Moody</a>
+                              <a className="nav-link dropdown-item">PORT MOODY</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/pitt-meadows/">
-                              <a className="nav-link dropdown-item">Pitt Meadows</a>
+                              <a className="nav-link dropdown-item">PITT MEADOWS</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/new-westminster/">
-                              <a className="nav-link dropdown-item">New Westminster</a>
+                              <a className="nav-link dropdown-item">NEW WESTMINSTER</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/maple-ridge/">
-                              <a className="nav-link dropdown-item">Maple Ridge</a>
+                              <a className="nav-link dropdown-item">MAPLE RIDGE</a>
                             </Link>
                           </li>
                         </ul>
@@ -206,14 +206,24 @@ const Navbar = () => {
                         <ul className="dropdown-menu dropdown-menu-4 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/write-a-review/">
-                              <a className="nav-link dropdown-item">Write a Review</a>
+                              <a className="nav-link dropdown-item">WRITE A REVIEW</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/careers/">
-                              <a className="nav-link dropdown-item">Careers</a>
+                              <a className="nav-link dropdown-item">CAREERS</a>
                             </Link>
-                          </li>                      
+                          </li>
+                          {/* <li className="nav-item">
+                            <Link className='nav-link' legacyBehavior={true} href="/brand/">
+                              <a className="nav-link dropdown-item">BRANDS WE CARRY</a>
+                            </Link>
+                          </li> */}
+                          {/* <li className="nav-item">
+                            <Link className='nav-link' legacyBehavior={true} href="/covid-19/">
+                              <a className="nav-link dropdown-item">COVID-19</a>
+                            </Link>
+                          </li> */}
                         </ul>
                       </li>
                       <li className='nav-item dropdown dropdown5'>
@@ -223,147 +233,151 @@ const Navbar = () => {
                         <ul className="dropdown-menu dropdown-menu-5 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/lennox/">
-                              <a className="nav-link dropdown-item">Lennox</a>
+                              <a className="nav-link dropdown-item">LENNOX</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/carrier/">
-                              <a className="nav-link dropdown-item">Carrier</a>
+                              <a className="nav-link dropdown-item">CARRIER</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/trane/">
-                              <a className="nav-link dropdown-item">Trane</a>
+                              <a className="nav-link dropdown-item">TRANE</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/amana/">
-                              <a className="nav-link dropdown-item">Amana</a>
+                              <a className="nav-link dropdown-item">AMANA</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/bryant/">
-                              <a className="nav-link dropdown-item">Bryant</a>
+                              <a className="nav-link dropdown-item">BRYANT</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/goodman/">
-                              <a className="nav-link dropdown-item">Goodman</a>
+                              <a className="nav-link dropdown-item">GOODMAN</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/american-standard/">
-                              <a className="nav-link dropdown-item">American Standard</a>
+                              <a className="nav-link dropdown-item">AMERICAN STANDARD</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/ameristar/">
-                              <a className="nav-link dropdown-item">Ameristar</a>
+                              <a className="nav-link dropdown-item">AMERISTAR</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/aire-flo/">
-                              <a className="nav-link dropdown-item">Aire Flo</a>
+                              <a className="nav-link dropdown-item">AIRE FLO</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/keeprite/">
-                              <a className="nav-link dropdown-item">Keeprite</a>
+                              <a className="nav-link dropdown-item">KEEPRITE</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/daikin/">
-                              <a className="nav-link dropdown-item">Daikin</a>
+                              <a className="nav-link dropdown-item">DAIKIN</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/payne/">
-                              <a className="nav-link dropdown-item">Payne</a>
+                              <a className="nav-link dropdown-item">PAYNE</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/coleman/">
-                              <a className="nav-link dropdown-item">Coleman</a>
+                              <a className="nav-link dropdown-item">COLEMAN</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/rinnai/">
-                              <a className="nav-link dropdown-item">Rinnai</a>
+                              <a className="nav-link dropdown-item">RINNAI</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/viessmann/">
-                              <a className="nav-link dropdown-item">Viessmann</a>
+                              <a className="nav-link dropdown-item">VIESSMANN</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/york-brand/">
-                              <a className="nav-link dropdown-item">York Brand</a>
+                              <a className="nav-link dropdown-item">YORK BRAND</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/navien/">
-                              <a className="nav-link dropdown-item">Navien</a>
+                              <a className="nav-link dropdown-item">NAVIEN</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/maytag-hvac/">
-                              <a className="nav-link dropdown-item">Maytag hvac</a>
+                              <a className="nav-link dropdown-item">MAYTAG HVAC</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/luxaire/">
-                              <a className="nav-link dropdown-item">Luxaire</a>
+                              <a className="nav-link dropdown-item">LUXAIRE</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/comfortmaker/">
-                              <a className="nav-link dropdown-item">Comfortmaker</a>
+                              <a className="nav-link dropdown-item">COMFORTMAKER</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/arcoaire/">
-                              <a className="nav-link dropdown-item">Arcoaire</a>
+                              <a className="nav-link dropdown-item">ARCOAIRE</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/tempstar/">
-                              <a className="nav-link dropdown-item">Tempstar</a>
+                              <a className="nav-link dropdown-item">TEMPSTAR</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/heil-hvac/">
-                              <a className="nav-link dropdown-item">Heil hvac</a>
+                              <a className="nav-link dropdown-item">HEIL HVAC</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/day-and-night-hvac/">
-                              <a className="nav-link dropdown-item">Day And Night hvac</a>
+                              <a className="nav-link dropdown-item">DAY AND NIGHT HVAC</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/armstrong/">
-                              <a className="nav-link dropdown-item">Armstrong</a>
+                              <a className="nav-link dropdown-item">ARMSTRONG</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/concord-air/">
-                              <a className="nav-link dropdown-item">Concord Air</a>
+                              <a className="nav-link dropdown-item">CONCORD AIR</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/frigidaire/">
-                              <a className="nav-link dropdown-item">Frigidaire</a>
+                              <a className="nav-link dropdown-item">FRIGIDAIRE</a>
                             </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/kenmore/">
-                              <a className="nav-link dropdown-item">Kenmore</a>
+                              <a className="nav-link dropdown-item">KENMORE</a>
                             </Link>
                           </li>
                         </ul>
                       </li>
-                      
+                      {/* <li className='nav-item'>
+                        <Link className='nav-link' legacyBehavior={true} href="/blog/">
+                          <a className='nav-link'>BLOG</a>
+                        </Link>
+                      </li> */}
                       <li className='nav-item'>
                         <Link className='nav-link' legacyBehavior={true} href="/contact-us/">
                           <a className='nav-link'>Contact us</a>
