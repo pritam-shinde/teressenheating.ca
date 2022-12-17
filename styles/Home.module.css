@@ -11,9 +11,10 @@
 
 .bannerText {
     font-size: 2rem !important;
-    font-weight: 600;
+    font-weight: 600 !important;
     color: var(--black) !important;
     text-shadow: 1px 1px #fff;
+    margin-top: -8rem !important;
 }
 
 .circle {

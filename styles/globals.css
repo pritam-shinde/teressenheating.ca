@@ -303,7 +303,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     }
 
     nav.navbar .navbar-nav .nav-item .nav-link {
-        color: var(--black) !important;
+        color: var(--white) !important;
     }
 
     .navbar .blueBtn {
@@ -558,5 +558,16 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 
 a.nav-link.dropdown-item {
     line-height: 1rem !important;
+}
+
+.fixedButtons{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#fff;
+    color: white;
+    text-align: center;
+    z-index: 1;
 }
 

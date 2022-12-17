@@ -55,7 +55,7 @@ const Navbar = () => {
                       </li>
                       <li className='nav-item dropdown dropdown1'>
                         <Link className='nav-link' legacyBehavior={true} href="/services/">
-                          <a className="nav-link dropdown-toggle" id="navbardropdown1" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">SERVICES</a>
+                          <a className="nav-link dropdown-toggle" id="navbardropdown1" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">Services</a>
                         </Link>
                         <ul className="dropdown-menu dropdown-menu-1 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
@@ -75,7 +75,7 @@ const Navbar = () => {
                           </li>
                           <li className="nav-item dropdown dropdown2">
                             <Link className='nav-link' legacyBehavior={true} href="/boilers/">
-                              <a className="nav-link dropdown-toggle text-dark" id="navbardropdown2" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{ color: "#000 !important" }}>BOILER</a>
+                              <a className="nav-link dropdown-toggle text-dark" id="navbardropdown2" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{ color: "#000 !important" }}>Boiler</a>
                             </Link>
                             <ul className="dropdown-menu dropdown-menu-2 p-2 border-0" aria-labelledby="navbarDropdown">
                               <li className="nav-item">
@@ -134,7 +134,7 @@ const Navbar = () => {
                       </li>
                       <li className='nav-item dropdown dropdown3'>
                         <Link className='nav-link' legacyBehavior={true} href="/service-areas/">
-                          <a className='nav-link dropdown-toggle' id="navbardropdown3" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">AREAS</a>
+                          <a className='nav-link dropdown-toggle' id="navbardropdown3" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">Areas</a>
                         </Link>
                         <ul className="dropdown-menu dropdown-menu-3 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
@@ -201,7 +201,7 @@ const Navbar = () => {
                       </li>
                       <li className='nav-item dropdown dropdown4'>
                         <Link className='nav-link' legacyBehavior={true} href="/about-us/">
-                          <a className='nav-link dropdown-toggle' id="navbardropdown4" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">ABOUT US</a>
+                          <a className='nav-link dropdown-toggle' id="navbardropdown4" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">About us</a>
                         </Link>
                         <ul className="dropdown-menu dropdown-menu-4 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
@@ -228,7 +228,7 @@ const Navbar = () => {
                       </li>
                       <li className='nav-item dropdown dropdown5'>
                         <Link className='nav-link' legacyBehavior={true} href="/brand/">
-                          <a className='nav-link dropdown-toggle' id="navbardropdown5" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">BRAND</a>
+                          <a className='nav-link dropdown-toggle' id="navbardropdown5" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">Brand</a>
                         </Link>
                         <ul className="dropdown-menu dropdown-menu-5 p-2 border-0" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
@@ -380,7 +380,7 @@ const Navbar = () => {
                       </li> */}
                       <li className='nav-item'>
                         <Link className='nav-link' legacyBehavior={true} href="/contact-us/">
-                          <a className='nav-link'>CONTACT US</a>
+                          <a className='nav-link'>Contact us</a>
                         </Link>
                       </li>
                     </ul>
@@ -410,15 +410,16 @@ const Navbar = () => {
               </Link>
             </Box>
             <Box p={3}>
+            <ul className="navbar-nav">
               <li onClick={closeMobileMenu}>
                 <Link className='nav-link' legacyBehavior={true} href="/">
-                  <a className="text-white nav-link">HOME</a>
+                  <a className="text-white nav-link">Home</a>
                 </Link>
               </li>
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/services/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>SERVICES</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>Services</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(!servicesDropdown) }}>
                     <ArrowDropDown className="text-white" />
@@ -429,7 +430,7 @@ const Navbar = () => {
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/service-areas/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>AREAS</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>Areas</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(!areasDropdown) }}>
                     <ArrowDropDown className="text-white" />
@@ -440,7 +441,7 @@ const Navbar = () => {
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/about-us/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>ABOUT US</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>About us</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(!aboutDropdown) }}>
                     <ArrowDropDown className="text-white" />
@@ -451,7 +452,7 @@ const Navbar = () => {
               <li className="nav-item dropdownListItem">
                 <Box className='d-flex align-items-center'>
                   <Link className='nav-link' legacyBehavior={true} href="/brand/">
-                    <a className="nav-link text-white" onClick={closeMobileMenu}>BRAND</a>
+                    <a className="nav-link text-white" onClick={closeMobileMenu} style={{color:'#fff !important'}}>Brand</a>
                   </Link>
                   <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(false); setBrandDropdown(!brandDropdown) }}>
                     <ArrowDropDown className="text-white" />
@@ -466,9 +467,10 @@ const Navbar = () => {
               </li> */}
               <li onClick={closeMobileMenu}>
                 <Link className='nav-link' legacyBehavior={true} href="/contact-us/">
-                  <a className="text-white nav-link">CONTACT US</a>
+                  <a className="text-white nav-link">Contact us</a>
                 </Link>
               </li>
+              </ul>
             </Box>
           </Box>
         </nav>
