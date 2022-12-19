@@ -19,7 +19,7 @@ export function reportWebVitals(metric) {
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
-
+  const [hydrated, setHydrated] = useState(false);
   const [width, setWidth] = useState(601);
   const [scrollHeight, setScrollHeight] = useState()
   useEffect(() => {
@@ -39,66 +39,73 @@ function MyApp({ Component, pageProps }) {
     })
   }, [width]);
 
-  console.log(router.pathname);
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      setHydrated(true)
+    } else {
+      setHydrated(false)
+    }
+  }, [])
 
   const handleGoTOTop = () => {
     window.scrollTo(0, 0)
   }
 
   return (<>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
-    </Head>
-    <Header />
+    {hydrated ? <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
+      </Head>
+      <Header />
 
-    <Script>
-      {
-        `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      <Script>
+        {
+          `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-TFB5PTT');`
+        }
+      </Script>
+
+
+      <Component {...pageProps} />
+      {
+        scrollHeight > 100 ? <Box className='d-flex justify-content-center align-items-center rounded-circle' style={{ height: "3rem", width: "3rem", backgroundColor: "var(--red)", position: "fixed", right: "1%", bottom: "2%" }}>
+          <button className='btn border-0 outline-none' onClick={handleGoTOTop}><ArrowCircleUp className='text-white' style={{ fontSize: "2rem !important" }} /></button>
+        </Box> : null
       }
-    </Script>
+      <section className='fixedButtons'>
+        <Container maxWidth="xxl">
+          <Grid container>
+            <Grid item xs={12} md={10} className="mx-auto">
+              <Box p={3}>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={12}>
+                    <Box p={2} className="d-flex">
+                      {
+                        router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
+                          <Link href="/contact-us/" color="#fff">{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}  </Link>
+                        </Button> : null
+                      }
 
+                      <Button variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
+                        <Link href="tel:604-363-6622" color="#fff"> {width > 600 ? '604-363-6622 ' : 'CALL'}</Link>
+                      </Button>
+                      <Button variant="contained" fullWidth disableElevation size="large" startIcon={<QuestionAnswerIcon />} style={{ backgroundColor: '#357bb4', margin: '0.3rem' }} disabled>
+                        <Link href="#" color="#fff"> {width > 600 ? 'CHAT LIVE NOW' : 'CHAT'}</Link>
+                      </Button>
+                    </Box>
+                  </Grid>
 
-    <Component {...pageProps} />
-    {
-      scrollHeight > 100 ? <Box className='d-flex justify-content-center align-items-center rounded-circle' style={{ height: "3rem", width: "3rem", backgroundColor: "var(--red)", position: "fixed", right: "1%", bottom: "2%" }}>
-        <button className='btn border-0 outline-none' onClick={handleGoTOTop}><ArrowCircleUp className='text-white' style={{ fontSize: "2rem !important" }} /></button>
-      </Box> : null
-    }
-    <section className='fixedButtons'>
-      <Container maxWidth="xxl">
-        <Grid container>
-          <Grid item xs={12} md={10} className="mx-auto">
-            <box p={3}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} md={12}>
-                  <Box p={2} className="d-flex">
-                  {
-                    router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
-                    <Link href="/contact-us/" color="#fff">{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}  </Link>
-                  </Button> : null
-                  }
-                    
-                    <Button variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
-                      <Link href="tel:604-363-6622" color="#fff"> {width > 600 ? '604-363-6622 ' : 'CALL'}</Link>
-                    </Button>
-                    <Button variant="contained" fullWidth disableElevation size="large" startIcon={<QuestionAnswerIcon />} style={{ backgroundColor: '#357bb4', margin: '0.3rem' }} disabled>
-                      <Link href="#" color="#fff"> {width > 600 ? 'CHAT LIVE NOW' : 'CHAT'}</Link>
-                    </Button>
-                  </Box>
                 </Grid>
-
-              </Grid>
-            </box>
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
-    </section>
-    <Footer />
+        </Container>
+      </section>
+      <Footer /> </> : "loading"}
   </>)
 }
 
