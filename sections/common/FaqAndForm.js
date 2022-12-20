@@ -1,7 +1,8 @@
 import { Box, Container, Grid, Paper, Typography, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import React, { useState } from 'react'
 import SectionalHeading from '../../components/SectionalHeading/SectionalHeading'
-import { LocationOnOutlined, LocalPhoneOutlined, MailOutline, CheckCircle } from '@mui/icons-material'
+import { LocalPhoneOutlined, MailOutline, CheckCircle} from '@mui/icons-material'
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import { AppointmentForm } from '../../components/components'
 import Image from 'next/legacy/image'
 import Brands from '../../public/brand-page/brands-logo.jpg'
@@ -33,8 +34,9 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                         <List>
                                                             {
                                                                 [
+                                                                    { id: "contact-1", icon: <HomeOutlinedIcon  className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "2025 Willingdon Ave unit 900, Burnaby, BC V5C 0J3, Canada" },
                                                                     { id: "contact-2", icon: <LocalPhoneOutlined className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "604-363-6622" },
-                                                                    { id: "contact-3", icon: <MailOutline className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "info@teressen heating.ca" },
+                                                                    { id: "contact-3", icon: <MailOutline className='text--blue me-3' style={{fontSize:"2rem"}} />, text: "info@teressen heating.ca" }
                                                                 ].map(item => <ListItem key={item.id} className="m-0 p-0 mb-3">
                                                                     <ListItemIcon>
                                                                         {item.icon}

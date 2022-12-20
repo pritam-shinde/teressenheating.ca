@@ -98,6 +98,10 @@ const Footer = () => {
                                                 <List className='p-0'>
 
                                                     <ListItem className='p-0'>
+                                                        <ListItemText primary={<p><strong className='text--blue'>Address :</strong> <span className='text-white'>2025 Willingdon Ave unit 900, Burnaby, BC V5C 0J3, Canada</span></p>} />
+                                                    </ListItem>
+
+                                                    <ListItem className='p-0'>
                                                         <ListItemText primary={<p><strong className='text--blue'>Call :</strong> <a href="tel:604-363-6622" className='text-white'>604-363-6622</a></p>} />
                                                     </ListItem>
                                                     <ListItem className='p-0'>

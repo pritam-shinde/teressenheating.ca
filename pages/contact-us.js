@@ -21,7 +21,7 @@ const ContactUs = () => {
           <Container maxWidth="xxl">
             <Grid item xs={12} md={10} className="mx-auto">
               <Box py={5}>
-                <FaqAndForm address={true} addressBlackTitle="Get In" addressBlueTitle="Touch" form={true} addressVariant="h2" formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
+                <FaqAndForm address={true} addressBlackTitle="Get In" addressBlueTitle="Touch" form={true} addressVariant="h2" formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" />
               </Box>
             </Grid>
           </Container>
