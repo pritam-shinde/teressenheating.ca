@@ -57,15 +57,10 @@ const Footer = () => {
                                                         <li><Link passHref prefetch={false} legacyBehavior href="/air-conditioning-service/">
                                                             <a className={`${Styles.quickLink} text-white`}>Cooling</a>
                                                         </Link></li>
-
-
-
-
                                                     </ul>
                                                 </Grid>
                                                 <Grid item xs={6} md={6} lg={6}>
                                                     <ul>
-
                                                         <li><Link passHref prefetch={false} legacyBehavior href="/commercial-hvac/">
                                                             <a className={`${Styles.quickLink} text-white`}>Commercial HVAC</a>
                                                         </Link></li>
@@ -82,7 +77,6 @@ const Footer = () => {
                                                         <li><Link passHref prefetch={false} legacyBehavior href="/contact-us/">
                                                             <a className={`${Styles.quickLink} text-white`}>Contact</a>
                                                         </Link></li>
-
                                                     </ul>
                                                 </Grid>
                                             </Grid>
@@ -96,7 +90,6 @@ const Footer = () => {
                                             </Box>
                                             <Box>
                                                 <List className='p-0'>
-
                                                     <ListItem className='p-0'>
                                                         <ListItemText primary={<p><strong className='text--blue'>Address :</strong> <span className='text-white'>2025 Willingdon Ave unit 900, Burnaby, BC V5C 0J3, Canada</span></p>} />
                                                     </ListItem>
@@ -104,6 +97,7 @@ const Footer = () => {
                                                     <ListItem className='p-0'>
                                                         <ListItemText primary={<p><strong className='text--blue'>Call :</strong> <a href="tel:604-363-6622" className='text-white'>604-363-6622</a></p>} />
                                                     </ListItem>
+
                                                     <ListItem className='p-0'>
                                                         <ListItemText primary={<p><strong className='text--blue'>Email :</strong> <a href="mailto:info@teressenheating.ca" className='text-white'>info@teressenheating.ca</a></p>} />
                                                     </ListItem>
@@ -111,26 +105,44 @@ const Footer = () => {
                                             </Box>
                                         </Box>
                                     </Grid>
-                                    <Grid item xs={12} sm={4} lg={3} className="mx-auto">
-                                        <box>
-                                            <ul className='text-center'>
-                                                <li style={{ float: 'left', verticalAlign: 'middle' }}><Link passHref prefetch={false} legacyBehavior href="/privacy-policy/">
-                                                    <a className='text-white'>Privacy Policy</a>
-                                                </Link></li>
-                                                <li style={{ float: 'right', verticalAlign: 'middle' }}><Link passHref prefetch={false} legacyBehavior href="/terms-of-service/">
-                                                    <a className={`${Styles.quickLink} text-white`}>Term Of Service</a>
-                                                </Link></li>
-                                            </ul>
-                                        </box>
-                                    </Grid>
+                               
                                 </Grid>
                             </Box>
                         </Grid>
                     </Grid>
                 </Container>
-                <Container maxWidth="xxl" style={{ backgroundColor: "var(--light-navy) !important" }}>
-                    <Box py={2}>
-                        <Typography className='text-white' align="center"><Copyright /> {new Date().getFullYear()} | teressenheating.ca</Typography>
+                <Container maxWidth="xxl">
+                    <Box py={2} pb={10}>
+                     <Grid container>
+                     <Grid item xs={12} md={10}>
+                     <Box>
+                     <Grid container>
+                     <Grid item xs={12} sm={8} className="mx-auto">
+                     <box>
+                         <Grid container>
+
+                            <Grid item xs={12} sm={6} align="center" >
+                                  <Typography className='text-white'><Copyright /> {new Date().getFullYear()} | teressenheating.ca</Typography>
+                             </Grid>
+
+                             <Grid item xs={12} sm={3} align="center">
+                                 <Link passHref prefetch={false} legacyBehavior href="/privacy-policy/">
+                                     <a className='text-white'>Privacy Policy</a>
+                                 </Link>
+                             </Grid>
+                             <Grid item xs={12} sm={3} align="center">
+                                 <Link passHref prefetch={false} legacyBehavior href="/terms-of-service/">
+                                     <a className={`${Styles.quickLink} text-white`}>Term Of Service</a>
+                                 </Link>
+                             </Grid>
+
+                         </Grid>
+                     </box>
+                     </Grid>
+                 </Grid>
+                     </Box>
+                     </Grid>
+                     </Grid>
                     </Box>
                 </Container>
             </footer>

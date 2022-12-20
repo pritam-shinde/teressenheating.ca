@@ -19,7 +19,6 @@ export function reportWebVitals(metric) {
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
-  const [hydrated, setHydrated] = useState(false);
   const [width, setWidth] = useState(601);
   const [scrollHeight, setScrollHeight] = useState()
   useEffect(() => {
@@ -39,20 +38,12 @@ function MyApp({ Component, pageProps }) {
     })
   }, [width]);
 
-  useEffect(() => {
-    if (typeof window !== undefined) {
-      setHydrated(true)
-    } else {
-      setHydrated(false)
-    }
-  }, [])
 
   const handleGoTOTop = () => {
     window.scrollTo(0, 0)
   }
 
-  return (<>
-    {hydrated ? <>
+  return ( <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
@@ -76,14 +67,14 @@ function MyApp({ Component, pageProps }) {
           <button className='btn border-0 outline-none' onClick={handleGoTOTop}><ArrowCircleUp className='text-white' style={{ fontSize: "2rem !important" }} /></button>
         </Box> : null
       }
-      <section className='fixedButtons'>
+      <section className='fixedButtons' style={{ backgroundColor:'var(--navy)'}}>
         <Container maxWidth="xxl">
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
-              <Box p={3}>
+              <Box p={2}>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={12}>
-                    <Box p={2} className="d-flex">
+                    <Box className="d-flex">
                       {
                         router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
                           <Link href="/contact-us/" color="#fff">{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}  </Link>
@@ -98,14 +89,13 @@ function MyApp({ Component, pageProps }) {
                       </Button>
                     </Box>
                   </Grid>
-
                 </Grid>
               </Box>
             </Grid>
           </Grid>
         </Container>
       </section>
-      <Footer /> </> : "loading"}
+      <Footer />
   </>)
 }
 

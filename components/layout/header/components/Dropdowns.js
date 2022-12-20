@@ -10,7 +10,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
     }
     return (
         <>
-            <ul onClick={handleOnClick} className={`${click ? 'dropdownMenu clicked' : 'dropdownMenu'} shadow p-3 bg-white`}>
+            <ul onClick={handleOnClick} className={`${click ? 'dropdownMenu clicked' : 'dropdownMenu'} shadow p-3`}>
                 {
                     menu === "services" ? [
                         { id: "services-menu-1", link: "/heating-services/", text: "HEATING", submenu: null },
