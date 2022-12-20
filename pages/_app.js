@@ -83,7 +83,7 @@ function MyApp({ Component, pageProps }) {
               <Box p={3}>
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={12}>
-                    <Box p={2} className="d-flex">
+                    <Box className="d-flex">
                       {
                         router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
                           <Link href="/contact-us/" color="#fff">{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}  </Link>
