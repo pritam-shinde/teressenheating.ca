@@ -23,7 +23,7 @@ const WriteAReview = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box py={5}>
-                  <Typography variant='h2' align='center'><a href="#">You can write a review for Teressen Ltd by clicking Here</a></Typography>
+                  <Typography variant='h2' align='center'>You can write a review for Teressen Ltd by <a href="https://g.page/r/CdlSgou1yAB-EBI/review">clicking Here</a></Typography>
                   <Box mt={3}>
                     <Grid container spacing={3}>
                       <Grid item xs={12} md={6}>

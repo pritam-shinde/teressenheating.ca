@@ -438,11 +438,12 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 }
 
 .trusted {
-    font-size: 1.5rem !important
+    font-size: 1.5rem !important;
 }
 
 .sidebar-sticky {
-    top: 20% !important
+    top: 20% !important;
+    Z-index: 0 !important;
 }
 
 #locationSec {
@@ -450,7 +451,7 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     height: auto;
     background-image: url(../public/areas/ariabg.webp);
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
 }
 
 .locationBox {

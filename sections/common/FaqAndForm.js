@@ -48,8 +48,9 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                     </Box>
                                                 </Box>
                                             </Box>
-                                            <Box>
-                                            <Image src={Brands} alt="Brands logo" layout='responsive' />
+                                            <Box p={1}>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.241045331159!2d-123.0013343!3d49.2657802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e00c8b58b8252d9!2sTeressen%20Heating%20%26%20Air%20Conditioning!5e0!3m2!1sen!2sin!4v1671612141122!5m2!1sen!2sin" width="100%" height="500px" style={{Border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                          
                                             </Box>
 
                                         </Grid> : null
