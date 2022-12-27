@@ -1,10 +1,11 @@
-import { Box, Container, Grid, List, ListItem, ListItemText, Typography } from '@mui/material'
+import { Box, Container, Grid, List, ListItem, ListItemText, Typography, ListItemAvatar, Avatar } from '@mui/material'
 import Image from 'next/legacy/image'
 import React, { useEffect, useState } from 'react'
 import Styles from '../../../styles/Footer.module.css'
 import GreyLogo from '../../../public/logo/grey-logo.svg'
 import Link from 'next/link'
 import { Copyright } from '@mui/icons-material'
+import { FaPinterestP, FaTwitter, FaFacebookF } from 'react-icons/fa'
 
 const Footer = () => {
 
@@ -103,46 +104,71 @@ const Footer = () => {
                                                     </ListItem>
                                                 </List>
                                             </Box>
+                                            <Box className='d-flex' mt={1}>
+                                                <Box p={1}>
+                                                    <Avatar>
+                                                        <Link passHref href="https://www.facebook.com/profile.php?id=100088431184715" className='text-white'>
+                                                            <FaFacebookF />
+                                                        </Link>
+                                                    </Avatar>
+                                                </Box>
+                                                <Box p={1}>
+                                                    <Avatar>
+                                                        <Link passHref href="https://twitter.com/BaymanShawqi" className='text-white'>
+                                                            <FaTwitter />
+                                                        </Link>
+                                                    </Avatar>
+                                                </Box>
+                                                <Box p={1}>
+                                                    <Avatar>
+                                                        <Link passHref href="https://www.pinterest.com.au/teressenheating/" className='text-white'>
+                                                            <FaPinterestP />
+                                                        </Link>
+                                                    </Avatar>
+                                                </Box>
+                                            </Box>
                                         </Box>
                                     </Grid>
-                               
+
                                 </Grid>
                             </Box>
                         </Grid>
                     </Grid>
                 </Container>
                 <Container maxWidth="xxl">
-                    <Box py={2} pb={10}>
-                     <Grid container>
-                     <Grid item xs={12} md={10}>
-                     <Box>
-                     <Grid container>
-                     <Grid item xs={12} sm={8} className="mx-auto">
-                     <box>
-                         <Grid container>
+                    <Box  pb={15}>
+                        <Grid container>
+                            <Grid item xs={12} md={10}>
+                                <Box>
+                                    <Grid container>
+                                        <Grid item xs={12} md={9} className="mx-auto" style={{ textAlign: 'center' }}>
+                                            <box className={ width > 320 ? 'd-flex' : 'flex-column' }>
+                                                <Box px={1}>
+                                                    <Typography className='text-white'><Copyright /> {new Date().getFullYear()} teressenheating. </Typography>
+                                                </Box>
+                                                <Box>
+                                                    <Typography className='text-white'> | </Typography>
+                                                </Box>
+                                                <Box px={1}>
+                                                    <Link legacyBehavior href="/privacy-policy/">
+                                                    <span className='headingSecond'> Privacy Policy </span>
+                                                    </Link>
+                                                </Box>
 
-                            <Grid item xs={12} sm={6} align="center" >
-                                  <Typography className='text-white'><Copyright /> {new Date().getFullYear()} | teressenheating.ca</Typography>
-                             </Grid>
-
-                             <Grid item xs={12} sm={3} align="center">
-                                 <Link passHref prefetch={false} legacyBehavior href="/privacy-policy/">
-                                     <a className='text-white'>Privacy Policy</a>
-                                 </Link>
-                             </Grid>
-                             <Grid item xs={12} sm={3} align="center">
-                                 <Link passHref prefetch={false} legacyBehavior href="/terms-of-service/">
-                                     <a className={`${Styles.quickLink} text-white`}>Term Of Service</a>
-                                 </Link>
-                             </Grid>
-
-                         </Grid>
-                     </box>
-                     </Grid>
-                 </Grid>
-                     </Box>
-                     </Grid>
-                     </Grid>
+                                                <Box>
+                                                    <Typography className='text-white'> | </Typography>
+                                                </Box>
+                                                <Box px={1}>
+                                                    <Link legacyBehavior href="/terms-of-service/">
+                                                        <span className='headingSecond'>Term Of Service</span>
+                                                    </Link>
+                                                </Box>
+                                            </box>
+                                        </Grid>
+                                    </Grid>
+                                </Box>
+                            </Grid>
+                        </Grid>
                     </Box>
                 </Container>
             </footer>

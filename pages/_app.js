@@ -77,15 +77,15 @@ function MyApp({ Component, pageProps }) {
                     <Box className="d-flex">
                       {
                         router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
-                          <Link href="/contact-us/" color="#fff">{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}  </Link>
+                          <Link href="/contact-us/" color="#fff" className='hoverPoint'>{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}  </Link>
                         </Button> : null
                       }
 
                       <Button variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
-                        <Link href="tel:604-363-6622" color="#fff"> {width > 600 ? '604-363-6622 ' : 'CALL'}</Link>
+                        <Link href="tel:604-363-6622" color="#fff" className='hoverPoint'> {width > 600 ? '604-363-6622 ' : 'CALL'}</Link>
                       </Button>
                       <Button variant="contained" fullWidth disableElevation size="large" startIcon={<QuestionAnswerIcon />} style={{ backgroundColor: '#357bb4', margin: '0.3rem' }} disabled>
-                        <Link href="#" color="#fff"> {width > 600 ? 'CHAT LIVE NOW' : 'CHAT'}</Link>
+                        <Link href="#" color="#fff" className='hoverPoint'> {width > 600 ? 'CHAT LIVE NOW' : 'CHAT'}</Link>
                       </Button>
                     </Box>
                   </Grid>
