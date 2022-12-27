@@ -30,7 +30,9 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                     addressSimpleTitle ? <SectionalHeading variant={addressVariant} align={addresstitleAlign} simpletext={addressSimpleTitle} /> : null
                                                 }
                                                 <Box mt={3}>
+                                                <Typography variant='h3'>Teressen heating and air conditioning</Typography>
                                                     <Box mt={3}>
+
                                                         <List>
                                                             {
                                                                 [

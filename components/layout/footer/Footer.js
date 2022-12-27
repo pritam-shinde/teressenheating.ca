@@ -138,11 +138,11 @@ const Footer = () => {
                 <Container maxWidth="xxl">
                     <Box  pb={15}>
                         <Grid container>
-                            <Grid item xs={12} md={10}>
+                            <Grid item xs={12} md={12}>
                                 <Box>
                                     <Grid container>
-                                        <Grid item xs={12} md={9} className="mx-auto" style={{ textAlign: 'center' }}>
-                                            <box className={ width > 320 ? 'd-flex' : 'flex-column' }>
+                                        <Grid item xs={12} md={10} className="mx-auto">
+                                            <box className={ `${ width > 320 ? 'd-flex' : 'flex-column'} justify-content-center` }>
                                                 <Box px={1}>
                                                     <Typography className='text-white'><Copyright /> {new Date().getFullYear()} teressenheating. </Typography>
                                                 </Box>

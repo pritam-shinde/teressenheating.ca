@@ -9,9 +9,9 @@ const AppointmentForm = () => {
                     <div className='form-group'>
                         <label><strong>Have we been to your home before?</strong></label><br />
                         <input type="radio" id="visited" name="Have we been to your home before?" value="Visited Before" />
-                        <label htmlFor="Yes">Yes</label><br />
+                        <label htmlFor="Yes" style={{marginLeft: '0.5rem'}}>Yes</label><br />
                         <input type="radio" id="notVisited" name="Have we been to your home before?" value="Never Visited" />
-                        <label htmlFor="No">No</label><br />
+                        <label htmlFor="No" style={{marginLeft: '0.5rem'}}>No</label><br />
                     </div>
                     <div className='form-group'>
                         <label><strong>Interested in</strong></label>
