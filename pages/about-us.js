@@ -45,7 +45,7 @@ const AboutUs = () => {
                       <Box>
                         <Box>
                           <SectionalHeading simpletext="Teressen Is The Best Company To Work With" variant="h2" align="left" />
-                          <Typography className='para'>We are committed to maintaining quality through our efficient working style. We are the only handful GAF certified HVACR contractors in Vancouver who serves you to the fullest. We offer a wide range of heating and cooling services that will keep you safe from high utility bills. So, you can spend more time sitting at home and relaxing for hours. Our experts have been specially trained to keep your family comfortable year-round with our wide range of services. So, you do not have to worry about your home's heating or air conditioning services ever again.</Typography>
+                          <Typography className='para'>We are committed to maintaining quality through our efficient working style. We are the only handful GAF certified HVACR contractors in Burnaby who serves you to the fullest. We offer a wide range of heating and cooling services that will keep you safe from high utility bills. So, you can spend more time sitting at home and relaxing for hours. Our experts have been specially trained to keep your family comfortable year-round with our wide range of services. So, you do not have to worry about your home's heating or air conditioning services ever again.</Typography>
                         </Box>
                         <Box mt={3}>
                           <SectionalHeading simpletext="Call us: Your HVAC installation service provider is just a call away!" variant="h2" align="left" />
@@ -68,8 +68,8 @@ const AboutUs = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="Teressen: A name that stands for affordability, quality, and trust!" variant="h2" />
-                  <Typography className='para'>We are the leading HVAC contractors in Vancouver since 2012. We provide boilers, air conditioners, heat pumps, hot water tanks, and duct cleaning services with relative ease.
-                    Our clients chose us because of our quality, fast and friendly services. We are an organization that is locally operated in Vancouver BC. We are licensed, and insured and provide expert guidance on matters related to our HVAC services. We always make sure that our clients get the best of everything. Hence, your satisfaction is our priority. So, leave all your HVAC worries to us, and rest assured that we will serve you to the fullest. Also, our HVAC standard services are ideal for business and residential environments. So, you can immediately give us a call whenever you need our quick HVAC services.
+                  <Typography className='para'>We are the leading HVAC contractors in Burnaby since 2015. We provide boilers, air conditioners, heat pumps, hot water tanks, and duct cleaning services with relative ease.
+                    Our clients chose us because of our quality, fast and friendly services. We are an organization that is locally operated in Burnaby BC. We are licensed, and insured and provide expert guidance on matters related to our HVAC services. We always make sure that our clients get the best of everything. Hence, your satisfaction is our priority. So, leave all your HVAC worries to us, and rest assured that we will serve you to the fullest. Also, our HVAC standard services are ideal for business and residential environments. So, you can immediately give us a call whenever you need our quick HVAC services.
                   </Typography>
                 </Box>
               </Grid>
