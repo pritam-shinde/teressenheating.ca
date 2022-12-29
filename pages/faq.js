@@ -34,7 +34,7 @@ const FAQ = () => {
                 <Box py={5}>
                   <Typography variant='h2' align="center"><span className='text--red'>Heating</span> & <span className='text--blue'>Cooling</span> FAQ</Typography>
                   <Box>
-                    <FaqAndForm faq={true} faqArr={arrayFaq} />
+                    <FaqAndForm faq={true} faqArr={arrayFaq}  />
                   </Box>
                 </Box>
               </Grid>

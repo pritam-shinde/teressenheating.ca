@@ -30,7 +30,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                     addressSimpleTitle ? <SectionalHeading variant={addressVariant} align={addresstitleAlign} simpletext={addressSimpleTitle} /> : null
                                                 }
                                                 <Box mt={3}>
-                                                <Typography variant='h3'>Teressen heating and air conditioning</Typography>
+                                                <Typography variant='h3'>Teressen Heating & Air Conditioning</Typography>
                                                     <Box mt={3}>
 
                                                         <List>
@@ -75,7 +75,7 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                             {
                                                                 faqArr.map((item, index) => <div key={`faq-${index}`} className="accordion-item">
                                                                     <h3 className="accordion-header" id={`heading${index}`}>
-                                                                        <button onClick={() => setActive(`faq-${index}`)} className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index}`} aria-expanded="true" aria-controls={`collapse${index}`}>
+                                                                        <button onClick={() => setActive(`faq-${index}`)} className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${index}`} aria-expanded="true" aria-controls={`collapse${index}`} style={{zIndex: 0}}>
                                                                             <strong className='ms-3 mb-0'>{item.que}</strong>
                                                                         </button>
                                                                     </h3>
