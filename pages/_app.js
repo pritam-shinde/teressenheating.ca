@@ -24,6 +24,15 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle");
   }, []);
+  
+  window.myInfo=()=>{
+const developer = {
+  Developer:"Aditya Nitin Burse (Jain)",
+  Designation:"Front-End Developer",
+  Employer:"Nonstop Corporation"
+} 
+console.log(developer)
+}
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
