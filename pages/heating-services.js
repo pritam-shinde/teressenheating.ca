@@ -21,7 +21,7 @@ const HeatingService = () => {
     { id: "faq-1", que: "How often should a heating system be serviced? ", ans: "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year.", list: null },
     { id: "faq-2", que: "How do I maintain my heating system?", ans: "", list: ["Try to replace filters regularly.", "Inspectecting the Air Ducts and the Openings.", " Maintaining Fan, Bearings, and Belts.", "Maintaining Other HVAC Accessories.", " By following our Spring/Summer Maintenance Tips or Schedule"] },
     { id: "faq-3", que: "How much does it cost to install heating?", ans: "The overall cost of heating installation of a new heating system depends on many factors. At a minimum, installing a new heating system can cost around $2,000 which is very basic. The more work that’s involved, like additional ductwork or repairs, the more the price can increase.", list: null },
-    ]
+  ]
 
   const testimonial = [
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
@@ -38,8 +38,8 @@ const HeatingService = () => {
         <link rel="canonical" href="/heating-services/" />
       </Head>
       <script type="application/ld+json">
-       {
-         ` {
+        {
+          ` {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -69,8 +69,58 @@ const HeatingService = () => {
             }
           }]
         }`
-       }
+        }
       </script>
+
+      <script type="application/ld+json">
+        {
+          `{"@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Heating Services",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Teressen Heating & Air Conditioning",
+            "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fheating.59f11898.webp&w=1920&q=75",
+            "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fheating.59f11898.webp&w=1920&q=75",
+            "url": "https://teressenheating.ca/heating-services/",
+            "telephone": "+1-604-363-6622",
+            "priceRange": "$$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "2025 Willingdon Ave unit 900",
+              "addressLocality": "Burnaby",
+              "addressRegion": "British Columbia",
+              "postalCode": "V5C 0J3",
+              "addressCountry": "CA"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 49.265842,
+              "longitude": -123.0035841
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "08:00",
+              "closes": "18:00"
+            },
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=100088431184715",
+              "https://twitter.com/BaymanShawqi",
+              "https://www.pinterest.com.au/teressenheating/"    
+            ]
+            }
+          }`
+        }
+      </script>
+
       <main>
         <CommonBanner bg={Heating} title="Heating Services" color="#fff" variant="h1" />
         <section>

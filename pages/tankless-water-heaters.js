@@ -38,7 +38,7 @@ const TanklesWaterHeater = () => {
       </Head>
       <script type="application/ld+json">
       {
-        `{
+        ` {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -87,8 +87,58 @@ const TanklesWaterHeater = () => {
             }
           }]
         }`
-      }
+      }     
+      </script>
 
+      <script type="application/ld+json">
+      {
+        `{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Tankless Water Heater Maintenance Service",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Teressen Heating & Air Conditioning",
+          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
+          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
+          "url": "https://teressenheating.ca/tankless-water-heaters/",
+          "telephone": "+1-604-363-6622",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "2025 Willingdon Ave unit 900",
+            "addressLocality": "Burnaby",
+            "addressRegion": "British Columbia",
+            "postalCode": "V5C 0J3",
+            "addressCountry": "CA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 49.265842,
+            "longitude": -123.0035841
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          },
+          "sameAs": [
+            "https://www.facebook.com/profile.php?id=100088431184715",
+            "https://twitter.com/BaymanShawqi",
+            "https://www.pinterest.com.au/teressenheating/"    
+          ]
+          }
+        }
+        `
+      }
       </script>
       <main>
         <CommonBanner bg={Banner} title="Teressen tankless water heater maintenance service" color="#fff" variant="h1" />
