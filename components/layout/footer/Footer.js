@@ -144,7 +144,7 @@ const Footer = () => {
                                         <Grid item xs={12} md={10} className="mx-auto">
                                             <box className={ `${ width > 320 ? 'd-flex' : 'flex-column'} justify-content-center` }>
                                                 <Box px={1}>
-                                                    <Typography className='text-white'><Copyright /> {new Date().getFullYear()} teressenheating. </Typography>
+                                                    <Typography className='text-white'><Copyright /> {new Date().getFullYear()} teressenheating.ca </Typography>
                                                 </Box>
                                                 <Box>
                                                     <Typography className='text-white'> | </Typography>
