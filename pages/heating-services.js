@@ -29,6 +29,8 @@ const HeatingService = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
+ 
+
   return (
     <>
       <Head>
@@ -68,9 +70,11 @@ const HeatingService = () => {
                 "text": "The overall cost of heating installation of a new heating system depends on many factors. At a minimum, installing a new heating system can cost around $2,000 which is very basic. The more work that’s involved, like additional ductwork or repairs, the more the price can increase."
               }
             }]
-          }`
+          }`.replace(/&quot;/g, '\\"')
+
         }
       </script>
+    
 
       <script type="application/ld+json">
         {
