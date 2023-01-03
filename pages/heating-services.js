@@ -39,36 +39,36 @@ const HeatingService = () => {
       </Head>
       <script type="application/ld+json">
         {
-          ` {
-          &quot;@context&quot;: &quot;https://schema.org&quot;,
-          &quot;@type&quot;: &quot;FAQPage&quot;,
-          &quot;mainEntity&quot;: [{
-            &quot;@type&quot;: &quot;Question&quot;,
-            &quot;name&quot;: &quot;How often should a heating system be serviced?&quot;,
-            &quot;acceptedAnswer&quot;: {
-              &quot;@type&quot;: &quot;Answer&quot;,
-              &quot;text&quot;: &quot;You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year.&quot;
-            }
-          },{
-            &quot;@type&quot;: &quot;Question&quot;,
-            &quot;name&quot;: &quot;How do I maintain my heating system?&quot;,
-            &quot;acceptedAnswer&quot;: {
-              &quot;@type&quot;: &quot;Answer&quot;,
-              &quot;text&quot;: &quot;Try to replace filters regularly.
-        Inspecting the Air Ducts and the Openings.
-        Maintaining Fan, Bearings, and Belts.
-        Maintaining Other HVAC Accessories.
-        By following our Spring/Summer Maintenance Tips or Schedule&quot;
-            }
-          },{
-            &quot;@type&quot;: &quot;Question&quot;,
-            &quot;name&quot;: &quot;How much does it cost to install heating?&quot;,
-            &quot;acceptedAnswer&quot;: {
-              &quot;@type&quot;: &quot;Answer&quot;,
-              &quot;text&quot;: &quot;The overall cost of heating installation of a new heating system depends on many factors. At a minimum, installing a new heating system can cost around $2,000 which is very basic. The more work that’s involved, like additional ductwork or repairs, the more the price can increase.&quot;
-            }
-          }]
-        }`
+          `{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "How often should a heating system be serviced?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year."
+              }
+            },{
+              "@type": "Question",
+              "name": "How do I maintain my heating system?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Try to replace filters regularly.
+          Inspecting the Air Ducts and the Openings.
+          Maintaining Fan, Bearings, and Belts.
+          Maintaining Other HVAC Accessories.
+          By following our Spring/Summer Maintenance Tips or Schedule"
+              }
+            },{
+              "@type": "Question",
+              "name": "How much does it cost to install heating?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The overall cost of heating installation of a new heating system depends on many factors. At a minimum, installing a new heating system can cost around $2,000 which is very basic. The more work that’s involved, like additional ductwork or repairs, the more the price can increase."
+              }
+            }]
+          }`
         }
       </script>
 
