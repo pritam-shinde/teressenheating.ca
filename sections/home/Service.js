@@ -22,11 +22,14 @@ import {ArrowForward} from '@mui/icons-material'
 import Image from 'next/image'
 
 const Service = () => {
-    const [width, setWidth] = useState()
+    const [width, setWidth] = useState(992)
     const [active, setActive] = useState('box1');
 
     useEffect(() => {
-        setWidth(window.innerWidth)
+        setWidth(window.innerWidth);
+        window.addEventListener('resize',()=>{
+      setWidth(window.innerWidth)
+    })
     }, [width])
 
     return (

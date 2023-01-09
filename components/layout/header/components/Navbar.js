@@ -374,6 +374,11 @@ const Navbar = () => {
                           <a className='nav-link'>Contact us</a>
                         </Link>
                       </li>
+                     {/*  <li className='nav-item'>
+                          <Link className='nav-link' legacyBehavior={true} href="/blog/">
+                            <a className="nav-link">Blog</a>
+                          </Link>
+                      </li> */}
                     </ul>
                   </Box>
                 </Box>
@@ -451,11 +456,11 @@ const Navbar = () => {
                   </Box>
                 </li>
                 {brandDropdown ? <Dropdowns menu="brand" closeMobileMenu={closeMobileMenu} /> : null}
-                {/* <li onClick={closeMobileMenu}>
+               {/*  <li onClick={closeMobileMenu}>
                 <Link className='nav-link' legacyBehavior={true} href="/blog/">
                   <a className="text-white nav-link">BLOG</a>
                 </Link>
-              </li> */}
+              </li>  */}
                 <li onClick={closeMobileMenu}>
                   <Link className='nav-link' legacyBehavior={true} href="/contact-us/">
                     <a className="text-white nav-link">Contact us</a>
