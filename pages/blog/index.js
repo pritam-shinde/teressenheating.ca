@@ -8,9 +8,9 @@ import Styles from '../../styles/Blog.module.css'
 import WPAPI from 'wpapi';
 
 export const getServerSideProps = async () => {
-  const res = await fetch('https://pritams5.sg-host.com/wp-json/wp/v2/posts?_embed=true&page=1');
+  const res = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&page=1');
   const data = await res.json();
-  const cat = await fetch('https://pritams5.sg-host.com/wp-json/wp/v2/categories?page=1&per_page=99')
+  const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
   const category = await cat.json()
   return {
     props: {
@@ -26,7 +26,7 @@ const Blog = ({ data, category }) => {
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   const wp = new WPAPI({
-    endpoint: "https://pritams5.sg-host.com/wp-json"
+    endpoint: "https://api.teressenheating.ca/index.php/wp-json"
   })
 
   const fetchBlog = async () => {

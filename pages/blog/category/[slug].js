@@ -11,11 +11,11 @@ import Styles from '../../../styles/Blog.module.css'
 
 export const getServerSideProps = async (context) => {
     const { slug } = context.params;
-    const res = await fetch(`https://pritams5.sg-host.com/wp-json/wp/v2/categories?slug=${slug}`);
+    const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?slug=${slug}`);
     const data = await res.json();
-    const sidebarBlogsRes = await fetch('https://pritams5.sg-host.com/wp-json/wp/v2/posts?_embed=true&page=1');
+    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&page=1');
     const sidebarBlogs = await sidebarBlogsRes.json();
-    const cat = await fetch('https://pritams5.sg-host.com/wp-json/wp/v2/categories?page=1&per_page=99')
+    const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
     const category = await cat.json()
     return {
         props: {
@@ -31,7 +31,7 @@ const SingleCategory = ({ data, sidebarBlogs, category }) => {
     const [blogs, setBlogs] = useState([])
 
     const wp = new WPAPI({
-        endpoint: "https://pritams5.sg-host.com/wp-json"
+        endpoint: "https://api.teressenheating.ca/index.php/wp-json"
     })
 
     const fetchBlogs = async (id) => {

@@ -10,11 +10,11 @@ import Styles from '../../../styles/Blog.module.css'
 
 export const getServerSideProps = async (context) => {
     const { pageNo } = context.params
-    let res = await fetch(`https://pritams5.sg-host.com/wp-json/wp/v2/posts?_embed=true&page=${pageNo}`)
+    let res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&page=${pageNo}`)
     let data = await res.json()
-    const sidebarBlogsRes = await fetch('https://pritams5.sg-host.com/wp-json/wp/v2/posts?_embed=true&page=1');
+    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&page=1');
     const sidebarBlogs = await sidebarBlogsRes.json();
-    const cat = await fetch('https://pritams5.sg-host.com/wp-json/wp/v2/categories?page=1&per_page=99')
+    const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
     const category = await cat.json()
 
     return {
@@ -33,7 +33,7 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
     const { pageNo } = router.query
 
     const wp = new WPAPI({
-        endpoint: "https://pritams5.sg-host.com/wp-json" 
+        endpoint: "https://api.teressenheating.ca/index.php/wp-json" 
     })
 
     const fetchBlogs = async () => {
