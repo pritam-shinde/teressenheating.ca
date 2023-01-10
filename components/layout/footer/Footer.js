@@ -58,16 +58,15 @@ const Footer = () => {
                                                         <li><Link passHref prefetch={false} legacyBehavior href="/air-conditioning-service/">
                                                             <a className={`${Styles.quickLink} text-white`}>Cooling</a>
                                                         </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/boilers/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Boiler</a>
+                                                        </Link></li>
                                                     </ul>
                                                 </Grid>
                                                 <Grid item xs={6} md={6} lg={6}>
                                                     <ul>
                                                         <li><Link passHref prefetch={false} legacyBehavior href="/commercial-hvac/">
                                                             <a className={`${Styles.quickLink} text-white`}>Commercial HVAC</a>
-                                                        </Link></li>
-
-                                                        <li><Link passHref prefetch={false} legacyBehavior href="/boilers/">
-                                                            <a className={`${Styles.quickLink} text-white`}>Boiler</a>
                                                         </Link></li>
                                                         <li><Link passHref prefetch={false} legacyBehavior href="/tankless-water-heaters/">
                                                             <a className={`${Styles.quickLink} text-white`}>Tankless Water Heater </a>
@@ -77,6 +76,9 @@ const Footer = () => {
                                                         </Link></li>
                                                         <li><Link passHref prefetch={false} legacyBehavior href="/contact-us/">
                                                             <a className={`${Styles.quickLink} text-white`}>Contact</a>
+                                                        </Link></li>
+                                                        <li><Link passHref prefetch={false} legacyBehavior href="/blog/">
+                                                            <a className={`${Styles.quickLink} text-white`}>Blog</a>
                                                         </Link></li>
                                                     </ul>
                                                 </Grid>

@@ -71,10 +71,10 @@ const Blog = ({ data, category }) => {
                               } /> : null : null : null : null : null
                             }
                             <CardContent>
-                              {
-                                item ? item._embedded ? item._embedded.author ? item._embedded.author[0] ? item._embedded.author[0].name ? <Typography className='para'>Posted By: <strong className='text--blue'>{item._embedded.author[0].name}</strong></Typography> : null : null : null : null : null
+                    {/* {
+                            item ? item._embedded ? item._embedded.author ? item._embedded.author[0] ? item._embedded.author[0].name ? <Typography className='para'>Posted By: <strong className='text--blue'>{item._embedded.author[0].name}</strong></Typography> : null : null : null : null : null
 
-                              }
+                          } */}
                               <Box className='d-flex flex-md-row flex-column'>
                                 <Box className='flex-shrink-0 mb-md-0 mb-3'>
                                   <Box py={0.5} px={2.5} className='bg--blue rounded'>

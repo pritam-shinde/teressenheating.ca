@@ -24,25 +24,25 @@ const BlogCommonSidebar = ({ data, category }) => {
             }
           </Box>
         </Box>
-        <Box mt={5} className={Styles.stickyCategory}>
-          <Box mb={2}>
-            <Typography variant='h3' className='text--blue'>Category</Typography>
-          </Box>
-          <Box>
-            {
-              category.length > 0 ? <List className='p-0 m-0'>
-                {
-                  category.map(item => <ListItem className='mb-2 ps-0' key={`sidebar-recent-category-id-${item.id}`}>
-                    <ListItemIcon>
-                      <ArrowForward className='text--blue' />
-                    </ListItemIcon>
-                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href={`/blog/category/${item.slug}`}><a className='text--black'>{item.name}</a></Link></strong>} />
-                  </ListItem>)
-                }
-              </List> : null
-            }
-          </Box>
+   {   /* <Box mt={5} className={Styles.stickyCategory}>
+        <Box mb={2}>
+          <Typography variant='h3' className='text--blue'>Category</Typography>
         </Box>
+        <Box>
+          {
+            category.length > 0 ? <List className='p-0 m-0'>
+              {
+                category.map(item => <ListItem className='mb-2 ps-0' key={`sidebar-recent-category-id-${item.id}`}>
+                  <ListItemIcon>
+                    <ArrowForward className='text--blue' />
+                  </ListItemIcon>
+                  <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href={`/blog/category/${item.slug}`}><a className='text--black'>{item.name}</a></Link></strong>} />
+                </ListItem>)
+              }
+            </List> : null
+          }
+        </Box>
+      </Box> */}
       </Container>
     </>
   )
