@@ -68,7 +68,7 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
                         <link rel="canonical" href={`/blog/page/${pageNo}/`} />
                     </Head>
                     <main>
-                        <CommonBanner bg={Banner} title="Blog" />
+                        <CommonBanner bg={Banner}  title="Blog" />
                         <section>
                             <Container maxWidth="xxl">
                                 <Grid container>

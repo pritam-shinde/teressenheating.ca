@@ -48,7 +48,7 @@ const SingleBlog = ({ data, sidebarBlogs, category }) => {
                                 <link rel="canonical" href={`/blog/${blog.slug}/`} />
                             </Head>
                             <main>
-                                <CommonBanner bg={Banner} title={blog ? blog.title ? blog.title.rendered ? blog.title.rendered : null : null : null} />
+                                <CommonBanner bg={Banner} blogBanner={true} title={blog ? blog.title ? blog.title.rendered ? blog.title.rendered : null : null : null} />
                                 {
                                     blog ? <>
                                         <section>

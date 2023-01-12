@@ -552,6 +552,28 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     
 }
 
+@media only screen and (min-width:600px) {
+    .BlogBannerTitle{
+        font-size: 2rem !important;
+        letter-spacing: 1px !important;
+    }
+    
+}
+@media only screen and (min-width:992px) {
+    .BlogBannerTitle{
+        font-size: 3rem !important;
+        letter-spacing: 1px !important;
+    }
+    
+}
+@media only screen and (min-width:1600px) {
+    .BlogBannerTitle{
+        font-size: 3.6rem !important;
+        letter-spacing: 1px !important;
+    }
+    
+}
+
 
 .BrandTitle.MuiBox-root.css-1kgakwq h2 {
     font-size: 2.5rem !important;
