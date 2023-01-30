@@ -10,7 +10,7 @@ import { Grid, Container, Box, Button } from '@mui/material';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import PhoneIcon from '@mui/icons-material/Phone';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
-import Link from '@mui/material/Link';
+import Link from 'next/link';
 import { useRouter } from 'next/router'
 
 export function reportWebVitals(metric) {
@@ -19,13 +19,14 @@ export function reportWebVitals(metric) {
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
+  const [hydaration, setHydration] = useState(false)
   const [width, setWidth] = useState(601);
   const [scrollHeight, setScrollHeight] = useState()
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle");
   }, []);
-  
-   useEffect(() => {
+
+  useEffect(() => {
     window.myInfo = () => {
       const developer = [
         {
@@ -62,13 +63,20 @@ function MyApp({ Component, pageProps }) {
     window.scrollTo(0, 0)
   }
 
-  return ( <>
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      setHydration(true)
+    } else {
+      setHydration(false)
+    }
+  })
+
+  return (<>
+    {hydaration ? <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
       </Head>
-      <Header />
-
       <Script>
         {
           `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -220,14 +228,16 @@ function MyApp({ Component, pageProps }) {
        }}]}`
       }</script>
 
-
+      <Header />
       <Component {...pageProps} />
       {
         scrollHeight > 100 ? <Box className='d-flex justify-content-center align-items-center rounded-circle' style={{ height: "3rem", width: "3rem", backgroundColor: "var(--red)", position: "fixed", right: "1%", bottom: "2%", zIndex: 2 }}>
           <button className='btn border-0 outline-none' onClick={handleGoTOTop}><ArrowCircleUp className='text-white' style={{ fontSize: "2rem !important" }} /></button>
         </Box> : null
       }
-      <section className='fixedButtons' style={{ backgroundColor:'var(--navy)'}}>
+
+
+      <section className='fixedButtons' style={{ backgroundColor: 'var(--navy)' }}>
         <Container maxWidth="xxl">
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -237,15 +247,15 @@ function MyApp({ Component, pageProps }) {
                     <Box className="d-flex">
                       {
                         router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
-                          <Link href="/contact-us/" color="#fff" className='hoverPoint'>{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}  </Link>
+                          <Link href="/contact-us/" legacyBehavior><a className='hoverPoint text-white'>{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}</a></Link>
                         </Button> : null
                       }
 
                       <Button variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
-                        <Link href="tel:604-363-6622" color="#fff" className='hoverPoint'> {width > 600 ? '604-363-6622 ' : 'CALL'}</Link>
+                        <a href="tel:604-363-6622" className='hoverPoint text-white'> {width > 600 ? '604-363-6622 ' : 'CALL'}</a>
                       </Button>
-                      <Button variant="contained" fullWidth disableElevation size="large" startIcon={<QuestionAnswerIcon />} style={{ backgroundColor: '#357bb4', margin: '0.3rem' }} disabled>
-                        <Link href="#" color="#fff" className='hoverPoint'> {width > 600 ? 'CHAT LIVE NOW' : 'CHAT'}</Link>
+                      <Button variant="contained" fullWidth disableElevation size="large" startIcon={<QuestionAnswerIcon />} style={{ backgroundColor: '#357bb4', margin: '0.3rem' }} >
+                        <Link href="/contact-us/" legacyBehavior ><a className='hoverPoint text-white'>{width > 600 ? 'CHAT LIVE NOW' : 'CHAT'}</a></Link>
                       </Button>
                     </Box>
                   </Grid>
@@ -255,7 +265,8 @@ function MyApp({ Component, pageProps }) {
           </Grid>
         </Container>
       </section>
-      <Footer />
+      <Footer /> </> : ""}
+
   </>)
 }
 
