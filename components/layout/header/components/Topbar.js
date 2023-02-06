@@ -3,7 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import blueLogo from '../../../../public/logo/blue-logo.svg'
 import { GreyFilledBtn } from '../../../components'
-import { FaPinterestP, FaTwitter, FaFacebookF } from 'react-icons/fa'
+import { FaPinterestP, FaTwitter, FaFacebookF, } from 'react-icons/fa'
+import {LocationOn} from '@mui/icons-material'
 
 const Topbar = () => {
     return (
@@ -13,14 +14,14 @@ const Topbar = () => {
                     <Grid item xs={12} md={10} className="mx-auto">
                         <Box py={1}>
                             <Grid container>
-                                <Grid item xs={12} sm={4} lg={6}>
+                                <Grid item xs={12} sm={3} lg={3}>
                                     <Box>
                                         <Link legacyBehavior={true} href="/" passHref>
                                             <a className='navbar-brand'><img src={blueLogo.src} alt="Teressenheating Logo" className='img-fluid' title='Teressenheating Logo' /></a>
                                         </Link>
                                     </Box>
                                 </Grid>
-                                <Grid item xs={12} sm={8} lg={6}>
+                                <Grid item xs={12} sm={9} lg={9}>
                                     <Box>
                                         <Grid container spacing={5}>
                                             <Grid item xs={12} sm={8} className="d-flex justify-content-end align-items-center">
@@ -32,7 +33,7 @@ const Topbar = () => {
                                             <Grid item xs={12} sm={4} className="d-flex justify-content-end align-items-center">
                                                 <Box>
                                                     <List className=' d-flex p-0 m-0'>
-                                                        <ListItem className='p-0 me-2'>
+                                                        <ListItem className='p-0 me-1'>
                                                             <a href="https://www.facebook.com/profile.php?id=100088431184715">
                                                                 <ListItemAvatar>
                                                                     <Avatar>
@@ -41,7 +42,7 @@ const Topbar = () => {
                                                                 </ListItemAvatar>
                                                             </a>
                                                         </ListItem>
-                                                        <ListItem className='p-0 me-2'>
+                                                        <ListItem className='p-0 me-1'>
                                                             <a href="https://twitter.com/BaymanShawqi">
                                                                 <ListItemAvatar>
                                                                     <Avatar>
@@ -50,11 +51,20 @@ const Topbar = () => {
                                                                 </ListItemAvatar>
                                                             </a>
                                                         </ListItem>
-                                                        <ListItem className='p-0 me-2'>
+                                                        <ListItem className='p-0 me-1'>
                                                             <a href="https://www.pinterest.com.au/teressenheating/">
                                                                 <ListItemAvatar>
                                                                     <Avatar>
                                                                         <FaPinterestP />
+                                                                    </Avatar>
+                                                                </ListItemAvatar>
+                                                            </a>
+                                                        </ListItem>
+                                                        <ListItem className='p-0 me-1'>
+                                                            <a href="https://g.page/r/CdlSgou1yAB-EB0/review">
+                                                                <ListItemAvatar>
+                                                                    <Avatar>
+                                                                        <LocationOn/>
                                                                     </Avatar>
                                                                 </ListItemAvatar>
                                                             </a>

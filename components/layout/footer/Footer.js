@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Styles from '../../../styles/Footer.module.css'
 import GreyLogo from '../../../public/logo/grey-logo.svg'
 import Link from 'next/link'
-import { Copyright } from '@mui/icons-material'
+import { Copyright, LocationOn } from '@mui/icons-material'
 import { FaPinterestP, FaTwitter, FaFacebookF } from 'react-icons/fa'
 
 const Footer = () => {
@@ -125,6 +125,13 @@ const Footer = () => {
                                                     <Avatar>
                                                         <Link passHref href="https://www.pinterest.com.au/teressenheating/" className='text-white'>
                                                             <FaPinterestP />
+                                                        </Link>
+                                                    </Avatar>
+                                                </Box>
+                                                <Box p={1}>
+                                                    <Avatar>
+                                                        <Link passHref href="https://g.page/r/CdlSgou1yAB-EB0/review" className='text-white'>
+                                                            <LocationOn />
                                                         </Link>
                                                     </Avatar>
                                                 </Box>
