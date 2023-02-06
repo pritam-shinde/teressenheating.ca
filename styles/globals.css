@@ -203,7 +203,7 @@ nav.navbar {
 
 @media only screen and (min-width:1200px) and (max-width:1500px) {
     #topbar .navbar-brand img {
-        max-width: 50% !important
+        max-width: 70% !important
     }
 }
 

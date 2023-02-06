@@ -4,7 +4,7 @@ import React from 'react'
 import blueLogo from '../../../../public/logo/blue-logo.svg'
 import { GreyFilledBtn } from '../../../components'
 import { FaPinterestP, FaTwitter, FaFacebookF, } from 'react-icons/fa'
-import {LocationOn} from '@mui/icons-material'
+import {Google} from '@mui/icons-material'
 
 const Topbar = () => {
     return (
@@ -64,7 +64,7 @@ const Topbar = () => {
                                                             <a href="https://g.page/r/CdlSgou1yAB-EB0/review">
                                                                 <ListItemAvatar>
                                                                     <Avatar>
-                                                                        <LocationOn/>
+                                                                        <Google/>
                                                                     </Avatar>
                                                                 </ListItemAvatar>
                                                             </a>
