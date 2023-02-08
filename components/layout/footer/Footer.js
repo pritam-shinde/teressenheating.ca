@@ -5,7 +5,7 @@ import Styles from '../../../styles/Footer.module.css'
 import GreyLogo from '../../../public/logo/grey-logo.svg'
 import Link from 'next/link'
 import { Copyright, Google } from '@mui/icons-material'
-import { FaPinterestP, FaTwitter, FaFacebookF } from 'react-icons/fa'
+import { FaPinterestP, FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa'
 
 const Footer = () => {
 
@@ -132,6 +132,13 @@ const Footer = () => {
                                                     <Avatar>
                                                         <Link passHref href="https://g.page/r/CdlSgou1yAB-EB0/review" className='text-white'>
                                                             <Google />
+                                                        </Link>
+                                                    </Avatar>
+                                                </Box>
+                                                 <Box p={1}>
+                                                    <Avatar>
+                                                        <Link passHref href="https://www.instagram.com/terrssenheating/" className='text-white'>
+                                                            <FaInstagram/>
                                                         </Link>
                                                     </Avatar>
                                                 </Box>
