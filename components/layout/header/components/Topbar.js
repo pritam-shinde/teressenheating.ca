@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import blueLogo from '../../../../public/logo/blue-logo.svg'
 import { GreyFilledBtn } from '../../../components'
-import { FaPinterestP, FaTwitter, FaFacebookF, } from 'react-icons/fa'
+import { FaPinterestP, FaTwitter, FaFacebookF, FaInstagram} from 'react-icons/fa'
 import {Google} from '@mui/icons-material'
 
 const Topbar = () => {
@@ -69,6 +69,15 @@ const Topbar = () => {
                                                                 </ListItemAvatar>
                                                             </a>
                                                         </ListItem>
+                                                       <ListItem className='p-0 me-1'>
+                                                        <a href="https://www.instagram.com/terrssenheating/">
+                                                            <ListItemAvatar>
+                                                                <Avatar>
+                                                                    <FaInstagram/>
+                                                                </Avatar>
+                                                            </ListItemAvatar>
+                                                        </a>
+                                                    </ListItem>
                                                     </List>
                                                 </Box>
                                             </Grid>
