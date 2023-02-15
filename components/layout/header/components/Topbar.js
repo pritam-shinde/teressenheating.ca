@@ -14,14 +14,14 @@ const Topbar = () => {
                     <Grid item xs={12} md={10} className="mx-auto">
                         <Box py={1}>
                             <Grid container>
-                                <Grid item xs={12} sm={3} lg={3}>
+                                <Grid item xs={12} sm={3} lg={4}>
                                     <Box>
                                         <Link legacyBehavior={true} href="/" passHref>
                                             <a className='navbar-brand'><img src={blueLogo.src} alt="Teressenheating Logo" className='img-fluid' title='Teressenheating Logo' /></a>
                                         </Link>
                                     </Box>
                                 </Grid>
-                                <Grid item xs={12} sm={9} lg={9}>
+                                <Grid item xs={12} sm={9} lg={8}>
                                     <Box>
                                         <Grid container spacing={5}>
                                             <Grid item xs={12} sm={8} className="d-flex justify-content-end align-items-center">
