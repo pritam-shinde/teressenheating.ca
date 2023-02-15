@@ -32,7 +32,7 @@ const Topbar = () => {
                                             </Grid>
                                             <Grid item xs={12} sm={4} className="d-flex justify-content-end align-items-center">
                                                 <Box>
-                                                    <List className=' d-flex p-0 m-0'>
+                                                    <List className='d-flex p-0 m-0'>
                                                         <ListItem className='p-0 me-1'>
                                                             <a href="https://www.facebook.com/profile.php?id=100088431184715">
                                                                 <ListItemAvatar>

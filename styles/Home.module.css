@@ -191,7 +191,7 @@
 
 .whyChoose {
     width: 100%;
-    background-image:linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.4)), url(../public/home/whychoose.webp);
+    background-image:linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.4)), url(../public/home/whychoose.jpg);
     background-repeat: no-repeat;
 }
 
@@ -221,7 +221,7 @@
 
 .testimonial {
     width: 100%;
-    background-image: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.4)),url(../public/home/testimonial.webp);
+    background-image: linear-gradient(rgba(255,255,255, 0.4), rgba(255,255,255, 0.4)),url(../public/home/testimonials.jpg);
     background-repeat: no-repeat;
 }
 
@@ -232,7 +232,7 @@
 
 @media only screen and (max-width: 992px) {
     .whyChoose {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../public/home/whychoose.webp);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(../public/home/whychoose.jpg);
         background-position: center;
     }
 
@@ -241,7 +241,7 @@
     }
 
     .testimonial {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url(../public/home/testimonial.webp);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url(../public/home/testimonials.jpg);
     }
 }
 

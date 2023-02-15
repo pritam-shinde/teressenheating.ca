@@ -2,7 +2,7 @@ import { Box, Container, Grid, Typography } from '@mui/material'
 import Image from 'next/legacy/image'
 import React from 'react'
 import { BlueFilledBtn } from '../../components/components'
-import AboutImage from '../../public/home/about.webp'
+import AboutImage from '../../public/home/about.jpg'
 import Styles from '../../styles/Home.module.css'
 
 const About = () => {
