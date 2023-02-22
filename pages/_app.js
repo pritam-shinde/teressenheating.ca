@@ -228,6 +228,7 @@ function MyApp({ Component, pageProps }) {
        }}]}`
       }</script>
 
+    
       <Header />
       <Component {...pageProps} />
       {
@@ -236,7 +237,7 @@ function MyApp({ Component, pageProps }) {
         </Box> : null
       }
 
-
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26996663.js"></script>
       <section className='fixedButtons' style={{ backgroundColor: 'var(--navy)' }}>
         <Container maxWidth="xxl">
           <Grid container>

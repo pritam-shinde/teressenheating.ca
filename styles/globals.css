@@ -600,3 +600,13 @@ a:hover.hoverPoint {
 span.headingSecond {
     color: #fff;
 }
+
+.css-1e9lk82-MuiListItemAvatar-root {
+    min-width: 0px !important;
+ 
+}
+
+.css-2s90m6-MuiAvatar-root {
+    width: 35px !important;
+    height: 35px !important;
+}
