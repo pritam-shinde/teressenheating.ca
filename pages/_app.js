@@ -227,12 +227,12 @@ function MyApp({ Component, pageProps }) {
        }]
        }}]}`
       }</script>
+      <Script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/26996663.js"></Script>
 
-    
       <Header />
       <Component {...pageProps} />
       {
-        scrollHeight > 100 ? <Box className='d-flex justify-content-center align-items-center rounded-circle' style={{ height: "3rem", width: "3rem", backgroundColor: "var(--red)", position: "fixed", right: "1%", bottom: "2%", zIndex: 2 }}>
+        scrollHeight > 100 ? <Box className='d-flex justify-content-center align-items-center rounded-circle' style={{ height: "3rem", width: "3rem", backgroundColor: "var(--red)", position: "fixed", left: "1%", bottom: "2%", zIndex: 2 }}>
           <button className='btn border-0 outline-none' onClick={handleGoTOTop}><ArrowCircleUp className='text-white' style={{ fontSize: "2rem !important" }} /></button>
         </Box> : null
       }
@@ -244,20 +244,27 @@ function MyApp({ Component, pageProps }) {
             <Grid item xs={12} md={10} className="mx-auto">
               <Box p={2}>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} md={12}>
-                    <Box className="d-flex">
-                      {
-                        router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
-                          <Link href="/contact-us/" legacyBehavior><a className='hoverPoint text-white'>{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}</a></Link>
-                        </Button> : null
-                      }
+                  <Grid item xs={12} md={10} className="mx-auto">
+                    <Box>
+                      <Grid container justifyContent='center' spacing={4}>
+                        <Grid item xs={router.pathname != '/contact-us' ? 4 : 0}>
+                          <Box>
+                            {
+                              router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
+                                <Link href="/contact-us/" legacyBehavior><a className='hoverPoint text-white'>{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}</a></Link>
+                              </Button> : null
+                            }
+                          </Box>
+                        </Grid>
+                        <Grid item xs={4}>
+                          <Box>
+                            <Button variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
+                              <a href="tel:604-363-6622" className='hoverPoint text-white'> {width > 600 ? '604-363-6622 ' : 'CALL'}</a>
+                            </Button>
+                          </Box>
+                        </Grid>
+                      </Grid>
 
-                      <Button variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
-                        <a href="tel:604-363-6622" className='hoverPoint text-white'> {width > 600 ? '604-363-6622 ' : 'CALL'}</a>
-                      </Button>
-                      <Button variant="contained" fullWidth disableElevation size="large" startIcon={<QuestionAnswerIcon />} style={{ backgroundColor: '#357bb4', margin: '0.3rem' }} >
-                        <Link href="/contact-us/" legacyBehavior ><a className='hoverPoint text-white'>{width > 600 ? 'CHAT LIVE NOW' : 'CHAT'}</a></Link>
-                      </Button>
                     </Box>
                   </Grid>
                 </Grid>
