@@ -75,6 +75,7 @@ function MyApp({ Component, pageProps }) {
     {hydaration ? <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
         <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
       </Head>
       <Script>
