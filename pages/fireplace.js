@@ -35,7 +35,7 @@ const index = () => {
         <link rel="canonical" href="/fireplace/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Fireplace" color="#fff" variant="h2" />
+        <CommonBanner bg={Banner} title="Fireplace" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

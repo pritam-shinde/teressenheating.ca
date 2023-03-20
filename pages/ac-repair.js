@@ -35,7 +35,7 @@ const AcRepair = () => {
         <link rel="canonical" href="/ac-repair/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Air Conditioning Repair" color="#fff" variant="h2" />
+        <CommonBanner bg={Banner} title="Air Conditioning Repair" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

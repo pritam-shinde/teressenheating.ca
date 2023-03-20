@@ -137,7 +137,7 @@ const Footer = () => {
                                                 </Box>
                                                  <Box p={1}>
                                                     <Avatar>
-                                                        <Link passHref href="https://www.instagram.com/terrssenheating/" className='text-white'>
+                                                        <Link passHref href="https://www.instagram.com/teressenheatingltd/" className='text-white'>
                                                             <FaInstagram/>
                                                         </Link>
                                                     </Avatar>
