@@ -130,7 +130,7 @@ const Trane = () => {
         }`
       }
     </script>
-      <CommonBanner bg={BoilerMaintainanceBanner} title="Trane" color="#fff" variant="h2" />
+      <CommonBanner bg={BoilerMaintainanceBanner} title="Trane" color="#fff" variant="h1" />
       <main>
         <section>
           <Container maxWidth="xxl" className="px-0">

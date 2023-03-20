@@ -127,7 +127,7 @@ const tempstar = () => {
       }
     </script>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Tempstar" color="#fff" variant="h2" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Tempstar" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>

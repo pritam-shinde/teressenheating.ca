@@ -127,7 +127,7 @@ const Armstrong = () => {
     </script>
       <main>
         <section>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Armstrong" color="#fff" variant="h2" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Armstrong" color="#fff" variant="h1" />
           <Container maxWidth="xxl" className="px-0">
             <Grid container>
               <Grid item xs={12} md={6} className='bg--grey'>

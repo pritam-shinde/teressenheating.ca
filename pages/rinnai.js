@@ -127,7 +127,7 @@ const Rinnai = () => {
       }
     </script>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Rinnai" color="#fff" variant="h2" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Rinnai" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>

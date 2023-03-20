@@ -128,7 +128,7 @@ const AireFlo = () => {
       }
     </script>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Aire Flo" color="#fff" variant="h2" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Aire Flo" color="#fff"/>
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>

@@ -130,7 +130,7 @@ const Lennox = () => {
         }`
       }
     </script>
-      <CommonBanner bg={BoilerMaintainanceBanner} title="Lennox" color="#fff" variant="h2" />
+      <CommonBanner bg={BoilerMaintainanceBanner} title="Lennox" color="#fff" variant="h1" />
       <main>
         <section>
           <Container maxWidth="xxl" className="px-0">

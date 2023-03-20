@@ -56,7 +56,7 @@ const Brand = () => {
             <link rel="canonical" href="/brand/" />
           </Head>
           <main>
-            <CommonBanner bg={Banner} title="Brand" color="#fff" variant="h2" />
+            <CommonBanner bg={Banner} title="Brand" color="#fff" variant="h1" />
             <section>
               <Container maxWidth="xxl">
                 <Grid container>

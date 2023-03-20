@@ -128,7 +128,7 @@ const Daikin = () => {
       }
     </script>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Daikin" color="#fff" variant="h2" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Daikin" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>
