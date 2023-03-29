@@ -1,6 +1,7 @@
 # *
 User-agent: *
-Allow: /
+Allow : /
+Disallow: /blog/[slug]/
 
 # Host
 Host: http://teressenheating.ca/
