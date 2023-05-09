@@ -233,7 +233,7 @@ const Boiler = () => {
                             <Grid item xs={12}>
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Boiler repairing and installation services in Canada:' />
-                                <Typography className='para'>Teressen heating ltd has been providing expert boiler repair, installation, and boiler maintenance in Canada for years now. As an experienced leader in the home heating industry, Teressen takes care of all your heating problems with top-notched services at affordable prices.</Typography>
+                                <Typography className='para'>Teressen heating ltd has been providing expert boiler repair, installation, and <Link href="https://teressenheating.ca/boilers-maintenance/">boiler maintenance</Link> in Canada for years now. As an experienced leader in the home heating industry, Teressen takes care of all your heating problems with top-notched services at affordable prices.</Typography>
                                 <Typography className='para'>Quality you can always count on: It is our job to make sure, that your home is always comfortable and warm. We have the best products to ensure you that everything is done right the first time.
                                 </Typography>
                               </Box>
@@ -264,7 +264,7 @@ const Boiler = () => {
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Experts in the heating industry:' />
                                 <Typography className='para'>So, if you have any questions related to your boiler repair and installation, then, give us a call instantly. Our experts are ready to assist you in everything.</Typography>
-                                <Typography className='para'><Link href="/">Teressen heating ltd</Link> specializes in all types of boiler repair and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
+                                <Typography className='para'>Teressen heating ltd specializes in all types of <Link href="https://teressenheating.ca/boilers-repair/">boiler repair </Link>and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
                               </Box>
                             </Grid>
                           </Grid>
@@ -278,7 +278,7 @@ const Boiler = () => {
                             <Grid item xs={12}>
                               <Box>
                                 <SectionalHeading variant='h2' simpletext=' Benefits of professional boiler services from Teressen:' />
-                                <Typography className='para'>Our professional boiler services ensure that your boiler installation, maintenance, or repair work is done spot-on. Our employees are highly trained and are equipped with all skills. They have the knowledge and understanding of different boiler systems. So, hiring a professional to service your heating system saves you money and time. Also, we are the pioneers in the boiler industry for providing quality, trust, and affordability.</Typography>
+                                <Typography className='para'>Our professional <Link href="https://teressenheating.ca/boilers-service/">boiler services </Link>ensure that your boiler installation, maintenance, or repair work is done spot-on. Our employees are highly trained and are equipped with all skills. They have the knowledge and understanding of different boiler systems. So, hiring a professional to service your heating system saves you money and time. Also, we are the pioneers in the boiler industry for providing quality, trust, and affordability.</Typography>
                                 <Typography className='para'>A properly installed sized boiler system will heat your place and ensure that your utility bills stay low and your system operation is quiet.</Typography>
                                 <Typography className='para'>So, do not delay when you notice signs of boiler disrepair. Consult us today!</Typography>
                               </Box>
@@ -306,17 +306,21 @@ const Boiler = () => {
                       <Container maxWidth="xxl">
                         <Box p={3}>
                           <SectionalHeading simpletext="Our boiler repair and installation services:" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                          <Typography className='para'> Canada can get cold in the winter. So, necessitating a reliable method for home heating is a must. Boilers help in heating your home and <Link href="/heat-pump/">heating the water</Link>. Hence, Teressen offers the best boiler services in Canada because:
+                          <Typography className='para'> Canada can get cold in the winter. So, necessitating a reliable method for home heating is a must. Boilers help in heating your home and heating the water. Hence, Teressen offers the best boiler services in Canada because:
                           </Typography>
-                          <List>
-                            {
-                              [" We have the best boiler installation and replacement: You can get quality performance from your boiler system by ensuring that you have the best products and installation techniques to support it.", " Best boiler repairs: When it comes to boilers, they have a life span between 10 to 15 years. But they need repairs and tune-ups to keep them working. So, choose the best always!"].map(item => <ListItem key={item}>
-                                <ListItemIcon>
-                                  <CheckCircleOutline className='text--blue' />
-                                </ListItemIcon>
-                                <ListItemText primary={item} />
-                              </ListItem>)
-                            }
+                           <List>
+                            <ListItem>
+                              <ListItemIcon>
+                                <CheckCircleOutline className='text--blue' />
+                              </ListItemIcon>
+                              <ListItemText>We have the best <Link href="https://teressenheating.ca/boilers-installation/">boiler installation</Link>  and replacement: You can get quality performance from your boiler system by ensuring that you have the best products and installation techniques to support it.</ListItemText>
+                            </ListItem>
+                            <ListItem>
+                              <ListItemIcon>
+                                <CheckCircleOutline className='text--blue'  />
+                              </ListItemIcon>
+                              <ListItemText> Best boiler repairs: When it comes to boilers, they have a life span between 10 to 15 years. But they need repairs and tune-ups to keep them working. So, choose the best always!"</ListItemText> 
+                            </ListItem>
                           </List>
                         </Box>
                       </Container>
