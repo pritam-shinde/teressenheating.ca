@@ -1,4 +1,4 @@
-import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+ import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
@@ -223,7 +223,7 @@ const BoilerInstallation = () => {
                           <Typography className='para'>While both types of boilers are used, hot water boilers are used more because they are more efficient than steam boilers. So, at Teressen we have the right tools and knowledge to take care of your boiler installation. We work friendly and fast to make sure that your boiler is installed properly and efficiently.</Typography>
                           <Typography className='para'>So, if you need a new boiler installation, boiler replacement, and a boiler heating system, you already know that we are available there right for you!
                           </Typography>
-                          <Typography className='para'>At Teressen we rely on cutting-edge heating technology, top-of-the-line tools, and advanced techniques to perform unmatched boiler replacement services for our clients. We are so confident that you will be happy with our quality work because we guarantee 100% customer satisfaction service.
+                          <Typography className='para'><Link href="https://teressenheating.ca/">At Teressen </Link> we rely on cutting-edge heating technology, top-of-the-line tools, and advanced techniques to perform unmatched boiler replacement services for our clients. We are so confident that you will be happy with our quality work because we guarantee 100% customer satisfaction service.
                           </Typography>
                         </Box>
                       </Container>
