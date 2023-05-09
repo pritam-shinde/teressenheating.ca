@@ -221,7 +221,7 @@ const BoilerMaintainance = () => {
                             <ListItemIcon>
                               <CheckCircleOutline className='text--blue' />
                             </ListItemIcon>
-                            <ListItemText primary='Having an authorized boiler maintenance and repair expert evaluates your equipment. You may avoid explosions, hot flue gas leaks, and explosions from the boiler.'/>
+                            <ListItemText>Having an authorized boiler maintenance and repair expert evaluates your equipment. You may avoid explosions, hot flue gas leaks, and  <Link href='https://teressenheating.ca/boilers/'><a>the boiler</a> </Link> explosion. </ListItemText>
                           </ListItem>
                           <ListItem>
                             <ListItemIcon>
