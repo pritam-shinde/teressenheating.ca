@@ -119,6 +119,9 @@ const FaqAndForm = ({ faq, form, faqBlackTitle, faqBlueTitle, faqtitleAlign, faq
                                                 <Box p={2} >
                                                     <AppointmentForm />
                                                 </Box>
+                                                <Box p={2} >
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.22800159264!2d-123.0035841!3d49.265842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486776a8b99ca05%3A0x7e00c8b58b8252d9!2sTeressen%20Furnace%20Heating%20%26%20Air%20Conditioning%20HVAC!5e0!3m2!1sen!2sin!4v1683627434720!5m2!1sen!2sin" width="100%"   style={{border:0}} loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                </Box>  
                                             </Box>
                                         </Grid> : null
                                     }
