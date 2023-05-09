@@ -1,4 +1,4 @@
-import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+ import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import React, { useEffect, useState } from 'react'
 import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
@@ -233,7 +233,7 @@ const BoilerRepair = () => {
                             <ListItemText primary="24*7 services." />
                           </ListItem>
                         </List>
-                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing the <Link href="/boilers-repair/">best boiler repair services</Link>. So, when you are looking for a home boiler company in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
+                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing thebest boiler repair services. So, when you are looking for a home <Link href="/https://teressenheating.ca/boilers/">boiler company</Link> in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
                       </Container>
                     </section>
                   </Grid>
