@@ -1,4 +1,4 @@
-import { Box, Container, Grid, List, ListItem, ListItemText, Typography, ListItemAvatar, Avatar } from '@mui/material'
+ import { Box, Container, Grid, List, ListItem, ListItemText, Typography, ListItemAvatar, Avatar, Divider } from '@mui/material'
 import Image from 'next/legacy/image'
 import React, { useEffect, useState } from 'react'
 import Styles from '../../../styles/Footer.module.css'
@@ -135,10 +135,10 @@ const Footer = () => {
                                                         </Link>
                                                     </Avatar>
                                                 </Box>
-                                                 <Box p={1}>
+                                                <Box p={1}>
                                                     <Avatar>
                                                         <Link passHref href="https://www.instagram.com/teressenheatingltd/" className='text-white'>
-                                                            <FaInstagram/>
+                                                            <FaInstagram />
                                                         </Link>
                                                     </Avatar>
                                                 </Box>
@@ -151,14 +151,42 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Container>
+                <Grid item xs={12} sm={6} lg={12} className="p-0" >
+                    <Box mb={2} style={{ borderBottom: "1px solid #fff", borderTop: "1px solid #fff" }}>
+                    <Typography className='text-white text-center'>Areas : </Typography>
+                    <hr className='text-white'/>
+                        <List className="d-flex flex-wrap justify-content-center">
+                            {
+                                [
+                                    { id: "subUrb-1", text: "Vancouver", link: "/vancouver/" },
+                                    { id: "subUrb-2", text: "Burnaby", link: "/burnaby/" },
+                                    { id: "subUrb-3", text: "West Vancouver", link: "/west-vancouver/" },
+                                    { id: "subUrb-4", text: "North Vancouver", link: "/north-vancouver/" },
+                                    { id: "subUrb-5", text: "Coquitlam", link: "/coquitlam/" },
+                                    { id: "subUrb-6", text: "Richmond", link: "/richmond/" },
+                                    { id: "subUrb-7", text: "White-Rock", link: "/white-rock/" },
+                                    { id: "subUrb-8", text: "Tsawwassen", link: "/tsawwassen/" },
+                                    { id: "subUrb-9", text: "Port Moody", link: "/port-moody/" },
+                                    { id: "subUrb-10", text: "Pitt Meadows", link: "pitt-meadows/" },
+                                    { id: "subUrb-11", text: "New Westminster", link: "/new-westminster/" },
+                                    { id: "subUrb-12", text: "Maple Ridge", link: "/maple-ridge/" },
+                                ].map(item => <ListItem key={item.id} className="p-1 m-1" style={{ width: "fit-content"}}> 
+                                    <Link href={item.link} legacyBehavior>
+                                        <a className="text-white">{item.text}</a>   
+                                    </Link>
+                                </ListItem>)
+                            }
+                        </List>
+                    </Box>
+                </Grid>
                 <Container maxWidth="xxl">
-                    <Box  pb={15}>
+                    <Box pb={15}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
                                 <Box>
                                     <Grid container>
                                         <Grid item xs={12} md={10} className="mx-auto">
-                                            <box className={ `${ width > 320 ? 'd-flex' : 'flex-column'} justify-content-center` }>
+                                            <box className={`${width > 320 ? 'd-flex' : 'flex-column'} justify-content-center`}>
                                                 <Box px={1}>
                                                     <Typography className='text-white'><Copyright /> {new Date().getFullYear()} <Link href="/" className='text-white'>teressenheating.ca</Link> </Typography>
                                                 </Box>
@@ -167,7 +195,7 @@ const Footer = () => {
                                                 </Box>
                                                 <Box px={1}>
                                                     <Link legacyBehavior href="/privacy-policy/">
-                                                    <span className='headingSecond'> Privacy Policy </span>
+                                                        <span className='headingSecond'> Privacy Policy </span>
                                                     </Link>
                                                 </Box>
 
@@ -187,6 +215,7 @@ const Footer = () => {
                         </Grid>
                     </Box>
                 </Container>
+
             </footer>
         </>
     )
