@@ -35,8 +35,8 @@ const RebatesAndPromotion = () => {
   return (
     <>
       <Head>
-        <title>Teressen Offer Rebates and Promotions on Heating and Cooling Services</title>
-        <meta name="description" content="Teressen offers rebates and promotions on heating and cooling service in Canada. The company serves residential customers and also commercial HVAC customers." />
+        <title>Teressen offers heating and cooling rebates promotions </title>
+        <meta name="description" content="Teressen Heating offers heating and cooling rebates and promotions to save you money. Contact us for more information." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/rebates-and-promotions/" />
       </Head>
