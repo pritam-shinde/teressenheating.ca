@@ -31,9 +31,9 @@ const CommercialHVAC = () => {
 
   return (
     <>
-      <Head>
-        <title>Commercial HVAC Repair Services in Canada | Teressenheating</title>
-        <meta name="description" content="At Teressenheating we offer commercial HVAC repair services to meet the needs of your building & installation. Contact the experts Mechanices for a professional repair." />
+     <Head>
+        <title>Trusted Commercial HVAC Services in Canada | Teressenheating</title>
+        <meta name="description" content="Choose Teressen Heating for commercial HVAC services in Canada. Our experienced technicians will assist you with preventive maintenance and repairs. Contact us today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/commercial-hvac/" />
       </Head>
