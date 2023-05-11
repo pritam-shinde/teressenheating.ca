@@ -13,9 +13,9 @@ import Family from '../public/home/testimonial.webp'
 const Service = () => {
   return (
     <>
-      <Head>
-        <title>HVAC Services - Heating & Cooling Services in Canada | Teressen</title>
-        <meta name="description" content="Teressen Heating and Air Conditioning offer home comfort services in Canada. Our goal is to make sure you have a comfortable home no matter what the weather is outside. " />
+       <Head>
+        <title>Heating And Air Conditioning Services Canada | Teressen</title>
+        <meta name="description" content="Get affordable heating and air conditioning services in Canada for your commercial or residential property from Teressen. Contact us today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/services/" />
       </Head>
