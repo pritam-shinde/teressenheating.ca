@@ -38,9 +38,9 @@ const BoilerRepair = () => {
   ]
   return (
     <>
-      <Head>
-        <title>Boiler Repair Services in Canada | Teressenheating</title>
-        <meta name="description" content="We are a leading boiler repair company in Canada. Our knowledgeable technicians can diagnose any boiler-related issue and provide a complete solution." />
+       <Head>
+        <title>Trusted Boiler Repair Services in Canada | Teressenheating</title>
+        <meta name="description" content="Trust Teressen Heating for reliable, efficient, and cost-effective boiler repair services in Canada. Our certified technicians are available 24/7." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-repair/" />
       </Head>
