@@ -36,8 +36,8 @@ const FinancingOption = () => {
   return (
     <>
       <Head>
-        <title>Easy Financing Option for Heating & Cooling Services | Teressenheating</title>
-        <meta name="description" content="When you need a new HVAC system or other HVAC services, we offer many different financing options to make it easier for you. Our experts will help you make the choice." />
+        <title>Easy Financing Options for HVAC Services | Teressenheating</title>
+        <meta name="description" content="Teressen heating has financing options to make it easy for you to get the HVAC services you need. We offer flexible payment plans & competitive interest rates. " />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/financing-option/" />
       </Head>
