@@ -41,8 +41,8 @@ const BoilerInstallation = () => {
   return (
     <>
       <Head>
-        <title>Boiler Installation Services in Canada | Teressenheating</title>
-        <meta name="description" content="Teressen provides boiler installation services for the residential, commercial, industrial, and institutional sectors. We are licensed contractors in Canada." />
+        <title>Best Boiler Installation Service in Canada | Teressenheating</title>
+        <meta name="description" content="Teressenheating provides the best boiler installation service in Canada. We offer a range of boiler installation options to suit your needs, contact us." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-installation/" />
       </Head>
