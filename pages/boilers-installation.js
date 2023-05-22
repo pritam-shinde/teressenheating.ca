@@ -1,4 +1,4 @@
- 
+
 import { Box, Container, Grid, Paper, Typography, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import React, { useState } from 'react'
 import SectionalHeading from '../../components/SectionalHeading/SectionalHeading'
@@ -8,7 +8,6 @@ import { AppointmentForm } from '../../components/components'
 import Image from 'next/image'
 import Brands from '../../public/brand-page/brands-logo.jpg'
 import Link from 'next/link';
-
 
 const FaqAndForm = ({
   faq,
