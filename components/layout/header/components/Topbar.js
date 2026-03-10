@@ -1,10 +1,8 @@
-import { Avatar, Box, Container, Grid, List, ListItem, ListItemAvatar } from '@mui/material'
+import { Box, Container, Grid } from '@mui/material'
 import Link from 'next/link'
-import React from 'react'
-import blueLogo from '../../../../public/logo/blue-logo.svg'
+import blueLogo from '../../../../public/logo/airlink_logo.jpg'
+// import blueLogo from '../../../../public/logo/blue-logo.svg'
 import { GreyFilledBtn } from '../../../components'
-import { FaPinterestP, FaTwitter, FaFacebookF, FaInstagram} from 'react-icons/fa'
-import {Google} from '@mui/icons-material'
 
 const Topbar = () => {
     return (

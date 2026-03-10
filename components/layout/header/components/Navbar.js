@@ -1,12 +1,13 @@
-import { Box, Container, Grid, Button, IconButton } from '@mui/material'
+import { Box, Button, Container, Grid, IconButton } from '@mui/material'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import blueLogo from '../../../../public/logo/blue-logo.svg'
-import greyLogo from '../../../../public/logo/grey-logo.svg'
+import { useEffect, useState } from 'react'
+import blueLogo from '../../../../public/logo/airlink_logo.jpg'
+// import blueLogo from '../../../../public/logo/blue-logo.svg'
+import greyLogo from '../../../../public/logo/airlink_logo.jpg'
+import { ArrowDropDown, Close, Menu } from '@mui/icons-material'
+import Image from 'next/legacy/image'
 import GreyFilledBtn from '../../../buttons/GreyFilledBtn'
 import { Dropdowns } from './components'
-import Image from 'next/legacy/image'
-import { Menu, Close, ArrowDropDown } from '@mui/icons-material'
 const Navbar = () => {
 
   const [width, setWidth] = useState(601);

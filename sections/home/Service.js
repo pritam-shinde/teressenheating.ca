@@ -2,7 +2,8 @@ import { Box, Container, Grid, Typography, Button, IconButton } from '@mui/mater
 import React, { useEffect, useState } from 'react'
 import SectionalHeading from '../../components/SectionalHeading/SectionalHeading'
 import Snow from '../../public/icons/cool.svg'
-import Fire from '../../public/icons/hot.svg'
+import Fire from '../../public/icons/heat.svg'
+// import Fire from '../../public/icons/hot.svg'
 import Styles from '../../styles/Home.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from "swiper";

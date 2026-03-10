@@ -1,11 +1,12 @@
- import { Box, Container, Grid, List, ListItem, ListItemText, Typography, ListItemAvatar, Avatar, Divider } from '@mui/material'
+ import { Avatar, Box, Container, Grid, List, ListItem, ListItemText, Typography } from '@mui/material'
 import Image from 'next/legacy/image'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Styles from '../../../styles/Footer.module.css'
-import GreyLogo from '../../../public/logo/grey-logo.svg'
-import Link from 'next/link'
+import GreyLogo from '../../../public/logo/footer-logo.png'
+// import GreyLogo from '../../../public/logo/grey-logo.svg'
 import { Copyright, Google } from '@mui/icons-material'
-import { FaPinterestP, FaTwitter, FaFacebookF, FaInstagram } from 'react-icons/fa'
+import Link from 'next/link'
+import { FaFacebookF, FaInstagram, FaPinterestP, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
 
