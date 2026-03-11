@@ -1,21 +1,20 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
 import { AppointmentForm, BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
-import AirConditioner from '../public/service/air-conditioner.webp'
-import { CheckCircleOutline } from '@mui/icons-material'
-import { Appointment } from '../sections/sections'
 import AcRepair from '../public/home/s3.webp'
-import Banner from '../public/service/service-compressed.webp'
 import Family from '../public/home/testimonial.webp'
+import AirConditioner from '../public/service/air-conditioner.webp'
+import Banner from '../public/service/service-compressed.webp'
+import { Appointment } from '../sections/sections'
 
 const Service = () => {
   return (
     <>
        <Head>
-        <title>Heating And Air Conditioning Services Canada | Teressen</title>
-        <meta name="description" content="Get affordable heating and air conditioning services in Canada for your commercial or residential property from Teressen. Contact us today." />
+        <title>Heating And Air Conditioning Services Canada | Airlinx</title>
+        <meta name="description" content="Get affordable heating and air conditioning services in Canada for your commercial or residential property from Airlinx. Contact us today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/services/" />
       </Head>
@@ -27,7 +26,7 @@ const Service = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box py={5}>
                   <Box mb={3}>
-                    <Typography variant='h2' gutterBottom>Teressen Heating Ltd.</Typography>
+                    <Typography variant='h2' gutterBottom>Airlinx Heating Ltd.</Typography>
                     <Typography variant="h3" gutterBottom>Your trusted expert for all your <span className='text--red'>heating</span> and <span className='text--blue'>cooling</span> services</Typography>
                     <Typography className='para'>Serving Canada, we repair and maintain nearly all makes, brands of furnaces, and models. If your model is kicking on and off frequently, or there is water coming from the model, then you need assistance. So, we are at your assistance. We have our maintenance plans that will help you with the best possible solutions.</Typography>
                   </Box>
@@ -95,7 +94,7 @@ const Service = () => {
                   <Grid container spacing={5}>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image layout='responsive' src={AcRepair} alt="Teressen Expert Technician Cooling Service" title='Teressen Expert Technician Cooling Service' />
+                        <Image layout='responsive' src={AcRepair} alt="Airlinx Expert Technician Cooling Service" title='Airlinx Expert Technician Cooling Service' />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -127,7 +126,7 @@ const Service = () => {
                           <ListItemText primary="Unusual sounds coming from your HVAC system." />
                         </ListItem>
                       </List>
-                      <Typography className='para'>So, we are always here when you need us the most. Consult Teressen heating and air conditioning services today!</Typography>
+                      <Typography className='para'>So, we are always here when you need us the most. Consult Airlinx heating and air conditioning services today!</Typography>
                     </Grid>
                   </Grid>
                 </Box>
@@ -140,8 +139,8 @@ const Service = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box py={5}>
-                  <SectionalHeading simpletext="Teressen home heating services: We are just a call away" variant="h2" align="center" />
-                  <Typography className='para' align="center">Winter weather in your city is brutal. Hence, you need a reliable home heating system to keep you warm and comfortable throughout the winter. At Teressen we are always there when you need us for whatever home heating problems you may have.</Typography>
+                  <SectionalHeading simpletext="Airlinx home heating services: We are just a call away" variant="h2" align="center" />
+                  <Typography className='para' align="center">Winter weather in your city is brutal. Hence, you need a reliable home heating system to keep you warm and comfortable throughout the winter. At Airlinx we are always there when you need us for whatever home heating problems you may have.</Typography>
                   <Box className='d-flex justify-content-center'>
                     <BlueFilledBtn navlink={true} btnlink={'/contact-us/'} btnTitle={'Make An Appointment'} />
                   </Box>
@@ -157,10 +156,10 @@ const Service = () => {
                 <Box py={5}>
                   <Box mb={3}>
                     <SectionalHeading simpletext="24*7 Heating services assured" variant="h2" />
-                    <Typography className='para'>Teressen is proud to offer you the best possible services 24*7. In addition to this; we also provide a flexible weekday scheduling and Saturday is a regular working day for us to engage busy families. A Teressen employee will always answer your call. We never use an answering service to give you false hopes. After your call, we show up at your home as soon as possible to resolve any issue you might be facing.</Typography>
+                    <Typography className='para'>Airlinx is proud to offer you the best possible services 24*7. In addition to this; we also provide a flexible weekday scheduling and Saturday is a regular working day for us to engage busy families. A Airlinx employee will always answer your call. We never use an answering service to give you false hopes. After your call, we show up at your home as soon as possible to resolve any issue you might be facing.</Typography>
                   </Box>
                   <Box mb={3}>
-                    <SectionalHeading simpletext=" Teressen Heating Ltd: Quality, Trust, and Affordability are assured!" variant="h2" />
+                    <SectionalHeading simpletext=" Airlinx Heating Ltd: Quality, Trust, and Affordability are assured!" variant="h2" />
                     <SectionalHeading simpletext="We provide you with the following heating services" variant="h3" />
                     <Box className='d-flex flex-md-row flex-column'>
                       <List className='p-0 m-0'>

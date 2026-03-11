@@ -31,7 +31,7 @@ const Tsawwasses = () => {
   return (
     <>
             <Head>
-        <title>Water Heater & Air Conditioning Services in Tsawwassen | Teressen</title>
+        <title>Water Heater & Air Conditioning Services in Tsawwassen | Airlinx</title>
         <meta name="description" content="We at Terseen Heating and Air Conditioning are committed to providing you with the best water heater and air conditioning services in Tsawwassen. Call us today!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/tsawwassen/" />
@@ -124,10 +124,10 @@ const Tsawwasses = () => {
         "serviceType": "Tsawwassen Water Heater And Air Conditioning Services",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ftsawwassen.2f87babe.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ftsawwassen.2f87babe.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/tsawwassen/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ftsawwassen.2f87babe.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ftsawwassen.2f87babe.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/tsawwassen/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const Tsawwasses = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/Airlinxheating/"
         ]
         }
       }`
@@ -181,7 +181,7 @@ const Tsawwasses = () => {
                       <Image layout='responsive' src={TsawwassenLoc} alt="Tsawwassen Mills" title='Tsawwassen Mills' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s water heater repair services in Tsawaassen will never leave you disappointed</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s water heater repair services in Tsawaassen will never leave you disappointed</Typography>
                       <Typography className='para'>We are a name for reliability, affordability, and quality. We have been considered one of the <Link href="/air-conditioning-service/">best air conditioning installation, maintenance, and repair service</Link> providers in Tsawwassen. We have a team of certified experts who look into the tune-up matters and also make sure that you are served with the best. We understand all your concerns and give you expert advice. We start addressing your concerns right from your first call till things are resolved in later stages. You simply have to leave all your worries on us and we will get it done as soon as possible.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -193,7 +193,7 @@ const Tsawwasses = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

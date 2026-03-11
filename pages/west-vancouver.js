@@ -31,7 +31,7 @@ const WestVancouver = () => {
   return (
     <>
       <Head>
-        <title>Heating and Air Conditioning Services in West Vancouver | Teressen</title>
+        <title>Heating and Air Conditioning Services in West Vancouver | Airlinx</title>
         <meta name="description" content="We provide heating and air conditioning services to homes and businesses in West Vancouver. We offer repairs, installation, consultation, and emergency service." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/west-vancouver/" />
@@ -124,10 +124,10 @@ const WestVancouver = () => {
         "serviceType": "West Vancouver Heating And Cooling Services",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwest-vancouver.d9d04a35.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwest-vancouver.d9d04a35.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/west-vancouver/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://heating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwest-vancouver.d9d04a35.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwest-vancouver.d9d04a35.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/west-vancouver/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const WestVancouver = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }
@@ -182,9 +182,9 @@ const WestVancouver = () => {
                       <Image layout='responsive' src={WestVancouverLoc} alt="West Vancouver Hills" title='West Vancouver Hills' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s heating and air conditioning services in West Vancouver</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s heating and air conditioning services in West Vancouver</Typography>
                       <Typography className='para'>Now get the best installation, tune-ups, repair, and replacement services for your Central <Link href="/heating-services/">home heating systems</Link> in West Vancouver and its nearby areas. </Typography>
-                      <Typography className='para'>We provide professional furnace installation services from the certified HVAC technicians available near you. Teressen&apos;s technicians and installers are licensed professionals who take care of everything. We have experts who assure comfort and happy living for you and your loved ones.</Typography>
+                      <Typography className='para'>We provide professional furnace installation services from the certified HVAC technicians available near you. Airlinx&apos;s technicians and installers are licensed professionals who take care of everything. We have experts who assure comfort and happy living for you and your loved ones.</Typography>
                       <Typography className='para'>We are one of the <Link href="/">best heating and cooling service experts</Link> in West Vancouver. So, if you are facing any issues with heating and cooling problems, you already know whom to call, right?</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -196,14 +196,14 @@ const WestVancouver = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
-                <Typography className='para'>Teressen&apos;s fast and affordable heating and cooling services are one of the reasons why people choose us. </Typography>
+                <Typography className='para'>Airlinx&apos;s fast and affordable heating and cooling services are one of the reasons why people choose us. </Typography>
                 <Typography className='para'>Also, we provide installation, maintenance, and repairs of all models, furnaces, boilers, and heat pumps.</Typography>
               </Grid>
             </Grid>

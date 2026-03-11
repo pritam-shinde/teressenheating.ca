@@ -42,8 +42,8 @@ const Rinnai = () => {
   return (
     <>
       <Head>
-        <title>Rinnai Heating & Furnace Services at Affordable Price| Teressenheating</title>
-        <meta name="description" content="Teressen Heating and Furnace is a leading provider of Rinnai heating and furnace system services. We offer high-quality, affordable products and services." />
+        <title>Rinnai Heating & Furnace Services at Affordable Price| Airlinxheating</title>
+        <meta name="description" content="Airlinx Heating and Furnace is a leading provider of Rinnai heating and furnace system services. We offer high-quality, affordable products and services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/rinnai/" />
       </Head>
@@ -139,7 +139,7 @@ const Rinnai = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">

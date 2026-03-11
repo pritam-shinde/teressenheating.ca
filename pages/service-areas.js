@@ -30,8 +30,8 @@ const ServiceArea = () => {
   return (
     <>
       <Head>
-        <title>Trusted Heating Service in All Areas of Canada | Teressenheating</title>
-        <meta name="description" content="The Teressen Heating is Canada's trusted heating service company. We provide quality heating installation, repair, and maintenance services in all areas of Canada." />
+        <title>Trusted Heating Service in All Areas of Canada | Airlinxheating</title>
+        <meta name="description" content="The Airlinx Heating is Canada's trusted heating service company. We provide quality heating installation, repair, and maintenance services in all areas of Canada." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/service-areas/" />
       </Head>
@@ -42,8 +42,8 @@ const ServiceArea = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box py={5}>
-                  <SectionalHeading simpletext="Teressen's certified and premium services for all our clients" variant="h2" />
-                  <Typography className='para'> Teressen is an established full-service heating provider that provides high-efficiency heating services to all our clients. We work hard to make sure that we provide a superior level of customer support and heating services to all.</Typography>
+                  <SectionalHeading simpletext="Airlinx's certified and premium services for all our clients" variant="h2" />
+                  <Typography className='para'> Airlinx is an established full-service heating provider that provides high-efficiency heating services to all our clients. We work hard to make sure that we provide a superior level of customer support and heating services to all.</Typography>
                   <Typography className='para'>We are a member of the BC Safety Authority, so you can count on us for anything. We are fully equipped with licensed and professional services with experienced technicians. Our trained experts provide reliable services on-site and are well-educated about all brands of boilers, heat pumps, furnaces, and more. We also deal in safety inspection, repair services, heating maintenance, installation, and cleaning services of hot water tanks, boilers, air ducts, and furnaces.</Typography>
                   <Typography className='para'>Our superior heating services have gained appreciation because everything is done on time. Our clients are also impressed with our friendly, reliable and efficient services. We provide warm support and quality services from start to end.</Typography>
                 </Box>

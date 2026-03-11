@@ -31,8 +31,8 @@ const Richmond = () => {
   return (
     <>
     <Head>
-        <title>Air Conditioning Installation Services in Richmond | Teressenheating</title>
-        <meta name="description" content="For all of your air conditioning installation services needs in Richmond, VA, choose Teressen Heating. We offer a wide range of high-quality HVAC services. " />
+        <title>Air Conditioning Installation Services in Richmond | Airlinxheating</title>
+        <meta name="description" content="For all of your air conditioning installation services needs in Richmond, VA, choose Airlinx Heating. We offer a wide range of high-quality HVAC services. " />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/richmond/" />
       </Head>
@@ -124,10 +124,10 @@ const Richmond = () => {
         "serviceType": "Richmond Air Conditioning Installation Services",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/richmond/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/richmond/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const Richmond = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -181,7 +181,7 @@ const Richmond = () => {
                       <Image layout='responsive' src={RichmondLoc} alt="Richmond Area" title='Richmond Area' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s Quality, Affordability, And Trust-Worthy Air Conditioning Installation Services In Richmond</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s Quality, Affordability, And Trust-Worthy Air Conditioning Installation Services In Richmond</Typography>
                       <Typography className='para'>A brand&apos;s unique identity is its people. We have a troop of certified and experienced technicians who make sure that everything goes well. We also make sure that our heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Richmond are one of the best services our people can get. Right from tune-ups to <Link href="/furnace-inspection/">furnace installation</Link>, everything is done to guarantee an easy-breeze life for all our clients. We understand your concerns and also look into the fact that you are assured of our quality services. We believe in resolving issues and coming up with expert solutions. Hence, people believe in us and help us with their reviews. </Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -193,7 +193,7 @@ const Richmond = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

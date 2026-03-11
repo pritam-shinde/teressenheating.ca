@@ -42,8 +42,8 @@ const YorkBrand = () => {
   return (
     <>
     <Head>
-    <title>York Heating and Air Conditioning Service Expert | Teressenheating</title>
-    <meta name="description" content="Teressen Heating and Air Conditioning Service provide experts for York heating & air conditioning installation, repair and maintenance services. Contact us today!" />
+    <title>York Heating and Air Conditioning Service Expert | Airlinxheating</title>
+    <meta name="description" content="Airlinx Heating and Air Conditioning Service provide experts for York heating & air conditioning installation, repair and maintenance services. Contact us today!" />
     <meta name="robots" content="index" />
     <link rel="canonical" href="/york-brand/" />
   </Head>
@@ -139,7 +139,7 @@ const YorkBrand = () => {
                     <Grid container>
                       <Grid item xs={6}>
                         <Box p={3}>
-                          <Image src={BlueLogo} alt="teressen heating" layout="responsive" />
+                          <Image src={BlueLogo} alt="Airlinx heating" layout="responsive" />
                         </Box>
                       </Grid>
                       <Grid item xs={6} className="d-flex align-items-center">
@@ -182,7 +182,7 @@ const YorkBrand = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={12} sm={6} md={4}>
                         <Box p={3} className="border--grey">
-                          <Image src={BBB} alt="teressen heating" layout="responsive"/>
+                          <Image src={BBB} alt="Airlinx heating" layout="responsive"/>
                         </Box>
                       </Grid>
                       <Grid item xs={12} sm={6} md={4}>
@@ -220,7 +220,7 @@ const YorkBrand = () => {
             <Box>
               <Box>
                 <SectionalHeading simpletext="Looking for repairing of York furnaces and air conditioners?" variant="h2" />
-                <Typography className='para'>For Trane furnaces and air conditioners, Teressen&apos;s HVAC services work the best. We help you with the best installation, repair, and <Link href="/boilers-maintenance/">maintenance services</Link>. Also, our specialists have a lot of expertise working with various brands. So, you get the best of everything with us.</Typography>
+                <Typography className='para'>For Trane furnaces and air conditioners, Airlinx&apos;s HVAC services work the best. We help you with the best installation, repair, and <Link href="/boilers-maintenance/">maintenance services</Link>. Also, our specialists have a lot of expertise working with various brands. So, you get the best of everything with us.</Typography>
               </Box>
               <Box>
               <SectionalHeading simpletext="Need a York Furnace and AC repair company with certification?" variant="h2" />

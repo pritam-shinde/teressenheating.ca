@@ -42,8 +42,8 @@ const tempstar = () => {
   return (
     <>
       <Head>
-        <title>Tempstar Heating and Cooling Service Professionals | Teressenheating</title>
-        <meta name="description" content="Teressen Heating Service Professionals wants to be your family's HVAC company for life. We provide quality service for Tempstar Heating and Cooling. Visit Us Now!" />
+        <title>Tempstar Heating and Cooling Service Professionals | Airlinxheating</title>
+        <meta name="description" content="Airlinx Heating Service Professionals wants to be your family's HVAC company for life. We provide quality service for Tempstar Heating and Cooling. Visit Us Now!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/tempstar/" />
       </Head>
@@ -139,7 +139,7 @@ const tempstar = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image src={BlueLogo} alt="teressen heating" layout="responsive" />
+                              <Image src={BlueLogo} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -182,7 +182,7 @@ const tempstar = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={BBB} alt="teressen heating" layout="responsive" />
+                              <Image src={BBB} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>

@@ -31,8 +31,8 @@ const PortMoody = () => {
   return (
     <>
     <Head>
-        <title>Air Conditioning Services and Heating in Port Moody | Teressenheating</title>
-        <meta name="description" content="If you need air conditioning or heating services contact the team at Teressen in Port Moody, BC. We are your local experts for all heating and air conditioning services." />
+        <title>Air Conditioning Services and Heating in Port Moody | Airlinxheating</title>
+        <meta name="description" content="If you need air conditioning or heating services contact the team at Airlinx in Port Moody, BC. We are your local experts for all heating and air conditioning services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/port-moody/" />
       </Head>
@@ -124,10 +124,10 @@ const PortMoody = () => {
         "serviceType": "Port Moody Air Conditioning And Heating Services",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fport-moody.75a6b7b0.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fport-moody.75a6b7b0.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/port-moody/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fport-moody.75a6b7b0.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fport-moody.75a6b7b0.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/port-moody/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const PortMoody = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -181,7 +181,7 @@ const PortMoody = () => {
                       <Image layout='responsive' src={PortMoodyLoc} alt="Port Moody Marina" title='Port Moody Marina' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen’s Air Conditioning Services At Port Moody Will Make Your Mood</Typography>
+                      <Typography variant='h2'>Airlinx’s Air Conditioning Services At Port Moody Will Make Your Mood</Typography>
                       <Typography className='para'>We understand that air conditioning and <Link href="/heating-services/">heating issues</Link> are big problems. And calling an expert who understands your problem solves half your matter. Hence, we are available <Link href="/emergency/">24*7*365 days</Link> to personally understand your problems and provide expert help. We are spontaneous with solutions and make sure that things are done as the top priority. So, call us whenever you need expert guidance and we promise to be there for you through all thick and thins.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -193,7 +193,7 @@ const PortMoody = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

@@ -31,7 +31,7 @@ const PittMeadows = () => {
   return (
     <>
     <Head>
-        <title>Best Heating Services in Pitt Meadows | Teressenheating</title>
+        <title>Best Heating Services in Pitt Meadows | Airlinxheating</title>
         <meta name="description" content="Quality Heating Services in Pitt Meadows. We offer a full range of heating installations and repairs, furnace maintenance, and other services at competitive prices." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/pitt-meadows/" />
@@ -123,10 +123,10 @@ const PittMeadows = () => {
         "serviceType": "Pitt Meadows Heating Services",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fpitt-meadows.90609843.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fpitt-meadows.90609843.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/pitt-meadows/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fpitt-meadows.90609843.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fpitt-meadows.90609843.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/pitt-meadows/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -162,7 +162,7 @@ const PittMeadows = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -180,7 +180,7 @@ const PittMeadows = () => {
                       <Image layout='responsive' src={PittMeadowsLoc} alt="Pitt Meadows Area" title='Pitt Meadows Area' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen Is One Of The Best Heating Services In Pitt Meadows That Takes Care Of Everything</Typography>
+                      <Typography variant='h2'>Airlinx Is One Of The Best Heating Services In Pitt Meadows That Takes Care Of Everything</Typography>
                       <Typography className='para'>These days, many people are facing issues with furnace installation, maintenance, and repair services. And we understand your worries and concerns. So, whenever you have any issues related to <Link href="/furnace-inspection/">furnace installation, maintenance, and repair</Link>, we are a name. We make sure that everything is done on time so that you live a stress-free life. Our certified technicians are always there for you to look after everything. Our clients have always relied on us because they know that we will serve them with the best. You can also read our client reviews to know more about our services. At Pitt Meadows, we are one of the most renowned <Link href="/heating-services/">heating service providers</Link> who will never leave you disappointed.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -192,7 +192,7 @@ const PittMeadows = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

@@ -51,13 +51,13 @@ const FaqAndForm = ({
                           <SectionalHeading variant={addressVariant} align={addresstitleAlign} simpletext={addressSimpleTitle} />
                         ) : null}
                         <Box mt={3}>
-                          <Typography variant='h3'>Teressen Heating & Air Conditioning</Typography>
+                          <Typography variant='h3'>Airlinx Heating & Air Conditioning</Typography>
                           <Box mt={3}>
                             <List>
                               {[
                                 { id: 'contact-1', icon: <HomeOutlinedIcon className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: '2025 Willingdon Ave unit 900, Burnaby, BC V5C 0J3, Canada' },
                                 { id: 'contact-2', icon: <LocalPhoneOutlined className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: '604-363-6622' },
-                                { id: 'contact-3', icon: <MailOutline className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: 'info@teressen heating.ca' }
+                                { id: 'contact-3', icon: <MailOutline className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: 'info@airlinxheating.ca' }
                               ].map(item => (
                                 <ListItem key={item.id} className='m-0 p-0 mb-3'>
                                   <ListItemIcon>{item.icon}</ListItemIcon>

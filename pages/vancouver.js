@@ -33,7 +33,7 @@ const Vancouver = () => {
   return (
     <>
       <Head>
-        <title>Heating and Air Conditioning Services in Vancouver | Teressenheating</title>
+        <title>Heating and Air Conditioning Services in Vancouver | Airlinxheating</title>
         <meta name="description" content="In Vancouver, BC, we offer heating and air conditioning services to make sure you stay warm in the winter and cool during the summer. Contact us today !" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/vancouver/" />
@@ -126,10 +126,10 @@ const Vancouver = () => {
         "serviceType": "Heating Services Vancouver",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fvancouver.80604495.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fvancouver.80604495.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/vancouver/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://heating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fvancouver.80604495.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fvancouver.80604495.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/vancouver/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -165,7 +165,7 @@ const Vancouver = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -183,8 +183,8 @@ const Vancouver = () => {
                       <Image layout='responsive' src={VancouverLoc} alt="vancouver science world" title='vancouver science world' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s 24*7 heating services in Vancouver offer you a stress-free living</Typography>
-                      <Typography className='para'>Teressen&apos;s heating and air conditioning services in Vancouver are probably one of the best services you will get in the Vancouver area. Installation and replacement for central <Link href="/heating-services/">home heating systems</Link>, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s 24*7 heating services in Vancouver offer you a stress-free living</Typography>
+                      <Typography className='para'>Airlinx&apos;s heating and air conditioning services in Vancouver are probably one of the best services you will get in the Vancouver area. Installation and replacement for central <Link href="/heating-services/">home heating systems</Link>, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
                       <Typography className='para'>We provide <Link href="/furnace-inspection/">professional furnace installation</Link> from certified HVAC technicians near you, 24*7. We are the only HVAC suppliers in Vancouver you can easily count on. Our heating services in Vancouver are undoubtedly the best. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -196,7 +196,7 @@ const Vancouver = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="What makes Teressen different?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="What makes Airlinx different?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />

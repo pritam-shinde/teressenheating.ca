@@ -31,8 +31,8 @@ const TanklesWaterHeater = () => {
   return (
     <>
       <Head>
-        <title>Tankless Water Heaters Service in Canada | Teressenheating</title>
-        <meta name="description" content="We at Teressen Heating Canada offer high quality installation, maintenance and repair for residential and commercial tankless water heaters services." />
+        <title>Tankless Water Heaters Service in Canada | Airlinxheating</title>
+        <meta name="description" content="We at Airlinx Heating Canada offer high quality installation, maintenance and repair for residential and commercial tankless water heaters services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/tankless-water-heaters/" />
       </Head>
@@ -98,10 +98,10 @@ const TanklesWaterHeater = () => {
           "serviceType": "Tankless Water Heater Maintenance Service",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/tankless-water-heaters/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
+          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
+          "url": "https://airlinxheating.ca/tankless-water-heaters/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -133,7 +133,7 @@ const TanklesWaterHeater = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }
@@ -141,7 +141,7 @@ const TanklesWaterHeater = () => {
       }
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen tankless water heater maintenance service" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx tankless water heater maintenance service" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -176,7 +176,7 @@ const TanklesWaterHeater = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen tankless water heaters: Quality, trust, and affordability at their best!" variant="h2" align="left" />
+                        <SectionalHeading simpletext="Airlinx tankless water heaters: Quality, trust, and affordability at their best!" variant="h2" align="left" />
                         <Typography className='para'>Tankless water heaters are the best possible options, to provide <Link href="/tankless-water-heaters/">hot water service</Link> to your home. It saves your money and space by producing hot water on demand. The lack of a tank saves your energy and makes your work easy.</Typography>
                       </Container>
                     </section>
@@ -202,7 +202,7 @@ const TanklesWaterHeater = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen’s  inline water heater services save your money" variant="h2" align="left" />
+                        <SectionalHeading simpletext="Airlinx’s  inline water heater services save your money" variant="h2" align="left" />
                         <Typography className='para'>The cost of heating your home&apos;s water increases exponentially when it comes to a tank-type heater. Tankless models have more fuel-efficient methods of heating your home&apos;s water so that you can conserve natural resources for years.</Typography>
                       </Container>
                     </section>

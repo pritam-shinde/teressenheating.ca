@@ -41,13 +41,13 @@ const Trane = () => {
     'We have Trane furnace experienced technicians.',
     'We give professional services at affordable rates.',
     'We do all types of Trane heating, installation, maintenance, and repair work.',
-    "Teressen's heating and air conditioning services are proudly meant to serve you the best."
+    "Airlinx's heating and air conditioning services are proudly meant to serve you the best."
   ]
   return (
     <>
       <Head>
         <title>Professional Services with Trane Furnace Experienced Technicians</title>
-        <meta name="description" content="The Trane Furnace experts at Teressen Heating are factory-trained, certified and insured. We install and service Trane furnace systems. Book Now !" />
+        <meta name="description" content="The Trane Furnace experts at Airlinx Heating are factory-trained, certified and insured. We install and service Trane furnace systems. Book Now !" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/trane/" />
       </Head>
@@ -143,7 +143,7 @@ const Trane = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">

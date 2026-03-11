@@ -35,8 +35,8 @@ const RebatesAndPromotion = () => {
   return (
     <>
       <Head>
-        <title>Teressen offers heating and cooling rebates promotions </title>
-        <meta name="description" content="Teressen Heating offers heating and cooling rebates and promotions to save you money. Contact us for more information." />
+        <title>Airlinx offers heating and cooling rebates promotions </title>
+        <meta name="description" content="Airlinx Heating offers heating and cooling rebates and promotions to save you money. Contact us for more information." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/rebates-and-promotions/" />
       </Head>
@@ -49,10 +49,10 @@ const RebatesAndPromotion = () => {
           "serviceType": "Rebates And Promotions",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "@id": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "url": "https://teressenheating.ca/rebates-and-promotions/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
+          "@id": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
+          "url": "https://airlinxheating.ca/rebates-and-promotions/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -84,14 +84,14 @@ const RebatesAndPromotion = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/Airlinxheating/"    
           ]
           }
         }`
       }
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's heating ltd offers the best rebates and promotions" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx's heating ltd offers the best rebates and promotions" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -100,7 +100,7 @@ const RebatesAndPromotion = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>To encourage the most comfortable means of heating and cooling your space, Teressen services offer heating and cooling rebates. So, when you choose to install a furnace system with our team, you get an experienced dealer, products, and expert heating and cooling services. Our <Link href="/commercial-hvac/">HVAC rebate services</Link> are ideal for you and your family. </Typography>
+                        <Typography className='para'>To encourage the most comfortable means of heating and cooling your space, Airlinx services offer heating and cooling rebates. So, when you choose to install a furnace system with our team, you get an experienced dealer, products, and expert heating and cooling services. Our <Link href="/commercial-hvac/">HVAC rebate services</Link> are ideal for you and your family. </Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -120,7 +120,7 @@ const RebatesAndPromotion = () => {
                     <section className='mt-md-3 mt-2'>
                       <Container maxWidth="xxl">
                         <Box>
-                          <SectionalHeading simpletext="What should you expect from Teressen?" variant="h2" />
+                          <SectionalHeading simpletext="What should you expect from Airlinx?" variant="h2" />
                           <List>
                             <ListItem>
                               <ListItemIcon>

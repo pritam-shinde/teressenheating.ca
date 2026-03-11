@@ -31,7 +31,7 @@ const WhiteRock = () => {
   return (
     <>
         <Head>
-        <title>Heating Installation Services in White-rock | Teressenheating</title>
+        <title>Heating Installation Services in White-rock | Airlinxheating</title>
         <meta name="description" content="We offer a wide range of Heating Installation Services, from maintenance to repairs and replacement. Get a quote on a Heating Installation Service in White Rock." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/white-rock/" />
@@ -124,10 +124,10 @@ const WhiteRock = () => {
         "serviceType": "Heating Installation Services White Rock",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-rock.865e518f.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-rock.865e518f.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/white-rock/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://heating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-rock.865e518f.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwhite-rock.865e518f.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/white-rock/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const WhiteRock = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -181,7 +181,7 @@ const WhiteRock = () => {
                       <Image layout='responsive' src={WhiteRockLoc} alt="White Rock Pier" title='White Rock Pier' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s Furnace Installation, And Tune-Up Services In White-Rock Rocks</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s Furnace Installation, And Tune-Up Services In White-Rock Rocks</Typography>
                       <Typography className='para'>We get appreciated for our <Link href="/boilers-installation/">heating installation services</Link> in White-rock for the amount of work we do for all clients. No matter what, we always consider our clients as our kings. Hence, we provide quality <Link href="/heating-services/">heating services</Link> in White rock that makes you worry less and smile more. Also, we make sure that our <Link href="/boilers/">installation, repair, and maintenance services</Link> should suit your budget too. So, once you give us a call, we make sure that your work is done very easily. We would also like you to rate our services so that there is always a scope for improvement for us.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -193,7 +193,7 @@ const WhiteRock = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>
