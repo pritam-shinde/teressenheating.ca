@@ -1,8 +1,8 @@
  import { Avatar, Box, Container, Grid, List, ListItem, ListItemText, Typography } from '@mui/material'
 import Image from 'next/legacy/image'
 import { useEffect, useState } from 'react'
-import Styles from '../../../styles/Footer.module.css'
 import GreyLogo from '../../../public/logo/footer-logo.png'
+import Styles from '../../../styles/Footer.module.css'
 // import GreyLogo from '../../../public/logo/grey-logo.svg'
 import { Copyright, Google } from '@mui/icons-material'
 import Link from 'next/link'
@@ -27,10 +27,10 @@ const Footer = () => {
                                     <Grid item xs={12} md={4} lg={5}>
                                         <Box>
                                             <Box mb={3} style={{ width: "40%" }} >
-                                                <Image layout='responsive' src={GreyLogo} alt="Teressenheating Logo" className='img-fluid' title='Teressenheating Logo' />
+                                                <Image layout='responsive' src={GreyLogo} alt="Airlinxheating Logo" className='img-fluid' title='Airlinxheating Logo' />
                                             </Box>
                                             <Box>
-                                                <Typography className='text-white' align='justify'>Three elements that make Teressen heating ltd different from the crowd are Quality, trust, and affordability. These elements have always been our brand identity and have made has to stand different from the crowd. They have shaped us, monitored us, and made us the best heating and air conditioning service in Canada .</Typography>
+                                                <Typography className='text-white' align='justify'>Three elements that make Airlinx heating ltd different from the crowd are Quality, trust, and affordability. These elements have always been our brand identity and have made has to stand different from the crowd. They have shaped us, monitored us, and made us the best heating and air conditioning service in Canada .</Typography>
                                             </Box>
                                         </Box>
                                     </Grid>
@@ -103,7 +103,7 @@ const Footer = () => {
                                                     </ListItem>
 
                                                     <ListItem className='p-0'>
-                                                        <ListItemText primary={<p><strong className='text--blue'>Email :</strong> <a href="mailto:info@teressenheating.ca" className='text-white'>info@teressenheating.ca</a></p>} />
+                                                        <ListItemText primary={<p><strong className='text--blue'>Email :</strong> <a href="mailto:info@airlinxheating.ca" className='text-white'>info@airlinxheating.ca</a></p>} />
                                                     </ListItem>
                                                 </List>
                                             </Box>
@@ -188,7 +188,7 @@ const Footer = () => {
                                         <Grid item xs={12} md={10} className="mx-auto">
                                             <box className={`${width > 320 ? 'd-flex' : 'flex-column'} justify-content-center`}>
                                                 <Box px={1}>
-                                                    <Typography className='text-white'><Copyright /> {new Date().getFullYear()} <Link href="/" className='text-white'>teressenheating.ca</Link> </Typography>
+                                                    <Typography className='text-white'><Copyright /> {new Date().getFullYear()} <Link href="/" className='text-white'>airlinxheating.ca</Link> </Typography>
                                                 </Box>
                                                 <Box>
                                                     <Typography className='text-white'> | </Typography>

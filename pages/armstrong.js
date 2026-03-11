@@ -42,7 +42,7 @@ const Armstrong = () => {
     <>
     <Head>
         <title>Armstrong Furnace and Air Conditioner Services at Affordable Price</title>
-        <meta name="description" content="Teressenheating offers HVAC repairs, furnace installation and furnace maintenance. We service Armstrong Furnace and Air Conditioner with complete comfort." />
+        <meta name="description" content="Airlinxheating offers HVAC repairs, furnace installation and furnace maintenance. We service Armstrong Furnace and Air Conditioner with complete comfort." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/armstrong/" />
       </Head>
@@ -138,7 +138,7 @@ const Armstrong = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">

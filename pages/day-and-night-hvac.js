@@ -43,7 +43,7 @@ const DayNightHVAC = () => {
   return (
     <>
       <Head>
-        <title>Day and Night HVAC Service Expert Technicians | Teressenheating</title>
+        <title>Day and Night HVAC Service Expert Technicians | Airlinxheating</title>
         <meta name="description" content="Tereseenheating is the most trusted company for your Day and Night HVAC service needs. Our professionals are licensed, trained, and experienced." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/day-and-night-hvac/" />
@@ -140,7 +140,7 @@ const DayNightHVAC = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image src={BlueLogo} alt="teressen heating" layout="responsive" />
+                              <Image src={BlueLogo} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -183,7 +183,7 @@ const DayNightHVAC = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={BBB} alt="teressen heating" layout="responsive" />
+                              <Image src={BBB} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>

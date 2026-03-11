@@ -34,8 +34,8 @@ const AirConditioningService = () => {
   return (
     <>
     <Head>
-        <title>Best Air Conditioning Service in Canada | Teressenheating</title>
-        <meta name="description" content="Trust Teressen as your top choice for reliable and efficient air conditioning service in Canada. Our experienced professionals are here to help." />
+        <title>Best Air Conditioning Service in Canada | Airlinxheating</title>
+        <meta name="description" content="Trust Airlinx as your top choice for reliable and efficient air conditioning service in Canada. Our experienced professionals are here to help." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/air-conditioning-service/" />
       </Head>
@@ -91,10 +91,10 @@ const AirConditioningService = () => {
           "serviceType": "Air Conditioning Service",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/air-conditioning-service/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
+          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
+          "url": "https://airlinxheating.ca/air-conditioning-service/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -126,7 +126,7 @@ const AirConditioningService = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
@@ -147,7 +147,7 @@ const AirConditioningService = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image src={Cooling} alt="Air Conditioning Services by TeressenTechnician" title='Air Conditioning Services by TeressenTechnician' layout='responsive' />
+                                <Image src={Cooling} alt="Air Conditioning Services by AirlinxTechnician" title='Air Conditioning Services by AirlinxTechnician' layout='responsive' />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>
@@ -174,7 +174,7 @@ const AirConditioningService = () => {
                             </Grid>
                             <Grid item xs={12} className="m-0 pt-0">
                               <Box>
-                                <Typography className='para'> Teressen heating and air conditioning location is independently owned and operated. So, you can trust us as your local expert. We will arrive at your home on time and work with your needs, budget, and preferences to make sure that you are satisfied with our work. We also value your time. So, if we do not arrive at your home when you expect, we will pay you back. With us, there is no more waiting around all day for getting the best HVAC technician at home.</Typography>
+                                <Typography className='para'> Airlinx heating and air conditioning location is independently owned and operated. So, you can trust us as your local expert. We will arrive at your home on time and work with your needs, budget, and preferences to make sure that you are satisfied with our work. We also value your time. So, if we do not arrive at your home when you expect, we will pay you back. With us, there is no more waiting around all day for getting the best HVAC technician at home.</Typography>
                               </Box>
                             </Grid>
                           </Grid>
@@ -184,7 +184,7 @@ const AirConditioningService = () => {
                  
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen Heating LTD: We provide superior air conditioning services" variant="h2"/>
+                        <SectionalHeading simpletext="Airlinx Heating LTD: We provide superior air conditioning services" variant="h2"/>
                         <Box mt={3}>
                           <Grid container>
                             <Grid item xs={12} md={6}>
@@ -201,8 +201,8 @@ const AirConditioningService = () => {
                     <section className='mt-md-3 mt-2'>
                       <Container maxWidth="xxl">
                         <Box>
-                          <SectionalHeading simpletext="Teressen air conditioning repairs:" variant="h2" />                   
-                          <Typography className='para'>When it is hot and humid, everyone loves the sanctuary of a comfortable place. So, if your air cooler isnt functioning well, then call Teressen air conditioning repair service. Whether it is heat pumps, Air conditioning systems, or thermostats, we fix everything. Our air conditioning experts are certified and have expert knowledge of home air conditioning services.</Typography>
+                          <SectionalHeading simpletext="Airlinx air conditioning repairs:" variant="h2" />                   
+                          <Typography className='para'>When it is hot and humid, everyone loves the sanctuary of a comfortable place. So, if your air cooler isnt functioning well, then call Airlinx air conditioning repair service. Whether it is heat pumps, Air conditioning systems, or thermostats, we fix everything. Our air conditioning experts are certified and have expert knowledge of home air conditioning services.</Typography>
                         </Box>
                       </Container>
                     </section>
@@ -219,7 +219,7 @@ const AirConditioningService = () => {
                   <Container maxWidth="xxl">
                     <Box>
                       <SectionalHeading simpletext="When you need reliability, count on us:" variant="h2" />                   
-                      <Typography className='para'>At Teressen heating ltd, we have built our entire business around the idea that our clients deserve the best treatment, starting with our trustworthy experts. In many circumstances, Teressen heating ltd is owned by experts who have been serving and building trust with their local community for years.
+                      <Typography className='para'>At Airlinx heating ltd, we have built our entire business around the idea that our clients deserve the best treatment, starting with our trustworthy experts. In many circumstances, Airlinx heating ltd is owned by experts who have been serving and building trust with their local community for years.
                       </Typography>
                       <Typography className='para'>Our experts are licensed and qualified and receive regular training to stay updated with the latest developments and products. We want you to be happy and leave all your worries to us. This way, you can also be certain that we are accountable for providing you with high-level services on our visit.
                       </Typography>

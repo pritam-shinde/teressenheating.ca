@@ -39,8 +39,8 @@ const BoilerRepair = () => {
   return (
     <>
        <Head>
-        <title>Trusted Boiler Repair Services in Canada | Teressenheating</title>
-        <meta name="description" content="Trust Teressen Heating for reliable, efficient, and cost-effective boiler repair services in Canada. Our certified technicians are available 24/7." />
+        <title>Trusted Boiler Repair Services in Canada | Airlinxheating</title>
+        <meta name="description" content="Trust Airlinx Heating for reliable, efficient, and cost-effective boiler repair services in Canada. Our certified technicians are available 24/7." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-repair/" />
       </Head>
@@ -144,7 +144,7 @@ const BoilerRepair = () => {
 
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen boiler repair service is one of the best boiler repairing services in Canada" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx boiler repair service is one of the best boiler repairing services in Canada" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -158,7 +158,7 @@ const BoilerRepair = () => {
                             <Image layout='responsive' src={boiler} alt="boiler service" />
                           </Grid>
                           <Grid item xs={12} md={6}>
-                            <Typography className='para'>Teressen has been providing expert boiler installation, boiler repair, and boiler installation services in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
+                            <Typography className='para'>Airlinx has been providing expert boiler installation, boiler repair, and boiler installation services in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
                           </Grid>
                         </Grid>
                       </Container>
@@ -174,14 +174,14 @@ const BoilerRepair = () => {
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Boiler repairing system" variant="h2" align="left" />
-                        <Typography className='para'>To keep your boiler in good working condition; it is mandatory to provide boiler repairing services at relative ease. As one of the most qualified, respected, and experienced names in the industry and Canada, you can always trust Teressen to provide you with the best residential boiler repairing services 24*7.</Typography>
-                        <Typography className='para'>An improper boiler repair can be a bit dangerous process resulting in serious injury. It must be performed by a highly-trained and certified professional. All Teressen technicians are qualified with knowledge and their ability to perform a professional analysis of the home will win your heart.</Typography>
+                        <Typography className='para'>To keep your boiler in good working condition; it is mandatory to provide boiler repairing services at relative ease. As one of the most qualified, respected, and experienced names in the industry and Canada, you can always trust Airlinx to provide you with the best residential boiler repairing services 24*7.</Typography>
+                        <Typography className='para'>An improper boiler repair can be a bit dangerous process resulting in serious injury. It must be performed by a highly-trained and certified professional. All Airlinx technicians are qualified with knowledge and their ability to perform a professional analysis of the home will win your heart.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-5 mt-3 bg-grey'>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="We keep your boilers running for long" variant="h2" align="left" />
-                        <Typography className='para'>Repairing is one of the primary specialties of <Link href="/">Teressen heating ltd</Link>. Our field staff is available 24*7 and has a combined history of literally hundreds of years of service and experience. We can meet the needs of the most complex boiler systems. We also repair or rebuild boilers that exceed OEM standards in less time. Easy access to critical parts allows our boiler repairs to swiftly remedy issues from minor refractory repairs to emergency generator tube bank replacements. And this makes us one of the best boiler repairing industries in the world.</Typography>
+                        <Typography className='para'>Repairing is one of the primary specialties of <Link href="/">Airlinx heating ltd</Link>. Our field staff is available 24*7 and has a combined history of literally hundreds of years of service and experience. We can meet the needs of the most complex boiler systems. We also repair or rebuild boilers that exceed OEM standards in less time. Easy access to critical parts allows our boiler repairs to swiftly remedy issues from minor refractory repairs to emergency generator tube bank replacements. And this makes us one of the best boiler repairing industries in the world.</Typography>
                         <Typography className='para'>We have a true understanding of, downtime loss of production and approach repair projects with a sense of urgency. Our on-call boiler repair groups are available 24*7 and can be on-site within hours of your initial call. Our trucks act as rolling boiler parts departments and include the best operational services immediately.</Typography>
                         <Typography className='para'>If your boiler is forced to be down for an extended period, then we also arrange for rental boilers. This helps you to relax and count on us.</Typography>
                       </Container>
@@ -233,7 +233,7 @@ const BoilerRepair = () => {
                             <ListItemText primary="24*7 services." />
                           </ListItem>
                         </List>
-                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing thebest boiler repair services. So, when you are looking for a home <Link href="/https://teressenheating.ca/boilers/">boiler company</Link> in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
+                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing thebest boiler repair services. So, when you are looking for a home <Link href="/https://airlinxheating.ca/boilers/">boiler company</Link> in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
                       </Container>
                     </section>
                   </Grid>

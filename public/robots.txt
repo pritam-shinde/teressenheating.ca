@@ -2,4 +2,4 @@ User-agent: *
 Allow : /
 Disallow: /blog/[slug]/
 
-Sitemap: http://teressenheating.ca/sitemap.xml
+Sitemap: https://airlinxheating.ca/sitemap.xml

@@ -29,7 +29,7 @@ const AcInstallation = () => {
   return (
     <>
       <Head>
-        <title>Air Conditioning installation services | Teressenheating </title>
+        <title>Air Conditioning installation services | Airlinxheating </title>
         <meta name="description" content="The best air conditioning installation services for residential and commercial ac systems are here. We have the best prices and come with a 100% satisfaction guarantee." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/ac-installation/" />
@@ -41,7 +41,7 @@ const AcInstallation = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen AC installation services are always on-point" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx AC installation services are always on-point" variant="h2" />
                   <Typography className='para'>With over decades of work experience, we have been providing quality services across the world. We are a locally-owned and operated organization that provides on-point air conditioning services.
                   </Typography>
                 </Box>

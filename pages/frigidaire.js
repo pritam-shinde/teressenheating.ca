@@ -41,8 +41,8 @@ const Frigidaire = () => {
   return (
     <>
       <Head>
-        <title>Frigidaire Heat Pump Maintenance in Canada | Teressenheating</title>
-        <meta name="description" content="Frigidaire's Heat Pump Maintenance Plan in Teressenheating ensures that you and your family are protected from the costly consequences of an HVAC breakdown." />
+        <title>Frigidaire Heat Pump Maintenance in Canada | Airlinxheating</title>
+        <meta name="description" content="Frigidaire's Heat Pump Maintenance Plan in Airlinxheating ensures that you and your family are protected from the costly consequences of an HVAC breakdown." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/frigidaire/" />
       </Head>
@@ -138,7 +138,7 @@ const Frigidaire = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -253,7 +253,7 @@ const Frigidaire = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
-                  <SectionalHeading simpletext="Teressen takes care of everything" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx takes care of everything" variant="h2" />
                   <List>
                     <ListItem>
                       <ListItemIcon>

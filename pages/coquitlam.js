@@ -31,8 +31,8 @@ const Coquitlam = () => {
   return (
     <>
       <Head>
-        <title>Quality AC Installation Services in Coquitlam | Teressenheating</title>
-        <meta name="description" content="If you need quality AC installation services in Coquitlam, contact Teressen Heating. We offer emergency service and financing options to make your home more comfortable." />
+        <title>Quality AC Installation Services in Coquitlam | Airlinxheating</title>
+        <meta name="description" content="If you need quality AC installation services in Coquitlam, contact Airlinx Heating. We offer emergency service and financing options to make your home more comfortable." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/coquitlam/" />
       </Head>
@@ -124,10 +124,10 @@ const Coquitlam = () => {
         "serviceType": "AC Installation Services In Coquitlam",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/coquitlam/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/coquitlam/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const Coquitlam = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -181,7 +181,7 @@ const Coquitlam = () => {
                       <Image layout='responsive' src={CoquitlamLoc} alt="Lafarge Lake Coquitlam" title='Lafarge Lake Coquitlam' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s AC installation services in Coquitlam will give you the best of everything</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s AC installation services in Coquitlam will give you the best of everything</Typography>
                       <Typography className='para'>When it comes to <Link href="/furnace-inspection/">furnace installation</Link>, heating and maintenance, we have always been one of the leading brands to help you with quality <Link href="/ac-installation/">AC installation services</Link> in Coquitlam. We make sure that everything is done at a relative pace with affordable pricing. We also make sure that you don&apos; have to worry about anything. We take the charge of making sure that your tune-ups are done regularly in Coquitlam and nearby areas. You can easily book us online or can call us for quick assistance. Our executives will make sure to solve all your queries and provide reliable and trustworthy services.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -193,7 +193,7 @@ const Coquitlam = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

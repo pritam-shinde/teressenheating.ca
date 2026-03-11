@@ -41,8 +41,8 @@ const ConcordAir = () => {
   return (
     <>
       <Head>
-        <title>Concord Heating and Cooling Systems Service Expert | Teressenheating</title>
-        <meta name="description" content="Teressen Heating offers complete HVAC service for commercial and residential customers of Concord Heating. We offer 24/7 heating and cooling services." />
+        <title>Concord Heating and Cooling Systems Service Expert | Airlinxheating</title>
+        <meta name="description" content="Airlinx Heating offers complete HVAC service for commercial and residential customers of Concord Heating. We offer 24/7 heating and cooling services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/concord-air/" />
       </Head>
@@ -138,7 +138,7 @@ const ConcordAir = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -253,7 +253,7 @@ const ConcordAir = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
-                  <SectionalHeading simpletext="Teressen takes care of everything" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx takes care of everything" variant="h2" />
                   <List>
                     <ListItem>
                       <ListItemIcon>

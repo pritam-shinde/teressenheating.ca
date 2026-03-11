@@ -101,7 +101,7 @@ const Service = () => {
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography variant='h3' gutterBottom className="text-white">AC Repairing</Typography>
-                                                                <Typography className='text-white'>Residential air conditioning repair is offered by the family-run business Teressen Heating and Air Conditioning. Regardless of the time of day, we have the knowledge to quickly fix your heating system...</Typography>
+                                                                <Typography className='text-white'>Residential air conditioning repair is offered by the family-run business Airlinx Heating and Air Conditioning. Regardless of the time of day, we have the knowledge to quickly fix your heating system...</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--blue'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -110,7 +110,7 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                     <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={s3} alt="Teressen Expert Technician Cooling Service" className='img-fluid' title='Teressen Expert Technician Cooling Service' />
+                                                            <Image layout='responsive' src={s3} alt="Airlinx Expert Technician Cooling Service" className='img-fluid' title='Airlinx Expert Technician Cooling Service' />
                                                             <Box p={2} className={Styles.titleContainer}>
                                                             <Typography variant='h3' className="text-white">AC Maintaince</Typography>
                                                             </Box>
@@ -162,7 +162,7 @@ const Service = () => {
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
                                                                 <Typography variant='h3' gutterBottom className="text-white">Boiler</Typography>
-                                                                <Typography className='text-white'>Teressen has been offering professional boiler setup, maintenance, and repair services. Teressen, a seasoned pioneer in the home heating sector, takes care of all your heating requirements with first-rate service at competitive prices.</Typography>
+                                                                <Typography className='text-white'>Airlinx has been offering professional boiler setup, maintenance, and repair services. Airlinx, a seasoned pioneer in the home heating sector, takes care of all your heating requirements with first-rate service at competitive prices.</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>

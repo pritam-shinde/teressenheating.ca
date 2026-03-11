@@ -40,8 +40,8 @@ const BoilerService = () => {
   return (
     <>
       <Head>
-        <title>Trusted Boiler Installation Service in Canada | Teressen</title>
-        <meta name="description" content="Choose Teressen for trusted boiler installation services in Canada. Our experienced technicians provide maintenance and repair. Contact us today" />
+        <title>Trusted Boiler Installation Service in Canada | Airlinx</title>
+        <meta name="description" content="Choose Airlinx for trusted boiler installation services in Canada. Our experienced technicians provide maintenance and repair. Contact us today" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-service/" />
       </Head>
@@ -145,7 +145,7 @@ const BoilerService = () => {
 
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen boiler repair and maintenance service: Quality, trust, and affordability assured" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx boiler repair and maintenance service: Quality, trust, and affordability assured" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -159,8 +159,8 @@ const BoilerService = () => {
                             <Image layout='responsive' src={boiler} alt="boiler service" />
                           </Grid>
                           <Grid item xs={12} md={6}>
-                            <Typography className='para'>Are you in need of reliable and affordable boiler services for your home? Then, Teressen heating ltd is your expert solution. We are one of the <Link href="/boilers-maintenance/">top-rated boiler maintenance and repair service</Link> providers near you. We are here to help you get quick residential boiler repair services. With over years of experience, we can quickly get the best possible solutions for you and diagnose any issue with your boiler system. So why wait? Call us today for all your boiler-related issues.</Typography>
-                            <Typography>Teressen has always been a perfect choice for all your boiler servicing needs in Canada. We are a professional and reliable company which</Typography>
+                            <Typography className='para'>Are you in need of reliable and affordable boiler services for your home? Then, Airlinx heating ltd is your expert solution. We are one of the <Link href="/boilers-maintenance/">top-rated boiler maintenance and repair service</Link> providers near you. We are here to help you get quick residential boiler repair services. With over years of experience, we can quickly get the best possible solutions for you and diagnose any issue with your boiler system. So why wait? Call us today for all your boiler-related issues.</Typography>
+                            <Typography>Airlinx has always been a perfect choice for all your boiler servicing needs in Canada. We are a professional and reliable company which</Typography>
                           </Grid>
                           <Grid item xs={12} className="pt-0 m-0">
                             <Typography className='para'>needs no introduction. We have an extensive experience in the industry, and we make sure that your boiler is up and running quickly. You can also call us today and get a free consultation. Also, make sure that your home is ready with our quick boiler and repair services. Our experts will have your system up and running in no time so that you sit, relax, chill and stay warm all winter long. </Typography>
@@ -173,13 +173,13 @@ const BoilerService = () => {
                         <Box p={3}>
                           <SectionalHeading simpletext="Boiler system maintenance" variant="h2" align={width > 600 ? 'left' : 'center'} />
                           <Typography className='para'>To keep your boiler unit in good working condition, it is necessary to operate it safely and efficiently. It is also important that basic system maintenance should be performed at regular intervals. As one of the most qualified, reputed, and experienced names in the boiler industry and Canada, you can count on us. You can trust us to provide the best boiler repair services.</Typography>
-                          <Typography className='para'>An improper boiler installation can be dangerous and results in serious injury and major damage. Boiler repair and maintenance must be performed by a highly-trained and certified professional. All Teressen technicians are qualified with the knowledge and ability to perform a professional analysis of the home, and building layout, and also ensure water lines are of the appropriate size.</Typography>
+                          <Typography className='para'>An improper boiler installation can be dangerous and results in serious injury and major damage. Boiler repair and maintenance must be performed by a highly-trained and certified professional. All Airlinx technicians are qualified with the knowledge and ability to perform a professional analysis of the home, and building layout, and also ensure water lines are of the appropriate size.</Typography>
                         </Box>
                       </Container>
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen best boiler services, maintenance, and repair" variant="h2" align="left" />
+                        <SectionalHeading simpletext="Airlinx best boiler services, maintenance, and repair" variant="h2" align="left" />
                         <Typography className='para'>The process industry like yours depends on heat transfer equipment like steam boilers to get the job done. So, when you need an emergency service, you should call professionals who not only understand the features of your equipment, but also the complex nature of your boiler.</Typography>
                       </Container>
                     </section>

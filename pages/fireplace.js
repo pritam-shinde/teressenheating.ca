@@ -29,7 +29,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Gas Fireplace Installation, Repair, Services | Teressenheating </title>
+        <title>Gas Fireplace Installation, Repair, Services | Airlinxheating </title>
         <meta name="description" content="Gas Fireplace Installation, Repair, & Services. We offer the best installation for all types of gas fireplaces and inserts, as well as fireplace repair services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/fireplace/" />
@@ -41,7 +41,7 @@ const index = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen Gas Fire Plan Installation And Repair Services Are Number One Always" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx Gas Fire Plan Installation And Repair Services Are Number One Always" variant="h2" />
                   <Typography className='para'>We are the father of quality repairing services. Hence, we provide professional furnace installation services. We have certified HVAC technicians near you that solve all your problems. Also, all our technicians and installers are licensed experts who have passed background checks.</Typography>
                 </Box>
               </Grid>

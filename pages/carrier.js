@@ -41,14 +41,14 @@ const Carrier = () => {
 
   const brandDetailparagraph = [
 
-    { id: 'branddetail-1', text: "You would like to know what kind of repairing services you can get from Teressen's HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes." },
-    { id: 'branddetail-2', text: "We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Teressen's multiple business licenses can fix any brand and provide you with the best possible assistance." }
+    { id: 'branddetail-1', text: "You would like to know what kind of repairing services you can get from Airlinx's HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes." },
+    { id: 'branddetail-2', text: "We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Airlinx's multiple business licenses can fix any brand and provide you with the best possible assistance." }
 
   ]
   return (
     <>
       <Head>
-        <title>Certified Carrier Furnace Technician Services | Teressenheating</title>
+        <title>Certified Carrier Furnace Technician Services | Airlinxheating</title>
         <meta name="description" content="We are your local Carrier furnace experts. We have been providing quality furnace service since long . Call us today for furnace repair, installation & replacement." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/carrier/" />
@@ -145,7 +145,7 @@ const Carrier = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6}>

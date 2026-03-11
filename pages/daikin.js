@@ -43,7 +43,7 @@ const Daikin = () => {
   return (
     <>
       <Head>
-        <title>Daikin Furnace & Heat Pump Installation Service Provider | Teressen</title>
+        <title>Daikin Furnace & Heat Pump Installation Service Provider | Airlinx</title>
         <meta name="description" content="We are the best Daikin Furnace and heat pump installation, maintenance, and repair experts. Call us for a free in-home estimate. We will help you with an expert solution." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/daikin/" />
@@ -140,7 +140,7 @@ const Daikin = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -206,7 +206,7 @@ const Daikin = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s Daikin products servicing makes you stress-free' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Airlinx&apos;s Daikin products servicing makes you stress-free' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>

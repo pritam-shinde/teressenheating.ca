@@ -41,7 +41,7 @@ const Coleman = () => {
   return (
     <>
       <Head>
-        <title>Coleman heating Experienced Technicians | Teressenheating</title>
+        <title>Coleman heating Experienced Technicians | Airlinxheating</title>
         <meta name="description" content="Whether you need a furnace, air conditioner, or any other heating or cooling equipment, we will diagnose & repair your Coleman heating system quickly." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/coleman/" />
@@ -138,7 +138,7 @@ const Coleman = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">

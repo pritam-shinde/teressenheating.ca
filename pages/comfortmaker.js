@@ -37,12 +37,12 @@ const Comfortmaker = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have trained Comfortmaker HVAC experienced professionals.","Our technicians are well-trained and skilled.","We are the best Comfortmaker heating and installation service provider.","Teressen's Heating and Air conditioning services has been providing heating services proudly in the world."]
+  const ListArray = ["We have trained Comfortmaker HVAC experienced professionals.","Our technicians are well-trained and skilled.","We are the best Comfortmaker heating and installation service provider.","Airlinx's Heating and Air conditioning services has been providing heating services proudly in the world."]
   return (
     <>
     <Head>
-    <title>Comfortmaker Heating Pump Installation Service Provider  | Teressen</title>
-    <meta name="description" content="The Teressen Heating Company installs Comfortmaker heating pumps and provides their customers with the most up-to-date installation in the industry."/>
+    <title>Comfortmaker Heating Pump Installation Service Provider  | Airlinx</title>
+    <meta name="description" content="The Airlinx Heating Company installs Comfortmaker heating pumps and provides their customers with the most up-to-date installation in the industry."/>
     <meta name="robots" content="index"/>
     <link rel="canonical" href="/comfortmaker/"/>
   </Head>
@@ -138,7 +138,7 @@ const Comfortmaker = () => {
                     <Grid container>
                       <Grid item xs={6}>
                         <Box p={3}>
-                          <Image src={BlueLogo} alt="teressen heating" layout="responsive"/>
+                          <Image src={BlueLogo} alt="Airlinx heating" layout="responsive"/>
                         </Box>
                       </Grid>
                       <Grid item xs={6} className="d-flex align-items-center">
@@ -181,7 +181,7 @@ const Comfortmaker = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={12} sm={6} md={4}>
                         <Box p={3} className="border--grey">
-                          <Image src={BBB} alt="teressen heating" layout="responsive"/>
+                          <Image src={BBB} alt="Airlinx heating" layout="responsive"/>
                         </Box>
                       </Grid>
                       <Grid item xs={12} sm={6} md={4}>
@@ -204,7 +204,7 @@ const Comfortmaker = () => {
             <Box p={3}>
               <Grid container>
                 <Grid item xs={12} md={11}>
-                  <BrandDetails title='Teressen&apos;s comfortmaker products servicing works the best' list={true} ListArray={ListArray} />
+                  <BrandDetails title='Airlinx&apos;s comfortmaker products servicing works the best' list={true} ListArray={ListArray} />
                 </Grid>
               </Grid>
             </Box>

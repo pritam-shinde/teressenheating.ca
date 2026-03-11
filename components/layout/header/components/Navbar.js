@@ -44,7 +44,7 @@ const Navbar = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box className='d-md-flex justify-content-between d-block'>
                   <Link legacyBehavior={true} href="/">
-                    <a className='navbar-brand'><Image title='Teressenheating Logo' layout='responsive' src={blueLogo} alt="Teressenheating Logo" /></a>
+                    <a className='navbar-brand'><Image title='Airlinxheating Logo' layout='responsive' src={blueLogo} alt="Airlinxheating Logo" /></a>
                   </Link>
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -394,7 +394,7 @@ const Navbar = () => {
           </Button>
           <Link className='nav-link' legacyBehavior={true} href="/">
             <a className="navbar-brand">
-              <Image src={blueLogo} alt="Terresenheating Logo" title='Teressenheating Logo' layout='responsive' />
+              <Image src={blueLogo} alt="Terresenheating Logo" title='Airlinxheating Logo' layout='responsive' />
             </a>
           </Link>
           <Box>
@@ -404,7 +404,7 @@ const Navbar = () => {
             <Box className="d-flex justify-content-center align-items-center">
               <Link className='nav-link' legacyBehavior={true} href="/">
                 <a className="navbar-brand">
-                  <Image src={greyLogo} alt="Terresenheating Logo" title='Teressenheating Logo' layout='responsive' />
+                  <Image src={greyLogo} alt="Terresenheating Logo" title='Airlinxheating Logo' layout='responsive' />
                 </a>
               </Link>
             </Box>

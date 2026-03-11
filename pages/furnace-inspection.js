@@ -38,8 +38,8 @@ const FurnaceInspection = () => {
   return (
     <>
        <Head>
-        <title>Furnace Installation & Repair Services in Canada | Teressen</title>
-        <meta name="description" content="Teressen offers professional furnace installation and repair services in Canada. Our experienced technicians provide quality workmanship at competitive rates." />
+        <title>Furnace Installation & Repair Services in Canada | Airlinx</title>
+        <meta name="description" content="Airlinx offers professional furnace installation and repair services in Canada. Our experienced technicians provide quality workmanship at competitive rates." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/furnace-inspection/" />
       </Head>
@@ -51,10 +51,10 @@ const FurnaceInspection = () => {
           "serviceType": "Furnace Inspection",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffurnace.2dabca27.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffurnace.2dabca27.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/furnace-inspection/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffurnace.2dabca27.webp&w=1920&q=75",
+          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Ffurnace.2dabca27.webp&w=1920&q=75",
+          "url": "https://airlinxheating.ca/furnace-inspection/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -86,7 +86,7 @@ const FurnaceInspection = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
@@ -111,7 +111,7 @@ const FurnaceInspection = () => {
                           <Grid item xs={12} md={6}>
                             <Box>
                               <SectionalHeading blacktext="Furnace" blueText="service and repair" variant="h2" />
-                              <Typography className='para'>Teressen heating ltd provides one of the best furnace installation and repair services in Canada. We have been working continuously in <Link href="/commercial-hvac/">HVAC services</Link> and have played a crucial role in the Canadian fire safety association. We take care of installation, repair, and furnace maintenance work for years with love,</Typography>
+                              <Typography className='para'>Airlinx heating ltd provides one of the best furnace installation and repair services in Canada. We have been working continuously in <Link href="/commercial-hvac/">HVAC services</Link> and have played a crucial role in the Canadian fire safety association. We take care of installation, repair, and furnace maintenance work for years with love,</Typography>
                             </Box>
                           </Grid>
                           <Grid item xs={12} className="m-0 pt-0">
@@ -125,7 +125,7 @@ const FurnaceInspection = () => {
                     <section className='mt-md-3 mt-2 bg--grey'>
                       <Container maxWidth="xxl">
                         <Box p={3}>
-                          <SectionalHeading simpletext="So, why choose Teressen's furnace inspection services" variant="h2" align={width > 600 ? 'left' : 'center'} />
+                          <SectionalHeading simpletext="So, why choose Airlinx's furnace inspection services" variant="h2" align={width > 600 ? 'left' : 'center'} />
                           <Typography className='para'>It is because we have never failed to follow all the annual fire safety inspection guidelines. We strictly adhere to all the norms and make sure that we help you with the best of everything. So, here are the things that make us different from the crowd:</Typography>
                           <List>
                             {
@@ -146,7 +146,7 @@ const FurnaceInspection = () => {
                         <Box mt={3}>
                           <Grid container>
                             <Grid item xs={12} md={6}>
-                              <Typography className='para'><Link href="/">Teressen heating ltd</Link> understands the importance of emergency HVAC services which are needed for residential heating. It is difficult to live without cooling and heating systems these days. So, we make sure that we help you with the best residential heating and home HVAC services which includes system repairing, furnace installation and repair, rooftop unit repair, and central heating system maintenance services.</Typography>
+                              <Typography className='para'><Link href="/">Airlinx heating ltd</Link> understands the importance of emergency HVAC services which are needed for residential heating. It is difficult to live without cooling and heating systems these days. So, we make sure that we help you with the best residential heating and home HVAC services which includes system repairing, furnace installation and repair, rooftop unit repair, and central heating system maintenance services.</Typography>
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Image layout='responsive' src={HomeFurnace} alt="Residential Furnace" />
@@ -161,7 +161,7 @@ const FurnaceInspection = () => {
                     <section className='mt-md-3 mt-2'>
                       <Container maxWidth="xxl">
                         <Box>
-                          <SectionalHeading simpletext="Teressen's services that make us different from the crowd" variant="h2" />
+                          <SectionalHeading simpletext="Airlinx's services that make us different from the crowd" variant="h2" />
                           <List>
                             <ListItem>
                               <ListItemIcon>
@@ -182,7 +182,7 @@ const FurnaceInspection = () => {
                               <ListItemText primary={<strong>Our service for all brands</strong>} secondary="We do services for all brands like Rheem, Goodman, Carrier, Lennox, and Trane." />
                             </ListItem>
                           </List>
-                          <Typography className='para'>Teressen professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your professional furnace installation services that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
+                          <Typography className='para'>Airlinx professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your professional furnace installation services that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
                         </Box>
                       </Container>
                     </section>

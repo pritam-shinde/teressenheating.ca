@@ -32,8 +32,8 @@ const Burnaby = () => {
   return (
     <>
       <Head>
-        <title>Furnace Installer Services in Burnaby | Teressenheating</title>
-        <meta name="description" content="At Teressen Heating and Air Conditioning Ltd, we're committed to supplying the best furnace installation service in Burnaby. We offer free quotes and consultations." />
+        <title>Furnace Installer Services in Burnaby | Airlinxheating</title>
+        <meta name="description" content="At Airlinx Heating and Air Conditioning Ltd, we're committed to supplying the best furnace installation service in Burnaby. We offer free quotes and consultations." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/burnaby/" />
       </Head>
@@ -125,10 +125,10 @@ const Burnaby = () => {
         "serviceType": "HAVC Burnaby",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/burnaby/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/burnaby/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -164,7 +164,7 @@ const Burnaby = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -182,8 +182,8 @@ const Burnaby = () => {
                       <Image layout='responsive' src={BurnabyLoc} alt="Choklit Park" title='Choklit Park' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
-                      <Typography className='para'>Teressen&apos;s heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
+                      <Typography className='para'>Airlinx&apos;s heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
                       <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only <Link href="/commercial-hvac/">HVAC suppliers</Link> in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
@@ -195,7 +195,7 @@ const Burnaby = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="What makes Teressen different?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="What makes Airlinx different?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />

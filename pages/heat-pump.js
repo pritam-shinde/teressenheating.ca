@@ -29,7 +29,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Experts Heat Pump Installation Services | Teressen Heating</title>
+        <title>Experts Heat Pump Installation Services | Airlinx Heating</title>
         <meta name="description" content="We provide the most competitive and efficient heat pump installation services. The best way to get the most out of your heat pump is to install it right." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/heat-pump/" />
@@ -41,8 +41,8 @@ const index = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen provides the best heat pumping services" variant="h2" />
-                  <Typography className='para'>When you choose Teressen's heating services, you are assured of highly professional services that meet local codes. We are experts in heat pump installation so that you can just sit, relax and chill. We are available 24*7 to help you with any emergencies which arise. We are licensed and certified so you can count on us for everything.</Typography>
+                  <SectionalHeading simpletext="Airlinx provides the best heat pumping services" variant="h2" />
+                  <Typography className='para'>When you choose Airlinx's heating services, you are assured of highly professional services that meet local codes. We are experts in heat pump installation so that you can just sit, relax and chill. We are available 24*7 to help you with any emergencies which arise. We are licensed and certified so you can count on us for everything.</Typography>
                 </Box>
               </Grid>
             </Grid>

@@ -50,8 +50,8 @@ const Brand = () => {
       {
         hydration ? <>
           <Head>
-            <title>HVAC Services Provider for all Brands | Teressenheating</title>
-            <meta name="description" content="At Teressen Heating, we specialize in heating, ventilation, and air conditioning installation services for all major brands like Rheem, Carrier etc. Call us today!" />
+            <title>HVAC Services Provider for all Brands | Airlinxheating</title>
+            <meta name="description" content="At Airlinx Heating, we specialize in heating, ventilation, and air conditioning installation services for all major brands like Rheem, Carrier etc. Call us today!" />
             <meta name="robots" content="index" />
             <link rel="canonical" href="/brand/" />
           </Head>
@@ -220,7 +220,7 @@ const Brand = () => {
                       <Grid container spacing={5}>
                         <Grid item xs={12} md={6}>
                           <Box>
-                            <SectionalHeading simpletext="At Teressen, we service all your brands." variant="h2" />
+                            <SectionalHeading simpletext="At Airlinx, we service all your brands." variant="h2" />
                             <List>
                               <ListItem>
                                 <ListItemIcon>

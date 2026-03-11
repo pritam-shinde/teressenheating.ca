@@ -41,8 +41,8 @@ const HeilHVAC = () => {
   return (
     <>
       <Head>
-        <title>Heil Heating and Cooling Experience Service Provider | Teressenheating</title>
-        <meta name="description" content="Teressen Heating has been the trusted choice for heating, cooling, and air quality solutions for a long. Expertise in Heil Heating and Cooling systems Services." />
+        <title>Heil Heating and Cooling Experience Service Provider | Airlinxheating</title>
+        <meta name="description" content="Airlinx Heating has been the trusted choice for heating, cooling, and air quality solutions for a long. Expertise in Heil Heating and Cooling systems Services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/heil-hvac/" />
       </Head>
@@ -138,7 +138,7 @@ const HeilHVAC = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image src={BlueLogo} alt="teressen heating" layout="responsive" />
+                              <Image src={BlueLogo} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -181,7 +181,7 @@ const HeilHVAC = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={BBB} alt="teressen heating" layout="responsive" />
+                              <Image src={BBB} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>

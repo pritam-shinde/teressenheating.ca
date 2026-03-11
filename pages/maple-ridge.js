@@ -30,8 +30,8 @@ const MapleRidge = () => {
   return (
     <>
     <Head>
-        <title>Furnace Heating & Air Conditioning Service in Maple Ridge | Teressen</title>
-        <meta name="description" content="When your furnace heating or air conditioner is in need of service or repair, count on the pros at Teressenheating. We offer a wide range of services. Call us today!" />
+        <title>Furnace Heating & Air Conditioning Service in Maple Ridge | Airlinx</title>
+        <meta name="description" content="When your furnace heating or air conditioner is in need of service or repair, count on the pros at Airlinxheating. We offer a wide range of services. Call us today!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/maple-ridge/" />
       </Head>
@@ -123,10 +123,10 @@ const MapleRidge = () => {
         "serviceType": "Maple Ridge Furnace Heating & Air Conditioning Services",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fmaple-ridge.a55c4d0d.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fmaple-ridge.a55c4d0d.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/maple-ridge/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fmaple-ridge.a55c4d0d.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fmaple-ridge.a55c4d0d.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/maple-ridge/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -162,7 +162,7 @@ const MapleRidge = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -180,8 +180,8 @@ const MapleRidge = () => {
                       <Image layout='responsive' src={MapleRidgeLoc} alt="City of Maple Ridge" title='City of Maple Ridge' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s Heating And Air Conditioning Services At Maple Ridge</Typography>
-                      <Typography className='para'>Teressen&apos;s air conditioning services at Maple Ridge are one of the best services you can get. We have professional furnace installation services from certified HVAC technicians near you. Our Technicians and installers are licensed professionals who look after everything. We are just a call away when you need those professional maple furnace heating and air conditioning services. Our certified experts will reach you as soon as possible. We understand your problem and, help you with the best possible solutions.</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s Heating And Air Conditioning Services At Maple Ridge</Typography>
+                      <Typography className='para'>Airlinx&apos;s air conditioning services at Maple Ridge are one of the best services you can get. We have professional furnace installation services from certified HVAC technicians near you. Our Technicians and installers are licensed professionals who look after everything. We are just a call away when you need those professional maple furnace heating and air conditioning services. Our certified experts will reach you as soon as possible. We understand your problem and, help you with the best possible solutions.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>
@@ -192,7 +192,7 @@ const MapleRidge = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

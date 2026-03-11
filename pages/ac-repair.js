@@ -29,7 +29,7 @@ const AcRepair = () => {
   return (
     <>
       <Head>
-        <title>Air Conditioning Repair services | Teressenheating </title>
+        <title>Air Conditioning Repair services | Airlinxheating </title>
         <meta name="description" content="Our air conditioning repair services include any type of AC repair, installation, replacement or tune-ups for both residential and commercial customers." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/ac-repair/" />
@@ -41,7 +41,7 @@ const AcRepair = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen AC repair services are 24*7 for you" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx AC repair services are 24*7 for you" variant="h2" />
                   <Typography className='para'>With over decades of work experience, we have been providing quality services across the world. We are a locally-owned and operated organization that provides on-point air conditioning services.
                   </Typography>
                 </Box>

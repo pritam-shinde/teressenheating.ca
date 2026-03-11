@@ -40,13 +40,13 @@ const Keeprite = () => {
 
   const brandDetails = [
     { id: 'branddetail-1', text: "Correct Keeprite furnace maintenance is mandatory to prevent your home from fire hazards. These furnaces are well-liked since they are affordable and effective. But these eventual malfunction due to some technical issues." },
-    { id: 'branddetail-1', text: "So, it is necessary to get in touch with a furnace repair company if you find any problems with this furnace. As a result, you should also avoid other big issues, because it will save you time and money. Fortunately, Teressen HVAC services are at your service. Also, you can count on us because our experts have years of work experience in installing and repairing your furnaces." },
+    { id: 'branddetail-1', text: "So, it is necessary to get in touch with a furnace repair company if you find any problems with this furnace. As a result, you should also avoid other big issues, because it will save you time and money. Fortunately, Airlinx HVAC services are at your service. Also, you can count on us because our experts have years of work experience in installing and repairing your furnaces." },
   ]
   return (
     <>
       <Head>
-        <title>Keeprite Furnace Maintenance Services | Teressenheating</title>
-        <meta name="description" content="Keeprite furnaces are the most dependable furnaces on the market, but they need routine maintenance. Teressen offers maintenance to keep your furnace operating properly." />
+        <title>Keeprite Furnace Maintenance Services | Airlinxheating</title>
+        <meta name="description" content="Keeprite furnaces are the most dependable furnaces on the market, but they need routine maintenance. Airlinx offers maintenance to keep your furnace operating properly." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/keeprite/" />
       </Head>
@@ -142,7 +142,7 @@ const Keeprite = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">

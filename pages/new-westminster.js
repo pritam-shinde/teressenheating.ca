@@ -124,10 +124,10 @@ const NewWestminar = () => {
         "serviceType": "New Westminster Furnace Repair And Air Conditioning Services",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fnew-westminster.e2af1906.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fnew-westminster.e2af1906.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/new-westminster/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fnew-westminster.e2af1906.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fnew-westminster.e2af1906.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/new-westminster/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const NewWestminar = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -181,7 +181,7 @@ const NewWestminar = () => {
                       <Image layout='responsive' src={NewWestminsterLoc} alt="The City of New Westminster" title='The City of New Westminster' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen’s Furnace Repair Services At New Westminster</Typography>
+                      <Typography variant='h2'>Airlinx’s Furnace Repair Services At New Westminster</Typography>
                       <Typography className='para'>A good thing about being the best service provider is that we get to connect with people. We solve your problems and make sure that everything works the best. Our <Link href="/air-conditioning-service/">air conditioning services</Link> at New Westminster will solve all your concerns and make you live a stress-free life. We also make sure to serve you to the fullest. Call us when you face any issue, and our certified technicians will reach you as soon as possible.</Typography>
                       <Typography className='para'> With a group of trained and certified professionals, we are always <Link href="/emergency/">available 24*7*365 days</Link> and personally look after everything. We understand your problems and make sure that we lead you throughout the process of <Link href="/boilers/">installation, repair, and maintenance</Link>.</Typography>
                       <Box mt={3}>
@@ -194,7 +194,7 @@ const NewWestminar = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

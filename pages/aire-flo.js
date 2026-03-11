@@ -43,8 +43,8 @@ const AireFlo = () => {
   return (
     <>
       <Head>
-        <title>Aire-Flo Heating & Cooling Services | Teressenheating</title>
-        <meta name="description" content="Teressen Heating will help you with an expert solution for Air Flo heating and Cooling Services by coming to your home and discussing your comfort needs." />
+        <title>Aire-Flo Heating & Cooling Services | Airlinxheating</title>
+        <meta name="description" content="Airlinx Heating will help you with an expert solution for Air Flo heating and Cooling Services by coming to your home and discussing your comfort needs." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/aire-flo/" />
       </Head>
@@ -140,7 +140,7 @@ const AireFlo = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">

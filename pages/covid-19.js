@@ -16,7 +16,7 @@ const Covid19 = () => {
   return (
     <>
       <Head>
-        <title>Covid - teressenheating.ca</title>
+        <title>Covid - Airlinxheating.ca</title>
         <meta name="description" content="" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/covid19/" />

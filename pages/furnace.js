@@ -29,8 +29,8 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Furnace Service Repair Installation and Replacement | Teressen Heating</title>
-        <meta name="description" content="Teressen Heating and Air Conditioning, We offer the most comprehensive furnace service repair, installation, and replacement in the area. Book an Appointment Now!" />
+        <title>Furnace Service Repair Installation and Replacement | Airlinx Heating</title>
+        <meta name="description" content="Airlinx Heating and Air Conditioning, We offer the most comprehensive furnace service repair, installation, and replacement in the area. Book an Appointment Now!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/furnace/" />
       </Head>
@@ -41,7 +41,7 @@ const index = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen's furnace service repair installation and replacement services are always top-notched" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx's furnace service repair installation and replacement services are always top-notched" variant="h2" />
                   <Typography className='para'>We are the father of trained experts. Hence, we provide professional furnace installation services. We have certified HVAC technicians near you that solve all your problems. Also, all our technicians and installers are licensed experts who have passed background checks.</Typography>
                 </Box>
               </Grid>

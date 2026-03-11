@@ -37,12 +37,12 @@ const Luxair = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have trained Luxaire HVAC experienced professionals.", "Our technicians are well-trained and skilled.", "We are the best Luxaire heating and installation service provider.", "Teressen's Heating and Air conditioning services has been providing heating services proudly in the world."]
+  const ListArray = ["We have trained Luxaire HVAC experienced professionals.", "Our technicians are well-trained and skilled.", "We are the best Luxaire heating and installation service provider.", "Airlinx's Heating and Air conditioning services has been providing heating services proudly in the world."]
   return (
     <>
       <Head>
-        <title>Luxaire HVAC Service Experts for Your Home  | Teressenheating</title>
-        <meta name="description" content="Teressen service experts, heating and air conditioning specialists can help you find the perfect Luxaire HVAC system for your home. Visit us today to find out more!" />
+        <title>Luxaire HVAC Service Experts for Your Home  | Airlinxheating</title>
+        <meta name="description" content="Airlinx service experts, heating and air conditioning specialists can help you find the perfect Luxaire HVAC system for your home. Visit us today to find out more!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/luxaire/" />
       </Head>
@@ -138,7 +138,7 @@ const Luxair = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -203,7 +203,7 @@ const Luxair = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s Luxaire product servicing is the best' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Airlinx&apos;s Luxaire product servicing is the best' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>

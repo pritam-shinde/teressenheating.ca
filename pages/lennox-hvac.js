@@ -37,7 +37,7 @@ const LennoxHVAC = () => {
   return (
     <>
       <Head>
-        <title>Lennox HVAC Systems Installation and Service Dealer | Teressenheating</title>
+        <title>Lennox HVAC Systems Installation and Service Dealer | Airlinxheating</title>
         <meta name="description" content="We are the Lennox dealer specialize in Lennox products installation and services We have experienced technicians who ensure that your system is running smoothing." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/lennox-hvac/" />
@@ -50,10 +50,10 @@ const LennoxHVAC = () => {
           "serviceType": "Lennox HVAC ",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/lennox-hvac/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
+          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
+          "url": "https://airlinxheating.ca/lennox-hvac/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -85,7 +85,7 @@ const LennoxHVAC = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
@@ -93,7 +93,7 @@ const LennoxHVAC = () => {
 
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen your Lennox HVAC systems have certified technicians" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx your Lennox HVAC systems have certified technicians" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -120,7 +120,7 @@ const LennoxHVAC = () => {
                     <section className='mt-md-3 mt-2 bg--grey'>
                       <Container maxWidth="xxl">
                         <Box p={3}>
-                          <SectionalHeading simpletext="Teressen is one of the top-rated companies that specialize in Lennox products installation and services" variant="h2" align={width > 600 ? 'left' : 'center'} />
+                          <SectionalHeading simpletext="Airlinx is one of the top-rated companies that specialize in Lennox products installation and services" variant="h2" align={width > 600 ? 'left' : 'center'} />
                           <Typography className='para'>So, when you are looking for someone who has <Link href="/commercial-hvac/">HVAC experience</Link>, it is crucial to find the one who will work hard until your satisfaction is assured. With the right experts available, we make sure that there are no delays in your work. We are here to assist you 24*7 to ensure you with optimal indoor air quality by helping you with equipment that is maintained regularly as per the manufacturer&apos;s recommendations. Also, these systems help you ensure protection from potential malfunctions resulting due to dirt buildup. This leads to not only increasing energy bills but also safety hazards such as carbon monoxide poisoning if left just like that.</Typography>
                           <Typography className='para'>Now, installing a new heating and <Link href="/air-conditioning-service/">cooling system</Link> is one of the biggest decisions you will make. Our certified experts understand that each home is different and they need different solutions. We work closely with homeowners like you to assure stress-free free living. So, whatever installation problems you are facing, just make sure that you give us a call today.</Typography>
                         </Box>

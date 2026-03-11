@@ -41,7 +41,7 @@ const Kenmore = () => {
   return (
     <>
       <Head>
-        <title>Kenmore HVAC Services - Professional Technicians | Teressen Heating</title>
+        <title>Kenmore HVAC Services - Professional Technicians | Airlinx Heating</title>
         <meta name="description" content="Tereesen provides you with the Kenmore HVAC heating and cooling equipment service with sophisticated, quality-driven, and comfortable. Call Us Now!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/kenmore/" />
@@ -138,7 +138,7 @@ const Kenmore = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -253,7 +253,7 @@ const Kenmore = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
-                  <SectionalHeading simpletext="Teressen takes care of everything" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx takes care of everything" variant="h2" />
                   <List>
                     <ListItem>
                       <ListItemIcon>

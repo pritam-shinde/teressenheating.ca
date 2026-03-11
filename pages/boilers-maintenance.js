@@ -39,8 +39,8 @@ const BoilerMaintainance = () => {
   return (
     <>
     <Head>
-        <title>Trusted Boiler Maintenance Services in Canada | Teressen</title>
-        <meta name="description" content="We Teressen boiler maintenance services provider in Canada. we offer comprehensive boiler services including installation and repair. Contact us today." />
+        <title>Trusted Boiler Maintenance Services in Canada | Airlinx</title>
+        <meta name="description" content="We Airlinx boiler maintenance services provider in Canada. we offer comprehensive boiler services including installation and repair. Contact us today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-maintenance/" />
       </Head>
@@ -162,7 +162,7 @@ const BoilerMaintainance = () => {
                           </Grid>
                           <Grid item xs={12} md={6}>
                             <Box>
-                              <Typography className='para'> Are you looking for a trusted and affordable boiler maintenance service in Canada? Then you are at the right place. Our technical experts work 24*7 to give you the best boiler maintenance and repair services. We are always here to help you so you do not hesitate to call us at any time. Teressen is the perfect name for all your boiler maintenance problems in Canada. </Typography>
+                              <Typography className='para'> Are you looking for a trusted and affordable boiler maintenance service in Canada? Then you are at the right place. Our technical experts work 24*7 to give you the best boiler maintenance and repair services. We are always here to help you so you do not hesitate to call us at any time. Airlinx is the perfect name for all your boiler maintenance problems in Canada. </Typography>
                               <Typography className='para'>Our team of experienced professionals makes sure that we take care of everything, right from inspecting your units to repairing any damage. </Typography>
                             </Box>
                           </Grid>
@@ -183,7 +183,7 @@ const BoilerMaintainance = () => {
                   <Grid container spacing={3}>
                   <Grid item xs={12}>
                   <box>
-                  <SectionalHeading variant='h2' simpletext='No need to worry, because Teressen is your savior:'/>
+                  <SectionalHeading variant='h2' simpletext='No need to worry, because Airlinx is your savior:'/>
                   <Typography className=''> When it comes to us, we are one of the most experienced companies in Canada. We have years of expertise in all things related to house heating problems. We offer our clients affordably-priced options for any model they might be looking at. We are always there to guide your decision-making process so that whatever choice suits you, you go with the best. So, next time when you have boiler services near you, you can count on us. We are the most trusted boiler repair partner who takes care of everything. </Typography>
                   </box>
                   </Grid>
@@ -215,13 +215,13 @@ const BoilerMaintainance = () => {
                   <section className='mt-md-3 mt-2'>
                     <Container maxWidth="xxl">
                       <Box>
-                        <SectionalHeading simpletext="Long-term benefits of Teressen's boiler maintenance and repair services:" variant="h2" />
+                        <SectionalHeading simpletext="Long-term benefits of Airlinx's boiler maintenance and repair services:" variant="h2" />
                         <List>
                           <ListItem>
                             <ListItemIcon>
                               <CheckCircleOutline className='text--blue' />
                             </ListItemIcon>
-                            <ListItemText>Having an authorized boiler maintenance and repair expert evaluates your equipment. You may avoid explosions, hot flue gas leaks, and  <Link href='https://teressenheating.ca/boilers/'><a>the boiler</a> </Link> explosion. </ListItemText>
+                            <ListItemText>Having an authorized boiler maintenance and repair expert evaluates your equipment. You may avoid explosions, hot flue gas leaks, and  <Link href='https://airlinxheating.ca/boilers/'><a>the boiler</a> </Link> explosion. </ListItemText>
                           </ListItem>
                           <ListItem>
                             <ListItemIcon>

@@ -31,8 +31,8 @@ const NorthVancouver = () => {
   return (
     <>
       <Head>
-        <title>Air Conditioning Services in North Vancouver | Teressenheating</title>
-        <meta name="description" content="Teressen Heating Canada offers comprehensive heating, ventilation and air conditioning services to commercial and residential clients in North Vancouver." />
+        <title>Air Conditioning Services in North Vancouver | Airlinxheating</title>
+        <meta name="description" content="Airlinx Heating Canada offers comprehensive heating, ventilation and air conditioning services to commercial and residential clients in North Vancouver." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/north-vancouver/" />
       </Head>
@@ -124,10 +124,10 @@ const NorthVancouver = () => {
         "serviceType": "Heating And Air Conditioning North Vancouver",
         "provider": {
           "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FNorth-Vancouver.47b39ff8.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FNorth-Vancouver.47b39ff8.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/north-vancouver/",
+          "name": "Airlinx Heating & Air Conditioning",
+        "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FNorth-Vancouver.47b39ff8.webp&w=1920&q=75",
+        "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FNorth-Vancouver.47b39ff8.webp&w=1920&q=75",
+        "url": "https://airlinxheating.ca/north-vancouver/",
         "telephone": "+1-604-363-6622",
         "priceRange": "$$$",
         "address": {
@@ -163,7 +163,7 @@ const NorthVancouver = () => {
         "sameAs": [
           "https://www.facebook.com/profile.php?id=100088431184715",
           "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
+          "https://www.pinterest.com.au/airlinxheating/"
         ]
         }
       }`
@@ -181,8 +181,8 @@ const NorthVancouver = () => {
                       <Image layout='responsive' src={NorthVancouverLoc} alt="North Vancouver Mountains" title='North Vancouver Mountains' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s heating and air conditioning services are now in North Vancouver</Typography>
-                      <Typography className='para'>To find the best installation and replacement services in North Vancouver, you need expert guidance. Teressen&apos;s best heating and air conditioning services, repairs, and tune-ups in North Vancouver are indeed one of the best services. We have certified experts who look after everything. They also make sure that you live a stress-free life. So, when you have <Link href="/boilers/">installation, repair, and maintenance</Link> related issues, we are just a call away. We will serve you with the best installation, maintenance, and repairing services. Our clients have also reviewed us as one of the <Link href="/air-conditioning-service/">best air conditioning services</Link> in North Vancouver.</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s heating and air conditioning services are now in North Vancouver</Typography>
+                      <Typography className='para'>To find the best installation and replacement services in North Vancouver, you need expert guidance. Airlinx&apos;s best heating and air conditioning services, repairs, and tune-ups in North Vancouver are indeed one of the best services. We have certified experts who look after everything. They also make sure that you live a stress-free life. So, when you have <Link href="/boilers/">installation, repair, and maintenance</Link> related issues, we are just a call away. We will serve you with the best installation, maintenance, and repairing services. Our clients have also reviewed us as one of the <Link href="/air-conditioning-service/">best air conditioning services</Link> in North Vancouver.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>
@@ -193,7 +193,7 @@ const NorthVancouver = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

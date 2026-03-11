@@ -32,8 +32,8 @@ const CommercialHVAC = () => {
   return (
     <>
      <Head>
-        <title>Trusted Commercial HVAC Services in Canada | Teressenheating</title>
-        <meta name="description" content="Choose Teressen Heating for commercial HVAC services in Canada. Our experienced technicians will assist you with preventive maintenance and repairs. Contact us today." />
+        <title>Trusted Commercial HVAC Services in Canada | Airlinxheating</title>
+        <meta name="description" content="Choose Airlinx Heating for commercial HVAC services in Canada. Our experienced technicians will assist you with preventive maintenance and repairs. Contact us today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/commercial-hvac/" />
       </Head>
@@ -77,10 +77,10 @@ const CommercialHVAC = () => {
           "serviceType": "Commercial HVAC Services",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/commercial-hvac/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
+          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
+          "url": "https://airlinxheating.ca/commercial-hvac/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -112,7 +112,7 @@ const CommercialHVAC = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
@@ -137,8 +137,8 @@ const CommercialHVAC = () => {
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <SectionalHeading simpletext='Teressen commercial HVAC services assuring the quality of life:' variant="h2" />
-                                <Typography className='para'> Teressen commercial HVAC services is a name for the best commercial HVAC repair services in Canada. We regularly provide commercial HVAC services like boiler, furnace services, and commercial air conditioner services.</Typography>
+                                <SectionalHeading simpletext='Airlinx commercial HVAC services assuring the quality of life:' variant="h2" />
+                                <Typography className='para'> Airlinx commercial HVAC services is a name for the best commercial HVAC repair services in Canada. We regularly provide commercial HVAC services like boiler, furnace services, and commercial air conditioner services.</Typography>
                                 <Typography className='para'>We specialize in commercial air conditioning, repairs, maintenance, and installation services. This is done for buildings of all sizes and businesses. So, whether you have a low-rise commercial building or a massive office, we are always there for your assistance.</Typography>
 
                               </Box>
@@ -155,8 +155,8 @@ const CommercialHVAC = () => {
                     <section className='mt-md-3 mt-2 bg--grey'>
                       <Container maxWidth="xxl">
                         <Box p={3}>
-                          <SectionalHeading simpletext=" Teressen commercial heating and AC services is a one-stop destination for you:" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                          <Typography className='para'>Three things that make us your favorite are: Quality, trust, and affordability. So, at Teressen we provide you with a wide variety of commercial HVAC services at relative ease. With over years of experience, we have been helping businesses with all our commercial HVAC repairs, maintenance, and replacement services at affordable costs.
+                          <SectionalHeading simpletext=" Airlinx commercial heating and AC services is a one-stop destination for you:" variant="h2" align={width > 600 ? 'left' : 'center'} />
+                          <Typography className='para'>Three things that make us your favorite are: Quality, trust, and affordability. So, at Airlinx we provide you with a wide variety of commercial HVAC services at relative ease. With over years of experience, we have been helping businesses with all our commercial HVAC repairs, maintenance, and replacement services at affordable costs.
                           </Typography>
                           <Typography className='para'>Our expert HVAC services have the required knowledge and skills to work on different types of commercial HVAC systems. Also, here are a few HVAC components we have worked upon:
                           </Typography>
@@ -205,7 +205,7 @@ const CommercialHVAC = () => {
                             </ListItem>
                           </List>
                           <SectionalHeading simpletext="Reliable and responsive HVAC services when you need them the most:" variant='h2' />
-                          <Typography className='para'>Teressen <Link href="/heating-services/">commercial heating services</Link> in Canada is one of the fastest HVAC services experts with a positive approach. We provide our clients with one-stop quality services so they can count on us for everything. We aim to provide security and reliability through the best HVAC services. There are no hidden fees associated with our quality services. So, do not waste a second and just call us, we are here for you.
+                          <Typography className='para'>Airlinx <Link href="/heating-services/">commercial heating services</Link> in Canada is one of the fastest HVAC services experts with a positive approach. We provide our clients with one-stop quality services so they can count on us for everything. We aim to provide security and reliability through the best HVAC services. There are no hidden fees associated with our quality services. So, do not waste a second and just call us, we are here for you.
                           </Typography>
                         </Box>
                       </Container>

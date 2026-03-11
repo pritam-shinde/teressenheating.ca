@@ -25,8 +25,8 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Teressen Heating and Air Conditioning Service in Canada</title>
-        <meta name="description" content="Teressen Heating in Canada offers high-quality heating and air conditioning services throughout the country. We offer a wide range of services to meet your needs." />
+        <title>Airlinx Heating and Air Conditioning Service in Canada</title>
+        <meta name="description" content="Airlinx Heating in Canada offers high-quality heating and air conditioning services throughout the country. We offer a wide range of services to meet your needs." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/" />
       </Head>

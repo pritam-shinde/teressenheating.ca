@@ -40,8 +40,8 @@ const Boiler = () => {
   return (
     <>
        <Head>
-        <title>Trusted Boiler Maintenance Services in Canada | Teressen</title>
-        <meta name="description" content="We Teressen boiler maintenance services provider in Canada. we offer comprehensive boiler services including installation and repair. Contact us today." />
+        <title>Trusted Boiler Maintenance Services in Canada | Airlinx</title>
+        <meta name="description" content="We Airlinx boiler maintenance services provider in Canada. we offer comprehensive boiler services including installation and repair. Contact us today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-maintenance/" />
       </Head>
@@ -153,10 +153,10 @@ const Boiler = () => {
           "serviceType": "Boiler Services",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.7a365e03.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.7a365e03.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/boilers/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.7a365e03.webp&w=1920&q=75",
+          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.7a365e03.webp&w=1920&q=75",
+          "url": "https://airlinxheating.ca/boilers/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -188,7 +188,7 @@ const Boiler = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
@@ -208,12 +208,12 @@ const Boiler = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image layout='responsive' src={ReapearWaterHeater} alt="Teressen Boiler repairing services" title='Worker Teressen Boiler repairing services' />
+                                <Image layout='responsive' src={ReapearWaterHeater} alt="Airlinx Boiler repairing services" title='Worker Airlinx Boiler repairing services' />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Typography className='para'>Teressen Boiler repairing services in Canada can help with any problems that arise with your boiler; whether you need boiler replacement or some guidance for boiler installation. We offer the best boiler repairing services that can give you a variety of solutions for your home&apos;s comfort needs.</Typography>
+                                <Typography className='para'>Airlinx Boiler repairing services in Canada can help with any problems that arise with your boiler; whether you need boiler replacement or some guidance for boiler installation. We offer the best boiler repairing services that can give you a variety of solutions for your home&apos;s comfort needs.</Typography>
                                 <Typography className='para'>We have quality solutions for all your problems and help you solve any issues that come up with your home&apos;s heating system. </Typography>
                               </Box>
                             </Grid>
@@ -233,7 +233,7 @@ const Boiler = () => {
                             <Grid item xs={12}>
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Boiler repairing and installation services in Canada:' />
-                                <Typography className='para'>Teressen heating ltd has been providing expert boiler repair, installation, and <Link href="https://teressenheating.ca/boilers-maintenance/">boiler maintenance</Link> in Canada for years now. As an experienced leader in the home heating industry, Teressen takes care of all your heating problems with top-notched services at affordable prices.</Typography>
+                                <Typography className='para'>Airlinx heating ltd has been providing expert boiler repair, installation, and <Link href="https://airlinxheating.ca/boilers-maintenance/">boiler maintenance</Link> in Canada for years now. As an experienced leader in the home heating industry, Airlinx takes care of all your heating problems with top-notched services at affordable prices.</Typography>
                                 <Typography className='para'>Quality you can always count on: It is our job to make sure, that your home is always comfortable and warm. We have the best products to ensure you that everything is done right the first time.
                                 </Typography>
                               </Box>
@@ -264,7 +264,7 @@ const Boiler = () => {
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Experts in the heating industry:' />
                                 <Typography className='para'>So, if you have any questions related to your boiler repair and installation, then, give us a call instantly. Our experts are ready to assist you in everything.</Typography>
-                                <Typography className='para'>Teressen heating ltd specializes in all types of <Link href="https://teressenheating.ca/boilers-repair/">boiler repair </Link>and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
+                                <Typography className='para'>Airlinx heating ltd specializes in all types of <Link href="https://airlinxheating.ca/boilers-repair/">boiler repair </Link>and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
                               </Box>
                             </Grid>
                           </Grid>
@@ -277,8 +277,8 @@ const Boiler = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12}>
                               <Box>
-                                <SectionalHeading variant='h2' simpletext=' Benefits of professional boiler services from Teressen:' />
-                                <Typography className='para'>Our professional <Link href="https://teressenheating.ca/boilers-service/">boiler services </Link>ensure that your boiler installation, maintenance, or repair work is done spot-on. Our employees are highly trained and are equipped with all skills. They have the knowledge and understanding of different boiler systems. So, hiring a professional to service your heating system saves you money and time. Also, we are the pioneers in the boiler industry for providing quality, trust, and affordability.</Typography>
+                                <SectionalHeading variant='h2' simpletext=' Benefits of professional boiler services from Airlinx:' />
+                                <Typography className='para'>Our professional <Link href="https://airlinxheating.ca/boilers-service/">boiler services </Link>ensure that your boiler installation, maintenance, or repair work is done spot-on. Our employees are highly trained and are equipped with all skills. They have the knowledge and understanding of different boiler systems. So, hiring a professional to service your heating system saves you money and time. Also, we are the pioneers in the boiler industry for providing quality, trust, and affordability.</Typography>
                                 <Typography className='para'>A properly installed sized boiler system will heat your place and ensure that your utility bills stay low and your system operation is quiet.</Typography>
                                 <Typography className='para'>So, do not delay when you notice signs of boiler disrepair. Consult us today!</Typography>
                               </Box>
@@ -293,8 +293,8 @@ const Boiler = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12}>
                               <Box>
-                                <SectionalHeading variant='h2' simpletext='Why choose Teressen boiler maintenance and repair services?' />
-                                <Typography className='para'>Teressen delivers top-level products and is a reliable boiler partner to support your home&apos;s safer operation. Just install, a top-of-the-line boiler system in your home to provide you with energy-saving options.</Typography>
+                                <SectionalHeading variant='h2' simpletext='Why choose Airlinx boiler maintenance and repair services?' />
+                                <Typography className='para'>Airlinx delivers top-level products and is a reliable boiler partner to support your home&apos;s safer operation. Just install, a top-of-the-line boiler system in your home to provide you with energy-saving options.</Typography>
 
                               </Box>
                             </Grid>
@@ -306,14 +306,14 @@ const Boiler = () => {
                       <Container maxWidth="xxl">
                         <Box p={3}>
                           <SectionalHeading simpletext="Our boiler repair and installation services:" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                          <Typography className='para'> Canada can get cold in the winter. So, necessitating a reliable method for home heating is a must. Boilers help in heating your home and heating the water. Hence, Teressen offers the best boiler services in Canada because:
+                          <Typography className='para'> Canada can get cold in the winter. So, necessitating a reliable method for home heating is a must. Boilers help in heating your home and heating the water. Hence, Airlinx offers the best boiler services in Canada because:
                           </Typography>
                            <List>
                             <ListItem>
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText>We have the best <Link href="https://teressenheating.ca/boilers-installation/">boiler installation</Link>  and replacement: You can get quality performance from your boiler system by ensuring that you have the best products and installation techniques to support it.</ListItemText>
+                              <ListItemText>We have the best <Link href="https://airlinxheating.ca/boilers-installation/">boiler installation</Link>  and replacement: You can get quality performance from your boiler system by ensuring that you have the best products and installation techniques to support it.</ListItemText>
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>

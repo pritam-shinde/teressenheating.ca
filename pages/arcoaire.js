@@ -42,7 +42,7 @@ const Arcoaire = () => {
   return (
     <>
     <Head>
-    <title>HVAC Installation and Service for Arcoaire Heating Systems | Teressen</title>
+    <title>HVAC Installation and Service for Arcoaire Heating Systems | Airlinx</title>
     <meta name="description" content="AC and heating installation, service, repair, and tune-ups for Arcoaire furnaces. Let us help you get the most from your investment. Book an Appointment Now!"/>
     <meta name="robots" content="index"/>
     <link rel="canonical" href="/arcoaire/"/>
@@ -139,7 +139,7 @@ const Arcoaire = () => {
                     <Grid container>
                       <Grid item xs={6}>
                         <Box p={3}>
-                          <Image src={BlueLogo} alt="teressen heating" layout="responsive"/>
+                          <Image src={BlueLogo} alt="Airlinx heating" layout="responsive"/>
                         </Box>
                       </Grid>
                       <Grid item xs={6} className="d-flex align-items-center">
@@ -182,7 +182,7 @@ const Arcoaire = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={12} sm={6} md={4}>
                         <Box p={3} className="border--grey">
-                          <Image src={BBB} alt="teressen heating" layout="responsive"/>
+                          <Image src={BBB} alt="Airlinx heating" layout="responsive"/>
                         </Box>
                       </Grid>
                       <Grid item xs={12} sm={6} md={4}>

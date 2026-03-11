@@ -37,7 +37,7 @@ const Ameristar = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have an Ameristar heating and cooling furnace with experienced professionals.", "We provide professional services at affordable prices.", "Our technicians are licensed and insured.", "We provide quality Ameristar heating and cooling installation, maintenance, and repair services.", "So, if you are looking for cooling, heating, and air quality services from expert technicians near you, please call us.", "Teressen's heating and air conditioning services have been proudly providing heating services."]
+  const ListArray = ["We have an Ameristar heating and cooling furnace with experienced professionals.", "We provide professional services at affordable prices.", "Our technicians are licensed and insured.", "We provide quality Ameristar heating and cooling installation, maintenance, and repair services.", "So, if you are looking for cooling, heating, and air quality services from expert technicians near you, please call us.", "Airlinx's heating and air conditioning services have been proudly providing heating services."]
 
   return (
     <>
@@ -139,7 +139,7 @@ const Ameristar = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -205,7 +205,7 @@ const Ameristar = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title="Teressen's Ameristar heating and cooling products services are one of the best services in town" list={true} ListArray={ListArray} />
+                      <BrandDetails title="Airlinx's Ameristar heating and cooling products services are one of the best services in town" list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>

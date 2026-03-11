@@ -35,8 +35,8 @@ const Emergency = () => {
   return (
     <>
       <Head>
-        <title>Affordable Heating and Cooling Emergency Services in Canada | Teressen</title>
-        <meta name="description" content="Teressen's heating services offer the best 24*7 emergency heating and cooling services in Canada. We serve the best affordable , trusted and quality service." />
+        <title>Affordable Heating and Cooling Emergency Services in Canada | Airlinx</title>
+        <meta name="description" content="Airlinx's heating services offer the best 24*7 emergency heating and cooling services in Canada. We serve the best affordable , trusted and quality service." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/emergency/" />
       </Head>
@@ -48,10 +48,10 @@ const Emergency = () => {
           "serviceType": "Emergency Services",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "@id": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "url": "https://teressenheating.ca/emergency/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
+          "@id": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
+          "url": "https://airlinxheating.ca/emergency/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -83,7 +83,7 @@ const Emergency = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
@@ -91,7 +91,7 @@ const Emergency = () => {
 
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's emergency services are affordable, trustworthy, and come with good quality" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx's emergency services are affordable, trustworthy, and come with good quality" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -100,7 +100,7 @@ const Emergency = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>In the winter season, we need our furnace to keep our home cozy. But what if your furnace breaks down? In that case, you need an instant solution that is fast and reliable too. That is why the experts at Teressen offer superior HVAC emergency <Link href="/tankless-water-heaters/">water heater repair services</Link> to meet your everyday needs. No matter the time, we are always there for your assistance.</Typography>
+                        <Typography className='para'>In the winter season, we need our furnace to keep our home cozy. But what if your furnace breaks down? In that case, you need an instant solution that is fast and reliable too. That is why the experts at Airlinx offer superior HVAC emergency <Link href="/tankless-water-heaters/">water heater repair services</Link> to meet your everyday needs. No matter the time, we are always there for your assistance.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -139,14 +139,14 @@ const Emergency = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen's 24*7 evergreen service day and night" variant="h2" align="left" />
+                        <SectionalHeading simpletext="Airlinx's 24*7 evergreen service day and night" variant="h2" align="left" />
                         <Typography className='para'>Our technicians have over years of experience and they serve you without any delays. We are there even on holidays, weekends, and after hours. We know how important it is to have the best possible heating and cooling services when the weather hits hard for you. So, we stand with you 24*7*365 days for you.</Typography>
                       </Container>
                     </section>
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Peace of mind is guaranteed" variant="h2" />
-                        <Typography className='para'><Link href="/">Teressen&apos;s heating ltd services</Link> offer the best 24-hour emergency heating services for you. So, best assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
+                        <Typography className='para'><Link href="/">Airlinx&apos;s heating ltd services</Link> offer the best 24-hour emergency heating services for you. So, best assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2'>
@@ -165,7 +165,7 @@ const Emergency = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Around-the-clock service:</strong>} secondary="Teressen's heating services will never disappoint you. We offer a variety of services to meet your requirements 24*7." />
+                              <ListItemText primary={<strong>Around-the-clock service:</strong>} secondary="Airlinx's heating services will never disappoint you. We offer a variety of services to meet your requirements 24*7." />
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>

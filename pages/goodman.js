@@ -48,8 +48,8 @@ const Goodman = () => {
   return (
     <>
       <Head>
-        <title>Most Trusted Teressen's Goodman Furnace & Ac Repair Services</title>
-        <meta name="description" content="Teressen's Goodman furnace repair service is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you.  " />
+        <title>Most Trusted Airlinx's Goodman Furnace & Ac Repair Services</title>
+        <meta name="description" content="Airlinx's Goodman furnace repair service is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you.  " />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/goodman/" />
       </Head>
@@ -145,7 +145,7 @@ const Goodman = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -227,7 +227,7 @@ const Goodman = () => {
                   <SectionalHeading simpletext="Repairing a Goodman gas furnace is a necessity" variant="h2" />
                   <Typography className='para'>Every heating system requires routine upkeep to function properly. Regular check-ups can prevent costly breakdowns that need costly repairs. Also, if you do not maintain your equipment properly, then you will have to face a lot of risks.</Typography>
                   <Typography className='para'>At times, filters that are dirty and obstructions inside a gas furnace will lead to shutting it off. Also, dirt and dust obstruct smooth airflow and abruptly might switch off. In this case, your household would suffer. So, to extend the life of your furnace, regular check-ups are necessary.</Typography>
-                  <Typography className='para'>The goal of Teressen HVAC is to offer quality services. If the AFUE of your furnace is insufficient, to heat your home, then you should engage technicians to do a Goodman gas furnace repair.</Typography>
+                  <Typography className='para'>The goal of Airlinx HVAC is to offer quality services. If the AFUE of your furnace is insufficient, to heat your home, then you should engage technicians to do a Goodman gas furnace repair.</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -266,7 +266,7 @@ const Goodman = () => {
                       <ListItemText primary="All these processes will assist you in detecting furnace problems. The Goodman furnace's inability to start and subsequent failures to generate any heat is another issue." />
                     </ListItem>
                   </List>
-                  <Typography className='para'>Teressen&apos;s Goodman <Link href="/furnace-inspection/">furnace repair service</Link> is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you. Hence, we make sure that you get our best services. So, just give us a call whenever you are facing any issues with the furnace and we will be right there for your service.</Typography>
+                  <Typography className='para'>Airlinx&apos;s Goodman <Link href="/furnace-inspection/">furnace repair service</Link> is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you. Hence, we make sure that you get our best services. So, just give us a call whenever you are facing any issues with the furnace and we will be right there for your service.</Typography>
                 </Box>
               </Grid>
             </Grid>

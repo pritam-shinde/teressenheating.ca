@@ -9,8 +9,8 @@ const Careers = () => {
   return (
     <>
       <Head>
-        <title>Careers - Heating & Air Conditioning Jobs | Teressenheating </title>
-        <meta name="description" content="Teressen is one of the top employers of HVAC professionals across Canada. Visit our career page to explore the current opportunities in the heating & cooling industry." />
+        <title>Careers - Heating & Air Conditioning Jobs | Airlinxheating </title>
+        <meta name="description" content="Airlinx is one of the top employers of HVAC professionals across Canada. Visit our career page to explore the current opportunities in the heating & cooling industry." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/career/" />
       </Head>
@@ -24,7 +24,7 @@ const Careers = () => {
                   <Box >
                     <Box mb={3}>
                       <SectionalHeading simpletext="Need a relevant job that suits your requirement? Work with us, we are hiring" variant="h2" />
-                      <Typography className='para'>Teressen is one of the top employers of HVAC professionals across the world. So, if you are looking for a rewarding and stable work, then you can definitely get in touch with us.</Typography>
+                      <Typography className='para'>Airlinx is one of the top employers of HVAC professionals across the world. So, if you are looking for a rewarding and stable work, then you can definitely get in touch with us.</Typography>
                     </Box>
                     <Box>
                       <SectionalHeading simpletext="Why us?" variant="h2" />
@@ -32,8 +32,8 @@ const Careers = () => {
                       <Typography className='para'>We proudly offer several industry-leading benefits and perks to our employees. So, that's indeed a reason to join us.</Typography>
                     </Box>
                     <Box mt={3}>
-                      <SectionalHeading simpletext="Teressen: Grow to the fullest!" variant="h2" />
-                      <Typography className='para'>Teressen takes care of its people. With an extensive professional development, competitive compensation and benefits, we have tremendous opportunities for you.</Typography>
+                      <SectionalHeading simpletext="Airlinx: Grow to the fullest!" variant="h2" />
+                      <Typography className='para'>Airlinx takes care of its people. With an extensive professional development, competitive compensation and benefits, we have tremendous opportunities for you.</Typography>
                       <Typography className='para'>We look after our employees because they are the foundation of our success stories. Our company-centric approach provides them a free environment to work.</Typography>
                     </Box>
                   </Box>

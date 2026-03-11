@@ -47,8 +47,8 @@ const Lennox = () => {
   return (
     <>
       <Head>
-        <title>Lennox Air Conditioning Repairs Service Provider | Teressenheating</title>
-        <meta name="description" content="Teressen's heating Air Conditoning repair, installation and maintenance services are the best. So, call us whenever you face any uncertainties with Lennox products ." />
+        <title>Lennox Air Conditioning Repairs Service Provider | Airlinxheating</title>
+        <meta name="description" content="Airlinx's heating Air Conditoning repair, installation and maintenance services are the best. So, call us whenever you face any uncertainties with Lennox products ." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/lennox/" />
       </Head>
@@ -144,7 +144,7 @@ const Lennox = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -209,7 +209,7 @@ const Lennox = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s Lennox AC repair services' brandDetaillArr={brandDetailparagraph} />
+                      <BrandDetails title='Airlinx&apos;s Lennox AC repair services' brandDetaillArr={brandDetailparagraph} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -237,7 +237,7 @@ const Lennox = () => {
                 <Box>
                   <SectionalHeading variant="h2" simpletext='Searching your nearby Lennox furnace expert' />
                   <Typography className='para'>Your search for <Link href="/lennox-hvac/">"Lennox furnace repair near me"</Link> stops on us. We are the right choice for all your reapiring and maintenance issues.</Typography>
-                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. Teressen&apos;s HVAC services will help you with the <Link href="/furnace-inspection/">best furnace repairs</Link> and upkeep.</Typography>
+                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. Airlinx&apos;s HVAC services will help you with the <Link href="/furnace-inspection/">best furnace repairs</Link> and upkeep.</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -260,7 +260,7 @@ const Lennox = () => {
                         </ListItem>)
                       }
                     </List>
-                    <Typography className='para'>Teressen&apos;s heating installation, repair, and maintenance services are the best. So, call us whenever you face any uncertainties with Lennox products.
+                    <Typography className='para'>Airlinx&apos;s heating installation, repair, and maintenance services are the best. So, call us whenever you face any uncertainties with Lennox products.
                     </Typography>
                   </Box>
                   <Box mt={3}>
@@ -268,7 +268,7 @@ const Lennox = () => {
                     <Typography className='para'>Lennox air conditioning repairs are necessary if your room has poor air ventilation. Also, your air conditioner is prone to breakdowns at times. So, it needs regular maintenance. Insufficient ventilation, unfavorable temperatures, warm air, and strange noises are all signs of an inoperable air conditioner.</Typography>
                     <Typography className='para'>Also, poor installation causes your air conditioner to malfunction. Hence, it is necessary to obtain installation guidance and repairs from an expert air conditioning repair firm.
                     </Typography>
-                    <Typography className='para'>Hiring Teressen&apos;s <Link href="/commercial-hvac/">HVAC services</Link> for high-quality installation and maintenance for Lennox air conditioners is the best thing you can do. For a long time, we have been providing installations that would satisfy our customers. We have imparted modern technological development systems that would enhance effectiveness.
+                    <Typography className='para'>Hiring Airlinx&apos;s <Link href="/commercial-hvac/">HVAC services</Link> for high-quality installation and maintenance for Lennox air conditioners is the best thing you can do. For a long time, we have been providing installations that would satisfy our customers. We have imparted modern technological development systems that would enhance effectiveness.
                     </Typography>
                   </Box>
 

@@ -15,7 +15,7 @@ const Topbar = () => {
                                 <Grid item xs={12} sm={3} lg={4}>
                                     <Box>
                                         <Link legacyBehavior={true} href="/" passHref>
-                                            <a className='navbar-brand'><img src={blueLogo.src} alt="Teressenheating Logo" className='img-fluid' title='Teressenheating Logo' /></a>
+                                            <a className='navbar-brand'><img src={blueLogo.src} alt="Airlinxheating Logo" className='img-fluid' title='Airlinxheating Logo' /></a>
                                         </Link>
                                     </Box>
                                 </Grid>

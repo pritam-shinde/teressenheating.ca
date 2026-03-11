@@ -41,8 +41,8 @@ const BoilerInstallation = () => {
   return (
     <>
       <Head>
-        <title>Best Boiler Installation Service in Canada | Teressenheating</title>
-        <meta name="description" content="Teressenheating provides the best boiler installation service in Canada. We offer a range of boiler installation options to suit your needs, contact us." />
+        <title>Best Boiler Installation Service in Canada | Airlinxheating</title>
+        <meta name="description" content="Airlinxheating provides the best boiler installation service in Canada. We offer a range of boiler installation options to suit your needs, contact us." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/boilers-installation/" />
       </Head>
@@ -145,7 +145,7 @@ const BoilerInstallation = () => {
       }
 
       </script>
-      <CommonBanner bg={BoilerInstallationBanner} title="Teressen boiler installation services" color="#fff" variant="h1" />
+      <CommonBanner bg={BoilerInstallationBanner} title="Airlinx boiler installation services" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
@@ -170,8 +170,8 @@ const BoilerInstallation = () => {
                             </Grid>
                             <Grid item xs={12} className="m-0 pt-0">
                               <Box>
-                                <Typography className='para'> So, if you are looking for a hassle-free solution to all your <Link href="/heating-services/">heating problems</Link>, contact Teressen today! We take care of all the boiler heating systems and make sure that we provide a reliable service to all our patrons.</Typography>
-                                <Typography className='para'>Teressen boiler installation is perfect for those who are looking for an energy-efficient and reliable boiler. Our experts will help you choose the perfect boiler for your home and as per your requirements. With Teressen boiler, you will enjoy years of reliable services at the best prices. </Typography>
+                                <Typography className='para'> So, if you are looking for a hassle-free solution to all your <Link href="/heating-services/">heating problems</Link>, contact Airlinx today! We take care of all the boiler heating systems and make sure that we provide a reliable service to all our patrons.</Typography>
+                                <Typography className='para'>Airlinx boiler installation is perfect for those who are looking for an energy-efficient and reliable boiler. Our experts will help you choose the perfect boiler for your home and as per your requirements. With Airlinx boiler, you will enjoy years of reliable services at the best prices. </Typography>
                                 <Typography className='para'>We know that as a homemaker, it is vital for you to find a skilled and experienced boiler installation expert who takes care of everything. To ensure that your new boiler setup provides you with the best heating system, we are always there for your quick assistance.</Typography>
                                 <Typography className='para'>Also, in Canada, there are many boiler installation companies. But, we are the best! We make sure that we not only provide you with the best boiler installation services but also help you by giving you the <Link href="/boilers/">best boiler tips</Link> so that your work becomes easy. </Typography>
                               </Box>
@@ -183,7 +183,7 @@ const BoilerInstallation = () => {
                     <section className='mt-md-3 mt-2 bg--grey'>
                       <Container maxWidth="xxl">
                         <Box p={3}>
-                          <SectionalHeading simpletext="Teressen heating ltd provides boiler installation services for:" variant="h2" align={width > 600 ? 'left' : 'center'} />
+                          <SectionalHeading simpletext="Airlinx heating ltd provides boiler installation services for:" variant="h2" align={width > 600 ? 'left' : 'center'} />
 
                           <List>
                             {
@@ -220,10 +220,10 @@ const BoilerInstallation = () => {
                               <ListItemText primary={<strong>A steam boiler: </strong>} secondary="This boils the water in its tank to produce steam. The steam is then pressurized so that it can fulfill your pipes and move to your radiator to provide heat." />
                             </ListItem>
                           </List>
-                          <Typography className='para'>While both types of boilers are used, hot water boilers are used more because they are more efficient than steam boilers. So, at Teressen we have the right tools and knowledge to take care of your boiler installation. We work friendly and fast to make sure that your boiler is installed properly and efficiently.</Typography>
+                          <Typography className='para'>While both types of boilers are used, hot water boilers are used more because they are more efficient than steam boilers. So, at Airlinx we have the right tools and knowledge to take care of your boiler installation. We work friendly and fast to make sure that your boiler is installed properly and efficiently.</Typography>
                           <Typography className='para'>So, if you need a new boiler installation, boiler replacement, and a boiler heating system, you already know that we are available there right for you!
                           </Typography>
-                          <Typography className='para'><Link href="https://teressenheating.ca/">At Teressen </Link> we rely on cutting-edge heating technology, top-of-the-line tools, and advanced techniques to perform unmatched boiler replacement services for our clients. We are so confident that you will be happy with our quality work because we guarantee 100% customer satisfaction service.
+                          <Typography className='para'><Link href="https://airlinxheating.ca/">At Airlinx </Link> we rely on cutting-edge heating technology, top-of-the-line tools, and advanced techniques to perform unmatched boiler replacement services for our clients. We are so confident that you will be happy with our quality work because we guarantee 100% customer satisfaction service.
                           </Typography>
                         </Box>
                       </Container>

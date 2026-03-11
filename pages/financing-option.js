@@ -36,8 +36,8 @@ const FinancingOption = () => {
   return (
     <>
       <Head>
-        <title>Easy Financing Options for HVAC Services | Teressenheating</title>
-        <meta name="description" content="Teressen heating has financing options to make it easy for you to get the HVAC services you need. We offer flexible payment plans & competitive interest rates. " />
+        <title>Easy Financing Options for HVAC Services | Airlinxheating</title>
+        <meta name="description" content="Airlinx heating has financing options to make it easy for you to get the HVAC services you need. We offer flexible payment plans & competitive interest rates. " />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/financing-option/" />
       </Head>
@@ -49,10 +49,10 @@ const FinancingOption = () => {
           "serviceType": "Financing Option ",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "@id": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "url": "https://teressenheating.ca/financing-option/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
+          "@id": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
+          "url": "https://airlinxheating.ca/financing-option/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -84,14 +84,14 @@ const FinancingOption = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
       }
       </script>
 
-      <CommonBanner bg={Banner} title="Teressen's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />
+      <CommonBanner bg={Banner} title="Airlinx's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
@@ -101,7 +101,7 @@ const FinancingOption = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>We understand how important it is when comfort comes at a cost. It makes us easier to cover the costs which are associated with installing, servicing, and replacing your HVAC systems. Our relationship with <Link href="/">Teressen</Link> makes it possible for our clients to finance these expenses so that they do not have to deal with any delays</Typography>
+                        <Typography className='para'>We understand how important it is when comfort comes at a cost. It makes us easier to cover the costs which are associated with installing, servicing, and replacing your HVAC systems. Our relationship with <Link href="/">Airlinx</Link> makes it possible for our clients to finance these expenses so that they do not have to deal with any delays</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -178,7 +178,7 @@ const FinancingOption = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="What to expect from Teressen?" variant="h2" align="left" />
+                        <SectionalHeading simpletext="What to expect from Airlinx?" variant="h2" align="left" />
                         <List>
                           <ListItem>
                             <ListItemIcon>
@@ -232,7 +232,7 @@ const FinancingOption = () => {
                               <ListItemText primary={<strong>Our service for all brands</strong>} secondary="We do services for all brands like Rheem, Goodman, Carrier, Lennox, and Trane." />
                             </ListItem>
                           </List>
-                          <Typography className='para'>Teressen professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your professional furnace installation services that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
+                          <Typography className='para'>Airlinx professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your professional furnace installation services that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
                         </Box>
                       </Container>
                     </section>

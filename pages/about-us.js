@@ -1,29 +1,28 @@
-import React from 'react'
-import Head from 'next/head'
-import { BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
+import { CheckCircle } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import Head from 'next/head'
+import Image from 'next/legacy/image'
+import { BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/about/tb-compressed.webp'
 import Work from '../public/about/work.webp'
-import Styles from '../styles/About.module.css';
-import { CheckCircle } from '@mui/icons-material'
-import { FaqAndForm, BrandSlider, Locations } from '../sections/sections'
-import Image from 'next/legacy/image'
+import { BrandSlider, FaqAndForm, Locations } from '../sections/sections'
+import Styles from '../styles/About.module.css'
 
 const AboutUs = () => {
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-2", que: "Can you combine heating and coling system?", ans: "Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-6", que: "How Long Does HVAC Installation take?", ans: "Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-7", que: "What Kinds of Warranties Come with My New HVAC Installation?", ans: "Three elements that make Teressen heating Itd different from the crowd are Quality, trust, and affordability.", list: null }
+    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
+    { id: "faq-2", que: "Can you combine heating and coling system?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
+    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
+    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
+    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
+    { id: "faq-6", que: "How Long Does HVAC Installation take?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
+    { id: "faq-7", que: "What Kinds of Warranties Come with My New HVAC Installation?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null }
   ]
 
   return (
     <>
       <Head>
-        <title>About us - Heating & Air Conditioning Services | Teressenheating </title>
+        <title>About us - Heating & Air Conditioning Services | Airlinxheating </title>
         <meta name="description" content="We provide heating & air conditioning solutions for residential & commercial customers in Canada. Request a heating & air conditioning service quote." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/about-us/" />
@@ -44,7 +43,7 @@ const AboutUs = () => {
                     <Grid item xs={12} md={6}>
                       <Box>
                         <Box>
-                          <SectionalHeading simpletext="Teressen Is The Best Company To Work With" variant="h2" align="left" />
+                          <SectionalHeading simpletext="Airlinx Is The Best Company To Work With" variant="h2" align="left" />
                           <Typography className='para'>We are committed to maintaining quality through our efficient working style. We are the only handful GAF certified HVACR contractors in Burnaby who serves you to the fullest. We offer a wide range of heating and cooling services that will keep you safe from high utility bills. So, you can spend more time sitting at home and relaxing for hours. Our experts have been specially trained to keep your family comfortable year-round with our wide range of services. So, you do not have to worry about your home's heating or air conditioning services ever again.</Typography>
                         </Box>
                         <Box mt={3}>
@@ -67,7 +66,7 @@ const AboutUs = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
-                  <SectionalHeading simpletext="Teressen: A name that stands for affordability, quality, and trust!" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx: A name that stands for affordability, quality, and trust!" variant="h2" />
                   <Typography className='para'>We are the leading HVAC contractors in Burnaby since 2015. We provide boilers, air conditioners, heat pumps, hot water tanks, and duct cleaning services with relative ease.
                     Our clients chose us because of our quality, fast and friendly services. We are an organization that is locally operated in Burnaby BC. We are licensed, and insured and provide expert guidance on matters related to our HVAC services. We always make sure that our clients get the best of everything. Hence, your satisfaction is our priority. So, leave all your HVAC worries to us, and rest assured that we will serve you to the fullest. Also, our HVAC standard services are ideal for business and residential environments. So, you can immediately give us a call whenever you need our quick HVAC services.
                   </Typography>
@@ -81,7 +80,7 @@ const AboutUs = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
-                  <SectionalHeading simpletext="Teressen will always be an expert you can count upon" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx will always be an expert you can count upon" variant="h2" />
                   <Typography className='para'>We do furnace repairs and replacements, no matter what size of service you need. And if you need a new water heater or HVAC tune-up, then we have got you covered.
                     We are fully licensed and equipped with all the professional services. Our trained technicians provide reliable services on-site and are well acquainted with all brands like boilers, furnaces, heat pumps, and yet more. We also deal in safety inspection, hot water tanks, air ducts, heating maintenance, and repair services.
                   </Typography>

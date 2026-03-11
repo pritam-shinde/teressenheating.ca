@@ -41,8 +41,8 @@ const Navien = () => {
   return (
     <>
       <Head>
-        <title>Quality and Affordable Services of Navien Furnace  | Teressenheating</title>
-        <meta name="description" content="Teressen heating offers a complete range of high-efficiency Navien furnace and hot water heater products for residential, commercial, and industrial applications." />
+        <title>Quality and Affordable Services of Navien Furnace  | Airlinxheating</title>
+        <meta name="description" content="Airlinx heating offers a complete range of high-efficiency Navien furnace and hot water heater products for residential, commercial, and industrial applications." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/navien/" />
       </Head>
@@ -138,7 +138,7 @@ const Navien = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="teressen heating" />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinx heating" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -181,7 +181,7 @@ const Navien = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' src={BBB} alt="teressen heating" />
+                              <Image layout='responsive' src={BBB} alt="Airlinx heating" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>

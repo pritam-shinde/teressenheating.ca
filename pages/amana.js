@@ -47,7 +47,7 @@ const Amana = () => {
   return (
     <>
     <Head>
-    <title>Amana Furnace and Heating Experienced Technicians | Teressenheating</title>
+    <title>Amana Furnace and Heating Experienced Technicians | Airlinxheating</title>
     <meta name="description" content="Get your Amana furnace serviced by certified technicians, who will make sure your furnace system is operating at peak performance. Call us to Book Now!" />
     <meta name="robots" content="index" />
     <link rel="canonical" href="/amana/" />
@@ -144,7 +144,7 @@ const Amana = () => {
                     <Grid container>
                       <Grid item xs={6}>
                         <Box p={3}>
-                          <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                          <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                         </Box>
                       </Grid>
                       <Grid item xs={6} className="d-flex align-items-center">
@@ -210,7 +210,7 @@ const Amana = () => {
             <Box p={3}>
               <Grid container>
                 <Grid item xs={12} md={11}>
-                  <BrandDetails title='Teressen&apos;s Amana products and services' list={true} ListArray={brandDetailparagraph} />
+                  <BrandDetails title='Airlinx&apos;s Amana products and services' list={true} ListArray={brandDetailparagraph} />
                 </Grid>
               </Grid>
             </Box>

@@ -56,8 +56,8 @@ const Brynt = () => {
     <>
       {
         hydration ? <><Head>
-        <title>Bryant Furnace Services at Teressenheating by Professional Technician</title>
-        <meta name="description" content="Bryant Furnace Services at Teressenheating by Professional Technicians provides you with quality heating services. Contact us Today to Book an Appointment." />
+        <title>Bryant Furnace Services at Airlinxheating by Professional Technician</title>
+        <meta name="description" content="Bryant Furnace Services at Airlinxheating by Professional Technicians provides you with quality heating services. Contact us Today to Book an Appointment." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/bryant/" />
       </Head>
@@ -153,7 +153,7 @@ const Brynt = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -219,7 +219,7 @@ const Brynt = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Certified Bryant HVAC repairing services only at Teressen&apos;s heating ltd' brandDetaillArr={brandDetailparagraph} />
+                      <BrandDetails title='Certified Bryant HVAC repairing services only at Airlinx&apos;s heating ltd' brandDetaillArr={brandDetailparagraph} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -250,7 +250,7 @@ const Brynt = () => {
                     <ListItemIcon>
                       <CheckCircleOutline className='text--blue' />
                     </ListItemIcon>
-                    <ListItemText primary={<strong>Choosing the Bryant model</strong>} secondary="It is mandatory to select which Bryant furnace is best suited for your home and business before installing it. Then based on the capacity and associated components, it is crucial to decide the kind of Bryant furnace model. At Teressen, we select the best equipment to guarantee improved efficiency and consistent comfort levels." />
+                    <ListItemText primary={<strong>Choosing the Bryant model</strong>} secondary="It is mandatory to select which Bryant furnace is best suited for your home and business before installing it. Then based on the capacity and associated components, it is crucial to decide the kind of Bryant furnace model. At Airlinx, we select the best equipment to guarantee improved efficiency and consistent comfort levels." />
                   </ListItem>
                   <ListItem>
                     <ListItemIcon>
