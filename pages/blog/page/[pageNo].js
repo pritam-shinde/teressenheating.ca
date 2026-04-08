@@ -62,7 +62,7 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
             {
                 hydration ? <>
                     <Head>
-                        <title>Blog - teressenheating.ca</title>
+                        <title>Blog - airlinxheating.ca</title>
                         <meta name="description" content="" />
                         <meta name="robots" content="index" />
                         <link rel="canonical" href={`/blog/page/${pageNo}/`} />

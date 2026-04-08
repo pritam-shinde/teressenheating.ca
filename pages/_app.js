@@ -70,7 +70,7 @@ function MyApp({ Component, pageProps }) {
       setHydration(false)
     }
   })
-  const canonicalUrl = (`https://teressenheating.ca/` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  const canonicalUrl = (`https://airlinxheating.ca/` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
   return (<>
     {hydaration ? <>
       <Head>
