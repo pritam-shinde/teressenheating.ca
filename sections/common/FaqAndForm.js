@@ -76,7 +76,7 @@ const FaqAndForm = ({
                           style={{ border: 0 }}
                           allowfullscreen=''
                           loading='lazy'
-                          referrerpolicy='no-referrer-when-downgrade'
+                          referrerPolicy='no-referrer-when-downgrade'
                         ></iframe>
                       </Box>
                     </Grid>
@@ -174,7 +174,7 @@ const FaqAndForm = ({
                             width='100%'
                             style={{ border: 0 }}
                             loading='lazy'
-                            referrerpolicy='no-referrer-when-downgrade'
+                            referrerPolicy='no-referrer-when-downgrade'
                           ></iframe>
                         </Box>
                       </Box>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import JsonLd from '../components/JsonLd'
 import { About, Appointment, BrandSlider, Facilities, FaqAndForm, Hero, Service, Testimonial, WhyChoose } from '../sections/sections'
 
 const index = () => {
@@ -31,9 +32,7 @@ const index = () => {
         <link rel="canonical" href="/" />
       </Head>
       
-      <script type="application/ld+json">
-        {
-          `{
+      <JsonLd json={`{
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [{
@@ -107,9 +106,7 @@ const index = () => {
           Home Warranty"
               }
             }]
-          }`
-        }
-      </script>
+          }`} />
       <main>
         <Hero />
         <Facilities />
