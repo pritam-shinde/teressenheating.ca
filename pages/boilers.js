@@ -43,7 +43,7 @@ const Boiler = () => {
         <title>Trusted Boiler Maintenance Services in Canada | Airlinx</title>
         <meta name="description" content="We Airlinx boiler maintenance services provider in Canada. we offer comprehensive boiler services including installation and repair. Contact us today." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/boilers-maintenance/" />
+        <link rel="canonical" href="/boilers/" />
       </Head>
       <script type="application/ld+json">
       {

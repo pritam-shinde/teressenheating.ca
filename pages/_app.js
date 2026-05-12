@@ -238,13 +238,11 @@ function MyApp({ Component, pageProps }) {
   const handleGoTOTop = () => {
     window.scrollTo(0, 0)
   }
-  const canonicalUrl = (`https://airlinxheating.ca/` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
   return (<>
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
-        <link rel="canonical" href={canonicalUrl} />
       </Head>
  
 

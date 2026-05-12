@@ -191,7 +191,7 @@ const Trane = () => {
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' alt="Work Safe BC Logo" title='Work Safe BC Logo' />
+                              <Image layout='responsive' src={WorkSafe} alt="Work Safe BC Logo" title='Work Safe BC Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
