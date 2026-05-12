@@ -44,7 +44,7 @@ const Viessmann = () => {
         <title>Viessmann Heat Pump & Furnace Experts Technicians | Airlinxheating</title>
         <meta name="description" content="" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/Viessmann/" />
+        <link rel="canonical" href="/viessmann/" />
       </Head>
       <script type="application/ld+json">
       {
