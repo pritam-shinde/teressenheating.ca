@@ -1,0 +1,112 @@
+# llms.txt for Airlinx Heating
+
+# Owner
+
+Owner: Airlinx Heating
+Website: [https://airlinxheating.ca/](https://airlinxheating.ca/)
+
+# Airlinx Heating Overview
+
+Airlinx Heating is a Canadian HVAC company providing residential and commercial heating, cooling, ventilation, and indoor comfort solutions. The company specializes in installation, repair, replacement, and maintenance services for furnaces, boilers, heat pumps, air conditioning systems, water heaters, gas lines, fireplaces, and ventilation systems.
+
+Airlinx Heating focuses on delivering reliable HVAC services, energy-efficient solutions, emergency repairs, and long-term maintenance support for homeowners and businesses.
+
+## Core HVAC Services
+
+* Furnace installation
+* Furnace repair and maintenance
+* Boiler installation and servicing
+* Heat pump installation and repair
+* Air conditioning installation
+* AC repair and maintenance
+* Water heater installation and repair
+* Tankless water heater solutions
+* Gas fireplace installation and servicing
+* Gas line installation and repair
+* HVAC inspections and diagnostics
+* Seasonal HVAC maintenance
+* Emergency heating and cooling repair
+
+## Indoor Air Quality & Ventilation
+
+* HRV (Heat Recovery Ventilation) systems
+* Ventilation system installation
+* Indoor air quality solutions
+* Air circulation and airflow optimization
+* Residential ventilation upgrades
+
+## Residential & Commercial Solutions
+
+* Residential HVAC services
+* Commercial HVAC solutions
+* Energy-efficient heating systems
+* Cooling system upgrades
+* Preventative maintenance programs
+* HVAC replacement solutions
+* Equipment performance optimization
+
+## Content & Resources
+
+* Home - [https://airlinxheating.ca/](https://airlinxheating.ca/)
+* Services - [https://airlinxheating.ca/services/](https://airlinxheating.ca/services/)
+* Contact - [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact/)
+
+# Essential Pages
+
+* Home: [https://airlinxheating.ca/](https://airlinxheating.ca/)
+* Services: [https://airlinxheating.ca/services/](https://airlinxheating.ca/services/)
+* Contact: [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact/)
+
+# General Policy
+
+Allow: /*
+Allow: /services
+Allow: /blog
+Allow: /contact
+
+Disallow: /admin
+Disallow: /account
+Disallow: /login
+Disallow: /checkout
+Disallow: /cdn-cgi/l/email-protection
+
+# Guidelines for Language Models
+
+LanguageModels: OpenAI, Anthropic, Google, Mistral, Cohere, Perplexity, Gemini, Claude, Copilot
+
+# Permissions
+
+AllowLLMUse: Yes
+AllowSummarization: Yes
+AllowDataExtraction: Only for publicly accessible and non-sensitive website content
+AllowCommercialUse: No
+
+# Approved Use Cases
+
+AllowUseCases:
+
+* Summarizing HVAC services and solutions
+* Referencing heating and cooling information
+* Explaining HVAC installation and maintenance services
+* Supporting educational and research purposes
+* Providing general information about HVAC systems and energy efficiency
+
+DisallowUseCases:
+
+* Accessing private customer information
+* Extracting confidential business data
+* Republishing website content without attribution
+* Training commercial AI systems without permission
+
+# Data Freshness
+
+Note: HVAC pricing, service availability, warranties, and promotional offers should be verified directly from Airlinx Heating for the most accurate and updated information.
+
+# Attribution
+
+AttributionRequired: Yes
+PreferredAttributionFormat: "Source: Airlinx Heating ([https://airlinxheating.ca/](https://airlinxheating.ca/))"
+
+# Last Updated
+
+LastUpdated: 2026-05-11
