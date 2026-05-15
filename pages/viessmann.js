@@ -41,8 +41,8 @@ const Viessmann = () => {
   return (
     <>
       <Head>
-        <title>Viessmann Heat Pump & Furnace Experts Technicians | Airlinxheating</title>
-        <meta name="description" content="" />
+        <title>Viessmann Heat Pump & Furnace Experts Technicians</title>
+        <meta name="description" content="Expert Viessmann heat pump & furnace technicians providing reliable installation, repair, and maintenance services you can trust." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/viessmann/" />
       </Head>

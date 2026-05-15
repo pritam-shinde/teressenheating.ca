@@ -31,8 +31,8 @@ const WestVancouver = () => {
   return (
     <>
       <Head>
-        <title>Heating and Air Conditioning Services in West Vancouver | Airlinx</title>
-        <meta name="description" content="We provide heating and air conditioning services to homes and businesses in West Vancouver. We offer repairs, installation, consultation, and emergency service." />
+        <title>Heating and Air Conditioning Services in West Vancouver</title>
+        <meta name="description" content="Heating & air conditioning services in West Vancouver for homes and businesses, including repairs, installation, and emergency service." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/west-vancouver/" />
       </Head>

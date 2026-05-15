@@ -38,7 +38,7 @@ const FurnaceInspection = () => {
   return (
     <>
        <Head>
-        <title>Furnace Installation & Repair Services in Canada | Airlinx</title>
+        <title>Furnace Repair, Installation & Replacement</title>
         <meta name="description" content="Airlinx offers professional furnace installation and repair services in Canada. Our experienced technicians provide quality workmanship at competitive rates." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/furnace-inspection/" />

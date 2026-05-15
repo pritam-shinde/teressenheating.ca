@@ -54,13 +54,14 @@ const Brynt = () => {
   ]
   return (
     <>
-      {
-        hydration ? <><Head>
-        <title>Bryant Furnace Services at Airlinxheating by Professional Technician</title>
+    <Head>
+        <title>Professional Bryant Furnace Services | Airlinx Heating</title>
         <meta name="description" content="Bryant Furnace Services at Airlinxheating by Professional Technicians provides you with quality heating services. Contact us Today to Book an Appointment." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/bryant/" />
       </Head>
+      {
+        hydration ? <>
       <script type="application/ld+json">
       {
         `{
@@ -141,7 +142,7 @@ const Brynt = () => {
       }
     </script>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Brynt" color="#fff" variant="h1"/>
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Bryant" color="#fff" variant="h1"/>
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>

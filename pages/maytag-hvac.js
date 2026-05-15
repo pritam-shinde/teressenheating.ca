@@ -42,8 +42,8 @@ const MaytagHVAC = () => {
   return (
     <>
       <Head>
-        <title>Trained Maytag HVAC Experienced Professionals  | Airlinxheating</title>
-        <meta name="description" content="If your Maytag HVAC is not working properly, you need a qualified and experienced professional to diagnose the problem, Call Airlinx heating for the correct solution. " />
+        <title>Trained Maytag HVAC Experienced Professionals</title>
+        <meta name="description" content="If your Maytag HVAC isn’t working properly, trust Airlinx Heating for expert diagnosis and reliable repair solutions. Call today!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/maytag-hvac/" />
       </Head>

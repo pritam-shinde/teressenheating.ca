@@ -29,7 +29,7 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Gas Fireplace Installation, Repair, Services | Airlinxheating </title>
+        <title>Gas Fireplace Installation & Repair Services</title>
         <meta name="description" content="Gas Fireplace Installation, Repair, & Services. We offer the best installation for all types of gas fireplaces and inserts, as well as fireplace repair services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/fireplace/" />

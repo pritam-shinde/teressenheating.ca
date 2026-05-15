@@ -30,15 +30,15 @@ const WhiteRock = () => {
   ]
   return (
     <>
-        <Head>
-        <title>Heating Installation Services in White-rock | Airlinxheating</title>
-        <meta name="description" content="We offer a wide range of Heating Installation Services, from maintenance to repairs and replacement. Get a quote on a Heating Installation Service in White Rock." />
+      <Head>
+        <title>Heating Installation Services in White-rock</title>
+        <meta name="description" content="Expert heating installation services in White Rock, including maintenance, repairs, and replacements. Get your free quote today!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/white-rock/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -113,12 +113,12 @@ const WhiteRock = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-     {
-       `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Heating Installation Services White Rock",
@@ -167,8 +167,8 @@ const WhiteRock = () => {
         ]
         }
       }`
-     }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Heating Installation Services White Rock" color="#fff" variant="h1" />
         <section>

@@ -30,8 +30,8 @@ const MapleRidge = () => {
   return (
     <>
     <Head>
-        <title>Furnace Heating & Air Conditioning Service in Maple Ridge | Airlinx</title>
-        <meta name="description" content="When your furnace heating or air conditioner is in need of service or repair, count on the pros at Airlinxheating. We offer a wide range of services. Call us today!" />
+        <title>Furnace Heating & Air Conditioning Service in Maple Ridge</title>
+        <meta name="description" content="Airlinx Heating provides expert furnace, heating, and AC repair services you can trust. Fast, reliable service - call today!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/maple-ridge/" />
       </Head>

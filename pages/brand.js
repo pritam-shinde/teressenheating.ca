@@ -47,14 +47,14 @@ const Brand = () => {
 
   return (
     <>
+      <Head>
+        <title>HVAC Services Provider for all Brands | Airlinxheating</title>
+        <meta name="description" content="Airlinx Heating specializes in HVAC installation services for major brands like Rheem and Carrier, delivering reliable comfort solutions. Call today!" />
+        <meta name="robots" content="index" />
+        <link rel="canonical" href="/brand/" />
+      </Head>
       {
         hydration ? <>
-          <Head>
-            <title>HVAC Services Provider for all Brands | Airlinxheating</title>
-            <meta name="description" content="At Airlinx Heating, we specialize in heating, ventilation, and air conditioning installation services for all major brands like Rheem, Carrier etc. Call us today!" />
-            <meta name="robots" content="index" />
-            <link rel="canonical" href="/brand/" />
-          </Head>
           <main>
             <CommonBanner bg={Banner} title="Brand" color="#fff" variant="h1" />
             <section>
@@ -62,7 +62,7 @@ const Brand = () => {
                 <Grid container>
                   <Grid item xs={12} md={10} className="mx-auto">
                     <Box py={5}>
-                      <SectionalHeading blacktext="Brands" blueText="We Carry" variant="h1" align="center" />
+                      <SectionalHeading blacktext="Brands" blueText="We Carry" variant="h2" align="center"  className="fs-1"/>
                       <Box mt={5}>
                         <Grid container spacing={3}>
                           <Grid item xs={6} sm={4} md={3} lg={2}>

@@ -30,8 +30,8 @@ const ServiceArea = () => {
   return (
     <>
       <Head>
-        <title>Trusted Heating Service in All Areas of Canada | Airlinxheating</title>
-        <meta name="description" content="The Airlinx Heating is Canada's trusted heating service company. We provide quality heating installation, repair, and maintenance services in all areas of Canada." />
+        <title>Trusted Heating Service in All Areas of Canada</title>
+        <meta name="description" content="Airlinx Heating is Canada’s trusted heating company, offering expert installation, repair, and maintenance services nationwide." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/service-areas/" />
       </Head>

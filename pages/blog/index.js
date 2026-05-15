@@ -50,7 +50,7 @@ const Blog = ({ data, category }) => {
     <>
       <Head>
         <title>Blog - airlinxheating.ca</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Stay informed with expert HVAC tips, heating solutions, air conditioning advice, and energy-saving insights from Airlinx Heating professionals." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/blog/" />
       </Head>

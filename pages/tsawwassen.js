@@ -30,15 +30,15 @@ const Tsawwasses = () => {
   ]
   return (
     <>
-            <Head>
-        <title>Water Heater & Air Conditioning Services in Tsawwassen | Airlinx</title>
-        <meta name="description" content="We at Terseen Heating and Air Conditioning are committed to providing you with the best water heater and air conditioning services in Tsawwassen. Call us today!" />
+      <Head>
+        <title>Water Heater & Air Conditioning Services in Tsawwassen</title>
+        <meta name="description" content="Airlinx Heating & Air Conditioning offers expert water heater and AC services in Tsawwassen. Call today for reliable service!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/tsawwassen/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -113,12 +113,12 @@ const Tsawwasses = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-     {
-       `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Tsawwassen Water Heater And Air Conditioning Services",
@@ -167,8 +167,8 @@ const Tsawwasses = () => {
         ]
         }
       }`
-     }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Tsawwassen Water Heater and Air Conditioning Services" color="#fff" variant="h1" />
         <section>

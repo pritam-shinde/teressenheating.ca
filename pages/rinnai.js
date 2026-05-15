@@ -42,7 +42,7 @@ const Rinnai = () => {
   return (
     <>
       <Head>
-        <title>Rinnai Heating & Furnace Services at Affordable Price| Airlinxheating</title>
+        <title>Rinnai Heating & Furnace Services at Affordable Price</title>
         <meta name="description" content="Airlinx Heating and Furnace is a leading provider of Rinnai heating and furnace system services. We offer high-quality, affordable products and services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/rinnai/" />
