@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Head from 'next/head';
 import Banner from '../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner } from '../../components/components'
 import { Box, Container, Grid } from '@mui/material';
-import Image from 'next/image'
 
 
 export const getServerSideProps = async (context) => {
@@ -25,71 +24,53 @@ export const getServerSideProps = async (context) => {
 
 const SingleBlog = ({ data, sidebarBlogs, category }) => {
     const [blog] = data
-    const [hydration, setHydration] = useState(false)
-
-    useEffect(() => {
-        if (typeof window !== undefined) {
-            setHydration(true)
-        } else {
-            setHydration(false)
-        }
-    }, [])
 
     return (
         <>
             {
-                hydration ? <>
-                    {
-                        blog ? <>
-                            <Head>
-                                <title>{blog.yoast_head_json ? blog.yoast_head_json.title ? blog.yoast_head_json.title : null : null}</title>
-                                <meta name="description" content={blog.yoast_head_json ? blog.yoast_head_json.description ? blog.yoast_head_json.description : null : null} />
-                                <meta name="robots" content="index" />
-                                <link rel="canonical" href={`/blog/${blog.slug}/`} />
-                            </Head>
-                            <main>
-                                <CommonBanner bg={Banner} blogBanner={true} title={blog ? blog.title ? blog.title.rendered ? blog.title.rendered : null : null : null} />
-                                {
-                                    blog ? <>
-                                        <section>
-                                            <Container maxWidth="xxl">
-                                                <Grid container>
-                                                    <Grid item xs={12} md={10} className="mx-auto">
-                                                        <Box py={5}>
-                                                            <Grid container spacing={5}>
-                                                                <Grid item xs={12} md={8}>
-                                                                        <Box >
-                                                                            {
-                                                                                blog._embedded ? blog._embedded['wp:featuredmedia'] ? blog._embedded['wp:featuredmedia'][0] ? blog._embedded['wp:featuredmedia'][0].source_url ? <>
-                                                                                    <Box mb={3} id="blogContent">
-                                                                                        <img src={blog._embedded['wp:featuredmedia'][0].source_url} alt={blog._embedded['wp:featuredmedia'][0].alt_text} className="img-fluid" />
-                                                                                    </Box>
-                                                                                </> : null : null : null : null
-
-                                                                            }
-                                                                        </Box>
-                                                                        <Box>
-                                                                            {
-                                                                                blog.content ? blog.content.rendered ? <>
-                                                                                    <Box dangerouslySetInnerHTML={{ __html: blog.content.rendered }} />
-                                                                                </> : null : null
-                                                                            }
-                                                                        </Box>
-                                                                </Grid>
-                                                                <Grid item xs={12} md={4}>
-                                                                    <BlogCommonSidebar data={sidebarBlogs} category={category} />
-                                                                </Grid>
-                                                            </Grid>
-                                                        </Box>
-                                                    </Grid>
+                blog ? <>
+                    <Head>
+                        <title>{blog.yoast_head_json ? blog.yoast_head_json.title ? blog.yoast_head_json.title : null : null}</title>
+                        <meta name="description" content={blog.yoast_head_json ? blog.yoast_head_json.description ? blog.yoast_head_json.description : null : null} />
+                        <meta name="robots" content="index" />
+                        <link rel="canonical" href={`/blog/${blog.slug}/`} />
+                    </Head>
+                    <main>
+                        <CommonBanner bg={Banner} blogBanner={true} title={blog ? blog.title ? blog.title.rendered ? blog.title.rendered : null : null : null} />
+                        <section>
+                            <Container maxWidth="xxl">
+                                <Grid container>
+                                    <Grid item xs={12} md={10} className="mx-auto">
+                                        <Box py={5}>
+                                            <Grid container spacing={5}>
+                                                <Grid item xs={12} md={8}>
+                                                    <Box>
+                                                        {
+                                                            blog._embedded ? blog._embedded['wp:featuredmedia'] ? blog._embedded['wp:featuredmedia'][0] ? blog._embedded['wp:featuredmedia'][0].source_url ? <>
+                                                                <Box mb={3} id="blogContent">
+                                                                    <img src={blog._embedded['wp:featuredmedia'][0].source_url} alt={blog._embedded['wp:featuredmedia'][0].alt_text} className="img-fluid" />
+                                                                </Box>
+                                                            </> : null : null : null : null
+                                                        }
+                                                    </Box>
+                                                    <Box>
+                                                        {
+                                                            blog.content ? blog.content.rendered ? <>
+                                                                <Box dangerouslySetInnerHTML={{ __html: blog.content.rendered }} />
+                                                            </> : null : null
+                                                        }
+                                                    </Box>
                                                 </Grid>
-                                            </Container>
-                                        </section>
-                                    </> : null
-                                }
-                            </main>
-                        </> : null
-                    }
+                                                <Grid item xs={12} md={4}>
+                                                    <BlogCommonSidebar data={sidebarBlogs} category={category} />
+                                                </Grid>
+                                            </Grid>
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                            </Container>
+                        </section>
+                    </main>
                 </> : "Loading..."
             }
         </>
