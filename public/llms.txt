@@ -1,11 +1,11 @@
 # llms.txt for Airlinx Heating
 
-# Owner
+## Owner
 
 Owner: Airlinx Heating
 Website: [https://airlinxheating.ca/](https://airlinxheating.ca/)
 
-# Airlinx Heating Overview
+## Airlinx Heating Overview
 
 Airlinx Heating is a Canadian HVAC company providing residential and commercial heating, cooling, ventilation, and indoor comfort solutions. The company specializes in installation, repair, replacement, and maintenance services for furnaces, boilers, heat pumps, air conditioning systems, water heaters, gas lines, fireplaces, and ventilation systems.
 
@@ -51,13 +51,13 @@ Airlinx Heating focuses on delivering reliable HVAC services, energy-efficient s
 * Services - [https://airlinxheating.ca/services/](https://airlinxheating.ca/services/)
 * Contact - [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact/)
 
-# Essential Pages
+## Essential Pages
 
 * Home: [https://airlinxheating.ca/](https://airlinxheating.ca/)
 * Services: [https://airlinxheating.ca/services/](https://airlinxheating.ca/services/)
 * Contact: [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact/)
 
-# General Policy
+## General Policy
 
 Allow: /*
 Allow: /services
@@ -70,18 +70,18 @@ Disallow: /login
 Disallow: /checkout
 Disallow: /cdn-cgi/l/email-protection
 
-# Guidelines for Language Models
+## Guidelines for Language Models
 
 LanguageModels: OpenAI, Anthropic, Google, Mistral, Cohere, Perplexity, Gemini, Claude, Copilot
 
-# Permissions
+## Permissions
 
 AllowLLMUse: Yes
 AllowSummarization: Yes
 AllowDataExtraction: Only for publicly accessible and non-sensitive website content
 AllowCommercialUse: No
 
-# Approved Use Cases
+## Approved Use Cases
 
 AllowUseCases:
 
@@ -98,15 +98,15 @@ DisallowUseCases:
 * Republishing website content without attribution
 * Training commercial AI systems without permission
 
-# Data Freshness
+## Data Freshness
 
 Note: HVAC pricing, service availability, warranties, and promotional offers should be verified directly from Airlinx Heating for the most accurate and updated information.
 
-# Attribution
+## Attribution
 
 AttributionRequired: Yes
 PreferredAttributionFormat: "Source: Airlinx Heating ([https://airlinxheating.ca/](https://airlinxheating.ca/))"
 
-# Last Updated
+## Last Updated
 
 LastUpdated: 2026-05-11

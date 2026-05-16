@@ -12,21 +12,22 @@ import WorkSafe from '../public/certification/cer2.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
 import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
 import Link from 'next/link'
+import Script from 'next/script'
 const Brynt = () => {
-  const [hydration,setHydration] = useState(false)
+  const [hydration, setHydration] = useState(false)
   const [width, setWidth] = useState()
 
   useEffect(() => {
     setWidth(window.innerWidth)
   }, [width])
 
-  useEffect(()=>{
-    if(typeof window !== undefined){
+  useEffect(() => {
+    if (typeof window !== undefined) {
       setHydration(true)
-    }else{
+    } else {
       setHydration(false)
     }
-  },[])
+  }, [])
 
   const arrayFaq = [
     { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
@@ -51,98 +52,95 @@ const Brynt = () => {
     { id: 'branddetail-1', text: 'If your Bryant furnace breaks down and you do not want to go through the cold without heat, then you must have a dependable Bryant furnace repair system.' },
     { id: 'branddetail-2', text: 'Furnaces are made by Bryant Heating and cooling systems which are considered to be resilient, high-quality, and dependable.' },
     { id: 'branddetail-3', text: 'Bryant furnaces might stop due to various reasons. An efficient furnace helps you to save a lot of money. So, if you get in touch with a specialist to troubleshoot any problems with your Bryant furnace issues, then that is the best thing you will be doing.' }
-  ]
+  ];
+
+  const bryantFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How do you maintain a heating and cooling system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season. Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating. Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
+      }
+    }, {
+      "@type": "Question",
+      "name": "can you combine heating and cooling system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Should I leave my heat pump on all the time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
+      }
+    }, {
+      "@type": "Question",
+      "name": "can you use the same ducts for heating and cooling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How does geothermal heating and cooling works",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How does ductless heating and cooling works?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How much Does HVAC installation Cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How long Does HVAC Installation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually, it takes three to five days for installation."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What kind of warranties come with my New HVAC installation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It has the following warranties: HVAC Manufacturer Warranty. HVAC Extended Warranty. Homeowners Insurance. Home Warranty"
+      }
+    }]
+  }
+
   return (
     <>
-    <Head>
+      <Head>
         <title>Professional Bryant Furnace Services | Airlinx Heating</title>
         <meta name="description" content="Bryant Furnace Services at Airlinxheating by Professional Technicians provides you with quality heating services. Contact us Today to Book an Appointment." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/bryant/" />
       </Head>
-      {
-        hydration ? <>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do you maintain a heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
-        Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
-        Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you combine heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-            }
-          },{
-            "@type": "Question",
-            "name": "Should I leave my heat pump on all the time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you use the same ducts for heating and cooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does geothermal heating and cooling works",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does ductless heating and cooling works?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much Does HVAC installation Cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long Does HVAC Installation take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Usually, it takes three to five days for installation."
-            }
-          },{
-            "@type": "Question",
-            "name": "What kind of warranties come with my New HVAC installation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It has the following warranties:
-        
-        HVAC Manufacturer Warranty.
-        HVAC Extended Warranty.
-        Homeowners Insurance.
-        Home Warranty"
-            }
-          }]
-        }`
-      }
-    </script>
+
+      <Script
+        id="bryant-faq-schema"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bryantFaqSchema) }}
+      />
+     
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Bryant" color="#fff" variant="h1"/>
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Bryant" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>
@@ -202,7 +200,7 @@ const Brynt = () => {
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' src={WorkSafe} alt="Work Safe BC Logo" title='Work Safe BC Logo'/>
+                              <Image layout='responsive' src={WorkSafe} alt="Work Safe BC Logo" title='Work Safe BC Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
@@ -270,8 +268,8 @@ const Brynt = () => {
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
-      </main></> : "Loading"
-      }
+      </main>
+
     </>
   )
 }
