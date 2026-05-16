@@ -213,7 +213,7 @@ const Boiler = () => {
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Typography className='para'>Airlinx Boiler repairing services in Canada can help with any problems that arise with your boiler; whether you need boiler replacement or some guidance for boiler installation. We offer the best boiler repairing services that can give you a variety of solutions for your home&apos;s comfort needs.</Typography>
+                                <Typography className='para'>Airlinx Boiler repairing services in Canada can help with <a href="blog/the-importance-and-benefits-of-boiler-repair-service-and-maintenance/">any problems that arise with your boiler</a>; whether you need boiler replacement or some guidance for boiler installation. We offer the best boiler repairing services that can give you a variety of solutions for your home&apos;s comfort needs.</Typography>
                                 <Typography className='para'>We have quality solutions for all your problems and help you solve any issues that come up with your home&apos;s heating system. </Typography>
                               </Box>
                             </Grid>

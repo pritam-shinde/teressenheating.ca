@@ -290,7 +290,7 @@ const Footer = () => {
                                                     <Avatar>
                                                         <Link
                                                             passHref
-                                                            href="https://www.instagram.com/teressenheatingltd/"
+                                                            href="https://www.instagram.com/airlinx.heating/"
                                                             className="text-white"
                                                         >
                                                             <FaInstagram />

@@ -158,7 +158,8 @@ const CommercialHVAC = () => {
                           <SectionalHeading simpletext=" Airlinx commercial heating and AC services is a one-stop destination for you:" variant="h2" align={width > 600 ? 'left' : 'center'} />
                           <Typography className='para'>Three things that make us your favorite are: Quality, trust, and affordability. So, at Airlinx we provide you with a wide variety of commercial HVAC services at relative ease. With over years of experience, we have been helping businesses with all our commercial HVAC repairs, maintenance, and replacement services at affordable costs.
                           </Typography>
-                          <Typography className='para'>Our expert HVAC services have the required knowledge and skills to work on different types of commercial HVAC systems. Also, here are a few HVAC components we have worked upon:
+                          <Typography className='para'>Our expert HVAC services have the required knowledge and skills to work on <a href="/blog/the-complete-guide-to-hvac-services-for-commercial-buildings-and-what-you-need-to-know/">different types of commercial HVAC systems</a>
+                          . Also, here are a few HVAC components we have worked upon:
                           </Typography>
                           <List>
                             {

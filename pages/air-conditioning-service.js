@@ -152,7 +152,7 @@ const AirConditioningService = () => {
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Typography className='para'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you with the best possible installation, repair, and maintenance services.
+                                <Typography className='para'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, <a href="/blog/why-you-should-be-doing-regular-air-conditioning-service/">when your air conditioning breaks down</a>, it is very frustrating. This is when we play a major role in taking your frustration away and helping you with the best possible installation, repair, and maintenance services.
                                 </Typography>
                                 <Typography className='para'>Our Air conditioning services include:</Typography>
                                 <List>
@@ -189,7 +189,7 @@ const AirConditioningService = () => {
                           <Grid container>
                             <Grid item xs={12} md={6}>
                               <Typography className='para'>Our experts provide reliable and fast repairs of air conditioning services. We service all brands of heat pumps, central A/C, and all types of air conditioning systems.</Typography>
-                               <Typography className='para'>We have been providing air conditioning services for years to our clients. We are always available 24*7 for your quick assistance service. We meet your needs for routine air conditioning maintenance, air conditioning system replacement, and emergency air conditioning repairs. We also sell and install a wide range of high-efficiency air conditioning system that saves you money.</Typography>
+                               <Typography className='para'>We have been providing <a href="/blog/5-common-causes-to-do-regular-heating-and-air-conditioning-services/"> air conditioning services </a> for years to our clients. We are always available 24*7 for your quick assistance service. We meet your needs for routine air conditioning maintenance, air conditioning system replacement, and emergency air conditioning repairs. We also sell and install a wide range of high-efficiency air conditioning system that saves you money.</Typography>
                               </Grid>
                             <Grid item xs={12} md={6}>
                               <Image src={Air} alt="Air Conditioning Service" title='Air Conditioning Service' layout='responsive' />
