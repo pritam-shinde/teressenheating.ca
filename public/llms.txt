@@ -49,13 +49,13 @@ Airlinx Heating focuses on delivering reliable HVAC services, energy-efficient s
 
 * Home - [https://airlinxheating.ca/](https://airlinxheating.ca/)
 * Services - [https://airlinxheating.ca/services/](https://airlinxheating.ca/services/)
-* Contact - [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact/)
+* Contact - [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact-us/)
 
 ## Essential Pages
 
 * Home: [https://airlinxheating.ca/](https://airlinxheating.ca/)
 * Services: [https://airlinxheating.ca/services/](https://airlinxheating.ca/services/)
-* Contact: [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact/)
+* Contact: [https://airlinxheating.ca/contact/](https://airlinxheating.ca/contact-us/)
 
 ## General Policy
 
@@ -109,4 +109,4 @@ PreferredAttributionFormat: "Source: Airlinx Heating ([https://airlinxheating.ca
 
 ## Last Updated
 
-LastUpdated: 2026-05-11
+LastUpdated: 2026-05-18
