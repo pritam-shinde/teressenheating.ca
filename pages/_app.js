@@ -250,7 +250,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="google-site-verification" content="EyzpH-lXbXN8fg7XPxUm_lfNy29_AIRYbcgFqJbJ8Kw" />
       </Head>
 
-
       <Script
         id="local-business-schema"
         type="application/ld+json"
