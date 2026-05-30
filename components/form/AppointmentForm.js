@@ -51,7 +51,7 @@ const AppointmentForm = () => {
                 formData.phone.replace(/\s/g, "")
             )
         ) {
-            newErrors.phone = "Invalid Australian phone number"
+            newErrors.phone = "Invalid phone number"
         }
 
         setErrors(newErrors)
@@ -349,7 +349,7 @@ export default AppointmentForm
 //     if (!formData.phone.trim()) {
 //       newErrors.phone = "Phone number is required";
 //     } else if (!/^(\+61|0)[2-9]\d{8}$/.test(formData.phone.replace(/\s/g, ""))) {
-//       newErrors.phone = "Invalid Australian phone number";
+//       newErrors.phone = "Invalid phone number";
 //     }
 
 //     // Radio Validation
