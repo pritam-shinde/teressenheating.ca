@@ -1,12 +1,11 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import RichmondLoc from '../public/richmond/richmond.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import RichmondLoc from '../public/richmond/richmond.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const Richmond = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -30,15 +29,15 @@ const Richmond = () => {
   ]
   return (
     <>
-    <Head>
+      <Head>
         <title>Air Conditioning Installation Services in Richmond</title>
         <meta name="description" content="For all of your air conditioning installation services needs in Richmond, VA, choose Airlinx Heating. We offer a wide range of high-quality HVAC services. " />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/richmond/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -113,12 +112,12 @@ const Richmond = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-     {
-       `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Richmond Air Conditioning Installation Services",
@@ -167,8 +166,8 @@ const Richmond = () => {
         ]
         }
       }`
-     }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Richmond Air Conditioning Installation Services" color="#fff" variant="h1" />
         <section>

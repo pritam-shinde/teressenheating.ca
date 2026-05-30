@@ -2,8 +2,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/heat-pump/banner.webp'
 import HeatPump from '../public/heat-pump/heat-pump.webp'
 import { FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
@@ -35,7 +34,7 @@ const index = () => {
         <link rel="canonical" href="/heat-pump/" />
       </Head>
       <main>
-      <CommonBanner bg={Banner} title="Heat Pump" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Heat Pump" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

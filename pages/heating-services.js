@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import Head from 'next/head';
-import { CommonBanner, ServiceCommonSidebar, SectionalHeading } from '../components/components';
-import Heating from '../public/heating-service/heating-bg.webp';
-import HeaterMachine from '../public/heating-service/heating.webp'
-import { Container, Box, Grid, Typography } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
-import { List, ListItemIcon, ListItemText, ListItem } from '@mui/material';
-import Image from 'next/legacy/image'
-import Link from 'next/link'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import Head from 'next/head';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components';
+import Heating from '../public/heating-service/heating-bg.webp';
+import HeaterMachine from '../public/heating-service/heating.webp';
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections';
 
 const HeatingService = () => {
   const [width, setWidth] = useState()
@@ -166,7 +165,7 @@ const HeatingService = () => {
           __html: JSON.stringify(serviceSchema)
         }}
       />
-      
+
       {/* <script type="application/ld+json">
         {
           `{"@context": "https://schema.org",

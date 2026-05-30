@@ -1,8 +1,9 @@
-import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { AppointmentForm, CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/legacy/image'
+import { useEffect, useState } from 'react'
+import { AppointmentForm, CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/brand-page/brand.webp'
 import Brand1 from '../public/brand-page/Layer-103.webp'
 import Brand2 from '../public/brand-page/Layer-104.webp'
@@ -32,7 +33,6 @@ import Brand25 from '../public/brand-page/Layer-127.webp'
 import Brand26 from '../public/brand-page/Layer-128.webp'
 import Brand27 from '../public/brand-page/Layer-129.webp'
 import Brand28 from '../public/brand-page/Layer-130.webp'
-import { CheckCircle, CheckCircleOutline } from '@mui/icons-material'
 
 const Brand = () => {
   const [hydration, setHydration] = useState(false)

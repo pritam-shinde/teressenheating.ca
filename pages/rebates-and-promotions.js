@@ -1,11 +1,11 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/promomotion/promotion.webp'
-import { CheckCircleOutline } from '@mui/icons-material'
-import Link from 'next/link'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const RebatesAndPromotion = () => {
   const [width, setWidth] = useState()
@@ -42,8 +42,8 @@ const RebatesAndPromotion = () => {
       </Head>
 
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "Service",
           "serviceType": "Rebates And Promotions",
@@ -88,7 +88,7 @@ const RebatesAndPromotion = () => {
           ]
           }
         }`
-      }
+        }
       </script>
       <main>
         <CommonBanner bg={Banner} title="Airlinx's heating ltd offers the best rebates and promotions" color="#fff" variant="h1" />

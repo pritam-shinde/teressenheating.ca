@@ -1,12 +1,11 @@
+import { CheckCircleOutline, Circle } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/financing-opt/financing-bg.webp'
-import { CheckCircleOutline, Circle } from '@mui/icons-material'
-import Link from 'next/link'
-
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const FinancingOption = () => {
 
@@ -42,8 +41,8 @@ const FinancingOption = () => {
         <link rel="canonical" href="/financing-option/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "Service",
           "serviceType": "Financing Option ",
@@ -88,7 +87,7 @@ const FinancingOption = () => {
           ]
           }
         }`
-      }
+        }
       </script>
 
       <CommonBanner bg={Banner} title="Airlinx's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />

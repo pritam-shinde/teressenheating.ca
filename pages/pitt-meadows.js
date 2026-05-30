@@ -1,12 +1,11 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import PittMeadowsLoc from '../public/pitt-meadows/pitt-meadows.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import PittMeadowsLoc from '../public/pitt-meadows/pitt-meadows.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const PittMeadows = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -30,15 +29,15 @@ const PittMeadows = () => {
   ]
   return (
     <>
-    <Head>
+      <Head>
         <title>Best Heating Services in Pitt Meadows | Airlinxheating</title>
         <meta name="description" content="Quality heating services in Pitt Meadows, including installations, repairs, furnace maintenance, and more at competitive prices." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/pitt-meadows/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -113,11 +112,11 @@ const PittMeadows = () => {
             }
           }]
         }`
-      }
-    </script>
-    <script type="application/ld+json">
-    {
-      `{
+        }
+      </script>
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Pitt Meadows Heating Services",
@@ -166,8 +165,8 @@ const PittMeadows = () => {
         ]
         }
       }`
-    }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Pitt Meadows Heating Services" color="#fff" variant="h1" />
         <section>

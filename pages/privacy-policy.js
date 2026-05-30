@@ -1,7 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/privacy-policy/pp.webp'
 
@@ -21,7 +20,7 @@ const PrivacyPolicy = () => {
                         <Grid container>
                             <Grid item xs={12} md={10} className="mx-auto">
                                 <Box py={5}>
-                                    <SectionalHeading simpletext="Privacy Policy"  variant="h1" />
+                                    <SectionalHeading simpletext="Privacy Policy" variant="h1" />
                                     <Typography className='para'>Airlinx Heating & Air Conditioning is sensitive to the private nature of information you provide to us over the Internet. Our Privacy Policy is designed to protect your personal information while at the same time giving you the opportunity to obtain interesting and useful information, products and services.</Typography>
 
 

@@ -1,12 +1,11 @@
-import { Grid, Container, Box, Typography, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import VancouverLoc from '../public/vancouver/vancouver.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import VancouverLoc from '../public/vancouver/vancouver.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const Vancouver = () => {
 
@@ -39,8 +38,8 @@ const Vancouver = () => {
         <link rel="canonical" href="/vancouver/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -115,12 +114,12 @@ const Vancouver = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-     {
-       `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Heating Services Vancouver",
@@ -169,8 +168,8 @@ const Vancouver = () => {
         ]
         }
       }`
-     }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="24*7 Heating Services Vancouver" color="#fff" variant="h1" />
         <section>

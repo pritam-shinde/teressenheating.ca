@@ -1,15 +1,13 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import BurnabyLoc from '../public/burnaby/burnaby.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import BurnabyLoc from '../public/burnaby/burnaby.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const Burnaby = () => {
-
   const makeDiff = ["Licensed technicians.", "We give competitor price match guarantee", "We service all major brands and areas.", "We give you 24*7*365 days of assistance", "We have over 2 decades of work experience.", "We assure comfort."]
 
   const arrayFaq = [
@@ -38,8 +36,8 @@ const Burnaby = () => {
         <link rel="canonical" href="/burnaby/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -114,12 +112,12 @@ const Burnaby = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-     {
-       `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "HAVC Burnaby",
@@ -168,8 +166,8 @@ const Burnaby = () => {
         ]
         }
       }`
-     }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="HAVC Burnaby - Furnace Installer Services" color="#fff" variant="h1" />
         <section>

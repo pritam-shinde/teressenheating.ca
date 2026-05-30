@@ -1,12 +1,11 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import WestVancouverLoc from '../public/west-vancouver/west-vancouver.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import WestVancouverLoc from '../public/west-vancouver/west-vancouver.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const WestVancouver = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -37,8 +36,8 @@ const WestVancouver = () => {
         <link rel="canonical" href="/west-vancouver/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -113,12 +112,12 @@ const WestVancouver = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-    {
-      `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "West Vancouver Heating And Cooling Services",
@@ -168,8 +167,8 @@ const WestVancouver = () => {
         }
       }
       `
-    }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="West Vancouver Heating and Cooling Services" color="#fff" variant="h1" />
         <section>

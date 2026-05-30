@@ -1,17 +1,17 @@
 
-import { useEffect, useState } from 'react';
-import Head from 'next/head';
-import Script from 'next/script';
-import "swiper/css/bundle";
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Footer, Header } from '../components/components';
-import { ArrowCircleUp } from "@mui/icons-material"
-import '../styles/globals.css'
-import { Grid, Container, Box, Button } from '@mui/material';
+import { ArrowCircleUp } from "@mui/icons-material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import PhoneIcon from '@mui/icons-material/Phone';
+import { Box, Button, Container, Grid } from '@mui/material';
+import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import Script from 'next/script';
+import { useEffect, useState } from 'react';
+import "swiper/css/bundle";
+import { Footer, Header } from '../components/components';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
 
 export function reportWebVitals(metric) {
   console.log(metric)
@@ -184,7 +184,6 @@ const localBusinessSchema = {
     }
   }]
 }
-
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()

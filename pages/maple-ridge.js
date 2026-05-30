@@ -1,11 +1,10 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import MapleRidgeLoc from '../public/maple-ridge/maple-ridge.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import MapleRidgeLoc from '../public/maple-ridge/maple-ridge.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const MapleRidge = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -29,15 +28,15 @@ const MapleRidge = () => {
   ]
   return (
     <>
-    <Head>
+      <Head>
         <title>Furnace Heating & Air Conditioning Service in Maple Ridge</title>
         <meta name="description" content="Airlinx Heating provides expert furnace, heating, and AC repair services you can trust. Fast, reliable service - call today!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/maple-ridge/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -112,12 +111,12 @@ const MapleRidge = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-     {
-       `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Maple Ridge Furnace Heating & Air Conditioning Services",
@@ -166,8 +165,8 @@ const MapleRidge = () => {
         ]
         }
       }`
-     }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Maple Ridge Furnace Heating & Air Conditioning Services" color="#fff" variant="h1" />
         <section>

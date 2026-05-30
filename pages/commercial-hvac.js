@@ -1,14 +1,13 @@
-import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
-import Head from 'next/head';
-import Image from 'next/legacy/image'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
-import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/commercialHVAC/commercial-2.webp';
 import { CheckCircleOutline } from '@mui/icons-material';
-import HVAC from '../public/commercialHVAC/hvac.webp'
-import Link from 'next/link'
-
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import Head from 'next/head';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components';
+import Banner from '../public/commercialHVAC/commercial-2.webp';
+import HVAC from '../public/commercialHVAC/hvac.webp';
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections';
 
 const CommercialHVAC = () => {
   const [width, setWidth] = useState()
@@ -18,7 +17,7 @@ const CommercialHVAC = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "how do commercial hvac systems work?", ans: "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:", list: ["Usually, water source heat pumps contain pipes. It carries water throughout the building. ", "The rooftop units are on the roof of the building. ", "Then tend to put the conditioned air into the building. ", "Some chillers generate cool water. It is distributed by pipes to air-cooling coils.","Heaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."] },
+    { id: "faq-1", que: "how do commercial hvac systems work?", ans: "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:", list: ["Usually, water source heat pumps contain pipes. It carries water throughout the building. ", "The rooftop units are on the roof of the building. ", "Then tend to put the conditioned air into the building. ", "Some chillers generate cool water. It is distributed by pipes to air-cooling coils.", "Heaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."] },
     { id: "faq-2", que: "how often should commercial hvac filters be changed?", ans: "It should be changed every quarter, or within three months.", list: null },
     { id: "faq-3", que: "how long do commercial hvac systems last?", ans: "The average life expectancy of commercial HVAC systems is 15 to 20 years.", list: null }
   ]
@@ -31,15 +30,15 @@ const CommercialHVAC = () => {
 
   return (
     <>
-     <Head>
+      <Head>
         <title>Trusted Commercial HVAC Services in Canada</title>
         <meta name="description" content="Choose Airlinx Heating for commercial HVAC services in Canada. Our experienced technicians will assist you with preventive maintenance and repairs. Contact us today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/commercial-hvac/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -65,13 +64,13 @@ const CommercialHVAC = () => {
             }
           }]
         }`
-      }
+        }
 
       </script>
 
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "Service",
           "serviceType": "Commercial HVAC Services",
@@ -116,7 +115,7 @@ const CommercialHVAC = () => {
           ]
           }
         }`
-      }
+        }
       </script>
       <CommonBanner bg={Banner} title="Commercial HVAC Services" color="#fff" variant="h1" />
       <main>
@@ -159,7 +158,7 @@ const CommercialHVAC = () => {
                           <Typography className='para'>Three things that make us your favorite are: Quality, trust, and affordability. So, at Airlinx we provide you with a wide variety of commercial HVAC services at relative ease. With over years of experience, we have been helping businesses with all our commercial HVAC repairs, maintenance, and replacement services at affordable costs.
                           </Typography>
                           <Typography className='para'>Our expert HVAC services have the required knowledge and skills to work on <a href="/blog/the-complete-guide-to-hvac-services-for-commercial-buildings-and-what-you-need-to-know/">different types of commercial HVAC systems</a>
-                          . Also, here are a few HVAC components we have worked upon:
+                            . Also, here are a few HVAC components we have worked upon:
                           </Typography>
                           <List>
                             {
@@ -263,7 +262,7 @@ const CommercialHVAC = () => {
           </Grid>
         </Container>
         <FeaturedHeatingServices />
-        <PopularService color='red'/>
+        <PopularService color='red' />
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />

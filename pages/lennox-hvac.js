@@ -1,13 +1,13 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
-import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/lennox-hvac/lennox.webp'
 import Image from 'next/legacy/image'
-import { CheckCircleOutline } from '@mui/icons-material'
-import hvacLennox from '../public/lennox-hvac/dlsc-family-new.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
+import hvacLennox from '../public/lennox-hvac/dlsc-family-new.webp'
+import Banner from '../public/lennox-hvac/lennox.webp'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const LennoxHVAC = () => {
   const [width, setWidth] = useState()
@@ -43,8 +43,8 @@ const LennoxHVAC = () => {
         <link rel="canonical" href="/lennox-hvac/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "Service",
           "serviceType": "Lennox HVAC ",
@@ -89,7 +89,7 @@ const LennoxHVAC = () => {
           ]
           }
         }`
-      }
+        }
 
       </script>
       <main>

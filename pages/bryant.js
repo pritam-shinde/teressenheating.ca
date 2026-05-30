@@ -1,18 +1,19 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
-import Head from 'next/head'
-import React, { useState, useEffect } from 'react'
-import { CommonBanner, SectionalHeading } from '../components/components'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-103.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import { CheckCircleOutline } from '@mui/icons-material'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-103.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/blue-logo.svg'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
+
 const Brynt = () => {
   const [hydration, setHydration] = useState(false)
   const [width, setWidth] = useState()
@@ -138,7 +139,7 @@ const Brynt = () => {
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bryantFaqSchema) }}
       />
-     
+
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Bryant" color="#fff" variant="h1" />
         <section>

@@ -1,11 +1,10 @@
-import React from 'react'
-import Head from 'next/head'
 import { Box, Container, Grid, Typography } from '@mui/material'
-import Banner from '../public/write-review/review.webp'
-import { CommonBanner, AppointmentForm } from '../components/components'
-import Family from '../public/home/testimonial.webp'
+import Head from 'next/head'
 import Image from 'next/legacy/image'
-import {BrandSlider, Locations, Testimonial} from '../sections/sections'
+import { AppointmentForm, CommonBanner } from '../components/components'
+import Family from '../public/home/testimonial.webp'
+import Banner from '../public/write-review/review.webp'
+import { BrandSlider, Locations, Testimonial } from '../sections/sections'
 
 const WriteAReview = () => {
   return (

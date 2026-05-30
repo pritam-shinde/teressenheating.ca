@@ -2,11 +2,10 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import Banner from '../public/furnace/furnace-bg.webp'
 import Furnace from '../public/furnace/furnace.webp'
-import {FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial} from '../sections/sections'
-import Banner from '../public/furnace/furnace-bg.webp';
+import { FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
 
 const index = () => {
   const arrayFaq = [
@@ -35,7 +34,7 @@ const index = () => {
         <link rel="canonical" href="/furnace/" />
       </Head>
       <main>
-      <CommonBanner bg={Banner} title="Furnace" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Furnace" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

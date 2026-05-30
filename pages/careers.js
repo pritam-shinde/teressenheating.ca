@@ -1,7 +1,6 @@
 import { CheckCircleOutline } from '@mui/icons-material'
-import { Box, Container, Grid, Typography, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
+import { Box, Button, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useState } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/career/career-bg.webp'
 

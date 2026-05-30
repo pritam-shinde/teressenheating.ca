@@ -1,12 +1,11 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import PortMoodyLoc from '../public/port-moody/port-moody.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import PortMoodyLoc from '../public/port-moody/port-moody.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const PortMoody = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -30,15 +29,15 @@ const PortMoody = () => {
   ]
   return (
     <>
-    <Head>
+      <Head>
         <title>Air Conditioning Services and Heating in Port Moody</title>
         <meta name="description" content="Need heating or air conditioning services in Port Moody, BC? Trust Airlinx for expert HVAC repair, installation, and maintenance." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/port-moody/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -113,12 +112,12 @@ const PortMoody = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
 
-    <script type="application/ld+json">
-    {
-      `{
+      <script type="application/ld+json">
+        {
+          `{
         "@context": "https://schema.org",
         "@type": "Service",
         "serviceType": "Port Moody Air Conditioning And Heating Services",
@@ -167,8 +166,8 @@ const PortMoody = () => {
         ]
         }
       }`
-    }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={Banner} title="Port Moody Air Conditioning and Heating Services" color="#fff" variant="h1" />
         <section>

@@ -1,13 +1,10 @@
- import { Box, Container, Grid, Paper, Typography, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
-import React, { useState } from 'react'
-import SectionalHeading from '../../components/SectionalHeading/SectionalHeading'
-import { LocalPhoneOutlined, MailOutline, CheckCircle} from '@mui/icons-material'
+import { CheckCircle, LocalPhoneOutlined, MailOutline } from '@mui/icons-material';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import { AppointmentForm } from '../../components/components'
-import Image from 'next/image'
-import Brands from '../../public/brand-page/brands-logo.jpg'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import Link from 'next/link';
-
+import { useState } from 'react';
+import { AppointmentForm } from '../../components/components';
+import SectionalHeading from '../../components/SectionalHeading/SectionalHeading';
 
 const FaqAndForm = ({
   faq,

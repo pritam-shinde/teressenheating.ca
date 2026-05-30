@@ -1,17 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-111.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-111.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/blue-logo.svg'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const MaytagHVAC = () => {
   const [width, setWidth] = useState()
@@ -48,8 +48,8 @@ const MaytagHVAC = () => {
         <link rel="canonical" href="/maytag-hvac/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -124,8 +124,8 @@ const MaytagHVAC = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Maytag Hvac" color="#fff" variant="h1" />
         <section>
@@ -237,19 +237,19 @@ const MaytagHVAC = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/furnace/">Furnaces</Link> repair, maintenance, and installation.</span>}/>
+                        <ListItemText primary={<span><Link href="/furnace/">Furnaces</Link> repair, maintenance, and installation.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump</Link>maintenance, installation, and repair.</span>}/>
+                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump</Link>maintenance, installation, and repair.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/boilers/">Boiler maintenance</Link>, installation, and repair.</span>}/>
+                        <ListItemText primary={<span><Link href="/boilers/">Boiler maintenance</Link>, installation, and repair.</span>} />
                       </ListItem>
                     </List>
                   </Box>

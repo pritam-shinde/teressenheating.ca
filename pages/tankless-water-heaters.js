@@ -1,12 +1,12 @@
-import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Image from 'next/legacy/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/lennox-hvac/lennox.webp'
-import Image from 'next/legacy/image'
 import waterheater from '../public/tankless-water-heater/water-heater.webp'
-import Link from 'next/link'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const TanklesWaterHeater = () => {
   const [width, setWidth] = useState()
@@ -19,7 +19,7 @@ const TanklesWaterHeater = () => {
     { id: "faq-1", que: "how to install service valves for tankless water heater?", ans: "", list: null },
     { id: "faq-2", que: "how often service tankless water heater?", ans: "Tankless water heaters need to be flushed once per year.", list: null },
     { id: "faq-3", que: "What kind of maintenance needs to be done on a tankless water heater?", ans: "", list: ["Clean or replace the water line filter. Many tankless water heater models have a water line filter that protects against hard water, scale, and sediment.", "Clean the air filter.", "Descaling and flushing the system."] },
-    { id: "faq-4", que: "What is the most common problems with tankless water heaters?", ans: "Here are six of the most common problems and maintenance concerns for tankless water heaters:", list: ["Mineral Buildup.", "System Overload.", "Cold Water Sandwich.", "Air Supply or Exhaust Blockage.", "Ignition Failure.","Flame Failure."] },
+    { id: "faq-4", que: "What is the most common problems with tankless water heaters?", ans: "Here are six of the most common problems and maintenance concerns for tankless water heaters:", list: ["Mineral Buildup.", "System Overload.", "Cold Water Sandwich.", "Air Supply or Exhaust Blockage.", "Ignition Failure.", "Flame Failure."] },
     { id: "faq-5", que: "Can you run out of hot water with a tankless water heater?", ans: "Although a tankless system can't run out of hot water, it can still be overwhelmed by demand.", list: null },
   ]
 
@@ -37,8 +37,8 @@ const TanklesWaterHeater = () => {
         <link rel="canonical" href="/tankless-water-heaters/" />
       </Head>
       <script type="application/ld+json">
-      {
-        ` {
+        {
+          ` {
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -87,12 +87,12 @@ const TanklesWaterHeater = () => {
             }
           }]
         }`
-      }     
+        }
       </script>
 
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "Service",
           "serviceType": "Tankless Water Heater Maintenance Service",
@@ -138,7 +138,7 @@ const TanklesWaterHeater = () => {
           }
         }
         `
-      }
+        }
       </script>
       <main>
         <CommonBanner bg={Banner} title="Airlinx tankless water heater maintenance service" color="#fff" variant="h1" />

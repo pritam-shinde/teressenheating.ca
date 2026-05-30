@@ -1,10 +1,8 @@
-import React from 'react'
 import Head from 'next/head'
 import JsonLd from '../components/JsonLd'
 import { About, Appointment, BrandSlider, Facilities, FaqAndForm, Hero, Service, Testimonial, WhyChoose } from '../sections/sections'
 
 const index = () => {
-
   const arrayFaq = [
     { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
     { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
@@ -31,7 +29,7 @@ const index = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/" />
       </Head>
-      
+
       <JsonLd json={`{
             "@context": "https://schema.org",
             "@type": "FAQPage",
@@ -107,6 +105,7 @@ const index = () => {
               }
             }]
           }`} />
+
       <main>
         <Hero />
         <Facilities />

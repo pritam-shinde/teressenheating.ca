@@ -1,14 +1,14 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Image from 'next/legacy/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/furnace-inspection/banner.webp'
-import Furnace from '../public/furnace-inspection/furnace.webp'
-import Image from 'next/legacy/image'
-import { CheckCircleOutline } from '@mui/icons-material'
 import HomeFurnace from '../public/furnace-inspection/Ductwork-and-Ventilation.webp'
-import Link from 'next/link'
+import Furnace from '../public/furnace-inspection/furnace.webp'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const FurnaceInspection = () => {
   const [width, setWidth] = useState()
@@ -37,15 +37,15 @@ const FurnaceInspection = () => {
 
   return (
     <>
-       <Head>
+      <Head>
         <title>Furnace Repair, Installation & Replacement</title>
         <meta name="description" content="Airlinx offers professional furnace installation and repair services in Canada. Our experienced technicians provide quality workmanship at competitive rates." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="/furnace-inspection/" />
       </Head>
       <script type="application/ld+json">
-       {
-         `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "Service",
           "serviceType": "Furnace Inspection",
@@ -90,10 +90,10 @@ const FurnaceInspection = () => {
           ]
           }
         }`
-       }
+        }
       </script>
       <main>
-      <CommonBanner bg={Banner} title="The best furnace repair and installation services in Canada" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="The best furnace repair and installation services in Canada" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">

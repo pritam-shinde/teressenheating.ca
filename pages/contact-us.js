@@ -1,9 +1,8 @@
 import { Box, Container, Grid } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import { Facilities, FaqAndForm } from '../sections/sections'
-import Banner from '../public/contact/contact.webp'
 import { CommonBanner } from '../components/components'
+import Banner from '../public/contact/contact.webp'
+import { Facilities, FaqAndForm } from '../sections/sections'
 
 const ContactUs = () => {
   return (

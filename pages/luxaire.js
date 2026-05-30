@@ -1,17 +1,18 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-110.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-110.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/blue-logo.svg'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
+
 const Luxair = () => {
   const [width, setWidth] = useState()
 
@@ -47,8 +48,8 @@ const Luxair = () => {
         <link rel="canonical" href="/luxaire/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -123,8 +124,8 @@ const Luxair = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <CommonBanner bg={BoilerMaintainanceBanner} title="Luxaire" color="#fff" variant="h1" />
       <main>
         <section>
@@ -292,48 +293,48 @@ const Luxair = () => {
           </Container>
         </section>
         <section className='mt-md-4 mt-3 bg--grey'>
-      <Container maxWidth="xxl">
-        <Grid container>
-          <Grid item xs={12} md={10} className="mx-auto">
-            <Box p={3}>
-              <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-              <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </section>
-    <section className='bg--grey'>
-      <Container maxWidth="xxl">
-        <Grid container>
-          <Grid item xs={12} md={10} className="mx-auto">
-            <Box p={3}>
-              <SectionalHeading simpletext="What makes us special?  " variant="h2" />
-              <List>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline className='text--blue' />
-                </ListItemIcon>
-                <ListItemText primary={<strong>Scheduling an in-home appointment</strong>} secondary="Call us for a free in-home estimate. We will help you with an expert solution by coming to your home and discussing your comfort needs." />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline className='text--blue' />
-                </ListItemIcon>
-                <ListItemText primary={<strong>Consulting and choosing an expert</strong>} secondary="Call us for a free in-home estimate. We will send our experienced and licensed technician to assist you." />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline className='text--blue' />
-                </ListItemIcon>
-                <ListItemText primary={<strong>Installation Day </strong>} secondary="We remove old equipment from your home and install new equipment. Once done, we take care of everything." />
-              </ListItem>
-            </List>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </section>
+          <Container maxWidth="xxl">
+            <Grid container>
+              <Grid item xs={12} md={10} className="mx-auto">
+                <Box p={3}>
+                  <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
+                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                </Box>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
+        <section className='bg--grey'>
+          <Container maxWidth="xxl">
+            <Grid container>
+              <Grid item xs={12} md={10} className="mx-auto">
+                <Box p={3}>
+                  <SectionalHeading simpletext="What makes us special?  " variant="h2" />
+                  <List>
+                    <ListItem>
+                      <ListItemIcon>
+                        <CheckCircleOutline className='text--blue' />
+                      </ListItemIcon>
+                      <ListItemText primary={<strong>Scheduling an in-home appointment</strong>} secondary="Call us for a free in-home estimate. We will help you with an expert solution by coming to your home and discussing your comfort needs." />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <CheckCircleOutline className='text--blue' />
+                      </ListItemIcon>
+                      <ListItemText primary={<strong>Consulting and choosing an expert</strong>} secondary="Call us for a free in-home estimate. We will send our experienced and licensed technician to assist you." />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <CheckCircleOutline className='text--blue' />
+                      </ListItemIcon>
+                      <ListItemText primary={<strong>Installation Day </strong>} secondary="We remove old equipment from your home and install new equipment. Once done, we take care of everything." />
+                    </ListItem>
+                  </List>
+                </Box>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
         <FeaturedCoolingServices />
         <PopularService color='red' />
         <FeaturedHeatingServices />
