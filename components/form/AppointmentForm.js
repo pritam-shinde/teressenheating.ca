@@ -121,7 +121,7 @@ const AppointmentForm = () => {
                 router.push('/thank-you/')
             } else {
                 setSubmitError(
-                    (result && result.message) || 
+                    (result && result.message) ||
                     `Server returned an error (${response.status}). Please check your production environment variables.`
                 )
             }
@@ -311,9 +311,9 @@ const AppointmentForm = () => {
 
                     </div>
 
-                    <small>
+                    {/* <small>
                         How can we help you ?
-                    </small>
+                    </small> */}
 
                     <p>
                         By submitting this form, I agree to the terms and conditions.
