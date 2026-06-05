@@ -1,8 +1,10 @@
 import { Box, Button } from '@mui/material'
 import { useState, useRef } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { useRouter } from 'next/router'
 
 const AppointmentForm = () => {
+    const router = useRouter()
 
     const [formData, setFormData] = useState({
         visited: "",
@@ -96,9 +98,13 @@ const AppointmentForm = () => {
                 body: JSON.stringify({ ...formData, recaptchaToken }),
             })
 
-            const result = await response.json()
+            let result = null
+            const contentType = response.headers.get("content-type")
+            if (contentType && contentType.includes("application/json")) {
+                result = await response.json()
+            }
 
-            if (response.ok && result.success) {
+            if (response.ok && result && result.success) {
                 setSubmitSuccess(true)
                 setFormData({
                     visited: "",
@@ -112,8 +118,12 @@ const AppointmentForm = () => {
                 if (recaptchaRef.current) {
                     recaptchaRef.current.reset()
                 }
+                router.push('/thank-you/')
             } else {
-                setSubmitError(result.message || 'Something went wrong. Please try again.')
+                setSubmitError(
+                    (result && result.message) || 
+                    `Server returned an error (${response.status}). Please check your production environment variables.`
+                )
             }
         } catch (err) {
             console.error('Submission error:', err)
