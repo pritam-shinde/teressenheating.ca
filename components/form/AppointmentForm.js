@@ -1,11 +1,12 @@
 import { Box, Button } from '@mui/material'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const AppointmentForm = () => {
 
     const [formData, setFormData] = useState({
         visited: "",
-        interested_in: "New Furnace / AC Equipment",
+        interested_in: "",
         name: "",
         email: "",
         phone: "",
@@ -13,6 +14,11 @@ const AppointmentForm = () => {
     })
 
     const [errors, setErrors] = useState({})
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const recaptchaRef = useRef(null)
+    const [recaptchaToken, setRecaptchaToken] = useState("")
+    const [submitSuccess, setSubmitSuccess] = useState(false)
+    const [submitError, setSubmitError] = useState("")
 
     const handleChange = (e) => {
         setFormData({
@@ -29,6 +35,11 @@ const AppointmentForm = () => {
             newErrors.visited = "Please select an option"
         }
 
+        // Interested In
+        if (!formData.interested_in) {
+            newErrors.interested_in = "Please select a service"
+        }
+
         // Name
         if (!formData.name.trim()) {
             newErrors.name = "Please enter your name"
@@ -43,15 +54,22 @@ const AppointmentForm = () => {
             newErrors.email = "Invalid email address"
         }
 
-        // Australian Phone Validation
-        if (!formData.phone.trim()) {
+        // Phone Validation (Canadian 10-digit format check)
+        const phoneTrimmed = formData.phone.trim()
+        if (!phoneTrimmed) {
             newErrors.phone = "Please enter phone number"
-        } else if (
-            !/^(\+61|0)[2-9]\d{8}$/.test(
-                formData.phone.replace(/\s/g, "")
-            )
-        ) {
-            newErrors.phone = "Invalid phone number"
+        } else if (/[a-zA-Z]/.test(phoneTrimmed)) {
+            newErrors.phone = "Phone number cannot contain letters"
+        } else {
+            const digits = phoneTrimmed.replace(/\D/g, "")
+            if (digits.length !== 10 && !(digits.length === 11 && digits.startsWith('1'))) {
+                newErrors.phone = "Please enter a valid 10-digit phone number"
+            }
+        }
+
+        // CAPTCHA Validation
+        if (process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && !recaptchaToken) {
+            newErrors.recaptcha = "Please complete the CAPTCHA"
         }
 
         setErrors(newErrors)
@@ -59,9 +77,49 @@ const AppointmentForm = () => {
         return Object.keys(newErrors).length === 0
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        setSubmitSuccess(false)
+        setSubmitError("")
+
         if (!validate()) {
-            e.preventDefault()
+            return
+        }
+
+        setIsSubmitting(true)
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ ...formData, recaptchaToken }),
+            })
+
+            const result = await response.json()
+
+            if (response.ok && result.success) {
+                setSubmitSuccess(true)
+                setFormData({
+                    visited: "",
+                    interested_in: "",
+                    name: "",
+                    email: "",
+                    phone: "",
+                    message: "",
+                })
+                setRecaptchaToken("")
+                if (recaptchaRef.current) {
+                    recaptchaRef.current.reset()
+                }
+            } else {
+                setSubmitError(result.message || 'Something went wrong. Please try again.')
+            }
+        } catch (err) {
+            console.error('Submission error:', err)
+            setSubmitError('Failed to submit form. Please check your network connection and try again.')
+        } finally {
+            setIsSubmitting(false)
         }
     }
 
@@ -70,24 +128,8 @@ const AppointmentForm = () => {
             <Box id="appointmentForm">
 
                 <form
-                    method='post'
-                    action='https://formsubmit.co/9e47c7d4e5074759bb313cd032703e9d'
-                    encType="multipart/form-data"
                     onSubmit={handleSubmit}
                 >
-
-                    {/* Hidden Fields */}
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="New Appointment Request"
-                    />
-
-                    <input
-                        type="hidden"
-                        name="_captcha"
-                        value="false"
-                    />
 
                     <div className='form-group'>
 
@@ -104,6 +146,7 @@ const AppointmentForm = () => {
                             id="visited"
                             name="visited"
                             value="Visited Before"
+                            checked={formData.visited === "Visited Before"}
                             onChange={handleChange}
                         />
 
@@ -121,6 +164,7 @@ const AppointmentForm = () => {
                             id="notVisited"
                             name="visited"
                             value="Never Visited"
+                            checked={formData.visited === "Never Visited"}
                             onChange={handleChange}
                         />
 
@@ -140,55 +184,36 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-
                         <label>
                             <strong>Interested in</strong>
                         </label>
 
                         <select
                             name='interested_in'
-                            className='form-control rounded-pill'
+                            className={`form-control rounded-pill ${errors.interested_in ? 'is-invalid' : ''}`}
                             value={formData.interested_in}
                             onChange={handleChange}
                         >
-                            <option value="New Furnace / AC Equipment">
-                                New Furnace / AC Equipment
-                            </option>
-
-                            <option value="New Heating Equipment">
-                                New Heating Equipment
-                            </option>
-
-                            <option value="New Cooling Equipment">
-                                New Cooling Equipment
-                            </option>
-
-                            <option value="Repair Cooling Equipment">
-                                Repair Cooling Equipment
-                            </option>
-
-                            <option value="Repair Heating Equipment">
-                                Repair Heating Equipment
-                            </option>
-
-                            <option value="Heating Equipment Tune-up">
-                                Heating Equipment Tune-up
-                            </option>
-
-                            <option value="Duct Cleaning">
-                                Duct Cleaning
-                            </option>
-
-                            <option value="Replace Water Heater">
-                                Replace Water Heater
-                            </option>
-
-                            <option value="Fireplace Services">
-                                Fireplace Services
-                            </option>
-
+                            <option value="">Select a service...</option>
+                            <option value="New Furnace / AC Equipment">New Furnace / AC Equipment</option>
+                            <option value="New Heating Equipment">New Heating Equipment</option>
+                            <option value="New Cooling Equipment">New Cooling Equipment</option>
+                            <option value="Repair Cooling Equipment">Repair Cooling Equipment</option>
+                            <option value="Repair Heating Equipment">Repair Heating Equipment</option>
+                            <option value="Heating Equipment Tune-up">Heating Equipment Tune-up</option>
+                            <option value="Boiler Services (Installation / Repair / Maintenance)">Boiler Services (Installation / Repair / Maintenance)</option>
+                            <option value="Tankless Water Heaters">Tankless Water Heaters</option>
+                            <option value="Heat Pump Services">Heat Pump Services</option>
+                            <option value="Duct Cleaning">Duct Cleaning</option>
+                            <option value="Replace Water Heater">Replace Water Heater</option>
+                            <option value="Fireplace Services">Fireplace Services</option>
                         </select>
 
+                        {errors.interested_in && (
+                            <small className="text-danger">
+                                {errors.interested_in}
+                            </small>
+                        )}
                     </div>
 
                     <div className='form-group'>
@@ -215,7 +240,6 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-
                         <label>
                             <strong>Email</strong>
                         </label>
@@ -238,7 +262,6 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-
                         <label>
                             <strong>Phone</strong>
                         </label>
@@ -261,7 +284,6 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-
                         <label>
                             <strong>
                                 Please provide any additional details to help us serve you better:
@@ -274,6 +296,7 @@ const AppointmentForm = () => {
                             className='form-control'
                             value={formData.message}
                             onChange={handleChange}
+                            required
                         ></textarea>
 
                     </div>
@@ -286,17 +309,53 @@ const AppointmentForm = () => {
                         By submitting this form, I agree to the terms and conditions.
                     </p>
 
+                    {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
+                        <div className='form-group mb-3 d-flex flex-column align-items-start'>
+                            <ReCAPTCHA
+                                ref={recaptchaRef}
+                                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                                onChange={(token) => {
+                                    setRecaptchaToken(token || "")
+                                    if (token) {
+                                        setErrors((prev) => {
+                                            const updated = { ...prev }
+                                            delete updated.recaptcha
+                                            return updated
+                                        })
+                                    }
+                                }}
+                            />
+                            {errors.recaptcha && (
+                                <small className="text-danger d-block mt-1">
+                                    {errors.recaptcha}
+                                </small>
+                            )}
+                        </div>
+                    )}
+
                     <div className='form-group'>
 
                         <Button
                             type='submit'
                             className="blueFilledBtn text--white"
+                            disabled={isSubmitting}
                         >
-                            Submit
+                            {isSubmitting ? 'Submitting...' : 'Submit'}
                         </Button>
 
                     </div>
 
+                    {submitSuccess && (
+                        <div className="alert alert-success mt-2 mb-3" role="alert" style={{ borderRadius: '50px', padding: '0.75rem 1.5rem' }}>
+                            <strong>Success!</strong> Your appointment request has been submitted and saved. We will contact you soon.
+                        </div>
+                    )}
+
+                    {submitError && (
+                        <div className="alert alert-danger mt-2 mb-3" role="alert" style={{ borderRadius: '50px', padding: '0.75rem 1.5rem' }}>
+                            <strong>Error:</strong> {submitError}
+                        </div>
+                    )}
                 </form>
 
             </Box>
@@ -305,279 +364,3 @@ const AppointmentForm = () => {
 }
 
 export default AppointmentForm
-
-// import { Box, Button } from "@mui/material";
-// import { useState } from "react";
-
-// const AppointmentForm = () => {
-//   const [formData, setFormData] = useState({
-//     visited: "",
-//     interested_in: "New Furnace / AC Equipment",
-//     name: "",
-//     email: "",
-//     phone: "",
-//     message: "",
-//   });
-
-//   const [errors, setErrors] = useState({});
-
-//   const handleChange = (e) => {
-//     setFormData({
-//       ...formData,
-//       [e.target.name]: e.target.value,
-//     });
-//   };
-
-//   const validate = () => {
-//     let newErrors = {};
-
-//     // Name
-//     if (!formData.name.trim()) {
-//       newErrors.name = "Name is required";
-//     }
-
-//     // Email
-//     if (!formData.email.trim()) {
-//       newErrors.email = "Email is required";
-//     } else if (
-//       !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(formData.email)
-//     ) {
-//       newErrors.email = "Invalid email address";
-//     }
-
-//     // Australian Phone Validation
-//     if (!formData.phone.trim()) {
-//       newErrors.phone = "Phone number is required";
-//     } else if (!/^(\+61|0)[2-9]\d{8}$/.test(formData.phone.replace(/\s/g, ""))) {
-//       newErrors.phone = "Invalid phone number";
-//     }
-
-//     // Radio Validation
-//     if (!formData.visited) {
-//       newErrors.visited = "Please select an option";
-//     }
-
-//     setErrors(newErrors);
-
-//     return Object.keys(newErrors).length === 0;
-//   };
-
-//   const handleSubmit = (e) => {
-//     if (!validate()) {
-//       e.preventDefault();
-//     }
-//   };
-
-//   return (
-//     <Box id="appointmentForm">
-//       <form
-//         method="post"
-//         action="https://formsubmit.co/9e47c7d4e5074759bb313cd032703e9d"
-//         encType="multipart/form-data"
-//         onSubmit={handleSubmit}
-//       >
-//         {/* Radio */}
-//         <div className="form-group">
-//           <label>
-//             <strong>Have we been to your home before?</strong>
-//           </label>
-//           <br />
-
-//           <input
-//             type="radio"
-//             name="visited"
-//             value="Visited Before"
-//             onChange={handleChange}
-//           />
-//           <label style={{ marginLeft: "0.5rem" }}>Yes</label>
-
-//           <br />
-
-//           <input
-//             type="radio"
-//             name="visited"
-//             value="Never Visited"
-//             onChange={handleChange}
-//           />
-//           <label style={{ marginLeft: "0.5rem" }}>No</label>
-
-//           {errors.visited && (
-//             <p style={{ color: "red" }}>{errors.visited}</p>
-//           )}
-//         </div>
-
-//         {/* Interested In */}
-//         <div className="form-group">
-//           <label>
-//             <strong>Interested in</strong>
-//           </label>
-
-//           <select
-//             name="interested_in"
-//             className="form-control rounded-pill"
-//             value={formData.interested_in}
-//             onChange={handleChange}
-//           >
-//             <option value="New Furnace / AC Equipment">
-//               New Furnace / AC Equipment
-//             </option>
-//             <option value="New Heating Equipment">
-//               New Heating Equipment
-//             </option>
-//             <option value="New Cooling Equipment">
-//               New Cooling Equipment
-//             </option>
-//           </select>
-//         </div>
-
-//         {/* Name */}
-//         <div className="form-group">
-//           <label>
-//             <strong>Name</strong>
-//           </label>
-
-//           <input
-//             type="text"
-//             name="name"
-//             className="form-control rounded-pill"
-//             value={formData.name}
-//             onChange={handleChange}
-//           />
-
-//           {errors.name && (
-//             <p style={{ color: "red" }}>{errors.name}</p>
-//           )}
-//         </div>
-
-//         {/* Email */}
-//         <div className="form-group">
-//           <label>
-//             <strong>Email</strong>
-//           </label>
-
-//           <input
-//             type="email"
-//             name="email"
-//             className="form-control rounded-pill"
-//             value={formData.email}
-//             onChange={handleChange}
-//           />
-
-//           {errors.email && (
-//             <p style={{ color: "red" }}>{errors.email}</p>
-//           )}
-//         </div>
-
-//         {/* Phone */}
-//         <div className="form-group">
-//           <label>
-//             <strong>Phone</strong>
-//           </label>
-
-//           <input
-//             type="tel"
-//             name="phone"
-//             className="form-control rounded-pill"
-//             value={formData.phone}
-//             onChange={handleChange}
-//           />
-
-//           {errors.phone && (
-//             <p style={{ color: "red" }}>{errors.phone}</p>
-//           )}
-//         </div>
-
-//         {/* Message */}
-//         <div className="form-group">
-//           <label>
-//             <strong>
-//               Please provide any additional details:
-//             </strong>
-//           </label>
-
-//           <textarea
-//             name="message"
-//             rows="4"
-//             className="form-control"
-//             value={formData.message}
-//             onChange={handleChange}
-//           />
-//         </div>
-
-//         <small>How can we help you?</small>
-
-//         <p>
-//           By submitting this form, I agree to the terms and conditions.
-//         </p>
-
-//         <div className="form-group">
-//           <Button
-//             type="submit"
-//             className="blueFilledBtn text--white"
-//           >
-//             Submit
-//           </Button>
-//         </div>
-//       </form>
-//     </Box>
-//   );
-// };
-
-// export default AppointmentForm;
-
-// import { Box, Button } from '@mui/material'
-
-// const AppointmentForm = () => {
-//     return (
-//         <>
-//             <Box id="appointmentForm">
-//                 <form method='post' action='https://formsubmit.co/9e47c7d4e5074759bb313cd032703e9d' encType="multipart/form-data">
-//                     <div className='form-group'>
-//                         <label><strong>Have we been to your home before?</strong></label><br />
-//                         <input type="radio" id="visited" name="Have we been to your home before?" value="Visited Before" />
-//                         <label htmlFor="Yes" style={{marginLeft: '0.5rem'}}>Yes</label><br />
-//                         <input type="radio" id="notVisited" name="Have we been to your home before?" value="Never Visited" />
-//                         <label htmlFor="No" style={{marginLeft: '0.5rem'}}>No</label><br />
-//                     </div>
-//                     <div className='form-group'>
-//                         <label><strong>Interested in</strong></label>
-//                         <select name='interested_in' className='form-control rounded-pill'>
-//                             <option value="New Furnace / AC Equipment">New Furnace / AC Equipment</option>
-//                             <option value="New Heating Equipment">New Heating Equipment</option>
-//                             <option value="New Cooling Equipment">New Cooling Equipment</option>
-//                             <option value="Repair Cooling Equipment">Repair Cooling Equipment</option>
-//                             <option value="Repair Heating Equipment">Repair Heating Equipment</option>
-//                             <option value="Heating Equipment Tune-up">Heating Equipment Tune-up</option>
-//                             <option value="Duct Cleaning">Duct Cleaning</option>
-//                             <option value="Replace Water Heater">Replace Water Heater</option>
-//                             <option value="Fireplace Services">Fireplace Services</option>
-//                         </select>
-//                     </div>
-//                     <div className='form-group'>
-//                         <label><strong>Name</strong></label>
-//                         <input type="text" name='Name' className='form-control rounded-pill' />
-//                     </div>
-//                     <div className='form-group'>
-//                         <label><strong>Email</strong></label>
-//                         <input type="email" name='Email' className='form-control rounded-pill' />
-//                     </div>
-//                     <div className='form-group'>
-//                         <label><strong>Phone</strong></label>
-//                         <input type="tel" name='Phone' className='form-control rounded-pill' />
-//                     </div>
-//                     <div className='form-group'>
-//                         <label><strong>Please provide any additional details to help us serve you better:</strong></label>
-//                         <textarea name="Message" rows="4" className='form-control'></textarea>
-//                     </div>
-//                     <small>How can we help you ?</small>
-//                     <p>By submitting this form, I agree to the terms and conditions.</p>
-//                     <div className='form-group'>
-//                         <Button type='submit' className="blueFilledBtn text--white">Submit</Button>
-//                     </div>
-//                 </form>
-//             </Box>
-//         </>
-//     )
-// }
-
-// export default AppointmentForm

@@ -71,7 +71,7 @@ const FaqAndForm = ({
                           width='100%'
                           height='500px'
                           style={{ border: 0 }}
-                          allowfullscreen=''
+                          allowFullScreen=''
                           loading='lazy'
                           referrerPolicy='no-referrer-when-downgrade'
                         ></iframe>
