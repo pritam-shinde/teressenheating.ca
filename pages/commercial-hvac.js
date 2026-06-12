@@ -27,6 +27,82 @@ const CommercialHVAC = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "how do commercial hvac systems work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:\n\nUsually, water source heat pumps contain pipes. It carries water throughout the building.\nThe rooftop units are on the roof of the building.\nThen tend to put the conditioned air into the building.\nSome chillers generate cool water. It is distributed by pipes to air-cooling coils.\nHeaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "how often should commercial hvac filters be changed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It should be changed every quarter, or within three months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "how long do commercial hvac systems last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average life expectancy of commercial HVAC systems is 15 to 20 years."
+        }
+      }
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Commercial HVAC Services",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/commercial-hvac/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "British Columbia",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
 
   return (
     <>
@@ -36,87 +112,20 @@ const CommercialHVAC = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/commercial-hvac/" />
       </Head>
-      <script type="application/ld+json">
-        {
-          `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do commercial hvac system work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure."
-            }
-          },{
-            "@type": "Question",
-            "name": "How often should commercial hvac filters be changed?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It should be changed every quarter, or within three months."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long do commercia hvac systems last?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The average life expectancy of commercial HVAC systems is 15 to 20 years."
-            }
-          }]
-        }`
-        }
 
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
 
-      <script type="application/ld+json">
-        {
-          `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Commercial HVAC Services",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Airlinx Heating & Air Conditioning",
-          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
-          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
-          "url": "https://airlinxheating.ca/commercial-hvac/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/airlinxheating/"    
-          ]
-          }
-        }`
-        }
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <CommonBanner bg={Banner} title="Commercial HVAC Services" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>

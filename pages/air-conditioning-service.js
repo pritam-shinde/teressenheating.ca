@@ -31,6 +31,92 @@ const AirConditioningService = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "how often does air conditioning need to be serviced?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "how much does air conditioning service cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "what does air conditioning service include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air filter and fin cleaning.\nAC condenser and evaporator coil cleaning.\nAC condenser and evaporator fan cleaning.\nDrain cleaning and leakage check.\nCoolant level check in air conditioner.\nOverall inspection of the AC unit"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "what are the benefits of servicing air conditioning system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold."
+        }
+      }
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Air Conditioning Service",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/air-conditioning-service/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "British Columbia",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
+
   return (
     <>
       <Head>
@@ -39,100 +125,20 @@ const AirConditioningService = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/air-conditioning-service/" />
       </Head>
-      <script type="application/ld+json">
-        {
-          `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How often does air conditioning need to be serviced?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much does air conditioning service cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system."
-            }
-          },{
-            "@type": "Question",
-            "name": "what does air conditioning service include ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Air filter and fin cleaning.
-        AC condenser and evaporator coil cleaning.
-        AC condenser and evaporator fan cleaning.
-        Drain cleaning and leakage check.
-        Coolant level check in air conditioner.
-        Overall inspection of the AC unit"
-            }
-          },{
-            "@type": "Question",
-            "name": "What are the benefits of servicing air conditioning system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold."
-            }
-          }]
-        }`
-        }
 
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
 
-      <script type="application/ld+json">
-        {
-          `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Air Conditioning Service",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Airlinx Heating & Air Conditioning",
-          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
-          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
-          "url": "https://airlinxheating.ca/air-conditioning-service/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/airlinxheating/"    
-          ]
-          }
-        }`
-        }
-
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <CommonBanner bg={airConditioner} title="Air Conditioning Service" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
