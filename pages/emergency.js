@@ -40,56 +40,7 @@ const Emergency = () => {
         <meta name="robots" content="index" />
         <link rel="canonical" href="/emergency/" />
       </Head>
-      <script type="application/ld+json">
-        {
-          `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Emergency Services",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Airlinx Heating & Air Conditioning",
-          "image": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "@id": "https://airlinxheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "url": "https://airlinxheating.ca/emergency/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/airlinxheating/"    
-          ]
-          }
-        }`
-        }
 
-      </script>
       <main>
         <CommonBanner bg={Banner} title="Airlinx's emergency services are affordable, trustworthy, and come with good quality" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
