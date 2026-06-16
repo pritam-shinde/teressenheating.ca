@@ -110,7 +110,7 @@ const CommercialHVAC = () => {
         <title>Trusted Commercial HVAC Services in Canada</title>
         <meta name="description" content="Choose Airlinx Heating for commercial HVAC services in Canada. Our experienced technicians will assist you with preventive maintenance and repairs. Contact us today." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/commercial-hvac/" />
+        <link rel="canonical" href="https://airlinxheating.ca/commercial-hvac/" />
       </Head>
 
       <script

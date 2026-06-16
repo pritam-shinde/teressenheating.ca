@@ -42,7 +42,7 @@ const BoilerRepair = () => {
         <title>Trusted Boiler Repair Services in Canada | Airlinxheating</title>
         <meta name="description" content="Trust Airlinx Heating for reliable, efficient, and cost-effective boiler repair services in Canada. Our certified technicians are available 24/7." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/boilers-repair/" />
+        <link rel="canonical" href="https://airlinxheating.ca/boilers-repair/" />
       </Head>
 
       <main>

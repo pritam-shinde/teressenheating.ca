@@ -84,7 +84,7 @@ const NorthVancouver = () => {
         <title>Air Conditioning Services in North Vancouver</title>
         <meta name="description" content="Airlinx Heating Canada offers comprehensive heating, ventilation and air conditioning services to commercial and residential clients in North Vancouver." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/north-vancouver/" />
+        <link rel="canonical" href="https://airlinxheating.ca/north-vancouver/" />
       </Head>
       <script
         type="application/ld+json"

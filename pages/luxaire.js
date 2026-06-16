@@ -45,7 +45,7 @@ const Luxair = () => {
         <title>Luxaire HVAC Service Experts for Your Home</title>
         <meta name="description" content="Airlinx heating & air conditioning experts help you choose the perfect Luxaire HVAC system for your home. Visit us today!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/luxaire/" />
+        <link rel="canonical" href="https://airlinxheating.ca/luxaire/" />
       </Head>
       <script type="application/ld+json">
         {

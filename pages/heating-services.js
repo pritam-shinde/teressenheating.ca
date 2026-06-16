@@ -114,7 +114,7 @@ const HeatingService = () => {
         <title>Affordable Heating Maintenance Services | Airlinxheating </title>
         <meta name="description" content="Airlinx offers high quality heating maintenance services. Our experienced technicians provide thorough inspections, repairs and preventive maintenance." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/heating-services/" />
+        <link rel="canonical" href="https://airlinxheating.ca/heating-services/" />
       </Head>
       {/* <script type="application/ld+json">
         {

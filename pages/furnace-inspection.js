@@ -41,7 +41,7 @@ const FurnaceInspection = () => {
         <title>Furnace Repair, Installation & Replacement</title>
         <meta name="description" content="Airlinx offers professional furnace installation and repair services in Canada. Our experienced technicians provide quality workmanship at competitive rates." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/furnace-inspection/" />
+        <link rel="canonical" href="https://airlinxheating.ca/furnace-inspection/" />
       </Head>
 
       <main>

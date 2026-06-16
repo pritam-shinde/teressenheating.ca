@@ -25,7 +25,7 @@ const AboutUs = () => {
         <title>About us - Heating & Air Conditioning Services | Airlinxheating </title>
         <meta name="description" content="We provide heating & air conditioning solutions for residential & commercial customers in Canada. Request a heating & air conditioning service quote." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/about-us/" />
+        <link rel="canonical" href="https://airlinxheating.ca/about-us/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Who We Are" color="#fff" />

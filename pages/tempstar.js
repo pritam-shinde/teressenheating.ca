@@ -45,7 +45,7 @@ const tempstar = () => {
         <title>Tempstar Heating and Cooling Service Professionals | Airlinxheating</title>
         <meta name="description" content="Airlinx Heating Service Professionals wants to be your family's HVAC company for life. We provide quality service for Tempstar Heating and Cooling. Visit Us Now!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/tempstar/" />
+        <link rel="canonical" href="https://airlinxheating.ca/tempstar/" />
       </Head>
       <script type="application/ld+json">
         {

@@ -84,7 +84,7 @@ const Richmond = () => {
         <title>Air Conditioning Installation Services in Richmond</title>
         <meta name="description" content="For all of your air conditioning installation services needs in Richmond, VA, choose Airlinx Heating. We offer a wide range of high-quality HVAC services. " />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/richmond/" />
+        <link rel="canonical" href="https://airlinxheating.ca/richmond/" />
       </Head>
       <script
         type="application/ld+json"

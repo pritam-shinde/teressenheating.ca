@@ -84,7 +84,7 @@ const Tsawwasses = () => {
         <title>Water Heater & Air Conditioning Services in Tsawwassen</title>
         <meta name="description" content="Airlinx Heating & Air Conditioning offers expert water heater and AC services in Tsawwassen. Call today for reliable service!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/tsawwassen/" />
+        <link rel="canonical" href="https://airlinxheating.ca/tsawwassen/" />
       </Head>
       <script
         type="application/ld+json"

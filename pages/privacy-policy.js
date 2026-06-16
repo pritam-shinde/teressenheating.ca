@@ -11,7 +11,7 @@ const PrivacyPolicy = () => {
                 <title>Privacy Policy - airlinxheating.ca</title>
                 <meta name="description" content="" />
                 <meta name="robots" content="noindex" />
-                <link rel="canonical" href="/about-us/" />
+                <link rel="canonical" href="https://airlinxheating.ca/about-us/" />
             </Head>
             <main>
                 <CommonBanner bg={Banner} />

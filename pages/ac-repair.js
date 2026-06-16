@@ -31,7 +31,7 @@ const AcRepair = () => {
         <title>Air Conditioning Repair services | Airlinxheating </title>
         <meta name="description" content="Our air conditioning repair services include any type of AC repair, installation, replacement or tune-ups for both residential and commercial customers." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/ac-repair/" />
+        <link rel="canonical" href="https://airlinxheating.ca/ac-repair/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Air Conditioning Repair" color="#fff" variant="h1" />

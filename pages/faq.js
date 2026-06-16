@@ -21,7 +21,7 @@ const FAQ = () => {
         <title>Common Questions About Heating & Cooling | Airlinxheating</title>
         <meta name="description" content="We offer a variety of services to fit your needs. Get the answers to your questions about our heating & cooling services and what sets us apart from the competition." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/faq/" />
+        <link rel="canonical" href="https://airlinxheating.ca/faq/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Frequently Asked Questions" color="#fff" />

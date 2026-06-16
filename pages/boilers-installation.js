@@ -43,7 +43,7 @@ const BoilerInstallation = () => {
         <title>Best Boiler Installation Service in Canada | Airlinxheating</title>
         <meta name="description" content="Airlinxheating provides the best boiler installation service in Canada. We offer a range of boiler installation options to suit your needs, contact us." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/boilers-installation/" />
+        <link rel="canonical" href="https://airlinxheating.ca/boilers-installation/" />
       </Head>
 
       <CommonBanner bg={BoilerInstallationBanner} title="Airlinx boiler installation services" color="#fff" variant="h1" />

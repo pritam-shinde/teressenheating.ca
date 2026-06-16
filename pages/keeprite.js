@@ -48,7 +48,7 @@ const Keeprite = () => {
         <title>Keeprite Furnace Maintenance Services | Airlinxheating</title>
         <meta name="description" content="Keeprite furnaces are the most dependable furnaces on the market, but they need routine maintenance. Airlinx offers maintenance to keep your furnace operating properly." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/keeprite/" />
+        <link rel="canonical" href="https://airlinxheating.ca/keeprite/" />
       </Head>
       <script type="application/ld+json">
         {

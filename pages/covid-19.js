@@ -19,7 +19,7 @@ const Covid19 = () => {
         <title>Covid - Airlinxheating.ca</title>
         <meta name="description" content="" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/covid19/" />
+        <link rel="canonical" href="https://airlinxheating.ca/covid19/" />
       </Head>
       <main>
         <CommonBanner bg={width > 992 ? Banner : width > 601 ? BannerTab : BannerMob} />

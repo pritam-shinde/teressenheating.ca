@@ -84,7 +84,7 @@ const WhiteRock = () => {
         <title>Heating Installation Services in White-rock</title>
         <meta name="description" content="Expert heating installation services in White Rock, including maintenance, repairs, and replacements. Get your free quote today!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/white-rock/" />
+        <link rel="canonical" href="https://airlinxheating.ca/white-rock/" />
       </Head>
       <script
         type="application/ld+json"

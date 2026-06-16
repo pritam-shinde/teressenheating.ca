@@ -123,7 +123,7 @@ const AirConditioningService = () => {
         <title>Best Air Conditioning Service in Canada | Airlinxheating</title>
         <meta name="description" content="Trust Airlinx as your top choice for reliable and efficient air conditioning service in Canada. Our experienced professionals are here to help." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/air-conditioning-service/" />
+        <link rel="canonical" href="https://airlinxheating.ca/air-conditioning-service/" />
       </Head>
 
       <script

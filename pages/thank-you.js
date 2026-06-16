@@ -11,7 +11,7 @@ const ThankYou = () => {
         <title>Thank You - Airlinx Furnace Heating & AC HVAC Ltd.</title>
         <meta name="description" content="Thank you for contacting Airlinx. We have received your request and will get back to you shortly." />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="/thank-you/" />
+        <link rel="canonical" href="https://airlinxheating.ca/thank-you/" />
       </Head>
       <main>
         <Box

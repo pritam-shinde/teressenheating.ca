@@ -84,7 +84,7 @@ const WestVancouver = () => {
         <title>Heating and Air Conditioning Services in West Vancouver</title>
         <meta name="description" content="Heating & air conditioning services in West Vancouver for homes and businesses, including repairs, installation, and emergency service." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/west-vancouver/" />
+        <link rel="canonical" href="https://airlinxheating.ca/west-vancouver/" />
       </Head>
       <script
         type="application/ld+json"

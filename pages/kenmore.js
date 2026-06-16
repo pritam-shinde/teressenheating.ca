@@ -44,7 +44,7 @@ const Kenmore = () => {
         <title>Kenmore HVAC Services - Professional Technicians | Airlinx Heating</title>
         <meta name="description" content="Tereesen provides you with the Kenmore HVAC heating and cooling equipment service with sophisticated, quality-driven, and comfortable. Call Us Now!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/kenmore/" />
+        <link rel="canonical" href="https://airlinxheating.ca/kenmore/" />
       </Head>
       <script type="application/ld+json">
         {

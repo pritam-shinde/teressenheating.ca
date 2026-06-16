@@ -54,7 +54,7 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
                 <title>Blog - airlinxheating.ca</title>
                 <meta name="description" content="Browse more HVAC articles, repair tips, heating advice, and air conditioning insights from the Airlinx Heating blog archive." />
                 <meta name="robots" content="index" />
-                <link rel="canonical" href={`/blog/page/${pageNo}/`} />
+                <link rel="canonical" href={`https://airlinxheating.ca/blog/page/${pageNo}/`} />
             </Head>
             <main>
                 <CommonBanner bg={Banner}  title="Blog" />

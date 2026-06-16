@@ -38,7 +38,7 @@ const Emergency = () => {
         <title>Affordable Heating and Cooling Emergency Services in Canada | Airlinx</title>
         <meta name="description" content="Airlinx's heating services offer the best 24*7 emergency heating and cooling services in Canada. We serve the best affordable , trusted and quality service." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/emergency/" />
+        <link rel="canonical" href="https://airlinxheating.ca/emergency/" />
       </Head>
 
       <main>

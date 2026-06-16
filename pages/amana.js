@@ -50,7 +50,7 @@ const Amana = () => {
         <title>Amana Furnace and Heating Experienced Technicians | Airlinxheating</title>
         <meta name="description" content="Get your Amana furnace serviced by certified technicians, who will make sure your furnace system is operating at peak performance. Call us to Book Now!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/amana/" />
+        <link rel="canonical" href="https://airlinxheating.ca/amana/" />
       </Head>
       <script type="application/ld+json">
         {

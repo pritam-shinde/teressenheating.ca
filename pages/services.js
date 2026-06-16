@@ -16,7 +16,7 @@ const Service = () => {
         <title>Heating And Air Conditioning Services Canada | Airlinx</title>
         <meta name="description" content="Get affordable heating and air conditioning services in Canada for your commercial or residential property from Airlinx. Contact us today." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/services/" />
+        <link rel="canonical" href="https://airlinxheating.ca/services/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="HVAC Services" color="#fff" />

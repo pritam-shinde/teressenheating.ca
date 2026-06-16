@@ -38,7 +38,7 @@ const RebatesAndPromotion = () => {
         <title>Airlinx offers heating and cooling rebates promotions </title>
         <meta name="description" content="Airlinx Heating offers heating & cooling rebates and special promotions to help you save money. Contact us today for details!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/rebates-and-promotions/" />
+        <link rel="canonical" href="https://airlinxheating.ca/rebates-and-promotions/" />
       </Head>
 
       <main>

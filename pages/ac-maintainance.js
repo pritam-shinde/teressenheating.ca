@@ -31,7 +31,7 @@ const AcMaintainance = () => {
                 <title>Air Conditioning Maintenance Services | Airlinxheating </title>
                 <meta name="description" content="Airlinx Heating & Cooling has provided air conditioning maintenance services to residential and commercial customers throughout Canada and its area for a long." />
                 <meta name="robots" content="index" />
-                <link rel="canonical" href="/ac-maintainance/" />
+                <link rel="canonical" href="https://airlinxheating.ca/ac-maintainance/" />
             </Head>
             <main>
                 <CommonBanner bg={Banner} title="Air Conditioning Maintenance" color="#fff" variant="h1" />

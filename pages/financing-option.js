@@ -38,7 +38,7 @@ const FinancingOption = () => {
         <title>Easy Financing Options for HVAC Services | Airlinxheating</title>
         <meta name="description" content="Airlinx heating has financing options to make it easy for you to get the HVAC services you need. We offer flexible payment plans & competitive interest rates. " />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/financing-option/" />
+        <link rel="canonical" href="https://airlinxheating.ca/financing-option/" />
       </Head>
 
       <CommonBanner bg={Banner} title="Airlinx's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />

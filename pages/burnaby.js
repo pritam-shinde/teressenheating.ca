@@ -84,7 +84,7 @@ const Burnaby = () => {
         <title>Furnace Installer Services in Burnaby | Airlinxheating</title>
         <meta name="description" content="At Airlinx Heating and Air Conditioning Ltd, we're committed to supplying the best furnace installation service in Burnaby. We offer free quotes and consultations." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/burnaby/" />
+        <link rel="canonical" href="https://airlinxheating.ca/burnaby/" />
       </Head>
       <script
         type="application/ld+json"

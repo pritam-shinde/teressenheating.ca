@@ -46,7 +46,7 @@ const AireFlo = () => {
         <title>Aire-Flo Heating & Cooling Services | Airlinxheating</title>
         <meta name="description" content="Airlinx Heating will help you with an expert solution for Air Flo heating and Cooling Services by coming to your home and discussing your comfort needs." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/aire-flo/" />
+        <link rel="canonical" href="https://airlinxheating.ca/aire-flo/" />
       </Head>
       <script type="application/ld+json">
         {

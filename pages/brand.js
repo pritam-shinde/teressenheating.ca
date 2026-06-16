@@ -51,7 +51,7 @@ const Brand = () => {
         <title>HVAC Services Provider for all Brands | Airlinxheating</title>
         <meta name="description" content="Airlinx Heating specializes in HVAC installation services for major brands like Rheem and Carrier, delivering reliable comfort solutions. Call today!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/brand/" />
+        <link rel="canonical" href="https://airlinxheating.ca/brand/" />
       </Head>
 
       <main>

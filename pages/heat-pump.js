@@ -31,7 +31,7 @@ const index = () => {
         <title>Experts Heat Pump Installation Services | Airlinx Heating</title>
         <meta name="description" content="We provide the most competitive and efficient heat pump installation services. The best way to get the most out of your heat pump is to install it right." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/heat-pump/" />
+        <link rel="canonical" href="https://airlinxheating.ca/heat-pump/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Heat Pump" color="#fff" variant="h1" />

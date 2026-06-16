@@ -52,7 +52,7 @@ const SingleCategory = ({ data, sidebarBlogs, category }) => {
                 <title>{data ? data[0] ? data[0].name ? data[0].name : null : null : null} - teressenheating.ca</title>
                 <meta name="description" content={data ? data[0] ? data[0].name ? `Read Airlinx Heating blog posts in the ${data[0].name} category.` : null : null : null} />
                 <meta name="robots" content="index" />
-                <link rel="canonical" href={`/blog/category/${data ? data[0] ? data[0].slug ? data[0].slug : null : null : null}/`} />
+                <link rel="canonical" href={`https://airlinxheating.ca/blog/category/${data ? data[0] ? data[0].slug ? data[0].slug : null : null : null}/`} />
             </Head>
             <main>
                 <CommonBanner bg={Banner} title={data ? data[0] ? data[0].name ? data[0].name : null : null : null} />

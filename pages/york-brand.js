@@ -45,7 +45,7 @@ const YorkBrand = () => {
         <title>York Heating and Air Conditioning Service Expert</title>
         <meta name="description" content="Airlinx Heating and Air Conditioning Service provide experts for York heating & air conditioning installation, repair and maintenance services. Contact us today!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/york-brand/" />
+        <link rel="canonical" href="https://airlinxheating.ca/york-brand/" />
       </Head>
       <script type="application/ld+json">
         {

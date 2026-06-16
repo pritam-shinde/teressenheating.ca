@@ -31,7 +31,7 @@ const index = () => {
         <title>Furnace Service Repair Installation and Replacement | Airlinx Heating</title>
         <meta name="description" content="Airlinx Heating and Air Conditioning, We offer the most comprehensive furnace service repair, installation, and replacement in the area. Book an Appointment Now!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/furnace/" />
+        <link rel="canonical" href="https://airlinxheating.ca/furnace/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Furnace" color="#fff" variant="h1" />

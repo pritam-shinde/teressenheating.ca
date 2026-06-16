@@ -84,7 +84,7 @@ const PittMeadows = () => {
         <title>Best Heating Services in Pitt Meadows | Airlinxheating</title>
         <meta name="description" content="Quality heating services in Pitt Meadows, including installations, repairs, furnace maintenance, and more at competitive prices." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/pitt-meadows/" />
+        <link rel="canonical" href="https://airlinxheating.ca/pitt-meadows/" />
       </Head>
       <script
         type="application/ld+json"

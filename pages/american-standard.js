@@ -44,7 +44,7 @@ const AmericanStandard = () => {
         <title>Professional American standard Heating Services at your Doorstep</title>
         <meta name="description" content="HVAC Services in Canada for Professional American Standard Heating Services at your Doorstep. We are a company with professional experience providing heating services." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/american-standard/" />
+        <link rel="canonical" href="https://airlinxheating.ca/american-standard/" />
       </Head>
       <script type="application/ld+json">
         {

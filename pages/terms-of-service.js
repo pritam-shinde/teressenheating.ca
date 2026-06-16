@@ -10,7 +10,7 @@ const TNC = () => {
                 <title>Terms of Service - Airlinxheating.ca</title>
                 <meta name="description" content="" />
                 <meta name="robots" content="noindex" />
-                <link rel="canonical" href="/about-us/" />
+                <link rel="canonical" href="https://airlinxheating.ca/about-us/" />
             </Head>
             <main>
                 <CommonBanner bg={Banner} title="Terms Of Service" variant="h1" color="#fff" />

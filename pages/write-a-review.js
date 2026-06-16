@@ -13,7 +13,7 @@ const WriteAReview = () => {
         <title>Write a Review - Heating & Cooling Services</title>
         <meta name="description" content="If you're looking for a heating and cooling company, check out our Reviews, Ratings, and Cost Guide. We have the information you need to find the perfect HVAC. " />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/write-a-review/" />
+        <link rel="canonical" href="https://airlinxheating.ca/write-a-review/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Write A Review" color="#fff" />

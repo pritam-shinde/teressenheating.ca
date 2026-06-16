@@ -84,7 +84,7 @@ const Coquitlam = () => {
         <title>Quality AC Installation Services in Coquitlam | Airlinxheating</title>
         <meta name="description" content="If you need quality AC installation services in Coquitlam, contact Airlinx Heating. We offer emergency service and financing options to make your home more comfortable." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/coquitlam/" />
+        <link rel="canonical" href="https://airlinxheating.ca/coquitlam/" />
       </Head>
       <script
         type="application/ld+json"

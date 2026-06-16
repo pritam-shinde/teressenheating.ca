@@ -128,7 +128,7 @@ const TanklesWaterHeater = () => {
         <title>Tankless Water Heaters Service in Canada | Airlinxheating</title>
         <meta name="description" content="We at Airlinx Heating Canada offer high quality installation, maintenance and repair for residential and commercial tankless water heaters services." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/tankless-water-heaters/" />
+        <link rel="canonical" href="https://airlinxheating.ca/tankless-water-heaters/" />
       </Head>
 
       <script

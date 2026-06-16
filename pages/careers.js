@@ -11,7 +11,7 @@ const Careers = () => {
         <title>Certified Carrier Furnace Technician Services</title>
         <meta name="description" content="Airlinx is one of the top employers of HVAC professionals across Canada. Visit our career page to explore the current opportunities in the heating & cooling industry." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/careers/" />
+        <link rel="canonical" href="https://airlinxheating.ca/careers/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Career" color="#fff" />

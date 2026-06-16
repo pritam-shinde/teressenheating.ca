@@ -84,7 +84,7 @@ const PortMoody = () => {
         <title>Air Conditioning Services and Heating in Port Moody</title>
         <meta name="description" content="Need heating or air conditioning services in Port Moody, BC? Trust Airlinx for expert HVAC repair, installation, and maintenance." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/port-moody/" />
+        <link rel="canonical" href="https://airlinxheating.ca/port-moody/" />
       </Head>
       <script
         type="application/ld+json"
