@@ -22,8 +22,8 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>About us - Heating & Air Conditioning Services | Airlinxheating </title>
-        <meta name="description" content="We provide heating & air conditioning solutions for residential & commercial customers in Canada. Request a heating & air conditioning service quote." />
+        <title>About Us - Premier HVAC Company Burnaby, BC - Airlinx</title>
+        <meta name="description" content="Discover the story behind Airlinx Heating. As a leading HVAC company in Burnaby, we are dedicated to providing honest, high-quality climate comfort." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/about-us/" />
       </Head>

@@ -111,8 +111,8 @@ const HeatingService = () => {
   return (
     <>
       <Head>
-        <title>Affordable Heating Maintenance Services | Airlinxheating </title>
-        <meta name="description" content="Airlinx offers high quality heating maintenance services. Our experienced technicians provide thorough inspections, repairs and preventive maintenance." />
+        <title>Complete Heating Services in Burnaby - Airlinx Heating</title>
+        <meta name="description" content="From emergency heating repairs to professional new system installations, get the dependable heating services you need from Airlinx Heating at Burnaby." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/heating-services/" />
       </Head>

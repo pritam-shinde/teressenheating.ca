@@ -120,8 +120,8 @@ const AirConditioningService = () => {
   return (
     <>
       <Head>
-        <title>Best Air Conditioning Service in Canada | Airlinxheating</title>
-        <meta name="description" content="Trust Airlinx as your top choice for reliable and efficient air conditioning service in Canada. Our experienced professionals are here to help." />
+        <title>Air Conditioning Service & Maintenance in Burnaby - Airlinx</title>
+        <meta name="description" content="Keep your home cool all summer long. Airlinx Heating offers professional air conditioning service, with 24/7 availability in Burnaby and nearby areas." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/air-conditioning-service/" />
       </Head>

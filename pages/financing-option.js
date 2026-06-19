@@ -35,8 +35,8 @@ const FinancingOption = () => {
   return (
     <>
       <Head>
-        <title>Easy Financing Options for HVAC Services | Airlinxheating</title>
-        <meta name="description" content="Airlinx heating has financing options to make it easy for you to get the HVAC services you need. We offer flexible payment plans & competitive interest rates. " />
+        <title>Affordable Heating & Cooling Financing Options - Airlinx</title>
+        <meta name="description" content="Upgrade your home comfort today and pay over time. Explore easy HVAC financing solutions from Airlinx Heating for new furnace, AC, or boiler installs." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/financing-option/" />
       </Head>

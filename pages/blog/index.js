@@ -49,8 +49,8 @@ const Blog = ({ data, category }) => {
   return (
     <>
       <Head>
-        <title>Blog - airlinxheating.ca</title>
-        <meta name="description" content="Stay informed with expert HVAC tips, heating solutions, air conditioning advice, and energy-saving insights from Airlinx Heating professionals." />
+        <title>HVAC, Heating & Cooling Advice Blogs - Airlinx Heating</title>
+        <meta name="description" content="Stay comfortable all year! Explore the Airlinx Heating blog for expert advice on furnace maintenance, AC energy savings, and troubleshooting tips." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/blog/" />
       </Head>

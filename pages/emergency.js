@@ -35,8 +35,8 @@ const Emergency = () => {
   return (
     <>
       <Head>
-        <title>Affordable Heating and Cooling Emergency Services in Canada | Airlinx</title>
-        <meta name="description" content="Airlinx's heating services offer the best 24*7 emergency heating and cooling services in Canada. We serve the best affordable , trusted and quality service." />
+        <title>Reliable Emergency HVAC Services in Burnaby - Airlinx</title>
+        <meta name="description" content="No heat or AC? Don't panic. Airlinx Heating offers fast emergency HVAC services 24/7 to restore your home’s comfort safely. Call our team right now." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/emergency/" />
       </Head>

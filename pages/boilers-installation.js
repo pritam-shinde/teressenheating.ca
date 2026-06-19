@@ -40,8 +40,8 @@ const BoilerInstallation = () => {
   return (
     <>
       <Head>
-        <title>Best Boiler Installation Service in Canada | Airlinxheating</title>
-        <meta name="description" content="Airlinxheating provides the best boiler installation service in Canada. We offer a range of boiler installation options to suit your needs, contact us." />
+        <title>Reliable Boiler Installation Burnaby, BC - Airlinx Heating</title>
+        <meta name="description" content="Upgrade your home heating system today. Airlinx Heating provides expert boiler installation in Burnaby services with high-efficiency equipment choices." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-installation/" />
       </Head>

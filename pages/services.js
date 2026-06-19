@@ -13,8 +13,8 @@ const Service = () => {
   return (
     <>
       <Head>
-        <title>Heating And Air Conditioning Services Canada | Airlinx</title>
-        <meta name="description" content="Get affordable heating and air conditioning services in Canada for your commercial or residential property from Airlinx. Contact us today." />
+        <title>HVAC, Furnace, Heating and Cooling Services Canada - Airlinx</title>
+        <meta name="description" content="Need professional HVAC care? Airlinx Heating offers top installation, repair, and maintenance service for furnaces, boilers, heat pumps, and ACs in Canada." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/services/" />
       </Head>

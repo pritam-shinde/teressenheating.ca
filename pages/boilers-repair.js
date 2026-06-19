@@ -39,8 +39,8 @@ const BoilerRepair = () => {
   return (
     <>
       <Head>
-        <title>Trusted Boiler Repair Services in Canada | Airlinxheating</title>
-        <meta name="description" content="Trust Airlinx Heating for reliable, efficient, and cost-effective boiler repair services in Canada. Our certified technicians are available 24/7." />
+        <title>24/7 Boiler Repair Service at Burnaby BC - Airlinx</title>
+        <meta name="description" content="Need fast boiler repairs? Airlinx Heating offers 24/7 emergency boiler repair services in Burnaby with certified technicians. Schedule a service call today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-repair/" />
       </Head>

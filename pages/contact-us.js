@@ -8,8 +8,8 @@ const ContactUs = () => {
   return (
     <>
       <Head>
-        <title>Contact Us for Heating and Cooling Services</title>
-        <meta name="description" content="Get in touch with us for your heating or cooling-related quote. Call or email us at 604-363-6622 or info@airlinxheating.ca to get the best heating or cooling quote." />
+        <title>Contact for Emergency Heating And Cooling Service​ - Airlinx</title>
+        <meta name="description" content="Ready to upgrade your system or need a quick fix? Contact Airlinx Heating for top-tier AC installation, furnace repair, and maintenance services. Book Now." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/contact-us/" />
       </Head>

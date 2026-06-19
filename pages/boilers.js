@@ -181,8 +181,8 @@ const Boiler = () => {
   return (
     <>
       <Head>
-        <title>Best Boiler Services in Canada | Airlinx</title>
-        <meta name="description" content="Airlinx Heating offers professional boiler services in Canada, including boiler installation, repair, replacement, and maintenance for your home heating." />
+        <title>Boiler Services - Emergency Repairs & Install - Airlinx</title>
+        <meta name="description" content="Need professional care for your heating system? Trust Airlinx Heating for all boiler services. We provide 24/7 solutions. Schedule your appointment today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers/" />
       </Head>

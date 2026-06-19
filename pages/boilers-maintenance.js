@@ -39,8 +39,8 @@ const BoilerMaintainance = () => {
   return (
     <>
       <Head>
-        <title>Trusted Boiler Maintenance Services in Canada | Airlinx</title>
-        <meta name="description" content="We Airlinx boiler maintenance services provider in Canada. we offer comprehensive boiler services including installation and repair. Contact us today." />
+        <title>Boiler Maintenance Services in Burnaby - Airlinx</title>
+        <meta name="description" content="Give your heating system a care it deserves. Airlinx Heating delivers expert boiler maintenance services in Burnaby to prevent expensive emergency fixes." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-maintenance/" />
       </Head>

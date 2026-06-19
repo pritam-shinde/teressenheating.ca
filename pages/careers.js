@@ -8,8 +8,8 @@ const Careers = () => {
   return (
     <>
       <Head>
-        <title>Certified Carrier Furnace Technician Services</title>
-        <meta name="description" content="Airlinx is one of the top employers of HVAC professionals across Canada. Visit our career page to explore the current opportunities in the heating & cooling industry." />
+        <title>HVAC Jobs and Career Opportunities - Airlinx Heating</title>
+        <meta name="description" content="Build your future with Airlinx Heating. We offer competitive pay, a supportive work environment, and great career paths for licensed HVAC experts in Canada." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/careers/" />
       </Head>

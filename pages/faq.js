@@ -18,8 +18,8 @@ const FAQ = () => {
   return (
     <>
       <Head>
-        <title>Common Questions About Heating & Cooling | Airlinxheating</title>
-        <meta name="description" content="We offer a variety of services to fit your needs. Get the answers to your questions about our heating & cooling services and what sets us apart from the competition." />
+        <title>Common Questions About Heating & Cooling Service - Airlinx</title>
+        <meta name="description" content="Find quick answers to common home comfort questions. Airlinx Heating answers your FAQs about heating, furnace, AC lifespans, boilers and other services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/faq/" />
       </Head>

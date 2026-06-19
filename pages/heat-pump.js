@@ -28,8 +28,8 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Experts Heat Pump Installation Services | Airlinx Heating</title>
-        <meta name="description" content="We provide the most competitive and efficient heat pump installation services. The best way to get the most out of your heat pump is to install it right." />
+        <title>Reliable Heat Pump Service Burnaby - Airlinx Heating</title>
+        <meta name="description" content="Lower your energy bills with an efficient system. Trust Airlinx Heating for professional heat pump service Burnaby, including quick fixes and tune-ups." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/heat-pump/" />
       </Head>

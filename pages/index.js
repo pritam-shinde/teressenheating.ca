@@ -24,8 +24,8 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Airlinx Heating and Air Conditioning Service in Canada</title>
-        <meta name="description" content="Airlinx Heating in Canada offers high-quality heating and air conditioning services throughout the country. We offer a wide range of services to meet your needs." />
+        <title>Airlinx Heating and Cooling Services - HVAC Contractor Burnaby</title>
+        <meta name="description" content="Looking for a top HVAC contractor in Burnaby? Airlinx Heating offers expert heating, AC, and boiler services with 24/7 emergency support. Contact today!" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/" />
       </Head>
