@@ -33,6 +33,20 @@ const Service = () => {
         })
     }, [width])
 
+    const cleanDuplicateHeadings = (swiper) => {
+        if (!swiper || !swiper.el) return;
+        const duplicates = swiper.el.querySelectorAll('.swiper-slide-duplicate h3');
+        duplicates.forEach(h3 => {
+            const div = document.createElement('div');
+            for (let i = 0; i < h3.attributes.length; i++) {
+                const attr = h3.attributes[i];
+                div.setAttribute(attr.name, attr.value);
+            }
+            div.innerHTML = h3.innerHTML;
+            h3.parentNode.replaceChild(div, h3);
+        });
+    };
+
     return (
         <>
             <section>
@@ -77,12 +91,15 @@ const Service = () => {
                                                     }}
                                                     navigation={true}
                                                     loop={true}
+                                                    onInit={cleanDuplicateHeadings}
+                                                    onUpdate={cleanDuplicateHeadings}
+                                                    onSlideChange={cleanDuplicateHeadings}
                                                 >
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image layout='responsive' src={s1} alt="AC Remote" title='AC Remote' className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainer}>
-                                                                <Typography variant='h3' className="text-white">AC Installation & Replacement</Typography>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>AC Installation & Replacement</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC Installation & Replacement</Typography>
@@ -97,7 +114,7 @@ const Service = () => {
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image layout='responsive' src={s2} alt="AC Repair" title='AC Repair' className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainer}>
-                                                                <Typography variant='h3' className="text-white">AC Repairing</Typography>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>AC Repairing</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC Repairing</Typography>
@@ -112,7 +129,7 @@ const Service = () => {
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image layout='responsive' src={s3} alt="Airlinx Expert Technician Cooling Service" className='img-fluid' title='Airlinx Expert Technician Cooling Service' />
                                                             <Box p={2} className={Styles.titleContainer}>
-                                                                <Typography variant='h3' className="text-white">AC maintenance</Typography>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>AC maintenance</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC maintenance</Typography>
@@ -138,12 +155,15 @@ const Service = () => {
                                                     }}
                                                     navigation={true}
                                                     loop={true}
+                                                    onInit={cleanDuplicateHeadings}
+                                                    onUpdate={cleanDuplicateHeadings}
+                                                    onSlideChange={cleanDuplicateHeadings}
                                                 >
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image layout='responsive' src={Furnace} alt="Furnace System" title='Furnace System' className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                                <Typography variant='h3' className="text-white">Furnaces</Typography>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Furnaces</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Furnaces</Typography>
@@ -158,7 +178,7 @@ const Service = () => {
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image layout='responsive' src={Boiler} alt="Trusted Service Partner for Boiler Installation" title='Trusted Service Partner for Boiler Installation' className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                                <Typography variant='h3' className="text-white">Boiler</Typography>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Boiler</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Boiler</Typography>
@@ -173,7 +193,7 @@ const Service = () => {
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image layout='responsive' src={Heatpump} alt="Certified Heat Pump Technician" title='Certified Heat Pump Technician' className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                                <Typography variant='h3' className="text-white">Heat Pump</Typography>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Heat Pump</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Heat Pump</Typography>
@@ -188,7 +208,7 @@ const Service = () => {
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image layout='responsive' src={Fireplace} alt="Professional Fireplace Central Sysytem" title='Professional Fireplace Central Sysytem' className='img-fluid' />
                                                             <Box p={2} className={Styles.titleContainerRed}>
-                                                                <Typography variant='h3' className="text-white">Fireplace</Typography>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Fireplace</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Fireplace</Typography>

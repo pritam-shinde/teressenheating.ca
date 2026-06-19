@@ -264,3 +264,14 @@
         background-position: -120% 0%;
     }
 }
+
+.sliderHeading {
+    font-size: var(--h3-desktop-size) !important;
+    font-weight: var(--heading-font-weight) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .sliderHeading {
+        font-size: var(--h3-mob-size) !important;
+    }
+}

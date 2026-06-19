@@ -3,6 +3,4 @@ User-agent: *
 Disallow: /api/
 Disallow: /cdn-cgi/l/email-protection
 
-Allow: /wp-admin/admin-ajax.php
-
 Sitemap: https://airlinxheating.ca/sitemap.xml
