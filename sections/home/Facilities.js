@@ -20,7 +20,7 @@ const Facilities = () => {
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
                                                 <Image layout='responsive' src={Certificate} alt="Certificate Logo" title='Certificate Logo' />
                                             </Box>
-                                            <Typography variant='h2' className='text--grey fs-5 fw-semibold' gutterBottom>Certified Dealer</Typography>
+                                            <Typography variant='p' className='text--grey fs-5 fw-semibold' gutterBottom>Certified Dealer</Typography>
                                             <Typography className='para' align='center'>Trust, affordability, and quality are the pillars on which we work. Our certified dealers work 24*7 especially to serve you better.</Typography>
                                         </Box>
                                     </Grid>
@@ -29,7 +29,7 @@ const Facilities = () => {
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
                                                 <Image layout='responsive' src={Clock} alt="24 hours Logo" title='24 hours Logo' />
                                             </Box>
-                                            <Typography variant='h2' className='text--grey fs-5 fw-semibold' gutterBottom>Request A Service Call</Typography>
+                                            <Typography variant='p' className='text--grey fs-5 fw-semibold' gutterBottom>Request A Service Call</Typography>
                                             <Typography className='para' align='center'>If you are facing any heating-related issues, then request a service call. We are here for your assistance and will give you the best of everything.</Typography>
                                         </Box>
                                     </Grid>
@@ -38,7 +38,7 @@ const Facilities = () => {
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
                                                 <Image layout='responsive' src={Hand} alt="Financing Logo" title='Financing Logo' />
                                             </Box>
-                                            <Typography variant='h2' className='text--grey fs-5 fw-semibold' gutterBottom>Need Financing?</Typography>
+                                            <Typography variant='p' className='text--grey fs-5 fw-semibold' gutterBottom>Need Financing?</Typography>
                                             <Typography className='para' align='center'>If you need financing aid, we are there for your service. So, don&apos;t worry and leave all your worries to us. We will make your day better!</Typography>
                                         </Box>
                                     </Grid>

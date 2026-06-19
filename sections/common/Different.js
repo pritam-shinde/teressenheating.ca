@@ -15,21 +15,21 @@ const Different = ({ title, titleVariant, titleAlign, list }) => {
                                     title ? <SectionalHeading simpletext={title} variant={titleVariant} align={titleAlign} /> : null
                                 }
                                 <Box mt={5}>
-                                {
-                                    list ?
-                                        <Grid container>
-                                            {
-                                                list.map(item => <Grid key={item} item xs={12} sm={6} md={4}>
-                                                    <ListItem>
-                                                        <ListItemIcon>
-                                                            <FiCheckSquare className='text--blue' style={{fontSize:"1.5rem"}} />
-                                                        </ListItemIcon>
-                                                        <ListItemText primary={<h4>{item}</h4>} />
-                                                    </ListItem>
-                                                </Grid>)
-                                            }
-                                        </Grid> : null
-                                }
+                                    {
+                                        list ?
+                                            <Grid container>
+                                                {
+                                                    list.map(item => <Grid key={item} item xs={12} sm={6} md={4}>
+                                                        <ListItem>
+                                                            <ListItemIcon>
+                                                                <FiCheckSquare className='text--blue' style={{ fontSize: "1.5rem" }} />
+                                                            </ListItemIcon>
+                                                            <ListItemText primary={<h3 className='fs-5'>{item}</h3>} />
+                                                        </ListItem>
+                                                    </Grid>)
+                                                }
+                                            </Grid> : null
+                                    }
                                 </Box>
                             </Box>
                         </Grid>
