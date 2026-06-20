@@ -37,8 +37,8 @@ const LennoxHVAC = () => {
   return (
     <>
       <Head>
-        <title>Lennox HVAC Systems Installation and Service Dealer</title>
-        <meta name="description" content="We are the Lennox dealer specialize in Lennox products installation and services We have experienced technicians who ensure that your system is running smoothing." />
+        <title>Lennox HVAC Systems Installation and Services - Airlinx</title>
+        <meta name="description" content="Airlinx Heating is the Lennox dealer specialize in Lennox HVAC products services We have experienced team who provides quality work in emergency also" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/lennox-hvac/" />
       </Head>

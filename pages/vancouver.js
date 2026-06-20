@@ -84,8 +84,8 @@ const Vancouver = () => {
   return (
     <>
       <Head>
-        <title>Heating and Air Conditioning Services in Vancouver</title>
-        <meta name="description" content="In Vancouver, BC, we offer heating and air conditioning services to make sure you stay warm in the winter and cool during the summer. Contact us today !" />
+        <title>Reliable HVAC Service Vancouver - Airlinx Heating</title>
+        <meta name="description" content="Fully certified heating, cooling and HVAC Service Vancouver. Enjoy transparent upfront pricing on all maintenance and repair work for homes and businesses." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/vancouver/" />
       </Head>

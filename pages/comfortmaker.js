@@ -41,8 +41,8 @@ const Comfortmaker = () => {
   return (
     <>
       <Head>
-        <title>Comfortmaker Heating Pump Installation Service Provider  | Airlinx</title>
-        <meta name="description" content="The Airlinx Heating Company installs Comfortmaker heating pumps and provides their customers with the most up-to-date installation in the industry." />
+        <title>Comfortmaker Heating Pump Installation Services - Airlinx</title>
+        <meta name="description" content="The Airlinx Heating Company installs Comfortmaker heating pumps and provides their customers with the most up-to-date installation in Burnaby." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/comfortmaker/" />
       </Head>

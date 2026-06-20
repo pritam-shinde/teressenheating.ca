@@ -81,8 +81,8 @@ const Tsawwasses = () => {
   return (
     <>
       <Head>
-        <title>Water Heater & Air Conditioning Services in Tsawwassen</title>
-        <meta name="description" content="Airlinx Heating & Air Conditioning offers expert water heater and AC services in Tsawwassen. Call today for reliable service!" />
+        <title>Top-Rated HVAC and Furnace Service Tsawwassen - Airlinx</title>
+        <meta name="description" content="Book your comprehensive furnace service Tsawwassen with certified technicians, clear pricing, and dependable results. Contact Airlinx Heating today." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/tsawwassen/" />
       </Head>

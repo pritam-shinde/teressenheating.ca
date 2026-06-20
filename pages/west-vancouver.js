@@ -81,8 +81,8 @@ const WestVancouver = () => {
   return (
     <>
       <Head>
-        <title>Heating and Air Conditioning Services in West Vancouver</title>
-        <meta name="description" content="Heating & air conditioning services in West Vancouver for homes and businesses, including repairs, installation, and emergency service." />
+        <title>Best Heating And Cooling Services West Vancouver - Airlinx</title>
+        <meta name="description" content="Need premium comfort solutions? Airlinx offers complete heating and cooling services West Vancouver homes trust for reliable repairs and installations." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/west-vancouver/" />
       </Head>

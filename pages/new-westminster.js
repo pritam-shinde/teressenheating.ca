@@ -81,8 +81,8 @@ const NewWestminar = () => {
   return (
     <>
       <Head>
-        <title>Furnace Repair, Air Conditioning Service in New Westminster</title>
-        <meta name="description" content="Complete furnace installation, air conditioning installation, furnace repair and maintenance, duct cleaning, and more. Serving New Westminster and many other areas." />
+        <title>HVAC Services In New Westminster - Airlinx Heating</title>
+        <meta name="description" content="Make your home feel comfortable year-round. Airlinx Heating offers expert HVAC services in New Westminster, including professional repairs and installations." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/new-westminster/" />
       </Head>

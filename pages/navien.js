@@ -41,8 +41,8 @@ const Navien = () => {
   return (
     <>
       <Head>
-        <title>Quality and Affordable Services of Navien Furnace.</title>
-        <meta name="description" content="Airlinx heating offers a complete range of high-efficiency Navien furnace, hot water heater products for residential,commercial,industrial applications." />
+        <title>Quality and Affordable Services of Navien Furnace - Airlinx</title>
+        <meta name="description" content="Airlinx Heating offers a complete range of high-efficiency Navien furnaces and water heaters for residential, commercial, and industrial applications." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/navien/" />
       </Head>

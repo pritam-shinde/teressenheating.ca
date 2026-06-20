@@ -45,8 +45,8 @@ const Keeprite = () => {
   return (
     <>
       <Head>
-        <title>Keeprite Furnace Maintenance Services | Airlinxheating</title>
-        <meta name="description" content="Keeprite furnaces are the most dependable furnaces on the market, but they need routine maintenance. Airlinx offers maintenance to keep your furnace operating properly." />
+        <title>Keeprite Furnace Maintenance Services in Burnaby - Airlinx</title>
+        <meta name="description" content="Upgrade your comfort with Keeprite heating and cooling solutions. Airlinx Heating provides expert HVAC installation and service you can trust." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/keeprite/" />
       </Head>

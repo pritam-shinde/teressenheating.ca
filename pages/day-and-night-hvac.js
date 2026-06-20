@@ -42,8 +42,8 @@ const DayNightHVAC = () => {
   return (
     <>
       <Head>
-        <title>Day & Night HVAC Service Expert Technicians</title>
-        <meta name="description" content="Tereseenheating is the most trusted company for your Day and Night HVAC service needs. Our professionals are licensed, trained, and experienced." />
+        <title>Day & Night HVAC Service Expert Technicians - Airlinx</title>
+        <meta name="description" content="Airlinx Heating is the most trusted company for your Day and Night HVAC service needs. Our professionals are licensed, trained, and experienced." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/day-and-night-hvac/" />
       </Head>

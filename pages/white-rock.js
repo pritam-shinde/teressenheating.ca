@@ -81,8 +81,8 @@ const WhiteRock = () => {
   return (
     <>
       <Head>
-        <title>Heating Installation Services in White-rock</title>
-        <meta name="description" content="Expert heating installation services in White Rock, including maintenance, repairs, and replacements. Get your free quote today!" />
+        <title>Boiler and Furnace Repair White Rock - Airlinx Heating</title>
+        <meta name="description" content="Don't get left in the cold. Airlinx Heating provides fast boiler and furnace repair White Rock homeowners trust to bring back warm, safe comfort tonight." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/white-rock/" />
       </Head>

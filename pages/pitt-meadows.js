@@ -81,8 +81,8 @@ const PittMeadows = () => {
   return (
     <>
       <Head>
-        <title>Best Heating Services in Pitt Meadows | Airlinxheating</title>
-        <meta name="description" content="Quality heating services in Pitt Meadows, including installations, repairs, furnace maintenance, and more at competitive prices." />
+        <title>HVAC Service Pitt Meadows - Heating & Repair - Airlinx</title>
+        <meta name="description" content="Keep your home comfortable year-round. Trust Airlinx Heating for premium HVAC service Pitt Meadows, including fast emergency repairs and installs." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/pitt-meadows/" />
       </Head>

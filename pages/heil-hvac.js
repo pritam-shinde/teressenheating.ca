@@ -41,8 +41,8 @@ const HeilHVAC = () => {
   return (
     <>
       <Head>
-        <title>Heil Heating and Cooling Experience Service Provider | Airlinxheating</title>
-        <meta name="description" content="Airlinx Heating has been the trusted choice for heating, cooling, and air quality solutions for a long. Expertise in Heil Heating and Cooling systems Services." />
+        <title>Heil Heating and Cooling Experience Service Provider - Airlinx</title>
+        <meta name="description" content="Airlinx Heating has been the trusted choice for heating, cooling, and air quality solutions for long. Expertise in Heil Heating and Cooling systems Services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/heil-hvac/" />
       </Head>

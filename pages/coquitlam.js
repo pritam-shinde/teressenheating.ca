@@ -81,8 +81,8 @@ const Coquitlam = () => {
   return (
     <>
       <Head>
-        <title>Quality AC Installation Services in Coquitlam | Airlinxheating</title>
-        <meta name="description" content="If you need quality AC installation services in Coquitlam, contact Airlinx Heating. We offer emergency service and financing options to make your home more comfortable." />
+        <title>HVAC Coquitlam - Heating & Furnace Repair - Airlinx</title>
+        <meta name="description" content="Looking for trusted HVAC Coquitlam services? Airlinx Heating delivers professional furnace repairs, boiler maintenance, and heat pump installations." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/coquitlam/" />
       </Head>

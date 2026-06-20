@@ -41,8 +41,8 @@ const ConcordAir = () => {
   return (
     <>
       <Head>
-        <title>Concord Heating and Cooling Systems Service Expert | Airlinxheating</title>
-        <meta name="description" content="Airlinx Heating offers complete HVAC service for commercial and residential customers of Concord Heating. We offer 24/7 heating and cooling services." />
+        <title>Concord Heating and Cooling Systems Service Expert - Airlinx</title>
+        <meta name="description" content="Airlinx Heating offers complete HVAC service for commercial & residential customers of Concord Heating. We offer emergency heating & cooling services." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/concord-air/" />
       </Head>

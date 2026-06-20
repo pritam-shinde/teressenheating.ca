@@ -41,8 +41,8 @@ const Armstrong = () => {
   return (
     <>
       <Head>
-        <title>Armstrong Furnace and Air Conditioner Services at Affordable Price</title>
-        <meta name="description" content="Airlinxheating offers HVAC repairs, furnace installation and furnace maintenance. We service Armstrong Furnace and Air Conditioner with complete comfort." />
+        <title>Armstrong Furnace and Air Conditioner Services - Airlinx</title>
+        <meta name="description" content="Airlinx heating offers HVAC repairs, furnace installation and furnace maintenance. We service Armstrong Furnace and Air Conditioner with comfort." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/armstrong/" />
       </Head>

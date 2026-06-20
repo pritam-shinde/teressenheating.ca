@@ -81,8 +81,8 @@ const Burnaby = () => {
   return (
     <>
       <Head>
-        <title>Furnace Installer Services in Burnaby | Airlinxheating</title>
-        <meta name="description" content="At Airlinx Heating and Air Conditioning Ltd, we're committed to supplying the best furnace installation service in Burnaby. We offer free quotes and consultations." />
+        <title>HVAC Repair Burnaby - Emergency Heating & Cooling - Airlinx</title>
+        <meta name="description" content="Fast, licensed HVAC repair Burnaby solutions. Airlinx Heating services furnaces, boilers, heat pumps, and gas fireplaces. Call today for a local pro team." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/burnaby/" />
       </Head>
