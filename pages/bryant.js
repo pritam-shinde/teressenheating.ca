@@ -256,7 +256,7 @@ const Brynt = () => {
                     <ListItemIcon>
                       <CheckCircleOutline className='text--blue' />
                     </ListItemIcon>
-                    <ListItemText primary={<strong>Looking at the ductwork settings</strong>} secondary={<><p>The installation process is the crucial step in choosing a suitable unit. The HVAC contractor will assess the ductwork to check the breaches, openings, and loose connections. The duct system will then undergo a sizing test, which will impair the furnace&apos;s performance and air delivery.</p><p>And then the contractor will look to remove the old furnace and install the new Bryant furnace.</p></>} />
+                    <ListItemText primary={<strong>Looking at the ductwork settings</strong>} secondary={<><p>The installation process is the crucial step in choosing a suitable unit. The <a href="/">HVAC contractor</a> will assess the ductwork to check the breaches, openings, and loose connections. The duct system will then undergo a sizing test, which will impair the furnace&apos;s performance and air delivery.</p><p>And then the contractor will look to remove the old furnace and install the new Bryant furnace.</p></>} />
                   </ListItem>
                 </List>
               </Grid>

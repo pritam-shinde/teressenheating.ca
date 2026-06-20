@@ -154,7 +154,7 @@ const FinancingOption = () => {
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Investing in your comfort is easy and quick" variant="h2" />
-                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our <Link href="/boilers/">installation, repair, and replacement services</Link>. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that HVAC repairs and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
+                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our <a href="/boilers/">installation, repair, and replacement services</a>. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that <Link href="/commercial-hvac/">HVAC repairs</Link> and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
                         <Typography className='para'>When unexpected expenses arise that negatively impact your safety and comfort, we would recommend you look for solutions that will restore your comfort easily and conveniently.</Typography>
                       </Container>
                     </section>
@@ -179,10 +179,10 @@ const FinancingOption = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Our service for all brands</strong>} secondary="We do services for all brands like Rheem, Goodman, Carrier, Lennox, and Trane." />
+                              <ListItemText primary={<strong>Our service for all brands</strong>} secondary={<>We do services for all brands like Rheem, <a href="/goodman/">Goodman</a>, Carrier, Lennox, and Trane.</>} />
                             </ListItem>
                           </List>
-                          <Typography className='para'>Airlinx professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your professional furnace installation services that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
+                          <Typography className='para'>Airlinx <a href="/furnace/">professional furnace installation services</a> are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your <Link href="/furnace/">professional furnace installation services</Link> that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
                         </Box>
                       </Container>
                     </section>

@@ -134,7 +134,7 @@ const FurnaceInspection = () => {
                               <ListItemText primary={<strong>Our service for all brands</strong>} secondary="We do services for all brands like Rheem, Goodman, Carrier, Lennox, and Trane." />
                             </ListItem>
                           </List>
-                          <Typography className='para'>Airlinx professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your professional furnace installation services that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
+                          <Typography className='para'>Airlinx professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your <a href="/furnace/">professional furnace installation services</a> that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
                         </Box>
                       </Container>
                     </section>

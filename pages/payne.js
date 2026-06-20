@@ -225,7 +225,7 @@ const Payne = () => {
                     <Box mt={2}>
                       <SectionalHeading simpletext="Our certified Payne HVAC repair service is the best" variant="h4" />
                       <Typography className='para'>If you need Payne furnace repair for your commercial building or resident, Airlinx's <Link href="/commercial-hvac/">HVAC</Link> is your go-to person. The installation of a furnace increases the comfort level of your home and makes your family happy. At times, when your Payne furnace gets malfunctions, we are at your assistance.</Typography>
-                      <Typography className='para'>Like many homeowners, you might face some issues in fixing an AC or furnace. So, if you do, then we might solve your problem. A competent HVAC contractor like us will get your issue resolved.</Typography>
+                      <Typography className='para'>Like many homeowners, you might face some issues in fixing an AC or furnace. So, if you do, then we might solve your problem. A competent <a href="/">HVAC contractor</a> like us will get your issue resolved.</Typography>
                     </Box>
                     <Box mt={2}>
                       <SectionalHeading simpletext="Near Me Payne Furnace repairing services" variant="h4" />

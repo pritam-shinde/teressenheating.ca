@@ -104,7 +104,7 @@ const MapleRidge = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Airlinx&apos;s Heating And Air Conditioning Services At Maple Ridge</Typography>
-                      <Typography className='para'>Airlinx&apos;s air conditioning services at Maple Ridge are one of the best services you can get. We have professional furnace installation services from certified HVAC technicians near you. Our Technicians and installers are licensed professionals who look after everything. We are just a call away when you need those professional maple furnace heating and air conditioning services. Our certified experts will reach you as soon as possible. We understand your problem and, help you with the best possible solutions.</Typography>
+                      <Typography className='para'>Airlinx&apos;s air conditioning services at Maple Ridge are one of the best services you can get. We have professional furnace installation services from <a href="/commercial-hvac/">certified HVAC</a> technicians near you. Our Technicians and installers are licensed professionals who look after everything. We are just a call away when you need those <a href="/furnace/">professional maple furnace heating</a> and air conditioning services. Our certified experts will reach you as soon as possible. We understand your problem and, help you with the best possible solutions.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

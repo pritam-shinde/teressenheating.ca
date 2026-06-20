@@ -156,8 +156,8 @@ const Lennox = () => {
               <Grid item xs={12} md={10} className='mx-auto'>
                 <Box>
                   <SectionalHeading variant="h2" simpletext='Searching your nearby Lennox furnace expert' />
-                  <Typography className='para'>Your search for <Link href="/lennox-hvac/">"Lennox furnace repair near me"</Link> stops on us. We are the right choice for all your reapiring and maintenance issues.</Typography>
-                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. Airlinx&apos;s HVAC services will help you with the <Link href="/furnace-inspection/">best furnace repairs</Link> and upkeep.</Typography>
+                  <Typography className='para'>Your search for <a href="/lennox-hvac/">"Lennox furnace repair near me"</a> stops on us. We are the right choice for all your reapiring and maintenance issues.</Typography>
+                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. <a href="/commercial-hvac/">Airlinx&apos;s HVAC services</a> will help you with the <a href="/furnace-inspection/">best furnace repairs</a> and upkeep.</Typography>
                 </Box>
               </Grid>
             </Grid>

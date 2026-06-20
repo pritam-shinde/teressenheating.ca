@@ -105,8 +105,8 @@ const Burnaby = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Airlinx&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
-                      <Typography className='para'>Airlinx&apos;s heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
-                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only <Link href="/commercial-hvac/">HVAC suppliers</Link> in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
+                      <Typography className='para'>Airlinx&apos;s heating and <a href="/air-conditioning-service/">air conditioning services</a> in Burnaby are probably one of the best services you will get here. Installation and replacement for central <a href="/heating-services/">home heating systems</a>, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
+                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only <a href="/commercial-hvac/">HVAC suppliers</a> in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

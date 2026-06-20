@@ -146,7 +146,7 @@ const CommercialHVAC = () => {
                             <Grid item xs={12} md={6}>
                               <Box>
                                 <SectionalHeading simpletext='Airlinx commercial HVAC services assuring the quality of life:' variant="h2" />
-                                <Typography className='para'> Airlinx commercial HVAC services is a name for the best commercial HVAC repair services in Canada. We regularly provide commercial HVAC services like boiler, furnace services, and commercial air conditioner services.</Typography>
+                                <Typography className='para'> Airlinx commercial HVAC services is a name for the best commercial HVAC repair services in Canada. We regularly provide commercial HVAC services like boiler, <a href="/furnace/">furnace services</a>, and commercial air conditioner services.</Typography>
                                 <Typography className='para'>We specialize in commercial air conditioning, repairs, maintenance, and installation services. This is done for buildings of all sizes and businesses. So, whether you have a low-rise commercial building or a massive office, we are always there for your assistance.</Typography>
 
                               </Box>

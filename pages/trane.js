@@ -41,7 +41,9 @@ const Trane = () => {
     'We have Trane furnace experienced technicians.',
     'We give professional services at affordable rates.',
     'We do all types of Trane heating, installation, maintenance, and repair work.',
-    "Airlinx's heating and air conditioning services are proudly meant to serve you the best."
+    <>
+      <a href="/">Airlinx's heating and air conditioning services</a> are proudly meant to serve you the best.
+    </>
   ]
   return (
     <>

@@ -116,7 +116,7 @@ const Emergency = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Around-the-clock service:</strong>} secondary="Airlinx's heating services will never disappoint you. We offer a variety of services to meet your requirements 24*7." />
+                              <ListItemText primary={<strong>Around-the-clock service:</strong>} secondary={<>Airlinx&apos;s <a href="/heating-services/">heating services</a> will never disappoint you. We offer a variety of services to meet your requirements 24*7.</>} />
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>

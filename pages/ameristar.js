@@ -221,14 +221,24 @@ const Ameristar = () => {
                   <Box>
                     <SectionalHeading simpletext="Let us help you take care of everything" variant="h2" />
                     <List>
-                      {
-                        ["Furnaces repair, maintenance, and installation.", "Heat pump maintenance, installation, and repair.", "Boiler installation, installation, and repair."].map(item => <ListItem key={item}>
-                          <ListItemIcon>
-                            <CheckCircleOutline className='text--blue' />
-                          </ListItemIcon>
-                          <ListItemText primary={item} />
-                        </ListItem>)
-                      }
+                      <ListItem>
+                        <ListItemIcon>
+                          <CheckCircleOutline className='text--blue' />
+                        </ListItemIcon>
+                        <ListItemText primary="Furnaces repair, maintenance, and installation." />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemIcon>
+                          <CheckCircleOutline className='text--blue' />
+                        </ListItemIcon>
+                        <ListItemText primary="Heat pump maintenance, installation, and repair." />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemIcon>
+                          <CheckCircleOutline className='text--blue' />
+                        </ListItemIcon>
+                        <ListItemText primary={<span><a href="/boilers/">Boiler installation, installation, and repair</a>.</span>} />
+                      </ListItem>
                     </List>
                   </Box>
                 </Box>

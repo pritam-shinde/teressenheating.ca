@@ -225,7 +225,7 @@ const AirConditioningService = () => {
                       <Container maxWidth="xxl">
                         <Box>
                           <SectionalHeading simpletext="When you need reliability, count on us:" variant="h2" />
-                          <Typography className='para'>At Airlinx heating ltd, we have built our entire business around the idea that our clients deserve the best treatment, starting with our trustworthy experts. In many circumstances, Airlinx heating ltd is owned by experts who have been serving and building trust with their local community for years.
+                          <Typography className='para'>At Airlinx heating ltd, we have built our entire business around the idea that our clients deserve the best treatment, starting with our trustworthy experts. In many circumstances, <a href="/">Airlinx heating ltd</a> is owned by experts who have been serving and building trust with their local community for years.
                           </Typography>
                           <Typography className='para'>Our experts are licensed and qualified and receive regular training to stay updated with the latest developments and products. We want you to be happy and leave all your worries to us. This way, you can also be certain that we are accountable for providing you with high-level services on our visit.
                           </Typography>

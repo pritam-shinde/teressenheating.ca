@@ -226,7 +226,7 @@ const Goodman = () => {
                   <SectionalHeading simpletext="Repairing a Goodman gas furnace is a necessity" variant="h2" />
                   <Typography className='para'>Every heating system requires routine upkeep to function properly. Regular check-ups can prevent costly breakdowns that need costly repairs. Also, if you do not maintain your equipment properly, then you will have to face a lot of risks.</Typography>
                   <Typography className='para'>At times, filters that are dirty and obstructions inside a gas furnace will lead to shutting it off. Also, dirt and dust obstruct smooth airflow and abruptly might switch off. In this case, your household would suffer. So, to extend the life of your furnace, regular check-ups are necessary.</Typography>
-                  <Typography className='para'>The goal of Airlinx HVAC is to offer quality services. If the AFUE of your furnace is insufficient, to heat your home, then you should engage technicians to do a Goodman gas furnace repair.</Typography>
+                  <Typography className='para'>The goal of <a href="/commercial-hvac/">Airlinx HVAC</a> is to offer quality services. If the AFUE of your furnace is insufficient, to heat your home, then you should engage technicians to do a Goodman gas furnace repair.</Typography>
                 </Box>
               </Grid>
             </Grid>

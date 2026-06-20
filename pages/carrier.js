@@ -237,7 +237,7 @@ const Carrier = () => {
                       <ListItemIcon>
                         <CheckCircleOutline className='text--blue' />
                       </ListItemIcon>
-                      <ListItemText primary={<strong>Carrier furnace leakage:</strong>} secondary="If your Carrier furnace is tripping water, there is some condensation issue. Also, the secondary heat exchanger in a Carrier furnace might occasionally be the source of leakage. Call us today and get the right assistance for free." />
+                      <ListItemText primary={<strong>Carrier furnace leakage:</strong>} secondary={<span>If your Carrier furnace is tripping water, there is some condensation issue. Also, the secondary heat exchanger in a Carrier furnace might occasionally be the source of leakage. <a href="/contact-us/">Call us</a> today and get the right assistance for free.</span>} />
                     </ListItem>
                     <ListItem>
                       <ListItemIcon>

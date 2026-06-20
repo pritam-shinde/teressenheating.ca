@@ -226,7 +226,7 @@ const Daikin = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary="Furnaces repair, maintenance, and installation." />
+                        <ListItemText primary={<span><a href="/furnace/">Furnaces repair, maintenance, and installation</a>.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>

@@ -37,7 +37,7 @@ const AmericanStandard = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have American standard furnace experienced professionals.", "We provide professional services at affordable pricing.", "We have insured and licensed products.", "American standard heating, maintenance, and repair services.", "Airlinx's heating and air conditioning services for all our clients who trust us."]
+  const ListArray = ["We have American standard furnace experienced professionals.", "We provide professional services at affordable pricing.", "We have insured and licensed products.", "American standard heating, maintenance, and repair services.", <><a href="/">Airlinx's heating and air conditioning services</a> for all our clients who trust us.</>]
   return (
     <>
       <Head>
