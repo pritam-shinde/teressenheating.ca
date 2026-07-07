@@ -1,7 +1,7 @@
 import { Box, Button } from '@mui/material'
-import { useState, useRef } from 'react'
-import ReCAPTCHA from 'react-google-recaptcha'
 import { useRouter } from 'next/router'
+import { useRef, useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 const AppointmentForm = () => {
     const router = useRouter()
@@ -194,11 +194,12 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-                        <label>
+                        <label htmlFor='interested_in'>
                             <strong>Interested in</strong>
                         </label>
 
                         <select
+                            id='interested_in'
                             name='interested_in'
                             className={`form-control rounded-pill ${errors.interested_in ? 'is-invalid' : ''}`}
                             value={formData.interested_in}
@@ -228,12 +229,13 @@ const AppointmentForm = () => {
 
                     <div className='form-group'>
 
-                        <label>
+                        <label htmlFor='name'>
                             <strong>Name</strong>
                         </label>
 
                         <input
                             type="text"
+                            id='name'
                             name='name'
                             className={`form-control rounded-pill ${errors.name ? 'is-invalid' : ''
                                 }`}
@@ -250,12 +252,13 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-                        <label>
+                        <label htmlFor='email'>
                             <strong>Email</strong>
                         </label>
 
                         <input
                             type="email"
+                            id='email'
                             name='email'
                             className={`form-control rounded-pill ${errors.email ? 'is-invalid' : ''
                                 }`}
@@ -272,12 +275,13 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-                        <label>
+                        <label htmlFor='phone'>
                             <strong>Phone</strong>
                         </label>
 
                         <input
                             type="tel"
+                            id='phone'
                             name='phone'
                             className={`form-control rounded-pill ${errors.phone ? 'is-invalid' : ''
                                 }`}
@@ -294,13 +298,14 @@ const AppointmentForm = () => {
                     </div>
 
                     <div className='form-group'>
-                        <label>
+                        <label htmlFor='message'>
                             <strong>
                                 Please provide any additional details to help us serve you better:
                             </strong>
                         </label>
 
                         <textarea
+                            id='message'
                             name="message"
                             rows="4"
                             className='form-control'

@@ -389,7 +389,7 @@ const Navbar = () => {
             </Grid>
           </Container>
         </nav> : <nav className='navbar navbar-expand-xl bg-transparent py-1 shadow'>
-          <Button className="menu-icon" onClick={() => setClicked(!clicked)}>
+          <Button className="menu-icon" onClick={() => setClicked(!clicked)} aria-label="Toggle navigation menu">
             {clicked ? <Close className='text-white' /> : <Menu />}
           </Button>
           <Link className='nav-link' legacyBehavior={true} href="/">
@@ -420,7 +420,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/services/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>Services</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(!servicesDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(!servicesDropdown) }} aria-label="Toggle Services dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>
@@ -431,7 +431,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/service-areas/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>Areas</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(!areasDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(!areasDropdown) }} aria-label="Toggle Areas dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>
@@ -442,7 +442,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/about-us/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>About us</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(!aboutDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(!aboutDropdown) }} aria-label="Toggle About us dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>
@@ -453,7 +453,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/brand/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>Brand</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(false); setBrandDropdown(!brandDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(false); setBrandDropdown(!brandDropdown) }} aria-label="Toggle Brand dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>

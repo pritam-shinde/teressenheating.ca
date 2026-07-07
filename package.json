@@ -11,6 +11,7 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.12",
+    "@next/font": "^13.1.1",
     "bootstrap": "^5.2.2",
     "dotenv": "^16.0.3",
     "mongodb": "^7.2.0",

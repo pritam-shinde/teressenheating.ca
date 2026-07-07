@@ -105,7 +105,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC Installation & Replacement</Typography>
                                                                 <Typography className='text-white'>One of the most crucial Investment you can make in your house is installing an air conditioning system. We provide a wide range of services, including installation, yearly maintenance, and more, to ensure that everything is completed correctly...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--blue' aria-label="Learn more about AC Installation & Replacement"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -120,7 +120,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC Repairing</Typography>
                                                                 <Typography className='text-white'>Residential air conditioning repair is offered by the family-run business Airlinx Heating and Air Conditioning. Regardless of the time of day, we have the knowledge to quickly fix your heating system...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--blue' aria-label="Learn more about AC Repairing"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -135,7 +135,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC maintenance</Typography>
                                                                 <Typography className='text-white'>Local residents own and run the business Terresen Heating. To keep your family comfortable all year round, we know the proper home AC maintenance and tune-ups...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--blue' aria-label="Learn more about AC maintenance"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -169,7 +169,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Furnaces</Typography>
                                                                 <Typography className='text-white'>a building that uses combustion or another method to generate useful heat. Because coal was so readily available for heating, the furnace evolved historically from the fireplace and stove...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red' aria-label="Learn more about Furnaces"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -184,7 +184,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Boiler</Typography>
                                                                 <Typography className='text-white'>Airlinx has been offering professional boiler setup, maintenance, and repair services. Airlinx, a seasoned pioneer in the home heating sector, takes care of all your heating requirements with first-rate service at competitive prices.</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red' aria-label="Learn more about Boiler"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -199,7 +199,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Heat Pump</Typography>
                                                                 <Typography className='text-white'>Along with the manufacturer&apos;s warranty, we also provide full installation of your heat pump system with a 1-year labour warranty!</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red' aria-label="Learn more about Heat Pump"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -214,7 +214,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Fireplace</Typography>
                                                                 <Typography className='text-white'>Installation & Replacement of Professional Gas Fireplaces for Central Home Heating Systems</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red'><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <IconButton className='bg--red' aria-label="Learn more about Fireplace"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
                                                             </Box>
                                                         </Box>

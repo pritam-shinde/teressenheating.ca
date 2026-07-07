@@ -248,6 +248,7 @@ const Footer = () => {
                                                             passHref
                                                             href="https://www.facebook.com/profile.php?id=100088431184715"
                                                             className="text-white"
+                                                            aria-label="Airlinx Facebook Page"
                                                         >
                                                             <FaFacebookF />
                                                         </Link>
@@ -259,6 +260,7 @@ const Footer = () => {
                                                             passHref
                                                             href="https://twitter.com/BaymanShawqi"
                                                             className="text-white"
+                                                            aria-label="Airlinx Twitter Page"
                                                         >
                                                             <FaTwitter />
                                                         </Link>
@@ -270,6 +272,7 @@ const Footer = () => {
                                                             passHref
                                                             href="https://www.pinterest.com.au/teressenheating/"
                                                             className="text-white"
+                                                            aria-label="Airlinx Pinterest Page"
                                                         >
                                                             <FaPinterestP />
                                                         </Link>
@@ -281,6 +284,7 @@ const Footer = () => {
                                                             passHref
                                                             href="https://g.page/r/CdlSgou1yAB-EB0/review"
                                                             className="text-white"
+                                                            aria-label="Airlinx Google Reviews"
                                                         >
                                                             <Google />
                                                         </Link>
@@ -292,6 +296,7 @@ const Footer = () => {
                                                             passHref
                                                             href="https://www.instagram.com/airlinx.heating/"
                                                             className="text-white"
+                                                            aria-label="Airlinx Instagram Page"
                                                         >
                                                             <FaInstagram />
                                                         </Link>

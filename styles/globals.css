@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-
-
 * {
     margin: 0;
     padding: 0;
@@ -151,6 +148,7 @@ nav.navbar {
     border: 2px solid var(--grey) !important
 }
 
+/* .greyFilledBtn, */
 .greyFilledBtn a {
     color: var(--white) !important;
     font-size: .9rem
@@ -175,6 +173,7 @@ nav.navbar {
 
 #brandDetails p,
 .active .title,
+.blueFilledBtn,
 .blueFilledBtn a,
 .locationBox:hover .title {
     color: #fff !important
@@ -510,73 +509,77 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     width: 50%;
 }
 
-#topbar .MuiAvatar-root{
+#topbar .MuiAvatar-root {
     background-color: #d6d6d6 !important;
 }
 
-#topbar .MuiAvatar-root svg{
+#topbar .MuiAvatar-root svg {
     fill: var(--grey) !important;
 }
 
-#topbar .MuiAvatar-root:hover svg{
+#topbar .MuiAvatar-root:hover svg {
     fill: var(--white) !important;
 }
 
-#topbar .MuiAvatar-root:hover{
+#topbar .MuiAvatar-root:hover {
     background-color: var(--blue) !important;
 }
 
-#appointmentForm .blueFilledBtn{
+#appointmentForm .blueFilledBtn {
     color: var(--white) !important;
 }
 
-#appointmentForm .blueFilledBtn:hover{
+#appointmentForm .blueFilledBtn:hover {
     color: var(--blue) !important;
 }
 
 
 @media only screen and (min-width:600px) {
-    .BannerTitle{
+    .BannerTitle {
         font-size: 2rem !important;
         letter-spacing: 1px !important;
     }
-    
+
 }
+
 @media only screen and (min-width:992px) {
-    .BannerTitle{
+    .BannerTitle {
         font-size: 3rem !important;
         letter-spacing: 1px !important;
     }
-    
+
 }
+
 @media only screen and (min-width:1600px) {
-    .BannerTitle{
+    .BannerTitle {
         font-size: 5rem !important;
         letter-spacing: 1px !important;
     }
-    
+
 }
 
 @media only screen and (min-width:600px) {
-    .BlogBannerTitle{
+    .BlogBannerTitle {
         font-size: 2rem !important;
         letter-spacing: 1px !important;
     }
-    
+
 }
+
 @media only screen and (min-width:992px) {
-    .BlogBannerTitle{
+    .BlogBannerTitle {
         font-size: 3rem !important;
         letter-spacing: 1px !important;
     }
-    
+
 }
+
 @media only screen and (min-width:1600px) {
-    .BlogBannerTitle{
+    .BlogBannerTitle {
         font-size: 3.6rem !important;
         letter-spacing: 1px !important;
     }
-    
+
 }
 
 
@@ -588,16 +591,17 @@ a.nav-link.dropdown-item {
     line-height: 1rem !important;
 }
 
-.fixedButtons{
+.fixedButtons {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:#fff;
+    background-color: #fff;
     color: white;
     text-align: center;
     z-index: 1;
 }
+
 a:hover.hoverPoint {
     color: #0a0a0a;
 }
@@ -627,5 +631,3 @@ span.headingSecond {
 .border--grey span {
     margin: 0 auto !important;
 }
-
-
