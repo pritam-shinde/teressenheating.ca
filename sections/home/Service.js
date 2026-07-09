@@ -28,10 +28,14 @@ const Service = () => {
 
     useEffect(() => {
         setWidth(window.innerWidth);
-        window.addEventListener('resize', () => {
+        const handleResize = () => {
             setWidth(window.innerWidth)
-        })
-    }, [width])
+        }
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     const cleanDuplicateHeadings = (swiper) => {
         if (!swiper || !swiper.el) return;

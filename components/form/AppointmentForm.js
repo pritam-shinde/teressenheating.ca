@@ -1,7 +1,9 @@
 import { Box, Button } from '@mui/material'
 import { useRouter } from 'next/router'
-import { useRef, useState } from 'react'
-import ReCAPTCHA from 'react-google-recaptcha'
+import { useRef, useState, useEffect } from 'react'
+import dynamic from 'next/dynamic'
+
+const ReCAPTCHA = dynamic(() => import('react-google-recaptcha'), { ssr: false })
 
 const AppointmentForm = () => {
     const router = useRouter()
@@ -18,9 +20,41 @@ const AppointmentForm = () => {
     const [errors, setErrors] = useState({})
     const [isSubmitting, setIsSubmitting] = useState(false)
     const recaptchaRef = useRef(null)
+    const formRef = useRef(null)
+    const [loadRecaptcha, setLoadRecaptcha] = useState(false)
     const [recaptchaToken, setRecaptchaToken] = useState("")
     const [submitSuccess, setSubmitSuccess] = useState(false)
     const [submitError, setSubmitError] = useState("")
+
+    useEffect(() => {
+        if (typeof window === 'undefined' || !('IntersectionObserver' in window)) {
+            setLoadRecaptcha(true)
+            return
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setLoadRecaptcha(true)
+                    observer.disconnect()
+                }
+            })
+        }, { rootMargin: '200px' })
+
+        if (formRef.current) {
+            observer.observe(formRef.current)
+        }
+
+        return () => {
+            observer.disconnect()
+        }
+    }, [])
+
+    const triggerRecaptchaLoad = () => {
+        if (!loadRecaptcha) {
+            setLoadRecaptcha(true)
+        }
+    }
 
     const handleChange = (e) => {
         setFormData({
@@ -84,6 +118,10 @@ const AppointmentForm = () => {
         setSubmitSuccess(false)
         setSubmitError("")
 
+        if (!loadRecaptcha) {
+            setLoadRecaptcha(true)
+        }
+
         if (!validate()) {
             return
         }
@@ -138,7 +176,11 @@ const AppointmentForm = () => {
             <Box id="appointmentForm">
 
                 <form
+                    ref={formRef}
                     onSubmit={handleSubmit}
+                    onFocus={triggerRecaptchaLoad}
+                    onMouseEnter={triggerRecaptchaLoad}
+                    onTouchStart={triggerRecaptchaLoad}
                 >
 
                     <div className='form-group'>
@@ -325,21 +367,23 @@ const AppointmentForm = () => {
                     </p>
 
                     {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && (
-                        <div className='form-group mb-3 d-flex flex-column align-items-start'>
-                            <ReCAPTCHA
-                                ref={recaptchaRef}
-                                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                                onChange={(token) => {
-                                    setRecaptchaToken(token || "")
-                                    if (token) {
-                                        setErrors((prev) => {
-                                            const updated = { ...prev }
-                                            delete updated.recaptcha
-                                            return updated
-                                        })
-                                    }
-                                }}
-                            />
+                        <div className='form-group mb-3 d-flex flex-column align-items-start' style={{ minHeight: '78px' }}>
+                            {loadRecaptcha && (
+                                <ReCAPTCHA
+                                    ref={recaptchaRef}
+                                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                                    onChange={(token) => {
+                                        setRecaptchaToken(token || "")
+                                        if (token) {
+                                            setErrors((prev) => {
+                                                const updated = { ...prev }
+                                                delete updated.recaptcha
+                                                return updated
+                                            })
+                                        }
+                                    }}
+                                />
+                            )}
                             {errors.recaptcha && (
                                 <small className="text-danger d-block mt-1">
                                     {errors.recaptcha}

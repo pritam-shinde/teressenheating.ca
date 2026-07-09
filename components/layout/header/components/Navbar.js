@@ -1,11 +1,9 @@
+import { ArrowDropDown, Close, Menu } from '@mui/icons-material'
 import { Box, Button, Container, Grid, IconButton } from '@mui/material'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import blueLogo from '../../../../public/logo/airlink_logo.jpg'
-// import blueLogo from '../../../../public/logo/blue-logo.svg'
-import greyLogo from '../../../../public/logo/airlink_logo.jpg'
-import { ArrowDropDown, Close, Menu } from '@mui/icons-material'
-import Image from 'next/legacy/image'
+import { default as blueLogo, default as greyLogo } from '../../../../public/logo/airlink_logo.jpg'
 import GreyFilledBtn from '../../../buttons/GreyFilledBtn'
 import { Dropdowns } from './components'
 const Navbar = () => {
@@ -24,8 +22,6 @@ const Navbar = () => {
     })
   }, [width]);
 
-
-
   const closeMobileMenu = () => {
     setClicked(false)
     setServiceDropdown(false)
@@ -33,7 +29,6 @@ const Navbar = () => {
     setAboutDropdown(false)
     setBrandDropdown(false)
   }
-
 
   return (
     <>
@@ -371,9 +366,7 @@ const Navbar = () => {
                       </li>
 
                       <li className='nav-item'>
-                        <Link className='nav-link' legacyBehavior={true} href="/blog/">
-                          <a className="nav-link">Blog</a>
-                        </Link>
+                        <a className="nav-link" href="/blog/">Blog</a>
                       </li>
 
                       <li className='nav-item'>
@@ -381,14 +374,13 @@ const Navbar = () => {
                           <a className='nav-link'>Contact us</a>
                         </Link>
                       </li>
-
                     </ul>
                   </Box>
                 </Box>
               </Grid>
             </Grid>
           </Container>
-        </nav> : <nav className='navbar navbar-expand-xl bg-transparent py-1 shadow'>
+        </nav > : <nav className='navbar navbar-expand-xl bg-transparent py-1 shadow'>
           <Button className="menu-icon" onClick={() => setClicked(!clicked)} aria-label="Toggle navigation menu">
             {clicked ? <Close className='text-white' /> : <Menu />}
           </Button>
@@ -474,7 +466,6 @@ const Navbar = () => {
           </Box>
         </nav>
       }
-
     </>
   )
 }
