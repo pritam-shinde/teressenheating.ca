@@ -1,7 +1,6 @@
 import { Box, Container, Grid } from '@mui/material'
 import Link from 'next/link'
-import blueLogo from '../../../../public/logo/airlink_logo.jpg'
-// import blueLogo from '../../../../public/logo/blue-logo.svg'
+import blueLogo from '../../../../public/logo/blue-logo.svg'
 import { GreyFilledBtn } from '../../../components'
 
 const Topbar = () => {
