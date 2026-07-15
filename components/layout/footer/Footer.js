@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 import { useEffect, useState } from "react";
 import GreyLogo from "../../../public/logo/footer-logo.png";
 import Styles from "../../../styles/Footer.module.css";
-// import GreyLogo from '../../../public/logo/grey-logo.svg'
+
 import { Copyright, Google } from "@mui/icons-material";
 import Link from "next/link";
 import { FaFacebookF, FaInstagram, FaPinterestP, FaTwitter } from "react-icons/fa";

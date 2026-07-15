@@ -9,7 +9,7 @@ import Carrier1 from '../public/brand-page/Layer-124.webp'
 import BBB from '../public/certification/cer1.webp'
 import WorkSafe from '../public/certification/cer2.webp'
 import Technical from '../public/certification/cer3.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
 import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 import Link from 'next/link'
@@ -155,7 +155,7 @@ const Carrier = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -183,7 +183,7 @@ const Carrier = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>

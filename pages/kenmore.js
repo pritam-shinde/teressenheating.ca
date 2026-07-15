@@ -9,7 +9,7 @@ import BrandLogo from '../public/brand-page/Layer-107.webp'
 import BBB from '../public/certification/cer1.webp'
 import WorkSafe from '../public/certification/cer2.webp'
 import Technical from '../public/certification/cer3.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
 import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Kenmore = () => {

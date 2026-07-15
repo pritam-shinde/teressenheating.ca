@@ -3,7 +3,6 @@ import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typog
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Script from 'next/script'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
@@ -11,7 +10,7 @@ import BrandLogo from '../public/brand-page/Layer-103.webp'
 import BBB from '../public/certification/cer1.webp'
 import WorkSafe from '../public/certification/cer2.webp'
 import Technical from '../public/certification/cer3.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
 import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Brynt = () => {
@@ -133,10 +132,8 @@ const Brynt = () => {
         <link rel="canonical" href="https://airlinxheating.ca/bryant/" />
       </Head>
 
-      <Script
-        id="bryant-faq-schema"
+      <script
         type="application/ld+json"
-        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(bryantFaqSchema) }}
       />
 
@@ -163,7 +160,7 @@ const Brynt = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -191,7 +188,7 @@ const Brynt = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
