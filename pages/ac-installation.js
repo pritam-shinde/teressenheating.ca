@@ -2,8 +2,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/acInstallation/ac-installation-banner.webp'
 import ACInstallation from '../public/acInstallation/ac-installation.webp'
 import { FaqAndForm, FeaturedCoolingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
@@ -29,10 +28,10 @@ const AcInstallation = () => {
   return (
     <>
       <Head>
-        <title>Air Conditioning installation services | Teressenheating </title>
+        <title>Air Conditioning installation services | Airlinxheating </title>
         <meta name="description" content="The best air conditioning installation services for residential and commercial ac systems are here. We have the best prices and come with a 100% satisfaction guarantee." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/ac-installation/" />
+        <link rel="canonical" href="https://airlinxheating.ca/ac-installation/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Air Conditioning Installation" color="#fff" variant="h1" />
@@ -41,7 +40,7 @@ const AcInstallation = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen AC installation services are always on-point" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx AC installation services are always on-point" variant="h2" />
                   <Typography className='para'>With over decades of work experience, we have been providing quality services across the world. We are a locally-owned and operated organization that provides on-point air conditioning services.
                   </Typography>
                 </Box>

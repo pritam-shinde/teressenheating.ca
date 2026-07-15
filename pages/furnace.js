@@ -2,11 +2,10 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import Banner from '../public/furnace/furnace-bg.webp'
 import Furnace from '../public/furnace/furnace.webp'
-import {FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial} from '../sections/sections'
-import Banner from '../public/furnace/furnace-bg.webp';
+import { FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
 
 const index = () => {
   const arrayFaq = [
@@ -29,19 +28,19 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Furnace Service Repair Installation and Replacement | Teressen Heating</title>
-        <meta name="description" content="Teressen Heating and Air Conditioning, We offer the most comprehensive furnace service repair, installation, and replacement in the area. Book an Appointment Now!" />
+        <title>Furnace Service Repair Installation and Replacement | Airlinx Heating</title>
+        <meta name="description" content="Airlinx Heating and Air Conditioning, We offer the most comprehensive furnace service repair, installation, and replacement in the area. Book an Appointment Now!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/furnace/" />
+        <link rel="canonical" href="https://airlinxheating.ca/furnace/" />
       </Head>
       <main>
-      <CommonBanner bg={Banner} title="Furnace" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Furnace" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen's furnace service repair installation and replacement services are always top-notched" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx's furnace service repair installation and replacement services are always top-notched" variant="h2" />
                   <Typography className='para'>We are the father of trained experts. Hence, we provide professional furnace installation services. We have certified HVAC technicians near you that solve all your problems. Also, all our technicians and installers are licensed experts who have passed background checks.</Typography>
                 </Box>
               </Grid>

@@ -2,8 +2,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/heat-pump/banner.webp'
 import HeatPump from '../public/heat-pump/heat-pump.webp'
 import { FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
@@ -29,20 +28,20 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Experts Heat Pump Installation Services | Teressen Heating</title>
-        <meta name="description" content="We provide the most competitive and efficient heat pump installation services. The best way to get the most out of your heat pump is to install it right." />
+        <title>Reliable Heat Pump Service Burnaby - Airlinx Heating</title>
+        <meta name="description" content="Lower your energy bills with an efficient system. Trust Airlinx Heating for professional heat pump service Burnaby, including quick fixes and tune-ups." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/heat-pump/" />
+        <link rel="canonical" href="https://airlinxheating.ca/heat-pump/" />
       </Head>
       <main>
-      <CommonBanner bg={Banner} title="Heat Pump" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Heat Pump" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen provides the best heat pumping services" variant="h2" />
-                  <Typography className='para'>When you choose Teressen's heating services, you are assured of highly professional services that meet local codes. We are experts in heat pump installation so that you can just sit, relax and chill. We are available 24*7 to help you with any emergencies which arise. We are licensed and certified so you can count on us for everything.</Typography>
+                  <SectionalHeading simpletext="Airlinx provides the best heat pumping services" variant="h2" />
+                  <Typography className='para'>When you choose Airlinx's heating services, you are assured of highly professional services that meet local codes. We are experts in heat pump installation so that you can just sit, relax and chill. We are available 24*7 to help you with any emergencies which arise. We are licensed and certified so you can count on us for everything.</Typography>
                 </Box>
               </Grid>
             </Grid>

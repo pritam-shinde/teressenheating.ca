@@ -1,16 +1,16 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-112.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Navien = () => {
   const [width, setWidth] = useState()
@@ -41,14 +41,14 @@ const Navien = () => {
   return (
     <>
       <Head>
-        <title>Quality and Affordable Services of Navien Furnace  | Teressenheating</title>
-        <meta name="description" content="Teressen heating offers a complete range of high-efficiency Navien furnace and hot water heater products for residential, commercial, and industrial applications." />
+        <title>Quality and Affordable Services of Navien Furnace - Airlinx</title>
+        <meta name="description" content="Airlinx Heating offers a complete range of high-efficiency Navien furnaces and water heaters for residential, commercial, and industrial applications." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/navien/" />
+        <link rel="canonical" href="https://airlinxheating.ca/navien/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -123,8 +123,8 @@ const Navien = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Navien" color="#fff" variant="h1" />
         <section>
@@ -138,7 +138,7 @@ const Navien = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="teressen heating" />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinx heating" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -148,7 +148,7 @@ const Navien = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -176,12 +176,12 @@ const Navien = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' src={BBB} alt="teressen heating" />
+                              <Image layout='responsive' src={BBB} alt="Airlinx heating" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
@@ -251,7 +251,7 @@ const Navien = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
                   <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                  <Typography className='para'>We have <a href="/emergency/">24*7 servicing and repairs</a>. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
                 </Box>
               </Grid>
             </Grid>

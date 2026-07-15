@@ -1,18 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-130.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
-
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-130.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Goodman = () => {
   const [width, setWidth] = useState()
@@ -48,14 +47,14 @@ const Goodman = () => {
   return (
     <>
       <Head>
-        <title>Most Trusted Teressen's Goodman Furnace & Ac Repair Services</title>
-        <meta name="description" content="Teressen's Goodman furnace repair service is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you.  " />
+        <title>Goodman Furnace & Ac Repair Services - Airlinx</title>
+        <meta name="description" content="Airlinx's Goodman furnace repair service is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/goodman/" />
+        <link rel="canonical" href="https://airlinxheating.ca/goodman/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -130,8 +129,8 @@ const Goodman = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <CommonBanner bg={BoilerMaintainanceBanner} title="Goodman" color="#fff" variant="h1" />
       <main>
         <section>
@@ -145,7 +144,7 @@ const Goodman = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -155,7 +154,7 @@ const Goodman = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -183,7 +182,7 @@ const Goodman = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -227,7 +226,7 @@ const Goodman = () => {
                   <SectionalHeading simpletext="Repairing a Goodman gas furnace is a necessity" variant="h2" />
                   <Typography className='para'>Every heating system requires routine upkeep to function properly. Regular check-ups can prevent costly breakdowns that need costly repairs. Also, if you do not maintain your equipment properly, then you will have to face a lot of risks.</Typography>
                   <Typography className='para'>At times, filters that are dirty and obstructions inside a gas furnace will lead to shutting it off. Also, dirt and dust obstruct smooth airflow and abruptly might switch off. In this case, your household would suffer. So, to extend the life of your furnace, regular check-ups are necessary.</Typography>
-                  <Typography className='para'>The goal of Teressen HVAC is to offer quality services. If the AFUE of your furnace is insufficient, to heat your home, then you should engage technicians to do a Goodman gas furnace repair.</Typography>
+                  <Typography className='para'>The goal of <a href="/commercial-hvac/">Airlinx HVAC</a> is to offer quality services. If the AFUE of your furnace is insufficient, to heat your home, then you should engage technicians to do a Goodman gas furnace repair.</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -266,7 +265,7 @@ const Goodman = () => {
                       <ListItemText primary="All these processes will assist you in detecting furnace problems. The Goodman furnace's inability to start and subsequent failures to generate any heat is another issue." />
                     </ListItem>
                   </List>
-                  <Typography className='para'>Teressen&apos;s Goodman <Link href="/furnace-inspection/">furnace repair service</Link> is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you. Hence, we make sure that you get our best services. So, just give us a call whenever you are facing any issues with the furnace and we will be right there for your service.</Typography>
+                  <Typography className='para'>Airlinx&apos;s Goodman <Link href="/furnace-inspection/">furnace repair service</Link> is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you. Hence, we make sure that you get our best services. So, just give us a call whenever you are facing any issues with the furnace and we will be right there for your service.</Typography>
                 </Box>
               </Grid>
             </Grid>

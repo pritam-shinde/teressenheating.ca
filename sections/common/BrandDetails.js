@@ -6,7 +6,7 @@ const BrandDetails = ({ title, brandDetaillArr, list, ListArray }) => {
   return (
     <>
       <Box>
-        <Typography variant="h1" color='#fff'>{title}</Typography>
+        <Typography variant="h2" color='#fff' className="fs-2">{title}</Typography>
         {
           brandDetaillArr ? brandDetaillArr.map(item => <Typography key={item} className='text-white' mt={3}>{item.text}</Typography>) : null
 

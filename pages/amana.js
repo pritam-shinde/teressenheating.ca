@@ -1,16 +1,16 @@
-import { Box, Container, Grid,List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner} from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-120.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Amana = () => {
   const [width, setWidth] = useState()
@@ -46,15 +46,15 @@ const Amana = () => {
   ]
   return (
     <>
-    <Head>
-    <title>Amana Furnace and Heating Experienced Technicians | Teressenheating</title>
-    <meta name="description" content="Get your Amana furnace serviced by certified technicians, who will make sure your furnace system is operating at peak performance. Call us to Book Now!" />
-    <meta name="robots" content="index" />
-    <link rel="canonical" href="/amana/" />
-  </Head>
-  <script type="application/ld+json">
-  {
-    `{
+      <Head>
+        <title>Amana Furnace and Heating Experienced Technicians - Airlinx</title>
+        <meta name="description" content="Get your Amana furnace serviced by certified technicians, who will make sure your furnace system is operating at peak performance. Call Airlinx heating." />
+        <meta name="robots" content="index" />
+        <link rel="canonical" href="https://airlinxheating.ca/amana/" />
+      </Head>
+      <script type="application/ld+json">
+        {
+          `{
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [{
@@ -129,102 +129,102 @@ const Amana = () => {
         }
       }]
     }`
-  }
-</script>
-  <CommonBanner bg={BoilerMaintainanceBanner} title="Amana" color="#fff" variant="h1" />
-  <main>
-    <section>
-      <Container maxWidth="xxl" className="px-0">
-        <Grid container>
-          <Grid item xs={12} md={6} className='bg--grey'>
-            <Box p={3}>
-              <Grid container>
-                <Grid item xs={12} md={11} className="ms-auto">
-                  <Box>
-                    <Grid container>
-                      <Grid item xs={6}>
-                        <Box p={3}>
-                          <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
-                        </Box>
-                      </Grid>
-                      <Grid item xs={6} className="d-flex align-items-center">
-                        <Box p={3}>
-                          <Image layout='responsive' src={BrandLogo} alt="Amana Logo" title='Amana Logo' />
-                        </Box>
-                      </Grid>
-                    </Grid>
-                  </Box>
-                  <Box>
-                    <Grid container>
-                      <Grid item xs={6}>
-                        <Box p={3}>
-                          <List className="d-flex flex-md-row flex-column">
-                            <ListItem>
-                              <ListItemIcon>
-                                <CheckCircleOutline className='text--blue' />
-                              </ListItemIcon>
-                              <ListItemText primary={<strong>SERVICE</strong>} />
-                            </ListItem>
+        }
+      </script>
+      <CommonBanner bg={BoilerMaintainanceBanner} title="Amana" color="#fff" variant="h1" />
+      <main>
+        <section>
+          <Container maxWidth="xxl" className="px-0">
+            <Grid container>
+              <Grid item xs={12} md={6} className='bg--grey'>
+                <Box p={3}>
+                  <Grid container>
+                    <Grid item xs={12} md={11} className="ms-auto">
+                      <Box>
+                        <Grid container>
+                          <Grid item xs={6}>
+                            <Box p={3}>
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
+                            </Box>
+                          </Grid>
+                          <Grid item xs={6} className="d-flex align-items-center">
+                            <Box p={3}>
+                              <Image layout='responsive' src={BrandLogo} alt="Amana Logo" title='Amana Logo' />
+                            </Box>
+                          </Grid>
+                        </Grid>
+                      </Box>
+                   //   <Box>
+                        <Grid container>
+                          <Grid item xs={6}>
+                            <Box p={3}>
+                              <List className="d-flex flex-md-row flex-column">
+                                <ListItem>
+                                  <ListItemIcon>
+                                    <CheckCircleOutline className='text--blue' />
+                                  </ListItemIcon>
+                                  <ListItemText primary={<strong>SERVICE</strong>} />
+                                </ListItem>
 
-                            <ListItem>
-                              <ListItemIcon>
-                                <CheckCircleOutline className='text--blue' />
-                              </ListItemIcon>
-                              <ListItemText primary={<strong>INSTALLATION</strong>} />
-                            </ListItem>
-                            <ListItem>
-                              <ListItemIcon>
-                                <CheckCircleOutline className='text--blue' />
-                              </ListItemIcon>
-                              <ListItemText primary={<strong>MAINTANANCE</strong>} />
-                            </ListItem>
-                          </List>
-                        </Box>
-                      </Grid>
+                                <ListItem>
+                                  <ListItemIcon>
+                                    <CheckCircleOutline className='text--blue' />
+                                  </ListItemIcon>
+                                  <ListItemText primary={<strong>INSTALLATION</strong>} />
+                                </ListItem>
+                                <ListItem>
+                                  <ListItemIcon>
+                                    <CheckCircleOutline className='text--blue' />
+                                  </ListItemIcon>
+                                  <ListItemText primary={<strong>MAINTANANCE</strong>} />
+                                </ListItem>
+                              </List>
+                            </Box>
+                          </Grid>
+                        </Grid>
+                      </Box>//
+                      <Box>
+                        <Grid container spacing={3}>
+                          <Grid item xs={12} sm={6} md={4}>
+                            <Box p={3} className="border--grey">
+                              <Image layout='responsive' src={BBB} alt="Accredited Business Logo" title='Accredited Business Logo' />
+                            </Box>
+                          </Grid>
+                          <Grid item xs={12} sm={6} md={4}>
+                            <Box p={3} className="border--grey">
+                              <Image layout='responsive' src={WorkSafe} alt="Work Safe BC Logo" title='Work Safe BC Logo' />
+                            </Box>
+                          </Grid>
+                          <Grid item xs={12} sm={6} md={4}>
+                            <Box p={3} className="border--grey">
+                              <Image layout='responsive' src={Technical} alt="Technical Safety BC Logo" title='Technical Safety BC Logo' />
+                            </Box>
+                          </Grid>
+                        </Grid>
+                      </Box>
                     </Grid>
-                  </Box>
-                  <Box>
-                    <Grid container spacing={3}>
-                      <Grid item xs={12} sm={6} md={4}>
-                        <Box p={3} className="border--grey">
-                          <Image layout='responsive' src={BBB} alt="Accredited Business Logo" title='Accredited Business Logo' />
-                        </Box>
-                      </Grid>
-                      <Grid item xs={12} sm={6} md={4}>
-                        <Box p={3} className="border--grey">
-                          <Image layout='responsive' src={WorkSafe} alt="Work Safe BC Logo" title='Work Safe BC Logo' />
-                        </Box>
-                      </Grid>
-                      <Grid item xs={12} sm={6} md={4}>
-                        <Box p={3} className="border--grey">
-                          <Image layout='responsive' src={Technical} alt="Technical Safety BC Logo" title='Technical Safety BC Logo' />
-                        </Box>
-                      </Grid>
+                  </Grid>
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={6} id="brandDetails">
+                <Box p={3}>
+                  <Grid container>
+                    <Grid item xs={12} md={11}>
+                      <BrandDetails title='Airlinx&apos;s Amana products and services' list={true} ListArray={brandDetailparagraph} />
                     </Grid>
-                  </Box>
-                </Grid>
+                  </Grid>
+                </Box>
               </Grid>
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={6} id="brandDetails">
-            <Box p={3}>
-              <Grid container>
-                <Grid item xs={12} md={11}>
-                  <BrandDetails title='Teressen&apos;s Amana products and services' list={true} ListArray={brandDetailparagraph} />
-                </Grid>
-              </Grid>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </section>
-    <FeaturedHeatingServices/>
-    <PopularService color='red' />
-    <FeaturedCoolingServices />
-    <HighlySkilled />
-    <Testimonial testimonialArr={testimonial} />
-    <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
-  </main>
+            </Grid>
+          </Container>
+        </section>
+        <FeaturedHeatingServices />
+        <PopularService color='red' />
+        <FeaturedCoolingServices />
+        <HighlySkilled />
+        <Testimonial testimonialArr={testimonial} />
+        <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
+      </main>
     </>
   )
 }

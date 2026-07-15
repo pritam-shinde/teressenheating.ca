@@ -1,17 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-106.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-106.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Keeprite = () => {
   const [width, setWidth] = useState()
@@ -40,19 +40,19 @@ const Keeprite = () => {
 
   const brandDetails = [
     { id: 'branddetail-1', text: "Correct Keeprite furnace maintenance is mandatory to prevent your home from fire hazards. These furnaces are well-liked since they are affordable and effective. But these eventual malfunction due to some technical issues." },
-    { id: 'branddetail-1', text: "So, it is necessary to get in touch with a furnace repair company if you find any problems with this furnace. As a result, you should also avoid other big issues, because it will save you time and money. Fortunately, Teressen HVAC services are at your service. Also, you can count on us because our experts have years of work experience in installing and repairing your furnaces." },
+    { id: 'branddetail-1', text: "So, it is necessary to get in touch with a furnace repair company if you find any problems with this furnace. As a result, you should also avoid other big issues, because it will save you time and money. Fortunately, Airlinx HVAC services are at your service. Also, you can count on us because our experts have years of work experience in installing and repairing your furnaces." },
   ]
   return (
     <>
       <Head>
-        <title>Keeprite Furnace Maintenance Services | Teressenheating</title>
-        <meta name="description" content="Keeprite furnaces are the most dependable furnaces on the market, but they need routine maintenance. Teressen offers maintenance to keep your furnace operating properly." />
+        <title>Keeprite Furnace Maintenance Services in Burnaby - Airlinx</title>
+        <meta name="description" content="Upgrade your comfort with Keeprite heating and cooling solutions. Airlinx Heating provides expert HVAC installation and service you can trust." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/keeprite/" />
+        <link rel="canonical" href="https://airlinxheating.ca/keeprite/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -127,8 +127,8 @@ const Keeprite = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Keeprite" color="#fff" variant="h1" />
         <section>
@@ -142,7 +142,7 @@ const Keeprite = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -152,7 +152,7 @@ const Keeprite = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -180,7 +180,7 @@ const Keeprite = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -265,7 +265,7 @@ const Keeprite = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="Finding your 'Nearby' keeprite furnace repair expert" variant="h2" />
-                  <Typography className='para'>If you are searching for a Keeprite <Link href="/air-conditioning-service/">furnace</Link> nearby, you can get several possibilities. However, you should be cautious about selecting a provider and making sure that you get top-notched repair services.</Typography>
+                  <Typography className='para'>If you are searching for a <a href="/furnace/">Keeprite furnace</a> nearby, you can get several possibilities. However, you should be cautious about selecting a provider and making sure that you get top-notched repair services.</Typography>
                   <Typography className='para'>It is not difficult to determine whether a firm is the best for your problem. So, just trust us and our experts, because they are knowledgeable and they are skilled in the right way. We value transparency and provide you with all the information required by you in the right way. So, count on us and we will help you with the right solution always.</Typography>
                 </Box>
               </Grid>

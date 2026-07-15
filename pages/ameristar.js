@@ -1,16 +1,16 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-128.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Ameristar = () => {
   const [width, setWidth] = useState()
@@ -37,19 +37,19 @@ const Ameristar = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have an Ameristar heating and cooling furnace with experienced professionals.", "We provide professional services at affordable prices.", "Our technicians are licensed and insured.", "We provide quality Ameristar heating and cooling installation, maintenance, and repair services.", "So, if you are looking for cooling, heating, and air quality services from expert technicians near you, please call us.", "Teressen's heating and air conditioning services have been proudly providing heating services."]
+  const ListArray = ["We have an Ameristar heating and cooling furnace with experienced professionals.", "We provide professional services at affordable prices.", "Our technicians are licensed and insured.", "We provide quality Ameristar heating and cooling installation, maintenance, and repair services.", "So, if you are looking for cooling, heating, and air quality services from expert technicians near you, please call us.", "Airlinx's heating and air conditioning services have been proudly providing heating services."]
 
   return (
     <>
       <Head>
-        <title>Expert Technicians For Ameristar Heating & Cooling Products Services</title>
-        <meta name="description" content="We have 24*7 Ameristar heating & Cooling servicing. With long years of work experience, we serve you with our quality and affordable services. So, call us today!" />
+        <title>Expert Technicians For Ameristar Products Services - Airlinx</title>
+        <meta name="description" content="We have 24/7 Ameristar heating & Cooling servicing. With long years of work experience, Airlinx Heating serve you with our quality and affordable services" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/ameristar/" />
+        <link rel="canonical" href="https://airlinxheating.ca/ameristar/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -124,8 +124,8 @@ const Ameristar = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Ameristar" color="#fff" variant="h1" />
         <section>
@@ -139,7 +139,7 @@ const Ameristar = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -149,7 +149,7 @@ const Ameristar = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -177,7 +177,7 @@ const Ameristar = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -205,7 +205,7 @@ const Ameristar = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title="Teressen's Ameristar heating and cooling products services are one of the best services in town" list={true} ListArray={ListArray} />
+                      <BrandDetails title="Airlinx's Ameristar heating and cooling products services are one of the best services in town" list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -221,14 +221,24 @@ const Ameristar = () => {
                   <Box>
                     <SectionalHeading simpletext="Let us help you take care of everything" variant="h2" />
                     <List>
-                      {
-                        ["Furnaces repair, maintenance, and installation.", "Heat pump maintenance, installation, and repair.", "Boiler installation, installation, and repair."].map(item => <ListItem key={item}>
-                          <ListItemIcon>
-                            <CheckCircleOutline className='text--blue' />
-                          </ListItemIcon>
-                          <ListItemText primary={item} />
-                        </ListItem>)
-                      }
+                      <ListItem>
+                        <ListItemIcon>
+                          <CheckCircleOutline className='text--blue' />
+                        </ListItemIcon>
+                        <ListItemText primary="Furnaces repair, maintenance, and installation." />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemIcon>
+                          <CheckCircleOutline className='text--blue' />
+                        </ListItemIcon>
+                        <ListItemText primary="Heat pump maintenance, installation, and repair." />
+                      </ListItem>
+                      <ListItem>
+                        <ListItemIcon>
+                          <CheckCircleOutline className='text--blue' />
+                        </ListItemIcon>
+                        <ListItemText primary={<span><a href="/boilers/">Boiler installation, installation, and repair</a>.</span>} />
+                      </ListItem>
                     </List>
                   </Box>
                 </Box>

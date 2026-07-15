@@ -1,16 +1,16 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-116.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Viessmann = () => {
   const [width, setWidth] = useState()
@@ -41,14 +41,14 @@ const Viessmann = () => {
   return (
     <>
       <Head>
-        <title>Viessmann Heat Pump & Furnace Experts Technicians | Teressenheating</title>
-        <meta name="description" content="" />
+        <title>Viessmann Heat Pump & Furnace Experts Technicians - Airlinx</title>
+        <meta name="description" content="Airlinx Heating offers professional Viessmann HVAC and boiler services, including installation, repair, and maintenance. Enjoy efficient home comfort." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/Viessmann/" />
+        <link rel="canonical" href="https://airlinxheating.ca/viessmann/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -123,8 +123,8 @@ const Viessmann = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Viessmann" color="#fff" variant="h1" />
         <section>
@@ -138,7 +138,7 @@ const Viessmann = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -148,7 +148,7 @@ const Viessmann = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -176,7 +176,7 @@ const Viessmann = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -236,7 +236,7 @@ const Viessmann = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary="Boiler installation, installation, and repair." />
+                        <ListItemText primary={<span><a href="/boilers/">Boiler installation, installation, and repair</a>.</span>} />
                       </ListItem>
                     </List>
                   </Box>

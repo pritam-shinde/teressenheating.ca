@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
+import { AppointmentForm, CommonBanner } from '../components/components'
 import Banner from '../public/covid/covivd-compressed.webp'
 import BannerMob from '../public/covid/mob-compressed.webp'
 import BannerTab from '../public/covid/tab-compressed.webp'
-import { AppointmentForm, CommonBanner } from '../components/components'
-import { Box, Container, Grid, Typography } from '@mui/material'
 
 const Covid19 = () => {
   const [width, setWidth] = useState()
@@ -16,10 +16,10 @@ const Covid19 = () => {
   return (
     <>
       <Head>
-        <title>Covid - teressenheating.ca</title>
+        <title>Covid - Airlinxheating.ca</title>
         <meta name="description" content="" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/covid19/" />
+        <link rel="canonical" href="https://airlinxheating.ca/covid19/" />
       </Head>
       <main>
         <CommonBanner bg={width > 992 ? Banner : width > 601 ? BannerTab : BannerMob} />

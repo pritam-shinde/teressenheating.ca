@@ -1,16 +1,16 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-121.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const AmericanStandard = () => {
   const [width, setWidth] = useState()
@@ -37,18 +37,18 @@ const AmericanStandard = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have American standard furnace experienced professionals.", "We provide professional services at affordable pricing.", "We have insured and licensed products.", "American standard heating, maintenance, and repair services.", "Teressen's heating and air conditioning services for all our clients who trust us."]
+  const ListArray = ["We have American standard furnace experienced professionals.", "We provide professional services at affordable pricing.", "We have insured and licensed products.", "American standard heating, maintenance, and repair services.", <><a href="/">Airlinx's heating and air conditioning services</a> for all our clients who trust us.</>]
   return (
     <>
       <Head>
-        <title>Professional American standard Heating Services at your Doorstep</title>
-        <meta name="description" content="HVAC Services in Canada for Professional American Standard Heating Services at your Doorstep. We are a company with professional experience providing heating services." />
+        <title>Professional American standard Heating Services - Airlinx</title>
+        <meta name="description" content="HVAC Services for Professional American Standard Heating Services by Airlinx Heating. We are a company with experience providing heating services." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/american-standard/" />
+        <link rel="canonical" href="https://airlinxheating.ca/american-standard/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -123,8 +123,8 @@ const AmericanStandard = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="American Standard" color="#fff" variant="h1" />
         <section>
@@ -138,7 +138,7 @@ const AmericanStandard = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -148,7 +148,7 @@ const AmericanStandard = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -176,7 +176,7 @@ const AmericanStandard = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -204,7 +204,7 @@ const AmericanStandard = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s American standard products and services' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Airlinx&apos;s American standard products and services' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>

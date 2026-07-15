@@ -1,16 +1,16 @@
-import { Box, Container, Grid,List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner} from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-115.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Trane = () => {
   const [width, setWidth] = useState()
@@ -41,19 +41,21 @@ const Trane = () => {
     'We have Trane furnace experienced technicians.',
     'We give professional services at affordable rates.',
     'We do all types of Trane heating, installation, maintenance, and repair work.',
-    "Teressen's heating and air conditioning services are proudly meant to serve you the best."
+    <>
+      <a href="/">Airlinx's heating and air conditioning services</a> are proudly meant to serve you the best.
+    </>
   ]
   return (
     <>
       <Head>
-        <title>Professional Services with Trane Furnace Experienced Technicians</title>
-        <meta name="description" content="The Trane Furnace experts at Teressen Heating are factory-trained, certified and insured. We install and service Trane furnace systems. Book Now !" />
+        <title>Expert Trane Furnace Service by Skilled Technicians- Airlinx</title>
+        <meta name="description" content="The Trane Furnace experts at Airlinx Heating are factory-trained, certified and insured. We install and service Trane furnace systems. Book Now." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/trane/" />
+        <link rel="canonical" href="https://airlinxheating.ca/trane/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -128,8 +130,8 @@ const Trane = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <CommonBanner bg={BoilerMaintainanceBanner} title="Trane" color="#fff" variant="h1" />
       <main>
         <section>
@@ -143,7 +145,7 @@ const Trane = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -153,7 +155,7 @@ const Trane = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -181,7 +183,7 @@ const Trane = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -191,7 +193,7 @@ const Trane = () => {
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' alt="Work Safe BC Logo" title='Work Safe BC Logo' />
+                              <Image layout='responsive' src={WorkSafe} alt="Work Safe BC Logo" title='Work Safe BC Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
@@ -217,7 +219,7 @@ const Trane = () => {
             </Grid>
           </Container>
         </section>
-        <FeaturedHeatingServices/>
+        <FeaturedHeatingServices />
         <PopularService color='red' />
         <FeaturedCoolingServices />
         <HighlySkilled />

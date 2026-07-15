@@ -16,7 +16,7 @@ const PopularService = ({color}) => {
                                         <Box>
                                             <Typography className={Styles.head}>WE PROVIDE <span className={color == "red" ? 'text--red' : color == 'blue' ? 'text--blue' : null}>MOST POPULAR REPAIR SERVICES</span></Typography>
                                             <Box mt={3}>
-                                                <BlueFilledBtn navlink={true} btnlink="/contact/" btnTitle="Book An Appointment" />
+                                                <BlueFilledBtn navlink={true} btnlink="/contact-us/" btnTitle="Book An Appointment" />
                                             </Box>
                                         </Box>
                                     </Grid>

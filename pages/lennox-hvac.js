@@ -1,13 +1,13 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
-import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/lennox-hvac/lennox.webp'
 import Image from 'next/legacy/image'
-import { CheckCircleOutline } from '@mui/icons-material'
-import hvacLennox from '../public/lennox-hvac/dlsc-family-new.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
+import hvacLennox from '../public/lennox-hvac/dlsc-family-new.webp'
+import Banner from '../public/lennox-hvac/lennox.webp'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const LennoxHVAC = () => {
   const [width, setWidth] = useState()
@@ -37,23 +37,23 @@ const LennoxHVAC = () => {
   return (
     <>
       <Head>
-        <title>Lennox HVAC Systems Installation and Service Dealer | Teressenheating</title>
-        <meta name="description" content="We are the Lennox dealer specialize in Lennox products installation and services We have experienced technicians who ensure that your system is running smoothing." />
+        <title>Lennox HVAC Systems Installation and Services - Airlinx</title>
+        <meta name="description" content="Airlinx Heating is the Lennox dealer specialize in Lennox HVAC products services We have experienced team who provides quality work in emergency also" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/lennox-hvac/" />
+        <link rel="canonical" href="https://airlinxheating.ca/lennox-hvac/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "Service",
           "serviceType": "Lennox HVAC ",
           "provider": {
             "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/lennox-hvac/",
+            "name": "Airlinx Heating & Air Conditioning",
+          "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
+          "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fdlsc-family-new.821e9b16.webp&w=1920&q=75",
+          "url": "https://airlinxheating.ca/lennox-hvac/",
           "telephone": "+1-604-363-6622",
           "priceRange": "$$$",
           "address": {
@@ -85,15 +85,15 @@ const LennoxHVAC = () => {
           "sameAs": [
             "https://www.facebook.com/profile.php?id=100088431184715",
             "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
+            "https://www.pinterest.com.au/airlinxheating/"    
           ]
           }
         }`
-      }
+        }
 
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen your Lennox HVAC systems have certified technicians" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx your Lennox HVAC systems have certified technicians" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -111,7 +111,7 @@ const LennoxHVAC = () => {
                           <Grid item xs={12} md={6}>
                             <Box>
                               <Typography className='para'>We help you with the best quality Lennox furnaces in the industry. It is one of the most trusted brands in heating equipment because it is very easy to install, operate and maintain too.</Typography>
-                              <Typography className='para'>We are the Lennox dealer in your area. We have experienced technicians who ensure that your furnace is running smoothing. If something goes wrong, then we are here to make sure that everything is smooth and easygoing.</Typography>
+                              <Typography className='para'>We are the <a href="/lennox/">Lennox dealer</a> in your area. We have experienced technicians who ensure that your furnace is running smoothing. If something goes wrong, then we are here to make sure that everything is smooth and easygoing.</Typography>
                             </Box>
                           </Grid>
                         </Grid>
@@ -120,9 +120,9 @@ const LennoxHVAC = () => {
                     <section className='mt-md-3 mt-2 bg--grey'>
                       <Container maxWidth="xxl">
                         <Box p={3}>
-                          <SectionalHeading simpletext="Teressen is one of the top-rated companies that specialize in Lennox products installation and services" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                          <Typography className='para'>So, when you are looking for someone who has <Link href="/commercial-hvac/">HVAC experience</Link>, it is crucial to find the one who will work hard until your satisfaction is assured. With the right experts available, we make sure that there are no delays in your work. We are here to assist you 24*7 to ensure you with optimal indoor air quality by helping you with equipment that is maintained regularly as per the manufacturer&apos;s recommendations. Also, these systems help you ensure protection from potential malfunctions resulting due to dirt buildup. This leads to not only increasing energy bills but also safety hazards such as carbon monoxide poisoning if left just like that.</Typography>
-                          <Typography className='para'>Now, installing a new heating and <Link href="/air-conditioning-service/">cooling system</Link> is one of the biggest decisions you will make. Our certified experts understand that each home is different and they need different solutions. We work closely with homeowners like you to assure stress-free free living. So, whatever installation problems you are facing, just make sure that you give us a call today.</Typography>
+                          <SectionalHeading simpletext="Airlinx is one of the top-rated companies that specialize in Lennox products installation and services" variant="h2" align={width > 600 ? 'left' : 'center'} />
+                          <Typography className='para'>So, when you are looking for someone who has <a href="/commercial-hvac/">HVAC experience</a>, it is crucial to find the one who will work hard until your satisfaction is assured. With the right experts available, we make sure that there are no delays in your work. We are here to <Link href="/emergency/">assist you 24*7</Link> to ensure you with optimal indoor air quality by helping you with equipment that is maintained regularly as per the manufacturer&apos;s recommendations. Also, these systems help you ensure protection from potential malfunctions resulting due to dirt buildup. This leads to not only increasing energy bills but also safety hazards such as carbon monoxide poisoning if left just like that.</Typography>
+                          <Typography className='para'>Now, installing a new heating and <a href="/air-conditioning-service/">cooling system</a> is one of the biggest decisions you will make. Our certified experts understand that each home is different and they need different solutions. We work closely with homeowners like you to assure stress-free free living. So, whatever installation problems you are facing, just make sure that you give us a call today.</Typography>
                         </Box>
                       </Container>
                     </section>

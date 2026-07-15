@@ -1,5 +1,6 @@
 User-agent: *
-Allow : /
-Disallow: /blog/[slug]/
 
-Sitemap: http://teressenheating.ca/sitemap.xml
+Disallow: /api/
+Disallow: /cdn-cgi/l/email-protection
+
+Sitemap: https://airlinxheating.ca/sitemap.xml

@@ -1,13 +1,10 @@
- import { Box, Container, Grid, Paper, Typography, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
-import React, { useState } from 'react'
-import SectionalHeading from '../../components/SectionalHeading/SectionalHeading'
-import { LocalPhoneOutlined, MailOutline, CheckCircle} from '@mui/icons-material'
+import { CheckCircle, LocalPhoneOutlined, MailOutline } from '@mui/icons-material';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import { AppointmentForm } from '../../components/components'
-import Image from 'next/image'
-import Brands from '../../public/brand-page/brands-logo.jpg'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import Link from 'next/link';
-
+import { useState } from 'react';
+import { AppointmentForm } from '../../components/components';
+import SectionalHeading from '../../components/SectionalHeading/SectionalHeading';
 
 const FaqAndForm = ({
   faq,
@@ -51,13 +48,13 @@ const FaqAndForm = ({
                           <SectionalHeading variant={addressVariant} align={addresstitleAlign} simpletext={addressSimpleTitle} />
                         ) : null}
                         <Box mt={3}>
-                          <Typography variant='h3'>Teressen Heating & Air Conditioning</Typography>
+                          <Typography variant='h3'>Airlinx Heating & Air Conditioning</Typography>
                           <Box mt={3}>
                             <List>
                               {[
                                 { id: 'contact-1', icon: <HomeOutlinedIcon className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: '2025 Willingdon Ave unit 900, Burnaby, BC V5C 0J3, Canada' },
                                 { id: 'contact-2', icon: <LocalPhoneOutlined className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: '604-363-6622' },
-                                { id: 'contact-3', icon: <MailOutline className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: 'info@teressen heating.ca' }
+                                { id: 'contact-3', icon: <MailOutline className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: 'info@airlinxheating.ca' }
                               ].map(item => (
                                 <ListItem key={item.id} className='m-0 p-0 mb-3'>
                                   <ListItemIcon>{item.icon}</ListItemIcon>
@@ -70,13 +67,14 @@ const FaqAndForm = ({
                       </Box>
                       <Box p={1}>
                         <iframe
+                          title='Google Maps Location of Teressen Heating & Air Conditioning'
                           src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.241045331159!2d-123.0013343!3d49.2657802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e00c8b58b8252d9!2sTeressen%20Heating%20%26%20Air%20Conditioning!5e0!3m2!1sen!2sin!4v1671612141122!5m2!1sen!2sin'
                           width='100%'
                           height='500px'
                           style={{ border: 0 }}
-                          allowfullscreen=''
+                          allowFullScreen=''
                           loading='lazy'
-                          referrerpolicy='no-referrer-when-downgrade'
+                          referrerPolicy='no-referrer-when-downgrade'
                         ></iframe>
                       </Box>
                     </Grid>
@@ -170,11 +168,12 @@ const FaqAndForm = ({
                         </Box>
                         <Box p={2}>
                           <iframe
+                            title='Google Maps Location of Teressen Furnace Heating & Air Conditioning HVAC'
                             src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.22800159264!2d-123.0035841!3d49.265842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486776a8b99ca05%3A0x7e00c8b58b8252d9!2sTeressen%20Furnace%20Heating%20%26%20Air%20Conditioning%20HVAC!5e0!3m2!1sen!2sin!4v1683627434720!5m2!1sen!2sin'
                             width='100%'
                             style={{ border: 0 }}
                             loading='lazy'
-                            referrerpolicy='no-referrer-when-downgrade'
+                            referrerPolicy='no-referrer-when-downgrade'
                           ></iframe>
                         </Box>
                       </Box>

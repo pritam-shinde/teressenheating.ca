@@ -1,18 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-108.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
-
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-108.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Lennox = () => {
   const [width, setWidth] = useState()
@@ -46,90 +45,12 @@ const Lennox = () => {
   return (
     <>
       <Head>
-        <title>Lennox Air Conditioning Repairs Service Provider | Teressenheating</title>
-        <meta name="description" content="Teressen's heating Air Conditoning repair, installation and maintenance services are the best. So, call us whenever you face any uncertainties with Lennox products ." />
+        <title>Lennox Air Conditioning Repairs Service Provider - Airlinx</title>
+        <meta name="description" content="Discover Lennox heating and cooling solutions from Airlinx Heating. We provide expert Lennox services to keep your home comfortable year-round." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/lennox/" />
+        <link rel="canonical" href="https://airlinxheating.ca/lennox/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do you maintain a heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
-        Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
-        Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you combine heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-            }
-          },{
-            "@type": "Question",
-            "name": "Should I leave my heat pump on all the time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you use the same ducts for heating and cooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does geothermal heating and cooling works",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does ductless heating and cooling works?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much Does HVAC installation Cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long Does HVAC Installation take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Usually, it takes three to five days for installation."
-            }
-          },{
-            "@type": "Question",
-            "name": "What kind of warranties come with my New HVAC installation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It has the following warranties:
-        
-        HVAC Manufacturer Warranty.
-        HVAC Extended Warranty.
-        Homeowners Insurance.
-        Home Warranty"
-            }
-          }]
-        }`
-      }
-    </script>
+
       <CommonBanner bg={BoilerMaintainanceBanner} title="Lennox" color="#fff" variant="h1" />
       <main>
         <section>
@@ -143,7 +64,7 @@ const Lennox = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -208,7 +129,7 @@ const Lennox = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s Lennox AC repair services' brandDetaillArr={brandDetailparagraph} />
+                      <BrandDetails title='Airlinx&apos;s Lennox AC repair services' brandDetaillArr={brandDetailparagraph} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -235,8 +156,8 @@ const Lennox = () => {
               <Grid item xs={12} md={10} className='mx-auto'>
                 <Box>
                   <SectionalHeading variant="h2" simpletext='Searching your nearby Lennox furnace expert' />
-                  <Typography className='para'>Your search for <Link href="/lennox-hvac/">"Lennox furnace repair near me"</Link> stops on us. We are the right choice for all your reapiring and maintenance issues.</Typography>
-                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. Teressen&apos;s HVAC services will help you with the <Link href="/furnace-inspection/">best furnace repairs</Link> and upkeep.</Typography>
+                  <Typography className='para'>Your search for <a href="/lennox-hvac/">"Lennox furnace repair near me"</a> stops on us. We are the right choice for all your reapiring and maintenance issues.</Typography>
+                  <Typography className='para'>Also, we understand that furnace malfunctions might occur at any time. So, you need a furnace repair nearby for safety reasons. The repair should be flexible enough to take care of you in an emergency call situation that needs a quick reaction. Your furnace needs a tune-up at least twice a year. <a href="/commercial-hvac/">Airlinx&apos;s HVAC services</a> will help you with the <a href="/furnace-inspection/">best furnace repairs</a> and upkeep.</Typography>
                 </Box>
               </Grid>
             </Grid>
@@ -259,7 +180,7 @@ const Lennox = () => {
                         </ListItem>)
                       }
                     </List>
-                    <Typography className='para'>Teressen&apos;s heating installation, repair, and maintenance services are the best. So, call us whenever you face any uncertainties with Lennox products.
+                    <Typography className='para'>Airlinx&apos;s heating installation, repair, and maintenance services are the best. So, call us whenever you face any uncertainties with Lennox products.
                     </Typography>
                   </Box>
                   <Box mt={3}>
@@ -267,7 +188,7 @@ const Lennox = () => {
                     <Typography className='para'>Lennox air conditioning repairs are necessary if your room has poor air ventilation. Also, your air conditioner is prone to breakdowns at times. So, it needs regular maintenance. Insufficient ventilation, unfavorable temperatures, warm air, and strange noises are all signs of an inoperable air conditioner.</Typography>
                     <Typography className='para'>Also, poor installation causes your air conditioner to malfunction. Hence, it is necessary to obtain installation guidance and repairs from an expert air conditioning repair firm.
                     </Typography>
-                    <Typography className='para'>Hiring Teressen&apos;s <Link href="/commercial-hvac/">HVAC services</Link> for high-quality installation and maintenance for Lennox air conditioners is the best thing you can do. For a long time, we have been providing installations that would satisfy our customers. We have imparted modern technological development systems that would enhance effectiveness.
+                    <Typography className='para'>Hiring Airlinx&apos;s <Link href="/commercial-hvac/">HVAC services</Link> for high-quality installation and maintenance for Lennox air conditioners is the best thing you can do. For a long time, we have been providing installations that would satisfy our customers. We have imparted modern technological development systems that would enhance effectiveness.
                     </Typography>
                   </Box>
 

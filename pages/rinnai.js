@@ -1,17 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-114.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-114.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Rinnai = () => {
   const [width, setWidth] = useState()
@@ -38,18 +38,18 @@ const Rinnai = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["Rinnai heating/ AC experienced technicians make sure that you are served well.","We have professional services at affordable pricing.","All our experts are licensed experts.","We provide the best heating, and air quality services for you."]
+  const ListArray = ["Rinnai heating/ AC experienced technicians make sure that you are served well.", "We have professional services at affordable pricing.", "All our experts are licensed experts.", "We provide the best heating, and air quality services for you."]
   return (
     <>
       <Head>
-        <title>Rinnai Heating & Furnace Services at Affordable Price| Teressenheating</title>
-        <meta name="description" content="Teressen Heating and Furnace is a leading provider of Rinnai heating and furnace system services. We offer high-quality, affordable products and services." />
+        <title>Rinnai Heating & Furnace Services in Burnaby - Airlinx</title>
+        <meta name="description" content="Airlinx Heating is a leading provider of Rinnai heating and furnace system services. We offer high-quality, affordable products and services in Canada." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/rinnai/" />
+        <link rel="canonical" href="https://airlinxheating.ca/rinnai/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -124,8 +124,8 @@ const Rinnai = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Rinnai" color="#fff" variant="h1" />
         <section>
@@ -139,7 +139,7 @@ const Rinnai = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -149,7 +149,7 @@ const Rinnai = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -177,7 +177,7 @@ const Rinnai = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -237,7 +237,7 @@ const Rinnai = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/boilers-installation/">Boiler installation</Link>, installation, and repair.</span>}/>
+                        <ListItemText primary={<span><Link href="/boilers-installation/">Boiler installation</Link>, installation, and repair.</span>} />
                       </ListItem>
                     </List>
                   </Box>
@@ -252,7 +252,7 @@ const Rinnai = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
                   <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                  <Typography className='para'>We have <a href="/emergency/">24*7 servicing and repairs</a>. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
                 </Box>
               </Grid>
             </Grid>

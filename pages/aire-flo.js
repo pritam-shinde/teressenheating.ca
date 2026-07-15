@@ -1,17 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-119.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-119.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const AireFlo = () => {
   const [width, setWidth] = useState()
@@ -43,14 +43,14 @@ const AireFlo = () => {
   return (
     <>
       <Head>
-        <title>Aire-Flo Heating & Cooling Services | Teressenheating</title>
-        <meta name="description" content="Teressen Heating will help you with an expert solution for Air Flo heating and Cooling Services by coming to your home and discussing your comfort needs." />
+        <title>Aire-Flo Heating & Cooling Services - Airlinx Heating</title>
+        <meta name="description" content="Airlinx Heating will help you with an expert solution for Air Flo heating and Cooling Services in Burnaby at your home and discussing your comfort needs." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/aire-flo/" />
+        <link rel="canonical" href="https://airlinxheating.ca/aire-flo/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -125,10 +125,10 @@ const AireFlo = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Aire Flo" color="#fff"/>
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Aire Flo" color="#fff" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>
@@ -140,7 +140,7 @@ const AireFlo = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -150,7 +150,7 @@ const AireFlo = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -178,7 +178,7 @@ const AireFlo = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -238,7 +238,7 @@ const AireFlo = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/boilers-installation/">Boiler installation</Link>, installation, and repair.</span>}/>
+                        <ListItemText primary={<span><Link href="/boilers-installation/">Boiler installation</Link>, installation, and repair.</span>} />
                       </ListItem>
                     </List>
                   </Box>
@@ -253,7 +253,7 @@ const AireFlo = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
                   <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                  <Typography className='para'>We have <a href="/emergency/">24*7 servicing and repairs</a>. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
                 </Box>
               </Grid>
             </Grid>

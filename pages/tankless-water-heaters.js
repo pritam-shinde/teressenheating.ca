@@ -1,12 +1,12 @@
-import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Image from 'next/legacy/image'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/lennox-hvac/lennox.webp'
-import Image from 'next/legacy/image'
 import waterheater from '../public/tankless-water-heater/water-heater.webp'
-import Link from 'next/link'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const TanklesWaterHeater = () => {
   const [width, setWidth] = useState()
@@ -16,10 +16,10 @@ const TanklesWaterHeater = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "how to install service valves for tankless water heater?", ans: "", list: null },
+    // { id: "faq-1", que: "how to install service valves for tankless water heater?", ans: "", list: null },
     { id: "faq-2", que: "how often service tankless water heater?", ans: "Tankless water heaters need to be flushed once per year.", list: null },
     { id: "faq-3", que: "What kind of maintenance needs to be done on a tankless water heater?", ans: "", list: ["Clean or replace the water line filter. Many tankless water heater models have a water line filter that protects against hard water, scale, and sediment.", "Clean the air filter.", "Descaling and flushing the system."] },
-    { id: "faq-4", que: "What is the most common problems with tankless water heaters?", ans: "Here are six of the most common problems and maintenance concerns for tankless water heaters:", list: ["Mineral Buildup.", "System Overload.", "Cold Water Sandwich.", "Air Supply or Exhaust Blockage.", "Ignition Failure.","Flame Failure."] },
+    { id: "faq-4", que: "What is the most common problems with tankless water heaters?", ans: "Here are six of the most common problems and maintenance concerns for tankless water heaters:", list: ["Mineral Buildup.", "System Overload.", "Cold Water Sandwich.", "Air Supply or Exhaust Blockage.", "Ignition Failure.", "Flame Failure."] },
     { id: "faq-5", que: "Can you run out of hot water with a tankless water heater?", ans: "Although a tankless system can't run out of hot water, it can still be overwhelmed by demand.", list: null },
   ]
 
@@ -28,120 +28,124 @@ const TanklesWaterHeater = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "how to install service valves for tankless water heater?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Install service valves on the hot and cold water lines to simplify maintenance, flushing, and descaling of your tankless water heater."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "how often service tankless water heater?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tankless water heaters need to be flushed once per year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of maintenance needs to be done on a tankless water heater?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Clean or replace the water line filter. Many tankless water heater models have a water line filter that protects against hard water, scale, and sediment.\nClean the air filter.\nDescaling and flushing the system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the most common problems with tankless water heaters?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Here are six of the most common problems and maintenance concerns for tankless water heaters:\n\nMineral Buildup.\nSystem Overload.\nCold Water Sandwich.\nAir Supply or Exhaust Blockage.\nIgnition Failure.\nFlame Failure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you run out of hot water with a tankless water heater?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Although a tankless system can't run out of hot water, it can still be overwhelmed by demand."
+        }
+      }
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Tankless Water Heater Maintenance Service",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/tankless-water-heaters/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "British Columbia",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
+
   return (
     <>
       <Head>
-        <title>Tankless Water Heaters Service in Canada | Teressenheating</title>
-        <meta name="description" content="We at Teressen Heating Canada offer high quality installation, maintenance and repair for residential and commercial tankless water heaters services." />
+        <title>Tankless Water Heater Services & Repair - Airlinx</title>
+        <meta name="description" content="From emergency repairs and annual flush maintenance to efficient replacements, Airlinx Heating provides the tankless water heater services you need." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/tankless-water-heaters/" />
+        <link rel="canonical" href="https://airlinxheating.ca/tankless-water-heaters/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        ` {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "how to install service valves for tankless water heater?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": ".."
-            }
-          },{
-            "@type": "Question",
-            "name": "how often service tankless water heater?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Tankless water heaters need to be flushed once per year."
-            }
-          },{
-            "@type": "Question",
-            "name": "What kind of maintenance needs to be done on a tankless water heater?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Clean or replace the water line filter. Many tankless water heater models have a water line filter that protects against hard water, scale, and sediment.
-        Clean the air filter.
-        Descaling and flushing the system."
-            }
-          },{
-            "@type": "Question",
-            "name": "What is the most common problems with tankless water heaters?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Here are six of the most common problems and maintenance concerns for tankless water heaters:
-        
-        Mineral Buildup.
-        System Overload.
-        Cold Water Sandwich.
-        Air Supply or Exhaust Blockage.
-        Ignition Failure.
-        Flame Failure."
-            }
-          },{
-            "@type": "Question",
-            "name": "Can you run out of hot water with a tankless water heater?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Although a tankless system can't run out of hot water, it can still be overwhelmed by demand."
-            }
-          }]
-        }`
-      }     
-      </script>
 
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Tankless Water Heater Maintenance Service",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fwater-heater.775d958c.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/tankless-water-heaters/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
-          ]
-          }
-        }
-        `
-      }
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <main>
-        <CommonBanner bg={Banner} title="Teressen tankless water heater maintenance service" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx tankless water heater maintenance service" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -176,7 +180,7 @@ const TanklesWaterHeater = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen tankless water heaters: Quality, trust, and affordability at their best!" variant="h2" align="left" />
+                        <SectionalHeading simpletext="Airlinx tankless water heaters: Quality, trust, and affordability at their best!" variant="h2" align="left" />
                         <Typography className='para'>Tankless water heaters are the best possible options, to provide <Link href="/tankless-water-heaters/">hot water service</Link> to your home. It saves your money and space by producing hot water on demand. The lack of a tank saves your energy and makes your work easy.</Typography>
                       </Container>
                     </section>
@@ -202,7 +206,7 @@ const TanklesWaterHeater = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen’s  inline water heater services save your money" variant="h2" align="left" />
+                        <SectionalHeading simpletext="Airlinx’s  inline water heater services save your money" variant="h2" align="left" />
                         <Typography className='para'>The cost of heating your home&apos;s water increases exponentially when it comes to a tank-type heater. Tankless models have more fuel-efficient methods of heating your home&apos;s water so that you can conserve natural resources for years.</Typography>
                       </Container>
                     </section>

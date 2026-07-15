@@ -1,17 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-111.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-111.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const MaytagHVAC = () => {
   const [width, setWidth] = useState()
@@ -38,18 +38,18 @@ const MaytagHVAC = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have trained Maytag HVAC experienced professionals.", " Our technicians are well-trained and skilled.", "We are the best Maytag heating and installation service provider.", "Teressen's Heating and Air conditioning services has been providing heating services proudly in the world."]
+  const ListArray = ["We have trained Maytag HVAC experienced professionals.", " Our technicians are well-trained and skilled.", "We are the best Maytag heating and installation service provider.", "Airlinx's Heating and Air conditioning services has been providing heating services proudly in the world."]
   return (
     <>
       <Head>
-        <title>Trained Maytag HVAC Experienced Professionals  | Teressenheating</title>
-        <meta name="description" content="If your Maytag HVAC is not working properly, you need a qualified and experienced professional to diagnose the problem, Call Teressen heating for the correct solution. " />
+        <title>Trained Maytag HVAC Experienced Professionals - Airlinx</title>
+        <meta name="description" content="If your Maytag HVAC isn’t working properly, trust Airlinx Heating for expert diagnosis and reliable repair solutions. Contact us today for emergency service" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/maytag-hvac/" />
+        <link rel="canonical" href="https://airlinxheating.ca/maytag-hvac/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -124,8 +124,8 @@ const MaytagHVAC = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Maytag Hvac" color="#fff" variant="h1" />
         <section>
@@ -139,7 +139,7 @@ const MaytagHVAC = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image src={BlueLogo} alt="teressen heating" layout="responsive" />
+                              <Image src={BlueLogo} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -181,7 +181,7 @@ const MaytagHVAC = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={BBB} alt="teressen heating" layout="responsive" />
+                              <Image src={BBB} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
@@ -204,7 +204,7 @@ const MaytagHVAC = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s Maytag products servicing works the best' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Airlinx&apos;s Maytag products servicing works the best' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -237,19 +237,19 @@ const MaytagHVAC = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/furnace/">Furnaces</Link> repair, maintenance, and installation.</span>}/>
+                        <ListItemText primary={<span><Link href="/furnace/">Furnaces</Link> repair, maintenance, and installation.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump</Link>maintenance, installation, and repair.</span>}/>
+                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump</Link>maintenance, installation, and repair.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/boilers/">Boiler maintenance</Link>, installation, and repair.</span>}/>
+                        <ListItemText primary={<span><Link href="/boilers/">Boiler maintenance</Link>, installation, and repair.</span>} />
                       </ListItem>
                     </List>
                   </Box>

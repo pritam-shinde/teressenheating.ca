@@ -1,11 +1,11 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/promomotion/promotion.webp'
-import { CheckCircleOutline } from '@mui/icons-material'
-import Link from 'next/link'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const RebatesAndPromotion = () => {
   const [width, setWidth] = useState()
@@ -35,63 +35,14 @@ const RebatesAndPromotion = () => {
   return (
     <>
       <Head>
-        <title>Teressen offers heating and cooling rebates promotions </title>
-        <meta name="description" content="Teressen Heating offers heating and cooling rebates and promotions to save you money. Contact us for more information." />
+        <title>HVAC Deals, Rebates and Special Promotions - Airlinx</title>
+        <meta name="description" content="Looking to upgrade your furnace or heat pump? Find out how to qualify for thousands in utility rebates and current special promotions from Airlinx Heating." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/rebates-and-promotions/" />
+        <link rel="canonical" href="https://airlinxheating.ca/rebates-and-promotions/" />
       </Head>
 
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Rebates And Promotions",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "@id": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "url": "https://teressenheating.ca/rebates-and-promotions/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
-          ]
-          }
-        }`
-      }
-      </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's heating ltd offers the best rebates and promotions" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx's heating ltd offers the best rebates and promotions" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -100,7 +51,7 @@ const RebatesAndPromotion = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>To encourage the most comfortable means of heating and cooling your space, Teressen services offer heating and cooling rebates. So, when you choose to install a furnace system with our team, you get an experienced dealer, products, and expert heating and cooling services. Our <Link href="/commercial-hvac/">HVAC rebate services</Link> are ideal for you and your family. </Typography>
+                        <Typography className='para'>To encourage the most comfortable means of heating and cooling your space, Airlinx services offer heating and cooling rebates. So, when you choose to install a furnace system with our team, you get an experienced dealer, products, and expert heating and cooling services. Our <Link href="/commercial-hvac/">HVAC rebate services</Link> are ideal for you and your family. </Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -120,7 +71,7 @@ const RebatesAndPromotion = () => {
                     <section className='mt-md-3 mt-2'>
                       <Container maxWidth="xxl">
                         <Box>
-                          <SectionalHeading simpletext="What should you expect from Teressen?" variant="h2" />
+                          <SectionalHeading simpletext="What should you expect from Airlinx?" variant="h2" />
                           <List>
                             <ListItem>
                               <ListItemIcon>

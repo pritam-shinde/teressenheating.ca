@@ -1,11 +1,11 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/emergency/emergency.webp'
-import { CheckCircleOutline } from '@mui/icons-material'
-import Link from 'next/link'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Emergency = () => {
   const [width, setWidth] = useState()
@@ -31,67 +31,18 @@ const Emergency = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
-  
+
   return (
     <>
       <Head>
-        <title>Affordable Heating and Cooling Emergency Services in Canada | Teressen</title>
-        <meta name="description" content="Teressen's heating services offer the best 24*7 emergency heating and cooling services in Canada. We serve the best affordable , trusted and quality service." />
+        <title>Reliable Emergency HVAC Services in Burnaby - Airlinx</title>
+        <meta name="description" content="No heat or AC? Don't panic. Airlinx Heating offers fast emergency HVAC services 24/7 to restore your home’s comfort safely. Call our team right now." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/emergency/" />
+        <link rel="canonical" href="https://airlinxheating.ca/emergency/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Emergency Services",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "@id": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "url": "https://teressenheating.ca/emergency/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
-          ]
-          }
-        }`
-      }
 
-      </script>
       <main>
-        <CommonBanner bg={Banner} title="Teressen's emergency services are affordable, trustworthy, and come with good quality" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Airlinx's emergency services are affordable, trustworthy, and come with good quality" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -100,7 +51,7 @@ const Emergency = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>In the winter season, we need our furnace to keep our home cozy. But what if your furnace breaks down? In that case, you need an instant solution that is fast and reliable too. That is why the experts at Teressen offer superior HVAC emergency <Link href="/tankless-water-heaters/">water heater repair services</Link> to meet your everyday needs. No matter the time, we are always there for your assistance.</Typography>
+                        <Typography className='para'>In the winter season, we need our furnace to keep our home cozy. But what if your furnace breaks down? In that case, you need an instant solution that is fast and reliable too. That is why the experts at Airlinx offer superior HVAC emergency <Link href="/tankless-water-heaters/">water heater repair services</Link> to meet your everyday needs. No matter the time, we are always there for your assistance.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -139,14 +90,14 @@ const Emergency = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen's 24*7 evergreen service day and night" variant="h2" align="left" />
+                        <SectionalHeading simpletext="Airlinx's 24*7 evergreen service day and night" variant="h2" align="left" />
                         <Typography className='para'>Our technicians have over years of experience and they serve you without any delays. We are there even on holidays, weekends, and after hours. We know how important it is to have the best possible heating and cooling services when the weather hits hard for you. So, we stand with you 24*7*365 days for you.</Typography>
                       </Container>
                     </section>
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Peace of mind is guaranteed" variant="h2" />
-                        <Typography className='para'><Link href="/">Teressen&apos;s heating ltd services</Link> offer the best 24-hour emergency heating services for you. So, best assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
+                        <Typography className='para'><Link href="/">Airlinx&apos;s heating ltd services</Link> offer the best 24-hour emergency heating services for you. So, best assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2'>
@@ -165,7 +116,7 @@ const Emergency = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Around-the-clock service:</strong>} secondary="Teressen's heating services will never disappoint you. We offer a variety of services to meet your requirements 24*7." />
+                              <ListItemText primary={<strong>Around-the-clock service:</strong>} secondary={<>Airlinx&apos;s <a href="/heating-services/">heating services</a> will never disappoint you. We offer a variety of services to meet your requirements 24*7.</>} />
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>

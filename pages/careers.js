@@ -1,7 +1,6 @@
 import { CheckCircleOutline } from '@mui/icons-material'
-import { Box, Container, Grid, Typography, Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
+import { Box, Button, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useState } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/career/career-bg.webp'
 
@@ -9,10 +8,10 @@ const Careers = () => {
   return (
     <>
       <Head>
-        <title>Careers - Heating & Air Conditioning Jobs | Teressenheating </title>
-        <meta name="description" content="Teressen is one of the top employers of HVAC professionals across Canada. Visit our career page to explore the current opportunities in the heating & cooling industry." />
+        <title>HVAC Jobs and Career Opportunities - Airlinx Heating</title>
+        <meta name="description" content="Build your future with Airlinx Heating. We offer competitive pay, a supportive work environment, and great career paths for licensed HVAC experts in Canada." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/career/" />
+        <link rel="canonical" href="https://airlinxheating.ca/careers/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Career" color="#fff" />
@@ -24,7 +23,7 @@ const Careers = () => {
                   <Box >
                     <Box mb={3}>
                       <SectionalHeading simpletext="Need a relevant job that suits your requirement? Work with us, we are hiring" variant="h2" />
-                      <Typography className='para'>Teressen is one of the top employers of HVAC professionals across the world. So, if you are looking for a rewarding and stable work, then you can definitely get in touch with us.</Typography>
+                      <Typography className='para'>Airlinx is one of the top employers of HVAC professionals across the world. So, if you are looking for a rewarding and stable work, then you can definitely get in touch with us.</Typography>
                     </Box>
                     <Box>
                       <SectionalHeading simpletext="Why us?" variant="h2" />
@@ -32,8 +31,8 @@ const Careers = () => {
                       <Typography className='para'>We proudly offer several industry-leading benefits and perks to our employees. So, that's indeed a reason to join us.</Typography>
                     </Box>
                     <Box mt={3}>
-                      <SectionalHeading simpletext="Teressen: Grow to the fullest!" variant="h2" />
-                      <Typography className='para'>Teressen takes care of its people. With an extensive professional development, competitive compensation and benefits, we have tremendous opportunities for you.</Typography>
+                      <SectionalHeading simpletext="Airlinx: Grow to the fullest!" variant="h2" />
+                      <Typography className='para'>Airlinx takes care of its people. With an extensive professional development, competitive compensation and benefits, we have tremendous opportunities for you.</Typography>
                       <Typography className='para'>We look after our employees because they are the foundation of our success stories. Our company-centric approach provides them a free environment to work.</Typography>
                     </Box>
                   </Box>

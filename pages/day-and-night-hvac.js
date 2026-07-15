@@ -1,18 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-127.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
-
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-127.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const DayNightHVAC = () => {
   const [width, setWidth] = useState()
@@ -43,14 +42,14 @@ const DayNightHVAC = () => {
   return (
     <>
       <Head>
-        <title>Day and Night HVAC Service Expert Technicians | Teressenheating</title>
-        <meta name="description" content="Tereseenheating is the most trusted company for your Day and Night HVAC service needs. Our professionals are licensed, trained, and experienced." />
+        <title>Day & Night HVAC Service Expert Technicians - Airlinx</title>
+        <meta name="description" content="Airlinx Heating is the most trusted company for your Day and Night HVAC service needs. Our professionals are licensed, trained, and experienced." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/day-and-night-hvac/" />
+        <link rel="canonical" href="https://airlinxheating.ca/day-and-night-hvac/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -125,8 +124,8 @@ const DayNightHVAC = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Day And Night HVAC" color="#fff" variant="h1" />
         <section>
@@ -140,7 +139,7 @@ const DayNightHVAC = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image src={BlueLogo} alt="teressen heating" layout="responsive" />
+                              <Image src={BlueLogo} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -150,7 +149,7 @@ const DayNightHVAC = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -178,12 +177,12 @@ const DayNightHVAC = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={BBB} alt="teressen heating" layout="responsive" />
+                              <Image src={BBB} alt="Airlinx heating" layout="responsive" />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>

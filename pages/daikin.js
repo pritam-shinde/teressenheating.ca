@@ -1,17 +1,17 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-126.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-126.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Daikin = () => {
   const [width, setWidth] = useState()
@@ -43,14 +43,14 @@ const Daikin = () => {
   return (
     <>
       <Head>
-        <title>Daikin Furnace & Heat Pump Installation Service Provider | Teressen</title>
-        <meta name="description" content="We are the best Daikin Furnace and heat pump installation, maintenance, and repair experts. Call us for a free in-home estimate. We will help you with an expert solution." />
+        <title>Daikin Furnace & Heat Pump Installation Services - Airlinx</title>
+        <meta name="description" content="Airlinx Heating is the best Daikin Furnace and heat pump installation, maintenance, and repair experts. Contact us in emergency expert solutions." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/daikin/" />
+        <link rel="canonical" href="https://airlinxheating.ca/daikin/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -125,8 +125,8 @@ const Daikin = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Daikin" color="#fff" variant="h1" />
         <section>
@@ -140,7 +140,7 @@ const Daikin = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -150,7 +150,7 @@ const Daikin = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -178,7 +178,7 @@ const Daikin = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -206,7 +206,7 @@ const Daikin = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s Daikin products servicing makes you stress-free' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Airlinx&apos;s Daikin products servicing makes you stress-free' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -226,7 +226,7 @@ const Daikin = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary="Furnaces repair, maintenance, and installation." />
+                        <ListItemText primary={<span><a href="/furnace/">Furnaces repair, maintenance, and installation</a>.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>

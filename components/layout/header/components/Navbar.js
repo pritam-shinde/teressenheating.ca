@@ -1,12 +1,12 @@
-import { Box, Container, Grid, Button, IconButton } from '@mui/material'
+import { ArrowDropDown, Close, Menu } from '@mui/icons-material'
+import { Box, Button, Container, Grid, IconButton } from '@mui/material'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import blueLogo from '../../../../public/logo/blue-logo.svg'
-import greyLogo from '../../../../public/logo/grey-logo.svg'
+import { useEffect, useState } from 'react'
+import blueLogo from '../../../../public/logo/airlinx-logo2.png'
+import greyLogo from '../../../../public/logo/airlinx-logo2.png'
 import GreyFilledBtn from '../../../buttons/GreyFilledBtn'
 import { Dropdowns } from './components'
-import Image from 'next/legacy/image'
-import { Menu, Close, ArrowDropDown } from '@mui/icons-material'
 const Navbar = () => {
 
   const [width, setWidth] = useState(601);
@@ -23,8 +23,6 @@ const Navbar = () => {
     })
   }, [width]);
 
-
-
   const closeMobileMenu = () => {
     setClicked(false)
     setServiceDropdown(false)
@@ -32,7 +30,6 @@ const Navbar = () => {
     setAboutDropdown(false)
     setBrandDropdown(false)
   }
-
 
   return (
     <>
@@ -43,7 +40,7 @@ const Navbar = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box className='d-md-flex justify-content-between d-block'>
                   <Link legacyBehavior={true} href="/">
-                    <a className='navbar-brand'><Image title='Teressenheating Logo' layout='responsive' src={blueLogo} alt="Teressenheating Logo" /></a>
+                    <a className='navbar-brand'><Image title='Airlinxheating Logo' layout='responsive' src={blueLogo} alt="Airlinxheating Logo" /></a>
                   </Link>
                   <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -370,9 +367,7 @@ const Navbar = () => {
                       </li>
 
                       <li className='nav-item'>
-                        <Link className='nav-link' legacyBehavior={true} href="/blog/">
-                          <a className="nav-link">Blog</a>
-                        </Link>
+                        <a className="nav-link" href="/blog/">Blog</a>
                       </li>
 
                       <li className='nav-item'>
@@ -380,20 +375,19 @@ const Navbar = () => {
                           <a className='nav-link'>Contact us</a>
                         </Link>
                       </li>
-
                     </ul>
                   </Box>
                 </Box>
               </Grid>
             </Grid>
           </Container>
-        </nav> : <nav className='navbar navbar-expand-xl bg-transparent py-1 shadow'>
-          <Button className="menu-icon" onClick={() => setClicked(!clicked)}>
+        </nav > : <nav className='navbar navbar-expand-xl bg-transparent py-1 shadow'>
+          <Button className="menu-icon" onClick={() => setClicked(!clicked)} aria-label="Toggle navigation menu">
             {clicked ? <Close className='text-white' /> : <Menu />}
           </Button>
           <Link className='nav-link' legacyBehavior={true} href="/">
             <a className="navbar-brand">
-              <Image src={blueLogo} alt="Terresenheating Logo" title='Teressenheating Logo' layout='responsive' />
+              <Image src={blueLogo} alt="Terresenheating Logo" title='Airlinxheating Logo' layout='responsive' />
             </a>
           </Link>
           <Box>
@@ -403,7 +397,7 @@ const Navbar = () => {
             <Box className="d-flex justify-content-center align-items-center">
               <Link className='nav-link' legacyBehavior={true} href="/">
                 <a className="navbar-brand">
-                  <Image src={greyLogo} alt="Terresenheating Logo" title='Teressenheating Logo' layout='responsive' />
+                  <Image src={greyLogo} alt="Terresenheating Logo" title='Airlinxheating Logo' layout='responsive' />
                 </a>
               </Link>
             </Box>
@@ -419,7 +413,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/services/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>Services</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(!servicesDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(!servicesDropdown) }} aria-label="Toggle Services dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>
@@ -430,7 +424,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/service-areas/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>Areas</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(!areasDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(!areasDropdown) }} aria-label="Toggle Areas dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>
@@ -441,7 +435,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/about-us/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>About us</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(!aboutDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(!aboutDropdown) }} aria-label="Toggle About us dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>
@@ -452,7 +446,7 @@ const Navbar = () => {
                     <Link className='nav-link' legacyBehavior={true} href="/brand/">
                       <a className="nav-link text-white" onClick={closeMobileMenu} style={{ color: '#fff !important' }}>Brand</a>
                     </Link>
-                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(false); setBrandDropdown(!brandDropdown) }}>
+                    <IconButton onClick={() => { setServiceDropdown(false); setAreasDropdown(false); setAboutDropdown(false); setBrandDropdown(!brandDropdown) }} aria-label="Toggle Brand dropdown">
                       <ArrowDropDown className="text-white" />
                     </IconButton>
                   </Box>
@@ -473,7 +467,6 @@ const Navbar = () => {
           </Box>
         </nav>
       }
-
     </>
   )
 }

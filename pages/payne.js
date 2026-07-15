@@ -1,16 +1,16 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-113.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 import Link from 'next/link'
 
@@ -39,18 +39,18 @@ const Payne = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We are the pioneers in Payne products servicing.", "We provide professional Payne installation, repair, and maintenance services.", "Teressen Heating and air conditioning services are providing timely heating and cooling services for you.", "We have the best cooling and heating technicians for your assistance."]
+  const ListArray = ["We are the pioneers in Payne products servicing.", "We provide professional Payne installation, repair, and maintenance services.", "Airlinx Heating and air conditioning services are providing timely heating and cooling services for you.", "We have the best cooling and heating technicians for your assistance."]
   return (
     <>
       <Head>
-        <title>Payne Heating and Cooling Repair Services | Teressen Heating</title>
-        <meta name="description" content="Teressen Heating and Cooling Repair Services can help with Payne's heating or cooling emergency. We're always on call to help you when you need us most." />
+        <title>Payne Heating and Cooling Repair Services - Airlinx</title>
+        <meta name="description" content="Airlinx Heating and Cooling Repairs can help with Payne's heating or cooling emergency. We're always on call to help you when you need us most." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/payne/" />
+        <link rel="canonical" href="https://airlinxheating.ca/payne/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -125,8 +125,8 @@ const Payne = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Payne" color="#fff" variant="h1" />
         <section>
@@ -140,7 +140,7 @@ const Payne = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -150,7 +150,7 @@ const Payne = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -178,7 +178,7 @@ const Payne = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -206,7 +206,7 @@ const Payne = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen’s heating and cooling services only to serve you the best' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Airlinx’s heating and cooling services only to serve you the best' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -224,17 +224,17 @@ const Payne = () => {
                     <SectionalHeading simpletext="Our Payne" variant="h3" />
                     <Box mt={2}>
                       <SectionalHeading simpletext="Our certified Payne HVAC repair service is the best" variant="h4" />
-                      <Typography className='para'>If you need Payne furnace repair for your commercial building or resident, Teressen's <Link href="/commercial-hvac/">HVAC</Link> is your go-to person. The installation of a furnace increases the comfort level of your home and makes your family happy. At times, when your Payne furnace gets malfunctions, we are at your assistance.</Typography>
-                      <Typography className='para'>Like many homeowners, you might face some issues in fixing an AC or furnace. So, if you do, then we might solve your problem. A competent HVAC contractor like us will get your issue resolved.</Typography>
+                      <Typography className='para'>If you need Payne furnace repair for your commercial building or resident, Airlinx's <Link href="/commercial-hvac/">HVAC</Link> is your go-to person. The installation of a furnace increases the comfort level of your home and makes your family happy. At times, when your Payne furnace gets malfunctions, we are at your assistance.</Typography>
+                      <Typography className='para'>Like many homeowners, you might face some issues in fixing an AC or furnace. So, if you do, then we might solve your problem. A competent <a href="/">HVAC contractor</a> like us will get your issue resolved.</Typography>
                     </Box>
                     <Box mt={2}>
                       <SectionalHeading simpletext="Near Me Payne Furnace repairing services" variant="h4" />
                       <Typography className='para'>When your heating system breaks down, you need a Payne furnace repair near me. You can get your heating system up and running again by finding the best repair services.</Typography>
-                      <Typography className='para'>In the market, Teressen HVAC has a steadfast reputation for offering <Link href="/furnace-inspection/">top-notched furnace repair services</Link>. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
+                      <Typography className='para'>In the market, Airlinx HVAC has a steadfast reputation for offering <Link href="/furnace-inspection/">top-notched furnace repair services</Link>. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
                     </Box>
                     <Box mt={2}>
                       <SectionalHeading simpletext="Putting up a Payne furnace is the mandatory thing" variant="h4" />
-                      <Typography className='para'>If you do not want to cope with an outdated and broken heating system, then Payne furnace installation is mandatory. Fortunately, Teressen's HVAC services have been in business for a long and can ensure you that the professional installation of Payne furnaces will happen correctly at your place.</Typography>
+                      <Typography className='para'>If you do not want to cope with an outdated and broken heating system, then Payne furnace installation is mandatory. Fortunately, Airlinx's HVAC services have been in business for a long and can ensure you that the professional installation of Payne furnaces will happen correctly at your place.</Typography>
                     </Box>
                     <Box mt={2}>
                       <SectionalHeading simpletext="Payne Furnace issues" variant="h4" />

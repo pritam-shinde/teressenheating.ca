@@ -2,8 +2,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/fireplace/fireplace-heat.webp'
 import Fireplace from '../public/fireplace/fireplace.webp'
 import { FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
@@ -29,10 +28,10 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Gas Fireplace Installation, Repair, Services | Teressenheating </title>
-        <meta name="description" content="Gas Fireplace Installation, Repair, & Services. We offer the best installation for all types of gas fireplaces and inserts, as well as fireplace repair services." />
+        <title>Emergency 24/7 Gas Fireplace Service - Airlinx Heating</title>
+        <meta name="description" content="Is your fireplace ready for winter? Trust Airlinx Heating for professional gas fireplace service, checking for leaks, clearing debris, and fixing pilots." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/fireplace/" />
+        <link rel="canonical" href="https://airlinxheating.ca/fireplace/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Fireplace" color="#fff" variant="h1" />
@@ -41,7 +40,7 @@ const index = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen Gas Fire Plan Installation And Repair Services Are Number One Always" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx Gas Fire Plan Installation And Repair Services Are Number One Always" variant="h2" />
                   <Typography className='para'>We are the father of quality repairing services. Hence, we provide professional furnace installation services. We have certified HVAC technicians near you that solve all your problems. Also, all our technicians and installers are licensed experts who have passed background checks.</Typography>
                 </Box>
               </Grid>

@@ -1,12 +1,11 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import CoquitlamLoc from '../public/coquitlam/Coquitlam.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import CoquitlamLoc from '../public/coquitlam/Coquitlam.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const Coquitlam = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -28,147 +27,71 @@ const Coquitlam = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "AC Installation Services In Coquitlam",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/coquitlam/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "BC",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Coquitlam"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
+
   return (
     <>
       <Head>
-        <title>Quality AC Installation Services in Coquitlam | Teressenheating</title>
-        <meta name="description" content="If you need quality AC installation services in Coquitlam, contact Teressen Heating. We offer emergency service and financing options to make your home more comfortable." />
+        <title>HVAC Coquitlam - Heating & Furnace Repair - Airlinx</title>
+        <meta name="description" content="Looking for trusted HVAC Coquitlam services? Airlinx Heating delivers professional furnace repairs, boiler maintenance, and heat pump installations." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/coquitlam/" />
+        <link rel="canonical" href="https://airlinxheating.ca/coquitlam/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do you maintain a heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
-        Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
-        Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you combine heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-            }
-          },{
-            "@type": "Question",
-            "name": "Should I leave my heat pump on all the time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you use the same ducts for heating and cooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does geothermal heating and cooling works",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does ductless heating and cooling works?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much Does HVAC installation Cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long Does HVAC Installation take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Usually, it takes three to five days for installation."
-            }
-          },{
-            "@type": "Question",
-            "name": "What kind of warranties come with my New HVAC installation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It has the following warranties:
-        
-        HVAC Manufacturer Warranty.
-        HVAC Extended Warranty.
-        Homeowners Insurance.
-        Home Warranty"
-            }
-          }]
-        }`
-      }
-    </script>
-
-    <script type="application/ld+json">
-     {
-       `{
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "AC Installation Services In Coquitlam",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2FCoquitlam.8af222fc.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/coquitlam/",
-        "telephone": "+1-604-363-6622",
-        "priceRange": "$$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2025 Willingdon Ave unit 900",
-          "addressLocality": "Burnaby",
-          "addressRegion": "BC",
-          "postalCode": "V5C 0J3",
-          "addressCountry": "CA"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Coquitlam"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 49.265842,
-          "longitude": -123.0035841
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"  
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=100088431184715",
-          "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
-        ]
-        }
-      }`
-     }
-    </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <main>
         <CommonBanner bg={Banner} title="AC Installation Services in Coquitlam" color="#fff" variant="h1" />
         <section>
@@ -181,8 +104,8 @@ const Coquitlam = () => {
                       <Image layout='responsive' src={CoquitlamLoc} alt="Lafarge Lake Coquitlam" title='Lafarge Lake Coquitlam' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s AC installation services in Coquitlam will give you the best of everything</Typography>
-                      <Typography className='para'>When it comes to <Link href="/furnace-inspection/">furnace installation</Link>, heating and maintenance, we have always been one of the leading brands to help you with quality <Link href="/ac-installation/">AC installation services</Link> in Coquitlam. We make sure that everything is done at a relative pace with affordable pricing. We also make sure that you don&apos; have to worry about anything. We take the charge of making sure that your tune-ups are done regularly in Coquitlam and nearby areas. You can easily book us online or can call us for quick assistance. Our executives will make sure to solve all your queries and provide reliable and trustworthy services.</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s AC installation services in Coquitlam will give you the best of everything</Typography>
+                      <Typography className='para'>When it comes to <a href="/furnace-inspection/">furnace installation</a>, heating and maintenance, we have always been one of the leading brands to help you with quality <Link href="/ac-installation/">AC installation services</Link> in Coquitlam. We make sure that everything is done at a relative pace with affordable pricing. We also make sure that you don&apos; have to worry about anything. We take the charge of making sure that your tune-ups are done regularly in <Link href="/service-areas/">Coquitlam and nearby areas</Link>. You can easily book us online or can call us for quick assistance. Our executives will make sure to solve all your queries and provide reliable and trustworthy services.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>
@@ -193,7 +116,7 @@ const Coquitlam = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

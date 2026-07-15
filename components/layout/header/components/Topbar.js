@@ -1,10 +1,7 @@
-import { Avatar, Box, Container, Grid, List, ListItem, ListItemAvatar } from '@mui/material'
+import { Box, Container, Grid } from '@mui/material'
 import Link from 'next/link'
-import React from 'react'
-import blueLogo from '../../../../public/logo/blue-logo.svg'
+import blueLogo from '../../../../public/logo/airlinx-logo2.png'
 import { GreyFilledBtn } from '../../../components'
-import { FaPinterestP, FaTwitter, FaFacebookF, FaInstagram} from 'react-icons/fa'
-import {Google} from '@mui/icons-material'
 
 const Topbar = () => {
     return (
@@ -17,7 +14,7 @@ const Topbar = () => {
                                 <Grid item xs={12} sm={3} lg={4}>
                                     <Box>
                                         <Link legacyBehavior={true} href="/" passHref>
-                                            <a className='navbar-brand'><img src={blueLogo.src} alt="Teressenheating Logo" className='img-fluid' title='Teressenheating Logo' /></a>
+                                            <a className='navbar-brand'><img src={blueLogo.src} alt="Airlinxheating Logo" className='img-fluid' title='Airlinxheating Logo' /></a>
                                         </Link>
                                     </Box>
                                 </Grid>

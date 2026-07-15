@@ -1,12 +1,11 @@
+import { CheckCircleOutline, Circle } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/financing-opt/financing-bg.webp'
-import { CheckCircleOutline, Circle } from '@mui/icons-material'
-import Link from 'next/link'
-
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const FinancingOption = () => {
 
@@ -36,62 +35,13 @@ const FinancingOption = () => {
   return (
     <>
       <Head>
-        <title>Easy Financing Options for HVAC Services | Teressenheating</title>
-        <meta name="description" content="Teressen heating has financing options to make it easy for you to get the HVAC services you need. We offer flexible payment plans & competitive interest rates. " />
+        <title>Affordable Heating & Cooling Financing Options - Airlinx</title>
+        <meta name="description" content="Upgrade your home comfort today and pay over time. Explore easy HVAC financing solutions from Airlinx Heating for new furnace, AC, or boiler installs." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/financing-option/" />
+        <link rel="canonical" href="https://airlinxheating.ca/financing-option/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Financing Option ",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "@id": "https://teressenheating.ca/_next/static/media/blue-logo.6b27c1ae.svg",
-          "url": "https://teressenheating.ca/financing-option/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
-          ]
-          }
-        }`
-      }
-      </script>
 
-      <CommonBanner bg={Banner} title="Teressen's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />
+      <CommonBanner bg={Banner} title="Airlinx's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
@@ -101,7 +51,7 @@ const FinancingOption = () => {
                   <Grid item xs={12} lg={8}>
                     <section>
                       <Container maxWidth="xxl">
-                        <Typography className='para'>We understand how important it is when comfort comes at a cost. It makes us easier to cover the costs which are associated with installing, servicing, and replacing your HVAC systems. Our relationship with <Link href="/">Teressen</Link> makes it possible for our clients to finance these expenses so that they do not have to deal with any delays</Typography>
+                        <Typography className='para'>We understand how important it is when comfort comes at a cost. It makes us easier to cover the costs which are associated with installing, servicing, and replacing your HVAC systems. Our relationship with <Link href="/">Airlinx</Link> makes it possible for our clients to finance these expenses so that they do not have to deal with any delays</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2 bg--grey'>
@@ -178,7 +128,7 @@ const FinancingOption = () => {
                     </section>
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="What to expect from Teressen?" variant="h2" align="left" />
+                        <SectionalHeading simpletext="What to expect from Airlinx?" variant="h2" align="left" />
                         <List>
                           <ListItem>
                             <ListItemIcon>
@@ -204,7 +154,7 @@ const FinancingOption = () => {
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Investing in your comfort is easy and quick" variant="h2" />
-                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our <Link href="/boilers/">installation, repair, and replacement services</Link>. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that HVAC repairs and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
+                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our <a href="/boilers/">installation, repair, and replacement services</a>. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that <Link href="/commercial-hvac/">HVAC repairs</Link> and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
                         <Typography className='para'>When unexpected expenses arise that negatively impact your safety and comfort, we would recommend you look for solutions that will restore your comfort easily and conveniently.</Typography>
                       </Container>
                     </section>
@@ -229,10 +179,10 @@ const FinancingOption = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Our service for all brands</strong>} secondary="We do services for all brands like Rheem, Goodman, Carrier, Lennox, and Trane." />
+                              <ListItemText primary={<strong>Our service for all brands</strong>} secondary={<>We do services for all brands like Rheem, <a href="/goodman/">Goodman</a>, Carrier, Lennox, and Trane.</>} />
                             </ListItem>
                           </List>
-                          <Typography className='para'>Teressen professional furnace installation services are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your professional furnace installation services that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
+                          <Typography className='para'>Airlinx <a href="/furnace/">professional furnace installation services</a> are fast and affordable. You can call us 24*7 to service all your major brands. We are a one-stop destination for your <Link href="/furnace/">professional furnace installation services</Link> that take care of everything without any hidden charges. All our technicians and installers are well-groomed and provide you with the best competitor price match guarantee.</Typography>
                         </Box>
                       </Container>
                     </section>

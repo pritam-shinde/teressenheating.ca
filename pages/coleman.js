@@ -1,17 +1,18 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-118.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-118.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
+
 const Coleman = () => {
   const [width, setWidth] = useState()
 
@@ -41,14 +42,14 @@ const Coleman = () => {
   return (
     <>
       <Head>
-        <title>Coleman heating Experienced Technicians | Teressenheating</title>
-        <meta name="description" content="Whether you need a furnace, air conditioner, or any other heating or cooling equipment, we will diagnose & repair your Coleman heating system quickly." />
+        <title>Coleman heating Experienced Technicians - Airlinx</title>
+        <meta name="description" content="Whether you need a furnace, air conditioner, or any other heating or cooling equipment, Airlinx Heating will diagnose & repair your Coleman system quickly" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/coleman/" />
+        <link rel="canonical" href="https://airlinxheating.ca/coleman/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -123,8 +124,8 @@ const Coleman = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Coleman" color="#fff" variant="h1" />
         <section>
@@ -138,7 +139,7 @@ const Coleman = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -148,7 +149,7 @@ const Coleman = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -176,7 +177,7 @@ const Coleman = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -224,13 +225,13 @@ const Coleman = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary="Furnaces repair, maintenance, and installation." />
+                        <ListItemText primary={<span><a href="/furnace/">Furnaces repair, maintenance, and installation</a>.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump maintenance</Link>, installation, and repair.</span>}/>
+                        <ListItemText primary={<span><Link href="/heat-pump/">Heat pump maintenance</Link>, installation, and repair.</span>} />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>

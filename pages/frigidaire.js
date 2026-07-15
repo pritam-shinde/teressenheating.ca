@@ -1,16 +1,16 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-129.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const Frigidaire = () => {
   const [width, setWidth] = useState()
@@ -37,18 +37,18 @@ const Frigidaire = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["Frigidaire air heating/ AC experienced technicians make sure that you are served well.","We have professional services at affordable pricing.","All our experts are licensed experts.","We provide the best heating, and air quality services for you."]
+  const ListArray = ["Frigidaire air heating/ AC experienced technicians make sure that you are served well.", "We have professional services at affordable pricing.", "All our experts are licensed experts.", "We provide the best heating, and air quality services for you."]
   return (
     <>
       <Head>
-        <title>Frigidaire Heat Pump Maintenance in Canada | Teressenheating</title>
-        <meta name="description" content="Frigidaire's Heat Pump Maintenance Plan in Teressenheating ensures that you and your family are protected from the costly consequences of an HVAC breakdown." />
+        <title>Frigidaire Heat Pump Maintenance in Canada - Airlinx</title>
+        <meta name="description" content="Frigidaire's Heat Pump Maintenance Plan in Airlinx heating ensures that you and your family are protected from the consequences of an HVAC breakdown." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/frigidaire/" />
+        <link rel="canonical" href="https://airlinxheating.ca/frigidaire/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -123,8 +123,8 @@ const Frigidaire = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <section>
           <CommonBanner bg={BoilerMaintainanceBanner} title="Frigidaire" color="#fff" variant="h1" />
@@ -138,7 +138,7 @@ const Frigidaire = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -253,7 +253,7 @@ const Frigidaire = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box p={3}>
-                  <SectionalHeading simpletext="Teressen takes care of everything" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx takes care of everything" variant="h2" />
                   <List>
                     <ListItem>
                       <ListItemIcon>
@@ -285,7 +285,7 @@ const Frigidaire = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                  <Typography className='para'>We have <a href="/emergency/">24*7 servicing and repairs</a>. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
                 </Box>
               </Grid>
             </Grid>

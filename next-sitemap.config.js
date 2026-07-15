@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-    siteUrl: 'http://teressenheating.ca/',
+    siteUrl: 'https://airlinxheating.ca/',
     generateRobotsTxt: true,
     generateIndexSitemap: false,
     sitemapSize: 9999,

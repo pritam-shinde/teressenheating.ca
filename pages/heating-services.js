@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import Head from 'next/head';
-import { CommonBanner, ServiceCommonSidebar, SectionalHeading } from '../components/components';
-import Heating from '../public/heating-service/heating-bg.webp';
-import HeaterMachine from '../public/heating-service/heating.webp'
-import { Container, Box, Grid, Typography } from '@mui/material';
 import { CheckCircleOutline } from '@mui/icons-material';
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
-import { List, ListItemIcon, ListItemText, ListItem } from '@mui/material';
-import Image from 'next/legacy/image'
-import Link from 'next/link'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import Head from 'next/head';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components';
+import Heating from '../public/heating-service/heating-bg.webp';
+import HeaterMachine from '../public/heating-service/heating.webp';
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections';
 
 const HeatingService = () => {
   const [width, setWidth] = useState()
@@ -29,17 +28,95 @@ const HeatingService = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
- 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "How often should a heating system be serviced?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained each year."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How do I maintain my heating system?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text:
+            "Try to replace filters regularly. Inspecting the Air Ducts and the Openings. Maintaining Fan, Bearings, and Belts. Maintaining Other HVAC Accessories. By following our Spring/Summer Maintenance Tips or Schedule."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "How much does it cost to install heating?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text:
+            "The overall cost of heating installation of a new heating system depends on many factors. At a minimum, installing a new heating system can cost around $2,000. Additional ductwork or repairs can increase the price."
+        }
+      }
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Heating Services",
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Airlinx Heating & Air Conditioning",
+      image:
+        "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fheating.59f11898.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/heating-services/",
+      url: "https://airlinxheating.ca/heating-services/",
+      telephone: "+1-604-363-6622",
+      priceRange: "$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "2025 Willingdon Ave unit 900",
+        addressLocality: "Burnaby",
+        addressRegion: "British Columbia",
+        postalCode: "V5C 0J3",
+        addressCountry: "CA"
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 49.265842,
+        longitude: -123.0035841
+      },
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        opens: "08:00",
+        closes: "18:00"
+      },
+      sameAs: [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
 
   return (
     <>
-     <Head>
-        <title>Affordable Heating Maintenance Services | Teressenheating </title>
-        <meta name="description" content="Teressen offers high quality heating maintenance services. Our experienced technicians provide thorough inspections, repairs and preventive maintenance." />
+      <Head>
+        <title>Complete Heating Services in Burnaby - Airlinx Heating</title>
+        <meta name="description" content="From emergency heating repairs to professional new system installations, get the dependable heating services you need from Airlinx Heating at Burnaby." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/heating-services/" />
+        <link rel="canonical" href="https://airlinxheating.ca/heating-services/" />
       </Head>
-      <script type="application/ld+json">
+      {/* <script type="application/ld+json">
         {
           `{
             "@context": "https://schema.org",
@@ -73,20 +150,33 @@ const HeatingService = () => {
           }`.replace(/&quot;/g, '\\"')
 
         }
-      </script>
-    
+      </script> */}
 
-      <script type="application/ld+json">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
+
+      {/* <script type="application/ld+json">
         {
           `{"@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "Heating Services",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Teressen Heating & Air Conditioning",
-            "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fheating.59f11898.webp&w=1920&q=75",
-            "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fheating.59f11898.webp&w=1920&q=75",
-            "url": "https://teressenheating.ca/heating-services/",
+              "name": "Airlinx Heating & Air Conditioning",
+            "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fheating.59f11898.webp&w=1920&q=75",
+            "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fheating.59f11898.webp&w=1920&q=75",
+            "url": "https://airlinxheating.ca/heating-services/",
             "telephone": "+1-604-363-6622",
             "priceRange": "$$$",
             "address": {
@@ -118,12 +208,12 @@ const HeatingService = () => {
             "sameAs": [
               "https://www.facebook.com/profile.php?id=100088431184715",
               "https://twitter.com/BaymanShawqi",
-              "https://www.pinterest.com.au/teressenheating/"    
+              "https://www.pinterest.com.au/airlinxheating/"    
             ]
             }
           }`
         }
-      </script>
+      </script> */}
 
       <main>
         <CommonBanner bg={Heating} title="Heating Services" color="#fff" variant="h1" />
@@ -147,7 +237,7 @@ const HeatingService = () => {
                               <Grid item xs={12} md={6}>
                                 <Box>
                                   <SectionalHeading simpletext="Providing the best heating maintenance services" variant="h2" />
-                                  <Typography className='para'>Teressen heating services has been providing expert heating services in Canada for years. Our clients call us every day to meet their needs for emergency heating maintenance services, heating repairs, and cooling and heating system installation services. We have a group of trained technicians who take care of all your heating and maintenance issues and help you with the best of everything. Our factory-trained experts provide reliable heating maintenance and installation services for all brands such as boilers, furnaces, heat pumps, and yet more.</Typography>
+                                  <Typography className='para'>Airlinx heating services has been providing expert heating services in Canada for years. Our clients call us every day to meet their needs for emergency heating maintenance services, heating repairs, and cooling and heating system installation services. We have a group of trained technicians who take care of all your heating and maintenance issues and help you with the best of everything. Our factory-trained experts provide reliable heating maintenance and installation services for all brands such as boilers, furnaces, heat pumps, and yet more.</Typography>
 
                                 </Box>
                               </Grid>
@@ -165,7 +255,7 @@ const HeatingService = () => {
                         <Container maxWidth="xxl">
                           <Box>
                             <SectionalHeading variant='h3' simpletext='Licensed and insured HVAC services:' />
-                            <Typography className='para'>Before the chill of fall sets in it is time to think about servicing your furnace. When winter arrives, it is mandatory to look after your furnace maintenance so that it will keep you warm. At <Link href="/">Teressen heating ltd</Link>, we have designed our furnace maintenance services and total comfort tune-up with people like you in mind. Hence, for furnace maintenance services, you simply, call us and we will be right there for your quick assistance.</Typography>
+                            <Typography className='para'>Before the chill of fall sets in it is time to think about servicing your furnace. When winter arrives, it is mandatory to look after your furnace maintenance so that it will keep you warm. At <Link href="/">Airlinx heating ltd</Link>, we have designed our furnace maintenance services and total comfort tune-up with people like you in mind. Hence, for furnace maintenance services, you simply, call us and we will be right there for your quick assistance.</Typography>
                             <Typography className='para'>During this call, we will audit your furnace for repair frequency, age, overall comfort, and energy efficiency. Our quality maintenance services include:</Typography>
 
                             <List className='ps-m-5 ps-4'>
@@ -202,9 +292,9 @@ const HeatingService = () => {
                             <SectionalHeading variant='h4' simpletext='How often do you need our boiler services?' />
 
                             <Typography className='para'>If you already have a boiler installed at your home, then you need to check that it is performing effectively by scheduling yearly maintenance. Boilers begin to lose their efficiency as they get old. Also, when you call us, we can identify the potential issues you have in the boilers and fix them before winter.</Typography>
-                            <SectionalHeading variant='h4' simpletext='Call Teressen heating ltd to discuss your boiler heating problems:' />
+                            <SectionalHeading variant='h4' simpletext='Call Airlinx heating ltd to discuss your boiler heating problems:' />
 
-                            <Typography className='para'>From furnaces to boilers to heat pumps, you have so many options to choose from when it comes to keeping your space comfortable. You need to select a heating system that works according to your city&apos;s climate, living space, and budget. So, when you call our heating experts we will review your requirements and help you get the perfect boiler for your home. Our experts can also perform reliable boiler repair and maintenance when needed.</Typography>
+                            <Typography className='para'>From furnaces to boilers to heat pumps, you have so many options to choose from when it comes to keeping your space comfortable. You need to select a heating system that works according to your city&apos;s climate, living space, and budget. So, when you call our heating experts we will review your requirements and help you get the perfect boiler for your home. Our experts can also perform <a href="/boilers-repair/">reliable boiler repair</a> and maintenance when needed.</Typography>
                           </Box>
                         </Container>
                       </section>
@@ -213,7 +303,7 @@ const HeatingService = () => {
                         <Container maxWidth="xxl">
                           <Box>
                             <SectionalHeading variant="h3" simpletext="Heat Pump" />
-                            <SectionalHeading variant="h4" simpletext="Teressen heat pump installation services at their best:" />
+                            <SectionalHeading variant="h4" simpletext="Airlinx heat pump installation services at their best:" />
 
                             <Typography className='para'>If you are looking to install a heating system or replace your furnace with something efficient, then an HVAC heat-pumping system is always a great option. You can count on our experienced team, to install the best heat pump.</Typography>
                             <SectionalHeading variant="h4" simpletext={'Our heating pumping services:'} />

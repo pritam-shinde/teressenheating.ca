@@ -1,17 +1,18 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/image'
-import BrandLogo from '../public/brand-page/Layer-110.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
-import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
-import WorkSafe from '../public/certification/cer2.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
+import BrandLogo from '../public/brand-page/Layer-110.webp'
+import BBB from '../public/certification/cer1.webp'
+import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
+
 const Luxair = () => {
   const [width, setWidth] = useState()
 
@@ -37,18 +38,18 @@ const Luxair = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
 
-  const ListArray = ["We have trained Luxaire HVAC experienced professionals.", "Our technicians are well-trained and skilled.", "We are the best Luxaire heating and installation service provider.", "Teressen's Heating and Air conditioning services has been providing heating services proudly in the world."]
+  const ListArray = ["We have trained Luxaire HVAC experienced professionals.", "Our technicians are well-trained and skilled.", "We are the best Luxaire heating and installation service provider.", "Airlinx's Heating and Air conditioning services has been providing heating services proudly in the world."]
   return (
     <>
       <Head>
-        <title>Luxaire HVAC Service Experts for Your Home  | Teressenheating</title>
-        <meta name="description" content="Teressen service experts, heating and air conditioning specialists can help you find the perfect Luxaire HVAC system for your home. Visit us today to find out more!" />
+        <title>Luxaire HVAC Service Experts for Your Home - Airlinx</title>
+        <meta name="description" content="Choose Luxaire HVAC solutions from Airlinx Heating for reliable year-round comfort. Professional services for furnaces, AC units, and heat pumps." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/luxaire/" />
+        <link rel="canonical" href="https://airlinxheating.ca/luxaire/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -123,8 +124,8 @@ const Luxair = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <CommonBanner bg={BoilerMaintainanceBanner} title="Luxaire" color="#fff" variant="h1" />
       <main>
         <section>
@@ -138,7 +139,7 @@ const Luxair = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
@@ -203,7 +204,7 @@ const Luxair = () => {
                 <Box p={3}>
                   <Grid container>
                     <Grid item xs={12} md={11}>
-                      <BrandDetails title='Teressen&apos;s Luxaire product servicing is the best' list={true} ListArray={ListArray} />
+                      <BrandDetails title='Airlinx&apos;s Luxaire product servicing is the best' list={true} ListArray={ListArray} />
                     </Grid>
                   </Grid>
                 </Box>
@@ -277,7 +278,7 @@ const Luxair = () => {
                       <ListItemIcon>
                         <CheckCircleOutline className='text--blue' />
                       </ListItemIcon>
-                      <ListItemText primary=' Heat pump maintenance, installation, and repair.' />
+                      <ListItemText primary={<span><a href="/heat-pump/">Heat pump maintenance, installation, and repair</a>.</span>} />
                     </ListItem>
                     <ListItem>
                       <ListItemIcon>
@@ -292,48 +293,48 @@ const Luxair = () => {
           </Container>
         </section>
         <section className='mt-md-4 mt-3 bg--grey'>
-      <Container maxWidth="xxl">
-        <Grid container>
-          <Grid item xs={12} md={10} className="mx-auto">
-            <Box p={3}>
-              <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
-              <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </section>
-    <section className='bg--grey'>
-      <Container maxWidth="xxl">
-        <Grid container>
-          <Grid item xs={12} md={10} className="mx-auto">
-            <Box p={3}>
-              <SectionalHeading simpletext="What makes us special?  " variant="h2" />
-              <List>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline className='text--blue' />
-                </ListItemIcon>
-                <ListItemText primary={<strong>Scheduling an in-home appointment</strong>} secondary="Call us for a free in-home estimate. We will help you with an expert solution by coming to your home and discussing your comfort needs." />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline className='text--blue' />
-                </ListItemIcon>
-                <ListItemText primary={<strong>Consulting and choosing an expert</strong>} secondary="Call us for a free in-home estimate. We will send our experienced and licensed technician to assist you." />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <CheckCircleOutline className='text--blue' />
-                </ListItemIcon>
-                <ListItemText primary={<strong>Installation Day </strong>} secondary="We remove old equipment from your home and install new equipment. Once done, we take care of everything." />
-              </ListItem>
-            </List>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </section>
+          <Container maxWidth="xxl">
+            <Grid container>
+              <Grid item xs={12} md={10} className="mx-auto">
+                <Box p={3}>
+                  <SectionalHeading simpletext="We have skilled and certified mechanics" variant="h2" />
+                  <Typography className='para'>We have 24*7 servicing and repairs. With more than 20 years of work experience, we serve you with our quality and affordable services. So, call us today!</Typography>
+                </Box>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
+        <section className='bg--grey'>
+          <Container maxWidth="xxl">
+            <Grid container>
+              <Grid item xs={12} md={10} className="mx-auto">
+                <Box p={3}>
+                  <SectionalHeading simpletext="What makes us special?  " variant="h2" />
+                  <List>
+                    <ListItem>
+                      <ListItemIcon>
+                        <CheckCircleOutline className='text--blue' />
+                      </ListItemIcon>
+                      <ListItemText primary={<strong>Scheduling an in-home appointment</strong>} secondary="Call us for a free in-home estimate. We will help you with an expert solution by coming to your home and discussing your comfort needs." />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <CheckCircleOutline className='text--blue' />
+                      </ListItemIcon>
+                      <ListItemText primary={<strong>Consulting and choosing an expert</strong>} secondary="Call us for a free in-home estimate. We will send our experienced and licensed technician to assist you." />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <CheckCircleOutline className='text--blue' />
+                      </ListItemIcon>
+                      <ListItemText primary={<strong>Installation Day </strong>} secondary="We remove old equipment from your home and install new equipment. Once done, we take care of everything." />
+                    </ListItem>
+                  </List>
+                </Box>
+              </Grid>
+            </Grid>
+          </Container>
+        </section>
         <FeaturedCoolingServices />
         <PopularService color='red' />
         <FeaturedHeatingServices />

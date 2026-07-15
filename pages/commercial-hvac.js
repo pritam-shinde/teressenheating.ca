@@ -1,14 +1,13 @@
-import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
-import Head from 'next/head';
-import Image from 'next/legacy/image'
-import React, { useEffect, useState } from 'react'
-import { FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
-import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
-import Banner from '../public/commercialHVAC/commercial-2.webp';
 import { CheckCircleOutline } from '@mui/icons-material';
-import HVAC from '../public/commercialHVAC/hvac.webp'
-import Link from 'next/link'
-
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import Head from 'next/head';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components';
+import Banner from '../public/commercialHVAC/commercial-2.webp';
+import HVAC from '../public/commercialHVAC/hvac.webp';
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections';
 
 const CommercialHVAC = () => {
   const [width, setWidth] = useState()
@@ -18,7 +17,7 @@ const CommercialHVAC = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "how do commercial hvac systems work?", ans: "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:", list: ["Usually, water source heat pumps contain pipes. It carries water throughout the building. ", "The rooftop units are on the roof of the building. ", "Then tend to put the conditioned air into the building. ", "Some chillers generate cool water. It is distributed by pipes to air-cooling coils.","Heaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."] },
+    { id: "faq-1", que: "how do commercial hvac systems work?", ans: "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:", list: ["Usually, water source heat pumps contain pipes. It carries water throughout the building. ", "The rooftop units are on the roof of the building. ", "Then tend to put the conditioned air into the building. ", "Some chillers generate cool water. It is distributed by pipes to air-cooling coils.", "Heaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."] },
     { id: "faq-2", que: "how often should commercial hvac filters be changed?", ans: "It should be changed every quarter, or within three months.", list: null },
     { id: "faq-3", que: "how long do commercial hvac systems last?", ans: "The average life expectancy of commercial HVAC systems is 15 to 20 years.", list: null }
   ]
@@ -28,96 +27,105 @@ const CommercialHVAC = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "how do commercial hvac systems work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:\n\nUsually, water source heat pumps contain pipes. It carries water throughout the building.\nThe rooftop units are on the roof of the building.\nThen tend to put the conditioned air into the building.\nSome chillers generate cool water. It is distributed by pipes to air-cooling coils.\nHeaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "how often should commercial hvac filters be changed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It should be changed every quarter, or within three months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "how long do commercial hvac systems last?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average life expectancy of commercial HVAC systems is 15 to 20 years."
+        }
+      }
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Commercial HVAC Services",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/commercial-hvac/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "British Columbia",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
 
   return (
     <>
-     <Head>
-        <title>Trusted Commercial HVAC Services in Canada | Teressenheating</title>
-        <meta name="description" content="Choose Teressen Heating for commercial HVAC services in Canada. Our experienced technicians will assist you with preventive maintenance and repairs. Contact us today." />
+      <Head>
+        <title>Burnaby Commercial HVAC Services & Repair - Airlinx</title>
+        <meta name="description" content="From emergency repairs to full system upgrades, Airlinx Heating provides comprehensive commercial HVAC services for local businesses and properties." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/commercial-hvac/" />
+        <link rel="canonical" href="https://airlinxheating.ca/commercial-hvac/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do commercial hvac system work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure."
-            }
-          },{
-            "@type": "Question",
-            "name": "How often should commercial hvac filters be changed?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It should be changed every quarter, or within three months."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long do commercia hvac systems last?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The average life expectancy of commercial HVAC systems is 15 to 20 years."
-            }
-          }]
-        }`
-      }
 
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
 
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Commercial HVAC Services",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fhvac.1dda7f29.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/commercial-hvac/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
-          ]
-          }
-        }`
-      }
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <CommonBanner bg={Banner} title="Commercial HVAC Services" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
@@ -137,8 +145,8 @@ const CommercialHVAC = () => {
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <SectionalHeading simpletext='Teressen commercial HVAC services assuring the quality of life:' variant="h2" />
-                                <Typography className='para'> Teressen commercial HVAC services is a name for the best commercial HVAC repair services in Canada. We regularly provide commercial HVAC services like boiler, furnace services, and commercial air conditioner services.</Typography>
+                                <SectionalHeading simpletext='Airlinx commercial HVAC services assuring the quality of life:' variant="h2" />
+                                <Typography className='para'> Airlinx commercial HVAC services is a name for the best commercial HVAC repair services in Canada. We regularly provide commercial HVAC services like boiler, <a href="/furnace/">furnace services</a>, and commercial air conditioner services.</Typography>
                                 <Typography className='para'>We specialize in commercial air conditioning, repairs, maintenance, and installation services. This is done for buildings of all sizes and businesses. So, whether you have a low-rise commercial building or a massive office, we are always there for your assistance.</Typography>
 
                               </Box>
@@ -155,10 +163,11 @@ const CommercialHVAC = () => {
                     <section className='mt-md-3 mt-2 bg--grey'>
                       <Container maxWidth="xxl">
                         <Box p={3}>
-                          <SectionalHeading simpletext=" Teressen commercial heating and AC services is a one-stop destination for you:" variant="h2" align={width > 600 ? 'left' : 'center'} />
-                          <Typography className='para'>Three things that make us your favorite are: Quality, trust, and affordability. So, at Teressen we provide you with a wide variety of commercial HVAC services at relative ease. With over years of experience, we have been helping businesses with all our commercial HVAC repairs, maintenance, and replacement services at affordable costs.
+                          <SectionalHeading simpletext=" Airlinx commercial heating and AC services is a one-stop destination for you:" variant="h2" align={width > 600 ? 'left' : 'center'} />
+                          <Typography className='para'>Three things that make us your favorite are: Quality, trust, and affordability. So, at Airlinx we provide you with a wide variety of commercial HVAC services at relative ease. With over years of experience, we have been helping businesses with all our commercial HVAC repairs, maintenance, and replacement services at affordable costs.
                           </Typography>
-                          <Typography className='para'>Our expert HVAC services have the required knowledge and skills to work on different types of commercial HVAC systems. Also, here are a few HVAC components we have worked upon:
+                          <Typography className='para'>Our expert HVAC services have the required knowledge and skills to work on <a href="/blog/the-complete-guide-to-hvac-services-for-commercial-buildings-and-what-you-need-to-know/">different types of commercial HVAC systems</a>
+                            . Also, here are a few HVAC components we have worked upon:
                           </Typography>
                           <List>
                             {
@@ -205,7 +214,7 @@ const CommercialHVAC = () => {
                             </ListItem>
                           </List>
                           <SectionalHeading simpletext="Reliable and responsive HVAC services when you need them the most:" variant='h2' />
-                          <Typography className='para'>Teressen <Link href="/heating-services/">commercial heating services</Link> in Canada is one of the fastest HVAC services experts with a positive approach. We provide our clients with one-stop quality services so they can count on us for everything. We aim to provide security and reliability through the best HVAC services. There are no hidden fees associated with our quality services. So, do not waste a second and just call us, we are here for you.
+                          <Typography className='para'>Airlinx <Link href="/heating-services/">commercial heating services</Link> in Canada is one of the fastest HVAC services experts with a positive approach. We provide our clients with one-stop quality services so they can count on us for everything. We aim to provide security and reliability through the best HVAC services. There are no hidden fees associated with our quality services. So, do not waste a second and just call us, we are here for you.
                           </Typography>
                         </Box>
                       </Container>
@@ -262,7 +271,7 @@ const CommercialHVAC = () => {
           </Grid>
         </Container>
         <FeaturedHeatingServices />
-        <PopularService color='red'/>
+        <PopularService color='red' />
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />

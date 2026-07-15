@@ -1,14 +1,14 @@
+import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { FeaturedCoolingServices, HighlySkilled, PopularService, Testimonial, FaqAndForm, BrandSlider } from '../sections/sections'
-import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Image from 'next/legacy/image'
-import { CheckCircleOutline } from '@mui/icons-material'
-import airConditioner from '../public/cooling/cooling-service.webp';
-import Cooling from '../public/cooling/cooling.webp';
-import Air from '../public/cooling/ac.webp'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
+import Air from '../public/cooling/ac.webp'
+import airConditioner from '../public/cooling/cooling-service.webp'
+import Cooling from '../public/cooling/cooling.webp'
+import { BrandSlider, FaqAndForm, FeaturedCoolingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const AirConditioningService = () => {
 
@@ -19,120 +19,126 @@ const AirConditioningService = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "how often does air conditioning need to be serviced?", ans: "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year." ,list: null},
+    { id: "faq-1", que: "how often does air conditioning need to be serviced?", ans: "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year.", list: null },
     { id: "faq-2", que: "how much does air conditioning service cost?", ans: "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system.", list: null },
-    { id: "faq-3", que: "what does air conditioning service include?", ans: "", list: ["Air filter and fin cleaning.", "AC condenser and evaporator coil cleaning.", "AC condenser and evaporator fan cleaning.", "Drain cleaning and leakage check.", "Coolant level check in air conditioner.", " Overall inspection of the AC unit" ]},
+    { id: "faq-3", que: "what does air conditioning service include?", ans: "", list: ["Air filter and fin cleaning.", "AC condenser and evaporator coil cleaning.", "AC condenser and evaporator fan cleaning.", "Drain cleaning and leakage check.", "Coolant level check in air conditioner.", " Overall inspection of the AC unit"] },
     { id: "faq-4", que: "what are the benefits of servicing air conditioning system?", ans: "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold.", list: null }
 
-    ]
+  ]
 
   const testimonial = [
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "how often does air conditioning need to be serviced?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "how much does air conditioning service cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "what does air conditioning service include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air filter and fin cleaning.\nAC condenser and evaporator coil cleaning.\nAC condenser and evaporator fan cleaning.\nDrain cleaning and leakage check.\nCoolant level check in air conditioner.\nOverall inspection of the AC unit"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "what are the benefits of servicing air conditioning system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold."
+        }
+      }
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Air Conditioning Service",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/air-conditioning-service/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "British Columbia",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
+
   return (
     <>
-    <Head>
-        <title>Best Air Conditioning Service in Canada | Teressenheating</title>
-        <meta name="description" content="Trust Teressen as your top choice for reliable and efficient air conditioning service in Canada. Our experienced professionals are here to help." />
+      <Head>
+        <title>Air Conditioning Service & Maintenance in Burnaby - Airlinx</title>
+        <meta name="description" content="Keep your home cool all summer long. Airlinx Heating offers professional air conditioning service, with 24/7 availability in Burnaby and nearby areas." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/air-conditioning-service/" />
+        <link rel="canonical" href="https://airlinxheating.ca/air-conditioning-service/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How often does air conditioning need to be serviced?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much does air conditioning service cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system."
-            }
-          },{
-            "@type": "Question",
-            "name": "what does air conditioning service include ?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Air filter and fin cleaning.
-        AC condenser and evaporator coil cleaning.
-        AC condenser and evaporator fan cleaning.
-        Drain cleaning and leakage check.
-        Coolant level check in air conditioner.
-        Overall inspection of the AC unit"
-            }
-          },{
-            "@type": "Question",
-            "name": "What are the benefits of servicing air conditioning system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold."
-            }
-          }]
-        }`
-      }
 
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema)
+        }}
+      />
 
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "serviceType": "Air Conditioning Service",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Teressen Heating & Air Conditioning",
-          "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
-          "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fcooling.b9df0621.webp&w=1920&q=75",
-          "url": "https://teressenheating.ca/air-conditioning-service/",
-          "telephone": "+1-604-363-6622",
-          "priceRange": "$$$",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "2025 Willingdon Ave unit 900",
-            "addressLocality": "Burnaby",
-            "addressRegion": "British Columbia",
-            "postalCode": "V5C 0J3",
-            "addressCountry": "CA"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 49.265842,
-            "longitude": -123.0035841
-          },
-          "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "18:00"
-          },
-          "sameAs": [
-            "https://www.facebook.com/profile.php?id=100088431184715",
-            "https://twitter.com/BaymanShawqi",
-            "https://www.pinterest.com.au/teressenheating/"    
-          ]
-          }
-        }`
-      }
-
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <CommonBanner bg={airConditioner} title="Air Conditioning Service" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
@@ -147,50 +153,50 @@ const AirConditioningService = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image src={Cooling} alt="Air Conditioning Services by TeressenTechnician" title='Air Conditioning Services by TeressenTechnician' layout='responsive' />
+                                <Image src={Cooling} alt="Air Conditioning Services by AirlinxTechnician" title='Air Conditioning Services by AirlinxTechnician' layout='responsive' />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Typography className='para'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, when your air conditioning breaks down, it is very frustrating. This is when we play a major role in taking your frustration away and helping you with the best possible installation, repair, and maintenance services.
+                                <Typography className='para'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, <a href="/blog/why-you-should-be-doing-regular-air-conditioning-service/">when your air conditioning breaks down</a>, it is very frustrating. This is when we play a major role in taking your frustration away and helping you with the best possible installation, repair, and maintenance services.
                                 </Typography>
                                 <Typography className='para'>Our Air conditioning services include:</Typography>
                                 <List>
-                            {
-                              [
-                                { id:"service_1", text:"AC installation and replacement services.", link:"/ac-installation/"},
-                                { id:"service_2", text:"AC maintenance services", link:"/ac-maintainance/"},
-                                { id:"service_3", text:"AC repairing services", link:"/ac-repair/"},
-                                { id:"service_4", text:"Thermostat units."}
-                              ].map(item => <ListItem key={item}>
-                                <ListItemIcon>
-                                  <CheckCircleOutline className='text--blue' />
-                                </ListItemIcon>
-                                <ListItemText primary={item.link ? <Link href={item.link}>{item.text}</Link> : item.text} />
-                              </ListItem>)
-                            }
-                          </List>
+                                  {
+                                    [
+                                      { id: "service_1", text: "AC installation and replacement services.", link: "/ac-installation/" },
+                                      { id: "service_2", text: "AC maintenance services", link: "/ac-maintainance/" },
+                                      { id: "service_3", text: "AC repairing services", link: "/ac-repair/" },
+                                      { id: "service_4", text: "Thermostat units." }
+                                    ].map(item => <ListItem key={item}>
+                                      <ListItemIcon>
+                                        <CheckCircleOutline className='text--blue' />
+                                      </ListItemIcon>
+                                      <ListItemText primary={item.link ? <Link href={item.link}>{item.text}</Link> : item.text} />
+                                    </ListItem>)
+                                  }
+                                </List>
                               </Box>
                             </Grid>
                             <Grid item xs={12} className="m-0 pt-0">
                               <Box>
-                                <Typography className='para'> Teressen heating and air conditioning location is independently owned and operated. So, you can trust us as your local expert. We will arrive at your home on time and work with your needs, budget, and preferences to make sure that you are satisfied with our work. We also value your time. So, if we do not arrive at your home when you expect, we will pay you back. With us, there is no more waiting around all day for getting the best HVAC technician at home.</Typography>
+                                <Typography className='para'> Airlinx heating and air conditioning location is independently owned and operated. So, you can trust us as your local expert. We will arrive at your home on time and work with your needs, budget, and preferences to make sure that you are satisfied with our work. We also value your time. So, if we do not arrive at your home when you expect, we will pay you back. With us, there is no more waiting around all day for getting the best HVAC technician at home.</Typography>
                               </Box>
                             </Grid>
                           </Grid>
                         </Box>
                       </Container>
                     </section>
-                 
+
                     <section className='mt-md-5 mt-3'>
                       <Container maxWidth="xxl">
-                        <SectionalHeading simpletext="Teressen Heating LTD: We provide superior air conditioning services" variant="h2"/>
+                        <SectionalHeading simpletext="Airlinx Heating LTD: We provide superior air conditioning services" variant="h2" />
                         <Box mt={3}>
                           <Grid container>
                             <Grid item xs={12} md={6}>
                               <Typography className='para'>Our experts provide reliable and fast repairs of air conditioning services. We service all brands of heat pumps, central A/C, and all types of air conditioning systems.</Typography>
-                               <Typography className='para'>We have been providing air conditioning services for years to our clients. We are always available 24*7 for your quick assistance service. We meet your needs for routine air conditioning maintenance, air conditioning system replacement, and emergency air conditioning repairs. We also sell and install a wide range of high-efficiency air conditioning system that saves you money.</Typography>
-                              </Grid>
+                              <Typography className='para'>We have been providing <a href="/blog/5-common-causes-to-do-regular-heating-and-air-conditioning-services/"> air conditioning services </a> for years to our clients. We are always available 24*7 for your quick assistance service. We meet your needs for routine air conditioning maintenance, air conditioning system replacement, and emergency air conditioning repairs. We also sell and install a wide range of high-efficiency air conditioning system that saves you money.</Typography>
+                            </Grid>
                             <Grid item xs={12} md={6}>
                               <Image src={Air} alt="Air Conditioning Service" title='Air Conditioning Service' layout='responsive' />
                             </Grid>
@@ -201,31 +207,31 @@ const AirConditioningService = () => {
                     <section className='mt-md-3 mt-2'>
                       <Container maxWidth="xxl">
                         <Box>
-                          <SectionalHeading simpletext="Teressen air conditioning repairs:" variant="h2" />                   
-                          <Typography className='para'>When it is hot and humid, everyone loves the sanctuary of a comfortable place. So, if your air cooler isnt functioning well, then call Teressen air conditioning repair service. Whether it is heat pumps, Air conditioning systems, or thermostats, we fix everything. Our air conditioning experts are certified and have expert knowledge of home air conditioning services.</Typography>
+                          <SectionalHeading simpletext="Airlinx air conditioning repairs:" variant="h2" />
+                          <Typography className='para'>When it is hot and humid, everyone loves the sanctuary of a comfortable place. So, if your air cooler isnt functioning well, then call Airlinx air conditioning repair service. Whether it is heat pumps, Air conditioning systems, or thermostats, we fix everything. Our air conditioning experts are certified and have expert knowledge of home air conditioning services.</Typography>
                         </Box>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2'>
-                    <Container maxWidth="xxl">
-                      <Box>
-                        <SectionalHeading simpletext=" Our air conditioning maintenance service is for everyone:" variant="h2" />                   
-                        <Typography className='para'>Our air conditioning maintenance service has been proven to reduce equipment failure and ensures safe operation. We also have different types of machinery that provide a quick fix for all your <Link href="/heating-services/">heating problems</Link>.
-                        </Typography>
-                      </Box>
-                    </Container>
-                  </section>
-                  <section className='mt-md-3 mt-2'>
-                  <Container maxWidth="xxl">
-                    <Box>
-                      <SectionalHeading simpletext="When you need reliability, count on us:" variant="h2" />                   
-                      <Typography className='para'>At Teressen heating ltd, we have built our entire business around the idea that our clients deserve the best treatment, starting with our trustworthy experts. In many circumstances, Teressen heating ltd is owned by experts who have been serving and building trust with their local community for years.
-                      </Typography>
-                      <Typography className='para'>Our experts are licensed and qualified and receive regular training to stay updated with the latest developments and products. We want you to be happy and leave all your worries to us. This way, you can also be certain that we are accountable for providing you with high-level services on our visit.
-                      </Typography>
-                    </Box>
-                  </Container>
-                </section>
+                      <Container maxWidth="xxl">
+                        <Box>
+                          <SectionalHeading simpletext=" Our air conditioning maintenance service is for everyone:" variant="h2" />
+                          <Typography className='para'>Our air conditioning maintenance service has been proven to reduce equipment failure and ensures safe operation. We also have different types of machinery that provide a quick fix for all your <Link href="/heating-services/">heating problems</Link>.
+                          </Typography>
+                        </Box>
+                      </Container>
+                    </section>
+                    <section className='mt-md-3 mt-2'>
+                      <Container maxWidth="xxl">
+                        <Box>
+                          <SectionalHeading simpletext="When you need reliability, count on us:" variant="h2" />
+                          <Typography className='para'>At Airlinx heating ltd, we have built our entire business around the idea that our clients deserve the best treatment, starting with our trustworthy experts. In many circumstances, <a href="/">Airlinx heating ltd</a> is owned by experts who have been serving and building trust with their local community for years.
+                          </Typography>
+                          <Typography className='para'>Our experts are licensed and qualified and receive regular training to stay updated with the latest developments and products. We want you to be happy and leave all your worries to us. This way, you can also be certain that we are accountable for providing you with high-level services on our visit.
+                          </Typography>
+                        </Box>
+                      </Container>
+                    </section>
                   </Grid>
                   <Grid item xs={12} lg={4} className={width > 1199 ? 'd-block' : 'd-none'}>
                     <ServiceCommonSidebar />
@@ -238,7 +244,7 @@ const AirConditioningService = () => {
           </Grid>
         </Container>
         <FeaturedCoolingServices />
-        <PopularService color='blue'/>
+        <PopularService color='blue' />
         <HighlySkilled />
         <Testimonial testimonialArr={testimonial} />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />

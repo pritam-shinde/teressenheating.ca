@@ -2,8 +2,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/acrepair/ac-repair-banner.webp'
 import ACRepair from '../public/acrepair/ac-repair.webp'
 import { FaqAndForm, FeaturedCoolingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
@@ -29,10 +28,10 @@ const AcRepair = () => {
   return (
     <>
       <Head>
-        <title>Air Conditioning Repair services | Teressenheating </title>
+        <title>Air Conditioning Repair services | Airlinxheating </title>
         <meta name="description" content="Our air conditioning repair services include any type of AC repair, installation, replacement or tune-ups for both residential and commercial customers." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/ac-repair/" />
+        <link rel="canonical" href="https://airlinxheating.ca/ac-repair/" />
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Air Conditioning Repair" color="#fff" variant="h1" />
@@ -41,7 +40,7 @@ const AcRepair = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box mt={5}>
-                  <SectionalHeading simpletext="Teressen AC repair services are 24*7 for you" variant="h2" />
+                  <SectionalHeading simpletext="Airlinx AC repair services are 24*7 for you" variant="h2" />
                   <Typography className='para'>With over decades of work experience, we have been providing quality services across the world. We are a locally-owned and operated organization that provides on-point air conditioning services.
                   </Typography>
                 </Box>

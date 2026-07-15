@@ -1,9 +1,8 @@
-import React from 'react'
 import Head from 'next/head'
+import JsonLd from '../components/JsonLd'
 import { About, Appointment, BrandSlider, Facilities, FaqAndForm, Hero, Service, Testimonial, WhyChoose } from '../sections/sections'
 
 const index = () => {
-
   const arrayFaq = [
     { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
     { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
@@ -25,15 +24,13 @@ const index = () => {
   return (
     <>
       <Head>
-        <title>Teressen Heating and Air Conditioning Service in Canada</title>
-        <meta name="description" content="Teressen Heating in Canada offers high-quality heating and air conditioning services throughout the country. We offer a wide range of services to meet your needs." />
+        <title>Airlinx Heating and Cooling Services - HVAC Contractor Burnaby</title>
+        <meta name="description" content="Looking for a top HVAC contractor in Burnaby? Airlinx Heating offers expert heating, AC, and boiler services with 24/7 emergency support. Contact today!" />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://airlinxheating.ca/" />
       </Head>
-      
-      <script type="application/ld+json">
-        {
-          `{
+
+      <JsonLd json={`{
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [{
@@ -107,9 +104,8 @@ const index = () => {
           Home Warranty"
               }
             }]
-          }`
-        }
-      </script>
+          }`} />
+
       <main>
         <Hero />
         <Facilities />

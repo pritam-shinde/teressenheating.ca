@@ -1,16 +1,16 @@
-import { Box, Container, Grid, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { CheckCircleOutline } from '@mui/icons-material'
+import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import React, { useEffect, useState } from 'react'
-import { BrandDetails, FeaturedCoolingServices, Testimonial, PopularService, FaqAndForm, HighlySkilled, FeaturedHeatingServices } from '../sections/sections'
-import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
-import { CommonBanner, SectionalHeading } from '../components/components'
 import Image from 'next/legacy/image'
+import { useEffect, useState } from 'react'
+import { CommonBanner, SectionalHeading } from '../components/components'
+import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import Carrier1 from '../public/brand-page/Layer-124.webp'
-import BlueLogo from '../public/logo/blue-logo.svg'
 import BBB from '../public/certification/cer1.webp'
-import Technical from '../public/certification/cer3.webp'
 import WorkSafe from '../public/certification/cer2.webp'
+import Technical from '../public/certification/cer3.webp'
+import BlueLogo from '../public/logo/airlinx-logo2.png'
+import { BrandDetails, FaqAndForm, FeaturedCoolingServices, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 import Link from 'next/link'
 
@@ -41,21 +41,21 @@ const Carrier = () => {
 
   const brandDetailparagraph = [
 
-    { id: 'branddetail-1', text: "You would like to know what kind of repairing services you can get from Teressen's HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes." },
-    { id: 'branddetail-2', text: "We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Teressen's multiple business licenses can fix any brand and provide you with the best possible assistance." }
+    { id: 'branddetail-1', text: "You would like to know what kind of repairing services you can get from Airlinx's HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes." },
+    { id: 'branddetail-2', text: "We fix any furnace models. We can immediately dispatch the closest heating team to your home and send our multiple groups to your locations with the help of a GPS. Airlinx's multiple business licenses can fix any brand and provide you with the best possible assistance." }
 
   ]
   return (
     <>
       <Head>
-        <title>Certified Carrier Furnace Technician Services | Teressenheating</title>
-        <meta name="description" content="We are your local Carrier furnace experts. We have been providing quality furnace service since long . Call us today for furnace repair, installation & replacement." />
+        <title>Certified Carrier Furnace Technician Services - Airlinx</title>
+        <meta name="description" content="Airlinx heating is your local Carrier furnace experts. We have been providing quality furnace service since long. Call today for furnace services." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/carrier/" />
+        <link rel="canonical" href="https://airlinxheating.ca/carrier/" />
       </Head>
       <script type="application/ld+json">
-      {
-        `{
+        {
+          `{
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [{
@@ -130,8 +130,8 @@ const Carrier = () => {
             }
           }]
         }`
-      }
-    </script>
+        }
+      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Carrier" color="#fff" variant="h1" />
         <section>
@@ -145,7 +145,7 @@ const Carrier = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Teressenheating Logo" title='Teressenheating Logo' />
+                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
                             </Box>
                           </Grid>
                           <Grid item xs={6}>
@@ -155,7 +155,7 @@ const Carrier = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                      <Box>
+                   //   <Box>
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
@@ -183,7 +183,7 @@ const Carrier = () => {
                             </Box>
                           </Grid>
                         </Grid>
-                      </Box>
+                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
@@ -237,7 +237,7 @@ const Carrier = () => {
                       <ListItemIcon>
                         <CheckCircleOutline className='text--blue' />
                       </ListItemIcon>
-                      <ListItemText primary={<strong>Carrier furnace leakage:</strong>} secondary="If your Carrier furnace is tripping water, there is some condensation issue. Also, the secondary heat exchanger in a Carrier furnace might occasionally be the source of leakage. Call us today and get the right assistance for free." />
+                      <ListItemText primary={<strong>Carrier furnace leakage:</strong>} secondary={<span>If your Carrier furnace is tripping water, there is some condensation issue. Also, the secondary heat exchanger in a Carrier furnace might occasionally be the source of leakage. <a href="/contact-us/">Call us</a> today and get the right assistance for free.</span>} />
                     </ListItem>
                     <ListItem>
                       <ListItemIcon>

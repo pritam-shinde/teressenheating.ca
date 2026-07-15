@@ -51,7 +51,7 @@ const Testimonial = ({ testimonialArr }) => {
                                                                 <FormatQuote className='text--blue' style={{ fontSize: "5rem", color: "var(--blue) !important",marginTop:"-3rem !important" }} />
                                                             </Box>
                                                             <Box className="flex-grow-1 ms-3">
-                                                                <Typography style={{ fontSize: "1.1rem !important" }}><strong>The entire Teressen Heating & Air Conditioning team has been great to work with. They protected our floors and working area throughout the day, provided a clear understanding of the work, and left the job site in the same way as they started (very clean!). We have been happy to be a customer of Teressen.</strong></Typography>
+                                                                <Typography style={{ fontSize: "1.1rem !important" }}><strong>The entire Airlinx Heating & Air Conditioning team has been great to work with. They protected our floors and working area throughout the day, provided a clear understanding of the work, and left the job site in the same way as they started (very clean!). We have been happy to be a customer of Airlinx.</strong></Typography>
                                                                 <Typography className='para'><strong>- Catherine M.</strong>, Customer</Typography>
                                                             </Box>
                                                         </Box>
@@ -84,7 +84,7 @@ const Testimonial = ({ testimonialArr }) => {
                                                                 <FormatQuote className='text--blue' style={{ fontSize: "5rem", color: "var(--blue) !important", marginTop:"-3rem !important" }} />
                                                             </Box>
                                                             <Box className="flex-grow-1 ms-3">
-                                                                <Typography style={{ fontSize: "1.1rem !important" }}><strong>Teressen is the epitome of excellence in customer service and professionalism. They explained the process of repairing my A/C every step of the way and gave me an estimate before each action. I understand my unit better due to their detailed explanation of how the whole system operates and I truly appreciated their maintenance suggestions to extend the life of my teams. Excellent job! You have a loyal customer here!</strong></Typography>
+                                                                <Typography style={{ fontSize: "1.1rem !important" }}><strong>Airlinx is the epitome of excellence in customer service and professionalism. They explained the process of repairing my A/C every step of the way and gave me an estimate before each action. I understand my unit better due to their detailed explanation of how the whole system operates and I truly appreciated their maintenance suggestions to extend the life of my teams. Excellent job! You have a loyal customer here!</strong></Typography>
                                                                 <Typography className='para'><strong>- Michelle Connell</strong>, Customer</Typography>
                                                             </Box>
                                                         </Box>

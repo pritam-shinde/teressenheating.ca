@@ -1,15 +1,13 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import BurnabyLoc from '../public/burnaby/burnaby.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import BurnabyLoc from '../public/burnaby/burnaby.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const Burnaby = () => {
-
   const makeDiff = ["Licensed technicians.", "We give competitor price match guarantee", "We service all major brands and areas.", "We give you 24*7*365 days of assistance", "We have over 2 decades of work experience.", "We assure comfort."]
 
   const arrayFaq = [
@@ -29,147 +27,71 @@ const Burnaby = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "HAVC Burnaby",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/burnaby/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "BC",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Burnaby"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
+
   return (
     <>
       <Head>
-        <title>Furnace Installer Services in Burnaby | Teressenheating</title>
-        <meta name="description" content="At Teressen Heating and Air Conditioning Ltd, we're committed to supplying the best furnace installation service in Burnaby. We offer free quotes and consultations." />
+        <title>HVAC Repair Burnaby - Emergency Heating & Cooling - Airlinx</title>
+        <meta name="description" content="Fast, licensed HVAC repair Burnaby solutions. Airlinx Heating services furnaces, boilers, heat pumps, and gas fireplaces. Call today for a local pro team." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/burnaby/" />
+        <link rel="canonical" href="https://airlinxheating.ca/burnaby/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do you maintain a heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
-        Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
-        Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you combine heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-            }
-          },{
-            "@type": "Question",
-            "name": "Should I leave my heat pump on all the time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you use the same ducts for heating and cooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does geothermal heating and cooling works",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does ductless heating and cooling works?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much Does HVAC installation Cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long Does HVAC Installation take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Usually, it takes three to five days for installation."
-            }
-          },{
-            "@type": "Question",
-            "name": "What kind of warranties come with my New HVAC installation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It has the following warranties:
-        
-        HVAC Manufacturer Warranty.
-        HVAC Extended Warranty.
-        Homeowners Insurance.
-        Home Warranty"
-            }
-          }]
-        }`
-      }
-    </script>
-
-    <script type="application/ld+json">
-     {
-       `{
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "HAVC Burnaby",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fburnaby.072a801f.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/burnaby/",
-        "telephone": "+1-604-363-6622",
-        "priceRange": "$$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2025 Willingdon Ave unit 900",
-          "addressLocality": "Burnaby",
-          "addressRegion": "BC",
-          "postalCode": "V5C 0J3",
-          "addressCountry": "CA"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Burnaby"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 49.265842,
-          "longitude": -123.0035841
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"  
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=100088431184715",
-          "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
-        ]
-        }
-      }`
-     }
-    </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <main>
         <CommonBanner bg={Banner} title="HAVC Burnaby - Furnace Installer Services" color="#fff" variant="h1" />
         <section>
@@ -182,9 +104,9 @@ const Burnaby = () => {
                       <Image layout='responsive' src={BurnabyLoc} alt="Choklit Park" title='Choklit Park' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
-                      <Typography className='para'>Teressen&apos;s heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Burnaby are probably one of the best services you will get here. Installation and replacement for central home heating systems, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
-                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only <Link href="/commercial-hvac/">HVAC suppliers</Link> in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
+                      <Typography variant='h2'>Airlinx&apos;s furnace installer services in Burnaby are altogether a different experience</Typography>
+                      <Typography className='para'>Airlinx&apos;s heating and <a href="/air-conditioning-service/">air conditioning services</a> in Burnaby are probably one of the best services you will get here. Installation and replacement for central <a href="/heating-services/">home heating systems</a>, installation, repairs, and tune-ups are one of the best things that can happen to our clients.</Typography>
+                      <Typography className='para'>We provide professional furnace installation from certified HVAC technicians near you, 24*7. We are the only <a href="/commercial-hvac/">HVAC suppliers</a> in Burnaby you can easily count on. With great services, quick assistance, and timely help you can always lead a happy life.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>
@@ -195,7 +117,7 @@ const Burnaby = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="What makes Teressen different?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="What makes Airlinx different?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />

@@ -1,12 +1,11 @@
-import { Grid, Container, Box, Typography } from '@mui/material'
+import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import React from 'react'
-import Banner from '../public/areas/area2.webp'
-import { BlueFilledBtn, CommonBanner } from '../components/components'
-import RichmondLoc from '../public/richmond/richmond.webp'
 import Image from 'next/legacy/image'
-import { Different, Locations, FaqAndForm, CertificationSlider } from '../sections/sections'
 import Link from 'next/link'
+import { BlueFilledBtn, CommonBanner } from '../components/components'
+import Banner from '../public/areas/area2.webp'
+import RichmondLoc from '../public/richmond/richmond.webp'
+import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
 
 const Richmond = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
@@ -28,147 +27,71 @@ const Richmond = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Richmond Air Conditioning Installation Services",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Airlinx Heating & Air Conditioning",
+      "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
+      "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
+      "url": "https://airlinxheating.ca/richmond/",
+      "telephone": "+1-604-363-6622",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2025 Willingdon Ave unit 900",
+        "addressLocality": "Burnaby",
+        "addressRegion": "BC",
+        "postalCode": "V5C 0J3",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Richmond"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.265842,
+        "longitude": -123.0035841
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=100088431184715",
+        "https://twitter.com/BaymanShawqi",
+        "https://www.pinterest.com.au/airlinxheating/"
+      ]
+    }
+  };
+
   return (
     <>
-    <Head>
-        <title>Air Conditioning Installation Services in Richmond | Teressenheating</title>
-        <meta name="description" content="For all of your air conditioning installation services needs in Richmond, VA, choose Teressen Heating. We offer a wide range of high-quality HVAC services. " />
+      <Head>
+        <title>Fast Solutions for Heating And Cooling Richmond - Airlinx</title>
+        <meta name="description" content="Get your home climate system fixed fast. Airlinx Heating provides rapid heating and cooling Richmond solutions for broken furnaces, boilers, and ACs." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="/richmond/" />
+        <link rel="canonical" href="https://airlinxheating.ca/richmond/" />
       </Head>
-      <script type="application/ld+json">
-      {
-        `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do you maintain a heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
-        Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
-        Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you combine heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-            }
-          },{
-            "@type": "Question",
-            "name": "Should I leave my heat pump on all the time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you use the same ducts for heating and cooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does geothermal heating and cooling works",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does ductless heating and cooling works?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much Does HVAC installation Cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long Does HVAC Installation take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Usually, it takes three to five days for installation."
-            }
-          },{
-            "@type": "Question",
-            "name": "What kind of warranties come with my New HVAC installation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It has the following warranties:
-        
-        HVAC Manufacturer Warranty.
-        HVAC Extended Warranty.
-        Homeowners Insurance.
-        Home Warranty"
-            }
-          }]
-        }`
-      }
-    </script>
-
-    <script type="application/ld+json">
-     {
-       `{
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "serviceType": "Richmond Air Conditioning Installation Services",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Teressen Heating & Air Conditioning",
-        "image": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
-        "@id": "https://teressenheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Frichmond.ac03b7af.webp&w=1920&q=75",
-        "url": "https://teressenheating.ca/richmond/",
-        "telephone": "+1-604-363-6622",
-        "priceRange": "$$$",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2025 Willingdon Ave unit 900",
-          "addressLocality": "Burnaby",
-          "addressRegion": "BC",
-          "postalCode": "V5C 0J3",
-          "addressCountry": "CA"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Richmond"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 49.265842,
-          "longitude": -123.0035841
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"  
-          ],
-          "opens": "08:00",
-          "closes": "18:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/profile.php?id=100088431184715",
-          "https://twitter.com/BaymanShawqi",
-          "https://www.pinterest.com.au/teressenheating/"
-        ]
-        }
-      }`
-     }
-    </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema)
+        }}
+      />
       <main>
         <CommonBanner bg={Banner} title="Richmond Air Conditioning Installation Services" color="#fff" variant="h1" />
         <section>
@@ -181,8 +104,8 @@ const Richmond = () => {
                       <Image layout='responsive' src={RichmondLoc} alt="Richmond Area" title='Richmond Area' />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                      <Typography variant='h2'>Teressen&apos;s Quality, Affordability, And Trust-Worthy Air Conditioning Installation Services In Richmond</Typography>
-                      <Typography className='para'>A brand&apos;s unique identity is its people. We have a troop of certified and experienced technicians who make sure that everything goes well. We also make sure that our heating and <Link href="/air-conditioning-service/">air conditioning services</Link> in Richmond are one of the best services our people can get. Right from tune-ups to <Link href="/furnace-inspection/">furnace installation</Link>, everything is done to guarantee an easy-breeze life for all our clients. We understand your concerns and also look into the fact that you are assured of our quality services. We believe in resolving issues and coming up with expert solutions. Hence, people believe in us and help us with their reviews. </Typography>
+                      <Typography variant='h2'>Airlinx&apos;s Quality, Affordability, And Trust-Worthy Air Conditioning Installation Services In Richmond</Typography>
+                      <Typography className='para'>A brand&apos;s unique identity is its people. We have a troop of certified and experienced technicians who make sure that everything goes well. We also make sure that our heating and <a href="/air-conditioning-service/">air conditioning services</a> in Richmond are one of the best services our people can get. <a href="/furnace-inspection/">Right from tune-ups to furnace installation</a>, everything is done to guarantee an easy-breeze life for all our clients. We understand your concerns and also look into the fact that you are assured of our quality services. We believe in resolving issues and coming up with expert solutions. Hence, people believe in us and help us with their reviews. </Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>
@@ -193,7 +116,7 @@ const Richmond = () => {
             </Grid>
           </Container>
         </section>
-        <Different title="Why Teressen's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
+        <Different title="Why Airlinx's heating and cooling services are the best?" titleVariant="h2" titleAlign="center" list={makeDiff} />
         <CertificationSlider />
         <Locations />
         <section>

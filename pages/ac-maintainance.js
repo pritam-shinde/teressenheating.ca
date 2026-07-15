@@ -2,8 +2,7 @@ import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
 import Image from 'next/legacy/image'
-import React from 'react'
-import { SectionalHeading, CommonBanner } from '../components/components'
+import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/acmaintainance/ac-maintanance-banner.webp'
 import ACMaintanance from '../public/acmaintainance/ac-maintance.webp'
 import { FaqAndForm, FeaturedCoolingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
@@ -29,10 +28,10 @@ const AcMaintainance = () => {
     return (
         <>
             <Head>
-                <title>Air Conditioning Maintenance Services | Teressenheating </title>
-                <meta name="description" content="Teressen Heating & Cooling has provided air conditioning maintenance services to residential and commercial customers throughout Canada and its area for a long." />
+                <title>Air Conditioning Maintenance Services | Airlinxheating </title>
+                <meta name="description" content="Airlinx Heating & Cooling has provided air conditioning maintenance services to residential and commercial customers throughout Canada and its area for a long." />
                 <meta name="robots" content="index" />
-                <link rel="canonical" href="/ac-maintainance/" />
+                <link rel="canonical" href="https://airlinxheating.ca/ac-maintainance/" />
             </Head>
             <main>
                 <CommonBanner bg={Banner} title="Air Conditioning Maintenance" color="#fff" variant="h1" />
@@ -41,7 +40,7 @@ const AcMaintainance = () => {
                         <Grid container>
                             <Grid item xs={12} md={10} className="mx-auto">
                                 <Box mt={5}>
-                                    <SectionalHeading simpletext="Teressen AC Maintenance Services Are Always On-Point For You" variant="h2" />
+                                    <SectionalHeading simpletext="Airlinx AC Maintenance Services Are Always On-Point For You" variant="h2" />
                                     <Typography className='para'>For over 20 years, we have been providing the best AC maintenance services to Vancouver homeowners. We are a locally-owned operated organization that is proud to be the only experts giving you the best services.</Typography>
                                 </Box>
                             </Grid>
