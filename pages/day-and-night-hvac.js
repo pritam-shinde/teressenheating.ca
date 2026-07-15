@@ -149,35 +149,7 @@ const DayNightHVAC = () => {
                           </Grid>
                         </Grid>
                       </Box>
-                   //   <Box>
-                        <Grid container>
-                          <Grid item xs={6}>
-                            <Box p={3}>
-                              <List className="d-flex flex-md-row flex-column">
-                                <ListItem>
-                                  <ListItemIcon>
-                                    <CheckCircleOutline className='text--blue' />
-                                  </ListItemIcon>
-                                  <ListItemText primary={<strong>SERVICE</strong>} />
-                                </ListItem>
 
-                                <ListItem>
-                                  <ListItemIcon>
-                                    <CheckCircleOutline className='text--blue' />
-                                  </ListItemIcon>
-                                  <ListItemText primary={<strong>INSTALLATION</strong>} />
-                                </ListItem>
-                                <ListItem>
-                                  <ListItemIcon>
-                                    <CheckCircleOutline className='text--blue' />
-                                  </ListItemIcon>
-                                  <ListItemText primary={<strong>MAINTANANCE</strong>} />
-                                </ListItem>
-                              </List>
-                            </Box>
-                          </Grid>
-                        </Grid>
-                      </Box>//
                       <Box>
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
