@@ -67,7 +67,7 @@ const FaqAndForm = ({
                       </Box>
                       <Box p={1}>
                         <iframe
-                          title='Google Maps Location of Teressen Heating & Air Conditioning'
+                          title='Google Maps Location of Airlinx Heating & Air Conditioning'
                           src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.241045331159!2d-123.0013343!3d49.2657802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e00c8b58b8252d9!2sTeressen%20Heating%20%26%20Air%20Conditioning!5e0!3m2!1sen!2sin!4v1671612141122!5m2!1sen!2sin'
                           width='100%'
                           height='500px'
@@ -122,7 +122,7 @@ const FaqAndForm = ({
                                             {item.ans.includes('boiler service') ? (
                                               <>
                                                 {item.ans.split('boiler service')[0]}
-                                                <Link href='https://teressenheating.ca/blog/the-importance-and-benefits-of-boiler-repair-service-and-maintenance/'>boiler service</Link>
+                                                <Link href='https://airlinxheating.ca/blog/the-importance-and-benefits-of-boiler-repair-service-and-maintenance/'>boiler service</Link>
                                                 {item.ans.split('boiler service')[1]}
                                               </>
                                             ) : (
@@ -166,16 +166,18 @@ const FaqAndForm = ({
                         <Box p={2}>
                           <AppointmentForm />
                         </Box>
-                        <Box p={2}>
-                          <iframe
-                            title='Google Maps Location of Teressen Furnace Heating & Air Conditioning HVAC'
-                            src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.22800159264!2d-123.0035841!3d49.265842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486776a8b99ca05%3A0x7e00c8b58b8252d9!2sTeressen%20Furnace%20Heating%20%26%20Air%20Conditioning%20HVAC!5e0!3m2!1sen!2sin!4v1683627434720!5m2!1sen!2sin'
-                            width='100%'
-                            style={{ border: 0 }}
-                            loading='lazy'
-                            referrerPolicy='no-referrer-when-downgrade'
-                          ></iframe>
-                        </Box>
+                        {!address ? (
+                          <Box p={2}>
+                            <iframe
+                              title='Google Maps Location of Airlinx Furnace Heating & Air Conditioning HVAC'
+                              src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.22800159264!2d-123.0035841!3d49.265842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486776a8b99ca05%3A0x7e00c8b58b8252d9!2sTeressen%20Furnace%20Heating%20%26%20Air%20Conditioning%20HVAC!5e0!3m2!1sen!2sin!4v1683627434720!5m2!1sen!2sin'
+                              width='100%'
+                              style={{ border: 0 }}
+                              loading='lazy'
+                              referrerPolicy='no-referrer-when-downgrade'
+                            ></iframe>
+                          </Box>
+                        ) : null}
                       </Box>
                     </Grid>
                   ) : null}

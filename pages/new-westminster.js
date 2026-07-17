@@ -82,7 +82,7 @@ const NewWestminar = () => {
     <>
       <Head>
         <title>HVAC Services In New Westminster - Airlinx Heating</title>
-        <meta name="description" content="Make your home feel comfortable year-round. Airlinx Heating offers expert HVAC services in New Westminster, including professional repairs and installations." />
+        <meta name="description" content="Make your home feel comfortable year-round. Airlinx Heating offers expert HVAC services in New Westminster, including professional repairs & installation" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/new-westminster/" />
       </Head>

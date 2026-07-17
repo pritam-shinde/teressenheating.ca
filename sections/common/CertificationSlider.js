@@ -11,7 +11,7 @@ import certificate2 from '../../public/certification/cer2.webp'
 import certificate3 from '../../public/certification/cer3.webp'
 import certificate4 from '../../public/certification/cer4.webp'
 import { SectionalHeading } from '../../components/components';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 const CertificationSlider = () => {
     const [width, setWidth] = useState();
@@ -41,16 +41,16 @@ const CertificationSlider = () => {
                                         loop={true}
                                     >
                                         <SwiperSlide>
-                                            <Image layout='responsive' src={certificate1} alt="Accredited Business Logo" title='Accredited Business Logo' className='img-fluid' />
+                                            <Image src={certificate1} alt="Accredited Business Logo" title='Accredited Business Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '100%', height: 'auto' }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image layout='responsive' src={certificate2} alt="Work Safe BC Logo" title='Work Safe BC Logo' className='img-fluid' />
+                                            <Image src={certificate2} alt="Work Safe BC Logo" title='Work Safe BC Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '100%', height: 'auto' }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image layout='responsive' src={certificate3} alt="Technical Safety BC Logo" title='Technical Safety BC Logo' className='img-fluid' />
+                                            <Image src={certificate3} alt="Technical Safety BC Logo" title='Technical Safety BC Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '100%', height: 'auto' }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image layout='responsive' src={certificate4} alt="Fortis BC Logo" title='Fortis BC Logo' className='img-fluid' />
+                                            <Image src={certificate4} alt="Fortis BC Logo" title='Fortis BC Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '100%', height: 'auto' }} />
                                         </SwiperSlide>
                                     </Swiper>
                                 </Box>

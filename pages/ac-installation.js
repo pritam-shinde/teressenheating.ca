@@ -29,7 +29,7 @@ const AcInstallation = () => {
     <>
       <Head>
         <title>Air Conditioning installation services | Airlinxheating </title>
-        <meta name="description" content="The best air conditioning installation services for residential and commercial ac systems are here. We have the best prices and come with a 100% satisfaction guarantee." />
+        <meta name="description" content="The best air conditioning installation services for residential and commercial ac systems are here. We have the best prices and come with a guarantee." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/ac-installation/" />
       </Head>

@@ -5,7 +5,7 @@ import Image from 'next/legacy/image'
 import { AppointmentForm, BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
 import AcRepair from '../public/home/s3.webp'
 import Family from '../public/home/testimonial.webp'
-import AirConditioner from '../public/service/air-conditioner.webp'
+import AirConditioner from '../public/service/air-conditioner.jpg'
 import Banner from '../public/service/service-compressed.webp'
 import { Appointment } from '../sections/sections'
 

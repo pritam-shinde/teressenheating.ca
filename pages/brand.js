@@ -66,142 +66,142 @@ const Brand = () => {
                     <Grid container spacing={3}>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Bryant Logo' src={Brand1} alt="Bryant Logo" />
+                          <Image title='Bryant Logo' src={Brand1} alt="Bryant Logo" width={150} height={60} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Tempstar Logo' src={Brand2} alt="Tempstar Logo" />
+                          <Image title='Tempstar Logo' src={Brand2} alt="Tempstar Logo" width={150} height={22} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Heil HVAC Logo' src={Brand3} alt="Heil HVAC Logo" />
+                          <Image title='Heil HVAC Logo' src={Brand3} alt="Heil HVAC Logo" width={150} height={52} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Keeprite Logo' src={Brand4} alt="Keeprite Logo" />
+                          <Image title='Keeprite Logo' src={Brand4} alt="Keeprite Logo" width={150} height={49} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Kenmore Logo' src={Brand5} alt="Kenmore Logo" />
+                          <Image title='Kenmore Logo' src={Brand5} alt="Kenmore Logo" width={150} height={32} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Lennox Logo' src={Brand6} alt="Lennox Logo" />
+                          <Image title='Lennox Logo' src={Brand6} alt="Lennox Logo" width={150} height={43} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Concord Logo' src={Brand7} alt="Concord Logo" />
+                          <Image title='Concord Logo' src={Brand7} alt="Concord Logo" width={150} height={33} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Luxaire Logo' src={Brand8} alt="Luxaire Logo" />
+                          <Image title='Luxaire Logo' src={Brand8} alt="Luxaire Logo" width={150} height={42} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Maytag Logo' src={Brand9} alt="Maytag Logo" />
+                          <Image title='Maytag Logo' src={Brand9} alt="Maytag Logo" width={150} height={57} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Navien Logo' src={Brand10} alt="Navien Logo" />
+                          <Image title='Navien Logo' src={Brand10} alt="Navien Logo" width={150} height={22} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Payne Logo' src={Brand11} alt="Payne Logo" />
+                          <Image title='Payne Logo' src={Brand11} alt="Payne Logo" width={70} height={70} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Rinnai Logo' src={Brand12} alt="Rinnai Logo" />
+                          <Image title='Rinnai Logo' src={Brand12} alt="Rinnai Logo" width={150} height={38} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Trane Logo' src={Brand13} alt="Trane Logo" />
+                          <Image title='Trane Logo' src={Brand13} alt="Trane Logo" width={142} height={48} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Viessmann Logo' src={Brand14} alt="Viessmann Logo" />
+                          <Image title='Viessmann Logo' src={Brand14} alt="Viessmann Logo" width={149} height={33} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='York Brand Logo' src={Brand15} alt="York Brand Logo" />
+                          <Image title='York Brand Logo' src={Brand15} alt="York Brand Logo" width={150} height={34} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Coleman Logo' src={Brand16} alt="Coleman Logo" />
+                          <Image title='Coleman Logo' src={Brand16} alt="Coleman Logo" width={150} height={49} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Aire Flo Logo' src={Brand17} alt="Aire Flo Logo" />
+                          <Image title='Aire Flo Logo' src={Brand17} alt="Aire Flo Logo" width={150} height={51} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Amana Logo' src={Brand18} alt="Amana Logo" />
+                          <Image title='Amana Logo' src={Brand18} alt="Amana Logo" width={150} height={39} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='American Standard Logo' src={Brand19} alt="American Standard Logo" />
+                          <Image title='American Standard Logo' src={Brand19} alt="American Standard Logo" width={150} height={68} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Arcoaire Logo' src={Brand20} alt="Arcoaire Logo" />
+                          <Image title='Arcoaire Logo' src={Brand20} alt="Arcoaire Logo" width={150} height={42} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Armstrong Logo' src={Brand21} alt="Armstrong Logo" />
+                          <Image title='Armstrong Logo' src={Brand21} alt="Armstrong Logo" width={150} height={35} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Carrier Logo' src={Brand22} alt="Carrier Logo" />
+                          <Image title='Carrier Logo' src={Brand22} alt="Carrier Logo" width={150} height={62} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Comfortmaker Logo' src={Brand23} alt="Comfortmaker Logo" />
+                          <Image title='Comfortmaker Logo' src={Brand23} alt="Comfortmaker Logo" width={150} height={25} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Daikin Logo' src={Brand24} alt="Daikin Logo" />
+                          <Image title='Daikin Logo' src={Brand24} alt="Daikin Logo" width={150} height={33} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Day & Night Logo' src={Brand25} alt="Day & Night Logo" />
+                          <Image title='Day & Night Logo' src={Brand25} alt="Day & Night Logo" width={64} height={70} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Ameristar Logo' src={Brand26} alt="Ameristar Logo" />
+                          <Image title='Ameristar Logo' src={Brand26} alt="Ameristar Logo" width={150} height={27} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Frigidaire Logo' src={Brand27} alt="Frigidaire Logo" />
+                          <Image title='Frigidaire Logo' src={Brand27} alt="Frigidaire Logo" width={150} height={19} />
                         </Box>
                       </Grid>
                       <Grid item xs={6} sm={4} md={3} lg={2}>
                         <Box>
-                          <Image title='Goodman Logo' src={Brand28} alt="Goodman Logo" />
+                          <Image title='Goodman Logo' src={Brand28} alt="Goodman Logo" width={150} height={40} />
                         </Box>
                       </Grid>
                     </Grid>
