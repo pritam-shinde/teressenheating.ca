@@ -48,7 +48,7 @@ const Goodman = () => {
     <>
       <Head>
         <title>Goodman Furnace & Ac Repair Services - Airlinx</title>
-        <meta name="description" content="Airlinx's Goodman furnace repair service is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you." />
+        <meta name="description" content="Airlinx's Goodman furnace repair service is one of the trusted services you will ever find. We always strive for excellence in everything we do for you." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/goodman/" />
       </Head>

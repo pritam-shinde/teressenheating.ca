@@ -40,7 +40,7 @@ const BoilerRepair = () => {
     <>
       <Head>
         <title>24/7 Boiler Repair Service at Burnaby BC - Airlinx</title>
-        <meta name="description" content="Need fast boiler repairs? Airlinx Heating offers 24/7 emergency boiler repair services in Burnaby with certified technicians. Schedule a service call today." />
+        <meta name="description" content="Need fast boiler repairs? Airlinx Heating offers 24/7 emergency boiler repair services in Burnaby with certified technicians. Schedule a service call today" />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-repair/" />
       </Head>

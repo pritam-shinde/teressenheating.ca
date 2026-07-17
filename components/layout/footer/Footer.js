@@ -360,7 +360,7 @@ const Footer = () => {
                                                 </Box>
                                                 <Box px={1}>
                                                     <Link legacyBehavior href="/privacy-policy/">
-                                                        <span className="headingSecond"> Privacy Policy </span>
+                                                        <a className="headingSecond text-white"> Privacy Policy </a>
                                                     </Link>
                                                 </Box>
 
@@ -369,7 +369,7 @@ const Footer = () => {
                                                 </Box>
                                                 <Box px={1}>
                                                     <Link legacyBehavior href="/terms-of-service/">
-                                                        <span className="headingSecond">Term Of Service</span>
+                                                        <a className="headingSecond text-white"> Terms Of Service</a>
                                                     </Link>
                                                 </Box>
                                             </box>

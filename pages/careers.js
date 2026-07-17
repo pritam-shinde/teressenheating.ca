@@ -9,7 +9,7 @@ const Careers = () => {
     <>
       <Head>
         <title>HVAC Jobs and Career Opportunities - Airlinx Heating</title>
-        <meta name="description" content="Build your future with Airlinx Heating. We offer competitive pay, a supportive work environment, and great career paths for licensed HVAC experts in Canada." />
+        <meta name="description" content="Build your future with Airlinx Heating. We offer competitive pay, a supportive work environment, & great career paths for licensed HVAC experts in Canada." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/careers/" />
       </Head>

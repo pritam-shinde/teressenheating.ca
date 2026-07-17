@@ -66,88 +66,88 @@ const BrandSlider = () => {
                                         loop={true}
                                     >
                                         <SwiperSlide>
-                                            <Image  src={Brand1} alt="Bryant Logo" className='img-fluid' title='Bryant Logo' />
+                                            <Image  src={Brand1} alt="Bryant Logo" className='img-fluid' title='Bryant Logo' width={150} height={60} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand2} alt="Tempstar Logo" className='img-fluid' title='Tempstar Logo' />
+                                            <Image  src={Brand2} alt="Tempstar Logo" className='img-fluid' title='Tempstar Logo' width={150} height={22} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand3} alt="Heil HVAC Logo" className='img-fluid' title='Heil HVAC Logo' />
+                                            <Image  src={Brand3} alt="Heil HVAC Logo" className='img-fluid' title='Heil HVAC Logo' width={150} height={52} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand4} alt="Keeprite Logo" className='img-fluid' title='Keeprite Logo' />
+                                            <Image  src={Brand4} alt="Keeprite Logo" className='img-fluid' title='Keeprite Logo' width={150} height={49} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand5} alt="Kenmore Logo" className='img-fluid' title='Kenmore Logo' />
+                                            <Image  src={Brand5} alt="Kenmore Logo" className='img-fluid' title='Kenmore Logo' width={150} height={32} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand6} alt="Lennox Logo" className='img-fluid' title='Lennox Logo' />
+                                            <Image  src={Brand6} alt="Lennox Logo" className='img-fluid' title='Lennox Logo' width={150} height={43} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand7} alt="Concord Logo" className='img-fluid' title='Concord Logo' />
+                                            <Image  src={Brand7} alt="Concord Logo" className='img-fluid' title='Concord Logo' width={150} height={33} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand8} alt="Luxaire Logo" className='img-fluid' title='Luxaire Logo' />
+                                            <Image  src={Brand8} alt="Luxaire Logo" className='img-fluid' title='Luxaire Logo' width={150} height={42} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand9} alt="Maytag Logo" className='img-fluid' title='Maytag Logo' />
+                                            <Image  src={Brand9} alt="Maytag Logo" className='img-fluid' title='Maytag Logo' width={150} height={57} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand10} alt="Navien Logo" className='img-fluid' title='Navien Logo' />
+                                            <Image  src={Brand10} alt="Navien Logo" className='img-fluid' title='Navien Logo' width={150} height={22} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand11} alt="Payne Logo" className='img-fluid' title='Payne Logo' />
+                                            <Image  src={Brand11} alt="Payne Logo" className='img-fluid' title='Payne Logo' width={70} height={70} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand12} alt="Rinnai Logo" className='img-fluid' title='Rinnai Logo' />
+                                            <Image  src={Brand12} alt="Rinnai Logo" className='img-fluid' title='Rinnai Logo' width={150} height={38} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand13} alt="Trane Logo" className='img-fluid' title='Trane Logo' />
+                                            <Image  src={Brand13} alt="Trane Logo" className='img-fluid' title='Trane Logo' width={142} height={48} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand14} alt="Viessmann Logo" className='img-fluid' title='Viessmann Logo' />
+                                            <Image  src={Brand14} alt="Viessmann Logo" className='img-fluid' title='Viessmann Logo' width={149} height={33} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand15} alt="York Brand Logo" className='img-fluid' title='York Brand Logo' />
+                                            <Image  src={Brand15} alt="York Brand Logo" className='img-fluid' title='York Brand Logo' width={150} height={34} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand16} alt="Coleman Logo" className='img-fluid' title='Coleman Logo' />
+                                            <Image  src={Brand16} alt="Coleman Logo" className='img-fluid' title='Coleman Logo' width={150} height={49} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand17} alt="Aire Flo Logo" className='img-fluid' title='Aire Flo Logo' />
+                                            <Image  src={Brand17} alt="Aire Flo Logo" className='img-fluid' title='Aire Flo Logo' width={150} height={51} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand18} alt="Amana Logo" className='img-fluid' title='Amana Logo' />
+                                            <Image  src={Brand18} alt="Amana Logo" className='img-fluid' title='Amana Logo' width={150} height={39} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand19} alt="American Standard Logo" className='img-fluid' title='American Standard Logo' />
+                                            <Image  src={Brand19} alt="American Standard Logo" className='img-fluid' title='American Standard Logo' width={150} height={68} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand20} alt="Arcoaire Logo" className='img-fluid' title='Arcoaire Logo' />
+                                            <Image  src={Brand20} alt="Arcoaire Logo" className='img-fluid' title='Arcoaire Logo' width={150} height={42} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand21} alt="Armstrong Logo" className='img-fluid' title='Armstrong Logo' />
+                                            <Image  src={Brand21} alt="Armstrong Logo" className='img-fluid' title='Armstrong Logo' width={150} height={35} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand22} alt="Carrier Logo" className='img-fluid' title='Carrier Logo' />
+                                            <Image  src={Brand22} alt="Carrier Logo" className='img-fluid' title='Carrier Logo' width={150} height={62} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand23} alt="Comfortmaker Logo" className='img-fluid' title='Comfortmaker Logo' />
+                                            <Image  src={Brand23} alt="Comfortmaker Logo" className='img-fluid' title='Comfortmaker Logo' width={150} height={25} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand24} alt="Daikin Logo" className='img-fluid' title='Daikin Logo' />
+                                            <Image  src={Brand24} alt="Daikin Logo" className='img-fluid' title='Daikin Logo' width={150} height={33} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand25} alt="Day And Night HVAC Logo" className='img-fluid' title='Day And Night HVAC Logo' />
+                                            <Image  src={Brand25} alt="Day And Night HVAC Logo" className='img-fluid' title='Day And Night HVAC Logo' width={64} height={70} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand26} alt="Ameristart Logo" className='img-fluid' title='Ameristart Logo' />
+                                            <Image  src={Brand26} alt="Ameristart Logo" className='img-fluid' title='Ameristart Logo' width={150} height={27} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand27} alt="Frigidaire Logo" className='img-fluid' title='Frigidaire Logo' />
+                                            <Image  src={Brand27} alt="Frigidaire Logo" className='img-fluid' title='Frigidaire Logo' width={150} height={19} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand28} alt="Goodman Logo" className='img-fluid' title='Goodman Logo' />
+                                            <Image  src={Brand28} alt="Goodman Logo" className='img-fluid' title='Goodman Logo' width={150} height={40} />
                                         </SwiperSlide>
                                     </Swiper>
                                 </Box>
