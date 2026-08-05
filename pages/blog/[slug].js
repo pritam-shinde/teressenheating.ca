@@ -3,14 +3,25 @@ import Head from 'next/head';
 import Banner from '../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner } from '../../components/components'
 import { Box, Container, Grid } from '@mui/material';
-
+import { blog_slugs, filterAllowedBlogs } from '../../constants/blog-constant';
 
 export const getServerSideProps = async (context) => {
     const { slug } = context.params
+    if (!blog_slugs[slug]) {
+        return {
+            notFound: true
+        }
+    }
     const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${slug}`);
     const data = await res.json()
-    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&page=1');
-    const sidebarBlogs = await sidebarBlogsRes.json()
+    if (!data || data.length === 0) {
+        return {
+            notFound: true
+        }
+    }
+    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100');
+    const rawSidebarBlogs = await sidebarBlogsRes.json()
+    const sidebarBlogs = filterAllowedBlogs(rawSidebarBlogs)
     const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
     const category = await cat.json()
     return {
