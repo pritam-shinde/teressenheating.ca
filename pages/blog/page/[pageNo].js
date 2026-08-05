@@ -7,13 +7,16 @@ import Banner from '../../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner, BlueFilledBtn, GreyFilledBtn } from '../../../components/components'
 import { Box, Container, Grid, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import Styles from '../../../styles/Blog.module.css'
+import { filterAllowedBlogs } from '../../../constants/blog-constant'
 
 export const getServerSideProps = async (context) => {
     const { pageNo } = context.params
-    let res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&page=${pageNo}`)
-    let data = await res.json()
-    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&page=1');
-    const sidebarBlogs = await sidebarBlogsRes.json();
+    let res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100`)
+    let rawData = await res.json()
+    let data = filterAllowedBlogs(rawData)
+    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100');
+    const rawSidebarBlogs = await sidebarBlogsRes.json();
+    const sidebarBlogs = filterAllowedBlogs(rawSidebarBlogs);
     const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
     const category = await cat.json()
 
@@ -36,8 +39,8 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
     })
 
     const fetchBlogs = async () => {
-        const posts = await wp.posts().page(pageNo).get();
-        setBlogs(posts)
+        const posts = await wp.posts().perPage(100).get();
+        setBlogs(filterAllowedBlogs(posts))
     }
 
     useEffect(() => {
