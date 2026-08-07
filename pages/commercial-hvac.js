@@ -5,6 +5,7 @@ import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components';
+import JsonLd from '../components/JsonLd';
 import Banner from '../public/commercialHVAC/commercial-2.webp';
 import HVAC from '../public/commercialHVAC/hvac.webp';
 import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections';
@@ -17,9 +18,11 @@ const CommercialHVAC = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "how do commercial hvac systems work?", ans: "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:", list: ["Usually, water source heat pumps contain pipes. It carries water throughout the building. ", "The rooftop units are on the roof of the building. ", "Then tend to put the conditioned air into the building. ", "Some chillers generate cool water. It is distributed by pipes to air-cooling coils.", "Heaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."] },
-    { id: "faq-2", que: "how often should commercial hvac filters be changed?", ans: "It should be changed every quarter, or within three months.", list: null },
-    { id: "faq-3", que: "how long do commercial hvac systems last?", ans: "The average life expectancy of commercial HVAC systems is 15 to 20 years.", list: null }
+    { id: "faq-1", que: "What commercial HVAC services do you provide in Burnaby?", ans: "We offer complete commercial HVAC services Burnaby, including system installation, repairs, maintenance, replacements, and energy-efficient upgrades for offices, retail spaces, and other commercial buildings.", list: null },
+    { id: "faq-2", que: "How often should a commercial HVAC system be serviced?", ans: "We recommend scheduling commercial HVAC maintenance services at least twice a year to improve system performance, reduce downtime, and help avoid costly repairs.", list: null },
+    { id: "faq-3", que: "Do you provide emergency commercial HVAC service?", ans: "Yes, our commercial HVAC service includes prompt response for unexpected heating or cooling issues to help keep your business operating with minimal disruption.", list: null },
+    { id: "faq-4", que: "Why is regular commercial HVAC maintenance important?", ans: "Routine commercial HVAC maintenance services Burnaby help extend equipment life, improve indoor comfort, lower energy costs, and reduce the risk of unexpected system failures.", list: null },
+    { id: "faq-5", que: "Do you work with different types of commercial HVAC systems?", ans: "Yes, our commercial HVAC services cover rooftop units, heat pumps, furnaces, air conditioning systems, ventilation equipment, and other HVAC systems used in commercial properties throughout Burnaby.", list: null },
   ]
 
   const testimonial = [
@@ -27,36 +30,6 @@ const CommercialHVAC = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "how do commercial hvac systems work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Commercial HVAC systems in buildings have interconnected systems. They provide ventilation, heating, and cooling to individual floors within the structure. Talking about commercial HVAC systems, usually include heat pumps that extract heat from the air for heating purposes. They work as follows:\n\nUsually, water source heat pumps contain pipes. It carries water throughout the building.\nThe rooftop units are on the roof of the building.\nThen tend to put the conditioned air into the building.\nSome chillers generate cool water. It is distributed by pipes to air-cooling coils.\nHeaters within commercial HVAC systems are of two types: Radiant heaters and furnaces."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "how often should commercial hvac filters be changed?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It should be changed every quarter, or within three months."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "how long do commercial hvac systems last?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The average life expectancy of commercial HVAC systems is 15 to 20 years."
-        }
-      }
-    ]
-  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -113,12 +86,7 @@ const CommercialHVAC = () => {
         <link rel="canonical" href="https://airlinxheating.ca/commercial-hvac/" />
       </Head>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema)
-        }}
-      />
+      <JsonLd faqArr={arrayFaq} />
 
       <script
         type="application/ld+json"

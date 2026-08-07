@@ -5,6 +5,7 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
+import JsonLd from '../components/JsonLd'
 import Banner from '../public/furnace-inspection/banner.webp'
 import HomeFurnace from '../public/furnace-inspection/Ductwork-and-Ventilation.webp'
 import Furnace from '../public/furnace-inspection/furnace.webp'
@@ -18,15 +19,11 @@ const FurnaceInspection = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
-    { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
-    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them.", list: null },
-    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems.", list: null },
-    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun.", list: null },
-    { id: "faq-6", que: "How does ductless heating and cooling work?", ans: "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home.", list: null },
-    { id: "faq-7", que: "How Much Does HVAC Installation Cost?", ans: "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500.", list: null },
-    { id: "faq-8", que: "How Long Does HVAC Installation take?", ans: "Usually, it takes three to five days for installation.", list: null },
-    { id: "faq-9", que: "	What Kinds of Warranties Come with My New HVAC Installation?", ans: "It has the following warranties:", list: ["HVAC Manufacturer Warranty.", "HVAC Extended Warranty.", "Homeowners Insurance.", "Home Warranty"] },
+    { id: "faq-1", que: "Why should I schedule a furnace inspection every year?", ans: "An annual furnace inspection helps identify potential issues early, improves efficiency, and ensures your system is operating safely before the colder months. It also supports regular furnace maintenance service.", list: null },
+    { id: "faq-2", que: "What does a furnace inspection include?", ans: "Our inspection includes checking key components, testing system performance, inspecting safety controls, and recommending any necessary furnace repair and service to keep your heating system running reliably.", list: null },
+    { id: "faq-3", que: "Can a furnace inspection help prevent emergency repairs?", ans: "Yes, routine inspections can detect worn or damaged parts before they fail, reducing the need for emergency furnace service and unexpected heating breakdowns.", list: null },
+    { id: "faq-4", que: "Do you inspect all types of furnaces in Burnaby?", ans: "Yes, we provide furnace service Burnaby for gas and high-efficiency furnaces from most major brands, including inspections, furnace cleaning service, and maintenance.", list: null },
+    { id: "faq-5", que: "What happens if you find a problem during the inspection?", ans: "If we discover an issue, we'll explain the recommended solution and, if needed, provide prompt furnace repair services or Burnaby emergency furnace repair services to restore your heating system safely and efficiently.", list: null },
   ]
 
   const testimonial = [
@@ -42,6 +39,7 @@ const FurnaceInspection = () => {
         <meta name="description" content="Don't let a faulty heating system ruin your winter. Trust Airlinx Heating for top-tier furnace services, detailed inspections, and efficient upgrades." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/furnace-inspection/" />
+        <JsonLd faqArr={arrayFaq} />
       </Head>
 
       <main>

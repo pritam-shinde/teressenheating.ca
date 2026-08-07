@@ -4,6 +4,7 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
+import JsonLd from '../components/JsonLd'
 import Banner from '../public/lennox-hvac/lennox.webp'
 import waterheater from '../public/tankless-water-heater/water-heater.webp'
 import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
@@ -16,11 +17,11 @@ const TanklesWaterHeater = () => {
   }, [width])
 
   const arrayFaq = [
-    // { id: "faq-1", que: "how to install service valves for tankless water heater?", ans: "", list: null },
-    { id: "faq-2", que: "how often service tankless water heater?", ans: "Tankless water heaters need to be flushed once per year.", list: null },
-    { id: "faq-3", que: "What kind of maintenance needs to be done on a tankless water heater?", ans: "", list: ["Clean or replace the water line filter. Many tankless water heater models have a water line filter that protects against hard water, scale, and sediment.", "Clean the air filter.", "Descaling and flushing the system."] },
-    { id: "faq-4", que: "What is the most common problems with tankless water heaters?", ans: "Here are six of the most common problems and maintenance concerns for tankless water heaters:", list: ["Mineral Buildup.", "System Overload.", "Cold Water Sandwich.", "Air Supply or Exhaust Blockage.", "Ignition Failure.", "Flame Failure."] },
-    { id: "faq-5", que: "Can you run out of hot water with a tankless water heater?", ans: "Although a tankless system can't run out of hot water, it can still be overwhelmed by demand.", list: null },
+    { id: "faq-1", que: "What tankless water heater services do you provide?", ans: "We offer complete tankless water heater services, including installation, repairs, maintenance, replacements, and system inspections for homes and businesses in Burnaby.", list: null },
+    { id: "faq-2", que: "Do you install new tankless water heaters?", ans: "Yes, our tankless water heater installation service includes helping you choose the right unit and ensuring it is installed safely for reliable, energy-efficient hot water.", list: null },
+    { id: "faq-3", que: "Can you repair an existing tankless water heater?", ans: "Absolutely. Our tankless water heater repairs and installations services cover common issues such as inconsistent hot water, ignition problems, leaks, and system error codes.", list: null },
+    { id: "faq-4", que: "What are the benefits of a tankless water heater?", ans: "Tankless systems provide hot water on demand, use less energy than traditional tanks, take up less space, and can deliver long-lasting performance with proper maintenance.", list: null },
+    { id: "faq-5", que: "How do I know if I should repair or replace my tankless water heater?", ans: "Our technicians will inspect your system and recommend the most cost-effective solution. If repairs are no longer practical, we can provide a professional tankless water heater installation service to restore reliable hot water.", list: null },
   ]
 
   const testimonial = [
@@ -28,53 +29,6 @@ const TanklesWaterHeater = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "how to install service valves for tankless water heater?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Install service valves on the hot and cold water lines to simplify maintenance, flushing, and descaling of your tankless water heater."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "how often service tankless water heater?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tankless water heaters need to be flushed once per year."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What kind of maintenance needs to be done on a tankless water heater?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Clean or replace the water line filter. Many tankless water heater models have a water line filter that protects against hard water, scale, and sediment.\nClean the air filter.\nDescaling and flushing the system."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the most common problems with tankless water heaters?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Here are six of the most common problems and maintenance concerns for tankless water heaters:\n\nMineral Buildup.\nSystem Overload.\nCold Water Sandwich.\nAir Supply or Exhaust Blockage.\nIgnition Failure.\nFlame Failure."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you run out of hot water with a tankless water heater?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Although a tankless system can't run out of hot water, it can still be overwhelmed by demand."
-        }
-      }
-    ]
-  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -131,12 +85,7 @@ const TanklesWaterHeater = () => {
         <link rel="canonical" href="https://airlinxheating.ca/tankless-water-heaters/" />
       </Head>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema)
-        }}
-      />
+      <JsonLd faqArr={arrayFaq} />
 
       <script
         type="application/ld+json"
