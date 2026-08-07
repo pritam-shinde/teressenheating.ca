@@ -19,11 +19,11 @@ const BoilerRepair = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "Do you offer emergency boiler repair in Burnaby?", ans: "Yes, we provide emergency boiler repair and after hours boiler repair services to quickly resolve unexpected heating failures and restore comfort to your home or business.", list: null },
-    { id: "faq-2", que: "What are common signs my boiler needs repair?", ans: "Common indicators include strange noises, leaks, inconsistent heating, low pressure, or a pilot light going out. Our team provides diagnostic and boiler repair services to fix these issues promptly.", list: null },
-    { id: "faq-3", que: "Can you repair all major boiler brands?", ans: "Yes, our technicians are trained to perform boiler repair Burnaby on most major residential and commercial boiler models.", list: null },
-    { id: "faq-4", que: "What should I do if my boiler stops working suddenly?", ans: "If your boiler fails unexpectedly, contact our emergency boiler service immediately. We offer quick response times for emergency boiler repair Burnaby to restore your heating safely.", list: null },
-    { id: "faq-5", que: "Why choose Airlinx for boiler repair in Burnaby?", ans: "We offer dependable residential boiler repair and commercial boiler repair services backed by experienced technicians, clear communication, and reliable solutions.", list: null },
+    { id: "faq-1", que: "What boiler problems can you repair?", ans: "Our boiler repair services cover issues such as no heat, leaking boilers, unusual noises, low pressure, pilot light problems, and poor heating performance.", list: null },
+    { id: "faq-2", que: "Do you provide boiler repair in Burnaby?", ans: "Yes, we offer fast and dependable boiler repair in Burnaby for residential and commercial properties, helping restore your heating system as quickly as possible.", list: null },
+    { id: "faq-3", que: "When should I call for boiler repair service?", ans: "If your boiler is making unusual sounds, failing to heat properly, leaking, or showing error codes, it's best to schedule a boiler repair service before the problem worsens.", list: null },
+    { id: "faq-4", que: "Do you offer boiler servicing as well as repairs?", ans: "Yes, our boiler service and repair includes inspections, troubleshooting, maintenance, and repairs to keep your heating system operating safely and efficiently.", list: null },
+    { id: "faq-5", que: "Why choose your team for boiler repair in Burnaby?", ans: "Our experienced technicians provide reliable boiler repair Burnaby services with accurate diagnostics, quality repairs, and prompt response to help minimize heating disruptions.", list: null },
   ]
 
   const testimonial = [

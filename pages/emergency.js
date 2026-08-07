@@ -16,11 +16,11 @@ const Emergency = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "Do you provide emergency heating and cooling services in Burnaby?", ans: "Yes, we offer emergency heating and cooling service across Burnaby to address sudden breakdowns, unexpected system failures, and urgent repair needs.", list: null },
-    { id: "faq-2", que: "What counts as an HVAC emergency?", ans: "An HVAC emergency includes a complete loss of heat during cold weather, AC failure during extreme heat, gas odors, burning smells, or major water leaks from your heating or cooling system.", list: null },
-    { id: "faq-3", que: "Are your emergency HVAC services available after hours?", ans: "Yes, our after hours air conditioning service and emergency heating repairs are available when you need fast, dependable service outside regular business hours.", list: null },
-    { id: "faq-4", que: "How quickly can a technician respond to an emergency service call?", ans: "We prioritize emergency calls and work to dispatch an experienced technician as quickly as possible to restore safety and comfort to your home or business.", list: null },
-    { id: "faq-5", que: "What HVAC systems do you repair during emergency service calls?", ans: "We provide emergency repairs for furnaces, heat pumps, air conditioners, boilers, and other heating and cooling systems throughout Burnaby.", list: null },
+    { id: "faq-1", que: "What types of HVAC emergencies do you handle?", ans: "Our emergency HVAC services cover furnace failures, air conditioner breakdowns, heat pump issues, thermostat malfunctions, and other urgent heating and cooling problems.", list: null },
+    { id: "faq-2", que: "Do you offer 24-hour emergency HVAC service in Burnaby?", ans: "Yes, we provide HVAC 24 hour emergency service to help homeowners and businesses restore heating or cooling as quickly as possible when unexpected issues occur.", list: null },
+    { id: "faq-3", que: "When should I call for emergency heating and cooling service?", ans: "You should contact us for emergency heating and cooling service if your system stops working completely, makes unusual noises, leaks, or poses a potential safety concern.", list: null },
+    { id: "faq-4", que: "Can you repair both heating and cooling systems during an emergency?", ans: "Absolutely. Our heating and cooling emergency repair service covers furnaces, heat pumps, boilers, and air conditioning systems to restore comfort efficiently.", list: null },
+    { id: "faq-5", que: "Why choose Airlinx for HVAC emergency services?", ans: "Our experienced technicians respond promptly to HVAC emergency services, providing reliable heating and cooling emergency services for residential and commercial properties throughout Burnaby.", list: null },
   ]
 
   const testimonial = [
