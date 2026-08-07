@@ -5,6 +5,7 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
+import JsonLd from '../components/JsonLd'
 import Air from '../public/cooling/ac.webp'
 import airConditioner from '../public/cooling/cooling-service.webp'
 import Cooling from '../public/cooling/cooling.webp'
@@ -19,11 +20,11 @@ const AirConditioningService = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "how often does air conditioning need to be serviced?", ans: "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year.", list: null },
-    { id: "faq-2", que: "how much does air conditioning service cost?", ans: "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system.", list: null },
-    { id: "faq-3", que: "what does air conditioning service include?", ans: "", list: ["Air filter and fin cleaning.", "AC condenser and evaporator coil cleaning.", "AC condenser and evaporator fan cleaning.", "Drain cleaning and leakage check.", "Coolant level check in air conditioner.", " Overall inspection of the AC unit"] },
-    { id: "faq-4", que: "what are the benefits of servicing air conditioning system?", ans: "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold.", list: null }
-
+    { id: "faq-1", que: "Do you provide air conditioning services in Burnaby?", ans: "Yes, we offer reliable air conditioning service Burnaby for homes and businesses, including installations, repairs, maintenance, and system replacements.", list: null },
+    { id: "faq-2", que: "Do you offer emergency air conditioning repair?", ans: "Yes, our emergency air conditioning service and after hours air conditioning service are available to help restore cooling when your AC stops working unexpectedly.", list: null },
+    { id: "faq-3", que: "How often should I schedule AC maintenance?", ans: "We recommend booking AC maintenance services at least once a year to improve efficiency, reduce repair costs, and extend the life of your cooling system.", list: null },
+    { id: "faq-4", que: "Can you install a new air conditioning system?", ans: "Absolutely. Our air conditioning installation service includes helping you choose the right unit and ensuring a professional installation for long-term performance and energy efficiency.", list: null },
+    { id: "faq-5", que: "Do you provide residential and commercial air conditioning services?", ans: "Yes, we offer both residential air conditioning service and commercial air conditioning service, including air conditioning repair service and air condition repair service Burnaby for a wide range of cooling systems.", list: null },
   ]
 
   const testimonial = [
@@ -31,45 +32,6 @@ const AirConditioningService = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "how often does air conditioning need to be serviced?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "how much does air conditioning service cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Regular air conditioner maintenance servicing costs around $75 to $200 for simple tune-ups. When we talk about extended service contracts, it is between $150 to $500 but includes the entire HVAC system."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "what does air conditioning service include?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Air filter and fin cleaning.\nAC condenser and evaporator coil cleaning.\nAC condenser and evaporator fan cleaning.\nDrain cleaning and leakage check.\nCoolant level check in air conditioner.\nOverall inspection of the AC unit"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "what are the benefits of servicing air conditioning system?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The benefits of AC repair include reduced humidity inside your house. While the air is moving through the cooling and filtration system, the excess water is also being drawn out of it. Humidity inside a home is a problem because it can cause issues like mold."
-        }
-      }
-    ]
-  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -126,12 +88,7 @@ const AirConditioningService = () => {
         <link rel="canonical" href="https://airlinxheating.ca/air-conditioning-service/" />
       </Head>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema)
-        }}
-      />
+      <JsonLd faqArr={arrayFaq} />
 
       <script
         type="application/ld+json"

@@ -5,6 +5,7 @@ import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components';
+import JsonLd from '../components/JsonLd';
 import Heating from '../public/heating-service/heating-bg.webp';
 import HeaterMachine from '../public/heating-service/heating.webp';
 import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections';
@@ -17,9 +18,11 @@ const HeatingService = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "How often should a heating system be serviced? ", ans: "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained, each year.", list: null },
-    { id: "faq-2", que: "How do I maintain my heating system?", ans: "", list: ["Try to replace filters regularly.", "Inspectecting the Air Ducts and the Openings.", " Maintaining Fan, Bearings, and Belts.", "Maintaining Other HVAC Accessories.", " By following our Spring/Summer Maintenance Tips or Schedule"] },
-    { id: "faq-3", que: "How much does it cost to install heating?", ans: "The overall cost of heating installation of a new heating system depends on many factors. At a minimum, installing a new heating system can cost around $2,000 which is very basic. The more work that’s involved, like additional ductwork or repairs, the more the price can increase.", list: null },
+    { id: "faq-1", que: "What heating services do you offer in Burnaby?", ans: "Our Burnaby heating services include furnace repairs, heat pump servicing, heating system installations, inspections, and preventative maintenance for residential and commercial properties.", list: null },
+    { id: "faq-2", que: "How often should I schedule heating system maintenance?", ans: "We recommend booking heating system maintenance services at least once a year to improve efficiency, reduce unexpected breakdowns, and extend the life of your heating equipment.", list: null },
+    { id: "faq-3", que: "Do you provide heat pump service in Burnaby?", ans: "Yes, we offer professional heat pump service Burnaby, including inspections, repairs, seasonal tune-ups, and complete heat pump service and maintenance to keep your system running efficiently.", list: null },
+    { id: "faq-4", que: "Why should I hire a heating contractor in Burnaby?", ans: "A qualified heating contractor Burnaby homeowners trust can ensure your heating system is installed, repaired, and maintained safely while maximizing performance and energy efficiency.", list: null },
+    { id: "faq-5", que: "Do you offer heating maintenance services for all types of systems?", ans: "Yes, our heating maintenance services cover furnaces, heat pumps, boilers, and other heating systems. We tailor every heating service Burnaby appointment to your equipment and heating needs.", list: null },
   ]
 
   const testimonial = [
@@ -27,39 +30,6 @@ const HeatingService = () => {
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
     { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
   ]
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "How often should a heating system be serviced?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "You should service your HVAC system once a year. If you have standard central AC, then these units should be maintained each year."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "How do I maintain my heating system?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text:
-            "Try to replace filters regularly. Inspecting the Air Ducts and the Openings. Maintaining Fan, Bearings, and Belts. Maintaining Other HVAC Accessories. By following our Spring/Summer Maintenance Tips or Schedule."
-        }
-      },
-      {
-        "@type": "Question",
-        name: "How much does it cost to install heating?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text:
-            "The overall cost of heating installation of a new heating system depends on many factors. At a minimum, installing a new heating system can cost around $2,000. Additional ductwork or repairs can increase the price."
-        }
-      }
-    ]
-  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -152,12 +122,7 @@ const HeatingService = () => {
         }
       </script> */}
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema)
-        }}
-      />
+      <JsonLd faqArr={arrayFaq} />
 
       <script
         type="application/ld+json"

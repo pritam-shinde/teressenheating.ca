@@ -4,15 +4,15 @@ import { About, Appointment, BrandSlider, Facilities, FaqAndForm, Hero, Service,
 
 const index = () => {
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
-    { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
-    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them.", list: null },
-    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems.", list: null },
-    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun.", list: null },
-    { id: "faq-6", que: "How does ductless heating and cooling work?", ans: "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home.", list: null },
-    { id: "faq-7", que: "How Much Does HVAC Installation Cost?", ans: "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500.", list: null },
-    { id: "faq-8", que: "How Long Does HVAC Installation take?", ans: "Usually, it takes three to five days for installation.", list: null },
-    { id: "faq-9", que: "	What Kinds of Warranties Come with My New HVAC Installation?", ans: "It has the following warranties:", list: ["HVAC Manufacturer Warranty.", "HVAC Extended Warranty.", "Homeowners Insurance.", "Home Warranty"] },
+    { id: "faq-1", que: "What HVAC services do you provide in Burnaby?", ans: "We offer complete HVAC services Burnaby, including heating, cooling, furnace repairs, heat pump installation, air conditioning, and regular maintenance for homes and businesses.", list: null },
+    { id: "faq-2", que: "Are you a licensed HVAC contractor in Burnaby?", ans: "Yes, we are a trusted HVAC contractor in Burnaby, providing professional installation, repair, and maintenance services backed by experienced technicians.", list: null },
+    { id: "faq-3", que: "Do you offer emergency heating and cooling services?", ans: "Yes, our emergency heating and cooling service is available to help restore your comfort quickly when your heating or cooling system breaks down.", list: null },
+    { id: "faq-4", que: "Can you install a new air conditioning system?", ans: "Absolutely. As an experienced air conditioning contractor, we install energy-efficient AC systems that keep your home comfortable throughout the summer.", list: null },
+    { id: "faq-5", que: "Why choose your HVAC company in Burnaby?", ans: "As a reliable HVAC company Burnaby residents trust, we focus on quality workmanship, honest pricing, and dependable customer service on every project.", list: null },
+    { id: "faq-6", que: "Do you provide HVAC maintenance services?", ans: "Yes, our HVAC service includes routine inspections, cleaning, and tune-ups to improve efficiency, reduce breakdowns, and extend your system's lifespan.", list: null },
+    { id: "faq-7", que: "What types of heating systems do you service?", ans: "Our HVAC services cover furnaces, heat pumps, boilers, and other residential heating systems from most major manufacturers.", list: null },
+    { id: "faq-8", que: "How quickly can an HVAC technician visit my Burnaby property?", ans: "We strive to provide prompt appointments for all HVAC services Burnaby, with same-day availability offered whenever possible for urgent issues.", list: null },
+    { id: "faq-9", que: "Do you serve areas outside Burnaby?", ans: "Yes, while we're a leading HVAC contractor Burnaby, we also provide professional HVAC services to nearby communities across the Metro Vancouver area.", list: null },
   ]
 
   const testimonial = [
@@ -30,81 +30,7 @@ const index = () => {
         <link rel="canonical" href="https://airlinxheating.ca/" />
       </Head>
 
-      <JsonLd json={`{
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
-              "@type": "Question",
-              "name": "How do you maintain a heating and cooling system?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
-          Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
-          Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-              }
-            },{
-              "@type": "Question",
-              "name": "can you combine heating and cooling system?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-              }
-            },{
-              "@type": "Question",
-              "name": "Should I leave my heat pump on all the time?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-              }
-            },{
-              "@type": "Question",
-              "name": "can you use the same ducts for heating and cooling?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-              }
-            },{
-              "@type": "Question",
-              "name": "How does geothermal heating and cooling works",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-              }
-            },{
-              "@type": "Question",
-              "name": "How does ductless heating and cooling works?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-              }
-            },{
-              "@type": "Question",
-              "name": "How much Does HVAC installation Cost?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-              }
-            },{
-              "@type": "Question",
-              "name": "How long Does HVAC Installation take?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Usually, it takes three to five days for installation."
-              }
-            },{
-              "@type": "Question",
-              "name": "What kind of warranties come with my New HVAC installation?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "It has the following warranties:
-          
-          HVAC Manufacturer Warranty.
-          HVAC Extended Warranty.
-          Homeowners Insurance.
-          Home Warranty"
-              }
-            }]
-          }`} />
+      <JsonLd faqArr={arrayFaq} />
 
       <main>
         <Hero />

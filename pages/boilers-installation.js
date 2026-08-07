@@ -5,6 +5,7 @@ import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
+import JsonLd from '../components/JsonLd'
 import BoilerInstallationBanner from '../public/boilerInstallation/boilerInstallation.webp'
 import Installation from '../public/boilerInstallation/image.webp'
 import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
@@ -17,18 +18,11 @@ const BoilerInstallation = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "how often should you service your boiler?", ans: "Your first boiler service must be conducted 12 months after installation to meet the terms of your warranty.", list: null },
-    { id: "faq-2", que: "what does a boiler service include?", ans: "A boiler service includes the following services:", list: ["A visual check of the boiler and flame", "Internal and external checks of the flue", "The operating pressure", "The heat input", " All safety devices", "The water content", "The electrical wiring", " Casing seals"] },
-    { id: "faq-3", que: "What is a standard boiler service?", ans: "A boiler service is a set of checks and tests which is performed on the boiler. This ensures your boiler is working efficiently and effectively. A good boiler service means that a Gas Safe engineer checks the correct gas flow and pressure.", list: null },
-    { id: "faq-4", que: "How long should a boiler service take?", ans: "It takes around an hour to complete.", list: null },
-    { id: "faq-5", que: "What maintenance is required for a boiler?", ans: "", list: ["Rigorously inspect the heating system and rectify any problems.", "Clean and inspect the heat exchanger of the boiler.", "Ensure all boiler connections and wiring is intact.", "Make sure water pH levels are within the proper range.", "Inspect the condensate system and clean and flush the system as necessary.", "Examine and clean flame sensors, ignitor, and burner assembly.", "Scrutinize the venting system for deterioration, corrosion, or blockage to ensure all pipe and joint connections are secure.", "Survey the vent terminations and air inlet to make sure they're unobstructed and clear.", "Check control settings as well as test safety controls and operating controls."] },
-    { id: "faq-6", que: "Do I need to maintain my boiler?", ans: "Routine maintenance is critical to ensure a boiler system remains safe, reliable, and efficient.", list: ["Odd smells. Get in touch with a registered Gas Safe engineer if you ever detect any unusual odors emitting from your boiler.", "Frequent breakdowns. Granted, a new boiler isn't cheap.", "Higher bills.", "Noisy system.", "Yellow flame.", "Water leaks.", "Parts problems.", "Low performance."] },
-    { id: "faq-7", que: "How do you know when to replace your boiler?", ans: "The cost to install a boiler in the Vancouver area runs around $13,999, but you could pay anywhere from $9,499 to over $19,999.", list: null },
-    { id: "faq-8", que: "How much does it cost to replace a boiler in Canada?", ans: "", list: ["Removal of the old boiler. The removal of the current boiler is a typical place installers will start. Flush/Clean.", "Upgrades/changes to pipework.", "Fitting of the boiler.", "Accessories.", "Commissioning of the system.", " Handover.", "Registration."] },
-    { id: "faq-9", que: "What do I need to know when installing a new boiler?", ans: "The engineers do a simple chemical flush over several hours for more intensive cleaning. Then, they will adjust the pipework which helps in reconfiguring it to minimize the heat loss. Then the engineer keeps on installing the boiler at the location you want.", list: null },
-    { id: "faq-10", que: "What happens when you get a new boiler installed?", ans: "The engineers do a simple chemical flush over several hours for more intensive cleaning. Then, they will adjust the pipework which helps in reconfiguring it to minimize the heat loss. Then the engineer keeps on installing the boiler at the location you want.", list: null },
-    { id: "faq-11", que: "What does boiler installation include?", ans: "Boiler installation means the installation of a boiler. It includes connecting pipes, appurtenances, valves, fittings, firing equipment, flanges, controls, and auxiliaries. The term includes the field assembly of boilers.", list: null }
-
+    { id: "faq-1", que: "Do you provide boiler installation services in Burnaby?", ans: "Yes, we offer professional boiler installation services for residential and commercial properties. Our team ensures your new boiler is installed safely, efficiently, and in compliance with local codes.", list: null },
+    { id: "faq-2", que: "How do I know if I need a new boiler instead of a repair?", ans: "If your boiler is frequently breaking down, has rising energy costs, or is nearing the end of its lifespan, we can assess whether boiler repair installation services or a full replacement is the most cost-effective option.", list: null },
+    { id: "faq-3", que: "What types of boilers do you install?", ans: "We provide boiler installation in Burnaby for a range of high-efficiency gas boilers designed to meet the heating needs of homes and commercial properties.", list: null },
+    { id: "faq-4", que: "How long does a boiler installation take?", ans: "Most boiler installation Burnaby projects are completed within a day, although larger or more complex installations may require additional time.", list: null },
+    { id: "faq-5", que: "Why choose Airlinx for boiler installation in Burnaby?", ans: "Our experienced technicians deliver reliable boiler installation services, helping you choose the right system and ensuring quality workmanship for long-lasting heating performance.", list: null },
   ]
 
   const testimonial = [
@@ -44,6 +38,7 @@ const BoilerInstallation = () => {
         <meta name="description" content="Upgrade your home heating system today. Airlinx Heating provides expert boiler installation in Burnaby services with high-efficiency equipment choices." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-installation/" />
+        <JsonLd faqArr={arrayFaq} />
       </Head>
 
       <CommonBanner bg={BoilerInstallationBanner} title="Airlinx boiler installation services" color="#fff" variant="h1" />
