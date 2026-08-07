@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/legacy/image'
 import Link from 'next/link'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
+import JsonLd from '../components/JsonLd'
 import Banner from '../public/areas/area2.webp'
 import WestVancouverLoc from '../public/west-vancouver/west-vancouver.webp'
 import { CertificationSlider, Different, FaqAndForm, Locations } from '../sections/sections'
@@ -11,15 +12,11 @@ const WestVancouver = () => {
   const makeDiff = ["We assure 24*7*365 days of service.", "We have years of experience", "We have a certified team of experts.", "We service all major brands.", "We assure you of the best competitor price match."]
 
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
-    { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
-    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them.", list: null },
-    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems.", list: null },
-    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun.", list: null },
-    { id: "faq-6", que: "How does ductless heating and cooling work?", ans: "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home.", list: null },
-    { id: "faq-7", que: "How Much Does HVAC Installation Cost?", ans: "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500.", list: null },
-    { id: "faq-8", que: "How Long Does HVAC Installation take?", ans: "Usually, it takes three to five days for installation.", list: null },
-    { id: "faq-9", que: "	What Kinds of Warranties Come with My New HVAC Installation?", ans: "It has the following warranties:", list: ["HVAC Manufacturer Warranty.", "HVAC Extended Warranty.", "Homeowners Insurance.", "Home Warranty"] },
+    { id: "faq-1", que: "What HVAC services do you provide in West Vancouver?", ans: "We offer complete heating and cooling services West Vancouver, including furnace repairs, air conditioning, heat pumps, water heaters, system installations, and preventative maintenance.", list: null },
+    { id: "faq-2", que: "Do you provide commercial HVAC services in West Vancouver?", ans: "Yes, we specialize in commercial HVAC West Vancouver, offering installation, repairs, inspections, and commercial HVAC maintenance West Vancouver for offices, retail spaces, and other commercial properties.", list: null },
+    { id: "faq-3", que: "Can you install a new water heater in West Vancouver?", ans: "Absolutely. We provide professional water heater installation in West Vancouver, helping homeowners and businesses choose and install energy-efficient water heating systems.", list: null },
+    { id: "faq-4", que: "Do you offer HVAC maintenance for homes in West Vancouver?", ans: "Yes, our West Vancouver HVAC maintenance services include seasonal inspections, cleaning, and tune-ups to keep your heating and cooling systems running efficiently throughout the year.", list: null },
+    { id: "faq-5", que: "Why choose Airlinx for HVAC services in West Vancouver?", ans: "Our experienced team delivers reliable HVAC West Vancouver services with quality workmanship, prompt response times, and customized heating and cooling solutions for residential and commercial customers.", list: null },
   ]
 
   const testimonial = [
@@ -85,6 +82,7 @@ const WestVancouver = () => {
         <meta name="description" content="Need premium comfort solutions? Airlinx offers complete heating and cooling services West Vancouver homes trust for reliable repairs and installations." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/west-vancouver/" />
+        <JsonLd faqArr={arrayFaq} />
       </Head>
       <script
         type="application/ld+json"
