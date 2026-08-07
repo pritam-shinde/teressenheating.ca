@@ -118,17 +118,7 @@ const FaqAndForm = ({
                                     >
                                       <div className='accordion-body'>
                                         {item.ans !== null ? (
-                                          <Typography className='para'>
-                                            {item.ans.includes('boiler service') ? (
-                                              <>
-                                                {item.ans.split('boiler service')[0]}
-                                                <Link href='https://airlinxheating.ca/blog/the-importance-and-benefits-of-boiler-repair-service-and-maintenance/'>boiler service</Link>
-                                                {item.ans.split('boiler service')[1]}
-                                              </>
-                                            ) : (
-                                              item.ans
-                                            )}
-                                          </Typography>
+                                          <Typography className='para'>{item.ans}</Typography>
                                         ) : null}
                                         {item.list !== null ? (
                                           <List className='p-0 m-0'>
