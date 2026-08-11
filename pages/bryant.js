@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
+import JsonLd from '../components/JsonLd'
 import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-103.webp'
 import BBB from '../public/certification/cer1.webp'
@@ -30,15 +31,11 @@ const Brynt = () => {
   }, [])
 
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
-    { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
-    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them.", list: null },
-    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems.", list: null },
-    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun.", list: null },
-    { id: "faq-6", que: "How does ductless heating and cooling work?", ans: "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home.", list: null },
-    { id: "faq-7", que: "How Much Does HVAC Installation Cost?", ans: "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500.", list: null },
-    { id: "faq-8", que: "How Long Does HVAC Installation take?", ans: "Usually, it takes three to five days for installation.", list: null },
-    { id: "faq-9", que: "	What Kinds of Warranties Come with My New HVAC Installation?", ans: "It has the following warranties:", list: ["HVAC Manufacturer Warranty.", "HVAC Extended Warranty.", "Homeowners Insurance.", "Home Warranty"] },
+    { id: "faq-1", que: "Do you install Bryant heating and cooling systems in Burnaby?", ans: "Yes, we provide professional installation of Bryant furnaces, heat pumps, and air conditioning systems for residential and commercial properties throughout Burnaby.", list: null },
+    { id: "faq-2", que: "Can you repair and service Bryant HVAC equipment?", ans: "Absolutely. Our technicians are experienced in diagnosing, repairing, and maintaining Bryant heating and cooling systems to keep them operating efficiently year-round.", list: null },
+    { id: "faq-3", que: "Why should I choose a Bryant HVAC system?", ans: "Bryant systems are known for their energy efficiency, dependable performance, and advanced comfort features, making them a great choice for Burnaby's climate.", list: null },
+    { id: "faq-4", que: "How often should a Bryant HVAC system be serviced?", ans: "We recommend scheduling professional maintenance once a year to improve efficiency, reduce the risk of unexpected breakdowns, and extend the lifespan of your Bryant equipment.", list: null },
+    { id: "faq-5", que: "Why choose Airlinx for Bryant HVAC services in Burnaby?", ans: "As a trusted local HVAC company, we provide expert Bryant installations, repairs, and maintenance with experienced technicians, quality workmanship, and reliable customer service across Burnaby and nearby communities.", list: null },
   ]
 
   const testimonial = [
@@ -54,75 +51,6 @@ const Brynt = () => {
     { id: 'branddetail-3', text: 'Bryant furnaces might stop due to various reasons. An efficient furnace helps you to save a lot of money. So, if you get in touch with a specialist to troubleshoot any problems with your Bryant furnace issues, then that is the best thing you will be doing.' }
   ];
 
-  const bryantFaqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "How do you maintain a heating and cooling system?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season. Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating. Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-      }
-    }, {
-      "@type": "Question",
-      "name": "can you combine heating and cooling system?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Should I leave my heat pump on all the time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-      }
-    }, {
-      "@type": "Question",
-      "name": "can you use the same ducts for heating and cooling?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How does geothermal heating and cooling works",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How does ductless heating and cooling works?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How much Does HVAC installation Cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-      }
-    }, {
-      "@type": "Question",
-      "name": "How long Does HVAC Installation take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Usually, it takes three to five days for installation."
-      }
-    }, {
-      "@type": "Question",
-      "name": "What kind of warranties come with my New HVAC installation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It has the following warranties: HVAC Manufacturer Warranty. HVAC Extended Warranty. Homeowners Insurance. Home Warranty"
-      }
-    }]
-  }
-
   return (
     <>
       <Head>
@@ -130,12 +58,8 @@ const Brynt = () => {
         <meta name="description" content="Bryant Furnace Services at Airlinx Heating by Professional Technicians provides you with quality heating services. Contact today to Book an Appointment." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/bryant/" />
+        <JsonLd faqArr={arrayFaq} />
       </Head>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(bryantFaqSchema) }}
-      />
 
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Bryant" color="#fff" variant="h1" />
