@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
+import JsonLd from '../components/JsonLd'
 import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
 import BrandLogo from '../public/brand-page/Layer-114.webp'
 import BBB from '../public/certification/cer1.webp'
@@ -21,15 +22,11 @@ const Rinnai = () => {
   }, [width])
 
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
-    { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
-    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them.", list: null },
-    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems.", list: null },
-    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun.", list: null },
-    { id: "faq-6", que: "How does ductless heating and cooling work?", ans: "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home.", list: null },
-    { id: "faq-7", que: "How Much Does HVAC Installation Cost?", ans: "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500.", list: null },
-    { id: "faq-8", que: "How Long Does HVAC Installation take?", ans: "Usually, it takes three to five days for installation.", list: null },
-    { id: "faq-9", que: "	What Kinds of Warranties Come with My New HVAC Installation?", ans: "It has the following warranties:", list: ["HVAC Manufacturer Warranty.", "HVAC Extended Warranty.", "Homeowners Insurance.", "Home Warranty"] },
+    { id: "faq-1", que: "Do you install Rinnai tankless water heaters and heating systems in Burnaby?", ans: "Yes, we install Rinnai tankless water heaters, boilers, and direct-vent wall furnaces for homes and businesses throughout Burnaby.", list: null },
+    { id: "faq-2", que: "Why is flushing important for Rinnai tankless water heaters?", ans: "Flushing removes scale and mineral deposits that build up inside the system over time. Regular descaling ensures proper heat transfer, prevents error codes, and extends unit life.", list: null },
+    { id: "faq-3", que: "Can you repair Rinnai heating equipment?", ans: "Yes, our technicians diagnose and repair Rinnai tankless systems, boilers, and heating units to ensure your hot water and space heating remain reliable.", list: null },
+    { id: "faq-4", que: "Is a Rinnai tankless water heater energy-efficient?", ans: "Rinnai tankless water heaters heat water on demand, eliminating the standby energy losses of traditional tank heaters and lowering gas usage.", list: null },
+    { id: "faq-5", que: "Why choose Airlinx for Rinnai services in Burnaby?", ans: "Our trained technicians deliver expert Rinnai installation, maintenance, and repair services with clear communication, upfront pricing, and prompt local support.", list: null },
   ]
 
   const testimonial = [
@@ -46,86 +43,8 @@ const Rinnai = () => {
         <meta name="description" content="Airlinx Heating is a leading provider of Rinnai heating and furnace system services. We offer high-quality, affordable products and services in Canada." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/rinnai/" />
+        <JsonLd faqArr={arrayFaq} />
       </Head>
-      <script type="application/ld+json">
-        {
-          `{
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "How do you maintain a heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.
-        Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.
-        Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you combine heating and cooling system?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup."
-            }
-          },{
-            "@type": "Question",
-            "name": "Should I leave my heat pump on all the time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Heat pumps are an effective way to use electricity to heat your home during the winter. So, leaving them running day and night is not an economically feasible option. You should always switch off your heat pumps when you do not need them."
-            }
-          },{
-            "@type": "Question",
-            "name": "can you use the same ducts for heating and cooling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, you can always use an add-on refrigerated cooling system as an add-on component to your ducted gas heating system. This allows you to run refrigerated air conditioning with the help of the same ducting and outlet systems."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does geothermal heating and cooling works",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Geothermal heating works by moving temperature-conducting fluid through an underground loop of pipes beneath. This allows the fluid to collect the thermal energy which is deposited in the earth from the sun."
-            }
-          },{
-            "@type": "Question",
-            "name": "How does ductless heating and cooling works?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It works by using heat exchanger coils to move warm air from one location to another. During winter, the heat pump draws warm air from outside your home to increase temperatures inside. During the summer, the heat pump reverses the process, passing out warm air from your home."
-            }
-          },{
-            "@type": "Question",
-            "name": "How much Does HVAC installation Cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The cost to replace an HVAC system varies from $5,000 to $10,000, which comes to around $25 to $60 per square foot of coverage, depending on the brand and size. For a new installation, you might have to pay $1,500 to $12,500."
-            }
-          },{
-            "@type": "Question",
-            "name": "How long Does HVAC Installation take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Usually, it takes three to five days for installation."
-            }
-          },{
-            "@type": "Question",
-            "name": "What kind of warranties come with my New HVAC installation?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It has the following warranties:
-        
-        HVAC Manufacturer Warranty.
-        HVAC Extended Warranty.
-        Homeowners Insurance.
-        Home Warranty"
-            }
-          }]
-        }`
-        }
-      </script>
       <main>
         <CommonBanner bg={BoilerMaintainanceBanner} title="Rinnai" color="#fff" variant="h1" />
         <section>
