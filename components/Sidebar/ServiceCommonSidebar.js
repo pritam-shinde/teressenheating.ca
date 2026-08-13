@@ -34,7 +34,7 @@ const ServiceCommonSidebar = () => {
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/boilers/"><a className='text--black'>Boiler</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/boilers-service/"><a className='text--black'>Boiler</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
@@ -70,7 +70,7 @@ const ServiceCommonSidebar = () => {
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/furnace-inspection/"><a className='text--black'>Furnace Inspection</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/furnace/"><a className='text--black'>Furnace</a></Link></strong>} />
                                 </ListItem>
                             </List>
                         </Box>

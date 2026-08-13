@@ -24,6 +24,16 @@ module.exports = {
         destination: 'https://airlinxheating.ca/:path*',
         permanent: true,
       },
+      {
+        source: '/furnace-inspection/',
+        destination: '/furnace/',
+        permanent: true,
+      },
+      {
+        source: '/boilers/',
+        destination: '/boilers-service/',
+        permanent: true,
+      },
     ];
   },
   reactStrictMode: true,

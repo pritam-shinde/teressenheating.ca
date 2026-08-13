@@ -118,7 +118,7 @@ const Footer = () => {
                                                                 passHref
                                                                 prefetch={false}
                                                                 legacyBehavior
-                                                                href="/boilers/"
+                                                                href="/boilers-service/"
                                                             >
                                                                 <a className={`${Styles.quickLink} text-white`}>
                                                                     Boiler
