@@ -17,7 +17,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         { id: "services-menu-2", link: "/air-conditioning-service/", text: "COOLING", submenu: null },
                         { id: "services-menu-3", link: "/commercial-hvac/", text: "COMMERCIAL HVAC", submenu: null },
                         {
-                            id: "services-menu-4", link: "/boilers/", text: "BOILER", submenu: [
+                            id: "services-menu-4", link: "/boilers-service/", text: "BOILER", submenu: [
                                 { id: "services-menu-4.1", link: "/boilers-maintenance/", text: "BOILERS MAINTENANCE" },
                                 { id: "services-menu-4.2", link: "/boilers-installation/", text: "BOILERS INSTALLATION" },
                                 { id: "services-menu-4.3", link: "/boilers-repair/", text: "BOILERS REPAIR" },
@@ -29,7 +29,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         { id: "services-menu-7", link: "/emergency/", text: "EMERGENCY", submenu: null },
                         { id: "services-menu-8", link: "/lennox-hvac/", text: "LENNOX HVAC", submenu: null },
                         { id: "services-menu-9", link: "/financing-option/", text: "FINANCING OPTION", submenu: null },
-                        { id: "services-menu-10", link: "/furnace-inspection/", text: "FURNACE INSPECTION", submenu: null }
+                        { id: "services-menu-10", link: "/furnace/", text: "FURNACE", submenu: null }
                     ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
                         <Link legacyBehavior={true} href={item.link}>
                             <a className='nav-link text-dark'>{item.text}</a>
