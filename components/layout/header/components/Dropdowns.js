@@ -21,7 +21,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                                 { id: "services-menu-4.1", link: "/boilers-maintenance/", text: "BOILERS MAINTENANCE" },
                                 { id: "services-menu-4.2", link: "/boilers-installation/", text: "BOILERS INSTALLATION" },
                                 { id: "services-menu-4.3", link: "/boilers-repair/", text: "BOILERS REPAIR" },
-                                { id: "services-menu-4.4", link: "/boilers-service/", text: "BOILERS SERVICE" }
+                                // { id: "services-menu-4.4", link: "/boilers-service/", text: "BOILERS SERVICE" }
                             ]
                         },
                         { id: "services-menu-5", link: "/tankless-water-heaters/", text: "TANKLESS WATER HEATERS", submenu: null },
@@ -107,7 +107,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         { id: "brand-menu-26", link: "/concord-air/", text: "CONCORD AIR" },
                         { id: "brand-menu-27", link: "/frigidaire/", text: "FRIGIDAIRE" },
                         { id: "brand-menu-28", link: "/kenmore/", text: "KENMORE" }
-                        ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
+                    ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
                         <Link legacyBehavior={true} href={item.link}>
                             <a className='nav-link text-dark'>{item.text}</a>
                         </Link> </li>) : null
