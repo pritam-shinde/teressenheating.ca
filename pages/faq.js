@@ -6,13 +6,15 @@ import { FaqAndForm } from '../sections/sections'
 
 const FAQ = () => {
   const arrayFaq = [
-    { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-2", que: "Can you combine heating and coling system?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-3", que: "Should I leave my heat pump on all the time?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-4", que: "Can you use the same ducts for heating and cooling?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-5", que: "How does geothermal heating and cooling work?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-6", que: "How Long Does HVAC Installation take?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null },
-    { id: "faq-7", que: "What Kinds of Warranties Come with My New HVAC Installation?", ans: "Three elements that make Airlinx heating Itd different from the crowd are Quality, trust, and affordability.", list: null }
+    { id: "faq-1", que: "What HVAC services do you provide in Burnaby?", ans: "We offer complete HVAC services Burnaby, including heating, cooling, furnace repairs, heat pump installation, air conditioning, and regular maintenance for homes and businesses.", list: null },
+    { id: "faq-2", que: "Are you a licensed HVAC contractor in Burnaby?", ans: "Yes, we are a trusted HVAC contractor in Burnaby, providing professional installation, repair, and maintenance services backed by experienced technicians.", list: null },
+    { id: "faq-3", que: "Do you offer emergency heating and cooling services?", ans: "Yes, our emergency heating and cooling service is available to help restore your comfort quickly when your heating or cooling system breaks down.", list: null },
+    { id: "faq-4", que: "Can you install a new air conditioning system?", ans: "Absolutely. As an experienced air conditioning contractor, we install energy-efficient AC systems that keep your home comfortable throughout the summer.", list: null },
+    { id: "faq-5", que: "Why choose your HVAC company in Burnaby?", ans: "As a reliable HVAC company Burnaby residents trust, we focus on quality workmanship, honest pricing, and dependable customer service on every project.", list: null },
+    { id: "faq-6", que: "Do you provide HVAC maintenance services?", ans: "Yes, our HVAC service includes routine inspections, cleaning, and tune-ups to improve efficiency, reduce breakdowns, and extend your system's lifespan.", list: null },
+    { id: "faq-7", que: "What types of heating systems do you service?", ans: "Our HVAC services cover furnaces, heat pumps, boilers, and other residential heating systems from most major manufacturers.", list: null },
+    { id: "faq-8", que: "How quickly can an HVAC technician visit my Burnaby property?", ans: "We strive to provide prompt appointments for all HVAC services Burnaby, with same-day availability offered whenever possible for urgent issues.", list: null },
+    { id: "faq-9", que: "Do you serve areas outside Burnaby?", ans: "Yes, while we're a leading HVAC contractor Burnaby, we also provide professional HVAC services to nearby communities across the Metro Vancouver area.", list: null },
   ]
 
   return (
