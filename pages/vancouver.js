@@ -40,10 +40,10 @@ const Vancouver = () => {
       "priceRange": "$$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "2025 Willingdon Ave unit 900",
+        "streetAddress": "201-3701 Hastings St",
         "addressLocality": "Burnaby",
         "addressRegion": "BC",
-        "postalCode": "V5C 0J3",
+        "postalCode": "V5C 2H6",
         "addressCountry": "CA"
       },
       "areaServed": {

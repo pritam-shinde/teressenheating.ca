@@ -203,8 +203,7 @@ const Footer = () => {
                                                                 <p>
                                                                     <strong className="text--blue">Address :</strong>{" "}
                                                                     <span className="text-white">
-                                                                        2025 Willingdon Ave unit 900, Burnaby, BC V5C
-                                                                        0J3, Canada
+                                                                        201-3701 Hastings St, Burnaby, BC V5C 2H6, Canada
                                                                     </span>
                                                                 </p>
                                                             }
