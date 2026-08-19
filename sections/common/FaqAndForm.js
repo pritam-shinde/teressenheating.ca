@@ -52,7 +52,7 @@ const FaqAndForm = ({
                           <Box mt={3}>
                             <List>
                               {[
-                                { id: 'contact-1', icon: <HomeOutlinedIcon className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: '2025 Willingdon Ave unit 900, Burnaby, BC V5C 0J3, Canada' },
+                                { id: 'contact-1', icon: <HomeOutlinedIcon className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: '201-3701 Hastings St, Burnaby, BC V5C 2H6, Canada' },
                                 { id: 'contact-2', icon: <LocalPhoneOutlined className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: '604-363-6622' },
                                 { id: 'contact-3', icon: <MailOutline className='text--blue me-3' style={{ fontSize: '2rem' }} />, text: 'info@airlinxheating.ca' }
                               ].map(item => (
@@ -65,17 +65,20 @@ const FaqAndForm = ({
                           </Box>
                         </Box>
                       </Box>
-                      <Box p={1}>
-                        <iframe
-                          title='Google Maps Location of Airlinx Heating & Air Conditioning'
-                          src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.241045331159!2d-123.0013343!3d49.2657802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e00c8b58b8252d9!2sTeressen%20Heating%20%26%20Air%20Conditioning!5e0!3m2!1sen!2sin!4v1671612141122!5m2!1sen!2sin'
-                          width='100%'
-                          height='500px'
-                          style={{ border: 0 }}
-                          allowFullScreen=''
-                          loading='lazy'
-                          referrerPolicy='no-referrer-when-downgrade'
-                        ></iframe>
+                      <Box p={1} position="relative">
+                        <a href="https://www.google.com/maps/place/3701+Hastings+St+Ste+201,+Burnaby,+BC+V5C+2H6,+Canada" target="_blank" rel="noreferrer">
+                          <Box style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 10, cursor: 'pointer' }}></Box>
+                          <iframe
+                            title='Google Maps Location of Airlinx Heating & Air Conditioning'
+                            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.6859770496226!2d-123.02220399999999!3d49.281569999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548670c55ab2981b%3A0x1c3dfe02e4635069!2s3701%20Hastings%20St%20Ste%20201%2C%20Burnaby%2C%20BC%20V5C%202H6%2C%20Canada!5e1!3m2!1sen!2sin!4v1787116886968!5m2!1sen!2sin'
+                            width='100%'
+                            height='300px'
+                            style={{ border: 0 }}
+                            allowFullScreen=''
+                            loading='lazy'
+                            referrerPolicy='no-referrer-when-downgrade'
+                          ></iframe>
+                        </a>
                       </Box>
                     </Grid>
                   ) : null}
@@ -157,15 +160,20 @@ const FaqAndForm = ({
                           <AppointmentForm />
                         </Box>
                         {!address ? (
-                          <Box p={2}>
-                            <iframe
-                              title='Google Maps Location of Airlinx Furnace Heating & Air Conditioning HVAC'
-                              src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10414.22800159264!2d-123.0035841!3d49.265842!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486776a8b99ca05%3A0x7e00c8b58b8252d9!2sTeressen%20Furnace%20Heating%20%26%20Air%20Conditioning%20HVAC!5e0!3m2!1sen!2sin!4v1683627434720!5m2!1sen!2sin'
-                              width='100%'
-                              style={{ border: 0 }}
-                              loading='lazy'
-                              referrerPolicy='no-referrer-when-downgrade'
-                            ></iframe>
+                          <Box p={2} position="relative">
+                            <a href="https://www.google.com/maps/place/3701+Hastings+St+Ste+201,+Burnaby,+BC+V5C+2H6,+Canada" target="_blank" rel="noreferrer">
+                              <Box style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 10, cursor: 'pointer' }}></Box>
+                              <iframe
+                                title='Google Maps Location of Airlinx Furnace Heating & Air Conditioning HVAC'
+                                src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.6859770496226!2d-123.02220399999999!3d49.281569999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548670c55ab2981b%3A0x1c3dfe02e4635069!2s3701%20Hastings%20St%20Ste%20201%2C%20Burnaby%2C%20BC%20V5C%202H6%2C%20Canada!5e1!3m2!1sen!2sin!4v1787116886968!5m2!1sen!2sin'
+                                width='100%'
+                                height='300px'
+                                style={{ border: 0 }}
+                                allowFullScreen=''
+                                loading='lazy'
+                                referrerPolicy='no-referrer-when-downgrade'
+                              ></iframe>
+                            </a>
                           </Box>
                         ) : null}
                       </Box>

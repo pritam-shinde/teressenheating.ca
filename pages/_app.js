@@ -46,10 +46,10 @@ const localBusinessSchema = {
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "2025 Willingdon Ave unit 900",
+      "streetAddress": "201-3701 Hastings St",
       "addressLocality": "Burnaby",
       "addressRegion": "British Columbia (BC)",
-      "postalCode": "V5C 0J3",
+      "postalCode": "V5C 2H6",
       "addressCountry": "Canada"
     },
     "openingHours": ["Mon 00:00-23:59", "Tus 00:00-23:59", "Wed 00:00-23:59", "Thurs 00:00-23:59", "Fri 00:00-23:59", "Sat 00:00-23:59", "Sun 00:00-23:59"],
