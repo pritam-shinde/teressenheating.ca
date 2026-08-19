@@ -281,16 +281,16 @@ function MyApp({ Component, pageProps }) {
                         <Grid item xs={router.pathname != '/contact-us' ? 4 : 0}>
                           <Box>
                             {
-                              router.pathname != '/contact-us' ? <Button p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
-                                <Link href="/contact-us/" legacyBehavior><a className='hoverPoint text-white'>{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}</a></Link>
-                              </Button> : null
+                              router.pathname != '/contact-us' ? <Link href="/contact-us/" passHref legacyBehavior><Button component="a" className="text-white" p={3} variant="contained" fullWidth disableElevation size="large" startIcon={<CalendarMonthIcon />} style={{ backgroundColor: '#02599a', margin: '0.3rem' }}>
+                                <span className='hoverPoint text-white'>{width > 600 ? 'BOOK AN APPOINTMENT' : 'BOOK'}</span>
+                              </Button></Link> : null
                             }
                           </Box>
                         </Grid>
                         <Grid item xs={4}>
                           <Box>
-                            <Button variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
-                              <a href="tel:604-363-6622" className='hoverPoint text-white'> {width > 600 ? '604-363-6622 ' : 'CALL'}</a>
+                            <Button component="a" className="text-white" href="tel:604-363-6622" variant="contained" fullWidth disableElevation size="large" startIcon={<PhoneIcon />} style={{ backgroundColor: '#D92C18', margin: '0.3rem' }}>
+                              <span className='hoverPoint text-white'> {width > 600 ? '604-363-6622 ' : 'CALL'}</span>
                             </Button>
                           </Box>
                         </Grid>
