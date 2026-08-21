@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import boiler from '../public/boiler/boiler-service.webp'
 import Banner from '../public/lennox-hvac/lennox.webp'
-import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, FortisBCRebate, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const BoilerService = () => {
   const [width, setWidth] = useState()
@@ -155,6 +155,7 @@ const BoilerService = () => {
             </Grid>
           </Grid>
         </Container>
+        <FortisBCRebate />
         <FeaturedHeatingServices />
         <PopularService color="red" />
         <HighlySkilled />
