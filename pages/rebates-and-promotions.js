@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
 import Banner from '../public/promomotion/promotion.webp'
-import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, FortisBCRebate, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const RebatesAndPromotion = () => {
   const [width, setWidth] = useState()
@@ -43,6 +43,7 @@ const RebatesAndPromotion = () => {
 
       <main>
         <CommonBanner bg={Banner} title="Airlinx's heating ltd offers the best rebates and promotions" color="#fff" variant="h1" />
+
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -106,6 +107,7 @@ const RebatesAndPromotion = () => {
             </Grid>
           </Grid>
         </Container>
+        <FortisBCRebate />
         <FeaturedHeatingServices />
         <PopularService color="red" />
         <HighlySkilled />

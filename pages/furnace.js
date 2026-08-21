@@ -5,7 +5,7 @@ import Image from 'next/legacy/image'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/furnace/furnace-bg.webp'
 import Furnace from '../public/furnace/furnace.webp'
-import { FaqAndForm, FeaturedHeatingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
+import { FaqAndForm, FeaturedHeatingServices, FortisBCRebate, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
 
 const index = () => {
   const arrayFaq = [
@@ -35,6 +35,7 @@ const index = () => {
       </Head>
       <main>
         <CommonBanner bg={Banner} title="Furnace" color="#fff" variant="h1" />
+
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -47,6 +48,7 @@ const index = () => {
             </Grid>
           </Container>
         </section>
+        <FortisBCRebate />
         <section className='mt-md-4 mt-3'>
           <Container maxWidth="xxl">
             <Grid container>

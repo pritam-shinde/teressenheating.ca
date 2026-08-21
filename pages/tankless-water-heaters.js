@@ -7,7 +7,7 @@ import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../compone
 import JsonLd from '../components/JsonLd'
 import Banner from '../public/lennox-hvac/lennox.webp'
 import waterheater from '../public/tankless-water-heater/water-heater.webp'
-import { BrandSlider, FaqAndForm, FeaturedHeatingServices, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
+import { BrandSlider, FaqAndForm, FeaturedHeatingServices, FortisBCRebate, HighlySkilled, PopularService, Testimonial } from '../sections/sections'
 
 const TanklesWaterHeater = () => {
   const [width, setWidth] = useState()
@@ -48,7 +48,7 @@ const TanklesWaterHeater = () => {
         "addressLocality": "Burnaby",
         "addressRegion": "British Columbia",
         "postalCode": "V5C 2H6",
-        "addressCountry": "CA"
+        "addressCountry": "Canada"
       },
       "geo": {
         "@type": "GeoCoordinates",
@@ -95,6 +95,7 @@ const TanklesWaterHeater = () => {
       />
       <main>
         <CommonBanner bg={Banner} title="Airlinx tankless water heater maintenance service" color="#fff" variant="h1" />
+
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">
@@ -177,6 +178,7 @@ const TanklesWaterHeater = () => {
             </Grid>
           </Grid>
         </Container>
+        <FortisBCRebate />
         <FeaturedHeatingServices />
         <PopularService color="red" />
         <HighlySkilled />
