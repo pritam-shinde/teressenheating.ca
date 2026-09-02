@@ -7,6 +7,8 @@ export const blog_slugs = {
     "why-you-need-a-heating-and-air-conditioning-repair-in-your-home": true,
 };
 
+export const blog_slugs_string = Object.keys(blog_slugs).join(",");
+
 export const isAllowedBlogSlug = (slug) => {
     return Boolean(slug && blog_slugs[slug]);
 };

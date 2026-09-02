@@ -6,10 +6,10 @@ import { CommonBanner, GreyFilledBtn, BlogCommonSidebar, BlueFilledBtn } from '.
 import Link from 'next/link';
 import Styles from '../../styles/Blog.module.css'
 import WPAPI from 'wpapi';
-import { filterAllowedBlogs } from '../../constants/blog-constant';
+import { filterAllowedBlogs, blog_slugs_string } from '../../constants/blog-constant';
 
 export const getServerSideProps = async () => {
-  const res = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100');
+  const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`);
   const rawData = await res.json();
   const data = filterAllowedBlogs(rawData);
   const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
@@ -32,7 +32,7 @@ const Blog = ({ data, category }) => {
   })
 
   const fetchBlog = async () => {
-    const posts = await wp.posts().perPage(100).get();
+    const posts = await wp.posts().param('slug', blog_slugs_string).get();
     setBlogs(filterAllowedBlogs(posts))
   }
 
