@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Banner from '../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner } from '../../components/components'
 import { Box, Container, Grid } from '@mui/material';
-import { blog_slugs, filterAllowedBlogs } from '../../constants/blog-constant';
+import { blog_slugs, filterAllowedBlogs, blog_slugs_string } from '../../constants/blog-constant';
 
 export const getServerSideProps = async (context) => {
     const { slug } = context.params
@@ -19,7 +19,7 @@ export const getServerSideProps = async (context) => {
             notFound: true
         }
     }
-    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100');
+    const sidebarBlogsRes = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`);
     const rawSidebarBlogs = await sidebarBlogsRes.json()
     const sidebarBlogs = filterAllowedBlogs(rawSidebarBlogs)
     const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
