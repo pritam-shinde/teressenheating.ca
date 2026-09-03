@@ -127,7 +127,7 @@ const Viessmann = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><a href="/boilers/">Boiler installation, installation, and repair</a>.</span>} />
+                        <ListItemText primary={<span><a href="/boilers-service/">Boiler installation, installation, and repair</a>.</span>} />
                       </ListItem>
                     </List>
                   </Box>

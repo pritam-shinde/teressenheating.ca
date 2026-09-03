@@ -40,7 +40,7 @@ const Boiler = () => {
       "name": "Airlinx Heating & Air Conditioning",
       "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.bf645ef5.webp&w=1920&q=75",
       "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.bf645ef5.webp&w=1920&q=75",
-      "url": "https://airlinxheating.ca/boilers/",
+      "url": "https://airlinxheating.ca/boilers-service/",
       "telephone": "+1-604-363-6622",
       "priceRange": "$$$",
       "address": {
@@ -83,7 +83,7 @@ const Boiler = () => {
         <title>Boiler Services - Emergency Repairs & Install - Airlinx</title>
         <meta name="description" content="Need professional care for your heating system? Trust Airlinx Heating for all boiler services. We provide 24/7 solutions. Schedule your appointment today." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="https://airlinxheating.ca/boilers/" />
+        <link rel="canonical" href="https://airlinxheating.ca/boilers-service/" />
       </Head>
 
       <JsonLd faqArr={arrayFaq} />

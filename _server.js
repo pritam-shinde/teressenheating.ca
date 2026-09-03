@@ -33,7 +33,7 @@ app.prepare().then(() => {
         await app.render(req, res, '/commercial-hvac/', query)
       }
       else if (pathname === '/boilers') {
-        await app.render(req, res, '/boilers/', query)
+        await app.render(req, res, '/boilers-service/', query)
       }
       else if (pathname === '/boilers-maintenance') {
         await app.render(req, res, '/boilers-maintenance/', query)
@@ -63,7 +63,7 @@ app.prepare().then(() => {
         await app.render(req, res, '/financing-option/', query)
       }
       else if (pathname === '/furnace-inspection') {
-        await app.render(req, res, '/furnace-inspection/', query)
+        await app.render(req, res, '/furnace/', query)
       }
       else if (pathname === '/service-areas') {
         await app.render(req, res, '/service-areas/', query)

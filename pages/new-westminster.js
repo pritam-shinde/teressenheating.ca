@@ -104,7 +104,7 @@ const NewWestminar = () => {
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Airlinx’s Furnace Repair Services At New Westminster</Typography>
                       <Typography className='para'>A good thing about being the best service provider is that we get to connect with people. We solve your problems and make sure that everything works the best. Our <Link href="/air-conditioning-service/">air conditioning services</Link> at New Westminster will solve all your concerns and make you live a stress-free life. We also make sure to serve you to the fullest. Call us when you face any issue, and our certified technicians will reach you as soon as possible.</Typography>
-                      <Typography className='para'> With a group of trained and certified professionals, we are always <Link href="/emergency/">available 24*7*365 days</Link> and personally look after everything. We understand your problems and make sure that we lead you throughout the process of <Link href="/boilers/">installation, repair, and maintenance</Link>.</Typography>
+                      <Typography className='para'> With a group of trained and certified professionals, we are always <Link href="/emergency/">available 24*7*365 days</Link> and personally look after everything. We understand your problems and make sure that we lead you throughout the process of <Link href="/boilers-service/">installation, repair, and maintenance</Link>.</Typography>
                       <Box mt={3}>
                         <BlueFilledBtn btnlink="/contact-us/" btnTitle="Book An Appointment" navlink={true} />
                       </Box>

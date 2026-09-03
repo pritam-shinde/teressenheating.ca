@@ -38,7 +38,7 @@ const FurnaceInspection = () => {
         <title>24/7 Trusted Furnace Services in Burnaby - Airlinx</title>
         <meta name="description" content="Don't let a faulty heating system ruin your winter. Trust Airlinx Heating for top-tier furnace services, detailed inspections, and efficient upgrades." />
         <meta name="robots" content="index" />
-        <link rel="canonical" href="https://airlinxheating.ca/furnace-inspection/" />
+        <link rel="canonical" href="https://airlinxheating.ca/furnace/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>
 

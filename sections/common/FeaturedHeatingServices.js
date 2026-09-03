@@ -44,14 +44,14 @@ const FeaturedHeatingServices = () => {
                                         <Grid item xs={6} md={3}>
                                             <Box>
                                                 <Box className='d-flex justify-content-center' style={{ height: width < 720 ? "auto" : "14rem" }}>
-                                                    <Link legacyBehavior={true} href="/boilers/">
+                                                    <Link legacyBehavior={true} href="/boilers-service/">
                                                         <a className='heatingLogo'>
                                                             <Image layout='responsive' src={Boiler} alt="Boiler Logo" title='Boiler Logo' />
                                                         </a>
                                                     </Link>
                                                 </Box>
                                                 <Box>
-                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/boilers/"><a className='text-white'>Boiler</a></Link></strong></Typography>
+                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/boilers-service/"><a className='text-white'>Boiler</a></Link></strong></Typography>
                                                 </Box>
                                             </Box>
                                         </Grid>

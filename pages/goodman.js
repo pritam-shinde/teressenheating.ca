@@ -156,7 +156,7 @@ const Goodman = () => {
                       <ListItemText primary="All these processes will assist you in detecting furnace problems. The Goodman furnace's inability to start and subsequent failures to generate any heat is another issue." />
                     </ListItem>
                   </List>
-                  <Typography className='para'>Airlinx&apos;s Goodman <Link href="/furnace-inspection/">furnace repair service</Link> is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you. Hence, we make sure that you get our best services. So, just give us a call whenever you are facing any issues with the furnace and we will be right there for your service.</Typography>
+                  <Typography className='para'>Airlinx&apos;s Goodman <Link href="/furnace/">furnace repair service</Link> is one of the most trusted services you will ever find. We always strive for excellence in everything we do for you. Hence, we make sure that you get our best services. So, just give us a call whenever you are facing any issues with the furnace and we will be right there for your service.</Typography>
                 </Box>
               </Grid>
             </Grid>
