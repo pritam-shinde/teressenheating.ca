@@ -132,7 +132,7 @@ const BoilerRepair = () => {
                             <ListItemText primary="24*7 services." />
                           </ListItem>
                         </List>
-                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing thebest boiler repair services. So, when you are looking for a home <Link href="/boilers/">boiler company</Link> in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
+                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing thebest boiler repair services. So, when you are looking for a home <Link href="/boilers-service/">boiler company</Link> in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
                       </Container>
                     </section>
                   </Grid>

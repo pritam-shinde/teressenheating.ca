@@ -105,8 +105,8 @@ const localBusinessSchema = {
             {
               "@type": "Service",
               "name": "Boiler Services",
-              "@id": "https://airlinxheating.ca/boilers/",
-              "url": "https://airlinxheating.ca/boilers/",
+              "@id": "https://airlinxheating.ca/boilers-service/",
+              "url": "https://airlinxheating.ca/boilers-service/",
               "description": "Reliable boiler services for residential and commercial properties, helping maintain efficient and consistent heating year-round."
             },
             {
@@ -133,8 +133,8 @@ const localBusinessSchema = {
             {
               "@type": "Service",
               "name": "furnace repair and installation",
-              "@id": "https://airlinxheating.ca/furnace-inspection/",
-              "url": "https://airlinxheating.ca/furnace-inspection/",
+              "@id": "https://airlinxheating.ca/furnace/",
+              "url": "https://airlinxheating.ca/furnace/",
               "description": "Furnace Inspection Services provides professional furnace inspection and safety checks to help improve heating performance, energy efficiency, and home comfort across Vancouver and nearby BC areas."
             },
             {

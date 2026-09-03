@@ -121,7 +121,7 @@ const Payne = () => {
                     <Box mt={2}>
                       <SectionalHeading simpletext="Near Me Payne Furnace repairing services" variant="h4" />
                       <Typography className='para'>When your heating system breaks down, you need a Payne furnace repair near me. You can get your heating system up and running again by finding the best repair services.</Typography>
-                      <Typography className='para'>In the market, Airlinx HVAC has a steadfast reputation for offering <Link href="/furnace-inspection/">top-notched furnace repair services</Link>. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
+                      <Typography className='para'>In the market, Airlinx HVAC has a steadfast reputation for offering <Link href="/furnace/">top-notched furnace repair services</Link>. Our team of experts will get in touch with you and will make sure that you are served well.</Typography>
                     </Box>
                     <Box mt={2}>
                       <SectionalHeading simpletext="Putting up a Payne furnace is the mandatory thing" variant="h4" />

@@ -137,7 +137,7 @@ const Brynt = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <SectionalHeading simpletext="The process of installation of a Bryant Furnace" variant="h2" />
-                <Typography className='para'>Bryant furnace installation affects longevity, effectiveness, and even comfort in addition to quality. Hence, you need to pick the best firm for your <Link href="/furnace-inspection/">furnace installation</Link> due to this reason.</Typography>
+                <Typography className='para'>Bryant furnace installation affects longevity, effectiveness, and even comfort in addition to quality. Hence, you need to pick the best firm for your <Link href="/furnace/">furnace installation</Link> due to this reason.</Typography>
                 <List>
                   <ListItem>
                     <ListItemIcon>

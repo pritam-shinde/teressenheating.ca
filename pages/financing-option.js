@@ -153,7 +153,7 @@ const FinancingOption = () => {
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Investing in your comfort is easy and quick" variant="h2" />
-                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our <a href="/boilers/">installation, repair, and replacement services</a>. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that <Link href="/commercial-hvac/">HVAC repairs</Link> and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
+                        <Typography className='para'>Your comfort is something that matters to us. So, we make it easy to invest in our <a href="/boilers-service/">installation, repair, and replacement services</a>. We know how important it is to protect your home from extreme heat damage and cold. Also, we know that <Link href="/commercial-hvac/">HVAC repairs</Link> and the need to replace systems are rarely planned expenses. So, we believe that you should not have to wait to gather the funds which are required to restore your HVAC systems to serviceable conditions.</Typography>
                         <Typography className='para'>When unexpected expenses arise that negatively impact your safety and comfort, we would recommend you look for solutions that will restore your comfort easily and conveniently.</Typography>
                       </Container>
                     </section>

@@ -141,7 +141,7 @@ const MaytagHVAC = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span><Link href="/boilers/">Boiler maintenance</Link>, installation, and repair.</span>} />
+                        <ListItemText primary={<span><Link href="/boilers-service/">Boiler maintenance</Link>, installation, and repair.</span>} />
                       </ListItem>
                     </List>
                   </Box>
