@@ -82,7 +82,7 @@ const Vancouver = () => {
     <>
       <Head>
         <title>Reliable HVAC Service Vancouver - Airlinx Heating</title>
-        <meta name="description" content="Fully certified heating, cooling and HVAC Service Vancouver. Enjoy transparent upfront pricing on all maintenance and repair work for homes and businesses." />
+        <meta name="description" content="Fully certified heating, cooling and HVAC Service Vancouver. Enjoy transparent upfront pricing on all maintenance & repair work for homes & businesses." />
         <meta name="robots" content="index" />
         <link rel="canonical" href="https://airlinxheating.ca/vancouver/" />
         <JsonLd faqArr={arrayFaq} />
