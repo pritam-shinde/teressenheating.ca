@@ -7,8 +7,8 @@ const TNC = () => {
     return (
         <>
             <Head>
-                <title>Terms of Service - Airlinxheating.ca</title>
-                <meta name="description" content="" />
+                <title>Terms of Service - Airlinx Heating</title>
+                <meta name="description" content="Review the Terms of Service for Airlinx Heating. Learn about our service agreements, warranties, liability limitations, and customer responsibilities." />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://airlinxheating.ca/terms-of-service/" />
             </Head>
