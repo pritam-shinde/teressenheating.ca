@@ -8,19 +8,18 @@ const PrivacyPolicy = () => {
     return (
         <>
             <Head>
-                <title>Privacy Policy - airlinxheating.ca</title>
-                <meta name="description" content="" />
+                <title>Privacy Policy - Airlinx Heating</title>
+                <meta name="description" content="Read the Airlinx Heating Privacy Policy to understand how we collect, use, and protect your personal information and website usage data." />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://airlinxheating.ca/privacy-policy/" />
             </Head>
             <main>
-                <CommonBanner bg={Banner} />
+                <CommonBanner bg={Banner} title="Privacy Policy" color="#fff" />
                 <section>
                     <Container maxWidth="xxl">
                         <Grid container>
                             <Grid item xs={12} md={10} className="mx-auto">
                                 <Box py={5}>
-                                    <SectionalHeading simpletext="Privacy Policy" variant="h1" />
                                     <Typography className='para'>Airlinx Heating & Air Conditioning is sensitive to the private nature of information you provide to us over the Internet. Our Privacy Policy is designed to protect your personal information while at the same time giving you the opportunity to obtain interesting and useful information, products and services.</Typography>
 
 
@@ -35,7 +34,7 @@ const PrivacyPolicy = () => {
 
                                     <Typography className='para'>Airlinx is collecting user demographic insights using select Google Analytics Advertising Features. The information collected will only be used to analyze data in the Demographics and Interest Reports as they appear in Google Analytics. Airlinx will not use this data for any other purposes. If you wish to opt out of this, please visit Google Analytics to download the Opt Out browser plug in.</Typography>
 
-                                    <Typography className='para'><Link href="/contact-us/"><a className='text--red'>Please click here to contact us</a></Link> if you have any further questions about our privacy policy or to stop receiving future emails, phone calls, or other direct communications from Airlinx Heating & Air Conditioning.</Typography>
+                                    <Typography className='para'><Link legacyBehavior href="/contact-us/"><a className='text--red'>Please click here to contact us</a></Link> if you have any further questions about our privacy policy or to stop receiving future emails, phone calls, or other direct communications from Airlinx Heating & Air Conditioning.</Typography>
                                 </Box>
                             </Grid>
                         </Grid>

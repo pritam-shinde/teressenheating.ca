@@ -311,7 +311,7 @@ const Footer = () => {
                 </Container>
                 <Grid item xs={12} sm={6} lg={12} className="p-0">
                     <Box mb={2} style={{ borderBottom: "1px solid #fff", borderTop: "1px solid #fff" }}>
-                        <Typography className="text-white text-center">Areas : </Typography>
+                        <Typography className="text-white text-center mt-2">Areas : </Typography>
                         <List className="d-flex flex-wrap justify-content-center">
                             {[
                                 { id: "subUrb-1", text: "Vancouver", link: "/vancouver/" },
