@@ -8,7 +8,7 @@ import Styles from '../../styles/Blog.module.css'
 import WPAPI from 'wpapi';
 import { filterAllowedBlogs, blog_slugs_string } from '../../constants/blog-constant';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`);
   const rawData = await res.json();
   const data = filterAllowedBlogs(rawData);
@@ -18,7 +18,8 @@ export const getServerSideProps = async () => {
     props: {
       data,
       category
-    }
+    },
+    revalidate: 60
   }
 }
 

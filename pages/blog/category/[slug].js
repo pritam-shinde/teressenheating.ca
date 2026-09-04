@@ -10,7 +10,14 @@ import Styles from '../../../styles/Blog.module.css'
 import { filterAllowedBlogs } from '../../../constants/blog-constant'
 
 
-export const getServerSideProps = async (context) => {
+export const getStaticPaths = async () => {
+    return {
+        paths: [],
+        fallback: 'blocking'
+    }
+}
+
+export const getStaticProps = async (context) => {
     const { slug } = context.params;
     const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?slug=${slug}`);
     const data = await res.json();
@@ -24,7 +31,8 @@ export const getServerSideProps = async (context) => {
             data,
             sidebarBlogs,
             category
-        }
+        },
+        revalidate: 60
     }
 }
 

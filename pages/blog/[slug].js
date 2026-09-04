@@ -5,7 +5,17 @@ import { BlogCommonSidebar, CommonBanner } from '../../components/components'
 import { Box, Container, Grid } from '@mui/material';
 import { blog_slugs, filterAllowedBlogs, blog_slugs_string } from '../../constants/blog-constant';
 
-export const getServerSideProps = async (context) => {
+export const getStaticPaths = async () => {
+    const paths = Object.keys(blog_slugs).map(slug => ({
+        params: { slug }
+    }));
+    return {
+        paths,
+        fallback: 'blocking'
+    }
+}
+
+export const getStaticProps = async (context) => {
     const { slug } = context.params
     if (!blog_slugs[slug]) {
         return {
@@ -30,6 +40,7 @@ export const getServerSideProps = async (context) => {
             sidebarBlogs,
             category
         },
+        revalidate: 60
     }
 }
 
