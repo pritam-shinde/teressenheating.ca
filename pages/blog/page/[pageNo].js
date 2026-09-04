@@ -9,7 +9,14 @@ import { Box, Container, Grid, Card, CardContent, CardMedia, Typography } from '
 import Styles from '../../../styles/Blog.module.css'
 import { filterAllowedBlogs } from '../../../constants/blog-constant'
 
-export const getServerSideProps = async (context) => {
+export const getStaticPaths = async () => {
+    return {
+        paths: [],
+        fallback: 'blocking'
+    }
+}
+
+export const getStaticProps = async (context) => {
     const { pageNo } = context.params
     let res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100`)
     let rawData = await res.json()
@@ -25,7 +32,8 @@ export const getServerSideProps = async (context) => {
             data,
             sidebarBlogs,
             category
-        }
+        },
+        revalidate: 60
     }
 }
 

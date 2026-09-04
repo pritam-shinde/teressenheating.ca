@@ -1,20 +1,18 @@
-import { Box, Container, Grid } from '@mui/material'
-import React, { useState, useEffect } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from "swiper";
+import { Box, Container, Grid } from '@mui/material';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import certificate1 from '../../public/certification/BBB_PrimaryLogo_Blue_RGB.svg'
-// import certificate1 from '../../public/certification/cer1.webp'
-import certificate2 from '../../public/certification/cer2.webp'
-import certificate3 from '../../public/certification/technical-safety.svg'
-// import certificate3 from '../../public/certification/cer3.webp'
-import certificate4 from '../../public/certification/cer4.webp'
-import certificate5 from '../../public/certification/HPSC_Logo.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { SectionalHeading } from '../../components/components';
-import Image from 'next/image';
+import certificate1 from '../../public/certification/BBB_PrimaryLogo_Blue_RGB.svg';
+import certificate2 from '../../public/certification/cer2.webp';
+import certificate4 from '../../public/certification/Fortic-BC-logo.png';
+import certificate5 from '../../public/certification/HPSC_Logo.png';
+import certificate3 from '../../public/certification/technical-safety.svg';
 
 const CertificationSlider = () => {
     const [width, setWidth] = useState();
