@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import { AppointmentForm, BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
 import AcRepair from '../public/home/s3.webp'
 import Family from '../public/home/testimonial.webp'
@@ -76,7 +76,17 @@ const Service = () => {
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image layout='responsive' src={AirConditioner} alt="Air conditioning services" title='Air conditioning services' />
+                        <Image
+                          src={AirConditioner}
+                          alt="Air conditioning services"
+                          title='Air conditioning services'
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            maxWidth: "100%",
+                            height: "auto"
+                          }} />
                       </Box>
                     </Grid>
                   </Grid>
@@ -94,7 +104,17 @@ const Service = () => {
                   <Grid container spacing={5}>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image layout='responsive' src={AcRepair} alt="Airlinx Expert Technician Cooling Service" title='Airlinx Expert Technician Cooling Service' />
+                        <Image
+                          src={AcRepair}
+                          alt="Airlinx Expert Technician Cooling Service"
+                          title='Airlinx Expert Technician Cooling Service'
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            maxWidth: "100%",
+                            height: "auto"
+                          }} />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -218,7 +238,17 @@ const Service = () => {
                   <Grid container spacing={5}>
                     <Grid item xs={12} md={6}>
                       <Box>
-                        <Image layout='responsive' src={Family} alt="Happy Terseen Heating Customers" title='Happy Terseen Heating Customers' />
+                        <Image
+                          src={Family}
+                          alt="Happy Terseen Heating Customers"
+                          title='Happy Terseen Heating Customers'
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            maxWidth: "100%",
+                            height: "auto"
+                          }} />
                       </Box>
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -232,7 +262,7 @@ const Service = () => {
         </section>
       </main>
     </>
-  )
+  );
 }
 
 export default Service

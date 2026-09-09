@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Service1 from '../../public/featuareCoolingService/c1.png'
 import Service2 from '../../public/featuareCoolingService/c2.png'
 import Service3 from '../../public/featuareCoolingService/c3.png'
-import Image from 'next/image'
+import Image from "next/image"
 
 const FeaturedCoolingServices = () => {
     return (
@@ -17,8 +17,8 @@ const FeaturedCoolingServices = () => {
                         <Grid item xs={12} md={6} className="mx-auto">
                             <Box py={5}>
 
-                                <SectionalHeading variant="h2" simpletext="We Provide Superior AC Service" align="center"  />
-                                <SectionalHeading variant="h3" simpletext="Cooling ,Installation, Repair, Maintenance Services" align="center" />
+                                <SectionalHeading variant="h2" simpletext="We Provide Superior AC Service" align="center" />
+                                <SectionalHeading variant="h3" simpletext="Cooling, Installation, Repair, Maintenance Services" align="center" />
                                 <Box mt={5}>
                                     <Grid container spacing={3}>
 
@@ -27,7 +27,15 @@ const FeaturedCoolingServices = () => {
                                                 <Box className='d-flex justify-content-center' style={{ height: "12rem" }}>
                                                     <Link legacyBehavior={true} href="/ac-installation/">
                                                         <a className="coolingIcon">
-                                                            <Image  src={Service1} alt="Installation Logo" title='Installation Logo' className='img-fluid' />
+                                                            <Image
+                                                                src={Service1}
+                                                                alt="Installation Logo"
+                                                                title='Installation Logo'
+                                                                className='img-fluid'
+                                                                style={{
+                                                                    maxWidth: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -41,7 +49,15 @@ const FeaturedCoolingServices = () => {
                                                 <Box className='d-flex justify-content-center' style={{ height: "12rem" }}>
                                                     <Link legacyBehavior={true} href="/ac-repair/">
                                                         <a className="coolingIcon">
-                                                            <Image  src={Service2} title="Repair Logo" alt="Repair Logo" className='img-fluid' />
+                                                            <Image
+                                                                src={Service2}
+                                                                title="Repair Logo"
+                                                                alt="Repair Logo"
+                                                                className='img-fluid'
+                                                                style={{
+                                                                    maxWidth: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -55,7 +71,15 @@ const FeaturedCoolingServices = () => {
                                                 <Box className='d-flex justify-content-center' style={{ height: "12rem" }}>
                                                     <Link legacyBehavior={true} href="/ac-maintainance/">
                                                         <a className="coolingIcon">
-                                                            <Image  src={Service3} title="Maintanance Logo" alt="Maintanance Logo" className='img-fluid' />
+                                                            <Image
+                                                                src={Service3}
+                                                                title="Maintanance Logo"
+                                                                alt="Maintanance Logo"
+                                                                className='img-fluid'
+                                                                style={{
+                                                                    maxWidth: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -72,7 +96,7 @@ const FeaturedCoolingServices = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default FeaturedCoolingServices

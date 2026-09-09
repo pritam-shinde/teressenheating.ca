@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -103,7 +103,17 @@ const LennoxHVAC = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
                             <Box>
-                              <Image layout='responsive' src={hvacLennox} alt="Lennox HVAC Systems" title='Lennox HVAC Systems' />
+                              <Image
+                                src={hvacLennox}
+                                alt="Lennox HVAC Systems"
+                                title='Lennox HVAC Systems'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto",
+                                  maxWidth: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={12} md={6}>
@@ -176,7 +186,7 @@ const LennoxHVAC = () => {
         <BrandSlider />
       </main>
     </>
-  )
+  );
 }
 
 export default LennoxHVAC

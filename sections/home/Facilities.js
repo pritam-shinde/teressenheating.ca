@@ -4,7 +4,7 @@ import Clock from '../../public/icons/24-hours.svg'
 import Hand from '../../public/icons/hand.svg'
 import Certificate from '../../public/icons/certificate-new.svg'
 import Styles from '../../styles/Home.module.css'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 
 const Facilities = () => {
     return (
@@ -18,7 +18,17 @@ const Facilities = () => {
                                     <Grid item xs={12} sm={6} lg={4}>
                                         <Box p={3} className='d-flex flex-column align-items-center'>
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
-                                                <Image layout='responsive' src={Certificate} alt="Certificate Logo" title='Certificate Logo' />
+                                                <Image
+                                                    src={Certificate}
+                                                    alt="Certificate Logo"
+                                                    title='Certificate Logo'
+                                                    sizes="100vw"
+                                                    style={{
+                                                        width: "100%",
+                                                        height: "auto",
+                                                        maxWidth: "100%",
+                                                        height: "auto"
+                                                    }} />
                                             </Box>
                                             <Typography variant='p' className='text--grey fs-5 fw-semibold' gutterBottom>Certified Dealer</Typography>
                                             <Typography className='para' align='center'>Trust, affordability, and quality are the pillars on which we work. Our certified dealers work 24*7 especially to serve you better.</Typography>
@@ -27,7 +37,17 @@ const Facilities = () => {
                                     <Grid item xs={12} sm={6} lg={4}>
                                         <Box p={3} className='d-flex flex-column align-items-center'>
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
-                                                <Image layout='responsive' src={Clock} alt="24 hours Logo" title='24 hours Logo' />
+                                                <Image
+                                                    src={Clock}
+                                                    alt="24 hours Logo"
+                                                    title='24 hours Logo'
+                                                    sizes="100vw"
+                                                    style={{
+                                                        width: "100%",
+                                                        height: "auto",
+                                                        maxWidth: "100%",
+                                                        height: "auto"
+                                                    }} />
                                             </Box>
                                             <Typography variant='p' className='text--grey fs-5 fw-semibold' gutterBottom>Request A Service Call</Typography>
                                             <Typography className='para' align='center'>If you are facing any heating-related issues, then request a service call. We are here for your assistance and will give you the best of everything.</Typography>
@@ -36,7 +56,17 @@ const Facilities = () => {
                                     <Grid item xs={12} sm={6} lg={4}>
                                         <Box p={3} className='d-flex flex-column align-items-center'>
                                             <Box mb={2} className={`${Styles.circle} p-4 shadow-lg`}>
-                                                <Image layout='responsive' src={Hand} alt="Financing Logo" title='Financing Logo' />
+                                                <Image
+                                                    src={Hand}
+                                                    alt="Financing Logo"
+                                                    title='Financing Logo'
+                                                    sizes="100vw"
+                                                    style={{
+                                                        width: "100%",
+                                                        height: "auto",
+                                                        maxWidth: "100%",
+                                                        height: "auto"
+                                                    }} />
                                             </Box>
                                             <Typography variant='p' className='text--grey fs-5 fw-semibold' gutterBottom>Need Financing?</Typography>
                                             <Typography className='para' align='center'>If you need financing aid, we are there for your service. So, don&apos;t worry and leave all your worries to us. We will make your day better!</Typography>
@@ -49,7 +79,7 @@ const Facilities = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default Facilities

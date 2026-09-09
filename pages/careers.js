@@ -1,10 +1,13 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Button, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
+import { useState } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import Banner from '../public/career/career-bg.webp'
 
 const Careers = () => {
+  const [fileName, setFileName] = useState('');
+
   return (
     <>
       <Head>
@@ -95,10 +98,10 @@ const Careers = () => {
                                   <input type="text" name="Applying_For" className='form-control rounded-pill' placeholder='Applying for' required />
                                 </div>
                               </div>
-                              <div className='col-12'>
+                              <div className='col-12 col-md-6'>
                                 <div className='form-group'>
-                                  <label className="uploadFile">Upload Resume
-                                    <input type="file" name="Resume" className='form-control rounded-pill d-none' placeholder='Upload Resume' required />
+                                  <label className="uploadFile">{fileName || "Upload Resume"}
+                                    <input type="file" name="Resume" className='form-control rounded-pill d-none' placeholder='Upload Resume' required onChange={(e) => setFileName(e.target.files[0]?.name)} />
                                   </label>
                                 </div>
                               </div>

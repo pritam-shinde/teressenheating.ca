@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -107,7 +107,17 @@ const TanklesWaterHeater = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
                             <Box>
-                              <Image layout='responsive' src={waterheater} alt="tankless water heater" title='tankless water heater' />
+                              <Image
+                                src={waterheater}
+                                alt="tankless water heater"
+                                title='tankless water heater'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto",
+                                  maxWidth: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={12} md={6}>
@@ -187,7 +197,7 @@ const TanklesWaterHeater = () => {
         <BrandSlider />
       </main>
     </>
-  )
+  );
 }
 
 export default TanklesWaterHeater

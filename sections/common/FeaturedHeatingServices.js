@@ -7,7 +7,7 @@ import Furnace from '../../public/featuredheatingservice/furnace.png'
 import Boiler from '../../public/featuredheatingservice/boiler.png'
 import Fireplace from '../../public/featuredheatingservice/fireplace.png'
 import HeatPump from '../../public/featuredheatingservice/heat-pump.png'
-import Image from 'next/image'
+import Image from "next/image"
 
 const FeaturedHeatingServices = () => {
     const [width, setWidth] = useState();
@@ -32,7 +32,15 @@ const FeaturedHeatingServices = () => {
                                                 <Box className='d-flex justify-content-center' style={{ height: width < 720 ? "auto" : "14rem" }}>
                                                     <Link legacyBehavior={true} href="/furnace/">
                                                         <a className='heatingLogo'>
-                                                            <Image layout='responsive' src={Furnace} alt="Furnace Logo" title='Furnace Logo' />
+                                                            <Image
+                                                                src={Furnace}
+                                                                alt="Furnace Logo"
+                                                                title='Furnace Logo'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -46,7 +54,15 @@ const FeaturedHeatingServices = () => {
                                                 <Box className='d-flex justify-content-center' style={{ height: width < 720 ? "auto" : "14rem" }}>
                                                     <Link legacyBehavior={true} href="/boilers-service/">
                                                         <a className='heatingLogo'>
-                                                            <Image layout='responsive' src={Boiler} alt="Boiler Logo" title='Boiler Logo' />
+                                                            <Image
+                                                                src={Boiler}
+                                                                alt="Boiler Logo"
+                                                                title='Boiler Logo'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -60,7 +76,15 @@ const FeaturedHeatingServices = () => {
                                                 <Box className='d-flex justify-content-center' style={{ height: width < 720 ? "auto" : "14rem" }}>
                                                     <Link legacyBehavior={true} href="/heat-pump/">
                                                         <a className='heatingLogo'>
-                                                            <Image layout='responsive' src={HeatPump} alt="Heat Pump Logo" title='Heat Pump Logo' />
+                                                            <Image
+                                                                src={HeatPump}
+                                                                alt="Heat Pump Logo"
+                                                                title='Heat Pump Logo'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -74,7 +98,15 @@ const FeaturedHeatingServices = () => {
                                                 <Box className='d-flex justify-content-center' style={{ height: width < 720 ? "auto" : "14rem" }}>
                                                     <Link legacyBehavior={true} href="/fireplace/">
                                                         <a className='heatingLogo'>
-                                                            <Image layout='responsive' src={Fireplace} alt="Fireplace Logo" title='Fireplace Logo' />
+                                                            <Image
+                                                                src={Fireplace}
+                                                                alt="Fireplace Logo"
+                                                                title='Fireplace Logo'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                         </a>
                                                     </Link>
                                                 </Box>
@@ -91,7 +123,7 @@ const FeaturedHeatingServices = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default FeaturedHeatingServices

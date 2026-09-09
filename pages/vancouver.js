@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
 import JsonLd from '../components/JsonLd'
@@ -104,7 +104,17 @@ const Vancouver = () => {
                 <Box py={3}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
-                      <Image layout='responsive' src={VancouverLoc} alt="vancouver science world" title='vancouver science world' />
+                      <Image
+                        src={VancouverLoc}
+                        alt="vancouver science world"
+                        title='vancouver science world'
+                        sizes="100vw"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          maxWidth: "100%",
+                          height: "auto"
+                        }} />
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Airlinx&apos;s 24*7 heating services in Vancouver offer you a stress-free living</Typography>
@@ -126,7 +136,7 @@ const Vancouver = () => {
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
     </>
-  )
+  );
 }
 
 export default Vancouver

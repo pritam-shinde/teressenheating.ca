@@ -1,5 +1,5 @@
 import { Avatar, Box, Container, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import GreyLogo from "../../../public/logo/footer-logo.png";
 import Styles from "../../../styles/Footer.module.css";
@@ -27,12 +27,17 @@ const Footer = () => {
                                         <Box>
                                             <Box mb={3} style={{ width: "40%" }}>
                                                 <Image
-                                                    layout="responsive"
                                                     src={GreyLogo}
                                                     alt="Airlinxheating Logo"
                                                     className="img-fluid"
                                                     title="Airlinxheating Logo"
-                                                />
+                                                    sizes="100vw"
+                                                    style={{
+                                                        width: "100%",
+                                                        height: "auto",
+                                                        maxWidth: "100%",
+                                                        height: "auto"
+                                                    }} />
                                             </Box>
                                             <Box>
                                                 <Typography className="text-white" align="justify">

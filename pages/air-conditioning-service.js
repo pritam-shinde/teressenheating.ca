@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -110,7 +110,17 @@ const AirConditioningService = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image src={Cooling} alt="Air Conditioning Services by AirlinxTechnician" title='Air Conditioning Services by AirlinxTechnician' layout='responsive' />
+                                <Image
+                                  src={Cooling}
+                                  alt="Air Conditioning Services by AirlinxTechnician"
+                                  title='Air Conditioning Services by AirlinxTechnician'
+                                  sizes="100vw"
+                                  style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                  }} />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>
@@ -155,7 +165,17 @@ const AirConditioningService = () => {
                               <Typography className='para'>We have been providing <a href="/blog/5-common-causes-to-do-regular-heating-and-air-conditioning-services/"> air conditioning services </a> for years to our clients. We are always available 24*7 for your quick assistance service. We meet your needs for routine air conditioning maintenance, air conditioning system replacement, and emergency air conditioning repairs. We also sell and install a wide range of high-efficiency air conditioning system that saves you money.</Typography>
                             </Grid>
                             <Grid item xs={12} md={6}>
-                              <Image src={Air} alt="Air Conditioning Service" title='Air Conditioning Service' layout='responsive' />
+                              <Image
+                                src={Air}
+                                alt="Air Conditioning Service"
+                                title='Air Conditioning Service'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto",
+                                  maxWidth: "100%",
+                                  height: "auto"
+                                }} />
                             </Grid>
                           </Grid>
                         </Box>
@@ -208,7 +228,7 @@ const AirConditioningService = () => {
         <BrandSlider />
       </main>
     </>
-  )
+  );
 }
 
 export default AirConditioningService

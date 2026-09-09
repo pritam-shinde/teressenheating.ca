@@ -30,8 +30,8 @@ const Locations = () => {
                                                 { id: "loc-11", link: "/new-westminster/", title: "New Westminster" },
                                                 { id: "loc-12", link: "/maple-ridge/", title: "Maple Ridge" },
                                             ].map(item => <Grid key={item.id} item xs={12} sm={6} md={4} lg={3}>
-                                                <Box p={2} className={`locationBox ${router.pathname.replace(/\/$/, '') == item.link.replace(/\/$/, '') ? 'active' : null}`}>
-                                                    <Typography variant='h3' className='fs-5'><Link legacyBehavior={true} href={item.link}><a className="title">{item.title}</a></Link></Typography>
+                                                <Box position="relative" p={2} className={`locationBox ${router.pathname.replace(/\/$/, '') == item.link.replace(/\/$/, '') ? 'active' : null}`}>
+                                                    <Typography variant='h3' className='fs-5'><Link legacyBehavior={true} href={item.link}><a className="title">{item.title}<span style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: 0 }} /></a></Link></Typography>
                                                 </Box>
                                             </Grid>)
                                         }
@@ -43,7 +43,7 @@ const Locations = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default Locations

@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import React from 'react'
 import { BlueFilledBtn } from '../../components/components'
 import AboutImage from '../../public/home/about.jpg'
@@ -16,7 +16,17 @@ const About = () => {
                                 <Grid container spacing={3}>
                                     <Grid item xs={12} md={6}>
                                         <Box>
-                                            <Image layout='responsive' src={AboutImage} alt="Airlinx Trusted Heating and Cooling Services" title='Airlinx Trusted Heating and Cooling Services' />
+                                            <Image
+                                                src={AboutImage}
+                                                alt="Airlinx Trusted Heating and Cooling Services"
+                                                title='Airlinx Trusted Heating and Cooling Services'
+                                                sizes="100vw"
+                                                style={{
+                                                    width: "100%",
+                                                    height: "auto",
+                                                    maxWidth: "100%",
+                                                    height: "auto"
+                                                }} />
                                         </Box>
                                     </Grid>
                                     <Grid item xs={12} md={6}>
@@ -38,7 +48,7 @@ const About = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default About

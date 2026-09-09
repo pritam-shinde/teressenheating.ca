@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
 import JsonLd from '../components/JsonLd'
@@ -99,7 +99,17 @@ const PittMeadows = () => {
                 <Box py={3}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
-                      <Image layout='responsive' src={PittMeadowsLoc} alt="Pitt Meadows Area" title='Pitt Meadows Area' />
+                      <Image
+                        src={PittMeadowsLoc}
+                        alt="Pitt Meadows Area"
+                        title='Pitt Meadows Area'
+                        sizes="100vw"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          maxWidth: "100%",
+                          height: "auto"
+                        }} />
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Airlinx Is One Of The Best Heating Services In Pitt Meadows That Takes Care Of Everything</Typography>
@@ -129,7 +139,7 @@ const PittMeadows = () => {
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
     </>
-  )
+  );
 }
 
 export default PittMeadows
