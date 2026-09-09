@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { BlueFilledBtn, CommonBanner } from '../components/components'
 import JsonLd from '../components/JsonLd'
@@ -99,7 +99,17 @@ const NewWestminar = () => {
                 <Box py={3}>
                   <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
-                      <Image layout='responsive' src={NewWestminsterLoc} alt="The City of New Westminster" title='The City of New Westminster' />
+                      <Image
+                        src={NewWestminsterLoc}
+                        alt="The City of New Westminster"
+                        title='The City of New Westminster'
+                        sizes="100vw"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          maxWidth: "100%",
+                          height: "auto"
+                        }} />
                     </Grid>
                     <Grid item xs={12} md={6}>
                       <Typography variant='h2'>Airlinx’s Furnace Repair Services At New Westminster</Typography>
@@ -130,7 +140,7 @@ const NewWestminar = () => {
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
     </>
-  )
+  );
 }
 
 export default NewWestminar

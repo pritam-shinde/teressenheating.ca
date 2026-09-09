@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -58,7 +58,16 @@ const BoilerService = () => {
                       <Container maxWidth="xxl">
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
-                            <Image layout='responsive' src={boiler} alt="boiler service" />
+                            <Image
+                              src={boiler}
+                              alt="boiler service"
+                              sizes="100vw"
+                              style={{
+                                width: "100%",
+                                height: "auto",
+                                maxWidth: "100%",
+                                height: "auto"
+                              }} />
                           </Grid>
                           <Grid item xs={12} md={6}>
                             <Typography className='para'>Are you in need of reliable and affordable boiler services for your home? Then, Airlinx heating ltd is your expert solution. We are one of the <Link href="/boilers-maintenance/">top-rated boiler maintenance and repair service</Link> providers near you. We are here to help you get quick residential boiler repair services. With over years of experience, we can quickly get the best possible solutions for you and diagnose any issue with your boiler system. So why wait? Call us today for all your boiler-related issues.</Typography>
@@ -164,7 +173,7 @@ const BoilerService = () => {
         <BrandSlider />
       </main>
     </>
-  )
+  );
 }
 
 export default BoilerService

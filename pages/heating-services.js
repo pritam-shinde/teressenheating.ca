@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material';
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import Head from 'next/head';
-import Image from 'next/legacy/image';
+import Image from "next/image";
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components';
@@ -196,7 +196,18 @@ const HeatingService = () => {
                             <Grid container spacing={5}>
                               <Grid item xs={12} md={6}>
                                 <Box style={{ textAlign: 'center' }}>
-                                  <Image src={HeaterMachine} alt="Heating Sysytem" title='Heating Sysytem' style={{ maxWidth: '70%' }} layout="responsive" />
+                                  <Image
+                                    src={HeaterMachine}
+                                    alt="Heating Sysytem"
+                                    title='Heating Sysytem'
+                                    sizes="100vw"
+                                    style={{
+                                      maxWidth: '70%',
+                                      width: "100%",
+                                      height: "auto",
+                                      maxWidth: "100%",
+                                      height: "auto"
+                                    }} />
                                 </Box>
                               </Grid>
                               <Grid item xs={12} md={6}>
@@ -340,7 +351,7 @@ const HeatingService = () => {
       </main>
 
     </>
-  )
+  );
 }
 
 export default HeatingService

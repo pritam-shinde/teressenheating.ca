@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/image"
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading } from '../components/components'
 import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
@@ -57,12 +57,26 @@ const HeilHVAC = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image src={BlueLogo} alt="Airlinx heating" layout="responsive" />
+                              <Image
+                                src={BlueLogo}
+                                alt="Airlinx heating"
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
                             <Box p={3}>
-                              <Image layout='responsive' src={BrandLogo} alt="carrier" />
+                              <Image
+                                src={BrandLogo}
+                                alt="carrier"
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                         </Grid>
@@ -72,17 +86,38 @@ const HeilHVAC = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={BBB} alt="Airlinx heating" layout="responsive" />
+                              <Image
+                                src={BBB}
+                                alt="Airlinx heating"
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={WorkSafe} alt="Work safe" layout="responsive" />
+                              <Image
+                                src={WorkSafe}
+                                alt="Work safe"
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image src={Technical} alt="Technical" layout="responsive" />
+                              <Image
+                                src={Technical}
+                                alt="Technical"
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                         </Grid>
@@ -223,7 +258,7 @@ const HeilHVAC = () => {
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quot" formVariant="h2" formtitleAlign="center" />
       </main>
     </>
-  )
+  );
 }
 
 export default HeilHVAC

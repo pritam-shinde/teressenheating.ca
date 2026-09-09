@@ -1,5 +1,5 @@
 import { Box, Container, Grid } from '@mui/material';
-import Image from 'next/image';
+import Image from "next/image";
 import { useEffect, useState } from 'react';
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
@@ -44,19 +44,79 @@ const CertificationSlider = () => {
                                         loop={true}
                                     >
                                         <SwiperSlide>
-                                            <Image src={certificate1} alt="Accredited Business Logo" title='Accredited Business Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '75%', height: '80px', objectFit: 'contain', margin: '0 auto' }} />
+                                            <Image
+                                                src={certificate1}
+                                                alt="Accredited Business Logo"
+                                                title='Accredited Business Logo'
+                                                className='img-fluid'
+                                                sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw"
+                                                style={{
+                                                    width: '75%',
+                                                    height: '80px',
+                                                    objectFit: 'contain',
+                                                    margin: '0 auto',
+                                                    maxWidth: "100%"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image src={certificate2} alt="Work Safe BC Logo" title='Work Safe BC Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '75%', height: '80px', objectFit: 'contain', margin: '0 auto' }} />
+                                            <Image
+                                                src={certificate2}
+                                                alt="Work Safe BC Logo"
+                                                title='Work Safe BC Logo'
+                                                className='img-fluid'
+                                                sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw"
+                                                style={{
+                                                    width: '75%',
+                                                    height: '80px',
+                                                    objectFit: 'contain',
+                                                    margin: '0 auto',
+                                                    maxWidth: "100%"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image src={certificate3} alt="Technical Safety BC Logo" title='Technical Safety BC Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '75%', height: '80px', objectFit: 'contain', margin: '0 auto' }} />
+                                            <Image
+                                                src={certificate3}
+                                                alt="Technical Safety BC Logo"
+                                                title='Technical Safety BC Logo'
+                                                className='img-fluid'
+                                                sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw"
+                                                style={{
+                                                    width: '75%',
+                                                    height: '80px',
+                                                    objectFit: 'contain',
+                                                    margin: '0 auto',
+                                                    maxWidth: "100%"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image src={certificate4} alt="Fortis BC Logo" title='Fortis BC Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '75%', height: '80px', objectFit: 'contain', margin: '0 auto' }} />
+                                            <Image
+                                                src={certificate4}
+                                                alt="Fortis BC Logo"
+                                                title='Fortis BC Logo'
+                                                className='img-fluid'
+                                                sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw"
+                                                style={{
+                                                    width: '75%',
+                                                    height: '80px',
+                                                    objectFit: 'contain',
+                                                    margin: '0 auto',
+                                                    maxWidth: "100%"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image src={certificate5} alt="Technical Safety BC Logo" title='Technical Safety BC Logo' className='img-fluid' sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw" style={{ width: '75%', height: '80px', objectFit: 'contain', margin: '0 auto' }} />
+                                            <Image
+                                                src={certificate5}
+                                                alt="Technical Safety BC Logo"
+                                                title='Technical Safety BC Logo'
+                                                className='img-fluid'
+                                                sizes="(max-width: 600px) 100vw, (max-width: 992px) 33vw, 25vw"
+                                                style={{
+                                                    width: '75%',
+                                                    height: '80px',
+                                                    objectFit: 'contain',
+                                                    margin: '0 auto',
+                                                    maxWidth: "100%"
+                                                }} />
                                         </SwiperSlide>
                                     </Swiper>
                                 </Box>
@@ -66,7 +126,7 @@ const CertificationSlider = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default CertificationSlider

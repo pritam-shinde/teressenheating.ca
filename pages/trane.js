@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/image"
 import { useEffect, useState } from 'react'
 import { CommonBanner } from '../components/components'
 import BoilerMaintainanceBanner from '../public/brand-page/brand.webp'
@@ -39,7 +39,11 @@ const Trane = () => {
     'We give professional services at affordable rates.',
     'We do all types of Trane heating, installation, maintenance, and repair work.',
     <>
-      <a href="/">Airlinx's heating and air conditioning services</a> are proudly meant to serve you the best.
+      <a href="/"
+        style={{ color: 'white', fontWeight: 'bold', borderBottom: '1px solid transparent' }}
+        onMouseEnter={(e) => { e.target.style.borderBottom = '1px solid white'; e.target.style.textDecoration = 'none'; }}
+        onMouseLeave={(e) => { e.target.style.borderBottom = '1px solid transparent'; e.target.style.textDecoration = 'none'; }}
+      >Airlinx's heating and air conditioning services</a> are proudly meant to serve you the best.
     </>
   ]
   return (
@@ -64,12 +68,28 @@ const Trane = () => {
                         <Grid container>
                           <Grid item xs={6}>
                             <Box p={3}>
-                              <Image layout='responsive' src={BlueLogo} alt="Airlinxheating Logo" title='Airlinxheating Logo' />
+                              <Image
+                                src={BlueLogo}
+                                alt="Airlinxheating Logo"
+                                title='Airlinxheating Logo'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={6} className="d-flex align-items-center">
                             <Box p={3}>
-                              <Image layout='responsive' src={BrandLogo} alt="Trane Logo" title='Trane Logo' />
+                              <Image
+                                src={BrandLogo}
+                                alt="Trane Logo"
+                                title='Trane Logo'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                         </Grid>
@@ -79,17 +99,41 @@ const Trane = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' src={BBB} alt="Accredited Business Logo" title='Accredited Business Logo' />
+                              <Image
+                                src={BBB}
+                                alt="Accredited Business Logo"
+                                title='Accredited Business Logo'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' src={WorkSafe} alt="Work Safe BC Logo" title='Work Safe BC Logo' />
+                              <Image
+                                src={WorkSafe}
+                                alt="Work Safe BC Logo"
+                                title='Work Safe BC Logo'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={12} sm={6} md={4}>
                             <Box p={3} className="border--grey">
-                              <Image layout='responsive' src={Technical} alt="Technical Safety BC Logo" title='Technical Safety BC Logo' />
+                              <Image
+                                src={Technical}
+                                alt="Technical Safety BC Logo"
+                                title='Technical Safety BC Logo'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                         </Grid>
@@ -119,7 +163,7 @@ const Trane = () => {
 
       </main>
     </>
-  )
+  );
 }
 
 export default Trane

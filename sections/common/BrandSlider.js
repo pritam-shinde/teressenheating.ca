@@ -35,7 +35,7 @@ import Brand25 from '../../public/brand-page/Layer-127.webp'
 import Brand26 from '../../public/brand-page/Layer-128.webp'
 import Brand27 from '../../public/brand-page/Layer-129.webp'
 import Brand28 from '../../public/brand-page/Layer-130.webp'
-import Image from 'next/legacy/image';
+import Image from "next/image";
 
 const BrandSlider = () => {
     const [width, setWidth] = useState();
@@ -51,7 +51,7 @@ const BrandSlider = () => {
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
                             <Box py={5} className="BrandTitle">
-                                <SectionalHeading blacktext="Brands" blueText="We Service" variant="h2" align="center"/>
+                                <SectionalHeading blacktext="Brands" blueText="We Service" variant="h2" align="center" />
                                 <Box mt={3}>
                                     <Swiper
                                         slidesPerView={width > 992 ? 4 : width > 0 && width < 600 ? 1 : 3}
@@ -66,88 +66,480 @@ const BrandSlider = () => {
                                         loop={true}
                                     >
                                         <SwiperSlide>
-                                            <Image  src={Brand1} alt="Bryant Logo" className='img-fluid' title='Bryant Logo' width={150} height={60} />
+                                            <Image
+                                                src={Brand1}
+                                                alt="Bryant Logo"
+                                                className='img-fluid'
+                                                title='Bryant Logo'
+                                                width={150}
+                                                height={60}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand2} alt="Tempstar Logo" className='img-fluid' title='Tempstar Logo' width={150} height={22} />
+                                            <Image
+                                                src={Brand2}
+                                                alt="Tempstar Logo"
+                                                className='img-fluid'
+                                                title='Tempstar Logo'
+                                                width={150}
+                                                height={22}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand3} alt="Heil HVAC Logo" className='img-fluid' title='Heil HVAC Logo' width={150} height={52} />
+                                            <Image
+                                                src={Brand3}
+                                                alt="Heil HVAC Logo"
+                                                className='img-fluid'
+                                                title='Heil HVAC Logo'
+                                                width={150}
+                                                height={52}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand4} alt="Keeprite Logo" className='img-fluid' title='Keeprite Logo' width={150} height={49} />
+                                            <Image
+                                                src={Brand4}
+                                                alt="Keeprite Logo"
+                                                className='img-fluid'
+                                                title='Keeprite Logo'
+                                                width={150}
+                                                height={49}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand5} alt="Kenmore Logo" className='img-fluid' title='Kenmore Logo' width={150} height={32} />
+                                            <Image
+                                                src={Brand5}
+                                                alt="Kenmore Logo"
+                                                className='img-fluid'
+                                                title='Kenmore Logo'
+                                                width={150}
+                                                height={32}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand6} alt="Lennox Logo" className='img-fluid' title='Lennox Logo' width={150} height={43} />
+                                            <Image
+                                                src={Brand6}
+                                                alt="Lennox Logo"
+                                                className='img-fluid'
+                                                title='Lennox Logo'
+                                                width={150}
+                                                height={43}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand7} alt="Concord Logo" className='img-fluid' title='Concord Logo' width={150} height={33} />
+                                            <Image
+                                                src={Brand7}
+                                                alt="Concord Logo"
+                                                className='img-fluid'
+                                                title='Concord Logo'
+                                                width={150}
+                                                height={33}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand8} alt="Luxaire Logo" className='img-fluid' title='Luxaire Logo' width={150} height={42} />
+                                            <Image
+                                                src={Brand8}
+                                                alt="Luxaire Logo"
+                                                className='img-fluid'
+                                                title='Luxaire Logo'
+                                                width={150}
+                                                height={42}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand9} alt="Maytag Logo" className='img-fluid' title='Maytag Logo' width={150} height={57} />
+                                            <Image
+                                                src={Brand9}
+                                                alt="Maytag Logo"
+                                                className='img-fluid'
+                                                title='Maytag Logo'
+                                                width={150}
+                                                height={57}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand10} alt="Navien Logo" className='img-fluid' title='Navien Logo' width={150} height={22} />
+                                            <Image
+                                                src={Brand10}
+                                                alt="Navien Logo"
+                                                className='img-fluid'
+                                                title='Navien Logo'
+                                                width={150}
+                                                height={22}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand11} alt="Payne Logo" className='img-fluid' title='Payne Logo' width={70} height={70} />
+                                            <Image
+                                                src={Brand11}
+                                                alt="Payne Logo"
+                                                className='img-fluid'
+                                                title='Payne Logo'
+                                                width={70}
+                                                height={70}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand12} alt="Rinnai Logo" className='img-fluid' title='Rinnai Logo' width={150} height={38} />
+                                            <Image
+                                                src={Brand12}
+                                                alt="Rinnai Logo"
+                                                className='img-fluid'
+                                                title='Rinnai Logo'
+                                                width={150}
+                                                height={38}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand13} alt="Trane Logo" className='img-fluid' title='Trane Logo' width={142} height={48} />
+                                            <Image
+                                                src={Brand13}
+                                                alt="Trane Logo"
+                                                className='img-fluid'
+                                                title='Trane Logo'
+                                                width={142}
+                                                height={48}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand14} alt="Viessmann Logo" className='img-fluid' title='Viessmann Logo' width={149} height={33} />
+                                            <Image
+                                                src={Brand14}
+                                                alt="Viessmann Logo"
+                                                className='img-fluid'
+                                                title='Viessmann Logo'
+                                                width={149}
+                                                height={33}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand15} alt="York Brand Logo" className='img-fluid' title='York Brand Logo' width={150} height={34} />
+                                            <Image
+                                                src={Brand15}
+                                                alt="York Brand Logo"
+                                                className='img-fluid'
+                                                title='York Brand Logo'
+                                                width={150}
+                                                height={34}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand16} alt="Coleman Logo" className='img-fluid' title='Coleman Logo' width={150} height={49} />
+                                            <Image
+                                                src={Brand16}
+                                                alt="Coleman Logo"
+                                                className='img-fluid'
+                                                title='Coleman Logo'
+                                                width={150}
+                                                height={49}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand17} alt="Aire Flo Logo" className='img-fluid' title='Aire Flo Logo' width={150} height={51} />
+                                            <Image
+                                                src={Brand17}
+                                                alt="Aire Flo Logo"
+                                                className='img-fluid'
+                                                title='Aire Flo Logo'
+                                                width={150}
+                                                height={51}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand18} alt="Amana Logo" className='img-fluid' title='Amana Logo' width={150} height={39} />
+                                            <Image
+                                                src={Brand18}
+                                                alt="Amana Logo"
+                                                className='img-fluid'
+                                                title='Amana Logo'
+                                                width={150}
+                                                height={39}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand19} alt="American Standard Logo" className='img-fluid' title='American Standard Logo' width={150} height={68} />
+                                            <Image
+                                                src={Brand19}
+                                                alt="American Standard Logo"
+                                                className='img-fluid'
+                                                title='American Standard Logo'
+                                                width={150}
+                                                height={68}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand20} alt="Arcoaire Logo" className='img-fluid' title='Arcoaire Logo' width={150} height={42} />
+                                            <Image
+                                                src={Brand20}
+                                                alt="Arcoaire Logo"
+                                                className='img-fluid'
+                                                title='Arcoaire Logo'
+                                                width={150}
+                                                height={42}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand21} alt="Armstrong Logo" className='img-fluid' title='Armstrong Logo' width={150} height={35} />
+                                            <Image
+                                                src={Brand21}
+                                                alt="Armstrong Logo"
+                                                className='img-fluid'
+                                                title='Armstrong Logo'
+                                                width={150}
+                                                height={35}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand22} alt="Carrier Logo" className='img-fluid' title='Carrier Logo' width={150} height={62} />
+                                            <Image
+                                                src={Brand22}
+                                                alt="Carrier Logo"
+                                                className='img-fluid'
+                                                title='Carrier Logo'
+                                                width={150}
+                                                height={62}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand23} alt="Comfortmaker Logo" className='img-fluid' title='Comfortmaker Logo' width={150} height={25} />
+                                            <Image
+                                                src={Brand23}
+                                                alt="Comfortmaker Logo"
+                                                className='img-fluid'
+                                                title='Comfortmaker Logo'
+                                                width={150}
+                                                height={32}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand24} alt="Daikin Logo" className='img-fluid' title='Daikin Logo' width={150} height={33} />
+                                            <Image
+                                                src={Brand24}
+                                                alt="Daikin Logo"
+                                                className='img-fluid'
+                                                title='Daikin Logo'
+                                                width={150}
+                                                height={33}
+                                                style={{
+                                                    width: "100%",
+                                                    maxWidth: "180px",
+                                                    maxHeight: "60px",
+                                                    objectFit: "contain",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand25} alt="Day And Night HVAC Logo" className='img-fluid' title='Day And Night HVAC Logo' width={64} height={70} />
+                                            <Image
+                                                src={Brand25}
+                                                alt="Day And Night HVAC Logo"
+                                                className='img-fluid'
+                                                title='Day And Night HVAC Logo'
+                                                width={64}
+                                                height={70}
+                                                style={{
+                                                    maxWidth: "150px",
+                                                    maxHeight: "50px",
+                                                    width: "auto",
+                                                    height: "auto",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand26} alt="Ameristart Logo" className='img-fluid' title='Ameristart Logo' width={150} height={27} />
+                                            <Image
+                                                src={Brand26}
+                                                alt="Ameristart Logo"
+                                                className='img-fluid'
+                                                title='Ameristart Logo'
+                                                width={150}
+                                                height={27}
+                                                style={{
+                                                    maxWidth: "150px",
+                                                    maxHeight: "50px",
+                                                    width: "auto",
+                                                    height: "auto",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand27} alt="Frigidaire Logo" className='img-fluid' title='Frigidaire Logo' width={150} height={19} />
+                                            <Image
+                                                src={Brand27}
+                                                alt="Frigidaire Logo"
+                                                className='img-fluid'
+                                                title='Frigidaire Logo'
+                                                width={150}
+                                                height={19}
+                                                style={{
+                                                    maxWidth: "150px",
+                                                    maxHeight: "50px",
+                                                    width: "auto",
+                                                    height: "auto",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <Image  src={Brand28} alt="Goodman Logo" className='img-fluid' title='Goodman Logo' width={150} height={40} />
+                                            <Image
+                                                src={Brand28}
+                                                alt="Goodman Logo"
+                                                className='img-fluid'
+                                                title='Goodman Logo'
+                                                width={150}
+                                                height={40}
+                                                style={{
+                                                    maxWidth: "150px",
+                                                    maxHeight: "50px",
+                                                    width: "auto",
+                                                    height: "auto",
+                                                    margin: "0 auto",
+                                                    display: "block"
+                                                }} />
                                         </SwiperSlide>
                                     </Swiper>
                                 </Box>
@@ -157,7 +549,7 @@ const BrandSlider = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default BrandSlider

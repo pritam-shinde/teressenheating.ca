@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import { AppointmentForm, CommonBanner } from '../components/components'
 import Family from '../public/home/testimonial.webp'
 import Banner from '../public/write-review/review.webp'
@@ -26,7 +26,17 @@ const WriteAReview = () => {
                   <Box mt={3}>
                     <Grid container spacing={3}>
                       <Grid item xs={12} md={6}>
-                        <Image layout='responsive' src={Family} alt="family" className="img-fluid" />
+                        <Image
+                          src={Family}
+                          alt="family"
+                          className="img-fluid"
+                          sizes="100vw"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            maxWidth: "100%",
+                            height: "auto"
+                          }} />
                       </Grid>
                       <Grid item xs={12} md={6}>
                         <AppointmentForm />
@@ -43,7 +53,7 @@ const WriteAReview = () => {
         <Locations />
       </main>
     </>
-  )
+  );
 }
 
 export default WriteAReview

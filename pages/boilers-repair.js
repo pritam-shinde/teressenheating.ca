@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -54,7 +54,16 @@ const BoilerRepair = () => {
                       <Container maxWidth="xxl">
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
-                            <Image layout='responsive' src={boiler} alt="boiler service" />
+                            <Image
+                              src={boiler}
+                              alt="boiler service"
+                              sizes="100vw"
+                              style={{
+                                width: "100%",
+                                height: "auto",
+                                maxWidth: "100%",
+                                height: "auto"
+                              }} />
                           </Grid>
                           <Grid item xs={12} md={6}>
                             <Typography className='para'>Airlinx has been providing expert boiler installation, boiler repair, and boiler installation services in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
@@ -154,7 +163,7 @@ const BoilerRepair = () => {
         <BrandSlider />
       </main>
     </>
-  )
+  );
 }
 
 export default BoilerRepair

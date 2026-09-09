@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -55,7 +55,17 @@ const BoilerMaintainance = () => {
                           <Grid container spacing={3}>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Image layout='responsive' src={Repair} alt="Repair" title='Repair' />
+                                <Image
+                                  src={Repair}
+                                  alt="Repair"
+                                  title='Repair'
+                                  sizes="100vw"
+                                  style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    maxWidth: "100%",
+                                    height: "auto"
+                                  }} />
                               </Box>
                             </Grid>
                             <Grid item xs={12} md={6}>
@@ -163,7 +173,7 @@ const BoilerMaintainance = () => {
         <BrandSlider />
       </main>
     </>
-  )
+  );
 }
 
 export default BoilerMaintainance

@@ -20,7 +20,7 @@ import Heatpump from '../../public/home/heatpump.webp'
 import Furnace from '../../public/home/furnace.webp'
 import Link from 'next/link'
 import { ArrowForward } from '@mui/icons-material'
-import Image from 'next/image'
+import Image from "next/image"
 
 const Service = () => {
     const [width, setWidth] = useState(992)
@@ -66,7 +66,15 @@ const Service = () => {
                                             <Grid item xs={6}>
                                                 <Button onClick={() => setActive('box1')} className={`d-flex justify-content-between align-items-center text-white ${Styles.box1}  ${active === 'box1' ? 'bg--blue' : Styles.inactive} m-0`}>
                                                     <Box p={1.5} mr={1} style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} className="bg--white d-flex justify-content-center align-items-center">
-                                                        <Image layout='responsive' src={Snow} alt="Cooling Services" title='Cooling Services' />
+                                                        <Image
+                                                            src={Snow}
+                                                            alt="Cooling Services"
+                                                            title='Cooling Services'
+                                                            sizes="100vw"
+                                                            style={{
+                                                                width: "100%",
+                                                                height: "auto"
+                                                            }} />
                                                     </Box>
                                                     <strong style={{ fontSize: "1.2rem" }}>Cooling Services</strong>
                                                 </Button>
@@ -75,7 +83,15 @@ const Service = () => {
                                                 <Button onClick={() => setActive('box2')} className={`d-flex justify-content-between align-items-center text-white ${Styles.box2} ${active === 'box2' ? 'bg--red' : Styles.inactive} m-0`}>
                                                     <strong style={{ fontSize: "1.2rem" }}>Heating Services</strong>
                                                     <Box p={1.5} ml={1} style={{ width: "3rem", height: "3rem", borderRadius: "50%" }} className="bg--white d-flex justify-content-center align-items-center">
-                                                        <Image layout='responsive' src={Fire} alt="Heating Services" title='Heating Services' />
+                                                        <Image
+                                                            src={Fire}
+                                                            alt="Heating Services"
+                                                            title='Heating Services'
+                                                            sizes="100vw"
+                                                            style={{
+                                                                width: "100%",
+                                                                height: "auto"
+                                                            }} />
                                                     </Box>
                                                 </Button>
                                             </Grid>
@@ -101,7 +117,16 @@ const Service = () => {
                                                 >
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={s1} alt="AC Remote" title='AC Remote' className='img-fluid' />
+                                                            <Image
+                                                                src={s1}
+                                                                alt="AC Remote"
+                                                                title='AC Remote'
+                                                                className='img-fluid'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                             <Box p={2} className={Styles.titleContainer}>
                                                                 <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>AC Installation & Replacement</Typography>
                                                             </Box>
@@ -116,7 +141,16 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={s2} alt="AC Repair" title='AC Repair' className='img-fluid' />
+                                                            <Image
+                                                                src={s2}
+                                                                alt="AC Repair"
+                                                                title='AC Repair'
+                                                                className='img-fluid'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                             <Box p={2} className={Styles.titleContainer}>
                                                                 <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>AC Repairing</Typography>
                                                             </Box>
@@ -131,7 +165,16 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={s3} alt="Airlinx Expert Technician Cooling Service" className='img-fluid' title='Airlinx Expert Technician Cooling Service' />
+                                                            <Image
+                                                                src={s3}
+                                                                alt="Airlinx Expert Technician Cooling Service"
+                                                                className='img-fluid'
+                                                                title='Airlinx Expert Technician Cooling Service'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                             <Box p={2} className={Styles.titleContainer}>
                                                                 <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>AC maintenance</Typography>
                                                             </Box>
@@ -165,13 +208,22 @@ const Service = () => {
                                                 >
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={Furnace} alt="Furnace System" title='Furnace System' className='img-fluid' />
+                                                            <Image
+                                                                src={Furnace}
+                                                                alt="Furnace System"
+                                                                title='Furnace System'
+                                                                className='img-fluid'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                                 <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Furnaces</Typography>
                                                             </Box>
                                                             <Box p={4} className={Styles.overviewRed}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Furnaces</Typography>
-                                                                <Typography className='text-white'>a building that uses combustion or another method to generate useful heat. Because coal was so readily available for heating, the furnace evolved historically from the fireplace and stove...</Typography>
+                                                                <Typography className='text-white'>a building that uses combustion or another method to generate useful heat. Because coal was so readily available for heating, the furnace evolved historically from the fireplace and stove.</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--red' aria-label="Learn more about Furnaces"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>
@@ -180,7 +232,16 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={Boiler} alt="Trusted Service Partner for Boiler Installation" title='Trusted Service Partner for Boiler Installation' className='img-fluid' />
+                                                            <Image
+                                                                src={Boiler}
+                                                                alt="Trusted Service Partner for Boiler Installation"
+                                                                title='Trusted Service Partner for Boiler Installation'
+                                                                className='img-fluid'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                                 <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Boiler</Typography>
                                                             </Box>
@@ -195,7 +256,16 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={Heatpump} alt="Certified Heat Pump Technician" title='Certified Heat Pump Technician' className='img-fluid' />
+                                                            <Image
+                                                                src={Heatpump}
+                                                                alt="Certified Heat Pump Technician"
+                                                                title='Certified Heat Pump Technician'
+                                                                className='img-fluid'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                                 <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Heat Pump</Typography>
                                                             </Box>
@@ -210,7 +280,16 @@ const Service = () => {
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <Box className={Styles.sliderContainer}>
-                                                            <Image layout='responsive' src={Fireplace} alt="Professional Fireplace Central Sysytem" title='Professional Fireplace Central Sysytem' className='img-fluid' />
+                                                            <Image
+                                                                src={Fireplace}
+                                                                alt="Professional Fireplace Central Sysytem"
+                                                                title='Professional Fireplace Central Sysytem'
+                                                                className='img-fluid'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
                                                             <Box p={2} className={Styles.titleContainerRed}>
                                                                 <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Fireplace</Typography>
                                                             </Box>
@@ -236,7 +315,7 @@ const Service = () => {
                 </Container>
             </section>
         </>
-    )
+    );
 }
 
 export default Service

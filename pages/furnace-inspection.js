@@ -1,7 +1,7 @@
 import { CheckCircleOutline } from '@mui/icons-material'
 import { Box, Container, Grid, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material'
 import Head from 'next/head'
-import Image from 'next/legacy/image'
+import Image from "next/image"
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { CommonBanner, SectionalHeading, ServiceCommonSidebar } from '../components/components'
@@ -55,7 +55,17 @@ const FurnaceInspection = () => {
                         <Grid container spacing={3}>
                           <Grid item xs={12} md={6}>
                             <Box>
-                              <Image layout='responsive' src={Furnace} alt="Furnace service" title='Furnace service' />
+                              <Image
+                                src={Furnace}
+                                alt="Furnace service"
+                                title='Furnace service'
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto",
+                                  maxWidth: "100%",
+                                  height: "auto"
+                                }} />
                             </Box>
                           </Grid>
                           <Grid item xs={12} md={6}>
@@ -99,7 +109,16 @@ const FurnaceInspection = () => {
                               <Typography className='para'><Link href="/">Airlinx heating ltd</Link> understands the importance of emergency HVAC services which are needed for residential heating. It is difficult to live without cooling and heating systems these days. So, we make sure that we help you with the best residential heating and home HVAC services which includes system repairing, furnace installation and repair, rooftop unit repair, and central heating system maintenance services.</Typography>
                             </Grid>
                             <Grid item xs={12} md={6}>
-                              <Image layout='responsive' src={HomeFurnace} alt="Residential Furnace" />
+                              <Image
+                                src={HomeFurnace}
+                                alt="Residential Furnace"
+                                sizes="100vw"
+                                style={{
+                                  width: "100%",
+                                  height: "auto",
+                                  maxWidth: "100%",
+                                  height: "auto"
+                                }} />
                             </Grid>
                             <Grid item xs={12} className="m-0 py-0">
                               <Typography className='para'>So, if your <Link href="/heating-services/">heating system</Link> is not being tuned up once a year, if it has some mechanical issues and if it has a faulty error sign, then simply give us a call. Our annual fire safety inspection services will leave you stress-free and happy. Also, people who have been working with us, have been trained and certified with the best. So, we will always help you to deal with problems like unexpected breakdowns, higher-than-usual heating bills, and carbon monoxide poisoning.</Typography>
@@ -155,7 +174,7 @@ const FurnaceInspection = () => {
         <BrandSlider />
       </main>
     </>
-  )
+  );
 }
 
 export default FurnaceInspection

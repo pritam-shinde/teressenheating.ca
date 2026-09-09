@@ -438,7 +438,10 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     -moz-border-radius: 50rem !important;
     -ms-border-radius: 50rem !important;
     -o-border-radius: 50rem !important;
-    background-color: #ced4da
+    background-color: #ffffff;
+    color: #6c757d;
+    cursor: pointer;
+    font-weight: 400;
 }
 
 .trusted {
