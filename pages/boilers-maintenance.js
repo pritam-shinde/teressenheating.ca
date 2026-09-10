@@ -141,7 +141,7 @@ const BoilerMaintainance = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary='Frequent boiler maintenance keeps your system running well for a longer period. ' />
+                              <ListItemText><Link href='https://airlinxheating.ca/blog/the-importance-and-benefits-of-boiler-repair-service-and-maintenance/'>Frequent boiler maintenance</Link> keeps your system running well for a longer period. </ListItemText>
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>
