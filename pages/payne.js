@@ -42,7 +42,7 @@ const Payne = () => {
       <Head>
         <title>Payne Heating and Cooling Repair Services - Airlinx</title>
         <meta name="description" content="Airlinx Heating and Cooling Repairs can help with Payne's heating or cooling emergency. We're always on call to help you when you need us most." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/payne/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

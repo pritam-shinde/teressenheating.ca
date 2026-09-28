@@ -80,7 +80,7 @@ const Richmond = () => {
       <Head>
         <title>Fast Solutions for Heating And Cooling Richmond - Airlinx</title>
         <meta name="description" content="Get your home climate system fixed fast. Airlinx Heating provides rapid heating and cooling Richmond solutions for broken furnaces, boilers, and ACs." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/richmond/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

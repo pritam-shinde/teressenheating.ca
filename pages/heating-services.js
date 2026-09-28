@@ -83,7 +83,7 @@ const HeatingService = () => {
       <Head>
         <title>Complete Heating Services in Burnaby - Airlinx Heating</title>
         <meta name="description" content="From emergency heating repairs to professional new system installations, get the dependable heating services you need from Airlinx Heating at Burnaby." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/heating-services/" />
       </Head>
       {/* <script type="application/ld+json">

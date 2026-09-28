@@ -26,7 +26,7 @@ const AboutUs = () => {
       <Head>
         <title>About Us - Premier HVAC Company Burnaby, BC - Airlinx</title>
         <meta name="description" content="Discover the story behind Airlinx Heating. As a leading HVAC company in Burnaby, we are dedicated to providing honest, high-quality climate comfort." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/about-us/" />
       </Head>
       <main>

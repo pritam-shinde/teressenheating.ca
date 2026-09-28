@@ -80,7 +80,7 @@ const Coquitlam = () => {
       <Head>
         <title>HVAC Coquitlam - Heating & Furnace Repair - Airlinx</title>
         <meta name="description" content="Looking for trusted HVAC Coquitlam services? Airlinx Heating delivers professional furnace repairs, boiler maintenance, and heat pump installations." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/coquitlam/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

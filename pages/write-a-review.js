@@ -12,7 +12,7 @@ const WriteAReview = () => {
       <Head>
         <title>Leave Us a Review - Share Your Experience With Airlinx</title>
         <meta name="description" content="Your feedback helps us grow! Share your experience with Airlinx Heating and let us know how our heating, cooling, or repair services team helped you." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/write-a-review/" />
       </Head>
       <main>

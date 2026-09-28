@@ -36,7 +36,7 @@ const LennoxHVAC = () => {
       <Head>
         <title>Lennox HVAC Repair & Installation Burnaby - Airlinx</title>
         <meta name="description" content="Looking for trusted Lennox HVAC services in Burnaby? Airlinx Heating provides expert repair, installation, and maintenance for Lennox heating and AC." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/lennox-hvac/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

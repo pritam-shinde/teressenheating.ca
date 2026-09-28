@@ -54,7 +54,7 @@ const SingleBlog = ({ data, sidebarBlogs, category }) => {
                     <Head>
                         <title>{blog.yoast_head_json ? blog.yoast_head_json.title ? blog.yoast_head_json.title : null : null}</title>
                         <meta name="description" content={blog.yoast_head_json ? blog.yoast_head_json.description ? blog.yoast_head_json.description : null : null} />
-                        <meta name="robots" content="index" />
+                        <meta name="robots" content="index, follow" />
                         <link rel="canonical" href={`https://airlinxheating.ca/blog/${blog.slug}/`} />
                     </Head>
                     <main>

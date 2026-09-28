@@ -34,7 +34,7 @@ const Emergency = () => {
       <Head>
         <title>24/7 Emergency Heating & Cooling Service - Airlinx</title>
         <meta name="description" content="HVAC failure? Don't panic. Airlinx Heating provides 24/7 emergency heating and cooling service in Burnaby for fast furnace, boiler, and AC repairs." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/emergency/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

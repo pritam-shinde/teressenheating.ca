@@ -51,7 +51,7 @@ const Trane = () => {
       <Head>
         <title>Expert Trane Furnace Service by Skilled Technicians- Airlinx</title>
         <meta name="description" content="The Trane Furnace experts at Airlinx Heating are factory-trained, certified and insured. We install and service Trane furnace systems. Book Now." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/trane/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

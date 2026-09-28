@@ -46,7 +46,7 @@ const Carrier = () => {
       <Head>
         <title>Certified Carrier Furnace Technician Services - Airlinx</title>
         <meta name="description" content="Airlinx heating is your local Carrier furnace experts. We have been providing quality furnace service since long. Call today for furnace services." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/carrier/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

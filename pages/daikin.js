@@ -42,7 +42,7 @@ const Daikin = () => {
       <Head>
         <title>Daikin Furnace & Heat Pump Installation Services - Airlinx</title>
         <meta name="description" content="Airlinx Heating is the best Daikin Furnace and heat pump installation, maintenance, and repair experts. Contact us in emergency expert solutions." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/daikin/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

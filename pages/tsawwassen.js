@@ -80,7 +80,7 @@ const Tsawwasses = () => {
       <Head>
         <title>Top-Rated HVAC and Furnace Service Tsawwassen - Airlinx</title>
         <meta name="description" content="Book your comprehensive furnace service Tsawwassen with certified technicians, clear pricing, and dependable results. Contact Airlinx Heating today." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/tsawwassen/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

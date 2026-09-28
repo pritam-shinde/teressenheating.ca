@@ -30,7 +30,7 @@ const index = () => {
       <Head>
         <title>Reliable Heat Pump Service Burnaby - Airlinx Heating</title>
         <meta name="description" content="Lower your energy bills with an efficient system. Trust Airlinx Heating for professional heat pump service Burnaby, including quick fixes and tune-ups." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/heat-pump/" />
       </Head>
       <main>

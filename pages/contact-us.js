@@ -10,7 +10,7 @@ const ContactUs = () => {
       <Head>
         <title>Contact for Emergency Heating And Cooling Service​ - Airlinx</title>
         <meta name="description" content="Ready to upgrade your system or need a quick fix? Contact Airlinx Heating for top-tier AC installation, furnace repair, and maintenance services. Book Now." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/contact-us/" />
       </Head>
       <main>

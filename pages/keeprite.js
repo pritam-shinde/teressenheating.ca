@@ -47,7 +47,7 @@ const Keeprite = () => {
       <Head>
         <title>Keeprite Furnace Maintenance Services in Burnaby - Airlinx</title>
         <meta name="description" content="Upgrade your comfort with Keeprite heating and cooling solutions. Airlinx Heating provides expert HVAC installation and service you can trust." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/keeprite/" />
       </Head>
       <script type="application/ld+json">

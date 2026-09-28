@@ -15,7 +15,7 @@ const Service = () => {
       <Head>
         <title>HVAC, Furnace, Heating and Cooling Services Canada - Airlinx</title>
         <meta name="description" content="Need professional HVAC care? Airlinx Heating offers top installation, repair, and maintenance service for furnaces, boilers, heat pumps, and ACs in Canada." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/services/" />
       </Head>
       <main>

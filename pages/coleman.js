@@ -41,7 +41,7 @@ const Coleman = () => {
       <Head>
         <title>Coleman heating Experienced Technicians - Airlinx</title>
         <meta name="description" content="Whether you need a furnace, air conditioner, or any other heating or cooling equipment, Airlinx Heating will diagnose & repair your Coleman system quickly" />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/coleman/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

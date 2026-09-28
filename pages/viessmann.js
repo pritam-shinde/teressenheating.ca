@@ -40,7 +40,7 @@ const Viessmann = () => {
       <Head>
         <title>Viessmann Heat Pump & Furnace Experts Technicians - Airlinx</title>
         <meta name="description" content="Airlinx Heating offers professional Viessmann HVAC and boiler services, including installation, repair, and maintenance. Enjoy efficient home comfort." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/viessmann/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

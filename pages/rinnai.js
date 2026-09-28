@@ -41,7 +41,7 @@ const Rinnai = () => {
       <Head>
         <title>Rinnai Heating & Furnace Services in Burnaby - Airlinx</title>
         <meta name="description" content="Airlinx Heating is a leading provider of Rinnai heating and furnace system services. We offer high-quality, affordable products and services in Canada." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/rinnai/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

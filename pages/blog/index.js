@@ -54,7 +54,7 @@ const Blog = ({ data, category }) => {
       <Head>
         <title>HVAC, Heating & Cooling Advice Blogs - Airlinx Heating</title>
         <meta name="description" content="Stay comfortable all year! Explore the Airlinx Heating blog for expert advice on furnace maintenance, AC energy savings, and troubleshooting tips." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/blog/" />
       </Head>
       <main>
@@ -74,7 +74,7 @@ const Blog = ({ data, category }) => {
                               } /> : null : null : null : null : null
                             }
                             <CardContent>
-                    {/* {
+                              {/* {
                             item ? item._embedded ? item._embedded.author ? item._embedded.author[0] ? item._embedded.author[0].name ? <Typography className='para'>Posted By: <strong className='text--blue'>{item._embedded.author[0].name}</strong></Typography> : null : null : null : null : null
 
                           } */}
@@ -87,7 +87,7 @@ const Blog = ({ data, category }) => {
                                 </Box>
                                 <Box className='flex-grow-1 ms-3'>
                                   {
-                                    item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h3'><Link legacyBehavior={true} href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
+                                    item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h2'><Link legacyBehavior={true} href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
                                   }
                                   {
                                     item ? item.excerpt ? item.excerpt.rendered ? <Typography dangerouslySetInnerHTML={{ __html: `${item.excerpt.rendered.split(" ").slice(0, 30).join(" ")} [...]` }} /> : null : null : null

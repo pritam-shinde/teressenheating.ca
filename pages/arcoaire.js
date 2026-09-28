@@ -41,7 +41,7 @@ const Arcoaire = () => {
       <Head>
         <title>HVAC Services for Arcoaire Heating Systems Burnaby - Airlinx</title>
         <meta name="description" content="AC and heating installation, service, repair for Arcoaire furnaces by Airlinx heating. We help you get the most from your investment. Contact us Now." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/arcoaire/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>
