@@ -42,7 +42,7 @@ const AireFlo = () => {
       <Head>
         <title>Aire-Flo Heating & Cooling Services - Airlinx Heating</title>
         <meta name="description" content="Airlinx Heating will help you with an expert solution for Air Flo heating and Cooling Services in Burnaby at your home and discussing your comfort needs." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/aire-flo/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

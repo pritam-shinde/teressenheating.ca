@@ -40,7 +40,7 @@ const HeilHVAC = () => {
       <Head>
         <title>Heil Heating and Cooling Expert Service Provider - Airlinx</title>
         <meta name="description" content="Airlinx Heating has been the trusted choice for heating, cooling, and air solutions for a long. Expertise in Heil Heating and Cooling systems Services." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/heil-hvac/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

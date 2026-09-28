@@ -41,7 +41,7 @@ const Ameristar = () => {
       <Head>
         <title>Expert Technicians For Ameristar Products Services - Airlinx</title>
         <meta name="description" content="We have 24/7 Ameristar heating & Cooling servicing. With long years of work experience, Airlinx Heating serve you with our quality and affordable services" />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/ameristar/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

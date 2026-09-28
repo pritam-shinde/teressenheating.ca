@@ -43,7 +43,7 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
     const { pageNo } = router.query
 
     const wp = new WPAPI({
-        endpoint: "https://api.teressenheating.ca/index.php/wp-json" 
+        endpoint: "https://api.teressenheating.ca/index.php/wp-json"
     })
 
     const fetchBlogs = async () => {
@@ -64,11 +64,11 @@ const BlogPagination = ({ data, sidebarBlogs, category }) => {
             <Head>
                 <title>Blog - airlinxheating.ca</title>
                 <meta name="description" content="Browse more HVAC articles, repair tips, heating advice, and air conditioning insights from the Airlinx Heating blog archive." />
-                <meta name="robots" content="index" />
+                <meta name="robots" content="index, follow" />
                 <link rel="canonical" href={`https://airlinxheating.ca/blog/page/${pageNo}/`} />
             </Head>
             <main>
-                <CommonBanner bg={Banner}  title="Blog" />
+                <CommonBanner bg={Banner} title="Blog" />
                 <section>
                     <Container maxWidth="xxl">
                         <Grid container>

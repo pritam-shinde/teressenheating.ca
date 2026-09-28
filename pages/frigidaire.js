@@ -40,7 +40,7 @@ const Frigidaire = () => {
       <Head>
         <title>Frigidaire Heat Pump Maintenance in Canada - Airlinx</title>
         <meta name="description" content="Frigidaire's Heat Pump Maintenance Plan in Airlinx heating ensures that you and your family are protected from the consequences of an HVAC breakdown." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/frigidaire/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

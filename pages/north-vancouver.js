@@ -80,7 +80,7 @@ const NorthVancouver = () => {
       <Head>
         <title>HVAC North Vancouver - Heating & Furnace - Airlinx</title>
         <meta name="description" content="Looking for trusted HVAC North Vancouver services? Airlinx Heating delivers professional furnace repairs, boiler maintenance, and heat pump installs." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/north-vancouver/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

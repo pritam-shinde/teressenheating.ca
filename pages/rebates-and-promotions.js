@@ -37,7 +37,7 @@ const RebatesAndPromotion = () => {
       <Head>
         <title>HVAC Deals, Rebates and Special Promotions - Airlinx</title>
         <meta name="description" content="Looking to upgrade your furnace or heat pump? Find out how to qualify for thousands in utility rebates and current special promotions from Airlinx Heating." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/rebates-and-promotions/" />
       </Head>
 

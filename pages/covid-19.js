@@ -18,7 +18,7 @@ const Covid19 = () => {
       <Head>
         <title>Covid - Airlinxheating.ca</title>
         <meta name="description" content="" />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/covid19/" />
       </Head>
       <main>

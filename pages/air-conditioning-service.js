@@ -84,7 +84,7 @@ const AirConditioningService = () => {
       <Head>
         <title>Air Conditioning Service & Maintenance in Burnaby - Airlinx</title>
         <meta name="description" content="Keep your home cool all summer long. Airlinx Heating offers professional air conditioning service, with 24/7 availability in Burnaby and nearby areas." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/air-conditioning-service/" />
       </Head>
 

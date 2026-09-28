@@ -26,7 +26,7 @@ const index = () => {
       <Head>
         <title>Airlinx Heating and Cooling Services - HVAC Contractor Burnaby</title>
         <meta name="description" content="Looking for a top HVAC contractor in Burnaby? Airlinx Heating offers expert heating, AC, and boiler services with 24/7 emergency support. Contact today!" />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/" />
       </Head>
 

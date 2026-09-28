@@ -36,7 +36,7 @@ const BoilerInstallation = () => {
       <Head>
         <title>Reliable Boiler Installation Burnaby, BC - Airlinx Heating</title>
         <meta name="description" content="Upgrade your home heating system today. Airlinx Heating provides expert boiler installation in Burnaby services with high-efficiency equipment choices." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-installation/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

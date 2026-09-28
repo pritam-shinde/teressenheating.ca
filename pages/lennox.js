@@ -44,7 +44,7 @@ const Lennox = () => {
       <Head>
         <title>Lennox Air Conditioning Repairs Service Provider - Airlinx</title>
         <meta name="description" content="Discover Lennox heating and cooling solutions from Airlinx Heating. We provide expert Lennox services to keep your home comfortable year-round." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/lennox/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

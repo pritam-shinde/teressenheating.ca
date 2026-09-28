@@ -42,7 +42,7 @@ const BoilerService = () => {
       <Head>
         <title>Trusted Boiler Installation Service in Canada | Airlinx</title>
         <meta name="description" content="Choose Airlinx for trusted boiler installation services in Canada. Our experienced technicians provide maintenance and repair. Contact us today" />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-service/" />
       </Head>
 

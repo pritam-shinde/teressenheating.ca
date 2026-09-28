@@ -30,7 +30,7 @@ const index = () => {
       <Head>
         <title>Emergency 24/7 Gas Fireplace Service - Airlinx Heating</title>
         <meta name="description" content="Is your fireplace ready for winter? Trust Airlinx Heating for professional gas fireplace service, checking for leaks, clearing debris, and fixing pilots." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/fireplace/" />
       </Head>
       <main>

@@ -79,7 +79,7 @@ const MapleRidge = () => {
       <Head>
         <title>HVAC service and Furnace Repair Maple Ridge - Airlinx</title>
         <meta name="description" content="Airlinx Heating provides HVAC, heating, cooling and expert furnace repair Maple Ridge solutions to get your home warm, safe, and comfortable tonight." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/maple-ridge/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

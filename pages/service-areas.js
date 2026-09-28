@@ -31,7 +31,7 @@ const ServiceArea = () => {
       <Head>
         <title>Areas We Serve in Canada - Local HVAC Services - Airlinx</title>
         <meta name="description" content="Wondering if we service your neighborhood? Check out the full list of cities and regions covered by the expert team at Airlinx Heating." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/service-areas/" />
       </Head>
       <main className="page-area">

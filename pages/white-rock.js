@@ -80,7 +80,7 @@ const WhiteRock = () => {
       <Head>
         <title>Boiler and Furnace Repair White Rock - Airlinx Heating</title>
         <meta name="description" content="Don't get left in the cold. Airlinx Heating provides fast boiler and furnace repair White Rock homeowners trust to bring back warm, safe comfort tonight." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/white-rock/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

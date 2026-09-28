@@ -61,7 +61,7 @@ const SingleCategory = ({ data, sidebarBlogs, category }) => {
             <Head>
                 <title>{data ? data[0] ? data[0].name ? data[0].name : null : null : null} - teressenheating.ca</title>
                 <meta name="description" content={data ? data[0] ? data[0].name ? `Read Airlinx Heating blog posts in the ${data[0].name} category.` : null : null : null} />
-                <meta name="robots" content="index" />
+                <meta name="robots" content="index, follow" />
                 <link rel="canonical" href={`https://airlinxheating.ca/blog/category/${data ? data[0] ? data[0].slug ? data[0].slug : null : null : null}/`} />
             </Head>
             <main>
@@ -73,7 +73,7 @@ const SingleCategory = ({ data, sidebarBlogs, category }) => {
                                 <Box py={5}>
                                     <Grid container spacing={5}>
                                         <Grid item xs={12} md={8}>
-                                        {
+                                            {
                                                 blogs ? blogs.map(item => <Card key={item.id} className="m-md-5 m-3 shadow-none">
                                                     {
                                                         item ? item._embedded ? item._embedded['wp:featuredmedia'] ? item._embedded['wp:featuredmedia'][0] ? item._embedded['wp:featuredmedia'][0].source_url ? <CardMedia component="img" image={item._embedded['wp:featuredmedia'][0].source_url} alt={item._embedded['wp:featuredmedia'][0].alt_text

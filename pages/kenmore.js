@@ -40,7 +40,7 @@ const Kenmore = () => {
       <Head>
         <title>Kenmore HVAC Services - Professional Technicians - Airlinx</title>
         <meta name="description" content="Airlinx Heating provides you with the Kenmore HVAC heating and cooling equipment service with sophisticated, quality-driven, and comfortable. Call Now." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/kenmore/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

@@ -82,7 +82,7 @@ const CommercialHVAC = () => {
       <Head>
         <title>Burnaby Commercial HVAC Services & Repair - Airlinx</title>
         <meta name="description" content="From emergency repairs to full system upgrades, Airlinx Heating provides comprehensive commercial HVAC services for local businesses and properties." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/commercial-hvac/" />
       </Head>
 

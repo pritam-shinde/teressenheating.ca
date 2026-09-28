@@ -5,6 +5,7 @@ export const blog_slugs = {
     "what-to-know-before-hiring-a-company-for-air-conditioning-maintenance-services-in-canada": true,
     "the-complete-guide-to-hvac-services-for-commercial-buildings-and-what-you-need-to-know": true,
     "why-you-need-a-heating-and-air-conditioning-repair-in-your-home": true,
+    "how-to-keep-mice-out-of-heat-pump": true,
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");

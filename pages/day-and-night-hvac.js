@@ -41,7 +41,7 @@ const DayNightHVAC = () => {
       <Head>
         <title>Day & Night HVAC Service Expert Technicians - Airlinx</title>
         <meta name="description" content="Airlinx Heating is the most trusted company for your Day and Night HVAC service needs. Our professionals are licensed, trained, and experienced." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/day-and-night-hvac/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

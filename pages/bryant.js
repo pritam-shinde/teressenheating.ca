@@ -56,7 +56,7 @@ const Brynt = () => {
       <Head>
         <title>Professional Bryant Furnace Services - Airlinx Heating</title>
         <meta name="description" content="Bryant Furnace Services at Airlinx Heating by Professional Technicians provides you with quality heating services. Contact today to Book an Appointment." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/bryant/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

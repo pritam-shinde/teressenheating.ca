@@ -81,7 +81,7 @@ const TanklesWaterHeater = () => {
       <Head>
         <title>Tankless Water Heater Services & Repair - Airlinx</title>
         <meta name="description" content="From emergency repairs and annual flush maintenance to efficient replacements, Airlinx Heating provides the tankless water heater services you need." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/tankless-water-heaters/" />
       </Head>
 

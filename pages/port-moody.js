@@ -80,7 +80,7 @@ const PortMoody = () => {
       <Head>
         <title>Commercial HVAC Maintenance Port Moody - Airlinx</title>
         <meta name="description" content="Airlinx Heating provides professional commercial HVAC maintenance Port Moody solutions to protect your facility. Keep your business running smoothly." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/port-moody/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

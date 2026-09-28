@@ -80,7 +80,7 @@ const WestVancouver = () => {
       <Head>
         <title>Best Heating And Cooling Services West Vancouver - Airlinx</title>
         <meta name="description" content="Need premium comfort solutions? Airlinx offers complete heating and cooling services West Vancouver homes trust for reliable repairs and installations." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/west-vancouver/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

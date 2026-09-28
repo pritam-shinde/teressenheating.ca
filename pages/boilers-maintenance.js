@@ -36,7 +36,7 @@ const BoilerMaintainance = () => {
       <Head>
         <title>Boiler Maintenance Services in Burnaby - Airlinx</title>
         <meta name="description" content="Give your heating system a care it deserves. Airlinx Heating delivers expert boiler maintenance services in Burnaby to prevent expensive emergency fixes." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/boilers-maintenance/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

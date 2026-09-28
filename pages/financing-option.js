@@ -35,7 +35,7 @@ const FinancingOption = () => {
       <Head>
         <title>Affordable Heating & Cooling Financing Options - Airlinx</title>
         <meta name="description" content="Upgrade your home comfort today and pay over time. Explore easy HVAC financing solutions from Airlinx Heating for new furnace, AC, or boiler installs." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/financing-option/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>

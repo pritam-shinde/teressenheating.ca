@@ -80,7 +80,7 @@ const PittMeadows = () => {
       <Head>
         <title>HVAC Service Pitt Meadows - Heating & Repair - Airlinx</title>
         <meta name="description" content="Keep your home comfortable year-round. Trust Airlinx Heating for premium HVAC service Pitt Meadows, including fast emergency repairs and installs." />
-        <meta name="robots" content="index" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/pitt-meadows/" />
         <JsonLd faqArr={arrayFaq} />
       </Head>
