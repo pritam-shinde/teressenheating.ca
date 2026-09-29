@@ -438,5 +438,16 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
-
+  <url>
+        <loc>https://airlinxheating.ca/blog/what-is-hvac/</loc>
+        <lastmod>2023-04-11T12:34:00.512Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://airlinxheating.ca/blog/how-to-keep-mice-out-of-heat-pump/</loc>
+        <lastmod>2023-04-11T12:34:00.512Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
