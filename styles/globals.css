@@ -237,6 +237,28 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
     margin: 0 !important;
 }
 
+.dropdown-heating {
+    position: relative;
+}
+
+.dropdown-heating:hover .dropdown-menu-heating {
+    display: block;
+    left: 100%;
+    top: 0 !important;
+    margin: 0 !important;
+}
+
+.dropdown-cooling {
+    position: relative;
+}
+
+.dropdown-cooling:hover .dropdown-menu-cooling {
+    display: block;
+    left: 100%;
+    top: 0 !important;
+    margin: 0 !important;
+}
+
 .dropdown5:hover .dropdown-menu-5 {
     width: 26rem;
     display: flex;

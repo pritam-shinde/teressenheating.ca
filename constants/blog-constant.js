@@ -6,7 +6,8 @@ export const blog_slugs = {
     "the-complete-guide-to-hvac-services-for-commercial-buildings-and-what-you-need-to-know": true,
     "why-you-need-a-heating-and-air-conditioning-repair-in-your-home": true,
     "how-to-keep-mice-out-of-heat-pump": true,
-    "what-is-hvac": true
+    "what-is-hvac": true,
+    "heat-pump-vs-air-conditioning-unit": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");
