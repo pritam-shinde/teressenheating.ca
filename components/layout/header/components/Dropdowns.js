@@ -13,9 +13,20 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
             <ul onClick={handleOnClick} className={`${click ? 'dropdownMenu clicked' : 'dropdownMenu'} shadow p-3`}>
                 {
                     menu === "services" ? [
-                        { id: "services-menu-1", link: "/heating-services/", text: "HEATING", submenu: null },
-                        { id: "services-menu-2", link: "/air-conditioning-service/", text: "COOLING", submenu: null },
-                        { id: "services-menu-3", link: "/commercial-hvac/", text: "COMMERCIAL HVAC", submenu: null },
+                        {
+                            id: "services-menu-1", link: "/heating-services/", text: "HEATING", submenu: [
+                                { id: "services-menu-1.1", link: "/fireplace/", text: "FIREPLACE" },
+                                { id: "services-menu-1.2", link: "/furnace/", text: "FURNACE" },
+                                { id: "services-menu-1.3", link: "/heat-pump/", text: "HEAT PUMP" },
+                            ]
+                        },
+                        {
+                            id: "services-menu-2", link: "/air-conditioning-service/", text: "COOLING", submenu: [
+                                { id: "services-menu-2.1", link: "/ac-installation/", text: "AC INSTALLATION" },
+                                { id: "services-menu-2.2", link: "/ac-maintainance/", text: "AC MAINTENANCE" },
+                                { id: "services-menu-2.3", link: "/ac-repair/", text: "AC REPAIR" },
+                            ]
+                        },
                         {
                             id: "services-menu-4", link: "/boilers-service/", text: "BOILER", submenu: [
                                 { id: "services-menu-4.1", link: "/boilers-maintenance/", text: "BOILERS MAINTENANCE" },
@@ -24,12 +35,12 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                                 // { id: "services-menu-4.4", link: "/boilers-service/", text: "BOILERS SERVICE" }
                             ]
                         },
+                        { id: "services-menu-3", link: "/commercial-hvac/", text: "COMMERCIAL HVAC", submenu: null },
                         { id: "services-menu-5", link: "/tankless-water-heaters/", text: "TANKLESS WATER HEATERS", submenu: null },
                         { id: "services-menu-6", link: "/rebates-and-promotions/", text: "REBATES AND PROMOTIONS", submenu: null },
                         { id: "services-menu-7", link: "/emergency/", text: "EMERGENCY", submenu: null },
                         { id: "services-menu-8", link: "/lennox-hvac/", text: "LENNOX HVAC", submenu: null },
-                        { id: "services-menu-9", link: "/financing-option/", text: "FINANCING OPTION", submenu: null },
-                        { id: "services-menu-10", link: "/furnace/", text: "FURNACE", submenu: null }
+                        { id: "services-menu-9", link: "/financing-option/", text: "FINANCING OPTION", submenu: null }
                     ].map(item => <li className="nav-item mb-2" key={item.id} onClick={() => { setClick(false); closeMobileMenu() }}>
                         <Link legacyBehavior={true} href={item.link}>
                             <a className='nav-link text-dark'>{item.text}</a>

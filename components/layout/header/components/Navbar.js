@@ -7,8 +7,8 @@ import blueLogo from '../../../../public/logo/airlinx-logo2.png'
 import greyLogo from '../../../../public/logo/airlinx-logo2.png'
 import GreyFilledBtn from '../../../buttons/GreyFilledBtn'
 import { Dropdowns } from './components'
-const Navbar = () => {
 
+const Navbar = () => {
   const [width, setWidth] = useState(601);
   const [clicked, setClicked] = useState(false);
   const [servicesDropdown, setServiceDropdown] = useState(false);
@@ -66,27 +66,57 @@ const Navbar = () => {
                         <Link className='nav-link' legacyBehavior={true} href="/services/">
                           <a className="nav-link dropdown-toggle" id="navbardropdown1" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">Services</a>
                         </Link>
-                        <ul className="dropdown-menu dropdown-menu-1 p-2 border-0" aria-labelledby="navbarDropdown">
-                          <li className="nav-item">
+                        <ul className="dropdown-menu dropdown-menu-1 p-2 border-0 shadow" aria-labelledby="navbarDropdown">
+                          <li className="nav-item dropdown dropdown-heating">
                             <Link className='nav-link' legacyBehavior={true} href="/heating-services/">
-                              <a className="nav-link dropdown-item">Heating</a>
+                              <a className="nav-link dropdown-toggle text-dark" id="navbardropdown-heating" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{ color: "#000 !important" }}>Heating</a>
                             </Link>
+                            <ul className="dropdown-menu dropdown-menu-heating p-2 border-0 shadow" aria-labelledby="navbarDropdown">
+                              <li className="nav-item">
+                                <Link className='nav-link' legacyBehavior={true} href="/fireplace/">
+                                  <a className="nav-link dropdown-item">Fireplace</a>
+                                </Link>
+                              </li>
+                              <li className="nav-item">
+                                <Link className='nav-link' legacyBehavior={true} href="/furnace/">
+                                  <a className="nav-link dropdown-item">Furnace</a>
+                                </Link>
+                              </li>
+                              <li className="nav-item">
+                                <Link className='nav-link' legacyBehavior={true} href="/heat-pump/">
+                                  <a className="nav-link dropdown-item">Heat Pump</a>
+                                </Link>
+                              </li>
+                            </ul>
                           </li>
-                          <li className="nav-item">
+                          <li className="nav-item dropdown dropdown-cooling">
                             <Link className='nav-link' legacyBehavior={true} href="/air-conditioning-service/">
-                              <a className="nav-link dropdown-item">Cooling</a>
+                              <a className="nav-link dropdown-toggle text-dark" id="navbardropdown-cooling" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{ color: "#000 !important" }}>Cooling</a>
                             </Link>
+                            <ul className="dropdown-menu dropdown-menu-cooling p-2 border-0 shadow" aria-labelledby="navbarDropdown">
+                              <li className="nav-item">
+                                <Link className='nav-link' legacyBehavior={true} href="/ac-installation/">
+                                  <a className="nav-link dropdown-item">AC Installation</a>
+                                </Link>
+                              </li>
+                              <li className="nav-item">
+                                <Link className='nav-link' legacyBehavior={true} href="/ac-maintainance/">
+                                  <a className="nav-link dropdown-item">AC Maintenance</a>
+                                </Link>
+                              </li>
+                              <li className="nav-item">
+                                <Link className='nav-link' legacyBehavior={true} href="/ac-repair/">
+                                  <a className="nav-link dropdown-item">AC Repair</a>
+                                </Link>
+                              </li>
+                            </ul>
                           </li>
-                          <li className="nav-item">
-                            <Link className='nav-link' legacyBehavior={true} href="/commercial-hvac/">
-                              <a className="nav-link dropdown-item">Commercial hvac</a>
-                            </Link>
-                          </li>
+
                           <li className="nav-item dropdown dropdown2">
                             <Link className='nav-link' legacyBehavior={true} href="/boilers-service/">
                               <a className="nav-link dropdown-toggle text-dark" id="navbardropdown2" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{ color: "#000 !important" }}>Boiler</a>
                             </Link>
-                            <ul className="dropdown-menu dropdown-menu-2 p-2 border-0" aria-labelledby="navbarDropdown">
+                            <ul className="dropdown-menu dropdown-menu-2 p-2 border-0 shadow" aria-labelledby="navbarDropdown">
                               <li className="nav-item">
                                 <Link className='nav-link' legacyBehavior={true} href="/boilers-maintenance/">
                                   <a className="nav-link dropdown-item">Boiler Maintainance</a>
@@ -102,12 +132,12 @@ const Navbar = () => {
                                   <a className="nav-link dropdown-item">Boiler Repair</a>
                                 </Link>
                               </li>
-                              {/* <li className="nav-item">
-                                <Link className='nav-link' legacyBehavior={true} href="/boilers-service/">
-                                  <a className="nav-link dropdown-item">Boiler Services</a>
-                                </Link>
-                              </li> */}
                             </ul>
+                          </li>
+                          <li className="nav-item">
+                            <Link className='nav-link' legacyBehavior={true} href="/commercial-hvac/">
+                              <a className="nav-link dropdown-item">Commercial hvac</a>
+                            </Link>
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/tankless-water-heaters/">
@@ -134,18 +164,13 @@ const Navbar = () => {
                               <a className="nav-link dropdown-item">Financing Option</a>
                             </Link>
                           </li>
-                          <li className="nav-item">
-                            <Link className='nav-link' legacyBehavior={true} href="/furnace/">
-                              <a className="nav-link dropdown-item">Furnace</a>
-                            </Link>
-                          </li>
                         </ul>
                       </li>
                       <li className='nav-item dropdown dropdown3'>
                         <Link className='nav-link' legacyBehavior={true} href="/service-areas/">
                           <a className='nav-link dropdown-toggle' id="navbardropdown3" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">Areas</a>
                         </Link>
-                        <ul className="dropdown-menu dropdown-menu-3 p-2 border-0" aria-labelledby="navbarDropdown">
+                        <ul className="dropdown-menu dropdown-menu-3 p-2 border-0 shadow" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/vancouver/">
                               <a className="nav-link dropdown-item">Vancouver</a>
@@ -212,7 +237,7 @@ const Navbar = () => {
                         <Link className='nav-link' legacyBehavior={true} href="/about-us/">
                           <a className='nav-link dropdown-toggle' id="navbardropdown4" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">About us</a>
                         </Link>
-                        <ul className="dropdown-menu dropdown-menu-4 p-2 border-0" aria-labelledby="navbarDropdown">
+                        <ul className="dropdown-menu dropdown-menu-4 p-2 border-0 shadow" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/write-a-review/">
                               <a className="nav-link dropdown-item">Write a Review</a>
@@ -232,7 +257,7 @@ const Navbar = () => {
                         <Link className='nav-link' legacyBehavior={true} href="/brand/">
                           <a className='nav-link dropdown-toggle' id="navbardropdown5" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true">Brand</a>
                         </Link>
-                        <ul className="dropdown-menu dropdown-menu-5 p-2 border-0" aria-labelledby="navbarDropdown">
+                        <ul className="dropdown-menu dropdown-menu-5 p-2 border-0 shadow" aria-labelledby="navbarDropdown">
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/lennox/">
                               <a className="nav-link dropdown-item">Lennox</a>
