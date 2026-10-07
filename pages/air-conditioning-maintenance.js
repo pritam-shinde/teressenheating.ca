@@ -7,7 +7,7 @@ import Banner from '../public/acmaintainance/ac-maintanance-banner.webp'
 import ACMaintanance from '../public/acmaintainance/ac-maintance.webp'
 import { FaqAndForm, FeaturedCoolingServices, HighlySkilled, Locations, PopularService, Testimonial } from '../sections/sections'
 
-const AcMaintainance = () => {
+const AirConditioningMaintenance = () => {
     const arrayFaq = [
         { id: "faq-1", que: "How do you maintain a heating and cooling system?", ans: "Here are a few tips on how you can maintain your home heating systems:.", list: ["Looking after your heating pump: Always schedule a tune-up before winter because there are chances that your heat pump might have got some damage during the last cooling season.", "Knowing your heating system's thermostat settings: Make sure that you always know three major thermostat settings-heating, cooling, and emergency heating.", "Cleaning the ducts: It is always recommended to check your heating system ducts every year. Duct cleaning is required in cases like pets, water damage, smoking, or reconstruction of your property."] },
         { id: "faq-2", que: "Can you combine heating and cooling system?", ans: "Yes, you can combine a cooling and heating system. Through this, you can save a lot of money and space with one unit. However, if you have existing systems, then you will be able to replace them with a new setup.", list: null },
@@ -31,7 +31,7 @@ const AcMaintainance = () => {
                 <title>Air Conditioning Maintenance Services | Airlinxheating </title>
                 <meta name="description" content="Airlinx has provided air conditioning maintenance services to residential and commercial customers throughout Canada and its area for a long. Contact us." />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://airlinxheating.ca/ac-maintainance/" />
+                <link rel="canonical" href="https://airlinxheating.ca/air-conditioning-maintenance/" />
             </Head>
             <main>
                 <CommonBanner bg={Banner} title="Air Conditioning Maintenance" color="#fff" variant="h1" />
@@ -159,4 +159,4 @@ const AcMaintainance = () => {
     );
 }
 
-export default AcMaintainance
+export default AirConditioningMaintenance

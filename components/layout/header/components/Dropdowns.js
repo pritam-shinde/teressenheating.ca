@@ -23,7 +23,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                         {
                             id: "services-menu-2", link: "/air-conditioning-service/", text: "COOLING", submenu: [
                                 { id: "services-menu-2.1", link: "/ac-installation/", text: "AC INSTALLATION" },
-                                { id: "services-menu-2.2", link: "/ac-maintainance/", text: "AC MAINTENANCE" },
+                                { id: "services-menu-2.2", link: "/air-conditioning-maintenance/", text: "AC MAINTENANCE" },
                                 { id: "services-menu-2.3", link: "/ac-repair/", text: "AC REPAIR" },
                             ]
                         },

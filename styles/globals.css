@@ -88,6 +88,7 @@ ul {
     padding-left: 0 !important
 }
 
+.blueFilledBtn:hover,
 .blueFilledBtn:hover a,
 .text--blue {
     color: var(--blue) !important
@@ -97,6 +98,7 @@ ul {
     color: var(--red) !important
 }
 
+.greyFilledBtn:hover,
 .greyFilledBtn:hover a,
 .swiper-button-next:after,
 .swiper-button-prev:after,
@@ -148,7 +150,7 @@ nav.navbar {
     border: 2px solid var(--grey) !important
 }
 
-/* .greyFilledBtn, */
+.greyFilledBtn,
 .greyFilledBtn a {
     color: var(--white) !important;
     font-size: .9rem

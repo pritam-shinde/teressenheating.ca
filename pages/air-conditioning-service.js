@@ -132,7 +132,7 @@ const AirConditioningService = () => {
                                   {
                                     [
                                       { id: "service_1", text: "AC installation and replacement services.", link: "/ac-installation/" },
-                                      { id: "service_2", text: "AC maintenance services", link: "/ac-maintainance/" },
+                                      { id: "service_2", text: "AC maintenance services", link: "/air-conditioning-maintenance/" },
                                       { id: "service_3", text: "AC repairing services", link: "/ac-repair/" },
                                       { id: "service_4", text: "Thermostat units." }
                                     ].map(item => <ListItem key={item}>

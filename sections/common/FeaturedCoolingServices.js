@@ -69,12 +69,12 @@ const FeaturedCoolingServices = () => {
                                         <Grid item xs={12} md={4}>
                                             <Box className="d-flex flex-column align-items-center">
                                                 <Box className='d-flex justify-content-center' style={{ height: "12rem" }}>
-                                                    <Link legacyBehavior={true} href="/ac-maintainance/">
+                                                    <Link legacyBehavior={true} href="/air-conditioning-maintenance/">
                                                         <a className="coolingIcon">
                                                             <Image
                                                                 src={Service3}
-                                                                title="Maintanance Logo"
-                                                                alt="Maintanance Logo"
+                                                                title="Maintenance Logo"
+                                                                alt="Maintenance Logo"
                                                                 className='img-fluid'
                                                                 style={{
                                                                     maxWidth: "100%",
@@ -84,7 +84,7 @@ const FeaturedCoolingServices = () => {
                                                     </Link>
                                                 </Box>
                                                 <Box>
-                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/ac-maintainance/"><a className='text-white'>Maintanance</a></Link></strong></Typography>
+                                                    <Typography align='center'><strong style={{ fontSize: "1.5rem" }} ><Link legacyBehavior={true} href="/air-conditioning-maintenance/"><a className='text-white'>Maintenance</a></Link></strong></Typography>
                                                 </Box>
                                             </Box>
                                         </Grid>

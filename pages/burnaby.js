@@ -91,7 +91,7 @@ const Burnaby = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="HAVC Burnaby - Furnace Installer Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="HVAC Burnaby - Furnace Installer Services" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -101,8 +101,8 @@ const Burnaby = () => {
                     <Grid item xs={12} md={6}>
                       <Image
                         src={BurnabyLoc}
-                        alt="Choklit Park"
-                        title='Choklit Park'
+                        alt="Heating and cooling services in Burnaby, BC"
+                        title='Heating and cooling services in Burnaby, BC'
                         sizes="100vw"
                         style={{
                           width: "100%",
