@@ -7,7 +7,8 @@ import Banner from '../../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner, BlueFilledBtn, GreyFilledBtn } from '../../../components/components'
 import { Box, Container, Grid, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import Styles from '../../../styles/Blog.module.css'
-import { filterAllowedBlogs } from '../../../constants/blog-constant'
+import { filterAllowedBlogs, blog_slugs_string, sanitizePostSummary, sanitizeSidebarBlogs } from '../../../constants/blog-constant'
+import fallbackBlogs from '../../../constants/fallback-blogs.json'
 
 export const getStaticPaths = async () => {
     return {
@@ -17,23 +18,41 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (context) => {
-    const { pageNo } = context.params
-    let res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100`)
-    let rawData = await res.json()
-    let data = filterAllowedBlogs(rawData)
-    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100');
-    const rawSidebarBlogs = await sidebarBlogsRes.json();
-    const sidebarBlogs = filterAllowedBlogs(rawSidebarBlogs);
-    const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
-    const category = await cat.json()
+    try {
+        const { pageNo } = context.params
+        let res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100`)
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        let rawData = await res.json()
+        let data = filterAllowedBlogs(rawData).map(sanitizePostSummary).filter(Boolean)
+        if (!data || data.length === 0) throw new Error("Empty posts returned")
 
-    return {
-        props: {
-            data,
-            sidebarBlogs,
-            category
-        },
-        revalidate: 60
+        let sidebarBlogs = []
+        try {
+            const sidebarBlogsRes = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?slug=${blog_slugs_string}&_fields=id,date,slug,title`)
+            const rawSidebarBlogs = await sidebarBlogsRes.json()
+            sidebarBlogs = sanitizeSidebarBlogs(rawSidebarBlogs)
+        } catch (sidebarErr) {
+            sidebarBlogs = sanitizeSidebarBlogs(fallbackBlogs.summary || [])
+        }
+
+        return {
+            props: {
+                data,
+                sidebarBlogs: sidebarBlogs.length > 0 ? sidebarBlogs : sanitizeSidebarBlogs(fallbackBlogs.summary || []),
+                category: []
+            },
+            revalidate: 60
+        }
+    } catch (error) {
+        console.warn("Using fallback blog data for blog page:", error.message)
+        return {
+            props: {
+                data: fallbackBlogs.summary || [],
+                sidebarBlogs: sanitizeSidebarBlogs(fallbackBlogs.summary || []),
+                category: []
+            },
+            revalidate: 60
+        }
     }
 }
 

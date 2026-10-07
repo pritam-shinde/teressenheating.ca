@@ -7,7 +7,8 @@ import Banner from '../../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner, BlueFilledBtn, GreyFilledBtn } from '../../../components/components'
 import { Box, Container, Grid, Card, CardContent, CardMedia, Typography } from '@mui/material'
 import Styles from '../../../styles/Blog.module.css'
-import { filterAllowedBlogs } from '../../../constants/blog-constant'
+import { filterAllowedBlogs, blog_slugs_string, sanitizeSidebarBlogs } from '../../../constants/blog-constant'
+import fallbackBlogs from '../../../constants/fallback-blogs.json'
 
 
 export const getStaticPaths = async () => {
@@ -18,25 +19,38 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (context) => {
-    const { slug } = context.params;
-    const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?slug=${slug}`);
-    const data = await res.json();
-    const sidebarBlogsRes = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&per_page=100');
-    const rawSidebarBlogs = await sidebarBlogsRes.json();
-    const sidebarBlogs = filterAllowedBlogs(rawSidebarBlogs);
-    const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
-    const category = await cat.json()
-    return {
-        props: {
-            data,
-            sidebarBlogs,
-            category
-        },
-        revalidate: 60
+    try {
+        const { slug } = context.params;
+        const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?slug=${slug}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        let sidebarBlogs = []
+        try {
+            const sidebarBlogsRes = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?slug=${blog_slugs_string}&_fields=id,date,slug,title`);
+            const rawSidebarBlogs = await sidebarBlogsRes.json();
+            sidebarBlogs = sanitizeSidebarBlogs(rawSidebarBlogs);
+        } catch (sidebarErr) {
+            sidebarBlogs = sanitizeSidebarBlogs(fallbackBlogs.summary || []);
+        }
+
+        return {
+            props: {
+                data,
+                sidebarBlogs: sidebarBlogs.length > 0 ? sidebarBlogs : sanitizeSidebarBlogs(fallbackBlogs.summary || []),
+                category: []
+            },
+            revalidate: 60
+        }
+    } catch (error) {
+        console.warn("Error in getStaticProps for category:", error.message);
+        return {
+            notFound: true
+        }
     }
 }
 
-const SingleCategory = ({ data, sidebarBlogs, category }) => {
+const SingleCategory = ({ data, sidebarBlogs = [], category = [] }) => {
     const [blogs, setBlogs] = useState([])
 
     const wp = new WPAPI({
@@ -59,7 +73,7 @@ const SingleCategory = ({ data, sidebarBlogs, category }) => {
     return (
         <>
             <Head>
-                <title>{data ? data[0] ? data[0].name ? data[0].name : null : null : null} - teressenheating.ca</title>
+                <title>{data ? data[0] ? data[0].name ? data[0].name : null : null : null} - airlinxheating.ca</title>
                 <meta name="description" content={data ? data[0] ? data[0].name ? `Read Airlinx Heating blog posts in the ${data[0].name} category.` : null : null : null} />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href={`https://airlinxheating.ca/blog/category/${data ? data[0] ? data[0].slug ? data[0].slug : null : null : null}/`} />

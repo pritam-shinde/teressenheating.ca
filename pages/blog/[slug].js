@@ -3,49 +3,75 @@ import Head from 'next/head';
 import Banner from '../../public/blog/blog.webp'
 import { BlogCommonSidebar, CommonBanner } from '../../components/components'
 import { Box, Container, Grid } from '@mui/material';
-import { blog_slugs, filterAllowedBlogs, blog_slugs_string } from '../../constants/blog-constant';
+import { blog_slugs, blog_slugs_string, sanitizeSidebarBlogs, sanitizeSingleBlog } from '../../constants/blog-constant';
+import fallbackBlogs from '../../constants/fallback-blogs.json';
 
 export const getStaticPaths = async () => {
-    const paths = Object.keys(blog_slugs).map(slug => ({
-        params: { slug }
-    }));
     return {
-        paths,
+        paths: [],
         fallback: 'blocking'
     }
 }
 
 export const getStaticProps = async (context) => {
-    const { slug } = context.params
+    const { slug } = context.params;
     if (!blog_slugs[slug]) {
         return {
             notFound: true
-        }
+        };
     }
-    const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${slug}`);
-    const data = await res.json()
-    if (!data || data.length === 0) {
+
+    try {
+        const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${slug}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const rawData = await res.json();
+        if (!rawData || !Array.isArray(rawData) || rawData.length === 0) {
+            throw new Error(`No post data for slug ${slug}`);
+        }
+
+        const blogData = sanitizeSingleBlog(rawData[0]);
+        if (!blogData) {
+            throw new Error(`Failed to sanitize slug ${slug}`);
+        }
+
+        let sidebarBlogs = [];
+        try {
+            const sidebarBlogsRes = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?slug=${blog_slugs_string}&_fields=id,date,slug,title`);
+            const rawSidebarBlogs = await sidebarBlogsRes.json();
+            sidebarBlogs = sanitizeSidebarBlogs(rawSidebarBlogs);
+        } catch (sidebarErr) {
+            sidebarBlogs = sanitizeSidebarBlogs(fallbackBlogs.summary || []);
+        }
+
+        return {
+            props: {
+                data: [blogData],
+                sidebarBlogs: sidebarBlogs.length > 0 ? sidebarBlogs : sanitizeSidebarBlogs(fallbackBlogs.summary || []),
+                category: []
+            },
+            revalidate: 60
+        };
+    } catch (error) {
+        console.warn(`Using fallback data for slug ${slug}:`, error.message);
+        const fallbackPost = fallbackBlogs.singles?.[slug];
+        if (fallbackPost) {
+            return {
+                props: {
+                    data: [fallbackPost],
+                    sidebarBlogs: sanitizeSidebarBlogs(fallbackBlogs.summary || []),
+                    category: []
+                },
+                revalidate: 60
+            };
+        }
         return {
             notFound: true
-        }
-    }
-    const sidebarBlogsRes = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`);
-    const rawSidebarBlogs = await sidebarBlogsRes.json()
-    const sidebarBlogs = filterAllowedBlogs(rawSidebarBlogs)
-    const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
-    const category = await cat.json()
-    return {
-        props: {
-            data,
-            sidebarBlogs,
-            category
-        },
-        revalidate: 60
+        };
     }
 }
 
-const SingleBlog = ({ data, sidebarBlogs, category }) => {
-    const [blog] = data
+const SingleBlog = ({ data, sidebarBlogs = [], category = [] }) => {
+    const blog = data && data[0] ? data[0] : null
 
     return (
         <>
