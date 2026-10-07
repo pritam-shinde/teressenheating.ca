@@ -21,4 +21,66 @@ export const filterAllowedBlogs = (blogs) => {
     return blogs.filter((item) => item && item.slug && blog_slugs[item.slug]);
 };
 
+export const sanitizePostSummary = (post) => {
+    if (!post) return null;
+    return {
+        id: post.id || null,
+        date: post.date || '',
+        slug: post.slug || '',
+        title: {
+            rendered: post.title?.rendered || ''
+        },
+        excerpt: {
+            rendered: post.excerpt?.rendered || ''
+        },
+        _embedded: {
+            'wp:featuredmedia': post._embedded?.['wp:featuredmedia']?.[0]
+                ? [{
+                    source_url: post._embedded['wp:featuredmedia'][0].source_url || '',
+                    alt_text: post._embedded['wp:featuredmedia'][0].alt_text || ''
+                }]
+                : []
+        }
+    };
+};
+
+export const sanitizeSidebarBlogs = (blogs) => {
+    if (!Array.isArray(blogs)) return [];
+    return filterAllowedBlogs(blogs).slice(0, 5).map(item => ({
+        id: item.id || null,
+        date: item.date || '',
+        slug: item.slug || '',
+        title: {
+            rendered: item.title?.rendered || ''
+        }
+    }));
+};
+
+export const sanitizeSingleBlog = (post) => {
+    if (!post) return null;
+    return {
+        id: post.id || null,
+        slug: post.slug || '',
+        date: post.date || '',
+        title: {
+            rendered: post.title?.rendered || ''
+        },
+        content: {
+            rendered: post.content?.rendered || ''
+        },
+        yoast_head_json: {
+            title: post.yoast_head_json?.title || '',
+            description: post.yoast_head_json?.description || ''
+        },
+        _embedded: {
+            'wp:featuredmedia': post._embedded?.['wp:featuredmedia']?.[0]
+                ? [{
+                    source_url: post._embedded['wp:featuredmedia'][0].source_url || '',
+                    alt_text: post._embedded['wp:featuredmedia'][0].alt_text || ''
+                }]
+                : []
+        }
+    };
+};
+
 export default blog_slugs;

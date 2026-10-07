@@ -6,20 +6,33 @@ import { CommonBanner, GreyFilledBtn, BlogCommonSidebar, BlueFilledBtn } from '.
 import Link from 'next/link';
 import Styles from '../../styles/Blog.module.css'
 import WPAPI from 'wpapi';
-import { filterAllowedBlogs, blog_slugs_string } from '../../constants/blog-constant';
+import { filterAllowedBlogs, blog_slugs_string, sanitizePostSummary } from '../../constants/blog-constant';
+import fallbackBlogs from '../../constants/fallback-blogs.json';
 
 export const getStaticProps = async () => {
-  const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`);
-  const rawData = await res.json();
-  const data = filterAllowedBlogs(rawData);
-  const cat = await fetch('https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?page=1&per_page=99')
-  const category = await cat.json()
-  return {
-    props: {
-      data,
-      category
-    },
-    revalidate: 60
+  try {
+    const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const rawData = await res.json();
+    const allowed = filterAllowedBlogs(rawData);
+    const data = allowed.map(sanitizePostSummary).filter(Boolean);
+    if (!data || data.length === 0) throw new Error("Empty posts returned");
+    return {
+      props: {
+        data,
+        category: []
+      },
+      revalidate: 60
+    };
+  } catch (error) {
+    console.warn("Using fallback blog data for /blog:", error.message);
+    return {
+      props: {
+        data: fallbackBlogs.summary || [],
+        category: []
+      },
+      revalidate: 60
+    };
   }
 }
 
@@ -59,68 +72,61 @@ const Blog = ({ data, category }) => {
       </Head>
       <main>
         <CommonBanner bg={Banner} title={<span className='text--black'>Blog</span>} />
-        {
-          hydration ? <><section>
-            <Container maxWidth="xxl">
-              <Grid container>
-                <Grid item xs={12} md={10} className="mx-auto">
-                  <Box py={5}>
-                    <Grid container spacing={5}>
-                      <Grid item xs={12} md={8}>
-                        {
-                          data ? data.map(item => <Card key={item.id} className="m-md-5 m-3 shadow-none">
-                            {
-                              item ? item._embedded ? item._embedded['wp:featuredmedia'] ? item._embedded['wp:featuredmedia'][0] ? item._embedded['wp:featuredmedia'][0].source_url ? <CardMedia component="img" image={item._embedded['wp:featuredmedia'][0].source_url} alt={item._embedded['wp:featuredmedia'][0].alt_text
-                              } /> : null : null : null : null : null
-                            }
-                            <CardContent>
-                              {/* {
-                            item ? item._embedded ? item._embedded.author ? item._embedded.author[0] ? item._embedded.author[0].name ? <Typography className='para'>Posted By: <strong className='text--blue'>{item._embedded.author[0].name}</strong></Typography> : null : null : null : null : null
-
-                          } */}
-                              <Box className='d-flex flex-md-row flex-column'>
-                                <Box className='flex-shrink-0 mb-md-0 mb-3'>
-                                  <Box py={0.5} px={2.5} className='bg--blue rounded'>
-                                    <Typography className={Styles.date}>{item.date.split("T")[0].split("-")[2]}</Typography>
-                                    <Typography className={Styles.month}>{months[Number(item.date.split("T")[0].split("-")[1]) - 1]}</Typography>
-                                  </Box>
-                                </Box>
-                                <Box className='flex-grow-1 ms-3'>
-                                  {
-                                    item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h2'><Link legacyBehavior={true} href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
-                                  }
-                                  {
-                                    item ? item.excerpt ? item.excerpt.rendered ? <Typography dangerouslySetInnerHTML={{ __html: `${item.excerpt.rendered.split(" ").slice(0, 30).join(" ")} [...]` }} /> : null : null : null
-                                  }
-                                  <Box mt={3}>
-                                    <GreyFilledBtn navlink={true} btnlink={item ? item.title ? item.title.rendered ? item.slug ? `/blog/${item.slug}` : null : null : null : null} btnTitle="Read More" />
-                                  </Box>
+        <section>
+          <Container maxWidth="xxl">
+            <Grid container>
+              <Grid item xs={12} md={10} className="mx-auto">
+                <Box py={5}>
+                  <Grid container spacing={5}>
+                    <Grid item xs={12} md={8}>
+                      {
+                        data ? data.map(item => <Card key={item.id} className="m-md-5 m-3 shadow-none">
+                          {
+                            item ? item._embedded ? item._embedded['wp:featuredmedia'] ? item._embedded['wp:featuredmedia'][0] ? item._embedded['wp:featuredmedia'][0].source_url ? <CardMedia component="img" image={item._embedded['wp:featuredmedia'][0].source_url} alt={item._embedded['wp:featuredmedia'][0].alt_text
+                            } /> : null : null : null : null : null
+                          }
+                          <CardContent>
+                            <Box className='d-flex flex-md-row flex-column'>
+                              <Box className='flex-shrink-0 mb-md-0 mb-3'>
+                                <Box py={0.5} px={2.5} className='bg--blue rounded'>
+                                  <Typography className={Styles.date}>{item.date.split("T")[0].split("-")[2]}</Typography>
+                                  <Typography className={Styles.month}>{months[Number(item.date.split("T")[0].split("-")[1]) - 1]}</Typography>
                                 </Box>
                               </Box>
-                            </CardContent>
-                          </Card>) : null
+                              <Box className='flex-grow-1 ms-3'>
+                                {
+                                  item ? item.title ? item.title.rendered ? item.slug ? <Typography variant='h2'><Link legacyBehavior={true} href={`/blog/${item.slug}`} ><a className='text--black'>{item.title.rendered}</a></Link></Typography> : null : null : null : null
+                                }
+                                {
+                                  item ? item.excerpt ? item.excerpt.rendered ? <Typography dangerouslySetInnerHTML={{ __html: `${item.excerpt.rendered.split(" ").slice(0, 30).join(" ")} [...]` }} /> : null : null : null
+                                }
+                                <Box mt={3}>
+                                  <GreyFilledBtn navlink={true} btnlink={item ? item.title ? item.title.rendered ? item.slug ? `/blog/${item.slug}` : null : null : null : null} btnTitle="Read More" />
+                                </Box>
+                              </Box>
+                            </Box>
+                          </CardContent>
+                        </Card>) : null
+                      }
+                      <Box mt={5} className="d-flex justify-content-center">
+                        {
+                          blogs ? blogs._paging ? blogs._paging.links ? blogs._paging.links.next ? <>
+                            <BlueFilledBtn navlink={true} btnlink={`/blog/page/2/`} btnTitle="NEXT" />
+                          </> : null : null : null : null
                         }
-                        <Box mt={5} className="d-flex justify-content-center">
-                          {
-                            blogs ? blogs._paging ? blogs._paging.links ? blogs._paging.links.next ? <>
-                              <BlueFilledBtn navlink={true} btnlink={`/blog/page/2/`} btnTitle="NEXT" />
-                            </> : null : null : null : null
-                          }
 
-                        </Box>
-                      </Grid>
-                      <Grid item xs={12} md={4}>
-                        <BlogCommonSidebar data={data} category={category} />
-                      </Grid>
+                      </Box>
                     </Grid>
-                  </Box>
-                </Grid>
+                    <Grid item xs={12} md={4}>
+                      <BlogCommonSidebar data={data} category={category} />
+                    </Grid>
+                  </Grid>
+                </Box>
               </Grid>
-            </Container>
-          </section></>
-            : "Loading..."
-        }
-      </main >
+            </Grid>
+          </Container>
+        </section>
+      </main>
     </>
   )
 }

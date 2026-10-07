@@ -43,6 +43,7 @@ module.exports = {
   },
   reactStrictMode: true,
   trailingSlash: true,
+  staticPageGenerationTimeout: 180,
   images: {
     formats: ['image/avif', 'image/webp']
   }
