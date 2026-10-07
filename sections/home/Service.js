@@ -180,7 +180,7 @@ const Service = () => {
                                                             </Box>
                                                             <Box p={4} className={Styles.overview}>
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC maintenance</Typography>
-                                                                <Typography className='text-white'>Local residents own and run the business Terresen Heating. To keep your family comfortable all year round, we know the proper home AC maintenance and tune-ups...</Typography>
+                                                                <Typography className='text-white'>Local residents own and run the business Airlinx Heating. To keep your family comfortable all year round, we know the proper home AC maintenance and tune-ups...</Typography>
                                                                 <Box mt={1}>
                                                                     <IconButton className='bg--blue' aria-label="Learn more about AC maintenance"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
                                                                 </Box>

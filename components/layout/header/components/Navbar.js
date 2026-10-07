@@ -424,7 +424,7 @@ const Navbar = () => {
             <a className="navbar-brand">
               <Image
                 src={blueLogo}
-                alt="Terresenheating Logo"
+                alt="Airlinxheating Logo"
                 title='Airlinxheating Logo'
                 sizes="100vw"
                 style={{
@@ -444,7 +444,7 @@ const Navbar = () => {
                 <a className="navbar-brand">
                   <Image
                     src={greyLogo}
-                    alt="Terresenheating Logo"
+                    alt="Airlinxheating Logo"
                     title='Airlinxheating Logo'
                     sizes="100vw"
                     style={{

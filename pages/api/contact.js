@@ -61,7 +61,7 @@ export default async function handler(req, res) {
 
     // 1. Persist to MongoDB
     const client = await clientPromise
-    const db = client.db(process.env.MONGODB_DB || 'airlinx_db')
+    const db = client.db(process.env.MONGODB_DB)
     const contactDoc = {
       visited,
       interested_in,
