@@ -1,16 +1,30 @@
 import { Button } from '@mui/material'
+import Link from 'next/link'
 import React from 'react'
 
 const GreyFilledBtn = ({ navlink, anchor, btnlink, btnTitle }) => {
+  if (anchor) {
+    return (
+      <Button component="a" href={btnlink} className="greyFilledBtn">
+        {btnTitle}
+      </Button>
+    )
+  }
+
+  if (navlink || btnlink) {
+    return (
+      <Link href={btnlink || '#'} passHref legacyBehavior prefetch={false}>
+        <Button component="a" href={btnlink} className="greyFilledBtn">
+          {btnTitle}
+        </Button>
+      </Link>
+    )
+  }
+
   return (
-    <>
-      {
-        navlink ? <Button component="span" className='greyFilledBtn'><a href={btnlink}>{btnTitle}</a></Button> : null
-      }
-      {
-        anchor ? <Button component="span" className='greyFilledBtn'><a href={btnlink}>{btnTitle}</a></Button> : null
-      }
-    </>
+    <Button className="greyFilledBtn">
+      {btnTitle}
+    </Button>
   )
 }
 

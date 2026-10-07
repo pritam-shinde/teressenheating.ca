@@ -3,15 +3,28 @@ import Link from 'next/link'
 import React from 'react'
 
 const BlueFilledBtn = ({ navlink, anchor, btnlink, btnTitle }) => {
+  if (anchor) {
+    return (
+      <Button component="a" href={btnlink} className="blueFilledBtn">
+        {btnTitle}
+      </Button>
+    )
+  }
+
+  if (navlink || btnlink) {
+    return (
+      <Link href={btnlink || '#'} passHref legacyBehavior prefetch={false}>
+        <Button component="a" href={btnlink} className="blueFilledBtn">
+          {btnTitle}
+        </Button>
+      </Link>
+    )
+  }
+
   return (
-    <>
-      {
-        navlink ? <Button className='blueFilledBtn'><Link passHref prefetch={false} legacyBehavior href={btnlink}><a>{btnTitle}</a></Link></Button> : null
-      }
-      {
-        anchor ? <Button className='blueFilledBtn'><a href={btnlink}>{btnTitle}</a></Button> : null
-      }
-    </>
+    <Button className="blueFilledBtn">
+      {btnTitle}
+    </Button>
   )
 }
 

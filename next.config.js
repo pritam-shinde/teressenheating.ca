@@ -34,6 +34,11 @@ module.exports = {
         destination: '/boilers-service/',
         permanent: true,
       },
+      {
+        source: '/ac-maintainance/',
+        destination: '/air-conditioning-maintenance/',
+        permanent: true,
+      },
     ];
   },
   reactStrictMode: true,

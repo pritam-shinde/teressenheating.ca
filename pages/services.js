@@ -58,7 +58,7 @@ const Service = () => {
                               </ListItemIcon>
                               <ListItemText primary="Air conditioning services and repair." />
                             </ListItem>
-                            <ListItem component="a" href="/ac-maintainance/">
+                            <ListItem component="a" href="/air-conditioning-maintenance/">
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
