@@ -125,7 +125,7 @@ const AirConditioningService = () => {
                             </Grid>
                             <Grid item xs={12} md={6}>
                               <Box>
-                                <Typography className='para'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, <a href="/blog/why-you-should-be-doing-regular-air-conditioning-service/">when your air conditioning breaks down</a>, it is very frustrating. This is when we play a major role in taking your frustration away and helping you with the best possible installation, repair, and maintenance services.
+                                <Typography className='para'>Your AC has an important job to do: to keep you and your family comfortable indoors. So, <a href="/blog/why-you-should-be-doing-regular-air-conditioning-service/">when your air conditioning breaks down</a>, it is very frustrating. This is when we play a major role in taking your frustration away and helping you with the <Link href="/blog/what-to-know-before-hiring-a-company-for-air-conditioning-maintenance-services-in-canada/">best possible installation, repair, and maintenance services</Link>.
                                 </Typography>
                                 <Typography className='para'>Our Air conditioning services include:</Typography>
                                 <List>

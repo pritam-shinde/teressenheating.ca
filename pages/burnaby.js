@@ -28,7 +28,7 @@ const Burnaby = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "HAVC Burnaby",
+    "serviceType": "HVAC Burnaby",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Airlinx Heating & Air Conditioning",
