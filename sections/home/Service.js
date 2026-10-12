@@ -18,6 +18,7 @@ import Boiler from '../../public/home/boiler.webp'
 import Fireplace from '../../public/home/fireplace.webp'
 import Heatpump from '../../public/home/heatpump.webp'
 import Furnace from '../../public/home/furnace.webp'
+import CoolingService from '../../public/cooling/cooling.webp'
 import Link from 'next/link'
 import { ArrowForward } from '@mui/icons-material'
 import Image from "next/image"
@@ -108,6 +109,7 @@ const Service = () => {
                                                     autoplay={{
                                                         delay: 2500,
                                                         disableOnInteraction: false,
+                                                        pauseOnMouseEnter: true,
                                                     }}
                                                     navigation={true}
                                                     loop={true}
@@ -134,7 +136,11 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC Installation & Replacement</Typography>
                                                                 <Typography className='text-white'>One of the most crucial Investment you can make in your house is installing an air conditioning system. We provide a wide range of services, including installation, yearly maintenance, and more, to ensure that everything is completed correctly...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue' aria-label="Learn more about AC Installation & Replacement"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <Link href="/ac-installation/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--blue' aria-label="Learn more about AC Installation & Replacement" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -158,7 +164,11 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC Repairing</Typography>
                                                                 <Typography className='text-white'>Residential air conditioning repair is offered by the family-run business Airlinx Heating and Air Conditioning. Regardless of the time of day, we have the knowledge to quickly fix your heating system...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue' aria-label="Learn more about AC Repairing"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <Link href="/ac-repair/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--blue' aria-label="Learn more about AC Repairing" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -182,7 +192,39 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>AC maintenance</Typography>
                                                                 <Typography className='text-white'>Local residents own and run the business Airlinx Heating. To keep your family comfortable all year round, we know the proper home AC maintenance and tune-ups...</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--blue' aria-label="Learn more about AC maintenance"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <Link href="/air-conditioning-maintenance/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--blue' aria-label="Learn more about AC maintenance" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
+                                                                </Box>
+                                                            </Box>
+                                                        </Box>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <Box className={Styles.sliderContainer}>
+                                                            <Image
+                                                                src={CoolingService}
+                                                                alt="Air Conditioning Service"
+                                                                className='img-fluid'
+                                                                title='Air Conditioning Service'
+                                                                sizes="100vw"
+                                                                style={{
+                                                                    width: "100%",
+                                                                    height: "auto"
+                                                                }} />
+                                                            <Box p={2} className={Styles.titleContainer}>
+                                                                <Typography variant='h3' className={`text-white ${Styles.sliderHeading}`}>Air Conditioning Service</Typography>
+                                                            </Box>
+                                                            <Box p={4} className={Styles.overview}>
+                                                                <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Air Conditioning Service</Typography>
+                                                                <Typography className='text-white'>Keep your home comfortable all summer long. Airlinx offers comprehensive residential and commercial air conditioning services, tune-ups, and emergency repairs across the area...</Typography>
+                                                                <Box mt={1}>
+                                                                    <Link href="/air-conditioning-service/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--blue' aria-label="Learn more about Air Conditioning Service" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -199,6 +241,7 @@ const Service = () => {
                                                     autoplay={{
                                                         delay: 2500,
                                                         disableOnInteraction: false,
+                                                        pauseOnMouseEnter: true,
                                                     }}
                                                     navigation={true}
                                                     loop={true}
@@ -225,7 +268,11 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Furnaces</Typography>
                                                                 <Typography className='text-white'>a building that uses combustion or another method to generate useful heat. Because coal was so readily available for heating, the furnace evolved historically from the fireplace and stove.</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red' aria-label="Learn more about Furnaces"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <Link href="/furnace/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--red' aria-label="Learn more about Furnaces" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -249,7 +296,11 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Boiler</Typography>
                                                                 <Typography className='text-white'>Airlinx has been offering professional boiler setup, maintenance, and repair services. Airlinx, a seasoned pioneer in the home heating sector, takes care of all your heating requirements with first-rate service at competitive prices.</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red' aria-label="Learn more about Boiler"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <Link href="/boilers-service/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--red' aria-label="Learn more about Boiler" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -273,7 +324,11 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Heat Pump</Typography>
                                                                 <Typography className='text-white'>Along with the manufacturer&apos;s warranty, we also provide full installation of your heat pump system with a 1-year labour warranty!</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red' aria-label="Learn more about Heat Pump"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <Link href="/heat-pump/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--red' aria-label="Learn more about Heat Pump" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
@@ -282,8 +337,8 @@ const Service = () => {
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={Fireplace}
-                                                                alt="Professional Fireplace Central Sysytem"
-                                                                title='Professional Fireplace Central Sysytem'
+                                                                alt="Professional Fireplace Central System"
+                                                                title='Professional Fireplace Central System'
                                                                 className='img-fluid'
                                                                 sizes="100vw"
                                                                 style={{
@@ -297,7 +352,11 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Fireplace</Typography>
                                                                 <Typography className='text-white'>Installation & Replacement of Professional Gas Fireplaces for Central Home Heating Systems</Typography>
                                                                 <Box mt={1}>
-                                                                    <IconButton className='bg--red' aria-label="Learn more about Fireplace"><Link legacyBehavior={true} href="/air-conditioning-service/"><ArrowForward /></Link></IconButton>
+                                                                    <Link href="/fireplace/" passHref legacyBehavior>
+                                                                        <IconButton component="a" className='bg--red' aria-label="Learn more about Fireplace" style={{ color: '#fff' }}>
+                                                                            <ArrowForward />
+                                                                        </IconButton>
+                                                                    </Link>
                                                                 </Box>
                                                             </Box>
                                                         </Box>
