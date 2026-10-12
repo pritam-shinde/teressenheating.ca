@@ -102,6 +102,7 @@ const Service = () => {
                                         {
                                             active === 'box1' ? <>
                                                 <Swiper
+                                                    key="cooling-services-slider"
                                                     slidesPerView={width > 992 ? 3 : width > 0 && width < 600 ? 1 : 2}
                                                     spaceBetween={60}
                                                     modules={[Navigation, Autoplay]}
@@ -117,7 +118,7 @@ const Service = () => {
                                                     onUpdate={cleanDuplicateHeadings}
                                                     onSlideChange={cleanDuplicateHeadings}
                                                 >
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="cooling-slide-installation">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={s1}
@@ -145,7 +146,7 @@ const Service = () => {
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="cooling-slide-repair">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={s2}
@@ -173,7 +174,7 @@ const Service = () => {
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="cooling-slide-maintenance">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={s3}
@@ -201,7 +202,7 @@ const Service = () => {
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="cooling-slide-service">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={CoolingService}
@@ -234,6 +235,7 @@ const Service = () => {
 
 
                                                 <Swiper
+                                                    key="heating-services-slider"
                                                     slidesPerView={width > 992 ? 3 : width > 0 && width < 600 ? 1 : 2}
                                                     spaceBetween={60}
                                                     modules={[Navigation, Autoplay]}
@@ -249,7 +251,7 @@ const Service = () => {
                                                     onUpdate={cleanDuplicateHeadings}
                                                     onSlideChange={cleanDuplicateHeadings}
                                                 >
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="heating-slide-furnaces">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={Furnace}
@@ -277,7 +279,7 @@ const Service = () => {
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="heating-slide-boiler">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={Boiler}
@@ -305,7 +307,7 @@ const Service = () => {
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="heating-slide-heatpump">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={Heatpump}
@@ -333,7 +335,7 @@ const Service = () => {
                                                             </Box>
                                                         </Box>
                                                     </SwiperSlide>
-                                                    <SwiperSlide>
+                                                    <SwiperSlide key="heating-slide-fireplace">
                                                         <Box className={Styles.sliderContainer}>
                                                             <Image
                                                                 src={Fireplace}
