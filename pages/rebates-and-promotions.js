@@ -42,7 +42,7 @@ const RebatesAndPromotion = () => {
       </Head>
 
       <main>
-        <CommonBanner bg={Banner} title="Airlinx's heating ltd offers the best rebates and promotions" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="HVAC Rebates & Promotions to Save on Your Home Comfort Upgrade" color="#fff" variant="h1" />
 
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>

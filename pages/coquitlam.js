@@ -91,7 +91,7 @@ const Coquitlam = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="AC Installation Services in Coquitlam" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="HVAC Services in Coquitlam for Your Home or Business" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

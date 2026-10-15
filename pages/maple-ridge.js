@@ -90,7 +90,7 @@ const MapleRidge = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Maple Ridge Furnace Heating & Air Conditioning Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Expert Furnace Repair in Maple Ridge" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

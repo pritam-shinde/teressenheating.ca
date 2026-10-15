@@ -47,7 +47,7 @@ const BoilerService = () => {
       </Head>
 
       <main>
-        <CommonBanner bg={Banner} title="Airlinx boiler repair and maintenance service: Quality, trust, and affordability assured" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Boiler Services for Every Home in Burnaby and nearby areas" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">

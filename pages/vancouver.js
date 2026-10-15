@@ -96,7 +96,7 @@ const Vancouver = () => {
       />
 
       <main>
-        <CommonBanner bg={Banner} title="24*7 Heating Services Vancouver" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="HVAC Services in Vancouver - Book Your Service" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

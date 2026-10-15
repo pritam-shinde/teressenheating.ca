@@ -91,7 +91,7 @@ const PittMeadows = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Pitt Meadows Heating Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="HVAC Service for Homes and Businesses in Pitt Meadows" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

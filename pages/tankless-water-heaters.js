@@ -94,7 +94,7 @@ const TanklesWaterHeater = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Airlinx tankless water heater maintenance service" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Tankless Water Heater Service for Burnaby Homes" color="#fff" variant="h1" />
 
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>

@@ -91,7 +91,7 @@ const LennoxHVAC = () => {
 
       </script>
       <main>
-        <CommonBanner bg={Banner} title="Airlinx your Lennox HVAC systems have certified technicians" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Lennox HVAC Systems: Premium Comfort for Your Home" color="#fff" variant="h1" />
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>
             <Grid item xs={12} md={10} className="mx-auto">

@@ -91,7 +91,7 @@ const Tsawwasses = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Tsawwassen Water Heater and Air Conditioning Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Reliable Furnace Service in Tsawwassen" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

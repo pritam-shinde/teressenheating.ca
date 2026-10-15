@@ -34,7 +34,7 @@ const AcInstallation = () => {
         <link rel="canonical" href="https://airlinxheating.ca/ac-installation/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Air Conditioning Installation" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Air Conditioning Installation in Burnaby" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

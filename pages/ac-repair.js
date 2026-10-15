@@ -34,7 +34,7 @@ const AcRepair = () => {
         <link rel="canonical" href="https://airlinxheating.ca/ac-repair/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Air Conditioning Repair" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Fast, Reliable Air Conditioning Repair in Burnaby and Nearby" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

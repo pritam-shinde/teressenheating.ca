@@ -40,7 +40,7 @@ const FinancingOption = () => {
         <JsonLd faqArr={arrayFaq} />
       </Head>
 
-      <CommonBanner bg={Banner} title="Airlinx's easy financing option that will leave you stressed-free" color="#fff" variant="h1" />
+      <CommonBanner bg={Banner} title="Flexible HVAC Financing to Make Your Upgrade Affordable" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>

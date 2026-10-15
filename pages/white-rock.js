@@ -91,7 +91,7 @@ const WhiteRock = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Heating Installation Services White Rock" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Get Professional Furnace Repair in White Rock" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

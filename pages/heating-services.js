@@ -181,7 +181,7 @@ const HeatingService = () => {
       </script> */}
 
       <main>
-        <CommonBanner bg={Heating} title="Heating Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Heating} title="Heating Services for Your Home & Business" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl" className='px-0'>
             <Grid container>

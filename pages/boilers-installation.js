@@ -41,7 +41,7 @@ const BoilerInstallation = () => {
         <JsonLd faqArr={arrayFaq} />
       </Head>
 
-      <CommonBanner bg={BoilerInstallationBanner} title="Airlinx boiler installation services" color="#fff" variant="h1" />
+      <CommonBanner bg={BoilerInstallationBanner} title="Boiler Installation in Burnaby: Efficient, Built to Last" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>

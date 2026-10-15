@@ -34,7 +34,7 @@ const index = () => {
         <link rel="canonical" href="https://airlinxheating.ca/fireplace/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Fireplace" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Gas Fireplace Service & Repair" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

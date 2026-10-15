@@ -91,7 +91,7 @@ const PortMoody = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Port Moody Air Conditioning and Heating Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Commercial HVAC Maintenance in Port Moody" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>
