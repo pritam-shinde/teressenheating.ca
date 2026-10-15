@@ -94,7 +94,7 @@ const CommercialHVAC = () => {
           __html: JSON.stringify(serviceSchema)
         }}
       />
-      <CommonBanner bg={Banner} title="Commercial HVAC Services" color="#fff" variant="h1" />
+      <CommonBanner bg={Banner} title="Commercial HVAC Services for Metro Vancouver Businesses" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>

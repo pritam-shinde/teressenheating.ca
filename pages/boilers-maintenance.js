@@ -41,7 +41,7 @@ const BoilerMaintainance = () => {
         <JsonLd faqArr={arrayFaq} />
       </Head>
 
-      <CommonBanner bg={BoilerMaintainanceBanner} title="Quality, trust, and affordable boiler maintenance services" color="#fff" variant="h1" />
+      <CommonBanner bg={BoilerMaintainanceBanner} title="Boiler Maintenance Service for Safer, Longer-Lasting Systems" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>

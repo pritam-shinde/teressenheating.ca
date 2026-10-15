@@ -96,7 +96,7 @@ const AirConditioningService = () => {
           __html: JSON.stringify(serviceSchema)
         }}
       />
-      <CommonBanner bg={airConditioner} title="Air Conditioning Service" color="#fff" variant="h1" />
+      <CommonBanner bg={airConditioner} title="Air Conditioning Service to Keep You Cool All Summer" color="#fff" variant="h1" />
       <main>
         <Container maxWidth="xxl" className='px-0'>
           <Grid container>

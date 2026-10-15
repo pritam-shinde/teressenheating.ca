@@ -34,7 +34,7 @@ const AirConditioningMaintenance = () => {
                 <link rel="canonical" href="https://airlinxheating.ca/air-conditioning-maintenance/" />
             </Head>
             <main>
-                <CommonBanner bg={Banner} title="Air Conditioning Maintenance" color="#fff" variant="h1" />
+                <CommonBanner bg={Banner} title="Air Conditioning Maintenance & Tune-Ups" color="#fff" variant="h1" />
                 <section>
                     <Container maxWidth="xxl">
                         <Grid container>

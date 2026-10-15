@@ -91,7 +91,7 @@ const Burnaby = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="HVAC Burnaby - Furnace Installer Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Get Expert Help for HVAC Repair Burnaby" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

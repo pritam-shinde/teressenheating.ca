@@ -34,7 +34,7 @@ const index = () => {
         <link rel="canonical" href="https://airlinxheating.ca/furnace/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Furnace" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Furnace Repair, Installation & Maintenance" color="#fff" variant="h1" />
 
         <section>
           <Container maxWidth="xxl">

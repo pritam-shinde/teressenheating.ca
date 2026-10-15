@@ -35,7 +35,7 @@ const ServiceArea = () => {
         <link rel="canonical" href="https://airlinxheating.ca/service-areas/" />
       </Head>
       <main className="page-area">
-        <CommonBanner bg={Banner} title="Areas We Served" variant="h1" color="#fff" />
+        <CommonBanner bg={Banner} title="HVAC Services in Burnaby and Nearby Areas" variant="h1" color="#fff" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

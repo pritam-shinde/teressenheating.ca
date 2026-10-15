@@ -91,7 +91,7 @@ const Richmond = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Richmond Air Conditioning Installation Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Heating and Cooling Services in Richmond" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

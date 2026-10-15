@@ -91,7 +91,7 @@ const NewWestminar = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="New Westminster Furnace Repair and Air Conditioning Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Professional HVAC Services in New Westminster" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

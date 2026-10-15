@@ -7,7 +7,8 @@ export const blog_slugs = {
     "why-you-need-a-heating-and-air-conditioning-repair-in-your-home": true,
     "how-to-keep-mice-out-of-heat-pump": true,
     "what-is-hvac": true,
-    "heat-pump-vs-air-conditioning-unit": true
+    "heat-pump-vs-air-conditioning-unit": true,
+    "boiler-maintenance-guide": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");

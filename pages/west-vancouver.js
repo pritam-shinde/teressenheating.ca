@@ -91,7 +91,7 @@ const WestVancouver = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="West Vancouver Heating and Cooling Services" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Heating and Cooling Services in West Vancouver" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

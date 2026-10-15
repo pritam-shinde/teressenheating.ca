@@ -34,7 +34,7 @@ const index = () => {
         <link rel="canonical" href="https://airlinxheating.ca/heat-pump/" />
       </Head>
       <main>
-        <CommonBanner bg={Banner} title="Heat Pump" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Heat Pump Installation in Burnaby for Efficient Heating & Cooling" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

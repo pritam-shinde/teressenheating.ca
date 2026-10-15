@@ -7,7 +7,7 @@ const Hero = () => {
             <section>
                 <Container maxWidth="xxl" className={`${Styles.hero} d-flex justify-content-center align-items-center`}>
                     <Box>
-                        <Typography className={Styles.bannerText} align="center" variant='h1'>Quality, Trust, Affordability!</Typography>
+                        <Typography className={Styles.bannerText} align="center" variant='h1'>Trusted HVAC Contractor in Burnaby, BC</Typography>
                     </Box>
                 </Container>
             </section>
