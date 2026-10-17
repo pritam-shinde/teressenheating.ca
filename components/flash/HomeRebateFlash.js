@@ -43,147 +43,122 @@ export const HomeFlashBar = ({ onHeightChange }) => {
         overflow: 'hidden'
       }}
     >
+      {/* Seamless CSS Marquee Track */}
       <Box
-        component="marquee"
-        direction="left"
-        scrollamount="8"
-        onMouseEnter={(e) => {
-          try {
-            e.currentTarget.stop()
-          } catch (err) { }
-        }}
-        onMouseLeave={(e) => {
-          try {
-            e.currentTarget.start()
-          } catch (err) { }
-        }}
+        className="ribbon-marquee-track"
         sx={{
-          display: 'block',
-          width: '100%',
-          verticalAlign: 'middle',
-          m: 0,
-          p: 0,
-          cursor: 'pointer'
+          display: 'flex',
+          width: 'max-content',
+          animation: 'ribbonScroll 28s linear infinite',
+          '&:hover': {
+            animationPlayState: 'paused'
+          },
+          '@keyframes ribbonScroll': {
+            '0%': { transform: 'translateX(0)' },
+            '100%': { transform: 'translateX(-50%)' }
+          }
         }}
       >
-        <Box
-          component="a"
-          href={FORTISBC_OFFICIAL_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          sx={{
-            textDecoration: 'none',
-            color: 'inherit',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: { xs: 1.5, sm: 2 },
-            whiteSpace: 'nowrap',
-            '&:hover': { textDecoration: 'none' }
-          }}
-        >
-          {/* Animated Flash Badge */}
+        {/* Helper function / duplicate items to form seamless infinite loop */}
+        {[1, 2].map((loopIndex) => (
           <Box
+            key={loopIndex}
+            component="a"
+            href={FORTISBC_OFFICIAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
+              textDecoration: 'none',
+              color: 'inherit',
               display: 'inline-flex',
               alignItems: 'center',
-              gap: 0.5,
-              backgroundColor: '#e21e26',
-              color: '#ffffff',
-              fontSize: { xs: '0.72rem', sm: '0.78rem' },
-              fontWeight: 800,
-              textTransform: 'uppercase',
-              letterSpacing: '0.6px',
-              px: { xs: 1.1, sm: 1.4 },
-              py: 0.3,
-              borderRadius: '20px',
-              boxShadow: '0 0 12px rgba(226, 30, 38, 0.7)',
-              animation: 'flashPulse 1.8s infinite ease-in-out',
-              '@keyframes flashPulse': {
-                '0%, 100%': { transform: 'scale(1)', opacity: 1 },
-                '50%': { transform: 'scale(1.05)', opacity: 0.9 }
-              }
+              gap: { xs: 1.5, sm: 2.2 },
+              whiteSpace: 'nowrap',
+              pr: { xs: 3, sm: 4 },
+              cursor: 'pointer',
+              '&:hover': { textDecoration: 'none' }
             }}
           >
-            <FlashOnIcon sx={{ fontSize: '0.95rem', color: '#ffea00' }} />
-            <span>REBATE FLASH</span>
+            {/* Animated Flash Badge */}
+            <Box
+              sx={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 0.5,
+                backgroundColor: '#e21e26',
+                color: '#ffffff',
+                fontSize: { xs: '0.72rem', sm: '0.78rem' },
+                fontWeight: 800,
+                textTransform: 'uppercase',
+                letterSpacing: '0.6px',
+                px: { xs: 1.1, sm: 1.4 },
+                py: 0.3,
+                borderRadius: '20px',
+                boxShadow: '0 0 12px rgba(226, 30, 38, 0.7)',
+                animation: 'flashPulse 1.8s infinite ease-in-out',
+                '@keyframes flashPulse': {
+                  '0%, 100%': { transform: 'scale(1)', opacity: 1 },
+                  '50%': { transform: 'scale(1.05)', opacity: 0.9 }
+                }
+              }}
+            >
+              <FlashOnIcon sx={{ fontSize: '0.95rem', color: '#ffea00' }} />
+              <span>REBATE FLASH</span>
+            </Box>
+
+            {/* Core Offer */}
+            <Typography
+              component="span"
+              sx={{
+                fontSize: { xs: '0.84rem', sm: '0.94rem' },
+                fontWeight: 500,
+                color: '#f8fafc'
+              }}
+            >
+              Save <strong style={{ color: '#ffb703', fontWeight: 800 }}>$4,000 to $8,000</strong> with FortisBC Rebates on Dual Fuel Heat Pump &amp; Heating Upgrades!
+            </Typography>
+
+            {/* Action Button */}
+            <Box
+              sx={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 0.5,
+                backgroundColor: '#ffb703',
+                color: '#091a33',
+                fontWeight: 700,
+                fontSize: { xs: '0.72rem', sm: '0.78rem' },
+                px: { xs: 1.2, sm: 1.8 },
+                py: 0.35,
+                borderRadius: '20px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.25)',
+                transition: 'all 0.2s ease',
+                '&:hover': {
+                  backgroundColor: '#ffd166'
+                }
+              }}
+            >
+              <span>View Official FortisBC Rebates</span>
+              <OpenInNewIcon sx={{ fontSize: '0.82rem' }} />
+            </Box>
+
+            <span style={{ color: '#ffea00', opacity: 0.7, margin: '0 4px' }}>✦</span>
+
+            {/* Secondary Details */}
+            <Typography
+              component="span"
+              sx={{
+                fontSize: { xs: '0.82rem', sm: '0.92rem' },
+                fontWeight: 500,
+                color: '#e2e8f0'
+              }}
+            >
+              Standard Residential: Up to <strong style={{ color: '#ffb703' }}>$4,000</strong> &bull; Income-Qualified: Up to <strong style={{ color: '#ffb703' }}>$8,000</strong>
+            </Typography>
+
+            <span style={{ color: '#ffea00', opacity: 0.7, margin: '0 4px' }}>✦</span>
           </Box>
-
-          {/* Core Offer */}
-          <Typography
-            component="span"
-            sx={{
-              fontSize: { xs: '0.84rem', sm: '0.94rem' },
-              fontWeight: 500,
-              color: '#f8fafc'
-            }}
-          >
-            Save <strong style={{ color: '#ffb703', fontWeight: 800 }}>$4,000 to $8,000</strong> with FortisBC Rebates on Dual Fuel Heat Pump & Heating Upgrades!
-          </Typography>
-
-          {/* Action Button that moves along */}
-          <Box
-            sx={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 0.5,
-              backgroundColor: '#ffb703',
-              color: '#091a33',
-              fontWeight: 700,
-              fontSize: { xs: '0.72rem', sm: '0.78rem' },
-              px: { xs: 1.2, sm: 1.8 },
-              py: 0.35,
-              borderRadius: '20px',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.25)',
-              transition: 'all 0.2s ease',
-              '&:hover': {
-                backgroundColor: '#ffd166'
-              }
-            }}
-          >
-            <span>View Official FortisBC Rebates</span>
-            <OpenInNewIcon sx={{ fontSize: '0.82rem' }} />
-          </Box>
-
-          <span style={{ color: '#ffea00', opacity: 0.7, margin: '0 8px' }}>✦</span>
-
-          {/* Secondary Details */}
-          <Typography
-            component="span"
-            sx={{
-              fontSize: { xs: '0.82rem', sm: '0.92rem' },
-              fontWeight: 500,
-              color: '#e2e8f0'
-            }}
-          >
-            Standard Residential: Up to <strong style={{ color: '#ffb703' }}>$4,000</strong> &bull; Income-Qualified: Up to <strong style={{ color: '#ffb703' }}>$8,000</strong>
-          </Typography>
-
-
-          {/* Action Button that moves along */}
-          <Box
-            sx={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 0.5,
-              backgroundColor: '#ffb703',
-              color: '#091a33',
-              fontWeight: 700,
-              fontSize: { xs: '0.72rem', sm: '0.78rem' },
-              px: { xs: 1.2, sm: 1.8 },
-              py: 0.35,
-              borderRadius: '20px',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.25)',
-              transition: 'all 0.2s ease',
-              '&:hover': {
-                backgroundColor: '#ffd166'
-              }
-            }}
-          >
-            <span>View Official FortisBC Rebates</span>
-            <OpenInNewIcon sx={{ fontSize: '0.82rem' }} />
-          </Box>
-          <span style={{ color: '#ffea00', opacity: 0.7, margin: '0 8px' }}>✦</span>
-        </Box>
+        ))}
       </Box>
     </Box>
   )
