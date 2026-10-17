@@ -46,7 +46,17 @@ export const HomeFlashBar = ({ onHeightChange }) => {
       <Box
         component="marquee"
         direction="left"
-        scrollamount="10"
+        scrollamount="8"
+        onMouseEnter={(e) => {
+          try {
+            e.currentTarget.stop()
+          } catch (err) { }
+        }}
+        onMouseLeave={(e) => {
+          try {
+            e.currentTarget.start()
+          } catch (err) { }
+        }}
         sx={{
           display: 'block',
           width: '100%',
