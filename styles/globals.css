@@ -658,3 +658,16 @@ span.headingSecond {
 .border--grey span {
     margin: 0 auto !important;
 }
+
+/* Home Page Rebate Flash Styles */
+body.has-rebate-flash-bar [class*="Home_hero"],
+:has(#home-rebate-flash-bar) [class*="Home_hero"] {
+    margin-top: 9.3rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+    body.has-rebate-flash-bar [class*="Home_hero"],
+    :has(#home-rebate-flash-bar) [class*="Home_hero"] {
+        margin-top: 6.4rem !important;
+    }
+}
