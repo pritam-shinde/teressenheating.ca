@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from "next/router";
 import { SectionalHeading } from '../../components/components';
 
-const Locations = () => {
+const Locations = ({ title, description }) => {
     const router = useRouter();
     return (
         <>
@@ -12,8 +12,17 @@ const Locations = () => {
                     <Grid container>
                         <Grid item xs={12} md={10} className="mx-auto">
                             <Box py={3}>
-                                <SectionalHeading blacktext="Areas we" blueText="serve in" variant="h2" align="center" />
-                                <Box mt={5}>
+                                {title ? (
+                                    <SectionalHeading simpletext={title} variant="h2" align="center" />
+                                ) : (
+                                    <SectionalHeading blacktext="Areas we" blueText="serve in" variant="h2" align="center" />
+                                )}
+                                {description && (
+                                    <Typography align="center" className="para mt-2 mb-4">
+                                        {description}
+                                    </Typography>
+                                )}
+                                <Box mt={description ? 3 : 5}>
                                     <Grid container spacing={5}>
                                         {
                                             [

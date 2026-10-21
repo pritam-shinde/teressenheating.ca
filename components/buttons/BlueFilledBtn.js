@@ -2,10 +2,10 @@ import { Button } from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
 
-const BlueFilledBtn = ({ navlink, anchor, btnlink, btnTitle }) => {
+const BlueFilledBtn = ({ navlink, anchor, btnlink, btnTitle, target, rel }) => {
   if (anchor) {
     return (
-      <Button component="a" href={btnlink} className="blueFilledBtn">
+      <Button component="a" href={btnlink} target={target} rel={rel} className="blueFilledBtn">
         {btnTitle}
       </Button>
     )
@@ -14,7 +14,7 @@ const BlueFilledBtn = ({ navlink, anchor, btnlink, btnTitle }) => {
   if (navlink || btnlink) {
     return (
       <Link href={btnlink || '#'} passHref legacyBehavior prefetch={false}>
-        <Button component="a" href={btnlink} className="blueFilledBtn">
+        <Button component="a" href={btnlink} target={target} rel={rel} className="blueFilledBtn">
           {btnTitle}
         </Button>
       </Link>
