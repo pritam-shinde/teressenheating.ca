@@ -218,10 +218,10 @@ const HeatPumpPage = () => {
                 <Box mt={5}>
                   <SectionalHeading simpletext="Expert Heat Pump Installation, Service & Repair from a Local Heating Contractor" variant="h2" />
                   <Typography className='para'>
-                    Need heat pump installation in Burnaby? That's what we do every day. Airlinx Heating is a licensed heating contractor in Burnaby, and for more than 20 years we've been installing, fixing, and replacing heat pumps for homeowners and businesses all over Vancouver. If you quit on a cold night, we'll get someone out to you fast.
+                    Need heat pump installation in Burnaby? That's what we do every day. Airlinx Heating is a licensed <Link href="/">HVAC contractor in Burnaby</Link>, and for more than 20 years we've been installing, fixing, and replacing heat pumps for homeowners and businesses all over Vancouver. If you quit on a cold night, we'll get someone out to you fast.
                   </Typography>
                   <Typography className='para'>
-                    Most people call us when something's already wrong. The house is cold, the outdoor unit is iced over, or the repair bills keep coming. We handle heat pump service in Burnaby of every kind, from a basic yearly check to a full heat pump replacement. Before we touch anything, you will know what it costs, and you'll hear straight from us if fixing the old one doesn't make sense.
+                    Most people call us when something's already wrong. The house is cold, the outdoor unit is iced over, or the repair bills keep coming. We handle heat pump <Link href="/burnaby/">service in Burnaby</Link> of every kind, from a basic yearly check to a full heat pump replacement. Before we touch anything, you will know what it costs, and you'll hear straight from us if fixing the old one doesn't make sense.
                   </Typography>
                   <Box mt={3} sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
                     <BlueFilledBtn navlink={true} btnlink="/contact-us/" btnTitle="Get a Free Quote" />
@@ -498,7 +498,7 @@ const HeatPumpPage = () => {
           formVariant="h2"
           formtitleAlign="center"
         />
-      </main>
+      </main >
     </>
   )
 }
