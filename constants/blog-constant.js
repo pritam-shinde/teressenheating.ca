@@ -8,7 +8,8 @@ export const blog_slugs = {
     "how-to-keep-mice-out-of-heat-pump": true,
     "what-is-hvac": true,
     "heat-pump-vs-air-conditioning-unit": true,
-    "boiler-maintenance-guide": true
+    "boiler-maintenance-guide": true,
+    "how-does-a-tankless-hot-water-heater-work": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");
