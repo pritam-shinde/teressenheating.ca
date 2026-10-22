@@ -91,7 +91,7 @@ const NorthVancouver = () => {
         }}
       />
       <main>
-        <CommonBanner bg={Banner} title="Trusted HVAC Services in North Vancouver" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="HVAC North Vancouver - Reliable Heating & Cooling Services" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl">
             <Grid container>

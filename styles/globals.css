@@ -585,6 +585,22 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 
 }
 
+.BlogBannerTitle {
+    max-width: 65% !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .BlogBannerTitle {
+        max-width: 85% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .BlogBannerTitle {
+        max-width: 100% !important;
+    }
+}
+
 @media only screen and (min-width:600px) {
     .BlogBannerTitle {
         font-size: 2rem !important;
