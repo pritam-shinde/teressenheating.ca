@@ -586,7 +586,10 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 }
 
 .BlogBannerTitle {
-    max-width: 65% !important;
+    max-width: 72% !important;
+    line-height: 1.25 !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
 }
 
 @media only screen and (max-width: 991px) {
@@ -598,31 +601,43 @@ header ul li.nav-item.dropdown1:hover .dropdown-menu-1 {
 @media only screen and (max-width: 600px) {
     .BlogBannerTitle {
         max-width: 100% !important;
+        font-size: 1.4rem !important;
     }
 }
 
 @media only screen and (min-width:600px) {
     .BlogBannerTitle {
-        font-size: 2rem !important;
-        letter-spacing: 1px !important;
+        font-size: 1.75rem !important;
+        letter-spacing: 0.5px !important;
     }
-
 }
 
+/* Laptop screens: 992px - 1439px */
 @media only screen and (min-width:992px) {
     .BlogBannerTitle {
-        font-size: 3rem !important;
-        letter-spacing: 1px !important;
+        max-width: 72% !important;
+        font-size: 1.95rem !important;
+        letter-spacing: 0.5px !important;
+        line-height: 1.25 !important;
     }
-
 }
 
+/* Intermediate large laptops / smaller desktops: 1440px - 1599px */
+@media only screen and (min-width:1440px) {
+    .BlogBannerTitle {
+        max-width: 70% !important;
+        font-size: 2.35rem !important;
+        letter-spacing: 0.5px !important;
+    }
+}
+
+/* Above laptop screens: 1600px+ */
 @media only screen and (min-width:1600px) {
     .BlogBannerTitle {
-        font-size: 3.6rem !important;
-        letter-spacing: 1px !important;
+        max-width: 65% !important;
+        font-size: 3rem !important;
+        letter-spacing: 0.8px !important;
     }
-
 }
 
 
@@ -682,6 +697,7 @@ body.has-rebate-flash-bar [class*="Home_hero"],
 }
 
 @media only screen and (max-width: 600px) {
+
     body.has-rebate-flash-bar [class*="Home_hero"],
     :has(#home-rebate-flash-bar) [class*="Home_hero"] {
         margin-top: 6.4rem !important;
