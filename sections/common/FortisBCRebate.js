@@ -43,9 +43,11 @@ const FortisBCRebate = ({
                                         </Typography>
                                         <Box>
                                             <BlueFilledBtn
-                                                btnlink={btnlink || "https://www.fortisbc.com/rebates/home/furnace-and-boiler-maintenance-rebate"}
+                                                btnlink={btnlink || "https://www.fortisbc.com/rebates/detail/appliance-maintenance-program"}
                                                 btnTitle={btnTitle || "FortisBC Appliance Maintenance Program"}
                                                 anchor={true}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
                                             />
                                         </Box>
                                     </Box>

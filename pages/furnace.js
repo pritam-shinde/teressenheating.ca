@@ -322,7 +322,7 @@ const FurnacePage = () => {
           title="FortisBC Furnace Maintenance Rebate"
           description="If you heat your home with gas through FortisBC, you may be able to get a rebate for having your furnace serviced. The rules and amounts change from time to time, so check current eligibility on FortisBC's site below. When you book a furnace service visit with us, ask what paperwork to keep."
           btnTitle="FortisBC Appliance Maintenance Program"
-          btnlink="https://www.fortisbc.com/rebates/home/furnace-and-boiler-maintenance-rebate"
+          btnlink="https://www.fortisbc.com/rebates/detail/appliance-maintenance-program/"
         />
 
         {/* SECTION 2: Our Furnace Services in Burnaby */}
@@ -426,13 +426,23 @@ const FurnacePage = () => {
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
-                  <Grid container spacing={{ xs: 4, md: 5 }} alignItems="center">
-                    <Grid item xs={12} md={5}>
+                  {/* Heading visible on screens smaller than lg */}
+                  <Box sx={{ display: { xs: 'block', lg: 'none' }, mb: 3 }}>
+                    <SectionalHeading
+                      simpletext="Why Choose Airlinx as Your Furnace Repair Technician in Burnaby?"
+                      variant="h2"
+                    />
+                  </Box>
+
+                  <Grid container spacing={{ xs: 4, lg: 5 }} alignItems="center">
+                    <Grid item xs={12} lg={5}>
                       <Box
                         sx={{
                           borderRadius: '16px',
                           overflow: 'hidden',
-                          boxShadow: '0 8px 24px rgba(0,0,0,0.08)'
+                          boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
+                          maxWidth: { xs: '100%', md: '550px', lg: '100%' },
+                          mx: { xs: 'auto', lg: 0 }
                         }}
                       >
                         <Image
@@ -448,13 +458,16 @@ const FurnacePage = () => {
                         />
                       </Box>
                     </Grid>
-                    <Grid item xs={12} md={7}>
+                    <Grid item xs={12} lg={7}>
                       <Box>
-                        <SectionalHeading
-                          simpletext="Why Choose Airlinx as Your Furnace Repair Technician in Burnaby?"
-                          variant="h2"
-                        />
-                        <Grid container spacing={2} sx={{ mt: 2.5 }}>
+                        {/* Heading visible on large screens */}
+                        <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
+                          <SectionalHeading
+                            simpletext="Why Choose Airlinx as Your Furnace Repair Technician in Burnaby?"
+                            variant="h2"
+                          />
+                        </Box>
+                        <Grid container spacing={2} sx={{ mt: { xs: 0, lg: 2.5 } }}>
                           {whyChooseItems.map((text, idx) => (
                             <Grid item xs={12} sm={6} key={idx}>
                               <Box

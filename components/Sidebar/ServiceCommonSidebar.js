@@ -6,8 +6,8 @@ import React from 'react'
 const ServiceCommonSidebar = () => {
     return (
         <>
-            <aside style={{height:"100%"}}>
-                <Container maxWidth="xxl" style={{height:"100%"}}>
+            <aside style={{ height: "100%" }}>
+                <Container maxWidth="xxl" style={{ height: "100%" }}>
                     <Box p={3} component={Paper} className='sticky-top sidebar-sticky shadow'>
                         <Typography variant='h3' align="left" className='text--blue'>Services</Typography>
                         <Box>
@@ -40,7 +40,7 @@ const ServiceCommonSidebar = () => {
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/tankless-water-heaters/"><a className='text--black'>Tankles Water Heaters</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/tankless-water-heaters/"><a className='text--black'>Tankless Water Heaters</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>
