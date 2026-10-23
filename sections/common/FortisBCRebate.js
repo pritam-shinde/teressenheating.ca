@@ -2,7 +2,14 @@ import { Box, Container, Grid, Paper, Typography } from '@mui/material'
 import { BlueFilledBtn, SectionalHeading } from '../../components/components'
 import { FiTag } from 'react-icons/fi'
 
-const FortisBCRebate = () => {
+const FortisBCRebate = ({
+    title,
+    blacktext,
+    blueText,
+    description,
+    btnTitle,
+    btnlink
+}) => {
     return (
         <section className="my-md-5 my-4">
             <Container maxWidth="xxl">
@@ -22,18 +29,22 @@ const FortisBCRebate = () => {
                             <Grid container spacing={4} alignItems="center">
                                 <Grid item xs={12} md={8}>
                                     <Box>
-                                        <SectionalHeading
-                                            blacktext="FortisBC Furnace"
-                                            blueText="Maintenance Rebate"
-                                            variant="h2"
-                                        />
+                                        {title ? (
+                                            <SectionalHeading simpletext={title} variant="h2" />
+                                        ) : (
+                                            <SectionalHeading
+                                                blacktext={blacktext || "FortisBC Furnace"}
+                                                blueText={blueText || "Maintenance Rebate"}
+                                                variant="h2"
+                                            />
+                                        )}
                                         <Typography className='para' sx={{ mt: 1, mb: 4, fontSize: '1.05rem', lineHeight: 1.6 }}>
-                                            If you're a FortisBC residential gas customer, you may be eligible for a rebate when you have your furnace professionally serviced. Learn more about the FortisBC Appliance Maintenance Program and eligibility requirements.
+                                            {description || "If you're a FortisBC residential gas customer, you may be eligible for a rebate when you have your furnace professionally serviced. Learn more about the FortisBC Appliance Maintenance Program and eligibility requirements."}
                                         </Typography>
                                         <Box>
                                             <BlueFilledBtn
-                                                btnlink="https://www.fortisbc.com/rebates/home/furnace-and-boiler-maintenance-rebate"
-                                                btnTitle="FortisBC Appliance Maintenance Program"
+                                                btnlink={btnlink || "https://www.fortisbc.com/rebates/home/furnace-and-boiler-maintenance-rebate"}
+                                                btnTitle={btnTitle || "FortisBC Appliance Maintenance Program"}
                                                 anchor={true}
                                             />
                                         </Box>
