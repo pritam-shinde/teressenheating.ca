@@ -161,7 +161,7 @@ const FurnacePage = () => {
   const servicesList = [
     {
       title: "Furnace Repair Service",
-      desc: "No heat, weak heat, a furnace that clicks but never lights, a blower that won't shut off, a burning smell, a bang when it starts up. Most of these trace back to a short list of parts: the igniter, flame sensor, blower motor, capacitor, pressure switch, thermostat, or a clogged filter. Our furnace repair service covers all of them on most brands. You'll hear what failed and what it costs before anyone starts the work.",
+      desc: "No heat, weak heat, a furnace that clicks but never lights, a blower that won't shut off, a burning smell, or a bang when it starts up? Our furnace heating repair service helps diagnose and fix these common issues. Most problems trace back to a short list of parts: the igniter, flame sensor, blower motor, capacitor, pressure switch, thermostat, or a clogged filter. Our furnace repair service covers all of them on most brands. You'll hear what failed and what it costs before anyone starts the work.",
       Icon: Handyman,
       isEmergency: false,
       gridSm: 12,
@@ -289,7 +289,7 @@ const FurnacePage = () => {
 
       <main>
         {/* H1 BANNER */}
-        <CommonBanner bg={Banner} title="Furnace Repair Burnaby" color="#fff" variant="h1" />
+        <CommonBanner bg={Banner} title="Furnace Repair, Installation & Maintenance Burnaby" color="#fff" variant="h1" />
 
         {/* SECTION 1: Furnace Repair, Installation and Replacement from Local Technicians */}
         <section className="py-md-5 py-4" style={{ backgroundColor: '#ffffff' }}>
@@ -298,11 +298,11 @@ const FurnacePage = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading
-                    simpletext="Furnace Repair, Installation and Replacement from Local Technicians"
+                    simpletext="Furnace Services from Local Technicians"
                     variant="h2"
                   />
                   <Typography className="para" sx={{ mt: 2, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
-                    Furnace quit on you? Airlinx handles furnace repair in Burnaby every day of the year, and yes, that includes the middle of a January night. We&apos;re a licensed, insured heating contractor, and for more than 20 years we&apos;ve been fixing, installing, and replacing furnaces across Metro Vancouver.
+                    Furnace quit on you? Airlinx handles furnace repair in Burnaby every day of the year, and yes, that includes the middle of a January night. We're a licensed, insured <Link href="/"> HVAC contractor Burnaby</Link>, and for more than 20 years we've been fixing, installing, and replacing furnaces across Metro Vancouver.
                   </Typography>
                   <Typography className="para" sx={{ mt: 1.5, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
                     Every technician who comes to your door has passed a background check and works on gas furnaces for a living. You get the price before we start. If your furnace can be saved, we&apos;ll fix it. If it can&apos;t, we&apos;ll show you why and talk through a furnace replacement, with no pressure to decide on the spot.

@@ -493,9 +493,9 @@ const BrandSlider = () => {
                                         <SwiperSlide>
                                             <Image
                                                 src={Brand26}
-                                                alt="Ameristart Logo"
+                                                alt="Ameristar Logo"
                                                 className='img-fluid'
-                                                title='Ameristart Logo'
+                                                title='Ameristar Logo'
                                                 width={150}
                                                 height={27}
                                                 style={{

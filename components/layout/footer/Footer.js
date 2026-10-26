@@ -325,7 +325,7 @@ const Footer = () => {
                                 { id: "subUrb-4", text: "North Vancouver", link: "/north-vancouver/" },
                                 { id: "subUrb-5", text: "Coquitlam", link: "/coquitlam/" },
                                 { id: "subUrb-6", text: "Richmond", link: "/richmond/" },
-                                { id: "subUrb-7", text: "White-Rock", link: "/white-rock/" },
+                                { id: "subUrb-7", text: "White Rock", link: "/white-rock/" },
                                 { id: "subUrb-8", text: "Tsawwassen", link: "/tsawwassen/" },
                                 { id: "subUrb-9", text: "Port Moody", link: "/port-moody/" },
                                 { id: "subUrb-10", text: "Pitt Meadows", link: "/pitt-meadows/" },
