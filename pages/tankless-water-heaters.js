@@ -123,7 +123,7 @@ const TanklesWaterHeater = () => {
                           <Grid item xs={12} md={6}>
                             <Box>
                               <Typography className='para'>Tankless water heaters are epic for people who want energy efficiency and hot water. These are small in size and are one of the best possible choices for water heaters in residential and businesses. But it is also necessary to check that your tankless water heaters should be operational.</Typography>
-                              <Typography className='para'>Hence, you need an expert service who would serve you with the best/ Also, if you are living in an area where you have hard water, then, tankless <Link href="/boilers-maintenance/">water heater maintenance</Link> should be done twice a year. This helps you ensure that all your components are working properly and efficiently.</Typography>
+                              <Typography className='para'>Hence, you need an expert service who would serve you with the best. Also, if you are living in an area where you have hard water, then, tankless <Link href="/boilers-maintenance/">water heater maintenance</Link> should be done twice a year. This helps you ensure that all your components are working properly and efficiently.</Typography>
                             </Box>
                           </Grid>
                         </Grid>
@@ -153,7 +153,7 @@ const TanklesWaterHeater = () => {
                           </Box>
                           <Box mt={3}>
                             <SectionalHeading simpletext="Quality is our only aim" variant="h2" />
-                            <Typography className='para'>We are committed to providing high-quality products at relative ease. We are an expert in Canada with a certified BPI (Bureau of portable water) for exceeding the strictest industry standards for cleanliness and safety.</Typography>
+                            <Typography className='para'>We are committed to providing high-quality products at relative ease. We are an expert in Canada with a certified BPI (Bureau of potable water) for exceeding the strictest industry standards for cleanliness and safety.</Typography>
                           </Box>
                         </Box>
                       </Container>

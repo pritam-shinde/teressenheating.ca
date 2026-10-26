@@ -143,7 +143,7 @@ const Boiler = () => {
                             <Grid item xs={12}>
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Boiler repairing and installation services in Canada:' />
-                                <Typography className='para'>Airlinx heating ltd has been providing expert boiler repair, installation, and <Link href="https://airlinxheating.ca/boilers-maintenance/">boiler maintenance</Link> in Canada for years now. As an experienced leader in the home heating industry, Airlinx takes care of all your heating problems with top-notched services at affordable prices.</Typography>
+                                <Typography className='para'>Airlinx heating ltd has been providing expert boiler repair, installation, and <Link href="https://airlinxheating.ca/boilers-maintenance/">boiler maintenance</Link> in Canada for years now. As an experienced leader in the home heating industry, Airlinx takes care of all your heating problems with top-notch services at affordable prices.</Typography>
                                 <Typography className='para'>Quality you can always count on: It is our job to make sure, that your home is always comfortable and warm. We have the best products to ensure you that everything is done right the first time.
                                 </Typography>
                               </Box>

@@ -277,7 +277,7 @@ const Keeprite = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box>
                   <SectionalHeading simpletext="Finding your 'Nearby' keeprite furnace repair expert" variant="h2" />
-                  <Typography className='para'>If you are searching for a <a href="/furnace/">Keeprite furnace</a> nearby, you can get several possibilities. However, you should be cautious about selecting a provider and making sure that you get top-notched repair services.</Typography>
+                  <Typography className='para'>If you are searching for a <a href="/furnace/">Keeprite furnace</a> nearby, you can get several possibilities. However, you should be cautious about selecting a provider and making sure that you get top-notch repair services.</Typography>
                   <Typography className='para'>It is not difficult to determine whether a firm is the best for your problem. So, just trust us and our experts, because they are knowledgeable and they are skilled in the right way. We value transparency and provide you with all the information required by you in the right way. So, count on us and we will help you with the right solution always.</Typography>
                 </Box>
               </Grid>

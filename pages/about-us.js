@@ -128,7 +128,7 @@ const AboutUs = () => {
                               <ListItemIcon>
                                 <CheckCircle />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Your satisfaction is our priority</strong>} secondary="LWe understand your problem and provide our expert guidance accordingly. Also, our team of experts will always provide you with the best." />
+                              <ListItemText primary={<strong>Your satisfaction is our priority</strong>} secondary="We understand your problem and provide our expert guidance accordingly. Also, our team of experts will always provide you with the best." />
                             </ListItem>
                           </List>
                         </Box>

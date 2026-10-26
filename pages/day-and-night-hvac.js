@@ -46,7 +46,7 @@ const DayNightHVAC = () => {
         <JsonLd faqArr={arrayFaq} />
       </Head>
       <main>
-        <CommonBanner bg={BoilerMaintainanceBanner} title="Day And Night HVAC" color="#fff" variant="h1" />
+        <CommonBanner bg={BoilerMaintainanceBanner} title="Day and Night HVAC" color="#fff" variant="h1" />
         <section>
           <Container maxWidth="xxl" className="px-0">
             <Grid container>

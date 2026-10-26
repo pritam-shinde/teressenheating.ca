@@ -198,8 +198,8 @@ const HeatingService = () => {
                                 <Box style={{ textAlign: 'center' }}>
                                   <Image
                                     src={HeaterMachine}
-                                    alt="Heating Sysytem"
-                                    title='Heating Sysytem'
+                                    alt="Heating System"
+                                    title='Heating System'
                                     sizes="100vw"
                                     style={{
                                       maxWidth: '70%',

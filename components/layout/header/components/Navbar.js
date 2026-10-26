@@ -203,7 +203,7 @@ const Navbar = () => {
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/white-rock/">
-                              <a className="nav-link dropdown-item">White-Rock</a>
+                              <a className="nav-link dropdown-item">White Rock</a>
                             </Link>
                           </li>
                           <li className="nav-item">
@@ -375,7 +375,7 @@ const Navbar = () => {
                           </li>
                           <li className="nav-item">
                             <Link className='nav-link' legacyBehavior={true} href="/day-and-night-hvac/">
-                              <a className="nav-link dropdown-item">Day And Night hvac</a>
+                              <a className="nav-link dropdown-item"></a>
                             </Link>
                           </li>
                           <li className="nav-item">
