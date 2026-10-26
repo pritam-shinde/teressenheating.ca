@@ -112,8 +112,8 @@ const AirConditioningService = () => {
                               <Box>
                                 <Image
                                   src={Cooling}
-                                  alt="Air Conditioning Services by AirlinxTechnician"
-                                  title='Air Conditioning Services by AirlinxTechnician'
+                                  alt="Air Conditioning Services by Airlinx Technician"
+                                  title='Air Conditioning Services by Airlinx Technician'
                                   sizes="100vw"
                                   style={{
                                     width: "100%",

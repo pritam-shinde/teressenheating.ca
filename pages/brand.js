@@ -545,7 +545,7 @@ const Brand = () => {
                             <ListItemIcon>
                               <CheckCircleOutline className='text--blue' />
                             </ListItemIcon>
-                            <ListItemText primary={<strong>We service all your brands</strong>} secondary="We do all your HVAC servicing work for all brands like Lennox, Rheem, Carrier, Godman, and American standards." />
+                            <ListItemText primary={<strong>We service all your brands</strong>} secondary="We do all your HVAC servicing work for all brands like Lennox, Rheem, Carrier, Goodman, and American Standard." />
                           </ListItem>
                         </List>
                       </Box>

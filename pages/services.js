@@ -240,8 +240,8 @@ const Service = () => {
                       <Box>
                         <Image
                           src={Family}
-                          alt="Happy Terseen Heating Customers"
-                          title='Happy Terseen Heating Customers'
+                          alt="Happy Airlinx Heating Customers"
+                          title='Happy Airlinx Heating Customers'
                           sizes="100vw"
                           style={{
                             width: "100%",
