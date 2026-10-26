@@ -70,7 +70,7 @@ const AirConditioningMaintenance = () => {
                                             <Box>
                                                 <Image
                                                     src={ACMaintanance}
-                                                    alt="Ac Maintanance"
+                                                    alt="AC Maintenance"
                                                     sizes="100vw"
                                                     style={{
                                                         width: "100%",
