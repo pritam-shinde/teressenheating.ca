@@ -53,7 +53,7 @@ const AirConditioningMaintenance = () => {
                             <Grid item xs={12} md={10} className="mx-auto">
                                 <Box mt={5}>
                                     <SectionalHeading simpletext="We Are Around The Corner For You Always" variant="h2" />
-                                    <Typography className='para'>It's very easy to find us on your phone. You just have to enter your postcode and we will show you are experts near you. We aim to provide a wide range of professional services. So, if you need AC installation maintenance or repair services, we are right there for you!</Typography>
+                                    <Typography className='para'>It's very easy to find us on your phone. You just have to enter your postcode and we will show our experts near you. We aim to provide a wide range of professional services. So, if you need AC installation maintenance or repair services, we are right there for you!</Typography>
                                 </Box>
                             </Grid>
                         </Grid>

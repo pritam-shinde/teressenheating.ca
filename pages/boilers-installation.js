@@ -123,7 +123,7 @@ const BoilerInstallation = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>A steam boiler: </strong>} secondary="This boils the water in its tank to produce steam. The steam is then pressurized so that it can fulfill your pipes and move to your radiator to provide heat." />
+                              <ListItemText primary={<strong>A steam boiler: </strong>} secondary="This boils the water in its tank to produce steam. The steam is then pressurized so that it can fill your pipes and move to your radiator to provide heat." />
                             </ListItem>
                           </List>
                           <Typography className='para'>While both types of boilers are used, hot water boilers are used more because they are more efficient than steam boilers. So, at Airlinx we have the right tools and knowledge to take care of your boiler installation. We work friendly and fast to make sure that your boiler is installed properly and efficiently.</Typography>

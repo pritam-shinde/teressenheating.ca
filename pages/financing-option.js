@@ -101,7 +101,7 @@ const FinancingOption = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<><strong>Providing open load-</strong><span> You can pay off the entire loan at any time without penalties</span></>} />
+                              <ListItemText primary={<><strong>Providing open loan-</strong><span> You can pay off the entire loan at any time without penalties</span></>} />
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>
