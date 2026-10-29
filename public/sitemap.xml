@@ -482,7 +482,13 @@
     </url>
     <url>
         <loc>https://airlinxheating.ca/blog/how-does-a-tankless-hot-water-heater-work/</loc>
-        <lastmod>2023-04-11T12:34:00.512Z</lastmod>
+        <lastmod>2026-21-10T12:34:00.512Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+     <url>
+        <loc>https://airlinxheating.ca/blog/why-fall-is-the-best-time-for-furnace-maintenance/</loc>
+        <lastmod>2026-29-10T12:34:00.512Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
