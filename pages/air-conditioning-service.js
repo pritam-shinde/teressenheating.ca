@@ -185,7 +185,7 @@ const AirConditioningService = () => {
                       <Container maxWidth="xxl">
                         <Box>
                           <SectionalHeading simpletext="Airlinx air conditioning repairs:" variant="h2" />
-                          <Typography className='para'>When it is hot and humid, everyone loves the sanctuary of a comfortable place. So, if your air cooler isnt functioning well, then call Airlinx air conditioning repair service. Whether it is heat pumps, Air conditioning systems, or thermostats, we fix everything. Our air conditioning experts are certified and have expert knowledge of home air conditioning services.</Typography>
+                          <Typography className='para'>When it is hot and humid, everyone loves the sanctuary of a comfortable place. So, if your air cooler isn't functioning well, then call Airlinx air conditioning repair service. Whether it is heat pumps, Air conditioning systems, or thermostats, we fix everything. Our air conditioning experts are certified and have expert knowledge of home air conditioning services.</Typography>
                         </Box>
                       </Container>
                     </section>

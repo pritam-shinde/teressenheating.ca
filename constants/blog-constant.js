@@ -9,7 +9,8 @@ export const blog_slugs = {
     "what-is-hvac": true,
     "heat-pump-vs-air-conditioning-unit": true,
     "boiler-maintenance-guide": true,
-    "how-does-a-tankless-hot-water-heater-work": true
+    "how-does-a-tankless-hot-water-heater-work": true,
+    "why-fall-is-the-best-time-for-furnace-maintenance": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");

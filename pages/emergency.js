@@ -95,7 +95,7 @@ const Emergency = () => {
                     <section>
                       <Container maxWidth="xxl">
                         <SectionalHeading simpletext="Peace of mind is guaranteed" variant="h2" />
-                        <Typography className='para'><Link href="/">Airlinx&apos;s heating ltd services</Link> offer the best 24-hour emergency heating services for you. So, best assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
+                        <Typography className='para'><Link href="/">Airlinx&apos;s heating ltd services</Link> offer the best 24-hour emergency heating services for you. So, rest assured that you are in safe hands with our family-owned business. With so many positive reviews, you can trust us for our emergency HVAC heating requirements.</Typography>
                       </Container>
                     </section>
                     <section className='mt-md-3 mt-2'>
@@ -120,7 +120,7 @@ const Emergency = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Worldwide quick services:</strong>} secondary="We have a team of expert who takes care of everything. We send out our experts to your location in the world." />
+                              <ListItemText primary={<strong>Worldwide quick services:</strong>} secondary="We have a team of experts who takes care of everything. We send out our experts to your location in the world." />
                             </ListItem>
                           </List>
                         </Box>

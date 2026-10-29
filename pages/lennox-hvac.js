@@ -119,7 +119,7 @@ const LennoxHVAC = () => {
                           <Grid item xs={12} md={6}>
                             <Box>
                               <Typography className='para'>We help you with the best quality Lennox furnaces in the industry. It is one of the most trusted brands in heating equipment because it is very easy to install, operate and maintain too.</Typography>
-                              <Typography className='para'>We are the <a href="/lennox/">Lennox dealer</a> in your area. We have experienced technicians who ensure that your furnace is running smoothing. If something goes wrong, then we are here to make sure that everything is smooth and easygoing.</Typography>
+                              <Typography className='para'>We are the <a href="/lennox/">Lennox dealer</a> in your area. We have experienced technicians who ensure that your furnace is running smoothly. If something goes wrong, then we are here to make sure that everything is smooth and easygoing.</Typography>
                             </Box>
                           </Grid>
                         </Grid>

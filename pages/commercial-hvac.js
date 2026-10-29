@@ -182,7 +182,7 @@ const CommercialHVAC = () => {
                               <ListItemIcon>
                                 <CheckCircleOutline className='text--blue' />
                               </ListItemIcon>
-                              <ListItemText primary={<strong>Straightforward pricing guaranteed:</strong>} secondary="Before we commence our work, we make sure that we discuss our quotation with us. There are no hidden fees associated when we work." />
+                              <ListItemText primary={<strong>Straightforward pricing guaranteed:</strong>} secondary="Before we commence our work, we make sure that we discuss our quotation with you. There are no hidden fees associated when we work." />
                             </ListItem>
                             <ListItem>
                               <ListItemIcon>
