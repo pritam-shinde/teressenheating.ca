@@ -192,7 +192,7 @@ const HeatPumpPage = () => {
     <>
       <Head>
         <title>Heat Pump Installation Burnaby | Repair & Service | Airlinx</title>
-        <meta name="description" content="Heat pump installation in Burnaby plus repair, replacement & 24/7 emergency service by Airlinx Heating. Licensed heating contractor, 20+ years. Call now." />
+        <meta name="description" content="Heat pump installation in Burnaby plus repair, replacement & 24/7 emergency service by Airlinx Heating. Licensed heating contractor for 10 years." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://airlinxheating.ca/heat-pump/" />
       </Head>
@@ -218,7 +218,7 @@ const HeatPumpPage = () => {
                 <Box mt={5}>
                   <SectionalHeading simpletext="Expert Heat Pump Installation, Service & Repair from a Local Heating Contractor" variant="h2" />
                   <Typography className='para'>
-                    Need heat pump installation in Burnaby? That's what we do every day. Airlinx Heating is a licensed <Link href="/">HVAC contractor in Burnaby</Link>, and for more than 20 years we've been installing, fixing, and replacing heat pumps for homeowners and businesses all over Vancouver. If you quit on a cold night, we'll get someone out to you fast.
+                    Need heat pump installation in Burnaby? That's what we do every day. Airlinx Heating is a licensed <Link href="/">HVAC contractor in Burnaby</Link>, and for more than 10 years we've been installing, fixing, and replacing heat pumps for homeowners and businesses all over Vancouver. If you quit on a cold night, we'll get someone out to you fast.
                   </Typography>
                   <Typography className='para'>
                     Most people call us when something's already wrong. The house is cold, the outdoor unit is iced over, or the repair bills keep coming. We handle heat pump <Link href="/burnaby/">service in Burnaby</Link> of every kind, from a basic yearly check to a full heat pump replacement. Before we touch anything, you will know what it costs, and you'll hear straight from us if fixing the old one doesn't make sense.
@@ -384,7 +384,7 @@ const HeatPumpPage = () => {
                         <List className="mt-2">
                           {[
                             "Licensed and insured, with work that meets local codes",
-                            "20+ years of heating and cooling experience in Metro Vancouver",
+                            "10 years of heating and cooling experience in Metro Vancouver",
                             "Certified technicians trained on all major heat pump brands",
                             "24/7/365 emergency heat pump repair",
                             "Upfront, written pricing with no surprises",
@@ -467,7 +467,7 @@ const HeatPumpPage = () => {
                       Around Burnaby, the usual culprits are a clogged coil, a weak fan motor, or a low refrigerant charge. Rain, leaves, and moss don't help the outdoor unit either. A yearly heat pump service and maintenance visit catches most of this. We clean it, check the charge and wiring, and test that it defrosts properly. Keep the receipt too. Some manufacturers ask for it if you ever make a warranty claim.
                     </Typography>
                     <Typography align='center' className='para'>
-                      We have been a heating contractor in Burnaby for over 20 years. If your heat pump dies at night or on a weekend, call 604-363-6622.
+                      We have been a heating contractor in Burnaby for over 10 years. If your heat pump dies at night or on a weekend, call 604-363-6622.
                     </Typography>
                   </Box>
                   <Box mt={4} className="d-flex justify-content-center">
