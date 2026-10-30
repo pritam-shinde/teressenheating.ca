@@ -232,7 +232,7 @@ const FurnacePage = () => {
   const whyChooseItems = [
     "Licensed and insured",
     "Background-checked technicians",
-    "20+ years working on furnaces across Metro Vancouver",
+    "10 years working on furnaces across Metro Vancouver",
     "We work on the big furnace brands, such as Lennox, Carrier, Trane, and Goodman",
     "Emergency furnace repair, 24/7, all year",
     "Price match if you bring us a comparable written quote",
@@ -302,7 +302,7 @@ const FurnacePage = () => {
                     variant="h2"
                   />
                   <Typography className="para" sx={{ mt: 2, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
-                    Furnace quit on you? Airlinx handles furnace repair in Burnaby every day of the year, and yes, that includes the middle of a January night. We're a licensed, insured <Link href="/"> HVAC contractor Burnaby</Link>, and for more than 20 years we've been fixing, installing, and replacing furnaces across Metro Vancouver.
+                    Furnace quit on you? Airlinx handles furnace repair in Burnaby every day of the year, and yes, that includes the middle of a January night. We're a licensed, insured <Link href="/"> HVAC contractor Burnaby</Link>, and for 10 years we've been fixing, installing, and replacing furnaces across Metro Vancouver.
                   </Typography>
                   <Typography className="para" sx={{ mt: 1.5, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
                     Every technician who comes to your door has passed a background check and works on gas furnaces for a living. You get the price before we start. If your furnace can be saved, we&apos;ll fix it. If it can&apos;t, we&apos;ll show you why and talk through a furnace replacement, with no pressure to decide on the spot.
