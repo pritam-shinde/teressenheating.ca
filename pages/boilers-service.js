@@ -268,7 +268,7 @@ const BoilerServicePage = () => {
         <CommonBanner
           bg={Banner}
           overlay={true}
-          bgPosition="top"
+          bgPosition={{ xs: '75% center', md: 'center top' }}
           title={
             <Box
               component="span"
