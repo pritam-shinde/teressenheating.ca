@@ -330,7 +330,7 @@ const BoilerServicePage = () => {
                         Boiler Repair
                       </Typography>
                       <Typography className="para" sx={{ fontSize: '0.98rem !important', lineHeight: 1.75, m: 0 }}>
-                        <Link href="/boiler-repair/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>Boiler repair</Link> is most of what we do from October to March. No heat, no hot water, leaks, noises, pressure that keeps dropping, error codes, pumps and zone valves that have quit. We find the fault, quote it and fix it.
+                        <Link href="/boilers-repair/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>Boiler repair</Link> is most of what we do from October to March. No heat, no hot water, leaks, noises, pressure that keeps dropping, error codes, pumps and zone valves that have quit. We find the fault, quote it and fix it.
                       </Typography>
                     </Box>
                   </Grid>
