@@ -217,7 +217,7 @@ const TanklessWaterHeaterPage = () => {
         <CommonBanner
           bg={Banner}
           overlay={true}
-          bgPosition="top"
+          bgPosition={{ xs: '75% top', md: 'center top' }}
           title={
             <Box
               component="span"
