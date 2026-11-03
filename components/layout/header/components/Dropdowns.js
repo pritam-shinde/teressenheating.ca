@@ -28,11 +28,11 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                             ]
                         },
                         {
-                            id: "services-menu-4", link: "/boilers-service/", text: "BOILER", submenu: [
+                            id: "services-menu-4", link: "/boiler-services/", text: "BOILER SERVICES", submenu: [
                                 { id: "services-menu-4.1", link: "/boilers-maintenance/", text: "BOILERS MAINTENANCE" },
                                 { id: "services-menu-4.2", link: "/boilers-installation/", text: "BOILERS INSTALLATION" },
                                 { id: "services-menu-4.3", link: "/boilers-repair/", text: "BOILERS REPAIR" },
-                                // { id: "services-menu-4.4", link: "/boilers-service/", text: "BOILERS SERVICE" }
+                                // { id: "services-menu-4.4", link: "/boiler-services/", text: "BOILERS SERVICE" }
                             ]
                         },
                         { id: "services-menu-3", link: "/commercial-hvac/", text: "COMMERCIAL HVAC", submenu: null },

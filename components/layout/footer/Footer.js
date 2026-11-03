@@ -123,10 +123,10 @@ const Footer = () => {
                                                                 passHref
                                                                 prefetch={false}
                                                                 legacyBehavior
-                                                                href="/boilers-service/"
+                                                                href="/boiler-services/"
                                                             >
                                                                 <a className={`${Styles.quickLink} text-white`}>
-                                                                    Boiler
+                                                                    Boiler Services
                                                                 </a>
                                                             </Link>
                                                         </li>

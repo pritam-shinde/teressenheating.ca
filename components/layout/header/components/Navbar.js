@@ -113,8 +113,8 @@ const Navbar = () => {
                           </li>
 
                           <li className="nav-item dropdown dropdown2">
-                            <Link className='nav-link' legacyBehavior={true} href="/boilers-service/">
-                              <a className="nav-link dropdown-toggle text-dark" id="navbardropdown2" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{ color: "#000 !important" }}>Boiler</a>
+                            <Link className='nav-link' legacyBehavior={true} href="/boiler-services/">
+                              <a className="nav-link dropdown-toggle text-dark" id="navbardropdown2" aria-labelledby="navbarDropdown" aria-haspopup="true" role="button" aria-pressed="true" style={{ color: "#000 !important" }}>Boiler Services</a>
                             </Link>
                             <ul className="dropdown-menu dropdown-menu-2 p-2 border-0 shadow" aria-labelledby="navbarDropdown">
                               <li className="nav-item">

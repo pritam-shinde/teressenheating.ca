@@ -34,7 +34,7 @@ const ServiceCommonSidebar = () => {
                                     <ListItemIcon>
                                         <ArrowForward className='text--blue' />
                                     </ListItemIcon>
-                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/boilers-service/"><a className='text--black'>Boiler</a></Link></strong>} />
+                                    <ListItemText primary={<strong><Link passHref prefetch={false} legacyBehavior={true} href="/boiler-services/"><a className='text--black'>Boiler Services</a></Link></strong>} />
                                 </ListItem>
                                 <ListItem className='ps-0'>
                                     <ListItemIcon>

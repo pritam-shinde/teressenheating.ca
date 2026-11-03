@@ -298,7 +298,7 @@ const Service = () => {
                                                                 <Typography gutterBottom className="text-white fs-5" style={{ fontWeight: "700" }}>Boiler</Typography>
                                                                 <Typography className='text-white'>Airlinx has been offering professional boiler setup, maintenance, and repair services. Airlinx, a seasoned pioneer in the home heating sector, takes care of all your heating requirements with first-rate service at competitive prices.</Typography>
                                                                 <Box mt={1}>
-                                                                    <Link href="/boilers-service/" passHref legacyBehavior>
+                                                                    <Link href="/boiler-services/" passHref legacyBehavior>
                                                                         <IconButton component="a" className='bg--red' aria-label="Learn more about Boiler" style={{ color: '#fff' }}>
                                                                             <ArrowForward />
                                                                         </IconButton>

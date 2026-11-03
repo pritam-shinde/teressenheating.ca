@@ -33,7 +33,7 @@ app.prepare().then(() => {
         await app.render(req, res, '/commercial-hvac/', query)
       }
       else if (pathname === '/boilers') {
-        await app.render(req, res, '/boilers-service/', query)
+        await app.render(req, res, '/boiler-services/', query)
       }
       else if (pathname === '/boilers-maintenance') {
         await app.render(req, res, '/boilers-maintenance/', query)
@@ -44,8 +44,8 @@ app.prepare().then(() => {
       else if (pathname === '/boilers-repair') {
         await app.render(req, res, '/boilers-repair/', query)
       }
-      else if (pathname === '/boilers-service') {
-        await app.render(req, res, '/boilers-service/', query)
+      else if (pathname === '/boilers-service' || pathname === '/boiler-services') {
+        await app.render(req, res, '/boiler-services/', query)
       }
       else if (pathname === '/tankless-water-heaters') {
         await app.render(req, res, '/tankless-water-heaters/', query)
