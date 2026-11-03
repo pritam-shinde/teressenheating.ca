@@ -10,7 +10,8 @@ export const blog_slugs = {
     "heat-pump-vs-air-conditioning-unit": true,
     "boiler-maintenance-guide": true,
     "how-does-a-tankless-hot-water-heater-work": true,
-    "why-fall-is-the-best-time-for-furnace-maintenance": true
+    "why-fall-is-the-best-time-for-furnace-maintenance": true,
+    "hot-water-tank-maintenance-guide": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");

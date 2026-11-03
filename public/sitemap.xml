@@ -486,9 +486,15 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
-     <url>
+    <url>
         <loc>https://airlinxheating.ca/blog/why-fall-is-the-best-time-for-furnace-maintenance/</loc>
         <lastmod>2026-10-29T12:14:39.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://airlinxheating.ca/blog/hot-water-tank-maintenance-guide/</loc>
+        <lastmod>2026-11-02T12:14:39.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>

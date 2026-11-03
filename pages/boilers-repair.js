@@ -66,7 +66,7 @@ const BoilerRepair = () => {
                               }} />
                           </Grid>
                           <Grid item xs={12} md={6}>
-                            <Typography className='para'>Airlinx has been providing expert boiler installation, boiler repair, and boiler installation services in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
+                            <Typography className='para'>Airlinx has been providing expert boiler installation, boiler repair, and comprehensive <Link href="/boilers-service/">boiler services</Link> in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
                           </Grid>
                         </Grid>
                       </Container>

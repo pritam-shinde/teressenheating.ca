@@ -92,7 +92,7 @@ const BoilerMaintainance = () => {
                             <Grid item xs={12}>
                               <box>
                                 <SectionalHeading variant='h2' simpletext='No need to worry, because Airlinx is your savior:' />
-                                <Typography className=''> When it comes to us, we are one of the most experienced companies in Canada. We have years of expertise in all things related to house heating problems. We offer our clients affordably-priced options for any model they might be looking at. We are always there to guide your decision-making process so that whatever choice suits you, you go with the best. So, next time when you have boiler services near you, you can count on us. We are the most trusted boiler repair partner who takes care of everything. </Typography>
+                                <Typography className=''> When it comes to us, we are one of the most experienced companies in Canada. We have years of expertise in all things related to house heating problems. We offer our clients affordably-priced options for any model they might be looking at. We are always there to guide your decision-making process so that whatever choice suits you, you go with the best. So, next time you need <Link href="/boilers-service/">boiler services</Link> near you, you can count on us. We are the most trusted boiler repair partner who takes care of everything. </Typography>
                               </box>
                             </Grid>
                           </Grid>
