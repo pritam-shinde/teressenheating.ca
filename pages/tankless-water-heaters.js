@@ -10,8 +10,9 @@ import Image from "next/image"
 import Link from 'next/link'
 import { BlueFilledBtn, CommonBanner, SectionalHeading } from '../components/components'
 import JsonLd from '../components/JsonLd'
-import Banner from '../public/lennox-hvac/lennox.webp'
-import waterheater from '../public/tankless-water-heater/water-heater.webp'
+import Banner from '../public/tankless-water-heater/hvac-technician-adjusting-boiler-controls.jpg'
+import tanklessInstallImg from '../public/tankless-water-heater/tankless-install-tall.jpg'
+import navienTankless from '../public/tankless-water-heater/navien-tankless-water-heater.jpg'
 import {
   BrandSlider,
   FaqAndForm,
@@ -215,8 +216,17 @@ const TanklessWaterHeaterPage = () => {
         {/* H1 BANNER */}
         <CommonBanner
           bg={Banner}
+          overlay={true}
+          bgPosition="top"
           title={
-            <Box component="span" sx={{ display: 'block', maxWidth: { xs: '100%', md: '650px', lg: '900px' } }}>
+            <Box
+              component="span"
+              sx={{
+                display: 'block',
+                maxWidth: { xs: '100%', md: '650px', lg: '900px' },
+                textShadow: '0 2px 12px rgba(0, 0, 0, 0.7)'
+              }}
+            >
               Tankless Water Heater Service for Burnaby Homes
             </Box>
           }
@@ -369,34 +379,36 @@ const TanklessWaterHeaterPage = () => {
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
-                <Grid container spacing={{ xs: 4, lg: 5 }} alignItems="center">
-                  <Grid item xs={12} lg={5}>
+                <Grid container spacing={{ xs: 4, md: 5 }} alignItems="center">
+                  <Grid item xs={12} md={5}>
                     <Box
                       sx={{
                         borderRadius: '16px',
                         overflow: 'hidden',
                         boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
-                        maxWidth: { xs: '100%', md: '500px', lg: '100%' },
-                        mx: { xs: 'auto', lg: 0 },
+                        width: '100%',
+                        maxWidth: '520px',
+                        mx: 'auto',
                         backgroundColor: '#ffffff',
-                        p: 2
+                        p: 1.5
                       }}
                     >
                       <Image
-                        src={waterheater}
+                        src={tanklessInstallImg}
                         alt="Tankless Water Heater Installation Burnaby"
                         title="Tankless Water Heater Installation Burnaby"
-                        sizes="100vw"
+                        sizes="(max-width: 900px) 100vw, 520px"
                         style={{
                           width: "100%",
                           height: "auto",
-                          display: 'block'
+                          display: 'block',
+                          borderRadius: '10px'
                         }}
                       />
                     </Box>
                   </Grid>
 
-                  <Grid item xs={12} lg={7}>
+                  <Grid item xs={12} md={7}>
                     <Box>
                       <SectionalHeading
                         simpletext="Tankless Water Heater Installation in Burnaby"
@@ -656,39 +668,74 @@ const TanklessWaterHeaterPage = () => {
           <Container maxWidth="xxl">
             <Grid container>
               <Grid item xs={12} md={10} className="mx-auto">
-                <Box>
-                  <SectionalHeading
-                    simpletext="Simple Care Between Service Visits"
-                    variant="h2"
-                  />
-                  <Typography className="para" sx={{ mt: 1.5, mb: 3, fontSize: '1.02rem !important', lineHeight: 1.8 }}>
-                    You don&apos;t have to do much, but a few small habits help:
-                  </Typography>
+                <Grid container spacing={{ xs: 4, lg: 5 }} alignItems="center">
+                  <Grid item xs={12} lg={7}>
+                    <Box>
+                      <SectionalHeading
+                        simpletext="Simple Care Between Service Visits"
+                        variant="h2"
+                      />
+                      <Typography className="para" sx={{ mt: 1.5, mb: 3, fontSize: '1.02rem !important', lineHeight: 1.8 }}>
+                        You don&apos;t have to do much, but a few small habits help:
+                      </Typography>
 
-                  <Box sx={{ display: 'inline-flex', flexDirection: 'column', gap: 1.5, width: 'fit-content', maxWidth: '100%' }}>
-                    {simpleCareHabits.map((habit, idx) => (
-                      <Box
-                        key={idx}
-                        sx={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: 1.5,
-                          py: 1.2,
-                          px: 2,
-                          backgroundColor: '#f8fafc',
-                          borderRadius: '10px',
-                          border: '1px solid #edf2f7',
-                          width: '100%'
-                        }}
-                      >
-                        <CheckCircleOutlineIcon sx={{ color: 'var(--blue)', fontSize: '1.25rem', flexShrink: 0 }} />
-                        <Typography sx={{ fontSize: '0.94rem', color: '#444', lineHeight: 1.5, m: 0 }}>
-                          {habit}
-                        </Typography>
+                      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1.5 }}>
+                        {simpleCareHabits.map((habit, idx) => (
+                          <Box
+                            key={idx}
+                            sx={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 1.5,
+                              py: 1.2,
+                              px: 2,
+                              backgroundColor: '#f8fafc',
+                              borderRadius: '10px',
+                              border: '1px solid #edf2f7'
+                            }}
+                          >
+                            <CheckCircleOutlineIcon sx={{ color: 'var(--blue)', fontSize: '1.25rem', flexShrink: 0 }} />
+                            <Typography sx={{ fontSize: '0.94rem', color: '#444', lineHeight: 1.5, m: 0 }}>
+                              {habit}
+                            </Typography>
+                          </Box>
+                        ))}
                       </Box>
-                    ))}
-                  </Box>
-                </Box>
+                    </Box>
+                  </Grid>
+
+                  <Grid item xs={12} lg={5}>
+                    <Box
+                      sx={{
+                        borderRadius: '16px',
+                        overflow: 'hidden',
+                        boxShadow: '0 8px 24px rgba(0,0,0,0.08)',
+                        maxWidth: { xs: '100%', sm: '420px', lg: '100%' },
+                        mx: { xs: 'auto', lg: 0 },
+                        backgroundColor: '#ffffff',
+                        p: 1.5,
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                    >
+                      <Image
+                        src={navienTankless}
+                        alt="Navien Tankless Water Heater Maintenance Burnaby"
+                        title="Navien Tankless Water Heater Maintenance Burnaby"
+                        sizes="(max-width: 900px) 100vw, 420px"
+                        style={{
+                          width: "100%",
+                          height: "auto",
+                          aspectRatio: "3 / 4",
+                          objectFit: "cover",
+                          borderRadius: '12px',
+                          display: 'block'
+                        }}
+                      />
+                    </Box>
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </Container>
