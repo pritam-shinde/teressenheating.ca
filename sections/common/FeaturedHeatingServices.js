@@ -18,7 +18,7 @@ const FeaturedHeatingServices = ({ title, subTitle, bannerText, btnTitle, btnLin
 
     const heatingItems = [
         { href: "/furnace/", src: Furnace, name: "Furnace", alt: "Furnace Logo", heightDesktop: "115px", heightMobile: "75px" },
-        { href: "/boilers-service/", src: Boiler, name: "Boiler", alt: "Boiler Logo", heightDesktop: "115px", heightMobile: "75px" },
+        { href: "/boiler-services/", src: Boiler, name: "Boiler", alt: "Boiler Logo", heightDesktop: "115px", heightMobile: "75px" },
         { href: "/heat-pump/", src: HeatPump, name: "Heat Pump", alt: "Heat Pump Logo", heightDesktop: "105px", heightMobile: "70px" },
         { href: "/fireplace/", src: Fireplace, name: "Fireplace", alt: "Fireplace Logo", heightDesktop: "110px", heightMobile: "72px" }
     ]

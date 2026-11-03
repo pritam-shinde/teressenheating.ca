@@ -105,8 +105,8 @@ const localBusinessSchema = {
             {
               "@type": "Service",
               "name": "Boiler Services",
-              "@id": "https://airlinxheating.ca/boilers-service/",
-              "url": "https://airlinxheating.ca/boilers-service/",
+              "@id": "https://airlinxheating.ca/boiler-services/",
+              "url": "https://airlinxheating.ca/boiler-services/",
               "description": "Reliable boiler services for residential and commercial properties, helping maintain efficient and consistent heating year-round."
             },
             {
@@ -140,8 +140,8 @@ const localBusinessSchema = {
             {
               "@type": "Service",
               "name": "boiler repair and maintenance service",
-              "@id": "https://airlinxheating.ca/boilers-service/",
-              "url": "https://airlinxheating.ca/boilers-service/",
+              "@id": "https://airlinxheating.ca/boiler-services/",
+              "url": "https://airlinxheating.ca/boiler-services/",
               "description": "Boiler Repair Services provides professional boiler repair, maintenance, and heating solutions for homes and businesses across Vancouver and nearby areas in British Columbia."
             },
             {

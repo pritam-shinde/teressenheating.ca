@@ -66,7 +66,7 @@ const BoilerRepair = () => {
                               }} />
                           </Grid>
                           <Grid item xs={12} md={6}>
-                            <Typography className='para'>Airlinx has been providing expert boiler installation, boiler repair, and comprehensive <Link href="/boilers-service/">boiler services</Link> in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
+                            <Typography className='para'>Airlinx has been providing expert boiler installation, boiler repair, and comprehensive <Link href="/boiler-services/">boiler services</Link> in Canada for years now. As an experienced leader in the home heating industry, we must provide our customers with a wide variety of <Link href="/boilers-maintenance/">boiler maintenance</Link> and boiler repair services at affordable prices.</Typography>
                           </Grid>
                         </Grid>
                       </Container>
@@ -141,7 +141,7 @@ const BoilerRepair = () => {
                             <ListItemText primary="24*7 services." />
                           </ListItem>
                         </List>
-                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing the best boiler repair services. So, when you are looking for a home <Link href="/boilers-service/">boiler company</Link> in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
+                        <Typography className='para'>We understand that it is not an easy task to find a reliable company in providing the best boiler repair services. So, when you are looking for a home <Link href="/boiler-services/">boiler company</Link> in Canada, it is important to do your market research and then, find the best option that suits your requirement.</Typography>
                       </Container>
                     </section>
                   </Grid>

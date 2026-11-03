@@ -31,7 +31,12 @@ module.exports = {
       },
       {
         source: '/boilers/',
-        destination: '/boilers-service/',
+        destination: '/boiler-services/',
+        permanent: true,
+      },
+      {
+        source: '/boilers-service/',
+        destination: '/boiler-services/',
         permanent: true,
       },
       {

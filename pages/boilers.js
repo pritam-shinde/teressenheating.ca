@@ -40,7 +40,7 @@ const Boiler = () => {
       "name": "Airlinx Heating & Air Conditioning",
       "image": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.bf645ef5.webp&w=1920&q=75",
       "@id": "https://airlinxheating.ca/_next/image/?url=%2F_next%2Fstatic%2Fmedia%2Fworker-repairing-water-heater.bf645ef5.webp&w=1920&q=75",
-      "url": "https://airlinxheating.ca/boilers-service/",
+      "url": "https://airlinxheating.ca/boiler-services/",
       "telephone": "+1-604-363-6622",
       "priceRange": "$$$",
       "address": {
@@ -83,7 +83,7 @@ const Boiler = () => {
         <title>Boiler Services - Emergency Repairs & Install - Airlinx</title>
         <meta name="description" content="Need professional care for your heating system? Trust Airlinx Heating for all boiler services. We provide 24/7 solutions. Schedule your appointment today." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://airlinxheating.ca/boilers-service/" />
+        <link rel="canonical" href="https://airlinxheating.ca/boiler-services/" />
       </Head>
 
       <JsonLd faqArr={arrayFaq} />
@@ -188,7 +188,7 @@ const Boiler = () => {
                             <Grid item xs={12}>
                               <Box>
                                 <SectionalHeading variant='h2' simpletext=' Benefits of professional boiler services from Airlinx:' />
-                                <Typography className='para'>Our professional <Link href="https://airlinxheating.ca/boilers-service/">boiler services </Link>ensure that your boiler installation, maintenance, or repair work is done spot-on. Our employees are highly trained and are equipped with all skills. They have the knowledge and understanding of different boiler systems. So, hiring a professional to service your heating system saves you money and time. Also, we are the pioneers in the boiler industry for providing quality, trust, and affordability.</Typography>
+                                <Typography className='para'>Our professional <Link href="https://airlinxheating.ca/boiler-services/">boiler services </Link>ensure that your boiler installation, maintenance, or repair work is done spot-on. Our employees are highly trained and are equipped with all skills. They have the knowledge and understanding of different boiler systems. So, hiring a professional to service your heating system saves you money and time. Also, we are the pioneers in the boiler industry for providing quality, trust, and affordability.</Typography>
                                 <Typography className='para'>A properly installed sized boiler system will heat your place and ensure that your utility bills stay low and your system operation is quiet.</Typography>
                                 <Typography className='para'>So, do not delay when you notice signs of boiler disrepair. Consult us today!</Typography>
                               </Box>
