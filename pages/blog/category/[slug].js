@@ -21,7 +21,13 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
     try {
         const { slug } = context.params;
-        const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?slug=${slug}`);
+        const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/categories?slug=${slug}`, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'application/json'
+            },
+            signal: AbortSignal.timeout(8000)
+        });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 

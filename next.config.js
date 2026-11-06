@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
+const dns = require('dns')
+if (dns.setDefaultResultOrder) {
+  dns.setDefaultResultOrder('ipv4first')
+}
+
 module.exports = {
   async redirects() {
     return [

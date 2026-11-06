@@ -11,7 +11,13 @@ import fallbackBlogs from '../../constants/fallback-blogs.json';
 
 export const getStaticProps = async () => {
   try {
-    const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`);
+    const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${blog_slugs_string}`, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/json'
+      },
+      signal: AbortSignal.timeout(8000)
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const rawData = await res.json();
     const allowed = filterAllowedBlogs(rawData);
