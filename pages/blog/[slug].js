@@ -8,7 +8,7 @@ import fallbackBlogs from '../../constants/fallback-blogs.json';
 
 export const getStaticPaths = async () => {
     return {
-        paths: [],
+        paths: Object.keys(blog_slugs).map(slug => ({ params: { slug } })),
         fallback: 'blocking'
     }
 }
@@ -22,7 +22,13 @@ export const getStaticProps = async (context) => {
     }
 
     try {
-        const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${slug}`);
+        const res = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?_embed=true&slug=${slug}`, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'application/json'
+            },
+            signal: AbortSignal.timeout(8000)
+        });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const rawData = await res.json();
         if (!rawData || !Array.isArray(rawData) || rawData.length === 0) {
@@ -36,7 +42,13 @@ export const getStaticProps = async (context) => {
 
         let sidebarBlogs = [];
         try {
-            const sidebarBlogsRes = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?slug=${blog_slugs_string}&_fields=id,date,slug,title`);
+            const sidebarBlogsRes = await fetch(`https://api.teressenheating.ca/index.php/wp-json/wp/v2/posts?slug=${blog_slugs_string}&_fields=id,date,slug,title`, {
+                headers: {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Accept': 'application/json'
+                },
+                signal: AbortSignal.timeout(8000)
+            });
             const rawSidebarBlogs = await sidebarBlogsRes.json();
             sidebarBlogs = sanitizeSidebarBlogs(rawSidebarBlogs);
         } catch (sidebarErr) {
