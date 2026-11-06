@@ -4,6 +4,7 @@ import React from 'react'
 import { BlueFilledBtn } from '../../components/components'
 import AboutImage from '../../public/home/about.jpg'
 import Styles from '../../styles/Home.module.css'
+import Link from 'next/link'
 
 const About = () => {
     return (
@@ -33,7 +34,7 @@ const About = () => {
                                         <Box>
                                             <Typography variant='h2' className='text--black' gutterBottom>Airlinx Heating Ltd.</Typography>
                                             <Typography variant="h3" className='trusted' gutterBottom>Your trusted expert for all your <span className='text--red'>heating</span> and <span className='text--blue'>cooling</span> services</Typography>
-                                            <Typography className='para'>When it comes to HVAC services, like heating and air conditioning services, we, Airlinx Heating Ltd are a name. We have expert technicians who assist you in giving the best advice on an on-site visit or help you with a free quotation for the installation system.</Typography>
+                                            <Typography className='para'>When it comes to <Link href="/blog/what-is-hvac/"> HVAC </Link> services, like heating and air conditioning services, we, Airlinx Heating Ltd are a name. We have expert technicians who assist you in giving the best advice on an on-site visit or help you with a free quotation for the installation system.</Typography>
                                             <Typography className='para'>When homemakers need reliable heating or air conditioning services, they do not have to think about whom to call. They directly call us to get the best possible guidance on their heating and air conditioning services. We are your premier HVAC service providers for a simple reason: our loyalty and expert guidance.</Typography>
                                             <Typography className='para'>Your trust has been our most important asset in giving you the best possible services. That is also one of the reasons why we back all our work with 100% customer satisfaction.</Typography>
                                             <Box mt={3}>
