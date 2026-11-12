@@ -11,7 +11,8 @@ export const blog_slugs = {
     "boiler-maintenance-guide": true,
     "how-does-a-tankless-hot-water-heater-work": true,
     "why-fall-is-the-best-time-for-furnace-maintenance": true,
-    "hot-water-tank-maintenance-guide": true
+    "hot-water-tank-maintenance-guide": true,
+    "how-does-a-furnace-work": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");
