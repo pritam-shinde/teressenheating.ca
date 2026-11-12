@@ -245,7 +245,7 @@ const TanklessWaterHeaterPage = () => {
                     variant="h2"
                   />
                   <Typography className="para" sx={{ mt: 2, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
-                    No hot water, or hot water that keeps turning lukewarm? You&apos;ve come to the right place for tankless water heater service in Burnaby. Airlinx Heating repairs, services and installs tankless water heaters for homes and businesses across Metro Vancouver, and we take emergency calls any hour of the day.
+                    No hot water, or hot water that keeps turning lukewarm? You&apos;ve come to the right place for tankless water heater Burnaby. Airlinx Heating repairs, services and installs tankless water heaters for homes and businesses across Metro Vancouver, and we take emergency calls any hour of the day.
                   </Typography>
                   <Typography className="para" sx={{ mt: 1.5, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
                     Tankless units are small, efficient and last a long time, but only if someone looks after them. A yearly checkup is what keeps a tankless water heater running like new. Whether yours needs tankless water heater repair, a tune-up or a replacement, you&apos;ll get a clear price before we start and a straight answer on what&apos;s worth doing.
