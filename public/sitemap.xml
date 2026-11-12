@@ -498,4 +498,10 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
+     <url>
+        <loc>https://airlinxheating.ca/blog/how-does-a-furnace-work/</loc>
+        <lastmod>2026-11-12T12:14:39.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
