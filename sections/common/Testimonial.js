@@ -42,7 +42,11 @@ const Testimonial = ({ testimonialArr, title }) => {
         }
     ];
 
-    const reviewsToRender = (testimonialArr && testimonialArr.length > 0) ? testimonialArr : defaultTestimonials;
+    const cleanReviews = (Array.isArray(testimonialArr) ? testimonialArr : []).filter(
+        item => item && item.text && !item.text.toLowerCase().includes('lorem ipsum') && !item.customerName?.toLowerCase().includes('wilson trayer')
+    );
+
+    const reviewsToRender = cleanReviews.length > 0 ? cleanReviews : defaultTestimonials;
 
     return (
         <>
