@@ -38,12 +38,6 @@ const Brynt = () => {
     { id: "faq-5", que: "Why choose Airlinx for Bryant HVAC services in Burnaby?", ans: "As a trusted local HVAC company, we provide expert Bryant installations, repairs, and maintenance with experienced technicians, quality workmanship, and reliable customer service across Burnaby and nearby communities.", list: null },
   ]
 
-  const testimonial = [
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
-  ]
-
   const brandDetailparagraph = [
 
     { id: 'branddetail-1', text: 'If your Bryant furnace breaks down and you do not want to go through the cold without heat, then you must have a dependable Bryant furnace repair system.' },
@@ -200,7 +194,7 @@ const Brynt = () => {
         <PopularService color='red' />
         <FeaturedHeatingServices />
         <HighlySkilled />
-        <Testimonial testimonialArr={testimonial} />
+        <Testimonial />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
 

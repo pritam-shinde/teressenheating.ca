@@ -29,12 +29,6 @@ const Arcoaire = () => {
     { id: "faq-5", que: "Why choose Airlinx for Arcoaire HVAC services in Burnaby?", ans: "Our local team offers expert Arcoaire installation, repair, and maintenance with quality workmanship, honest recommendations, and dependable customer support across Burnaby and surrounding areas.", list: null },
   ]
 
-  const testimonial = [
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
-  ]
-
   const ListArray = [" We have the best Arcoaire HVAC technicians that help you with the best.", " We provide professional services at an affordable rates.", "Find the best Arcoaire HVAC heating installation services near you."]
   return (
     <>
@@ -233,7 +227,7 @@ const Arcoaire = () => {
         <PopularService color='red' />
         <FeaturedCoolingServices />
         <HighlySkilled />
-        <Testimonial testimonialArr={testimonial} />
+        <Testimonial />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
     </>

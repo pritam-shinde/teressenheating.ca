@@ -28,12 +28,6 @@ const AmericanStandard = () => {
     { id: "faq-5", que: "Why choose Airlinx for American Standard HVAC services in Burnaby?", ans: "Our experienced local technicians provide expert American Standard installations, repairs, and maintenance with quality workmanship, honest recommendations, and dependable service for customers across Burnaby and surrounding areas.", list: null },
   ]
 
-  const testimonial = [
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
-  ]
-
   const ListArray = ["We have American standard furnace experienced professionals.", "We provide professional services at affordable pricing.", "We have insured and licensed products.", "American standard heating, maintenance, and repair services.", "Airlinx's heating and air conditioning services for all our clients who trust us."]
   return (
     <>
@@ -147,7 +141,7 @@ const AmericanStandard = () => {
         <PopularService color='red' />
         <FeaturedCoolingServices />
         <HighlySkilled />
-        <Testimonial testimonialArr={testimonial} />
+        <Testimonial />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
     </>

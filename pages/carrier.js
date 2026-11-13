@@ -29,12 +29,6 @@ const Carrier = () => {
     { id: "faq-5", que: "Why choose Airlinx for Carrier HVAC services in Burnaby?", ans: "Our local team provides expert Carrier installation, maintenance, and repair services with experienced technicians, transparent recommendations, and dependable support for homeowners and businesses throughout Burnaby.", list: null },
   ]
 
-  const testimonial = [
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
-  ]
-
   const brandDetailparagraph = [
 
     { id: 'branddetail-1', text: "You would like to know what kind of repairing services you can get from Airlinx's HVAC services if you hire us. Depending on your demands and the scenarios, we can perform major repair work if you need our assistance. Everything from faulty fans to igniters, we repair everything. We will work hard to give you a first-rate Carrier furnace repair service as part of our job. We also believe in delivering the best outcomes." },
@@ -204,7 +198,7 @@ const Carrier = () => {
         <PopularService color='red' />
         <FeaturedHeatingServices />
         <HighlySkilled />
-        <Testimonial testimonialArr={testimonial} />
+        <Testimonial />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
       </main>
     </>

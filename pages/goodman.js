@@ -28,12 +28,6 @@ const Goodman = () => {
     { id: "faq-4", que: "Are Goodman HVAC systems a good option for energy efficiency?", ans: "Goodman offers high-efficiency furnaces and air conditioners designed to reduce energy usage while maintaining consistent indoor comfort for Burnaby homes.", list: null },
     { id: "faq-5", que: "Why choose Airlinx for Goodman HVAC services in Burnaby?", ans: "Our certified technicians provide expert Goodman installation, repair, and maintenance services backed by honest pricing, reliable service, and strong local customer support.", list: null },
   ]
-
-  const testimonial = [
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" },
-    { id: "testimonial-1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sodales suscipit elit, a laoreet neque porttitor sed. Sed dapibus, est eget pellentesque gravida, massa massa venenatis magna, at tempus quam turpis rhoncus leo. Sed sed libero enim. Vestibulum tristique tellus vel ultrices pretium.", customerName: "Wilson Trayer" }
-  ]
   const brandDetailparagraph = [
 
     { id: 'branddetail-1', text: 'To examine your system, a complete inspection is required for Goodman furnace repair. To maintain a comfortable lifestyle just make sure that all the vital parts of your system are tested and adjusted.' },
@@ -206,7 +200,7 @@ const Goodman = () => {
         <PopularService color='red' />
         <FeaturedCoolingServices />
         <HighlySkilled />
-        <Testimonial testimonialArr={testimonial} />
+        <Testimonial />
         <FaqAndForm faq={true} faqBlackTitle="Heating & Cooling" faqBlueTitle="FAQ" faqtitleAlign="center" faqVariant="h2" faqArr={arrayFaq} form={true} formBlackTitle="Get a Free" formBlueTitle="Quote" formVariant="h2" formtitleAlign="center" />
 
       </main>
