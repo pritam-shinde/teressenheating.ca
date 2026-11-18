@@ -1,5 +1,4 @@
 import {
-  CheckCircle,
   CheckCircleOutline
 } from '@mui/icons-material'
 import {
@@ -586,9 +585,9 @@ const BoilerMaintenancePage = () => {
               <Grid item xs={12} md={10} className="mx-auto">
                 <Box
                   sx={{
-                    p: { xs: 3.5, md: 5 },
+                    p: { xs: 3, sm: 4, md: 5 },
                     backgroundColor: '#ffffff',
-                    borderRadius: '20px',
+                    borderRadius: '16px',
                     border: '1px solid #e2e8f0',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.03)'
                   }}
@@ -597,28 +596,89 @@ const BoilerMaintenancePage = () => {
                     simpletext="Why Choose Airlinx for Boiler Maintenance?"
                     variant="h2"
                   />
-                  <Grid container spacing={2} sx={{ mt: 2.5 }}>
-                    {whyChoosePoints.map((point, idx) => (
-                      <Grid item xs={12} sm={6} key={idx}>
-                        <Box
-                          sx={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: 1.5,
-                            p: 2,
-                            backgroundColor: '#f8fafc',
-                            borderRadius: '12px',
-                            border: '1px solid #edf2f7',
-                            height: '100%'
-                          }}
-                        >
-                          <CheckCircle sx={{ color: 'var(--blue)', fontSize: 22, flexShrink: 0 }} />
-                          <Typography sx={{ fontSize: '0.96rem', color: 'var(--navy)', lineHeight: 1.5, m: 0, fontWeight: 600 }}>
-                            {point}
-                          </Typography>
-                        </Box>
-                      </Grid>
-                    ))}
+                  <Grid container spacing={{ xs: 0, sm: 4 }} sx={{ mt: { xs: 1.5, md: 2 } }}>
+                    <Grid item xs={12} sm={6}>
+                      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                        {whyChoosePoints.slice(0, 4).map((point, idx) => (
+                          <Box
+                            key={idx}
+                            sx={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 2,
+                              py: { xs: 1.5, md: 1.75 },
+                              borderBottom: '1px solid #edf2f7'
+                            }}
+                          >
+                            <Box
+                              component="span"
+                              sx={{
+                                width: 8,
+                                height: 8,
+                                borderRadius: '50%',
+                                backgroundColor: 'var(--blue)',
+                                flexShrink: 0
+                              }}
+                            />
+                            <Typography
+                              component="span"
+                              sx={{
+                                fontSize: { xs: '0.96rem', md: '1.02rem' },
+                                color: 'var(--navy)',
+                                lineHeight: 1.5,
+                                m: '0 !important',
+                                mb: '0 !important',
+                                p: 0,
+                                fontWeight: 600
+                              }}
+                            >
+                              {point}
+                            </Typography>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                        {whyChoosePoints.slice(4).map((point, idx) => (
+                          <Box
+                            key={idx}
+                            sx={{
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 2,
+                              py: { xs: 1.5, md: 1.75 },
+                              borderBottom: '1px solid #edf2f7'
+                            }}
+                          >
+                            <Box
+                              component="span"
+                              sx={{
+                                width: 8,
+                                height: 8,
+                                borderRadius: '50%',
+                                backgroundColor: 'var(--blue)',
+                                flexShrink: 0
+                              }}
+                            />
+                            <Typography
+                              component="span"
+                              sx={{
+                                fontSize: { xs: '0.96rem', md: '1.02rem' },
+                                color: 'var(--navy)',
+                                lineHeight: 1.5,
+                                m: '0 !important',
+                                mb: '0 !important',
+                                p: 0,
+                                fontWeight: 600
+                              }}
+                            >
+                              {point}
+                            </Typography>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Grid>
                   </Grid>
                 </Box>
               </Grid>
