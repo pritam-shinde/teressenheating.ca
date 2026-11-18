@@ -257,16 +257,19 @@ const BoilerMaintenancePage = () => {
       />
 
       <main>
-        {/* H1 BANNER - No dark overlay so the background image is clearly visible */}
+        {/* H1 BANNER - Responsive positioning shows character clearly on both desktop & mobile */}
         <CommonBanner
           bg={BoilerMaintainanceBanner}
+          bgPosition={{ xs: '68% center', md: 'center top' }}
+          mobileOverlay="linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42))"
+          desktopOverlay="linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0))"
           title={
             <Box
               component="span"
               sx={{
                 display: 'block',
                 maxWidth: { xs: '100%', md: '750px', lg: '1100px' },
-                textShadow: '0 2px 10px rgba(0, 0, 0, 0.85)'
+                textShadow: '0 2px 12px rgba(0, 0, 0, 0.85)'
               }}
             >
               Boiler Maintenance in Burnaby
