@@ -13,7 +13,8 @@ export const blog_slugs = {
     "why-fall-is-the-best-time-for-furnace-maintenance": true,
     "hot-water-tank-maintenance-guide": true,
     "how-does-a-furnace-work": true,
-    "how-often-should-you-service-your-furnace": true
+    "how-often-should-you-service-your-furnace": true,
+    "how-to-lower-heating-bill": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");
