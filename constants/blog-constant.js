@@ -14,7 +14,8 @@ export const blog_slugs = {
     "hot-water-tank-maintenance-guide": true,
     "how-does-a-furnace-work": true,
     "how-often-should-you-service-your-furnace": true,
-    "how-to-lower-heating-bill": true
+    "how-to-lower-heating-bill": true,
+    // "furnace-maintenance-checklist": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");

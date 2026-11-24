@@ -31,7 +31,7 @@ const Dropdowns = ({ menu, closeMobileMenu }) => {
                             id: "services-menu-4", link: "/boiler-services/", text: "BOILER SERVICES", submenu: [
                                 { id: "services-menu-4.1", link: "/boilers-maintenance/", text: "BOILERS MAINTENANCE" },
                                 { id: "services-menu-4.2", link: "/boilers-installation/", text: "BOILERS INSTALLATION" },
-                                { id: "services-menu-4.3", link: "/boilers-repair/", text: "BOILERS REPAIR" },
+                                { id: "services-menu-4.3", link: "/boiler-repair/", text: "BOILER REPAIR" },
                                 // { id: "services-menu-4.4", link: "/boiler-services/", text: "BOILERS SERVICE" }
                             ]
                         },

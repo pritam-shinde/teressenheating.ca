@@ -128,7 +128,7 @@ const Navbar = () => {
                                 </Link>
                               </li>
                               <li className="nav-item">
-                                <Link className='nav-link' legacyBehavior={true} href="/boilers-repair/">
+                                <Link className='nav-link' legacyBehavior={true} href="/boiler-repair/">
                                   <a className="nav-link dropdown-item">Boiler Repair</a>
                                 </Link>
                               </li>

@@ -169,7 +169,7 @@ const Comfortmaker = () => {
                         <ListItemIcon>
                           <CheckCircleOutline className='text--blue' />
                         </ListItemIcon>
-                        <ListItemText primary={<span>Boiler installation, installation, and <Link href="/boilers-repair/">repair</Link>.</span>} />
+                        <ListItemText primary={<span>Boiler installation, installation, and <Link href="/boiler-repair/">repair</Link>.</span>} />
                       </ListItem>
                     </List>
                   </Box>
