@@ -3,14 +3,17 @@ const JsonLd = ({ json, faqArr }) => {
     const schema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "mainEntity": faqArr.map((faq) => ({
-        "@type": "Question",
-        "name": faq.que,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": (faq.ans || "") + (faq.list && Array.isArray(faq.list) ? "\n" + faq.list.join("\n") : "")
+      "mainEntity": faqArr.map((faq) => {
+        const ansText = (faq.schemaAns || (typeof faq.ans === 'string' ? faq.ans : "") || "") + (faq.list && Array.isArray(faq.list) ? "\n" + faq.list.join("\n") : "")
+        return {
+          "@type": "Question",
+          "name": faq.que,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": ansText
+          }
         }
-      }))
+      })
     }
     return (
       <script
@@ -35,14 +38,17 @@ export const FaqJsonLd = ({ faqs }) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs.map((faq) => ({
-      "@type": "Question",
-      "name": faq.que,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": (faq.ans || "") + (faq.list && Array.isArray(faq.list) ? "\n" + faq.list.join("\n") : "")
+    "mainEntity": faqs.map((faq) => {
+      const ansText = (faq.schemaAns || (typeof faq.ans === 'string' ? faq.ans : "") || "") + (faq.list && Array.isArray(faq.list) ? "\n" + faq.list.join("\n") : "")
+      return {
+        "@type": "Question",
+        "name": faq.que,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": ansText
+        }
       }
-    }))
+    })
   }
   return (
     <script
