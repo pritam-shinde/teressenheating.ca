@@ -83,7 +83,16 @@ const BoilerRepairPage = () => {
     {
       id: "faq-9",
       que: "What's the difference between boiler service and repair?",
-      ans: "Service is preventive: a yearly check to find problems early. Repair fixes something that has already failed. A repair visit often includes some service checks, and a service visit may turn up a repair. See our boiler maintenance page.",
+      ans: (
+        <>
+          Service is preventive: a yearly check to find problems early. Repair fixes something that has already failed. A repair visit often includes some service checks, and a service visit may turn up a repair. See our{" "}
+          <Link href="/boilers-maintenance/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>
+            boiler maintenance page
+          </Link>
+          .
+        </>
+      ),
+      schemaAns: "Service is preventive: a yearly check to find problems early. Repair fixes something that has already failed. A repair visit often includes some service checks, and a service visit may turn up a repair. See our boiler maintenance page.",
       list: null
     },
     {
