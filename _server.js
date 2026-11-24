@@ -45,8 +45,12 @@ app.prepare().then(() => {
       else if (pathname === '/boilers-installation') {
         await app.render(req, res, '/boilers-installation/', query)
       }
-      else if (pathname === '/boilers-repair') {
-        await app.render(req, res, '/boilers-repair/', query)
+      else if (pathname === '/boilers-repair' || pathname === '/boilers-repair/') {
+        res.writeHead(301, { Location: '/boiler-repair/' })
+        res.end()
+      }
+      else if (pathname === '/boiler-repair') {
+        await app.render(req, res, '/boiler-repair/', query)
       }
       else if (pathname === '/boilers-service' || pathname === '/boiler-services') {
         await app.render(req, res, '/boiler-services/', query)

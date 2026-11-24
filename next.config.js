@@ -45,6 +45,11 @@ module.exports = {
         permanent: true,
       },
       {
+        source: '/boilers-repair/',
+        destination: '/boiler-repair/',
+        permanent: true,
+      },
+      {
         source: '/ac-maintainance/',
         destination: '/air-conditioning-maintenance/',
         permanent: true,

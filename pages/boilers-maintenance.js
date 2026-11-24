@@ -291,7 +291,7 @@ const BoilerMaintenancePage = () => {
                         variant="h2"
                       />
                       <Typography className="para" sx={{ mt: 2.5, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
-                        A boiler that gets looked at once a year rarely quits on the coldest day. <Link href="/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>Airlinx</Link> provides professional boiler maintenance for homes and small buildings in Burnaby, Vancouver, throughout the Lower Mainland and across the North Shore. Our services include cleaning, testing, safety checks and the small adjustments that help keep your boiler running efficiently. If your boiler has already stopped, start with our <Link href="/boilers-repair/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>boiler repair page</Link>.
+                        A boiler that gets looked at once a year rarely quits on the coldest day. <Link href="/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>Airlinx</Link> provides professional boiler maintenance for homes and small buildings in Burnaby, Vancouver, throughout the Lower Mainland and across the North Shore. Our services include cleaning, testing, safety checks and the small adjustments that help keep your boiler running efficiently. If your boiler has already stopped, start with our <Link href="/boiler-repair/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>boiler repair page</Link>.
                       </Typography>
                       <Typography className="para" sx={{ mt: 1.5, fontSize: '1.05rem !important', lineHeight: 1.8 }}>
                         Our boiler maintenance service follows the manufacturer&apos;s steps for your model, and you get a short written report afterward that says what we found and what, if anything, needs doing. We&apos;ve worked on heating systems around Metro Vancouver for more than 10 years. Our technicians are licensed and background-checked.
@@ -730,7 +730,7 @@ const BoilerMaintenancePage = () => {
                   </Typography>
 
                   <Typography className="para" sx={{ mt: 1.5, fontSize: '1.02rem !important', lineHeight: 1.8 }}>
-                    Boiler already stopped working? Our <Link href="/boilers-repair/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>boiler repair page</Link> is the place to start. If your boiler is near the end of its life, see <Link href="/boilers-installation/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>boiler installation</Link>.
+                    Boiler already stopped working? Our <Link href="/boiler-repair/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>boiler repair page</Link> is the place to start. If your boiler is near the end of its life, see <Link href="/boilers-installation/" style={{ color: "var(--blue)", fontWeight: 600, textDecoration: "underline" }}>boiler installation</Link>.
                   </Typography>
 
                   <Box mt={3.5} sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>

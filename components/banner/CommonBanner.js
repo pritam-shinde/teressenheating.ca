@@ -51,15 +51,25 @@ const CommonBanner = ({
     }
 
     // Resolve background position responsively
-    const xsPos = mobileBgPosition || (typeof bgPosition === 'object' && bgPosition !== null ? bgPosition?.xs : (typeof bgPosition === 'string' ? bgPosition : null))
-    const mdPos = desktopBgPosition || (typeof bgPosition === 'object' && bgPosition !== null ? bgPosition?.md : (typeof bgPosition === 'string' ? bgPosition : null))
-
     let bgPosStyle = null
-    if (xsPos || mdPos) {
-        bgPosStyle = {
-            ...(xsPos ? { xs: `${xsPos} !important` } : {}),
-            ...(mdPos ? { md: `${mdPos} !important` } : {})
+    if (typeof bgPosition === 'object' && bgPosition !== null) {
+        bgPosStyle = {}
+        for (const key of Object.keys(bgPosition)) {
+            bgPosStyle[key] = `${bgPosition[key]} !important`
         }
+    } else if (typeof bgPosition === 'string') {
+        bgPosStyle = {
+            xs: `${bgPosition} !important`,
+            md: `${bgPosition} !important`
+        }
+    }
+    if (mobileBgPosition) {
+        bgPosStyle = bgPosStyle || {}
+        bgPosStyle.xs = `${mobileBgPosition} !important`
+    }
+    if (desktopBgPosition) {
+        bgPosStyle = bgPosStyle || {}
+        bgPosStyle.md = `${desktopBgPosition} !important`
     }
 
     return (

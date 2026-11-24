@@ -168,7 +168,7 @@ const Boiler = () => {
                               <Box>
                                 <SectionalHeading variant='h2' simpletext='Experts in the heating industry:' />
                                 <Typography className='para'>So, if you have any questions related to your boiler repair and installation, then, give us a call instantly. Our experts are ready to assist you in everything.</Typography>
-                                <Typography className='para'>Airlinx heating ltd specializes in all types of <Link href="https://airlinxheating.ca/boilers-repair/">boiler repair </Link>and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
+                                <Typography className='para'>Airlinx heating ltd specializes in all types of <Link href="https://airlinxheating.ca/boiler-repair/">boiler repair </Link>and maintenance work. We have a long track record of providing our clients with high-quality workmanship and affordability at relative ease.</Typography>
                               </Box>
                             </Grid>
                           </Grid>

@@ -162,7 +162,7 @@ const YorkBrand = () => {
                 <Box p={3}>
                   <SectionalHeading simpletext="Repairing of York furnace needs a licensed expert" variant="h2" />
                   <Typography className='para'> Are you looking for York furnace repair in my area? Then you can rely on our <a href="/commercial-hvac/">HVAC services</a> to fix your heating system.</Typography>
-                  <Typography className='para'>If the outside temperature is low, then there might be a chance that your furnace will stop working. Like other household appliances, furnaces need repair. So, find a qualified <Link href="/boilers-repair/">repair</Link> agency that will inspect the appliance and recommend the best line of action for you.</Typography>
+                  <Typography className='para'>If the outside temperature is low, then there might be a chance that your furnace will stop working. Like other household appliances, furnaces need repair. So, find a qualified <Link href="/boiler-repair/">repair</Link> agency that will inspect the appliance and recommend the best line of action for you.</Typography>
                 </Box>
               </Grid>
             </Grid>
