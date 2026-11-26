@@ -15,7 +15,7 @@ export const blog_slugs = {
     "how-does-a-furnace-work": true,
     "how-often-should-you-service-your-furnace": true,
     "how-to-lower-heating-bill": true,
-    // "furnace-maintenance-checklist": true
+    "furnace-maintenance-checklist": true
 };
 
 export const blog_slugs_string = Object.keys(blog_slugs).join(",");

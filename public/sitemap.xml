@@ -516,4 +516,10 @@
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://airlinxheating.ca/blog/furnace-maintenance-checklist/</loc>
+        <lastmod>2026-11-26T05:08:50.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
