@@ -25,7 +25,7 @@ import Image from "next/image"
 
 const Service = () => {
     const [width, setWidth] = useState(992)
-    const [active, setActive] = useState('box1');
+    const [active, setActive] = useState('box2');
 
     useEffect(() => {
         setWidth(window.innerWidth);
